@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAlert id="IonCannon" parent="Global">
+        <Flags index="SoundFromLocalPlayer" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike.dds"/>
+        <QueueTime value="5.000000"/>
+        <Sound value="ZeratulA_IonCannon"/>
+        <Peripheral value="CalldownLaunch"/>
+    </CAlert>
+</Catalog>

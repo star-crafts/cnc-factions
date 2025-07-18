@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRace id="Neut">
+        <Icon value="assets\textures\ui_battlenet_glues_multiplayer_racebutton_raceicon_selected_rand.dds"/>
+    </CRace>
+    <CRace id="Prot">
+        <Icon value="assets\textures\ui_battlenet_glues_multiplayer_racebutton_raceicon_selected_prot.dds"/>
+    </CRace>
+    <CRace id="Terr">
+        <Icon value="assets\textures\ui_battlenet_glues_multiplayer_racebutton_raceicon_selected_terr.dds"/>
+    </CRace>
+    <CRace id="Zerg">
+        <Icon value="assets\textures\ui_battlenet_glues_multiplayer_racebutton_raceicon_selected_zerg.dds"/>
+    </CRace>
+</Catalog>

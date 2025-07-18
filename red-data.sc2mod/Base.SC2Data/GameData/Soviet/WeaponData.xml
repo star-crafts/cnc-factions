@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="SovietDesolatorDeathSpray">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="assets\textures\chemical-troops-switch-to-death-spray-mode.dds"/>
+        <DisplayEffect value="SovietDesolatorDeathSprayDamage"/>
+        <TargetFilters value="Ground;Self,Dead,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.5"/>
+        <Effect value="SovietDesolatorDeathSprayEffectCollection"/>
+    </CWeaponLegacy>
+</Catalog>

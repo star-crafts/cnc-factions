@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade default="1" id="Nod">
+        <?token id="icon" value="##id##"?>
+        <EditorCategories value="Race:Nod,UpgradeType:SpellResearch"/>
+        <Icon value="Assets\Icons\Nod\##icon##.dds"/>
+        <Race value="Nod"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="NodLightWeapons" parent="Nod">
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Nod,UpgradeType:AttackBonus"/>
+        <!-- Effect Damage Amount -->
+<!--        <EffectArray Reference="Effect,NodMilitantWeaponDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodConfessorWeaponDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodCommandoWeaponDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodShadowPistolDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodBeamCannonWeaponDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodAvatarBeamCannonDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodAvatarLaserDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodScorpionTankWeaponUDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodRedeemerThermalLancesFriendlyDamage,Amount" Value="1"/>-->
+<!--        <EffectArray Reference="Effect,NodRedeemerThermalLancesDamage,Amount" Value="1"/>-->
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,Level" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Icon" Value="Assets\Icons\Nod\##icon##.dds"/>
+        <AffectedUnitArray value="NodMilitant"/>
+        <AffectedUnitArray value="NodConfessor"/>
+        <AffectedUnitArray value="NodTiberiumTrooper"/>
+        <AffectedUnitArray value="NodCommando"/>
+        <AffectedUnitArray value="NodAwakened"/>
+        <AffectedUnitArray value="NodEnlightened"/>
+        <AffectedUnitArray value="NodShadow"/>
+        <AffectedUnitArray value="NodShadowFlying"/>
+        <AffectedUnitArray value="NodPurifier"/>
+        <AffectedUnitArray value="NodRaider"/>
+        <AffectedUnitArray value="NodAvatar"/>
+        <AffectedUnitArray value="NodBeamCannon"/>
+        <AffectedUnitArray value="NodScorpionTank"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="NodInfantryArmors" parent="Nod">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Nod,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="NodMilitant"/>
+        <AffectedUnitArray value="NodMilitantRocket"/>
+        <AffectedUnitArray value="NodConfessor"/>
+        <AffectedUnitArray value="NodFanatic"/>
+        <AffectedUnitArray value="NodFanatic"/>
+        <AffectedUnitArray value="NodSaboteur"/>
+        <AffectedUnitArray value="NodTiberiumTrooper"/>
+        <AffectedUnitArray value="NodBlackHand"/>
+        <AffectedUnitArray value="NodCommando"/>
+        <AffectedUnitArray value="NodAwakened"/>
+        <AffectedUnitArray value="NodEnlightened"/>
+        <AffectedUnitArray value="NodShadow"/>
+        <AffectedUnitArray value="NodShadowFlying"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Icons\Nod\##icon##.dds"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="NodHeavyWeapons" parent="Nod">
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Nod,UpgradeType:AttackBonus"/>
+        <!--        &lt;!&ndash; Effect Damage Amount &ndash;&gt;-->
+        <!--        <EffectArray Reference="Effect,NodMilitantRocketDamage,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,NodMilitantRocketDamage,AttributeBonus[Armored]" Value="1"/>-->
+        <EffectArray Reference="Effect,NodFanaticExplosionU,Amount" Value="2"/>
+        <EffectArray Reference="Effect,NodFanaticExplosionU2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,NodFanaticExplosionFriendlyUnitDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,NodFanaticExplosionFriendlyBuildingDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,NodFanaticExplosionU,AttributeBonus[Light]" Value="2.000000"/>
+        <EffectArray Reference="Effect,NodFanaticExplosionFriendlyUnitDamage,AttributeBonus[Light]" Value="2.000000"/>
+        <!--        <EffectArray Reference="Effect,NodBlackHandFlamethrowerDamage,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,NodBlackHandFlamethrowerDamage,AttributeBonus[Light]" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,NodAvatarFlameThrowerDamagee,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,CABALBikeWeaponDamage,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,NodFlameTankFlamethrowerDamage,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,NodFlameTankFlamethrowerUDamage,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,CABALMantisWeaponMissilePackDamage,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,NodSpecterDamage,Amount" Value="1"/>-->
+        <!--        <EffectArray Reference="Effect,CABALStealthRocketDamage,Amount" Value="1"/>-->
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,Level" Value="1"/>
+        <EffectArrayTemplate Reference="Effect,^ParamId^Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Icon" Value="Assets\Icons\Nod\##icon##.dds"/>
+        <AffectedUnitArray value="NodMilitantRocket"/>
+        <AffectedUnitArray value="NodFanatic"/>
+        <AffectedUnitArray value="NodBlackHand"/>
+        <AffectedUnitArray value="NodFlameTank"/>
+        <AffectedUnitArray value="NodMantis"/>
+        <AffectedUnitArray value="NodBike"/>
+        <AffectedUnitArray value="NodPurifier"/>
+        <AffectedUnitArray value="NodSpecter"/>
+        <AffectedUnitArray value="NodStealthTank"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="NodVehiclesArmors" parent="Nod">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Nod,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="NodHarvester"/>
+        <AffectedUnitArray value="NodEmissary"/>
+        <AffectedUnitArray value="NodMCV"/>
+        <AffectedUnitArray value="NodFlameTank"/>
+        <AffectedUnitArray value="NodRaider"/>
+        <AffectedUnitArray value="NodMantis"/>
+        <AffectedUnitArray value="NodReckoner"/>
+        <AffectedUnitArray value="NodReckonerUnpack"/>
+        <AffectedUnitArray value="NodBike"/>
+        <AffectedUnitArray value="NodAvatar"/>
+        <AffectedUnitArray value="NodPurifier"/>
+        <AffectedUnitArray value="NodBeamCannon"/>
+        <AffectedUnitArray value="NodScorpionTank"/>
+        <AffectedUnitArray value="NodSpecter"/>
+        <AffectedUnitArray value="NodStealthTank"/>
+        <AffectedUnitArray value="NodAvatarWreckage"/>
+        <AffectedUnitArray value="NodPurifierWreckage"/>
+        <AffectedUnitArray value="NodRedeemer"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Icons\Nod\##icon##.dds"/>
+    </CUpgrade>
+    <CUpgrade id="NodLightWeaponsLevel1" parent="NodLightWeapons">
+        <LeaderLevel value="1"/>
+        <ScoreAmount value="200"/>
+    </CUpgrade>
+    <CUpgrade id="NodLightWeaponsLevel2" parent="NodLightWeapons">
+        <LeaderLevel value="2"/>
+        <ScoreAmount value="300"/>
+    </CUpgrade>
+    <CUpgrade id="NodLightWeaponsLevel3" parent="NodLightWeapons">
+        <LeaderLevel value="3"/>
+        <ScoreAmount value="400"/>
+    </CUpgrade>
+    <CUpgrade id="NodInfantryArmorsLevel1" parent="NodInfantryArmors">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="NodInfantryArmorsLevel2" parent="NodInfantryArmors">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="NodInfantryArmorsLevel3" parent="NodInfantryArmors">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="NodHeavyWeaponsLevel1" parent="NodHeavyWeapons">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="NodHeavyWeaponsLevel2" parent="NodHeavyWeapons">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="NodHeavyWeaponsLevel3" parent="NodHeavyWeapons">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="NodVehiclesArmorsLevel1" parent="NodVehiclesArmors">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="NodVehiclesArmorsLevel2" parent="NodVehiclesArmors">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="NodVehiclesArmorsLevel3" parent="NodVehiclesArmors">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="NodTiberiumInfusion" parent="Nod">
+        <EffectArrayTemplate Operation="AddBaseMultiply" Reference="Unit,^ParamId^,Speed" Value="0.235"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeMax" Value="10"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeStart" Value="10"/>
+        <AffectedUnitArray value="NodMilitant"/>
+        <AffectedUnitArray value="NodMilitantRocket"/>
+        <AffectedUnitArray value="NodConfessor"/>
+        <AffectedUnitArray value="NodFanatic"/>
+    </CUpgrade>
+    <CUpgrade id="NodCyberneticLegs" parent="Nod">
+        <EffectArrayTemplate Operation="AddBaseMultiply" Reference="Unit,^ParamId^,Speed" Value="0.3"/>
+        <AffectedUnitArray value="NodSaboteur"/>
+        <AffectedUnitArray value="NodEnlightened"/>
+        <AffectedUnitArray value="NodTiberiumTrooper"/>
+        <AffectedUnitArray value="NodBlackHand"/>
+    </CUpgrade>
+    <CUpgrade id="NodTiberiumCoreMissiles" parent="Nod">
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Options[Hidden]" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Options[Disabled]" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^U,Options[Hidden]" Value="0"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^U,Options[Disabled]" Value="0"/>
+        <AffectedUnitArray value="NodBike"/>
+        <AffectedUnitArray value="NodMantis"/>
+        <AffectedUnitArray value="NodStealthTank"/>
+        <AffectedUnitArray value="NodMissileTurret"/>
+    </CUpgrade>
+    <CUpgrade id="NodPurifyingFlames" parent="Nod">
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Options[Hidden]" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Options[Disabled]" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^U,Options[Hidden]" Value="0"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^U,Options[Disabled]" Value="0"/>
+        <AffectedUnitArray value="NodBlackHand"/>
+        <AffectedUnitArray value="NodFlameTank"/>
+        <AffectedUnitArray value="NodAvatar"/>
+        <AffectedUnitArray value="NodPurifier"/>
+        <AffectedUnitArray value="NodRedeemer"/>
+    </CUpgrade>
+    <CUpgrade id="NodLaserCapacitors" parent="Nod">
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Options[Hidden]" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Options[Disabled]" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^U,Options[Hidden]" Value="0"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^U,Options[Disabled]" Value="0"/>
+        <AffectedUnitArray value="NodScorpionTank"/>
+    </CUpgrade>
+    <!-- <CUpgrade id="NodExplosiveDamage" parent="Nod">
+        <AffectedUnitArray value="NodSaboteur"/>
+        <AffectedUnitArray value="NodShadow"/>
+        <AffectedUnitArray value="NodCommando"/>
+    </CUpgrade>
+    <CUpgrade id="NodChargedParticleBeams" parent="Nod">
+        <AffectedUnitArray value="NodMilitant"/>
+        <AffectedUnitArray value="NodConfessor"/>
+        <AffectedUnitArray value="NodShadow"/>
+        <AffectedUnitArray value="NodAwakened"/>
+        <AffectedUnitArray value="NodEnlightened"/>
+        <AffectedUnitArray value="NodShredderTurret"/>
+        <AffectedUnitArray value="NodVenom"/>
+        <AffectedUnitArray value="NodVertigo"/>
+        <AffectedUnitArray value="NodRedeemer"/>
+    </CUpgrade> -->
+    <CUpgrade id="NodDozerBlades" parent="Nod">
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="2"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^Pushing,LifeArmor" Value="2"/>
+        <AffectedUnitArray value="NodScorpionTank"/>
+        <AffectedUnitArray value="NodReckoner"/>
+    </CUpgrade>
+    <CUpgrade id="NodLaserFencing" parent="Nod">
+        <AffectedUnitArray value="NodConstructionYard"/>
+        <AffectedUnitArray value="NodOperationsCenter"/>
+        <AffectedUnitArray value="NodCrane"/>
+        <AffectedUnitArray value="NodTiberiumRefinery"/>
+        <AffectedUnitArray value="NodHand"/>
+        <AffectedUnitArray value="NodWarFactory"/>
+        <AffectedUnitArray value="NodAirTower"/>
+        <AffectedUnitArray value="NodChemicalPlant"/>
+        <AffectedUnitArray value="NodTemple"/>
+        <AffectedUnitArray value="NodShrine"/>
+        <AffectedUnitArray value="NodTechLab"/>
+    </CUpgrade>
+    <CUpgrade id="NodQuadTurrets" parent="Nod">
+        <AffectedUnitArray value="NodTurretsHub"/>
+    </CUpgrade>
+    <CUpgrade id="NodRaiderEMPCoils" parent="Nod">
+        <AffectedUnitArray value="NodRaider"/>
+    </CUpgrade>
+    <CUpgrade id="NodDisruptionPods" parent="Nod">
+        <AffectedUnitArray value="NodVertigo"/>
+    </CUpgrade>
+    <CUpgrade id="NodSignatureGenerators" parent="Nod">
+        <AffectedUnitArray value="NodVenom"/>
+    </CUpgrade>
+    <CUpgrade id="NodAdvisor">
+        <Icon value="Assets\Icons\factions\faction-tw-nod.dds"/>
+        <Alert value=""/>
+        <Race value="Nod"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranAllyBaseUnderAttack,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_AllyUndAttack"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranAllyUnderAttack,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_AllyUndAttack"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranBaseUnderAttack,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_BaseAttacked"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranBuildError,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranCalldownLaunch,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_WarnNWarhLaun"/>
+        <EffectArray Operation="Set" Reference="Sound,SCV_CantBuildAlert,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCantBuildOnThat,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCantBuildTooCloseToCreepSource_Terr,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCantBuildTooCloseToDropOff,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCouldntReachTarget_Terr,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCantBuildTooCloseToResources,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranEconomyUnderAttack,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_HarvUndAttack"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCantBuildTooFarFromWater,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranForcesUnderAttack,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_UnitUndAttack"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCantFinishBuildingLocationBlocked,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdCantSeeBuildLocation,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranNeedMoreMinerals,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsufficFunds"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranNeedMoreGas,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsufficFunds"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdNotEnoughVespene,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsufficFunds"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranResearchComplete,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_UpgradeComple"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranUpgradeComplete,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_UpgradeComple"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdNotEnoughMinerals,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsufficFunds"/>
+        <EffectArray Operation="Set" Reference="Sound,SCV_CantBuildAlert,AssetArray[1].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,SCV_CantBuildAlert,AssetArray[2].File" Value="Assets\Sounds\Nod\Neva_NoComply"/>
+        <EffectArray Operation="Set" Reference="Sound,SCV_AlertJobFinished,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_ConComplete"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_GamePaused_Terr,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_BattConTermin"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_GameResumed_Terr,AssetrrayA[0].File" Value="Assets\Sounds\Nod\Neva_EstablishingB"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdNotEnoughEnergy,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_LowPower"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranNotEnoughEnergy,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_LowPower"/>
+        <!--        <EffectArray Operation="Set" Reference="Sound,Alert_TerranPlaceOnVespeneGeyser,AssetArray[0].File" Value="Assets\Sounds\Nod\____"/>-->
+        <!--        <EffectArray Operation="Set" Reference="Sound,Alert_TerranVespeneGeyserExhausted,AssetArray[0].File" Value="Assets\Sounds\Nod\____"/>-->
+        <!--        <EffectArray Operation="Set" Reference="Sound,Alert_TerranMineralsDepleted,AssetArray[0].File" Value="Assets\Sounds\Nod\____"/>-->
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranAtMaximumSupply,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsuffCommand"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranMaxSupply,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsuffCommand"/>
+        <EffectArray Operation="Set" Reference="Sound,e_cmdNotEnoughFood,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsuffCommand"/>
+        <EffectArray Operation="Set" Reference="Sound,Alert_TerranNeedMoreFood,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsuffCommand"/>
+        <EffectArray Operation="Set" Reference="Sound,Adjutant_NotEnoughFoodPreview,AssetArray[0].File" Value="Assets\Sounds\Nod\Neva_InsuffCommand"/>
+        <EditorCategories value="Race:UED,UpgradeType:Talents"/>
+    </CUpgrade>
+</Catalog>

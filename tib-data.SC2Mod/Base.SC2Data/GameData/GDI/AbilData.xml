@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilHarvest id="GDIHarvest" parent="SCVHarvest">
+        <ResourceAmountMultiplier index="Minerals" value="4"/>
+        <ResourceAmountMultiplier index="Vespene" value="4"/>
+        <ResourceAmountMultiplier index="Terrazine" value="4"/>
+        <!--        <ResourceTimeMultiplier index="Minerals" value="3.25"/>-->
+        <!--        <ResourceTimeMultiplier index="Vespene" value="3.25"/>-->
+        <!--        <ResourceTimeMultiplier index="Terrazine" value="3.25"/>-->
+        <ResourceTimeMultiplier index="Minerals" value="3.55"/>
+        <ResourceTimeMultiplier index="Vespene" value="3.55"/>
+        <ResourceTimeMultiplier index="Terrazine" value="3.55"/>
+    </CAbilHarvest>
+    <CAbilHarvest id="GDIMARVHarvest" parent="SCVHarvest">
+        <ResourceAmountMultiplier index="Minerals" value="4"/>
+        <ResourceAmountMultiplier index="Vespene" value="4"/>
+        <ResourceAmountMultiplier index="Terrazine" value="4"/>
+        <!--        <ResourceTimeMultiplier index="Minerals" value="3.25"/>-->
+        <!--        <ResourceTimeMultiplier index="Vespene" value="3.25"/>-->
+        <!--        <ResourceTimeMultiplier index="Terrazine" value="3.25"/>-->
+        <ResourceTimeMultiplier index="Minerals" value="3.55"/>
+        <ResourceTimeMultiplier index="Vespene" value="3.55"/>
+        <ResourceTimeMultiplier index="Terrazine" value="3.55"/>
+    </CAbilHarvest>
+    <CAbilBuild id="GDIBuild">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <InfoArray index="Build1" Unit="GDIPowerPlant" Time="30"><Button DefaultButtonFace="GDIPowerPlant" /></InfoArray>
+        <InfoArray index="Build2" Unit="GDIRefinery" Time="100"><Button DefaultButtonFace="GDIRefinery" /></InfoArray>
+        <InfoArray index="Build4" Unit="GDIBarracks" Time="65"><Button DefaultButtonFace="GDIBarracks"  Requirements="BuildGDIBarracks" /></InfoArray>
+        <InfoArray index="Build5" Unit="GDICommandPost" Time="35"><Button DefaultButtonFace="GDICommandPost"  Requirements="BuildGDICommandPost" /></InfoArray>
+        <InfoArray index="Build6" Unit="GDIWarFactory" Time="60"><Button DefaultButtonFace="GDIWarFactory"  Requirements="BuildGDIWarFactory" /></InfoArray>
+        <InfoArray index="Build7" Unit="GDIAirfield" Time="50"><Button DefaultButtonFace="GDIAirfield"  Requirements="BuildGDIAirfield" /></InfoArray>
+        <InfoArray index="Build8" Unit="GDIArmoury" Time="50"><Button DefaultButtonFace="GDIArmoury"  Requirements="BuildGDIArmoury" /></InfoArray>
+        <InfoArray index="Build9" Unit="GDITechCenter" Time="50"><Button DefaultButtonFace="GDITechCenter"  Requirements="BuildGDITechCenter" /></InfoArray>
+        <InfoArray index="Build10" Unit="GDISpaceCommandUplink" Time="50"><Button DefaultButtonFace="GDISpaceCommandUplink"  Requirements="BuildGDISpaceCommandUplink" /></InfoArray>
+        <InfoArray index="Build11" Unit="GDICrane" Time="50"><Button DefaultButtonFace="GDICrane" /></InfoArray>
+        <ConstructionMover value="Construction"/>
+    </CAbilBuild>
+    <CAbilBuild id="GDIBuildAdvanced">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <ConstructionMover value="Construction"/>
+        <InfoArray index="Build1" Unit="GDIReclamatorHub" Time="50"><Button DefaultButtonFace="GDIReclamatorHub" Requirements="BuildGDIReclamatorHub"/></InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="GDIBuildDefense">
+        <InfoArray index="Build1" Unit="GDISilo" Time="30"><Button DefaultButtonFace="GDISilo" Requirements="BuildGDISilo"/></InfoArray>
+        <InfoArray index="Build2" Unit="GDICombatSupportAirfield" Time="50"><Button DefaultButtonFace="GDICombatSupportAirfield" Requirements="BuildGDICombatSupportAirfield"/></InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="GDIBuildDefenseAdvanced">
+        <InfoArray index="Build1" Unit="GDIWatchtower" Time="50"><Button DefaultButtonFace="GDIWatchtower" Requirements="BuildGDIWatchtower"/></InfoArray>
+        <InfoArray index="Build2" Unit="GDIGuardianTower" Time="50"><Button DefaultButtonFace="GDIGuardianTower" Requirements="BuildGDIGuardianTower"/></InfoArray>
+        <InfoArray index="Build3" Unit="GDIAABattery" Time="50"><Button DefaultButtonFace="GDIAABattery" Requirements="BuildGDIAABattery"/></InfoArray>
+        <InfoArray index="Build4" Unit="GDISonicEmitter" Time="50"><Button DefaultButtonFace="GDISonicEmitter" Requirements="BuildGDISonicEmitter"/></InfoArray>
+        <InfoArray index="Build5" Unit="GDIIonCannon" Time="50"><Button DefaultButtonFace="GDIIonCannon" Requirements="BuildGDIIonCannon"/></InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="GDIRiflemanBuild">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <InfoArray index="Build1" Unit="GDIFoxHole" Time="30"><Button DefaultButtonFace="GDIFoxHole" /></InfoArray>
+        <ConstructionMover value="Construction"/>
+    </CAbilBuild>
+    <CAbilTrain id="GDIConstructionYardTrain">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <Range value="5"/>
+        <InfoArray index="Train1" Time="17">
+            <Button DefaultButtonFace="GDISurveyor"/>
+            <Unit value="GDISurveyor"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="GDIRefineryTrain">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <Alert value="TrainWorkerComplete"/>
+        <Range value="5"/>
+        <InfoArray index="Train1" Time="34">
+            <Button DefaultButtonFace="GDIHarvester"/>
+            <Unit value="GDIHarvester"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="GDIBarracksTrain">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <Range value="5"/>
+        <InfoArray index="Train1" Time="30">
+            <Button DefaultButtonFace="GDIRifleman"/>
+            <Unit value="GDIRifleman"/>
+            <Unit value="GDIRifleman"/>
+            <Unit value="GDIRifleman"/>
+            <Unit value="GDIRifleman"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="30">
+            <Button DefaultButtonFace="GDIMissileTrooper"/>
+            <Unit value="GDIMissileTrooper"/>
+            <Unit value="GDIMissileTrooper"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="30">
+            <Button DefaultButtonFace="GDICombatEngineer" Requirements="TrainGDICombatEngineer"/>
+            <Unit value="GDICombatEngineer"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="35">
+            <Button DefaultButtonFace="GDIGrenadier" Requirements="TrainGDIGrenadier"/>
+            <Unit value="GDIGrenadier"/>
+            <Unit value="GDIGrenadier"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="40">
+            <Button DefaultButtonFace="GDISniper" Requirements="TrainGDISniper"/>
+            <Unit value="GDISniper"/>
+            <Unit value="GDISniper"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="45">
+            <Button DefaultButtonFace="GDIZoneTrooper" Requirements="TrainGDIZoneTrooper"/>
+            <Unit value="GDIZoneTrooper"/>
+            <Unit value="GDIZoneTrooper"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="45">
+            <Button DefaultButtonFace="GDIZoneRaider" Requirements="TrainGDIZoneRaider"/>
+            <Unit value="GDIZoneRaider"/>
+            <Unit value="GDIZoneRaider"/>
+        </InfoArray>
+        <InfoArray index="Train8" Time="60">
+            <Button DefaultButtonFace="GDICommando" State="Restricted" Requirements="TrainGDICommando"/>
+            <Unit value="GDICommando"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="GDIWarFactoryTrain">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Building"/>
+        <InfoArray index="Train1" Time="45"><Button DefaultButtonFace="GDIAPC" Requirements="TrainGDIAPC"/><Unit value="GDIAPC"/></InfoArray>
+        <InfoArray index="Train2" Time="40"><Button DefaultButtonFace="GDIPitBull" Requirements="TrainGDIPitBull"/><Unit value="GDIPitBull"/></InfoArray>
+        <InfoArray index="Train3" Time="40"><Button DefaultButtonFace="GDIPredator" Requirements="TrainGDIPredator"/><Unit value="GDIPredator"/></InfoArray>
+        <InfoArray index="Train4" Time="40"><Button DefaultButtonFace="GDIWolverine" Requirements="TrainGDIWolverine"/><Unit value="GDIWolverine"/></InfoArray>
+        <InfoArray index="Train5" Time="40"><Button DefaultButtonFace="GDITitan" Requirements="TrainGDITitan"/><Unit value="GDITitan"/></InfoArray>
+        <InfoArray index="Train6" Time="40"><Button DefaultButtonFace="GDISlingshot" Requirements="TrainGDISlingshot"/><Unit value="GDISlingshot"/></InfoArray>
+        <InfoArray index="Train7" Time="40"><Button DefaultButtonFace="GDIShatterer" Requirements="TrainGDIShatterer"/><Unit value="GDIShatterer"/></InfoArray>
+        <InfoArray index="Train8" Time="40"><Button DefaultButtonFace="GDIMammoth" Requirements="TrainGDIMammoth"/><Unit value="GDIMammoth"/></InfoArray>
+        <InfoArray index="Train9" Time="40"><Button DefaultButtonFace="GDIJuggernaut" Requirements="TrainGDIJuggernaut"/><Unit value="GDIJuggernaut"/></InfoArray>
+        <InfoArray index="Train10" Time="40"><Button DefaultButtonFace="GDIRig" Requirements="TrainGDIRig"/><Unit value="GDIRig"/></InfoArray>
+        <InfoArray index="Train11" Time="40"><Button DefaultButtonFace="GDIMCV" Requirements="TrainGDIMCV"/><Unit value="GDIMCV"/></InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="GDIWarFactoryTrainAdvanced">
+        <InfoArray index="Train1" Time="40"><Button DefaultButtonFace="GDIMARV" Requirements="TrainGDIMARV"/><Unit value="GDIMARV"/></InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="GDIAirfieldTrain">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <InfoArray index="Train1" Time="45"><Button DefaultButtonFace="GDIOrca" Requirements="TrainGDIOrca"/><Unit value="GDIOrca"/></InfoArray>
+        <InfoArray index="Train2" Time="40"><Button DefaultButtonFace="GDIHammerHead" Requirements="TrainGDIHammerHead"/><Unit value="GDIHammerHead"/></InfoArray>
+        <InfoArray index="Train3" Time="40"><Button DefaultButtonFace="GDIFirehawk" Requirements="TrainGDIFirehawk"/><Unit value="GDIFirehawk"/></InfoArray>
+        <InfoArray index="Train4" Time="40"><Button DefaultButtonFace="GDIOx" Requirements="TrainGDIOx"/><Unit value="GDIOx"/></InfoArray>
+    </CAbilTrain>
+    <CAbilBuild id="GDIDigIn">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilBuild>
+    <CAbilEffectTarget id="GDIEMPGrenade">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDISpotLocation">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIJetpack">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDICommandoC4">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="GDIAdaptiveArmor">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="GDIAPCRepair">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIAPCMinefield">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIJuggernautBombardArea">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIShattererOverloadBeam">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="GDIAABatteryTungstenShells">
+        <AbilSetId value="Tung"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="GDITungstenShells" Requirements="UseGDIAABatteryTungstenShells">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="GDILongRangeShells">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
+        <BehaviorArray value="GDITungstenShells"/>
+    </CAbilBehavior>
+    <CAbilBehavior id="GDISlingshotTungstenShells">
+        <AbilSetId value="Tung"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="GDITungstenShells" Requirements="UseGDISlingshotTungstenShells">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="GDILongRangeShells">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
+        <BehaviorArray value="GDITungstenShells"/>
+    </CAbilBehavior>
+    <CAbilEffectInstant id="GDIOrcaPulseScan">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="GDIOrcaSensorPods">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="GDIFirehawkAGLoadout">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GDIFirehawkAALoadout">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="GDIFirehawkStratofighterBoosters">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIWarFactoryRepair">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIRadarScan">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDISpaceCommandUplinkDropPods">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIShockwaveArtillery">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDISupersonicAirAttack">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIOrbitalStrike">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIIonCannon">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDIRailgunAccelerators">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GDISonicRepulsionField">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilMorphPlacement id="GDIMCVDeploy" unit="GDIConstructionYard">
+        <Name value="Abil/Name/GDIMCVDeploy"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DeployD"/>
+        <InfoArray index="0" Unit="GDIConstructionYard" CollideRange="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="0.5"/>
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="GDIMCVPack">
+        <AbilSetId value="Unsieged"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GDIMCVPack">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="IgnoreFacing" value="1"/>
+        <InfoArray Unit="GDIMCV" RandomDelayMax="0.5">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorphPlacement id="GDISurveyorDeploy" unit="GDIOutpost">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GDISurveyorDeploy"/>
+        <InfoArray index="0" Unit="GDIOutpost" CollideRange="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="40"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="0.5"/>
+                <DurationArray index="Duration" value="40"/>
+            </SectionArray>
+        </InfoArray>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="IgnoreCollision" value="0"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Alert value="BuildComplete"/>
+    </CAbilMorphPlacement>
+    <CAbilMorphPlacement id="GDIRigDeploy" unit="GDIBattleBase">
+        <Name value="Abil/Name/GDIMCVDeploy"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GDIRigDeploy"/>
+        <InfoArray index="0" Unit="GDIBattleBase" CollideRange="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="0.5"/>
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="GDIBattleBasePack">
+        <AbilSetId value="Unsieged"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GDIBattleBasePack">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="IgnoreFacing" value="1"/>
+        <InfoArray Unit="GDIRig" RandomDelayMax="0.5">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="3.5417"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="GDIPowerPlantAdvancedTurbines">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+        <EditorCategories value="Race:Nod,AbilityorEffectType:Units"/>
+        <Alert value="PowerPlantUpgradeComplete"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GDIPowerPlantAdvancedTurbines" Requirements="UseGDIPowerPlantAdvancedTurbines"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="Interruptible" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <InfoArray Score="1" Unit="GDIPowerPlantUpgraded">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="20"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="20"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="20"/>
+            </SectionArray>
+        </InfoArray>
+        <Activity value="UI/Upgrading"/>
+    </CAbilMorph>
+    <CAbilResearch id="GDIArmyResearch">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="160" Upgrade="GDILightWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GDILightWeaponsLevel0" Requirements="LearnGDILightWeaponsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="190" Upgrade="GDILightWeaponsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="GDILightWeaponsLevel2" Requirements="LearnGDILightWeaponsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="220" Upgrade="GDILightWeaponsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="GDILightWeaponsLevel3" Requirements="LearnGDILightWeaponsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="160" Upgrade="GDIInfantryArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GDIInfantryArmorsLevel1" Requirements="LearnGDIInfantryArmorsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="190" Upgrade="GDIInfantryArmorsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="GDIInfantryArmorsLevel2" Requirements="LearnGDIInfantryArmorsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="220" Upgrade="GDIInfantryArmorsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="GDIInfantryArmorsLevel3" Requirements="LearnGDIInfantryArmorsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="160" Upgrade="GDIHeavyWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GDIHeavyWeaponsLevel1" Requirements="LearnGDIHeavyWeaponsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="190" Upgrade="GDIHeavyWeaponsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="GDIHeavyWeaponsLevel2" Requirements="LearnGDIHeavyWeaponsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="220" Upgrade="GDIHeavyWeaponsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="GDIHeavyWeaponsLevel3" Requirements="LearnGDIHeavyWeaponsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="160" Upgrade="GDIVehiclesArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GDIVehiclesArmorsLevel1" Requirements="LearnGDIVehiclesArmorsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="190" Upgrade="GDIVehiclesArmorsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="GDIVehiclesArmorsLevel2" Requirements="LearnGDIVehiclesArmorsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="220" Upgrade="GDIVehiclesArmorsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="GDIVehiclesArmorsLevel3" Requirements="LearnGDIVehiclesArmorsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research13" Time="160" Upgrade="GDIExplosiveWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GDIHeavyWeaponsLevel1" Requirements="LearnGDIHeavyWeaponsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research14" Time="190" Upgrade="GDIExplosiveWeaponsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="GDIHeavyWeaponsLevel2" Requirements="LearnGDIHeavyWeaponsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research15" Time="220" Upgrade="GDIExplosiveWeaponsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="GDIHeavyWeaponsLevel3" Requirements="LearnGDIHeavyWeaponsLevel3"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="GDIUpgradesCache">
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="45" Upgrade="GDIOrcaSensorPods">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodTiberiumInfusion" Requirements="LearnNodTiberiumInfusion"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="45" Upgrade="GDIZoneScannerPacks">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodCyberneticLegs" Requirements="LearnNodCyberneticLegs"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="45" Upgrade="GDIFirehawkStratofighterBoosters">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodSignatureGenerators" Requirements="LearnNodSignatureGenerators"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="45" Upgrade="GDIHardpoints">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodQuadTurrets" Requirements="LearnNodQuadTurrets"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="45" Upgrade="GDITiberiumFieldSuits">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodRaiderEMPCoils" Requirements="LearnNodRaiderEMPCoils"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="45" Upgrade="GDIEMPGrenades">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodDisruptionPods" Requirements="LearnNodDisruptionPods"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="45" Upgrade="GDIZonePowerPacks">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodTiberiumCoreMissiles" Requirements="LearnNodTiberiumCoreMissiles"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="45" Upgrade="GDIRailguns">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodLaserCapacitors" Requirements="LearnNodLaserCapacitors"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="45" Upgrade="GDIPitbullMortars">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodPurifyingFlames" Requirements="LearnNodPurifyingFlames"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="45" Upgrade="GDITungstenShells">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodChargedParticleBeams" Requirements="LearnNodChargedParticleBeams"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="45" Upgrade="GDIAdaptiveArmour">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodExplosiveDamage" Requirements="LearnNodExplosiveDamage"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="45" Upgrade="GDIZoneShatterer">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodLaserFencing" Requirements="LearnNodLaserFencing"/>
+        </InfoArray>
+        <InfoArray index="Research13" Time="45" Upgrade="GDIBehemoth">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="NodDozerBlades" Requirements="LearnNodDozerBlades"/>
+        </InfoArray>
+    </CAbilResearch>
+</Catalog>

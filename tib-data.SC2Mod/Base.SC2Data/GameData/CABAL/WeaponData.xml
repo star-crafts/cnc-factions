@@ -1,0 +1,671 @@
+<Catalog>
+    <CWeaponLegacy default="1" id="CABALWeapon">
+        <?token id="icon" value="infantryweapons"?>
+        <EditorCategories value="Race:CABAL"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-##icon##level0.dds"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALFlameTankFlamethrower" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALFlameTankFlamethrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1"/>
+        <Effect value="CABALFlameTankFlamethrowerSet"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALFlameTankFlamethrowerBlue" parent="CABALWeapon">
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALFlameTankFlamethrowerDamageBlue"/>
+        <TargetFilters value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1"/>
+        <Effect value="CABALFlameTankFlamethrowerSetBlue2"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSalmanderFlamethrower" parent="CABALWeapon" icon="vehicleweapons">
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="LiquidweaponDummyWeapon"/>
+        <TargetFilters value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="2"/>
+        <Range value="2"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.5"/>
+        <Effect value="LiquidTibSetWeapon"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALBlackHandFlamethrower" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALBlackHandFlameThrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.5"/>
+        <Effect value="CABALBlackHandFlameThrowerSet"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALBikeWeapon" parent="CABALWeapon" icon="NodHeavyWeapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALBikeWeaponDamage"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="2.8"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALBikeWeapon@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALScorpionLaser" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALScorpionBeamDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <Period value="4"/>
+        <Effect value="CABALScorpionBeamDamage"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSpecterWeapon" parent="CABALWeapon">
+        <DisplayEffect value="NodSpecterDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Arc value="30"/>
+        <Range value="13"/>
+        <Period value="5"/>
+        <Effect value="NodSpecterLaunchMissile"/>
+        <DamagePoint value="4"/>
+        <Backswing value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSpecterWeaponUpgrade" parent="CABALWeapon">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <DisplayEffect value="NodSpecterDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="13"/>
+        <Period value="6"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="CABALSpecterWeaponUpgrade"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALEnlightenedWeapon" parent="CABALWeapon">
+        <DisplayEffect value="EnlightenedDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.8"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="EnlightenedLaunchMissile"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALArtillery" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodArtilleryDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Period value="7"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="NodArtilleryWeaponLaunch"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALCommandoWeaponU" parent="CABALWeapon">
+        <Options index="Hidden" value="1"/>
+        <DisplayEffect value="NodCommandoWeaponUpgradedDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.76"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="CC3CommaWeaponCPUpgrade"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALAwakenWeapon" parent="CABALWeapon">
+        <DisplayEffect value="GideonAwakenDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.7"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="GideonAwakenLaunchMissile"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSaintHCWeapon" parent="CABALWeapon">
+        <DisplayEffect value="NodEideonSaintHCShockwaveDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="0.7"/>
+        <Effect value="NodEideonSaintHCShockwaveDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALStealthRocket" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALStealthRocketDamage"/>
+        <DisplayAttackCount value="5"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="4"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALStealthRocketCreatePersistentNod"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSlaveFusionCutter" parent="CABALWeapon">
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+        <Range value="0.2"/>
+        <Period value="1.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALCenturionWeapon" parent="CABALWeapon">
+        <DisplayEffect value="CABALCenturionWeaponDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.8"/>
+        <Effect value="CABALCenturionWeaponDamage"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALCobraLaser" parent="CABALWeapon">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CobraDamageLaser"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Effect value="CobraDamageLaser"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALAwakenLaser" parent="CABALWeapon">
+        <Options index="Disabled" value="1"/>
+        <DisplayEffect value="GideonAwakenWeaponDamageLaser"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="9.9975"/>
+        <Period value="1.7"/>
+        <Effect value="GideonAwakenWeaponDamageLaser"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALReaperWeaponUpgrade" parent="CABALWeapon">
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALReaperShockwaveDamageUp"/>
+        <TargetFilters value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.6"/>
+        <Effect value="CABALReaperShockwaveDamageUp"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponStrafe id="CABALInterceptorBeam">
+        <DisplayEffect value="PulseCannonDamageNod"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="2"/>
+        <TeleportResetRange value="0"/>
+        <Arc value="19.6875"/>
+        <Period value="1.5"/>
+    </CWeaponStrafe>
+    <CWeaponLegacy id="CABALIncineratorWeapon" parent="CABALWeapon">
+        <DisplayEffect value="CABALIncineratorWeaponDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1"/>
+        <Effect value="CABALIncineratorBeamCP"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALOffenseCrawlerLaser" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALOffenseCrawlerLaserDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <Period value="4"/>
+        <Effect value="CABALOffenseCrawlerLaserCP"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALViperTurretWeaponO" parent="CABALWeapon">
+        <DisplayEffect value="CABALViperTurretWeaponDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.04"/>
+        <Effect value="CABALViperTurretWeaponDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALWidowLaser" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALWidowLaserDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="19.995"/>
+        <Period value="3"/>
+        <Effect value="CABALWidowLaserDamage"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALAftershockWeapon" parent="CABALWeapon">
+        <DisplayEffect value="earthquakeDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Arc value="360"/>
+        <Period value="7"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="EarthquakeCP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALUnderminerWeapon" parent="CABALWeapon">
+        <DisplayEffect value="UnderminerAttack"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Period value="3"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="UnderminerAttackCP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSpiderWeapon" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALSpiderWeaponDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TeleportResetRange value="0"/>
+        <Period value="3.5"/>
+        <Effect value="CABALSpiderWeaponDamage"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALMarauderWeapon" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALMarauderDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Period value="1.8"/>
+        <Effect value="CABALMarauderDamage"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALBasiliskWeapon" parent="CABALWeapon" icon="vehicleweapons">
+        <DisplayEffect value="HCShockwaveDamage2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="3"/>
+        <Effect value="HCShockwaveDamage2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALInterceptorLaunch" parent="CABALWeapon" icon="InterceptorIcon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="Carrier"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <Period value="3"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="InterceptorLaunchPersistent"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALLeviathanMissile1" parent="CABALWeapon">
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="LeviathanLiquidTibDamage"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Effect value="CABALLeviathanLaunchMissile"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALLeviathanMissile2" parent="CABALWeapon">
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="LeviathanLiquidTibDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Effect value="CABALLeviathanLaunchMissile2"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALLeviathanMissile3" parent="CABALWeapon">
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="LeviathanLiquidTibDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Effect value="CABALLeviathanLaunchMissile3"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALMedusaWeaponS" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALMedusaWeaponSBeamDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <TeleportResetRange value="0"/>
+        <Period value="0.5"/>
+        <Effect value="CABALMedusaWeaponSBeam"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALCommandoWeapon" parent="CABALWeapon">
+        <DisplayEffect value="CABALCommandoShockwaveDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.75"/>
+        <Effect value="CABALCommandoShockwaveDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALReaperWeapon" parent="CABALWeapon">
+        <DisplayEffect value="CABALReaperShockwaveDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.6"/>
+        <Effect value="CABALReaperShockwaveDamage"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSalamanderRocket" parent="CABALWeapon" >
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALSalamanderRocketDamage"/>
+        <DisplayAttackCount value="8"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALSalamanderocketCreatePersistentNod"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSalamanderRocket2" parent="CABALWeapon" >
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALSalamanderRocketDamage"/>
+        <DisplayAttackCount value="8"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALSalamanderocketCreatePersistentNod2"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSalamanderRocket3" parent="CABALWeapon" >
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALSalamanderRocketDamage"/>
+        <DisplayAttackCount value="8"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALSalamanderocketCreatePersistentNod3"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSalamanderRocket4" parent="CABALWeapon" >
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALSalamanderRocketDamage"/>
+        <DisplayAttackCount value="8"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALSalamanderocketCreatePersistentNod4"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALDevoutWeapon" parent="CABALWeapon">
+        <DisplayEffect value="DevoutDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.06"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="DevoutWCP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALTyrantLaser" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="TyrantBeamDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <Period value="2.8"/>
+        <Effect value="TyrantBeamDamage"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALViperTurretWeapon" parent="CABALWeapon">
+        <DisplayEffect value="CABALViperTurretWeaponDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.04"/>
+        <Effect value="CABALViperTurretWeaponSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALMedusaChargeBeamBase" parent="CABALWeapon">
+        <DisplayEffect value="CABALMedusaChargeBeamBaseDamageCharge1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="2"/>
+        <ArcSlop value="39.9902"/>
+        <Period value="0.5"/>
+        <Backswing value="0.75"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALTwinObeliskDamage" parent="CABALWeapon">
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="CABALDefenseCrawlerCannon"/>
+        <TargetFilters value="Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <Period value="4"/>
+        <Effect value="CABALDefenseCrawlerCannon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALAvatar90mmCannons" parent="CABALWeapon">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="3"/>
+        <Effect value="AvatarWeaponSet"/>
+        <DisplayAttackCount value="5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALAvengerCannon" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.86"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALCommandoWeaponUpgrade" parent="CABALWeapon">
+        <DisplayEffect value="CABALCommandoShockwaveDamage2"/>
+        <TargetFilters value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="0.86"/>
+        <Effect value="CABALCommandoShockwaveDamage2"/>
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALCobraWeapon" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="90mmCannonsCobra"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="2"/>
+        <Effect value="90mmCannonsCobra"/>
+        <AllowedMovement value="Moving"/>
+        <Arc value="360"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALCrawlerRocket" parent="CABALWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALCrawlerRocketDamage"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="2.5"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALCrawlerRocketCreatePersistent"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALSalvatorWeapon" parent="CABALWeapon">
+        <DisplayEffect value="HCShockwaveDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.86"/>
+        <Effect value="HCShockwaveDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALVenomMissile" parent="CABALWeapon" icon="MissleStormUpgrade">
+        <DisplayEffect value="VenomAU"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="29.9926"/>
+        <Period value="2"/>
+        <Effect value="VenomA"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALAscendedMissile" parent="CABALWeapon" icon="MissleStormUpgrade">
+        <DisplayEffect value="CABALAscendedDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="29.9926"/>
+        <Period value="2"/>
+        <Effect value="CABALAscendedMissilePack"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALBikeRocket" parent="CABALWeapon" icon="NodHeavyWeapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodBikeWeaponDamage"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="2.8"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodBikeWeapon@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALMantisWeapon" parent="CABALWeapon" icon="vehicleweapons">
+        <DisplayEffect value="CABALMantisWeaponMissilePackDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="29.9926"/>
+        <Period value="1.4"/>
+        <Effect value="CABALMantisWeaponPack"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALHailstormMissilePodsO" parent="CABALWeapon" icon="vehicleweapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALHailstormMissilePodsDamage"/>
+        <DisplayAttackCount value="8"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALHailstormMissilePodsLaunchMissile"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALHailstormMissilePods" parent="CABALWeapon" icon="vehicleweapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALHailstormMissilePodsDamage"/>
+        <DisplayAttackCount value="8"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="HailstormMissilePodsCreatePersistentNod"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CABALStealthTankRocketLauncher" parent="CABALWeapon" icon="vehicleweapons">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="CABALStealthRocketDamage"/>
+        <DisplayAttackCount value="5"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <RangeSlop value="0"/>
+        <Period value="3"/>
+        <Backswing value="0.25"/>
+        <Effect value="CABALStealthRocketCreatePersistent"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+</Catalog>

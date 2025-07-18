@@ -1,0 +1,6 @@
+<Catalog>
+
+    <CModel id="SpawnCaster" parent="Unit">
+        <Model value="Assets\Buildings\Protoss\ShipGeneratorSmall\ShipGeneratorSmall.m3"/>
+    </CModel>
+</Catalog>

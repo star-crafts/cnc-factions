@@ -1,0 +1,39 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Red Alert
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+int libRED3_gv_chaowuPanel;
+int libRED3_gv_maintenancePanel;
+int libRED3_gv_chaowucommandpanel;
+int libRED3_gv_maintenancecommandpanel;
+unitgroup libRED3_gv_teleportationmarktarget;
+
+// Trigger Declarations
+trigger libRED3_gt_Initialattributesettingsforalliedplayers;
+trigger libRED3_gt_Charging;
+trigger libRED3_gt_InitialminecartsoundeffectSoviet;
+trigger libRED3_gt_InitialminecartsoundeffectEmpire;
+trigger libRED3_gt_InitialminecartsoundeffectShenzhou;
+trigger libRED3_gt_InitialminecartsoundeffectAllies;
+trigger libRED3_gt_Alliesbuildvoicetrigger;
+trigger libRED3_gt_EmpireBuildingVoiceTrigger;
+trigger libRED3_gt_Chinabuildsvoicetriggers;
+trigger libRED3_gt_NewConstrrctuionOptionsAvailable;
+trigger libRED3_gt_UnitlossChina;
+trigger libRED3_gt_UnitlossAllies;
+trigger libRED3_gt_UnitlossSoviet;
+trigger libRED3_gt_UnitlossEmpire;
+trigger libRED3_gt_Playercommanderrepairpanelsettings;
+trigger libRED3_gt_ActiveskillLightningStorm2;
+trigger libRED3_gt_ActiveskillLawknowingspecialskill;
+trigger libRED3_gt_AlliedRepairPanelSettings;
+trigger libRED3_gt_ChaowupanelUIproduction;
+trigger libRED3_gt_TimeandSpaceTeleportationSticky;
+trigger libRED3_gt_Clearthecoverafterteleportation;
+trigger libRED3_gt_Clearthecoveraftertheteleportationiscancelled;
+
+// Library Initialization
+void libRED3_InitVariables ();
+

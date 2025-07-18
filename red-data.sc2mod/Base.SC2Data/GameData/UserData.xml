@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUser id="Airports">
+        <Instances Id="Allied">
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing"/>
+            </Fixed>
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="-1.0998">
+                <Field Id="SlotsOffsetX" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="-1.0998">
+                <Field Id="SlotsOffsetX" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="0.7">
+                <Field Id="SlotsOffsetX" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="0.7">
+                <Field Id="SlotsOffsetX"/>
+            </Fixed>
+            <Fixed Fixed="1.7">
+                <Field Id="SlotsOffsetY"/>
+            </Fixed>
+            <Fixed Fixed="1.7">
+                <Field Id="SlotsOffsetY" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="-1.7">
+                <Field Id="SlotsOffsetY" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="-1.7">
+                <Field Id="SlotsOffsetY" Index="3"/>
+            </Fixed>
+            <Int Int="4">
+                <Field Id="Slots"/>
+            </Int>
+            <Unit Unit="AlliedAirport">
+                <Field Id="Airport"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Shenzou">
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing"/>
+            </Fixed>
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="1">
+                <Field Id="SlotsOffsetX"/>
+            </Fixed>
+            <Fixed Fixed="1">
+                <Field Id="SlotsOffsetX" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="-1">
+                <Field Id="SlotsOffsetX" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="-1">
+                <Field Id="SlotsOffsetX" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="2.2998">
+                <Field Id="SlotsOffsetY"/>
+            </Fixed>
+            <Fixed Fixed="-2.2998">
+                <Field Id="SlotsOffsetY" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="2.2998">
+                <Field Id="SlotsOffsetY" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="-2.2998">
+                <Field Id="SlotsOffsetY" Index="3"/>
+            </Fixed>
+            <Int Int="4">
+                <Field Id="Slots"/>
+            </Int>
+            <Unit Unit="ChinaAirport">
+                <Field Id="Airport"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Soviet">
+            <Fixed Fixed="1">
+                <Field Id="SlotsOffsetX"/>
+            </Fixed>
+            <Fixed Fixed="1">
+                <Field Id="SlotsOffsetX" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="-1">
+                <Field Id="SlotsOffsetX" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="-1">
+                <Field Id="SlotsOffsetX" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing"/>
+            </Fixed>
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="2.2998">
+                <Field Id="SlotsOffsetY"/>
+            </Fixed>
+            <Fixed Fixed="-2.2998">
+                <Field Id="SlotsOffsetY" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="-2.2998">
+                <Field Id="SlotsOffsetY" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="2.2998">
+                <Field Id="SlotsOffsetY" Index="3"/>
+            </Fixed>
+            <Int Int="4">
+                <Field Id="Slots"/>
+            </Int>
+            <Unit Unit="SovietAirport">
+                <Field Id="Airport"/>
+            </Unit>
+        </Instances>
+    </CUser>
+</Catalog>

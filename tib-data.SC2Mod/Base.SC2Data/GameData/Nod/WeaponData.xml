@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy default="1" id="NodWeapon">
+        <?token id="icon" value="NodLightWeapons"?>
+        <EditorCategories value="Race:Nod"/>
+        <Icon value="Assets\icons\Nod\##icon##.dds"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy default="1" id="RedeemerEquipmentWeapon" parent="NodWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <RangeSlop value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerThermalLances" parent="NodWeapon" icon="FXNod_LasersAddonUpgrade">
+        <DisplayEffect value="NodRedeemerThermalLancesDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByDistanceFromTarget"/>
+        <Range value="9"/>
+        <RangeSlop value="0"/>
+        <Arc value="29.9926"/>
+        <Period value="3.396"/>
+        <DamagePoint value="0.0832"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RedeemerLaser" parent="NodWeapon" icon="FXNod_LasersAddonUpgrade">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="RedeemerBeamDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="19.995"/>
+        <Period value="5"/>
+        <DamagePoint value="0.7"/>
+        <Effect value="RedeemerWeaponSet"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerRedemptionRight" parent="NodRedeemerThermalLances">
+        <Effect value="NodRedeemerThermalLances2"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerRedemptionLeft" parent="NodRedeemerThermalLances">
+        <Effect value="NodRedeemerThermalLances3"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerHeavyMachinegunRight" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerMachinegunDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1"/>
+        <Backswing value="0.75"/>
+        <Range value="7"/>
+        <Effect value="NodRedeemerMachinegunWCPR"/>
+        <DisplayAttackCount value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerHeavyMachinegunLeft" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerMachinegunDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1"/>
+        <Range value="7"/>
+        <Backswing value="0.75"/>
+        <Effect value="NodRedeemerMachinegunWCPL"/>
+        <DisplayAttackCount value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerTiberiumThrowerRight" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerTiberiumThrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Range value="6"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2"/>
+        <Effect value="NodRedeemerTiberiumThrowerSet_Right"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerTiberiumThrowerLeft" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerTiberiumThrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Range value="6"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2"/>
+        <Effect value="NodRedeemerTiberiumThrowerSet_Left"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerEMICannonRight" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerEMIDamageDummy"/>
+        <TargetFilters value="Ground,Mechanical,Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="180"/>
+        <Period value="5"/>
+        <Effect value="NodRedeemerAwakenEMPSetR"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerEMICannonLeft" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerEMIDamageDummy"/>
+        <TargetFilters value="Ground,Mechanical,Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="180"/>
+        <Period value="5"/>
+        <Effect value="NodRedeemerAwakenEMPSetL"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerRocketLauncherRight" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerRocketDamage"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="180"/>
+        <Period value="1.7"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodRedeemerRocketCreatePersistentNodRight"/>
+        <MinScanRange value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerRocketLauncherLeft" parent="RedeemerEquipmentWeapon">
+        <DisplayEffect value="NodRedeemerRocketDamage"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="180"/>
+        <Period value="1.7"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodRedeemerRocketCreatePersistentNodLeft"/>
+        <MinScanRange value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodMilitantWeapon" parent="NodWeapon">
+        <DisplayEffect value="NodMilitantWeaponDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.81"/>
+        <DisplayAttackCount value="1"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="NodMilitantWCP"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodConfessorWeapon" parent="NodWeapon">
+        <DisplayEffect value="NodConfessorWeaponDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.4"/>
+        <DisplayAttackCount value="2"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="NodConfessorWeaponCP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodMilitantRocketWeapon" parent="NodWeapon" icon="NodHeavyWeapons">
+        <DisplayEffect value="NodMilitantRocketDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+        <Effect value="NodMilitantRocketMissilePackCP"/>
+        <MinScanRange value="6"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodFlameTankFlamethrower" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="NodFlameTankFlamethrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6"/>
+        <Range value="6"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1"/>
+        <Effect value="NodFlameTankFlamethrowerSet"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodFlameTankFlamethrowerU" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="NodFlameTankFlamethrowerUDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6"/>
+        <Range value="6"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1"/>
+        <Effect value="NodFlameTankFlamethrowerUSet"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodAvatarFlameThrower" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodAvatarFlameThrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="180"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.876"/>
+        <Backswing value="1"/>
+        <Effect value="NodAvatarFlameThrowerSet"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodAvatarFlameThrowerU" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodAvatarFlameThrowerUDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="180"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.876"/>
+        <Backswing value="1"/>
+        <Effect value="NodAvatarFlameThrowerUSet"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodPurifierFlameThrower" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="AvatarFlameThrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="180"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.876"/>
+        <Backswing value="1"/>
+        <Effect value="NodPurifierFlameThrowerSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodPurifierFlameThrowerU"  parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodPurifierFlameThrowerUDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="180"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.876"/>
+        <Backswing value="1"/>
+        <Effect value="NodPurifierFlameThrowerUSet"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodBlackHandFlamethrower" parent="NodWeapon" icon="NodHeavyWeapons">
+        <DisplayEffect value="NodBlackHandFlamethrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2"/>
+        <Effect value="NodBlackHandFlamethrowerSet"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodBlackHandFlamethrowerU"  parent="NodWeapon" icon="NodHeavyWeapons">
+        <DisplayEffect value="NodBlackHandFlamethrowerUDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2"/>
+        <Effect value="NodBlackHandFlamethrowerUSet"/>
+        <AllowedMovement value="Slowing"/>
+
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerFlamethrowerRight" parent="RedeemerEquipmentWeapon">
+        <Name value="Weapon/Name/NodRedeemerFlamethrower"/>
+        <DisplayEffect value="NodRedeemerFlamethrowerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Range value="6"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2"/>
+        <Effect value="NodRedeemerFlamethrowerRightSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerFlamethrowerLeft" icon="NodLightWeapons">
+        <Name value="Weapon/Name/NodRedeemerFlamethrower"/>
+        <EditorCategories value="Race:Nod"/>
+        <Tip value="Weapon/Tip/NodRedeemerFlamethrowerRight"/>
+        <Icon value="Assets\icons\Nod\NodLightWeapons.dds"/>
+        <DisplayEffect value="NodRedeemerFlamethrowerDamage"/>
+        <DisplayName value="Weapon/Name/NodRedeemerFlamethrowerRight"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Range value="6"/>
+        <Marker Link="Weapon/NodRedeemerFlamethrowerRight">
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Cost>
+            <Cooldown Link="Weapon/NodRedeemerFlamethrowerRight"/>
+        </Cost>
+        <Period value="2"/>
+        <Effect value="NodRedeemerFlamethrowerLeftSet"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerFlamethrowerLeftU" parent="NodRedeemerFlamethrowerRight">
+        <Name value="Weapon/Name/NodRedeemerFlamethrowerU"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <DisplayEffect value="NodRedeemerFlamethrowerUDamage"/>
+        <Effect value="NodRedeemerFlamethrowerLeftUSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRedeemerFlamethrowerRightU" parent="NodRedeemerFlamethrowerRight">
+        <Name value="Weapon/Name/NodRedeemerFlamethrowerU"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <DisplayEffect value="NodRedeemerFlamethrowerUDamage"/>
+        <Effect value="NodRedeemerFlamethrowerRightUSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodShadowPistol" parent="NodWeapon">
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Range value="6"/>
+        <Period value="1.2"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0.75"/>
+        <Effect value="NodShadowPistolSet"/>
+        <DisplayEffect value="NodShadowPistolDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodAvatarLaser" parent="NodWeapon">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodAvatarLaserDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="11.997"/>
+        <Period value="4"/>
+        <Backswing value="2"/>
+        <Effect value="NodAvatarLaserDamage"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodAvatarBeamCannon" parent="NodWeapon">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodAvatarBeamCannonDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <TeleportResetRange value="0"/>
+        <Period value="3"/>
+        <Effect value="NodAvatarBeamCannonDamage"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodPurifierLaser" parent="NodWeapon">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodAvatarBeamDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="11.997"/>
+        <Period value="4"/>
+        <Backswing value="2"/>
+        <Effect value="NodPurifierBeamDamage"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodArtilleryStructure" parent="NodWeapon">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodArtilleryDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Period value="3"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="NodArtilleryWeaponLaunch"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodLaserCannon" parent="NodWeapon">
+        <DisplayEffect value="NodLaserCannonDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="3.5"/>
+        <Effect value="NodLaserCannonDamage"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="0"/>
+        <AllowedMovement value="Moving"/>
+        <Arc value="360"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodObeliskWeaponNew" parent="NodWeapon">
+        <DisplayEffect value="NodObeliskWeaponNewDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="6"/>
+        <Effect value="NodObeliskWeaponNewDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodVertigoWeapon" parent="NodWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodVertigoweaponDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Effect value="NodVertigoweaponLaunchMissile"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodMantisWeapon" parent="NodWeapon" icon="NodHeavyWeapons">
+        <DisplayEffect value="NodMantisWeaponDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="29.9926"/>
+        <Period value="1.4"/>
+        <Effect value="NodMantisWeapon@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodBikeWeapon" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodBikeWeaponDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
+        <RangeSlop value="0"/>
+        <Period value="2.6"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodBikeWeapon@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodMissileTurretWeapon" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodMissileTurretWeaponDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
+        <RangeSlop value="0"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodMissileTurretWeapon@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodStealthTankWeapon" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodStealthTankWeaponDamage"/>
+        <DisplayAttackCount value="5"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <RangeSlop value="0"/>
+        <Period value="3"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodStealthTankWeapon@CP"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodMantisWeaponU" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <DisplayEffect value="NodMantisWeaponUDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="29.9926"/>
+        <Period value="1.4"/>
+        <Effect value="NodMantisWeaponU@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodBikeWeaponU" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodBikeWeaponUDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
+        <RangeSlop value="0"/>
+        <Period value="2.6"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodBikeWeaponU@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodMissileTurretWeaponU" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodMissileTurretWeaponUDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
+        <RangeSlop value="0"/>
+        <Period value="2"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodMissileTurretWeaponU@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodStealthTankWeaponU" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="NodStealthTankWeaponUDamage"/>
+        <DisplayAttackCount value="5"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <RangeSlop value="0"/>
+        <Period value="3"/>
+        <Backswing value="0.25"/>
+        <Effect value="NodStealthTankWeaponU@CP"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodSpecterWeapon" parent="NodWeapon">
+        <DisplayEffect value="NodSpecterDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Arc value="30"/>
+        <Range value="13"/>
+        <Period value="5"/>
+        <Effect value="NodSpecterLaunchMissile"/>
+        <DamagePoint value="4"/>
+        <Backswing value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodVenomParticleBeam" parent="NodWeapon">
+        <DisplayEffect value="VenomparticlebeamDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="2.66"/>
+        <Effect value="VenomExposedWhenAttackingSet"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodCommandoWeapon" parent="NodWeapon">
+        <DisplayEffect value="NodCommandoWeaponDamage"/>
+        <Period value="0.35"/>
+        <Range value="7.5"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="NodCommandoWeapon@CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodScorpionTankWeapon" parent="NodWeapon">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+        <DisplayEffect value="NodScorpionTankWeaponDamage"/>
+        <Effect value="NodScorpionTankWeaponDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodScorpionTankWeaponU" parent="NodWeapon">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="NodScorpionTankWeaponUDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Effect value="NodScorpionTankWeaponUDamage"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodLaserTurretWeapon" parent="NodWeapon">
+        <DisplayEffect value="NodLaserTurretWeaponDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Effect value="NodLaserTurretWeaponDamage"/>
+        <MinScanRange value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodMilitantRocketMissile" parent="NodWeapon" icon="NodHeavyWeapons">
+        <DisplayEffect value="NodMilitantRocketAU"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="29.9926"/>
+        <Period value="2"/>
+        <Effect value="NodMilitantRocketA2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodRaiderMachinegun" parent="NodWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="NodRaiderDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="0.9"/>
+        <Backswing value="0.75"/>
+        <Effect value="NodRaiderMachinegunCP"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodShredderMachinegun" parent="NodWeapon">
+        <DisplayEffect value="NodShredderWeaponDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.9"/>
+        <Range value="6"/>
+        <Backswing value="0.75"/>
+        <Effect value="NodShredderWeaponSwitch"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodObeliskLaser" parent="NodWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="ObeliskBeam1"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <Period value="3"/>
+        <Effect value="ObeliskBeam1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodFanaticExplosionDummy" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Melee" value="1"/>
+        <DisplayEffect value="NodFanaticExplosionU"/>
+        <TargetFilters value="Ground,Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.25"/>
+        <Cost>
+            <Cooldown Link="Weapon/NodFanaticExplosion"/>
+        </Cost>
+        <Period value="0.833"/>
+        <DamagePoint value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+        <Effect value=""/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodFanaticExplosion" parent="NodWeapon" icon="NodHeavyWeapons">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.25"/>
+        <Period value="0.833"/>
+        <DamagePoint value="0"/>
+        <AllowedMovement value="Moving"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="Melee" value="1"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AcquireFilters value="Ground,Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodFanaticExplosionBuilding" parent="NodWeapon" icon="NodHeavyWeapons">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="Melee" value="1"/>
+        <DisplayEffect value="VolatileBurst"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireFilters value="Ground,Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.25"/>
+        <Period value="0.833"/>
+        <DamagePoint value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+        <Effect value="VolatileBurst"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodBeamCannonWeapon" parent="NodWeapon">
+        <!--        <Options index="OnlyFireWhileInAttackOrder" value="0"/>-->
+        <!--        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>-->
+        <DisplayEffect value="NodBeamCannonWeaponDamage1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <TeleportResetRange value="0"/>
+        <Period value="0.07"/>
+        <Effect value="BeamCannonAttackCP"/>
+        <!-- <AllowedMovement value="Moving"/> -->
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NodBeamCannonWeaponRetargeted" parent="NodWeapon">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <DisplayEffect value="NodBeamCannonWeaponDamage1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="50"/>
+        <TeleportResetRange value="0"/>
+        <Period value="0.07"/>
+        <Effect value="BeamCannonAttackCP"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+</Catalog>

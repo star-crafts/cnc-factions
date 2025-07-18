@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy default="1" id="GDIWeapon">
+        <?token id="icon" value="GDILightWeapons"?>
+        <EditorCategories value="Race:GDI"/>
+        <Icon value="Assets\icons\GDI\##icon##.dds"/>
+        <DisplayEffect value="##id##Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1"/>
+        <DisplayAttackCount value="1"/>
+        <Effect value="##id##Damage"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <MinScanRange value="3.14"/>
+        <Range value="3.14"/>
+    </CWeaponLegacy>
+    
+    <CWeaponLegacy parent="GDIWeapon" id="GDIRiflemanWeapon" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIMissileTrooperWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##LM"/>
+        <Range value="7"/>
+        <MinScanRange value="7"/>
+        <DamagePoint value="0.25"/>
+        <Backswing value="0.25"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDICombatEngineerWeapon" icon="GDILightWeapons">
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+        <Period value="1.2"/>
+        <DamagePoint value="0.75"/>
+        <Backswing value="0.75"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIGrenadierWeapon">
+        <Effect value="GDIGrenadierWeaponLM"/>
+        <Arc value="30"/>
+        <Range value="6"/>
+        <Period value="3"/>
+        <DamagePoint value="1"/>
+        <Backswing value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDISniperWeapon" icon="GDILightWeapons">
+        <MinScanRange value="11"/>
+        <Range value="11"/>
+        <Period value="5"/>
+        <DamagePoint value="4"/>
+        <Backswing value="0.75"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIZoneTrooperRail">
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <Period value="1"/>
+        <DamagePoint value="0.1"/>
+        <Backswing value="0.1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIZoneRaiderSonic">
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <Period value="1"/>
+        <DamagePoint value="0.1"/>
+        <Backswing value="0.1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIZoneRaiderRockets">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <MinScanRange value="7"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDICommandoWeapon" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIPitBullWeapon">
+        <Effect value="##id##CP"/>
+        <Range value="9"/>
+        <MinScanRange value="9"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIPitBullMortar">
+        <Effect value="GDIPitBullMortarLM"/>
+        <Range value="12"/>
+        <MinScanRange value="12"/>
+        <Arc value="1.9995"/>
+        <Period value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDITitanCannon">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDITitanRailgun">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIAPCMachinegun" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIPredatorCannon">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIPredatorRailgun">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIHarvesterMachinegun" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIHarvesterRockets">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="9"/>
+        <MinScanRange value="9"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIWolverineMachinegun" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIJuggernautWeapon"/>
+    <CWeaponLegacy parent="GDIWeapon" id="GDISlingshotWeapon" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDISlingshotWeaponU" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIShattererWeapon"/>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIMammothCannon">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIMammothRailgun">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIMammothRockets">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="9"/>
+        <MinScanRange value="9"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIOrcaRockets">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="9"/>
+        <MinScanRange value="9"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIOrcaImpulse"/>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIHammerHeadMachinegun" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIFirehawkRocketsAA">
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="9"/>
+        <MinScanRange value="9"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIFirehawkRocketsAG">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="9"/>
+        <MinScanRange value="9"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIWatchtowerMachinegun" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIGuardianTowerCannon">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIGuardianTowerRailgun">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1.6"/>
+        <Arc value="29.9926"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIAABatteryWeapon" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIAABatteryWeaponU" icon="GDILightWeapons">
+        <Effect value="##id##CP"/>
+        <Period value="0.81"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDISonicEmitterWeapon"/>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIBattleBaseRockets">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="9"/>
+        <MinScanRange value="9"/>
+        <Arc value="1.9995"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy parent="GDIWeapon" id="GDIMARVWeapon"/>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIEquipmentMachineGun" icon="GDILightWeapons" >
+        <Period value="1"/>
+        <Backswing value="0.75"/>
+        <Range value="7"/>
+        <DisplayAttackCount value="3"/>
+        <Effect value="##id##CP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIEquipmentRockets">
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="1.7"/>
+        <Backswing value="0.25"/>
+        <Effect value="##id##CP"/>
+        <MinScanRange value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIEquipmentGrenades">
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="3"/>
+        <DamagePoint value="1"/>
+        <Backswing value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIEquipmentSniper" icon="GDILightWeapons">
+        <MinScanRange value="11"/>
+        <Range value="11"/>
+        <Period value="5"/>
+        <DamagePoint value="4"/>
+        <Backswing value="0.75"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIEquipmentRail">
+        <Range value="7"/>
+        <Period value="3"/>
+        <DamagePoint value="1"/>
+        <Backswing value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="GDIWeapon" id="GDIEquipmentSonic">
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <Period value="1"/>
+        <DamagePoint value="0.1"/>
+        <Backswing value="0.1"/>
+    </CWeaponLegacy>
+
+    <CWeaponLegacy parent="GDIEquipmentMachineGun" id="GDIEquipmentMachineGunFake"><Effect value=""/></CWeaponLegacy>
+    <CWeaponLegacy parent="GDIEquipmentRockets" id="GDIEquipmentRocketsFake"><Effect value=""/></CWeaponLegacy>
+    <CWeaponLegacy parent="GDIEquipmentGrenades" id="GDIEquipmentGrenadesFake"><Effect value=""/></CWeaponLegacy>
+    <CWeaponLegacy parent="GDIEquipmentSniper" id="GDIEquipmentSniperFake"><Effect value=""/></CWeaponLegacy>
+    <CWeaponLegacy parent="GDIEquipmentRail" id="GDIEquipmentRailFake"><Effect value=""/></CWeaponLegacy>
+    <CWeaponLegacy parent="GDIEquipmentSonic" id="GDIEquipmentSonicFake"><Effect value=""/></CWeaponLegacy>
+
+    <CWeaponLegacy parent="GDIGuardianTowerCannon" id="GDIGuardianTowerCannonFake"><Effect value=""/></CWeaponLegacy>
+    <CWeaponLegacy parent="GDIGuardianTowerRailgun" id="GDIGuardianTowerRailgunFake"><Effect value=""/></CWeaponLegacy>
+
+</Catalog>

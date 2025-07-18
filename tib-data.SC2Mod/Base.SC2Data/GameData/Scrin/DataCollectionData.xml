@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CDataCollectionUnit default="1" id="ScrinUnit">
+        <?token id="unitName" type="CUnitLink" value="##id##"?>
+        <EditorCategories value="DataGroup:Unit,Race:Scrin"/>
+        <EditorIconSource value="Unit"/>
+        <DataRecord Entry="Unit,##id##"/>
+        <DataRecord Entry="Actor,##id##"/>
+        <DataRecord Entry="Model,##id##"/>
+        <DataRecord Entry="Sound,##id##_Help"/>
+        <DataRecord Entry="Sound,##id##_What"/>
+        <DataRecord Entry="Sound,##id##_Yes"/>
+        <DataRecord Entry="Sound,##id##_Ready"/>
+        <DataRecord Entry="Sound,##id##_Attack"/>
+        <DataRecord Entry="Sound,##id##_Death"/>
+        <TechInfoUpgradeUsed value="ScrinShieldsLevel1"/>
+        <TechInfoUpgradeUsed value="ScrinShieldsLevel2"/>
+        <TechInfoUpgradeUsed value="ScrinShieldsLevel3"/>
+        <TechInfoUpgradeUsed value="Scrin##armor##ArmorsLevel1"/>
+        <TechInfoUpgradeUsed value="Scrin##armor##ArmorsLevel2"/>
+        <TechInfoUpgradeUsed value="Scrin##armor##ArmorsLevel3"/>
+        <?token id="armor"?>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit default="1" id="ScrinInfantry" parent="ScrinUnit" armor="Light"/>
+    <CDataCollectionUnit default="1" id="ScrinVehicle" parent="ScrinUnit" armor="Heavy">
+        <TechInfoUpgradeUsed value="ScrinAttenuatedForcefields"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit default="1" id="ScrinAir" parent="ScrinUnit">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit default="1" id="ScrinBuilding" parent="ScrinUnit"/>
+    <CDataCollectionUnit default="1" id="ScrinWeapon">
+        <?token id="damageUpgrade" type="CUpgradeLink"?>
+        <EditorCategories value="DataGroup:Weapon,Race:Scrin,ObjectType:Projectile"/>
+        <EditorIconSource value="Weapon"/>
+        <DataRecord Entry="Effect,##id##Damage"/>
+        <DataRecord Entry="Effect,##id##UDamage"/>
+        <DataRecord Entry="Weapon,##id##"/>
+        <DataRecord Entry="Weapon,##id##U"/>
+        <TechInfoUpgradeUsed value="##damageUpgrade##Level1"/>
+        <TechInfoUpgradeUsed value="##damageUpgrade##Level2"/>
+        <TechInfoUpgradeUsed value="##damageUpgrade##Level3"/>
+        <UpgradeInfoWeapon DamagePerDice="1"/>
+    </CDataCollectionUnit>
+
+    <CDataCollectionUnit id="ScrinBuzzers" parent="ScrinInfantry">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinDisintegrator" parent="ScrinInfantry">
+        <TechInfoUpgradeUsed value="ScrinAdvancedArticulators"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinAssimilator" parent="ScrinInfantry">
+        <TechInfoUpgradeUsed value="ScrinAdvancedArticulators"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinShockTrooper" parent="ScrinInfantry">
+        <TechInfoUpgradeUsed value="ScrinAdvancedArticulators"/>
+        <TechInfoUpgradeUsed value="ScrinBlinkPacks"/>
+        <TechInfoUpgradeUsed value="ScrinPlasmaDiscLaunchers"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinRavager" parent="ScrinInfantry">
+        <TechInfoUpgradeUsed value="ScrinAdvancedArticulators"/>
+        <TechInfoUpgradeUsed value="ScrinBlueShards"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinCultist" parent="ScrinInfantry">
+        <TechInfoUpgradeUsed value="ScrinAdvancedArticulators"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinMastermind" parent="ScrinInfantry">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinProdigy" parent="ScrinInfantry">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinHarvester" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinGunWalker" parent="ScrinVehicle">
+        <TechInfoUpgradeUsed value="ScrinBlueShards"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinSeeker" parent="ScrinVehicle">
+        <TechInfoUpgradeUsed value="ScrinShardLaunchers"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinDevourer" parent="ScrinVehicle">
+        <TechInfoUpgradeUsed value="ScrinConversionReserves"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinCorrupter" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinMechapede" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinMechapedeShardSegment" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinMechapedeToxinSegment" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinMechapedeDisintegratorSegment" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinMechapedeDiscSegment" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinEradicator" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinExplorer" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinAnnihilator" parent="ScrinVehicle">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinReaper" parent="ScrinVehicle">
+        <TechInfoUpgradeUsed value="ScrinConversionReserves"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinStormrider" parent="ScrinAir" armor="Light">
+        <TechInfoUpgradeUsed value="ScrinForcefieldGenerators"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinDevastator" parent="ScrinAir" armor="Heavy">
+        <TechInfoUpgradeUsed value="ScrinForcefieldGenerators"/>
+        <TechInfoUpgradeUsed value="ScrinTravelerEngines"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinCarrier" parent="ScrinAir" armor="Heavy">
+        <TechInfoUpgradeUsed value="ScrinForcefieldGenerators"/>
+        <TechInfoUpgradeUsed value="ScrinTravelerEngines"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinInvader" parent="ScrinAir" armor="Light">
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinMothership" parent="ScrinAir" armor="Heavy">
+        <TechInfoUpgradeUsed value="ScrinTiberiumFieldSuits"/>
+        <TechInfoUpgradeUsed value="ScrinForcefieldGenerators"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ScrinDroneShip" parent="ScrinAir" armor="Heavy">
+    </CDataCollectionUnit>
+
+    <CDataCollectionUnit id="ScrinBuzzersWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinDisintegratorWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinShockTrooperWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinShockTrooperWeaponU" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinRavagerShards" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinRavagerShardsU" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinGunWalkerShards" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinGunWalkerShardsU" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinSeekerWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinSeekerShards" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinDevourerWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinDevourerWeaponCharged" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinCorrupterWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinMechapedeDisentegrator" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinMechapedeShards" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinMechapedeToxins" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinMechapedeDiscs" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinAnnihilatorWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinReaperWeaponCharged" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinEradicatorWeapon" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinStormriderWeapon" parent="ScrinWeapon" damageUpgrade="ScrinAirWeapons"/>
+    <CDataCollectionUnit id="ScrinDevastatorWeapon" parent="ScrinWeapon" damageUpgrade="ScrinAirWeapons"/>
+    <CDataCollectionUnit id="ScrinInvaderWeapon" parent="ScrinWeapon" damageUpgrade="ScrinAirWeapons"/>
+    <CDataCollectionUnit id="ScrinMothershipWeapon" parent="ScrinWeapon" damageUpgrade="ScrinAirWeapons"/>
+    <CDataCollectionUnit id="ScrinInterceptorLaunch" parent="ScrinWeapon" damageUpgrade="ScrinAirWeapons"/>
+    <CDataCollectionUnit id="ScrinEradicatorDisintegrator" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinEradicatorPlasmaDiscLauncher" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+    <CDataCollectionUnit id="ScrinEradicatorTiberiumShardLauncher" parent="ScrinWeapon" damageUpgrade="ScrinGroundWeapons"/>
+
+</Catalog>

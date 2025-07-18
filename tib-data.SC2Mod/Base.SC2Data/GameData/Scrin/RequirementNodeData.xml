@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <!--Unit Count-->
+    <CRequirementCountUnit parent="UC" id="UC_ScrinDronePlatform" unit="ScrinDronePlatform"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinReactor" unit="ScrinReactor"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinExtractor" unit="ScrinExtractor"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinFoundry" unit="ScrinFoundry"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinGrowthStimulator" unit="ScrinGrowthStimulator"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinRiftGenerator" unit="ScrinRiftGenerator"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinPortal" unit="ScrinPortal"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinWarpSphere" unit="ScrinWarpSphere"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinNerveCenter" unit="ScrinNerveCenter"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinGravityStabilizer" unit="ScrinGravityStabilizer"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinStasisChamber" unit="ScrinStasisChamber"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinTechnologyAssembler" unit="ScrinTechnologyAssembler"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinSignalTransmitter" unit="ScrinSignalTransmitter"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinWarpChasm" unit="ScrinWarpChasm"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinBuzzerHive" unit="ScrinBuzzerHive"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinPhotonCannon" unit="ScrinPhotonCannon"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinPlasmaMissileBattery" unit="ScrinPlasmaMissileBattery"/>
+    <CRequirementCountUnit parent="UC" id="UC_ScrinStormColumn" unit="ScrinStormColumn"/>
+
+    <!--UNIT Queued -->
+    <CRequirementCountUnit parent="UQ" id="UQ_ScrinMastermind" unit="ScrinMastermind"/>
+    <CRequirementCountUnit parent="UQ" id="UQ_ScrinEradicator" unit="ScrinEradicator"/>
+    <CRequirementCountUnit parent="UQ" id="UQ_ScrinMothership" unit="ScrinMothership"/>
+    <CRequirementCountUnit parent="UQ" id="UQ_ScrinRiftGenerator" unit="ScrinRiftGenerator"/>
+    <CRequirementCountUnit parent="UQ" id="UQ_ScrinWarpChasm" unit="ScrinWarpChasm"/>
+
+    <!--Unit NOT QUEUED and NOT EXIST-->
+    <CRequirementEq parent="UN" id="UN_ScrinMastermind" unit="ScrinMastermind"/>
+    <CRequirementEq parent="UN" id="UN_ScrinEradicator" unit="ScrinEradicator"/>
+    <CRequirementEq parent="UN" id="UN_ScrinMothership" unit="ScrinMothership"/>
+    <CRequirementEq parent="UN" id="UN_ScrinRiftGenerator" unit="ScrinRiftGenerator"/>
+    <CRequirementEq parent="UN" id="UN_ScrinWarpChasm" unit="ScrinWarpChasm"/>
+
+    <!--Research Complete-->
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinGroundWeaponsLevel1" upgrade="ScrinGroundWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinGroundWeaponsLevel2" upgrade="ScrinGroundWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinGroundWeaponsLevel3" upgrade="ScrinGroundWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinAirWeaponsLevel1" upgrade="ScrinAirWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinAirWeaponsLevel2" upgrade="ScrinAirWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinAirWeaponsLevel3" upgrade="ScrinAirWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinLightArmorsLevel1" upgrade="ScrinLightArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinLightArmorsLevel2" upgrade="ScrinLightArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinLightArmorsLevel3" upgrade="ScrinLightArmorsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinHeavyArmorsLevel1" upgrade="ScrinHeavyArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinHeavyArmorsLevel2" upgrade="ScrinHeavyArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinHeavyArmorsLevel3" upgrade="ScrinHeavyArmorsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinShieldsLevel1" upgrade="ScrinShieldsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinShieldsLevel2" upgrade="ScrinShieldsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinShieldsLevel3" upgrade="ScrinShieldsLevel3"/>
+
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinAttenuatedForcefields" upgrade="ScrinAttenuatedForcefields"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinForcefieldGenerators" upgrade="ScrinForcefieldGenerators"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinBlinkPacks" upgrade="ScrinBlinkPacks"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinPlasmaDiscLaunchers" upgrade="ScrinPlasmaDiscLaunchers"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinAdvancedArticulators" upgrade="ScrinAdvancedArticulators"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinProdigy" upgrade="ScrinProdigy"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinShardLaunchers" upgrade="ScrinShardLaunchers"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinTravelerEngines" upgrade="ScrinTravelerEngines"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinBlueShards" upgrade="ScrinBlueShards"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinConversionReserves" upgrade="ScrinConversionReserves"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_ScrinReaper" upgrade="ScrinReaper"/>
+
+
+    <!--Research Queued-->
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinGroundWeaponsLevel1" upgrade="ScrinGroundWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinGroundWeaponsLevel2" upgrade="ScrinGroundWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinGroundWeaponsLevel3" upgrade="ScrinGroundWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinAirWeaponsLevel1" upgrade="ScrinAirWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinAirWeaponsLevel2" upgrade="ScrinAirWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinAirWeaponsLevel3" upgrade="ScrinAirWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinLightArmorsLevel1" upgrade="ScrinLightArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinLightArmorsLevel2" upgrade="ScrinLightArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinLightArmorsLevel3" upgrade="ScrinLightArmorsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinHeavyArmorsLevel1" upgrade="ScrinHeavyArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinHeavyArmorsLevel2" upgrade="ScrinHeavyArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinHeavyArmorsLevel3" upgrade="ScrinHeavyArmorsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinShieldsLevel1" upgrade="ScrinShieldsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinShieldsLevel2" upgrade="ScrinShieldsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinShieldsLevel3" upgrade="ScrinShieldsLevel3"/>
+    
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinAttenuatedForcefields" upgrade="ScrinAttenuatedForcefields"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinForcefieldGenerators" upgrade="ScrinForcefieldGenerators"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinBlinkPacks" upgrade="ScrinBlinkPacks"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinPlasmaDiscLaunchers" upgrade="ScrinPlasmaDiscLaunchers"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinAdvancedArticulators" upgrade="ScrinAdvancedArticulators"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinProdigy" upgrade="ScrinProdigy"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinShardLaunchers" upgrade="ScrinShardLaunchers"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinTravelerEngines" upgrade="ScrinTravelerEngines"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinBlueShards" upgrade="ScrinBlueShards"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinConversionReserves" upgrade="ScrinConversionReserves"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_ScrinReaper" upgrade="ScrinReaper"/>
+
+    <!--Research NOT QUEUED and NOT complete-->
+    <CRequirementNot parent="RN" id="RN_ScrinGroundWeaponsLevel1" upgrade="ScrinGroundWeaponsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_ScrinGroundWeaponsLevel2" upgrade="ScrinGroundWeaponsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_ScrinGroundWeaponsLevel3" upgrade="ScrinGroundWeaponsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_ScrinAirWeaponsLevel1" upgrade="ScrinAirWeaponsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_ScrinAirWeaponsLevel2" upgrade="ScrinAirWeaponsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_ScrinAirWeaponsLevel3" upgrade="ScrinAirWeaponsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_ScrinLightArmorsLevel1" upgrade="ScrinLightArmorsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_ScrinLightArmorsLevel2" upgrade="ScrinLightArmorsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_ScrinLightArmorsLevel3" upgrade="ScrinLightArmorsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_ScrinHeavyArmorsLevel1" upgrade="ScrinHeavyArmorsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_ScrinHeavyArmorsLevel2" upgrade="ScrinHeavyArmorsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_ScrinHeavyArmorsLevel3" upgrade="ScrinHeavyArmorsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_ScrinShieldsLevel1" upgrade="ScrinShieldsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_ScrinShieldsLevel2" upgrade="ScrinShieldsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_ScrinShieldsLevel3" upgrade="ScrinShieldsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_ScrinAttenuatedForcefields" upgrade="ScrinAttenuatedForcefields"/>
+    <CRequirementNot parent="RN" id="RN_ScrinForcefieldGenerators" upgrade="ScrinForcefieldGenerators"/>
+    <CRequirementNot parent="RN" id="RN_ScrinBlinkPacks" upgrade="ScrinBlinkPacks"/>
+    <CRequirementNot parent="RN" id="RN_ScrinPlasmaDiscLaunchers" upgrade="ScrinPlasmaDiscLaunchers"/>
+    <CRequirementNot parent="RN" id="RN_ScrinAdvancedArticulators" upgrade="ScrinAdvancedArticulators"/>
+    <CRequirementNot parent="RN" id="RN_ScrinProdigy" upgrade="ScrinProdigy"/>
+    <CRequirementNot parent="RN" id="RN_ScrinShardLaunchers" upgrade="ScrinShardLaunchers"/>
+    <CRequirementNot parent="RN" id="RN_ScrinTravelerEngines" upgrade="ScrinTravelerEngines"/>
+    <CRequirementNot parent="RN" id="RN_ScrinBlueShards" upgrade="ScrinBlueShards"/>
+    <CRequirementNot parent="RN" id="RN_ScrinConversionReserves" upgrade="ScrinConversionReserves"/>
+    <CRequirementNot parent="RN" id="RN_ScrinReaper" upgrade="ScrinReaper"/>
+
+    <!--Construction-->
+    <CRequirementOr id="REQC_ScrinPower">
+        <OperandArray value="UC_ScrinReactor"/>
+        <OperandArray value="UC_ScrinReactorUpgraded"/>
+    </CRequirementOr>
+
+    <!--Units Requirements-->
+    <CRequirementAnd id="BuildScrinGrowthStimulator">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinBuzzerHive">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinPhotonCannon">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinPlasmaMissileBattery">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinStormColumn">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinRiftGenerator">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinPortal">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinWarpSphere">
+        <OperandArray value="REQC_ScrinPower"/>
+        <OperandArray value="UC_ScrinExtractor"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinNerveCenter">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinGravityStabilizer">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinStasisChamber">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinTechnologyAssembler">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinSignalTransmitter">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinFoundry">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildScrinWarpChasm">
+        <OperandArray value="REQC_ScrinPower"/>
+    </CRequirementAnd>
+
+    <CRequirementAnd id="TrainScrinDisintegrator"/>
+    <CRequirementAnd id="TrainScrinAssimilator">
+        <OperandArray value="UC_ScrinNerveCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinShockTrooper">
+        <OperandArray value="UC_ScrinStasisChamber"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinRavager">
+        <OperandArray value="UC_ScrinStasisChamber"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinCultist">
+        <OperandArray value="UC_ScrinStasisChamber"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinMastermind">
+        <OperandArray value="UC_ScrinStasisChamber"/>
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinGunWalker"/>
+    <CRequirementAnd id="TrainScrinSeeker"/>
+    <CRequirementAnd id="TrainScrinDevourer">
+        <OperandArray value="UC_ScrinNerveCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinCorrupter">
+        <OperandArray value="UC_ScrinNerveCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinMechapede">
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinAnnihilator">
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinEradicator">
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinStormrider"/>
+    <CRequirementAnd id="TrainScrinDevastator">
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinCarrier">
+        <OperandArray value="UC_ScrinSignalTransmitter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainScrinDroneShip"/>
+    <CRequirementAnd id="TrainScrinMothership"/>
+
+    <!--Upgrades Requirements -->
+    <CRequirementAnd id="LearnScrinGroundWeaponsLevel2">
+        <OperandArray value="RC_ScrinGroundWeaponsLevel1"/>
+        <OperandArray value="UC_ScrinStasisChamber"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinGroundWeaponsLevel3">
+        <OperandArray value="RC_ScrinGroundWeaponsLevel2"/>
+        <OperandArray value="UC_ScrinStasisChamber"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinAirWeaponsLevel2">
+        <OperandArray value="RC_ScrinAirWeaponsLevel1"/>
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinAirWeaponsLevel3">
+        <OperandArray value="RC_ScrinAirWeaponsLevel2"/>
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinLightArmorsLevel2">
+        <OperandArray value="RC_ScrinLightArmorsLevel1"/>
+        <OperandArray value="UC_ScrinStasisChamber"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinLightArmorsLevel3">
+        <OperandArray value="RC_ScrinLightArmorsLevel2"/>
+        <OperandArray value="UC_ScrinStasisChamber"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinHeavyArmorsLevel2">
+        <OperandArray value="RC_ScrinHeavyArmorsLevel1"/>
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinHeavyArmorsLevel3">
+        <OperandArray value="RC_ScrinHeavyArmorsLevel2"/>
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinShieldsLevel2">
+        <OperandArray value="RC_ScrinShieldsLevel1"/>
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="LearnScrinShieldsLevel3">
+        <OperandArray value="RC_ScrinShieldsLevel2"/>
+        <OperandArray value="UC_ScrinTechnologyAssembler"/>
+    </CRequirementAnd>
+</Catalog>

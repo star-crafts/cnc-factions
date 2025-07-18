@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CFootprint id="Footprint1x2TibField">
+        <Layers index="Check" Area="-2,-1,2,2">
+            <Rows value="...."/>
+            <Rows value="...."/>
+            <Rows value="...."/>
+        </Layers>
+        <Layers index="Place" Area="-2,-1,2,2">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoCreep" value="1"/>
+            </Sets>
+            <Rows value=".xx."/>
+            <Rows value="xxxx"/>
+            <Rows value=".xx."/>
+        </Layers>
+    </CFootprint>
+
+</Catalog>

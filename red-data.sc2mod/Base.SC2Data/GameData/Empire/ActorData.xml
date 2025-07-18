@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorUnit default="1" id="EmpireCore" parent="GenericUnitStandard" unitName="EmpireCore">
+        <?token id="animgGroup"?>
+        <?token id="unitBase" value="EmpireCore"?>
+        <?token id="soundWhat" value="EmpireCore_Yes"?>
+        <Aliases value="_UnitSmall"/>
+        <Macros value="CarryAnim"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="MacroWorkerHat"/>
+        <Macros value="CarryTerrazineNodeAnim"/>
+        <Macros value="CarryAnimCampaign"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/> 
+        <Macros value="TerrainSquibAnimations"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SCV_Land"/>
+        <AnimBlendTime value="0.500000"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="SCVDeath" SoundLink="SCV_Explode"/>
+        <DeathCustoms ModelLink="SCVDeathRagdoll" Name="RagdollBasic">
+            <BodySquibs Name="Basic" Model="TerranSquibDeathRagdoll"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollSiegeTank" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollBaneling" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollUltraUnburrow" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms ActorModel="SpineCrawlerHurlDeathRagdoll" ModelLink="SCVDeathRagdoll" Name="RagdollSpineCrawlerHurl">
+            <BodySquibs Name="Basic" Model="TerranSquibDeathRagdoll"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <PortraitModel value="SJEnemyFighterPortrait"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="0.600000"/>
+            <RangeDown value="0.600000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSmall"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="2"/>
+        <AbilSoundArray AbilCmd="RAunpackGigaFortress,Build18" Sound="TerranFlyer_What223273" GroupSound="TerranFlyer_What223273"/>
+        <BarOffset value="40"/>
+        <GroupIcon>
+            <Image value="Assets\Icons\super-fortress-core-wireframe.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Icons\super-fortress-core-icon.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+        <SoundArray index="Birth" value="EmpireGigaFortressCore_Actor_Birth"/>
+        <SoundArray index="Ready" value="JuDesnajerCore"/>
+        <SoundArray index="Help" value="EmpireCore_Help"/>
+        <SoundArray index="What" value="EmpireCore_What"/>
+        <SoundArray index="Yes" value="EmpireCore_Yes"/>
+        <SoundArray index="Attack" value="SCV_Attack"/>
+        <SoundArray index="Pissed" value="SCV_Pissed"/>
+        <SoundArray index="What" value="##soundWhat##"/>
+        <SoundArray index="Click" value="##soundWhat##"/>
+        <UnitIcon value="Assets\Icons\super-fortress-core-icon.dds"/>
+        <Wireframe>
+            <Image value="Assets\Icons\super-fortress-core-wireframe.dds"/>
+        </Wireframe>
+        <Model value="EmpireCore"/>
+        <On Terms="ActorCreation" Send="AnimGroupApply ##animgGroup##"/>
+    </CActorUnit>
+    <CActorUnit parent="EmpireCore" animgGroup="D" unitName="EmpirePowerPlantCore_Model" id="EmpirePowerPlantCore_Model" soundWhat="EmpireCore_What"/>
+    <CActorUnit parent="EmpireCore" animgGroup="B" unitName="EmpirePowerPlantCore" id="EmpirePowerPlantCore_Actor" soundWhat="TerranFlyer_What22327122"/>
+    <CActorUnit parent="EmpireCore" animgGroup="J" unitName="EmpireRefineryCore" id="EmpireRefineryCore_Actor" soundWhat="TerranFlyer_What22327122222"/>
+    <CActorUnit parent="EmpireCore" animgGroup="I" unitName="EmpireDojoCore" id="EmpireDojoCore_Actor" soundWhat="TerranFlyer_What223271222232"/>
+    <CActorUnit parent="EmpireCore" animgGroup="E" unitName="EmpireWarFactoryCore" id="EmpireWarFactoryCore_Actor" soundWhat="TerranFlyer_What22327122223222"/>
+    <CActorUnit parent="EmpireCore" animgGroup="E" unitName="EmpireMechFactoryCore" id="EmpireMechFactoryCore_Actor" soundWhat="TerranFlyer_What22327122223222"/>
+    <CActorUnit parent="EmpireCore" animgGroup="G" unitName="EmpireNanoHostCore" id="EmpireNanoHostCore_Actor" soundWhat="TerranFlyer_What223271222232232"/>
+    <CActorUnit parent="EmpireCore" animgGroup="H" unitName="EmpireRadarCore" id="EmpireRadarCore_Actor" soundWhat="TerranFlyer_What22327122223223223"/>
+    <CActorUnit parent="EmpireCore" animgGroup="K" unitName="EmpireAntitankbunkercore" id="EmpireAntitankbunkercore_Actor" soundWhat="TerranFlyer_What2232712222322322"/>
+    <CActorUnit parent="EmpireCore" animgGroup="K" unitName="EmpireType92InfantrysupportgunCore" id="EmpireType92InfantrysupportgunCore_Actor" soundWhat="TerranFlyer_What2232712222322322"/>
+    <CActorUnit parent="EmpireCore" animgGroup="K" unitName="EmpireDefenderCore" id="EmpireDefenderCore_Actor" soundWhat="TerranFlyer_What2232712222322322"/>
+    <CActorUnit parent="EmpireCore" animgGroup="H" unitName="EmpireHeavyGunCore" id="EmpireHeavyGunCore_Actor" soundWhat="TerranFlyer_What22327122223223223"/>
+    <CActorUnit parent="EmpireCore" animgGroup="H" unitName="EmpireTowerCore" id="EmpireTowerCore_Actor" soundWhat="TerranFlyer_What22327122223223223"/>
+    <CActorUnit parent="EmpireCore" animgGroup="H" unitName="EmpireWaveEnergyThreeGunCores" id="EmpireWaveEnergyThreeGunCores_Actor" soundWhat="TerranFlyer_What22327122223223223"/>
+    <CActorUnit parent="EmpireCore" animgGroup="H" unitName="EmpirePlasmaCore" id="EmpirePlasmaCore_Actor" soundWhat="TerranFlyer_What22327122223223223"/>
+    <CActorUnit parent="EmpireCore" animgGroup="B" unitName="EmpireNuclearPowerPlantCore" id="EmpireNuclearPowerPlantCore_Actor" soundWhat="TerranFlyer_What22327122"/>
+    <CActorUnit parent="EmpireCore" animgGroup="F" unitName="EmpireNanoSwarmCore" id="EmpireNanoSwarmCore_Actor"  soundWhat="JuDesnajerCore22"/>
+</Catalog>

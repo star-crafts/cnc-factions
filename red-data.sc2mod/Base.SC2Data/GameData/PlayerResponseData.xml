@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CPlayerResponseUnitDeath id="AlliedUnitLost">
+        <Handled value="AlliedUnitLost"/>
+        <DeathType index="Eat" value="0"/>
+        <DeathType index="Impact" value="0"/>
+        <DeathType index="Morph" value="0"/>
+        <DeathType index="Reincarnation" value="0"/>
+        <DeathType index="Silentkill" value="0"/>
+        <DeathType index="Squish" value="0"/>
+        <DeathType index="Timeout" value="0"/>
+        <DeathType index="Unlink" value="0"/>
+        <DeathType index="UnderConstruction" value="0"/>
+        <DeathType index="Salvage" value="0"/>
+        <DeathType index="Cancel" value="0"/>
+        <DeathType index="TrainingComplete" value="0"/>
+        <DeathType index="TrainingCancel" value="0"/>
+    </CPlayerResponseUnitDeath>
+    <CPlayerResponseUnitDeath id="SovietUnitLost">
+        <Handled value="SovietUnitLost"/>
+        <DeathType index="Eat" value="0"/>
+        <DeathType index="Impact" value="0"/>
+        <DeathType index="Morph" value="0"/>
+        <DeathType index="Reincarnation" value="0"/>
+        <DeathType index="Silentkill" value="0"/>
+        <DeathType index="Squish" value="0"/>
+        <DeathType index="Timeout" value="0"/>
+        <DeathType index="Unlink" value="0"/>
+        <DeathType index="UnderConstruction" value="0"/>
+        <DeathType index="Salvage" value="0"/>
+        <DeathType index="Cancel" value="0"/>
+        <DeathType index="TrainingComplete" value="0"/>
+        <DeathType index="TrainingCancel" value="0"/>
+    </CPlayerResponseUnitDeath>
+    <CPlayerResponseUnitDeath id="EmpireUnitLost">
+        <Handled value="EmpireUnitLost"/>
+        <DeathType index="Eat" value="0"/>
+        <DeathType index="Impact" value="0"/>
+        <DeathType index="Morph" value="0"/>
+        <DeathType index="Reincarnation" value="0"/>
+        <DeathType index="Silentkill" value="0"/>
+        <DeathType index="Squish" value="0"/>
+        <DeathType index="Timeout" value="0"/>
+        <DeathType index="Unlink" value="0"/>
+        <DeathType index="UnderConstruction" value="0"/>
+        <DeathType index="Salvage" value="0"/>
+        <DeathType index="Cancel" value="0"/>
+        <DeathType index="TrainingComplete" value="0"/>
+        <DeathType index="TrainingCancel" value="0"/>
+    </CPlayerResponseUnitDeath>
+    <CPlayerResponseUnitDeath id="ChinaUnitLost">
+        <Handled value="ChinaUnitLost"/>
+        <DeathType index="Eat" value="0"/>
+        <DeathType index="Impact" value="0"/>
+        <DeathType index="Morph" value="0"/>
+        <DeathType index="Reincarnation" value="0"/>
+        <DeathType index="Silentkill" value="0"/>
+        <DeathType index="Squish" value="0"/>
+        <DeathType index="Timeout" value="0"/>
+        <DeathType index="Unlink" value="0"/>
+        <DeathType index="UnderConstruction" value="0"/>
+        <DeathType index="Salvage" value="0"/>
+        <DeathType index="Cancel" value="0"/>
+        <DeathType index="TrainingComplete" value="0"/>
+        <DeathType index="TrainingCancel" value="0"/>
+    </CPlayerResponseUnitDeath>
+</Catalog>

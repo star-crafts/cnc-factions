@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="SovietDesolatorDeathSprayDamage">
+        <ValidatorArray value="WeaponInRange"/>
+        <EditorCategories value=""/>
+        <AttributeFactor index="Structure" value="-0.9"/>
+        <ArmorReduction value="1"/>
+        <Amount value="15"/>
+        <Death value="Disintegrate"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectSet id="SovietDesolatorDeathSprayEffectCollection">
+        <EditorCategories value=""/>
+        <EffectArray value="SovietDesolatorDeathSprayCreation"/>
+        <EffectArray value="SovietDesolatorDeathSpraypersistenteffectcreated"/>
+        <TargetLocationType value="Unknown"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="SovietDesolatorDeathSprayCreation">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="SovietDesolatorDeathSprayCreatesAcidPiles"/>
+        <PeriodCount value="5"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="SovietDesolatorDeathSprayLauncher"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="SovietDesolatorDeathSpraypersistenteffectcreated">
+        <ValidatorArray value="HasVision"/>
+        <EditorCategories value="Race:Terran"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <WhichLocation Value="CasterPoint"/>
+        <OffsetVectorStartLocation Value="CasterPoint"/>
+        <PeriodCount value="8"/>
+        <PeriodicEffectArray value="SovietDesolatorChemicalForceDeathSprayleftbehindtocreateeffects"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="0,-3,0"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicOffsetArray value="0,-7,0"/>
+        <PeriodicOffsetArray value="0,-9,0"/>
+        <PeriodicOffsetArray value="0,-11,0"/>
+        <PeriodicOffsetArray value="0,-13,0"/>
+        <PeriodicOffsetArray value="0,-15,0"/>
+        <PeriodicPeriodArray value="0.3"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="SovietDesolatorDeathSprayLauncher">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value="SovietDesolatorDeathSprayVirtualBombardment"/>
+        <Flags index="Channeled" value="1"/>
+        <AmmoUnit value="SovietDesolatorDeathSpray"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="SovietDesolatorDeathSprayVirtualBombardment">
+        <EditorCategories value="Race:Zerg"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Dead,Invulnerable"/>
+        <AreaArray Radius="1" Effect="SovietDesolatorDeathSprayDamageswitch"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="SovietDesolatorDeathSprayDamageswitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="TargetNotDead2" Effect="SovietDesolatorDeathSprayDamageinstantlykillslightarmor"/>
+        <CaseDefault value="SovietDesolatorDeathSprayDamage"/>
+    </CEffectSwitch>
+    <CEffectDamage id="SovietDesolatorDeathSprayDamageinstantlykillslightarmor">
+        <ValidatorArray value="WeaponInRange"/>
+        <EditorCategories value=""/>
+        <ArmorReduction value="1"/>
+        <Flags index="Kill" value="1"/>
+        <Amount value="15"/>
+        <Death value="Disintegrate"/>
+        <SearchFilters value="Light;Self,Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="SovietDesolatorDeathSprayImpactDummy"/>
+    <!--    <CActorModel id="SovietDesolatorDeathSprayLaunch" parent="ModelAnimationStyleOneShot">-->
+    <!--        <On Terms="Effect.SovietDesolatorDeathSprayLaunchMissile.Start" Send="Create"/>-->
+    <!--    </CActorModel>-->
+    <CEffectCreatePersistent id="SovietDesolatorChemicalForceDeathSprayleftbehindtocreateeffects">
+        <EditorCategories value=""/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="SovietDesolatorDeathSprayVirtualBombardment"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="SovietDesolatorDeathSprayCreatesAcidPiles">
+        <!--ValidatorArray value="CasterIsNovaVirophageOrBlightbriger"/-->
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnUnit value="SovietDesolatorAcidPuddle"/>
+        <SpawnRange value="4"/>
+    </CEffectCreateUnit>
+</Catalog>

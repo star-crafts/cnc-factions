@@ -1,0 +1,1822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+
+    <CActorUnit default="1" id="ZOCOMBuilding" parent="GenericUnitStandard">
+        <?token id="icon" value="##id##"?>
+        <?token id="wireframe"  value="##id##Wireframe"?>
+        <ModelFlags index="OutlineOccluder" value="1"/>
+        <Aliases value="_CreepEngulfable"/>
+        <CreepHeightClass value="Default"/>
+        <CreepRateGrow value="Grow"/>
+        <CreepRateShrink value="Shrink"/>
+        <On index="69" Terms="UnitConstruction.##unitName##.Start" Send="Create GDIbuild"/>
+        <!--        <On Terms="UnitConstruction.##unitName##.Start" Send="Create ##unitName##Build"/>-->
+        <On Terms="UnitConstruction.##unitName##.Start" Send="Create BuildingTerrainFlatten"/>
+        <On Terms="UnitConstruction.##unitName##.Cancel" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitConstruction.##unitName##.Finish" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitConstruction.##unitName##.Start" Send="QueryRadius 1.750000 BuildingCrushQueryResponse"/>
+        <On Terms="UnitBirth.##unitName##.Normal" Send="Create BuildingTerrainFlatten"/>
+        <On Terms="UnitBirth.##unitName##.Suppressed" Send="Create BuildingTerrainFlattenInstant"/>
+        <On Terms="UnitBirth.##unitName##.EditorPlaced" Send="Create BuildingTerrainFlattenEditor"/>
+        <On Terms="UnitDeath.##unitName##" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitDeathCustomize; CreepEngulfs" Send="CreepEngulfmentStopTransition"/>
+        <On Terms="ActorCreation; CreepIntersects" Send="CreepEngulfmentStartTransition"/>
+        <DeathArray index="Normal" ModelLink="##unitName##Death" SoundLink=""/>
+        <PlacementModel value="##unitName##Placement"/>
+        <PlacementSound value="Terran_BuildingPlacement"/>
+        <Macros value="SnowVisualUnitMacroMP"/>
+        <LifeArmorIcon value="Assets\icons\Nod\FXNod_EnhancedShieldsUpgrade.dds"/>
+        <PortraitModel value="NodPortrait"/>
+        <SoundArray index="Construction" value="Terran_ConstructionWhat"/>
+        <NameOffset value="110"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <Model value="##id##"/>
+        <HeroIcon value="Assets\icons\ZOCOM\##icon##Icon.dds"/>
+        <UnitIcon value="Assets\icons\ZOCOM\##icon##Icon.dds"/>
+        <GroupIcon>
+            <Image value="Assets\icons\ZOCOM\##wireframe##.dds"/>
+        </GroupIcon>
+        <Wireframe>
+            <Image value="Assets\icons\ZOCOM\##wireframe##.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit default="1" id="ZOCOMUnitBase" parent="GenericUnitBase">
+        <?token id="icon" value="##id##"?>
+        <?token id="wireframe"  value="##id##Wireframe"?>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+        <PortraitModel value="ZOCOMPortrait"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create SoundEmitter GDIZoneTrooper_Ambience"/>
+        <On index="35" Terms="UnitBirth.*.Normal" Send="AnimPlay Birth Stand 0 0.000000"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <HeroIcon value="Assets\icons\ZOCOM\##icon##Icon.dds"/>
+        <UnitIcon value="Assets\icons\ZOCOM\##icon##Icon.dds"/>
+        <GroupIcon>
+            <Image value="Assets\icons\ZOCOM\##wireframe##.dds"/>
+        </GroupIcon>
+        <Wireframe>
+            <Image value="Assets\icons\ZOCOM\##wireframe##.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit default="1" id="ZOCOMInfantry" parent="ZOCOMUnitBase">
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <LifeArmorIcon value="Assets\textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+    </CActorUnit>
+    <CActorUnit default="1" id="ZOCOMVehicle" parent="ZOCOMUnitBase">
+        <Aliases value="_UnitLarge"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SiegeTank_Land"/>
+        <Model value="##id##"/>
+        <CreepHeightClass value="Tiny"/>
+        <BuildModel value="##id##"/>
+        <DeathArray index="Normal" ModelLink="##id##DeathRagdoll" SoundLink="SiegeTank_Explode"/>
+        <DeathCustomData Name="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PlacementModel value="##id##"/>
+        <PortraitModel value="GdiPortrait"/>
+        <StandAnimTurnTime value="3.33"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSiegeTank"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1"/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <ErrorArray Error="CantSeeBuildLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantSeeLandLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantBuildLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CouldntReachTarget" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <HighlightTooltip value="Unit/Name/##id##"/>
+        <LifeArmorIcon value="Assets\textures\btn-upgrade-terran-vehicleplatinglevel0.dds"/>
+        <SoundArray index="Ready" value="Shepherd_Ready"/>
+        <SoundArray index="Help" value="Shepherd_Help"/>
+        <SoundArray index="What" value="Shepherd_What"/>
+        <SoundArray index="Yes" value="Shepherd_Yes"/>
+        <SoundArray index="Attack" value="Shepherd_Attack"/>
+        <SoundArray index="Pissed" value="Shepherd_What"/>
+        <SoundArray index="Movement" value="Shepherd_Movement"/>
+    </CActorUnit>
+    
+    
+
+    <CActorUnit id="ZOCOMCrawlerDeployCaster" parent="ZOCOMBuilding" unitName="ZOCOMCrawlerDeployCaster">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="QueueAnim"/>
+        <Macros value="UnpoweredAnim"/>
+        <Macros value="BuildingFlattenTerrainMacro"/>
+        <Macros value="ProtossBuildingPowerUp"/>
+        <Model value="SoACaster"/>
+        <EventDataSound Name="BuildingWarpIn" Actor="UnitSound" Sound="Protoss_BuildingWarpIn"/>
+        <BuildModel value="SoACasterBirth"/>
+        <DeathArray index="Normal" ModelLink="SoACasterDeath" SoundLink="SoACaster_Explode"/>
+        <DeathArray index="UnderConstruction" ModelLink="ProtossWarpInDeath" SoundLink="Gateway_Explode"/>
+        <PlacementModel value="SoACaster"/>
+        <PlacementSound value="Protoss_BuildingPlacement"/>
+        <PortraitModel value="ExecutorPortrait"/>
+        <BarOffset value="140"/>
+        <BarWidth value="160"/>
+        <HighlightTooltip value="Unit/Name/ZOCOMCrawlerDeployCaster"/>
+        <NameOffset value="130"/>
+        <SoundArray index="Ready" value="SoACaster_Ready"/>
+        <SoundArray index="What" value="SoACaster_What"/>
+        <HeroIcon value="Assets\icons\factions\faction-tw-gdi.dds"/>
+        <UnitIcon value="Assets\icons\factions\faction-tw-gdi.dds"/>
+        <GroupIcon><Image value="Assets\icons\factions\faction-tw-gdi.dds"/></GroupIcon>
+        <Wireframe><Image value="Assets\icons\factions\faction-tw-gdi.dds"/></Wireframe>
+    </CActorUnit>
+    <CActorUnit id="ZOCOMBunker" parent="ZOCOMBuilding" unitName="ZOCOMBunker" >
+        <Aliases value="_UnitHuge"/>
+        <Macros value="BunkerTransportAnim"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit BunkerIsEmpty" Send="DeathCustomize Empty"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit NeosteelFramePurchasedNoConstruction" Send="DeathCustomize Upgrade"/>
+        <On Terms="Upgrade.NeosteelFrame.Add; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On Terms="UnitBirth.ZOCOMBunker; ValidateUnit NeosteelFramePurchased" Send="ModelSwap BunkerUpgrade"/>
+        <On Terms="Upgrade.NeosteelFrame.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
+        <On Terms="UnitBirth.ZOCOMBunker" Send="StatusSet BunkerBuilt 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="StatusSet ShrikeTurret 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="Create ShrikeTurret"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Send="Create ShrikeTurretPlaceholder"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Target="ShrikeTurret" Send="Signal TurretHide"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurret" Send="Signal TurretDeath"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurretPlaceholder" Send="Signal TurretDeath"/>
+        <On Terms="UnitBirth.ZOCOMBunker" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
+        <On Terms="UnitBirth.ZOCOMBunker" Target="ShrikeTurret" Send="Signal TurretShow"/>
+        <On Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
+        <On Terms="UnitBirth.ZOCOMBunker" Send="StatusSet BunkerBuilt 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="StatusSet ShrikeTurret 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="Create ShrikeTurret"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Send="Create ShrikeTurretPlaceholder"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Target="ShrikeTurret" Send="Signal TurretHide"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurret" Send="Signal TurretDeath"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurretPlaceholder" Send="Signal TurretDeath"/>
+        <On Terms="UnitBirth.ZOCOMBunker" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
+        <On Terms="UnitBirth.ZOCOMBunker" Target="ShrikeTurret" Send="Signal TurretShow"/>
+        <On Terms="Upgrade.NeoSteelFrame.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap JumboBunker"/>
+        <On Terms="UnitBirth.ZOCOMBunker; ValidatePlayer JumboBunkerResearched" Send="ModelSwap JumboBunker"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit JumboBunkerResearched" Send="DeathCustomize Upgrade"/>
+        <CreepHeightClass value="Small"/>
+        <DeathArray index="Normal" ModelLink="BunkerDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Bunker_Explode"/>
+        <DeathCustoms ModelLink="BunkerUpgradeDeath" Name="Upgrade"/>
+        <DeathCustoms ModelLink="BunkerDeathEmpty" Name="Empty"/>
+        <PlacementModel value="BunkerPlacement"/>
+        <PlacementActorModel value="BunkerPlacementModel"/>
+        <PlaceholderActorModel value="BunkerPlaceholderModel"/>
+        <PortraitModel value="BunkerPortrait"/>
+        <BarOffset value="80"/>
+        <BarWidth value="85"/>
+        <GlossaryAnim value="Stand,Work"/>
+        <NameOffset value="70"/>
+        <SoundArray index="Ready" value="Bunker_Ready"/>
+        <SoundArray index="What" value="Bunker_What"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMDefenseCrawlerDeployed" parent="ZOCOMBuilding" unitName="ZOCOMDefenseCrawlerUnpack" >
+        <Aliases value="_UnitHuge"/>
+        <Macros value="QueueAnim"/>
+        <Macros value="BuildingFlattenTerrainMacro"/>
+        <Macros value="MacroTownhallDeco_Terran"/>
+        <Macros value="TerranPlanetaryFortressPlayerDecalMacro"/>
+        <AcceptedHostedPropTransfers index="Decal" value="0"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo ZOCOMDefenseCrawlerUnpack" Send="Create"/>
+        <On Terms="UnitBirth.ZOCOMDefenseCrawlerUnpack; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
+        <On Terms="UnitBirth.ZOCOMDefenseCrawlerUnpack; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom ZOCOMDefenseCrawlerUnpack" Send="Destroy"/>
+        <Model value="ZOCOMDefenseCrawler_Deployed"/>
+        <DeathArray index="Normal" ModelLink="PlanetaryFortressDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="PlanetaryFortress_Explode"/>
+        <PortraitModel value="CommandCenterPortrait"/>
+        <BarOffset value="180"/>
+        <BarWidth value="200"/>
+        <GlossaryAnim value="Stand,A"/>
+        <HighlightTooltip value="Unit/Name/ZOCOMDefenseCrawlerUnpacked"/>
+        <NameOffset value="150"/>
+        <SoundArray index="Ready" value="GDICrawler_What"/>
+        <SoundArray index="What" value="GDICrawler_What"/>
+        <StatusHarvesterData Text="UI/HarvesterCountMinerals" SearchFilters="HarvestableResource;Player,Ally,Enemy" SearchRadius="8"/>
+
+        <MinimapIcon value="Assets\icons\Gdi\DefenseConstructionPlant.dds"/>
+        <MinimapIconScale value="0.400000"/>
+        <MinimapFlashWhenAttacked value="0"/>
+        <MinimapUseSelfColor value="0"/>
+        <MinimapUseSelectionColor value="0"/>
+        <PlacementModel value="GDIDefenseMCVPlacement"/>
+    </CActorUnit>
+    <CActorUnit id="ZOCOMDefenseCrawlerUnpack" parent="ZOCOMVehicle" unitName="SiegeModeMorphModel" >
+        <Aliases value="_UnitLarge"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+
+        <!--        <Baselines index="Stand" AnimProps=""/>-->
+        <!--        <Baselines index="Walk" AnimProps=""/>-->
+        <On Terms="AbilMorph.*.Pause" Send="AnimSetPausedAll"/>
+        <On Terms="AbilMorph.*.Resume" Send="AnimSetPausedAll 0"/>
+
+
+
+        <On Terms="AbilMorph.*.Start; MorphTo ZOCOMDefenseCrawlerUnpack" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphTo ZOCOMDefenseCrawlerUnpack" Send="AnimPlay Start Morph,Start"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom ZOCOMDefenseCrawlerUnpack" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom ZOCOMDefenseCrawler" Send="Destroy"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SiegeTank_Land"/>
+        <Model value="ZOCOMDefenseCrawler_Morph"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <CreepHeightClass value="Tiny"/>
+        <DeathArray index="Normal" ModelLink="TerranLargeUnitDeath" SoundLink="SiegeTank_Explode"/>
+        <DeathCustoms ModelLink="TerranLargeUnitDeathLow" Name="AntiGravTerran"/>
+        <PortraitModel value="SiegeTankPortrait"/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <ErrorArray Error="CantSeeBuildLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantSeeLandLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantBuildLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CouldntReachTarget" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <HighlightTooltip value="Unit/Name/Defense MCV GDI"/>
+        <SoundArray index="Birth" value="GDIdefenseMCV_Birth"/>
+        <SoundArray index="Ready" value="GDICrawler_Ready"/>
+        <SoundArray index="Help" value="GDICrawler_Help"/>
+        <SoundArray index="What" value="GDICrawler_What"/>
+        <SoundArray index="Yes" value="GDICrawler_Yes"/>
+        <SoundArray index="Attack" value="GDICrawler_Attack"/>
+        <SoundArray index="Pissed" value="GDICrawler_What"/>
+        <SoundArray index="Movement" value="GDIdefenseMCV_Movement"/>
+        <SoundArray index="Turning" value="GDIdefenseMCV_Turning"/>
+        <SoundArray index="Board" value="GDIdefenseMCV_Board"/>
+        <SoundArray index="Click" value="GDIdefenseMCV_Click"/>
+        <SoundArray index="ClickError" value="GDIdefenseMCV_ClickError"/>
+        <SoundArray index="Highlight" value="GDIdefenseMCV_Highlight"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMDefenseMCVpack" parent="GenericUnitBaseMorphTransition" unitName="TankModeMorphModel" >
+        <Aliases value="_UnitLarge"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+        <On Terms="AbilMorph.*.Start; MorphTo ZOCOMDefenseCrawler" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphTo ZOCOMDefenseCrawler" Send="AnimPlay End Morph,End"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom ZOCOMDefenseCrawler" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom ZOCOMDefenseCrawlerUnpack" Send="Destroy"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SiegeTank_Land"/>
+        <On Terms="ActorCreation; CreepEngulfs" Send="CreepEngulfmentStopTransition"/>
+        <Model value="ZOCOMDefenseCrawler_Morph"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <CreepHeightClass value="Tiny"/>
+        <CreepRateGrow value="Grow"/>
+        <CreepRateShrink value="Shrink"/>
+        <DeathArray index="Normal" ModelLink="TerranLargeUnitDeath" SoundLink="SiegeTank_Explode"/>
+        <DeathCustoms ModelLink="TerranLargeUnitDeathLow" Name="AntiGravTerran"/>
+        <PortraitModel value="SiegeTankPortrait"/>
+        <AbilSoundArray AbilCmd="SiegeMode,Execute" Sound="SiegeTank_SiegeModeVO"/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <HighlightTooltip value="Unit/Name/CABALDefenseCrawler"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMDefenseCrawler" parent="ZOCOMVehicle" unitName="ZOCOMDefenseCrawler" >
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo ##unitName##" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom ##unitName##" Send="Destroy"/>
+
+
+        <Aliases value="_UnitLarge"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SiegeTank_Land"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <Model value="ZOCOMDefenseCrawler"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <CreepHeightClass value="Tiny"/>
+        <BuildModel value="ZOCOMDefenseCrawler"/>
+        <DeathArray index="Normal" ModelLink="SiegeTankDeath" SoundLink="SiegeTank_Explode"/>
+        <DeathCustoms ModelLink="TerranLargeUnitDeathLow" Name="AntiGravTerran"/>
+        <DeathCustoms ActorModel="SiegeTankDeathRagdoll" ModelLink="SiegeTankDeathRagdoll" Name="RagdollBasic">
+            <BodySquibs Name="Basic" Model="TerranSquibDeathRagdoll"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollSiegeTank" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollBaneling" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollUltraUnburrow" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms>
+            <ModelLink value="DeathVoidShadowMedium"/>
+            <SoundLink value="ShadowUnit_DeathFX"/>
+            <VoiceLink value="ShadowUnit_DeathVox"/>
+            <Name value="Shadow"/>
+        </DeathCustoms>
+        <DeathCustomData Name="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PlacementModel value="ZOCOMDefenseCrawler"/>
+        <PortraitModel value="SiegeTankPortrait"/>
+        <StandAnimTurnTime value="3.33"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSiegeTank"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1"/>
+        <AbilSoundArray AbilCmd="ZOCOMDefenseMCVdeploy,Execute" Sound="GDICrawler_Deploy"/>
+        <AbilSoundArray AbilCmd="GDIMCVDeploy,Execute" Sound="GDICrawler_Deploy"/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <ErrorArray Error="CantSeeBuildLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantSeeLandLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantBuildLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CouldntReachTarget" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <HighlightTooltip value="Unit/Name/ZOCOMDefenseCrawler"/>
+        <SoundArray index="Ready" value="GDICrawler_Ready"/>
+        <SoundArray index="Help" value="GDICrawler_Help"/>
+        <SoundArray index="What" value="GDICrawler_What"/>
+        <SoundArray index="Yes" value="GDICrawler_Yes"/>
+        <SoundArray index="Attack" value="GDICrawler_Attack"/>
+        <SoundArray index="Pissed" value="GDICrawler_What"/>
+
+        <MinimapIcon value="Assets\icons\Gdi\DefenseMCV.dds"/>
+        <MinimapIconScale value="0.400000"/>
+        <MinimapFlashWhenAttacked value="0"/>
+        <MinimapUseSelfColor value="0"/>
+        <MinimapUseSelectionColor value="0"/>
+    </CActorUnit>
+    <CActorUnit id="ZOCOMMastodon" parent="ZOCOMVehicle" unitName="ZOCOMMastodon" >
+        <Aliases value="_UnitLarge"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SiegeTank_Land"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <Model value="ZOCOMMastodon"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <CreepHeightClass value="Tiny"/>
+        <BuildModel value="ZOCOMMastodon"/>
+        <DeathArray index="Normal" ModelLink="MastodonDeathRagdoll" SoundLink="SiegeTank_Explode"/>
+        <DeathCustomData Name="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PlacementModel value="ZOCOMMastodon"/>
+        <PortraitModel value="NodPortrait"/>
+        <StandAnimTurnTime value="3.33"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSiegeTank"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="3"/>
+        <AbilSoundArray/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <ErrorArray Error="CantSeeBuildLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantSeeLandLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantBuildLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CouldntReachTarget" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <HighlightTooltip value="Unit/Name/ZOCOMMastodon"/>
+        <SoundArray index="Ready" value="MastodonReady"/>
+        <SoundArray index="Help" value="Mastodon_Help"/>
+        <SoundArray index="What" value="Mastodon_What"/>
+        <SoundArray index="Yes" value="Mastodon_Yes"/>
+        <SoundArray index="Attack" value="ZOCOMMastodonAttack"/>
+        <SoundArray index="Pissed" value="Mastodon_What"/>
+        <SoundArray index="Movement" value="NodVehicleMoveLoopAvatar"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMZoneEnforcer" parent="ZOCOMInfantry" unitName="ZOCOMZoneEnforcer" >
+        <Aliases value="_UnitSmall"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create"/>
+        <On index="1" Terms="UnitRevive.ZOCOMZoneEnforcer"/>
+        <On index="2" Send="RefSet ::HostTurretBody _Selectable"/>
+        <On index="3" Terms="UnitConstruction.ZOCOMZoneEnforcer.Start" Send="Create"/>
+        <On index="4" Terms="UnitConstruction.ZOCOMZoneEnforcer.Finish" Send="AnimPlay ConstructionDeath Stand,Birth,Death FullMatch"/>
+        <On index="5" Terms="AnimDone.*.Missing; AnimName ConstructionDeath" Send="Destroy"/>
+        <On index="6" Terms="ActorCreation; ValidateUnit IsFlying; Option Shadow Low; $AllowBlobShadow" Send="Create FlyerShadow"/>
+        <On index="7" Terms="ActorCreation; ValidateUnit IsNotFlying; Option Shadow Low; $AllowBlobShadow" Send="Create GroundShadow"/>
+        <On index="8" Terms="StatusOn.*.PreTargetingModel" Send="Create ModelPretargetGround"/>
+        <On index="9" Terms="StatusOff.*.PreTargetingModel" Target="ModelPretargetGround" Send="Destroy"/>
+        <On index="10" Terms="StatusOn.*.PreTargetingModel; ValidateUnit IsFlying" Target="" Send="Create GroundPreSelection"/>
+        <On index="11" Terms="StatusOff.*.PreTargetingModel" Target="GroundPreSelection" Send="Destroy"/>
+        <On index="12" Terms="StatusIncrement.*.PreTargetingModel; IsStatus PreTargetingModel 2" Target="" Send="StatusSet PreTargetingModel 1"/>
+        <On index="13" Terms="PreTargetingUpdate.*.Start" Send="SetTintColorBlendPair 255,192,192 255,128,128 0.150000 Bounce Pretarget"/>
+        <On index="14" Terms="PreTargetingUpdate.*.Stop" Send="ClearTintColor 0.100000 Pretarget"/>
+        <On index="15" Terms="StatusOn.*.PreTargetingTint" Send="PreTargetingUpdate Start"/>
+        <On index="16" Terms="StatusOff.*.PreTargetingTint" Send="PreTargetingUpdate Stop"/>
+        <On index="17" Terms="StatusIncrement.*.PreTargetingTint; IsStatus PreTargetingTint 2" Send="StatusSet PreTargetingTint 1"/>
+        <On index="18" Terms="CursorUpdate.*.Start; ValidateUnit IsFlying" Send="StatusIncrement FlyerHelper"/>
+        <On index="19" Terms="CursorUpdate.*.Stop; ValidateUnit IsFlying; HasStatus FlyerHelper" Send="StatusDecrement FlyerHelper"/>
+        <On index="20" Terms="ActorCreation; ScopeContains GroundLocalSelection" Send="StatusSet Selected 1"/>
+        <On index="21" Terms="SelectionLocalUpdate.*.Start" Send="StatusSet Selected 1"/>
+        <On index="22" Terms="SelectionLocalUpdate.*.Stop" Send="StatusSet Selected 0"/>
+        <On index="23" Terms="StatusOn.*.Selected; ValidateUnit IsFlying" Send="StatusIncrement FlyerHelper"/>
+        <On index="24" Terms="StatusOff.*.Selected; ValidateUnit IsFlying; HasStatus FlyerHelper" Send="StatusDecrement FlyerHelper"/>
+        <On index="25" Terms="StatusOn.*.FlyerHelper; FlyerHelper All" Send="Create FlyerHelperSplat"/>
+        <On index="26" Terms="StatusOn.*.FlyerHelper; FlyerHelper Selected" Send="Create FlyerHelperSplat"/>
+        <On index="27" Terms="StatusOff.*.FlyerHelper; FlyerHelper Selected" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="28" Terms="ActorCreation; FlyerHelper All; ValidateUnit IsFlying" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="29" Terms="ActorDestruction; FlyerHelper All; !HasStatus FlyerHelper" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="30" Terms="FlyerHelperChange; FlyerHelper None" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="31" Terms="FlyerHelperChange; FlyerHelper Selected; HasStatus FlyerHelper; !ScopeContains FlyerHelperSplat" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="32" Terms="FlyerHelperChange; FlyerHelper Selected; !HasStatus FlyerHelper" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="33" Terms="FlyerHelperChange; FlyerHelper All; ValidateUnit IsFlying; !ScopeContains FlyerHelperSplat" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="34" Terms="UnitBirth.*.Normal" Send="$Birth 0 0.000000"/>
+        <On index="35" Terms="UnitFidget" Send="AnimPlay Fidget Fidget"/>
+        <On index="36" Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Fidget"/>
+        <On index="37" Terms="UnitDetectedByViewer.*.On; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOn"/>
+        <On index="38" Terms="UnitDetectedByViewer.*.Off; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOff"/>
+        <On index="39" Terms="UnitDeathCustomize; ValidateUnit NotStructure; IsStatus InAir 1" Target="" Send="DeathCustomize AntiGravGeneric"/>
+        <On index="40" Terms="UnitDeathCustomize; ValidateUnit IsProtossUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="41" Terms="UnitDeathCustomize; ValidateUnit IsTerranUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravTerran"/>
+        <On index="42" Terms="UnitDeathCustomize; ValidateUnit IsZergUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravZerg"/>
+        <On index="43" Terms="UnitDeathCustomize; ValidateUnit IsVortexed" Send="DeathCustomize Vortex"/>
+        <On index="44" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathProtoss" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="45" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathZerg" Send="DeathCustomize AntiGravZerg"/>
+        <On index="46" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathTerran" Send="DeathCustomize AntiGravTerran"/>
+        <On index="47" Terms="Behavior.PhoenixAntiGrav.On" Send="ModelSuddenMotionStart"/>
+        <On index="48" Terms="Behavior.PhoenixAntiGrav.Off" Send="ModelSuddenMotionStop"/>
+        <On index="49" Terms="Behavior.ForceLowDeath.On" Send="DeathCustomsEnablePhysics 0"/>
+        <On index="50" Terms="UnitTaunt.*.Start; Taunt" Send="AnimPlay Cheer Stand,Victory"/>
+        <On index="51" Terms="UnitTaunt.*.Stop; Taunt" Send="AnimClear Cheer"/>
+        <On index="52" Terms="UnitTaunt.*.Start; Taunt Dance" Send="AnimPlay Dance Stand,Dance"/>
+        <On index="53" Terms="UnitTaunt.*.Stop; Taunt Dance" Send="AnimClear Dance"/>
+        <On index="54" Terms="UnitTaunt.*.Start; Taunt Tease" Send="AnimPlay Taunt Taunt"/>
+        <On index="55" Terms="UnitTaunt.*.Stop; Taunt Tease" Send="AnimClear Taunt"/>
+        <On index="56" Terms="ActorCreation" Send="StatusSet InAir 0"/>
+        <On index="57" Terms="UnitHeightUpdate.*.Lift" Send="StatusSet InAir 1"/>
+        <On index="58" Terms="UnitHeightUpdate.*.Land" Send="StatusSet InAir 0"/>
+        <On index="59" Terms="BuildCoachHover.*.On" Send="TimerKill DelayUnhighlight"/>
+        <On index="60" Terms="BuildCoachHover.*.On" Send="SetTintColor 0,255,0 0.100000"/>
+        <On index="61" Terms="BuildCoachHover.*.Off" Send="TimerSet 0.300000 DelayUnhighlight"/>
+        <On index="62" Terms="TimerExpired; TimerName DelayUnhighlight" Send="SetTintColor 255,255,255 0.500000"/>
+        <On index="63" Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create WarPigDropModel"/>
+        <On Terms="ActorCreation; ValidateUnit NoMarineShield" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.ShieldWall.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.ShieldWall.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.CombatShield.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.CombatShield.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="UnitDeath.ZOCOMZoneEnforcer; AnimPlaying Cover" Target="_DeathModel" Send="AnimPlay Cover Cover PlayForever"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Marine_Land"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <On Terms="Abil.ZoneEGrenades.SourceCastStart" Send="$Spell"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="Enforcer_Death"/>
+        <DeathArray index="Blast" SoundLink="Marine_DeathFXBlast"/>
+        <DeathArray index="Disintegrate" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Eat" AnimProps="Stand" SoundLink="Marine_DeathFXEat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death" SoundLink="Marine_DeathFXEviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Silentkill" SoundLink="Marine_DeathFXSilentKill"/>
+        <DeathArray index="Squish" SoundLink="Marine_DeathFXBloodSpray"/>
+        <PortraitModel value="MarineMercenaryPortrait"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <GroupSoundArray index="What" value="MarineGroupWhat"/>
+        <GroupSoundArray index="Yes" value="MarineGroupYes"/>
+        <GroupSoundArray index="Attack" value="MarineGroupAttack"/>
+        <GroupSoundArray index="Board" value="MarineGroupBoard"/>
+        <HighlightTooltip value="Unit/Name/Zone Trooper"/>
+        <SoundArray index="Birth" value="MarineBirth"/>
+        <SoundArray index="Ready" value="Enforcer_Ready"/>
+        <SoundArray index="Help" value="Enforcer_Help"/>
+        <SoundArray index="What" value="Enforcer_What"/>
+        <SoundArray index="Yes" value="Enforcer_Yes"/>
+        <SoundArray index="Attack" value="Enforcer_Attack"/>
+        <SoundArray index="Pissed" value="Enforcer_What"/>
+        <SoundArray index="Movement" value="MarineMovement"/>
+        <SoundArray index="Turning" value="MarineTurning"/>
+        <SoundArray index="Board" value="MarineBoard"/>
+        <SoundArray index="Click" value="MarineClick"/>
+        <SoundArray index="ClickError" value="MarineClickError"/>
+        <SoundArray index="Highlight" value="MarineHighlight"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMZoneTrooper" parent="ZOCOMInfantry" unitName="ZOCOMZoneTrooper" >
+        <Aliases value="_UnitSmall"/>
+        <Macros value="UnloadDropAnim"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create WarPigDropModel"/>
+        <On Terms="ActorCreation; ValidateUnit NoMarineShield" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.ShieldWall.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.ShieldWall.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.CombatShield.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.CombatShield.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="UnitDeath.ZOCOMZoneTrooper; AnimPlaying Cover" Target="_DeathModel" Send="AnimPlay Cover Cover PlayForever"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Marine_Land"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="GDIZoneTrooperDeath" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="GDIZoneTrooper_Death"/>
+        <DeathArray index="Blast" SoundLink="Marine_DeathFXBlast"/>
+        <DeathArray index="Disintegrate" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Eat">
+            <AnimProps value="Death"/>
+            <ModelLink value="GDIZoneTrooperDeath"/>
+            <SoundLink value="Marine_DeathFXBloodSpray"/>
+            <VoiceLink value="GDIZoneTrooper_Death"/>
+        </DeathArray>
+        <DeathArray index="Eviscerate">
+            <AnimProps value="Death"/>
+            <ModelLink value="GDIZoneTrooperDeath"/>
+            <SoundLink value="Marine_DeathFXBloodSpray"/>
+            <VoiceLink value="GDIZoneTrooper_Death"/>
+        </DeathArray>
+        <DeathArray index="Fire">
+            <AnimProps value="Death"/>
+            <ModelLink value="GDIZoneTrooperDeath"/>
+            <SoundLink value="Marine_DeathFXBloodSpray"/>
+            <VoiceLink value="GDIZoneTrooper_Death"/>
+        </DeathArray>
+        <DeathArray index="Silentkill">
+            <AnimProps value="Death"/>
+            <ModelLink value="GDIZoneTrooperDeath"/>
+            <SoundLink value="Marine_DeathFXBloodSpray"/>
+            <VoiceLink value="GDIZoneTrooper_Death"/>
+        </DeathArray>
+        <DeathArray index="Squish">
+            <AnimProps value="Death"/>
+            <ModelLink value="GDIZoneTrooperDeath"/>
+            <SoundLink value="Marine_DeathFXBloodSpray"/>
+            <VoiceLink value="GDIZoneTrooper_Death"/>
+        </DeathArray>
+        <DeathArray index="UnderConstruction" ModelLink="GDIZoneTrooperDeath" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="GDIZoneTrooper_Death"/>
+        <PortraitModel value="MarineMercenaryPortrait"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <GroupSoundArray index="What" value="MarineGroupWhat"/>
+        <GroupSoundArray index="Yes" value="MarineGroupYes"/>
+        <GroupSoundArray index="Attack" value="MarineGroupAttack"/>
+        <GroupSoundArray index="Board" value="MarineGroupBoard"/>
+        <HighlightTooltip value="Unit/Name/Zone Enforcer"/>
+        <SoundArray index="Birth" value="MarineBirth"/>
+        <SoundArray index="Pissed" value="GDIZoneTrooper_What"/>
+        <SoundArray index="Movement" value="MarineMovement"/>
+        <SoundArray index="Turning" value="MarineTurning"/>
+        <SoundArray index="Board" value="MarineBoard"/>
+        <SoundArray index="Click" value="MarineClick"/>
+        <SoundArray index="ClickError" value="MarineClickError"/>
+        <SoundArray index="Highlight" value="MarineHighlight"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMZoneDefender" parent="ZOCOMInfantry" unitName="ZOCOMZoneDefender" >
+        <Aliases value="_UnitSmall"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create SoundEmitter GDIZoneTrooper_Ambience"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create WarPigDropModel"/>
+        <On Terms="ActorCreation; ValidateUnit NoMarineShield" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.ShieldWall.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.ShieldWall.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.CombatShield.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.CombatShield.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="UnitDeath.ZOCOMZoneDefender; AnimPlaying Cover" Target="_DeathModel" Send="AnimPlay Cover Cover PlayForever"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Marine_Land"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="Defender_Death"/>
+        <DeathArray index="Blast" SoundLink="Marine_DeathFXBlast"/>
+        <DeathArray index="Disintegrate" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Eat" AnimProps="Stand" SoundLink="Marine_DeathFXEat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death" SoundLink="Marine_DeathFXEviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Silentkill" SoundLink="Marine_DeathFXSilentKill"/>
+        <DeathArray index="Squish" SoundLink="Marine_DeathFXBloodSpray"/>
+        <PortraitModel value="MarineMercenaryPortrait"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <GroupSoundArray index="What" value="MarineGroupWhat"/>
+        <GroupSoundArray index="Yes" value="MarineGroupYes"/>
+        <GroupSoundArray index="Attack" value="MarineGroupAttack"/>
+        <GroupSoundArray index="Board" value="MarineGroupBoard"/>
+        <HighlightTooltip value="Unit/Name/Zone Defender"/>
+        <SoundArray index="Birth" value="MarineBirth"/>
+        <SoundArray index="Ready" value="Defender_Ready"/>
+        <SoundArray index="Help" value="Defender_Help"/>
+        <SoundArray index="What" value="Defender_What"/>
+        <SoundArray index="Yes" value="Defender_Yes"/>
+        <SoundArray index="Attack" value="Defender_Attack"/>
+        <SoundArray index="Pissed" value="Defender_What"/>
+        <SoundArray index="Movement" value="MarineMovement"/>
+        <SoundArray index="Turning" value="MarineTurning"/>
+        <SoundArray index="Board" value="MarineBoard"/>
+        <SoundArray index="Click" value="MarineClick"/>
+        <SoundArray index="ClickError" value="MarineClickError"/>
+        <SoundArray index="Highlight" value="MarineHighlight"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMZoneRaider" parent="ZOCOMInfantry" unitName="ZOCOMZoneRaider" >
+        <Aliases value="_UnitSmall"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create SoundEmitter GDIZoneTrooper_Ambience"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.ZOCOMZoneRaiderWeapon.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.ZOCOMZoneRaiderWeapon.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.ZOCOMZoneRaiderWeapon.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create WarPigDropModel"/>
+        <On Terms="ActorCreation; ValidateUnit NoMarineShield" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.ShieldWall.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.ShieldWall.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.CombatShield.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.CombatShield.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="UnitDeath.ZOCOMZoneRaider; AnimPlaying Cover" Target="_DeathModel" Send="AnimPlay Cover Cover PlayForever"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Marine_Land"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <On Terms="WeaponStart.ZOCOMZoneRaiderCharge.AttackStart" Send="$Spell"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="ZOCOMZoneRaider_Death"/>
+        <DeathArray index="Blast" SoundLink="Marine_DeathFXBlast"/>
+        <DeathArray index="Disintegrate" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Eat" AnimProps="Stand" SoundLink="Marine_DeathFXEat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death" SoundLink="Marine_DeathFXEviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Silentkill" SoundLink="Marine_DeathFXSilentKill"/>
+        <DeathArray index="Squish" SoundLink="Marine_DeathFXBloodSpray"/>
+        <PortraitModel value="MarineMercenaryPortrait"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <GroupSoundArray index="What" value="MarineGroupWhat"/>
+        <GroupSoundArray index="Yes" value="MarineGroupYes"/>
+        <GroupSoundArray index="Attack" value="MarineGroupAttack"/>
+        <GroupSoundArray index="Board" value="MarineGroupBoard"/>
+        <HighlightTooltip value="Unit/Name/Zone Defender"/>
+        <SoundArray index="Birth" value="MarineBirth"/>
+        <SoundArray index="Ready" value="ZOCOMZoneRaider_Ready"/>
+        <SoundArray index="Help" value="ZOCOMZoneRaider_Help"/>
+        <SoundArray index="What" value="ZOCOMZoneRaider_What"/>
+        <SoundArray index="Yes" value="ZOCOMZoneRaider_Yes"/>
+        <SoundArray index="Attack" value="ZOCOMZoneRaider_Attack"/>
+        <SoundArray index="Pissed" value="ZOCOMZoneRaider_What"/>
+        <SoundArray index="Movement" value="MarineMovement"/>
+        <SoundArray index="Turning" value="MarineTurning"/>
+        <SoundArray index="Board" value="MarineBoard"/>
+        <SoundArray index="Click" value="MarineClick"/>
+        <SoundArray index="ClickError" value="MarineClickError"/>
+        <SoundArray index="Highlight" value="MarineHighlight"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMZoneCommando" parent="ZOCOMInfantry" unitName="ZOCOMZoneCommando" >
+        <Aliases value="_UnitSmall"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create SoundEmitter GDIZoneTrooper_Ambience"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create WarPigDropModel"/>
+        <On Terms="ActorCreation; ValidateUnit NoMarineShield" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.ShieldWall.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.ShieldWall.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.CombatShield.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.CombatShield.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="UnitDeath.ZOCOMZoneCommando; AnimPlaying Cover" Target="_DeathModel" Send="AnimPlay Cover Cover PlayForever"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Marine_Land"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <On Terms="Abil.CommandoC4.SourceCastStart" Send="$Spell"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="Commando_Death"/>
+        <DeathArray index="Blast" SoundLink="Marine_DeathFXBlast"/>
+        <DeathArray index="Disintegrate" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Eat" AnimProps="Stand" SoundLink="Marine_DeathFXEat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death" SoundLink="Marine_DeathFXEviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Silentkill" SoundLink="Marine_DeathFXSilentKill"/>
+        <DeathArray index="Squish" SoundLink="Marine_DeathFXBloodSpray"/>
+        <PortraitModel value="MarineMercenaryPortrait"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <GroupSoundArray index="What" value="MarineGroupWhat"/>
+        <GroupSoundArray index="Yes" value="MarineGroupYes"/>
+        <GroupSoundArray index="Attack" value="MarineGroupAttack"/>
+        <GroupSoundArray index="Board" value="MarineGroupBoard"/>
+        <HighlightTooltip value="Unit/Name/Zone Commando"/>
+        <SoundArray index="Birth" value="MarineBirth"/>
+        <SoundArray index="Ready" value="Commando_Ready"/>
+        <SoundArray index="Help" value="Commando_Help"/>
+        <SoundArray index="What" value="Commando_What"/>
+        <SoundArray index="Yes" value="Commando_Yes"/>
+        <SoundArray index="Attack" value="Commando_Attack"/>
+        <SoundArray index="Pissed" value="Commando_What"/>
+        <SoundArray index="Movement" value="MarineMovement"/>
+        <SoundArray index="Turning" value="MarineTurning"/>
+        <SoundArray index="Board" value="MarineBoard"/>
+        <SoundArray index="Click" value="MarineClick"/>
+        <SoundArray index="ClickError" value="MarineClickError"/>
+        <SoundArray index="Highlight" value="MarineHighlight"/>
+
+        <!--        <CustomUnitStatusFrame value="HotS_UnitStatus/KerriganHeroUnitStatusFrameTemplate"/>-->
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <StatusBarFlags index="Workers" value="0"/>
+    </CActorUnit>
+    <CActorUnit id="ZOCOMDozer" parent="ZOCOMInfantry" unitName="ZOCOMDozer">
+        <Aliases value="_UnitSmall"/>
+        <Macros value="CarryAnim"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="MacroWorkerHat"/>
+        <Macros value="CarryTerrazineNodeAnim"/>
+        <Macros value="CarryAnimCampaign"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <On Terms="Abil.SCVHarvest.Start" Send="TimerSet 0.000000,0.300000 Gather"/>
+        <On Terms="Abil.SCVHarvest.Stop" Send="AnimClear Gather"/>
+        <On Terms="Abil.SCVHarvest.Stop" Send="TimerKill Gather"/>
+        <On Terms="AnimDone.*.Complete; AnimName Gather" Send="TimerSet 0.000000,0.300000 Gather"/>
+        <On Terms="TimerExpired; TimerName Gather" Send="AnimPlay Gather Work NonLooping"/>
+        <On Terms="TimerExpired; TimerName Gather" Send="Create SCVGatherSound"/>
+        <On Terms="Abil.Repair.SourceChannelStart" Send="TimerSet 0.000000,0.300000 Repair"/>
+        <On Terms="Abil.Repair.SourceChannelStop" Send="TimerKill Repair"/>
+        <On Terms="Abil.Repair.SourceChannelStop" Send="AnimClear Repair"/>
+        <On Terms="AnimDone.*.Complete; AnimName Repair" Send="TimerSet 0.000000,0.300000 Repair"/>
+        <On Terms="TimerExpired; TimerName Repair" Send="AnimPlay Repair Work NonLooping"/>
+        <On Terms="TimerExpired; TimerName Repair" Send="Create SCVRepairSound"/>
+        <On Terms="Abil.*.WorkerStart" Send="TimerSet 0.000000,0.300000 Build"/>
+        <On Terms="Abil.*.WorkerStop" Send="TimerKill Build"/>
+        <On Terms="Abil.*.WorkerStop" Send="AnimClear Build"/>
+        <On Terms="Abil.*.WorkerCancel" Send="TimerKill Build"/>
+        <On Terms="Abil.*.WorkerCancel" Send="AnimClear Build"/>
+        <On Terms="AnimDone.*.Complete; AnimName Build" Send="TimerSet 0.000000,0.300000 Build"/>
+        <On Terms="TimerExpired; TimerName Build" Send="AnimPlay Build Work NonLooping"/>
+        <On Terms="TimerExpired; TimerName Build" Send="Create SCVBuildSound"/>
+        <On Terms="Abil.SCVHarvest.Start" Send="StatusSet CloakSound 1"/>
+        <On Terms="Behavior.CarryHarvestableVespeneGeyserGas.Create" Send="StatusSet CloakSound 1"/>
+        <On Terms="Confirmation.SCV.Start" Send="StatusSet CloakSound 0"/>
+        <On Terms="Behavior.CloakFieldEffect.Create; IsStatus CloakSound 0" Send="Create Worker_CloakFieldOn"/>
+        <On Terms="Behavior.CloakFieldEffect.Destroy; IsStatus CloakSound 0" Send="Create Worker_CloakFieldOff"/>
+        <On Terms="Abil.GatherSpecialObject.SourcePrepStart" Send="TimerSet 0.000000,0.300000 Gather"/>
+        <On Terms="Abil.GatherSpecialObject.SourceCastStop" Send="AnimClear Gather"/>
+        <On Terms="Abil.GatherSpecialObject.SourceCastStop" Send="TimerKill Gather"/>
+        <On Terms="AnimDone.*.Complete; AnimName Gather" Send="TimerSet 0.000000,0.300000 Gather"/>
+        <On Terms="TimerExpired; TimerName Gather" Send="AnimPlay Gather Work NonLooping"/>
+        <On Terms="TimerExpired; TimerName Gather" Send="Create SCVGatherSound"/>
+        <On Terms="Behavior.CarryChrysalisEgg.Create" Send="AnimGroupApply Gather"/>
+        <On Terms="Behavior.CarryChrysalisEgg.Destroy" Send="AnimGroupRemove Gather"/>
+        <On Terms="Upgrade.FusionWelder.Add" Send="ModelSwap SCVFusionWelder"/>
+        <On Terms="Upgrade.DualFusionWelders.Add" Send="ModelSwap SCVFusionWelder"/>
+        <On Terms="Behavior.OracleCloakFieldEffect.Create; IsStatus CloakSound 0" Send="Create Worker_CloakFieldOn"/>
+        <On Terms="Behavior.OracleCloakFieldEffect.Destroy; IsStatus CloakSound 0" Send="Create Worker_CloakFieldOff"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SCV_Land"/>
+        <On Terms="Behavior.SCVFakeRepair.On" Send="AnimPlay Work,A Work,A"/>
+        <On Terms="AnimDone; AnimName Work,A; ValidateUnit HaveSCVFakeRepair" Send="AnimPlay Work,B Work,B"/>
+        <On Terms="AnimDone; AnimName Work,B; ValidateUnit HaveSCVFakeRepair" Send="AnimPlay Work,A Work,A"/>
+        <On Terms="Behavior.SCVFakeRepair.Off" Send="AnimClear Work,A"/>
+        <On Terms="Behavior.SCVFakeRepair.Off" Send="AnimClear Work,B"/>
+        <AnimBlendTime value="0.500000"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="SCVDeath" SoundLink="SCV_Explode"/>
+        <DeathCustoms ModelLink="SCVDeathRagdoll" Name="RagdollBasic">
+            <BodySquibs Name="Basic" Model="TerranSquibDeathRagdoll"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollSiegeTank" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollBaneling" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollUltraUnburrow" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms ActorModel="SpineCrawlerHurlDeathRagdoll" ModelLink="SCVDeathRagdoll" Name="RagdollSpineCrawlerHurl">
+            <BodySquibs Name="Basic" Model="TerranSquibDeathRagdoll"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <PortraitModel value="SCVPortrait"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="0.600000"/>
+            <RangeDown value="0.600000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSmall"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="2"/>
+        <BarOffset value="40"/>
+        <BarWidth value="42"/>
+        <SoundArray index="Ready" value="SCV_Ready2"/>
+        <SoundArray index="Help" value="Alert_GDIEconomyUnderAttack"/>
+        <SoundArray index="Yes" value="SCV_Yes2"/>
+        <SoundArray index="Attack" value="SCV_Attack2"/>
+        <SoundArray index="Pissed" value="Dozer_What"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMJames" parent="ZOCOMInfantry" unitName="ZOCOMJames" >
+        <Aliases value="_UnitSmall"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create SoundEmitter GDIZoneTrooper_Ambience"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create WarPigDropModel"/>
+        <On Terms="ActorCreation; ValidateUnit NoMarineShield" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.ShieldWall.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.ShieldWall.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="Upgrade.CombatShield.Add" Send="AnimClear Cover"/>
+        <On Terms="Upgrade.CombatShield.Remove" Send="AnimPlay Cover Cover PlayForever 0.000000"/>
+        <On Terms="UnitDeath.ZOCOMJames; AnimPlaying Cover" Target="_DeathModel" Send="AnimPlay Cover Cover PlayForever"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Marine_Land"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <On Terms="Abil.CommandoC4.SourceCastStart" Send="$Spell"/>
+        <On Terms="UnitBirth" Send="SetTeamColor 255,128,0 255,128,0"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="Commando_Death"/>
+        <DeathArray index="Blast" SoundLink="Marine_DeathFXBlast"/>
+        <DeathArray index="Disintegrate" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Eat" AnimProps="Stand" SoundLink="Marine_DeathFXEat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death" SoundLink="Marine_DeathFXEviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Silentkill" SoundLink="Marine_DeathFXSilentKill"/>
+        <DeathArray index="Squish" SoundLink="Marine_DeathFXBloodSpray"/>
+        <PortraitModel value="MarineMercenaryPortrait"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <!--        <CustomUnitStatusFrame value="HotS_UnitStatus/KerriganHeroUnitStatusFrameTemplate"/>-->
+        <GroupSoundArray index="What" value="MarineGroupWhat"/>
+        <GroupSoundArray index="Yes" value="MarineGroupYes"/>
+        <GroupSoundArray index="Attack" value="MarineGroupAttack"/>
+        <GroupSoundArray index="Board" value="MarineGroupBoard"/>
+        <HighlightTooltip value="Unit/Name/Zone Commando"/>
+        <SoundArray index="Birth" value="MarineBirth"/>
+        <SoundArray index="Ready" value="ZOCOMZoneRaider_Ready"/>
+        <SoundArray index="Help" value="ZOCOMZoneRaider_Help"/>
+        <SoundArray index="Yes" value="ZOCOMZoneRaider_Yes"/>
+        <SoundArray index="Attack" value="ZOCOMZoneRaider_Attack"/>
+        <SoundArray index="Pissed" value="ZOCOMZoneRaider_What"/>
+        <SoundArray index="Movement" value="MarineMovement"/>
+        <SoundArray index="Turning" value="MarineTurning"/>
+        <SoundArray index="Board" value="MarineBoard"/>
+        <SoundArray index="Click" value="MarineClick"/>
+        <SoundArray index="ClickError" value="MarineClickError"/>
+        <SoundArray index="Highlight" value="MarineHighlight"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <StatusBarFlags index="Workers" value="0"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMHammerHead" parent="ZOCOMUnitBase" unitName="ZOCOMHammerHead">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmAir"/>
+        <Macros value="PhysicsDeathsVoidAir"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Battlecruiser_Land"/>
+        <On Terms="ActorCreation" Send="Create CABALSalamanderLookAt012"/>
+        <On Terms="ActorCreation" Send="Create CABALSalamanderLookAt02"/>
+        <On Terms="ActorCreation" Send="Create CABALSalamanderLookAt03"/>
+        <On Terms="ActorCreation" Send="Create CABALSalamanderLookAt04"/>
+        <On Terms="WeaponStart.CABALSalamanderRocket.AttackStart" Target="Turret_00" Send="LookAtEngage Continue"/>
+        <On Terms="Abil.attack.ReadyStop" Target="Turret_00" Send="LookAtDisengage"/>
+        <On Terms="Behavior.BattleCruiserFastJump.On" Send="Create HyperjumpImpact"/>
+        <On Terms="Behavior.BattleCruiserFastJump.On" Send="SetVisibility"/>
+        <On Terms="Behavior.BattleCruiserFastJump.Off" Send="SetVisibility 1"/>
+        <On Terms="WeaponStart.CABALSalamanderRocket2.AttackStart" Target="Turret_01" Send="LookAtEngage Continue"/>
+        <On Terms="WeaponStart.CABALSalamanderRocket3.AttackStart" Target="Turret_02" Send="LookAtEngage Continue"/>
+        <On Terms="WeaponStart.CABALSalamanderRocket4.AttackStart" Target="Turret_03" Send="LookAtEngage Continue"/>
+        <On Terms="Abil.attack.ReadyStop" Target="Turret_01" Send="LookAtDisengage"/>
+        <On Terms="Abil.attack.ReadyStop" Target="Turret_02" Send="LookAtDisengage"/>
+        <On Terms="Abil.attack.ReadyStop" Target="Turret_03" Send="LookAtDisengage"/>
+        <On Terms="Effect.LiquidTibWeaponCreatePersistent.Start" Send="$Spell NonLooping"/>
+        <HostSiteOps Ops="SOpBankerBattlecruiser"/>
+        <Model value="ZOCOMHammerHead"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <BuildModel value="ZOCOMHammerHead"/>
+        <DeathArray index="Normal" ModelLink="BattlecruiserDeathRagdoll" SoundLink=""/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionFlier"/>
+        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        <PlacementModel value="ZOCOMHammerHead"/>
+        <PortraitModel value="NodPortrait"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.250000,0.500000"/>
+            <RangeDown value="5.000000"/>
+            <RangeDownFade value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMassive2"/>
+        </TerrainSquibs>
+        <BarOffset value="75"/>
+        <BarWidth value="130"/>
+        <HighlightTooltip value="Unit/Name/ZOCOMHammerHead"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="ZOCOMHammerHead_Ready"/>
+        <SoundArray index="Help" value="ZOCOMHammerHead_Help"/>
+        <SoundArray index="What" value="ZOCOMHammerHead_What"/>
+        <SoundArray index="Yes" value="ZOCOMHammerHead_Yes"/>
+        <SoundArray index="Attack" value="ZOCOMHammerHead_Attack"/>
+        <SoundArray index="Pissed" value="ZOCOMHammerHead_What"/>
+        <SoundArray index="Movement" value="CABALSalamander_Movement"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMArgus" parent="ZOCOMUnitBase" unitName="ZOCOMArgus" >
+        <Aliases value="_UnitHuge"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmAir"/>
+        <Macros value="PhysicsDeathsVoidAir"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit BattlecruiserUpgraded" Send="DeathCustomize Upgrade"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Battlecruiser_Land"/>
+        <On Terms="ActorCreation" Send="Create ZOCOMArgusLaserLookAt01"/>
+        <On Terms="ActorCreation" Send="Create ZOCOMArgusLaserLookAt02"/>
+        <On Terms="ActorCreation" Send="Create ZOCOMArgusLaserLookAt03"/>
+        <On Terms="ActorCreation" Send="Create ZOCOMArgusLaserLookAt04"/>
+        <On Terms="ActorCreation" Send="Create ZOCOMArgusLaserLookAt05"/>
+        <On Terms="Abil.attack.ReadyStop" Target="Laser1" Send="LookAtDisengage"/>
+        <On Terms="Abil.attack.ReadyStop" Target="Laser2" Send="LookAtDisengage"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitBirth" Send="AnimPlay Attack Stand,Work,Start"/>
+        <On Terms="WeaponStart.ZOCOMArgusLaser.AttackStart" Target="Laser1" Send="LookAtEngage Continue"/>
+        <On Terms="WeaponStart.ZOCOMArgusLaser3.AttackStart" Target="Laser2" Send="LookAtEngage Continue"/>
+        <On Terms="WeaponStart.ArgusChaingun1.AttackStart" Target="AA01" Send="LookAtEngage Continue"/>
+        <On Terms="WeaponStart.ArgusChaingun2.AttackStart" Target="AA02" Send="LookAtEngage Continue"/>
+        <On Terms="WeaponStop.ArgusChaingun1.AttackStop" Target="AA01" Send="LookAtDisengage"/>
+        <On Terms="WeaponStop.ArgusChaingun2.AttackStop" Target="AA02" Send="LookAtDisengage"/>
+        <On Terms="WeaponStart.ArgusChaingun3.AttackStart" Target="AA03" Send="LookAtEngage Continue"/>
+        <On Terms="WeaponStop.ArgusChaingun3.AttackStop" Target="AA03" Send="LookAtDisengage"/>
+        <HostSiteOps Ops="SOpBankerBattlecruiser"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="BattlecruiserDeath" SoundLink=""/>
+        <DeathCustoms ModelLink="BattlecruiserDeathA" Name="Upgrade"/>
+        <DeathCustoms>
+            <ActorModel value="BattlecruiserDeathRagdoll"/>
+            <ModelLink value="BattlecruiserDeathRagdoll"/>
+            <Name value="RagdollBasic"/>
+            <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+            <BodySquibs Name="Basic" Model="TerranSquibDeathRagdoll"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="FireHeavy"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="FireHeavy"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms>
+            <ModelLink value="DeathVoidShadowLarge"/>
+            <SoundLink value="ShadowUnit_DeathFX"/>
+            <VoiceLink value="ShadowUnit_DeathVox"/>
+            <Name value="Shadow"/>
+        </DeathCustoms>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionFlier"/>
+        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        <PortraitModel value="BattlecruiserPortrait"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.250000,0.500000"/>
+            <RangeDown value="5.000000"/>
+            <RangeDownFade value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMassive2"/>
+        </TerrainSquibs>
+        <BarOffset value="75"/>
+        <BarWidth value="130"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Battlecruiser_Ready"/>
+        <SoundArray index="Help" value="Battlecruiser_Help"/>
+        <SoundArray index="What" value="Battlecruiser_What"/>
+        <SoundArray index="Yes" value="Battlecruiser_Yes"/>
+        <SoundArray index="Attack" value="Battlecruiser_Attack"/>
+        <SoundArray index="Pissed" value="Battlecruiser_Pissed"/>
+        <SoundArray index="Movement" value="Battlecruiser_Movement"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMEngineer" parent="ZOCOMInfantry" unitName="ZOCOMEngineer" >
+        <Aliases value="_MissileHybrids"/>
+        <Macros value="D8ChargeAnim"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="D8ChargeAnim"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <On Terms="Behavior.ReaperJump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <On Terms="Behavior.ReaperJump.Launch" Send="AnimBlendTimeApply 0.100000"/>
+        <On Terms="Behavior.ReaperJump.LandDown" Send="AnimBracketStop Jump"/>
+        <On Terms="Behavior.ReaperJump.LandDown" Send="AnimBlendTimeApply"/>
+        <On Terms="Behavior.ReaperJump.LandUp" Send="AnimBracketStop Jump"/>
+        <On Terms="Behavior.ReaperJump.LandUp" Send="AnimBlendTimeApply"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.P38ScytheGuassPistol.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.P38ScytheGuassPistol.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="WeaponStart.D8Charge.AttackStart" Send="AnimBracketStart Attack Spell"/>
+        <On Terms="WeaponStop.D8Charge.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="UnitBirth.ReaperPlacement" Send="Create"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Reaper_Land"/>
+        <On Terms="Abil.KD8Charge.SourceCastStart" Send="$Spell"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <On Terms="Abil.healCNC.SourceChannelStart" Send="AnimPlay Spell Work PlayForever"/>
+        <On Terms="Abil.healCNC.SourceChannelStop" Send="AnimClear Spell"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="Reaper_Explode"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PortraitModel value="ZOCOMEngineer"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.250000,0.500000"/>
+            <RangeUp value="0.600000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleReaper"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="5"/>
+        <AbilSoundArray AbilCmd="D8Charge,Execute" Sound="Reaper_D8ChargeVO"/>
+        <AbilSoundArray AbilCmd="KD8Charge,Execute" Sound="Reaper_D8ChargeVO"/>
+        <BarOffset value="50"/>
+        <BarWidth value="36"/>
+        <SoundArray index="Pissed" value="Reaper_Pissed"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMTitan" parent="ZOCOMUnitBase" unitName="ZOCOMTitan">
+        <Aliases value="_UnitLarge"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <On Terms="WeaponStart.GoliathG.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.GoliathG.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="WeaponStart.GoliathA.AttackStart" Send="AnimBracketStart Spell Spell"/>
+        <On Terms="WeaponStop.GoliathA.AttackStop" Send="AnimBracketStop Spell"/>
+        <On Terms="WeaponStart.GoliathAUpgraded.AttackStart" Send="AnimBracketStart Spell Spell"/>
+        <On Terms="WeaponStop.GoliathAUpgraded.AttackStop" Send="AnimBracketStop Spell"/>
+        <On Terms="ActorCreation" Send="TextureSelectBySlot main {RequireAll diffuse}"/>
+        <On Terms="ActorCreation" Send="TextureSelectByMatch main.specular main"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitBirth.ZOCOMTitan" Send="TerrainSquibActivateGroup RippleStandard"/>
+        <DeathArray index="Normal" VoiceLink="Devout_Death"/>
+        <DeathCustoms index="0" AnimProps="Death" ModelLink="" Name="AntiGravGeneric"/>
+        <PortraitModel value="GoliathPortrait"/>
+        <StandAnimTurnTime value="4"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMassive2"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="3.6093"/>
+        <BarOffset value="75"/>
+        <BarWidth value="66"/>
+        <GroupSoundArray index="Birth" value="Goliath_Birth"/>
+        <GroupSoundArray index="Ready" value="Titan_Ready"/>
+        <GroupSoundArray index="Help" value="Titan_Help"/>
+        <GroupSoundArray index="What" value="Titan_What"/>
+        <GroupSoundArray index="Yes" value="Titan_Yes"/>
+        <GroupSoundArray index="Attack" value="Titan_Attack"/>
+        <GroupSoundArray index="Pissed" value="Goliath_Pissed"/>
+        <SoundArray index="Pissed" value="Goliath_Pissed"/>
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMJuggernaut" parent="ZOCOMUnitBase" unitName="ZOCOMJuggernaut">
+\f
+    </CActorUnit>
+    <CActorUnit id="ZOCOMStriker" parent="ZOCOMUnitBase" unitName="ZOCOMStriker" icon="ZOCOMStriker" >
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMFocusBeam" parent="ZOCOMBuilding" unitName="ZOCOMFocusBeam" >
+
+    </CActorUnit>
+    <CActorUnit id="ZOCOMShepherd" parent="ZOCOMVehicle" unitName="ZOCOMShepherd"/>
+    <CActorUnit id="ZOCOMSpartan" parent="ZOCOMVehicle" unitName="ZOCOMSpartan"/>
+    <CActorUnit id="ZOCOMRefractor" parent="ZOCOMVehicle" unitName="ZOCOMRefractor"/>
+    <CActorUnit id="ZOCOMMammoth" parent="ZOCOMVehicle" unitName="ZOCOMMammoth">
+        <On index="65" Terms="WeaponStart.ZOCOMMammoth120mmCannons.AttackStart"/>
+        <DeathArray index="Normal" ModelLink="MammothDeathRagdoll"/>
+        <SoundArray index="Ready" value="MammothReady"/>
+        <SoundArray index="Help" value="Mammoth_Help"/>
+        <SoundArray index="What" value="Mammoth_What"/>
+        <SoundArray index="Yes" value="Mammoth_Yes"/>
+        <SoundArray index="Attack" value="MammothAttack"/>
+        <SoundArray index="Pissed" value="Mammoth_What"/>
+    </CActorUnit>
+    <CActorUnit id="ZOCOMGuardianCannon" parent="ZOCOMVehicle" unitName="ZOCOMGuardianCannon" >
+
+    </CActorUnit>
+
+
+
+
+
+
+    <CActorSound id="GDIMCVpackSound" parent="SoundOneShot">
+        <On Terms="AbilMorph.*.Start; MorphTo GDIConstructionYard" Send="Create"/>
+        <On Terms="UnitDeath.GDIConstructionYard" Send="Destroy"/>
+        <Sound value="GDIMCVUnpack"/>
+    </CActorSound>
+    <CActorSound id="GDIMCVUnpackSound" parent="SoundOneShot">
+        <On Terms="AbilMorph.*.Start; MorphTo GDIMCV" Send="Create"/>
+        <On Terms="UnitDeath.GDIMCV" Send="Destroy"/>
+        <Sound value="GDIMCVpack"/>
+    </CActorSound>
+    <CActorSound id="IonCannonPreSound" parent="SoundOneShot">
+        <On Terms="Effect.IonCannonCP.Start" Send="Create"/>
+    </CActorSound>
+    <CActorModel id="IonCannon" parent="ModelAnimationStyleOneShot">
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Build Birth {} ContentPlayOnce"/>
+        <On Terms="Effect.IonCannonCP.Start" Send="Create"/>
+        <HostSiteOps Ops="SOpTargetPointStationary SOpShadow SOpMoveUpByDot1"/>
+        <Model value="IonCannonAttackImpact"/>
+    </CActorModel>
+    <CActorSound id="IonCannonImpactSound" parent="SoundOneShot">
+        <On Terms="Effect.IonCannonDamage.Start" Send="Create"/>
+    </CActorSound>
+    <CActorAction id="GDIEnforcerAttack" parent="GenericAttack" effectAttack="KelmorianMinerDamage">
+        <On index="0" Terms="Effect.EnforcerDamage.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
+        <On index="5" Terms="Effect.EnforcerDamage.Start; At Caster" Send="Create"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon01"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="Enforcer_AttackLaunch"/>
+        <ContainerAssets Model="GhostAttackLaunch" Sound="Enforcer_AttackLaunch"/>
+        <Beam value="GDILightAttackBeam"/>
+        <ImpactMap index="None" Model="MarineAttackImpact" Sound="Marine_AttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactPhysics Name="BulletImpact" MatchKeys="Basic" Physics="MarineAttackDeathForce"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack11" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM11">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 19"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack12" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM12">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 20"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack2" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM2">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 10"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack3" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM3">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 11"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack4" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM4">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 12"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack5" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM5">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 13"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack6" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM6">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 14"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack7" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM7">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 15"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack8" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM8">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 16"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack9" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM9">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 17"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusMissileAttack10" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM10">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 18"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorModel id="ZOCOMArgusRepair">
+        <AcceptedTransfers index="Position" value="0"/>
+        <AcceptedTransfers index="Rotation" value="0"/>
+        <EditorCategories value=""/>
+        <On Terms="ActorCreation" Send="AnimBracketStart BSD Stand Stand Death"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="AnimBracketState.*.AfterClosing; !AnimBracketExitReason ModelSwap; AnimName BSD" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetOpacity"/>
+        <On Terms="ActorCreation" Send="SetOpacity 0.500000 1.000000"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,0,0"/>
+        <On Terms="Behavior.ArgusReapirZone.On" Send="Create"/>
+        <On Terms="Behavior.ArgusReapirZone.Off" Send="AnimBracketStop BSD"/>
+        <AddToProximitySystem value="0"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Model value="RepairZoneArgus"/>
+        <AutoScaleFactor value="1.000000"/>
+        <AnimBlendTime value="0.000000"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ProximityPosition value="CenterActor"/>
+    </CActorModel>
+    <CActorModel id="ZOCOMArgusRepairImpact" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce"/>
+        <On index="1" Terms="AnimBracketState.*.AfterClosing; AnimName BSD" Send="Destroy"/>
+        <On index="2" Terms="ActorOrphan" Send="AnimBracketStop BSD"/>
+        <On Terms="Effect.MCVRepairImpactArgus.Start; At Target" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachOverhead"/>
+        <Model value="MCVReapirImpactArgus"/>
+    </CActorModel>
+    <CActorAction id="ZOCOMArgusAttack1" parent="GenericAttack" effectAttack="ArgusBeam1">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Sound="Argus_AttackImpact"/>
+        <Beam value="ZOCOMArgusAttackBeam1"/>
+        <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="CNCRailgunAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMTitanAttack1" parent="GenericAttack" effectAttack="TitanBeam1">
+        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+        <LaunchAssets Sound="Argus_AttackImpact"/>
+        <Beam value="ZOCOMArgusAttackBeam1"/>
+        <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="CNCRailgunAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusAttack2" parent="GenericAttack" effectAttack="ArgusBeam2">
+        <LaunchAttachQuery Methods="Weapon 2"/>
+        <LaunchAssets Sound="Argus_AttackImpact"/>
+        <Beam value="ZOCOMArgusAttackBeam1"/>
+        <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="CNCRailgunAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusAttack3" parent="GenericAttack" effectAttack="ArgusBeam3">
+        <LaunchAttachQuery Methods="Weapon 3"/>
+        <LaunchAssets Sound="Argus_AttackImpact"/>
+        <Beam value="ZOCOMArgusAttackBeam1"/>
+        <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="CNCRailgunAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMArgusAttack4" parent="GenericAttack" effectAttack="ArgusBeam4">
+        <LaunchAttachQuery Methods="Weapon 4"/>
+        <LaunchAssets Sound="Argus_AttackImpact"/>
+        <Beam value="ZOCOMArgusAttackBeam1"/>
+        <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="CNCRailgunAttackDeathForce"/>
+    </CActorAction>
+    <CActorBeamSimple id="ZOCOMArgusAttackBeam1" parent="GenericAttackBeam">
+        <On Terms="ActorCreation; ValidateEffect DiamondbackCharged" Send="ModelSwap DiamondbackAttackBeamCharged"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+    </CActorBeamSimple>
+    <CActorAction id="ArgusChaingunAttack1Dummy" parent="GenericAttack" effectAttack="ArgusChaingun1Dummy1">
+        <LaunchAttachQuery Methods="Weapon 8"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="ArgusChaingunAttackLaunch"/>
+        <Beam value="GDILightAttackBeam"/>
+        <ImpactMap index="None" Model="TychusChaingunAttackImpact" Sound="Argus_ChaingunAttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorAction>
+    <CActorAction id="ArgusChaingunAttack3" parent="GenericAttack" effectAttack="ArgusChaingun3">
+        <LaunchAttachQuery Methods="Weapon 21"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="ArgusChaingunAttackLaunch"/>
+        <Beam value="GDILightAttackBeam"/>
+        <ImpactMap index="None" Model="TychusChaingunAttackImpact" Sound="Argus_ChaingunAttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorAction>
+    <CActorAction id="ArgusChaingunAttack2Dummy" parent="GenericAttack" effectAttack="ArgusChaingun1Dummy2">
+        <LaunchAttachQuery Methods="Weapon 6"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="ArgusChaingunAttackLaunch"/>
+        <Beam value="GDILightAttackBeam"/>
+        <ImpactMap index="None" Model="TychusChaingunAttackImpact" Sound="Argus_ChaingunAttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorAction>
+    <CActorAction id="ArgusChaingunAttack2" parent="GenericAttack" effectAttack="ArgusChaingun2">
+        <LaunchAttachQuery Methods="Weapon 5"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="ArgusChaingunAttackLaunch"/>
+        <Beam value="GDILightAttackBeam"/>
+        <ImpactMap index="None" Model="TychusChaingunAttackImpact" Sound="Argus_ChaingunAttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorAction>
+    <CActorAction id="ArgusChaingunAttack3Dummy" parent="GenericAttack" effectAttack="ArgusChaingun1Dummy3">
+        <LaunchAttachQuery Methods="Weapon 22"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="ArgusChaingunAttackLaunch"/>
+        <Beam value="GDILightAttackBeam"/>
+        <ImpactMap index="None" Model="TychusChaingunAttackImpact" Sound="Argus_ChaingunAttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorAction>
+    <CActorLookAt id="ZOCOMArgusLaserLookAt01" parent="UnitTurret">
+        <On Terms="SupporterDestruction.*.UnitDeathModel" Send="Destroy"/>
+        <Type value="BattlecruiserTurret"/>
+        <Types Id="BattlecruiserTurret">
+            <Start Group="LaserCannon01" Weight="1" Time="300"/>
+            <Stop Group="LaserCannon01" Weight="1" Time="500"/>
+        </Types>
+        <Aliases value="Laser1"/>
+    </CActorLookAt>
+    <CActorLookAt id="ZOCOMArgusLaserLookAt02" parent="UnitTurret">
+        <On Terms="SupporterDestruction.*.UnitDeathModel" Send="Destroy"/>
+        <Type value="BattlecruiserTurret"/>
+        <Types Id="BattlecruiserTurret">
+            <Start Group="LaserCannon02" Weight="1" Time="300"/>
+            <Stop Group="LaserCannon02" Weight="1" Time="500"/>
+        </Types>
+        <Aliases value="Laser2"/>
+    </CActorLookAt>
+    <CActorLookAt id="ZOCOMArgusLaserLookAt03" parent="UnitTurret">
+        <On Terms="SupporterDestruction.*.UnitDeathModel" Send="Destroy"/>
+        <Type value="BattlecruiserTurret"/>
+        <Aliases value="AA01"/>
+        <Types Id="BattlecruiserTurret">
+            <Start Group="AA01" Weight="1" Time="300"/>
+            <Stop Group="AA01" Weight="1" Time="500"/>
+        </Types>
+    </CActorLookAt>
+    <CActorLookAt id="ZOCOMArgusLaserLookAt04" parent="UnitTurret">
+        <On Terms="SupporterDestruction.*.UnitDeathModel" Send="Destroy"/>
+        <Type value="BattlecruiserTurret"/>
+        <Aliases value="AA02"/>
+        <Types Id="BattlecruiserTurret">
+            <Start Group="AA02" Weight="1" Time="300"/>
+            <Stop Group="AA02" Weight="1" Time="500"/>
+        </Types>
+    </CActorLookAt>
+    <CActorLookAt id="ZOCOMArgusLaserLookAt05" parent="UnitTurret">
+        <On Terms="SupporterDestruction.*.UnitDeathModel" Send="Destroy"/>
+        <Type value="BattlecruiserTurret"/>
+        <Aliases value="AA03"/>
+        <Types Id="BattlecruiserTurret">
+            <Start Group="AA03" Weight="1" Time="300"/>
+            <Stop Group="AA03" Weight="1" Time="500"/>
+        </Types>
+    </CActorLookAt>
+    <CActorTurret id="ZOCOMArgusLaser">
+        <On Terms="TurretEnable.ZOCOMArgusLaser" Send="Create"/>
+    </CActorTurret>
+    <CActorAction id="ZOCOMArgusMissileAttack1" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM1">
+        <On Terms="Effect.ZOCOMArgusMissile.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.ZOCOMArgusMissile.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <LaunchAttachQuery Methods="Weapon 9"/>
+        <LaunchAssets Model="ARGUSAirAttackLaunch" Sound="ARGUS_MissileAttackLaunch"/>
+        <Missile value="ZOCOMArgusAttackMissile"/>
+        <ImpactMap index="None" Model="ARGUSAirAttackImpact" Sound="ZOCOMArgusMissileAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorMissile id="ZOCOMArgusAttackMissile" parent="GenericAttackMissile" unitName="ZOCOMDefenderAAWeapon">
+        <On index="0" Terms="UnitBirth.ZOCOMArgusMissile" Send="Create"/>
+        <Model value="ARGUSMissileWeapon"/>
+    </CActorMissile>
+    <CActorAction id="GDIShepherdMachineGunAttack" parent="GenericAttack" effectAttack="KelmorianMinerDamage">
+        <On index="0" Terms="Effect.GDIShepherdMachineGunDamage.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
+        <On index="5" Terms="Effect.GDIShepherdMachineGunDamage.Start; At Caster" Send="Create"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon02"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="Enforcer_AttackLaunch"/>
+        <ContainerAssets Model="GhostAttackLaunch" Sound="Enforcer_AttackLaunch"/>
+        <Beam value="GDILightAttackBeam"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactMap index="None" Model="MarineAttackImpact" Sound="Marine_AttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactPhysics Name="BulletImpact" MatchKeys="Basic" Physics="MarineAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="DefenderAttack2" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="DefenderALM2">
+        <LaunchAttachQuery Methods="AMFilterWeaponRight"/>
+        <LaunchAssets Model="DefenderAirAttackLaunch" Sound="Defender_AttackLaunch"/>
+        <Missile value="DefenderAttackMissile"/>
+        <ImpactMap index="None" Model="DefenderAirAttackImpact" Sound="Defender_AttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="DefenderAttack22" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="CommandoALM">
+        <LaunchAttachQuery Methods="AMFilterWeaponRight"/>
+        <LaunchAssets Model="DefenderAirAttackLaunch" Sound="Defender_AttackLaunch"/>
+        <Missile value="DefenderAttackMissile"/>
+        <ImpactMap index="None" Model="DefenderAirAttackImpact" Sound="Defender_AttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+        <On Terms="Effect.CommandoAU.Stop; FromEffectTreeDescendant" Send="ActionDamagePhysics"/>
+        <On Terms="Effect.CommandoAU.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+    </CActorAction>
+    <CActorModel id="GDIbuild" parent="TerranBuildingBuild"/>
+    <CActorSound id="GDIDropPodAscend" parent="SoundOneShot"/>
+    <CActorSound id="GDIDropPodIncoming" parent="SoundOneShot"/>
+    <CActorBeamSimple id="GDILightAttackBeam" parent="GenericAttackBeam"/>
+    <CActorAction id="DefenderAttack" parent="GenericAttack" effectImpact="DefenderAU" effectLaunch="DefenderALM">
+        <LaunchAttachQuery Methods="AMFilterWeaponLeft"/>
+        <LaunchAssets Model="DefenderAirAttackLaunch" Sound="Defender_AttackLaunch"/>
+        <ImpactMap index="None" Model="DefenderAirAttackImpact" Sound="Defender_AttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorMissile id="DefenderAttackMissile" parent="GenericAttackMissile" unitName="ZOCOMDefenderAAWeapon">
+        <Model value="DefenderAWeapon"/>
+    </CActorMissile>
+<!--    <CActorMissile id="NodMilitantRocketAttackMissile" parent="GenericAttackMissile" unitName="NodMilitantRocketWeapon">-->
+<!--        <Model value="DefenderAWeaponMissile"/>-->
+<!--    </CActorMissile>-->
+    <CActorAction id="GDIGrenadesAttack" parent="GenericAttack" effectImpact="GDIGrenadesDamage" effectLaunch="GDIGrenadesLaunchMissile">
+        <LaunchAttachQuery Methods="Weapon 2"/>
+        <LaunchAssets Model="" Sound="GDIGrenadeLaunch"/>
+        <ImpactPointSiteOps Ops="SOpTargetPoint SOpShadow SOpMoveUpByDot25"/>
+        <ImpactMap index="None" Sound="GDIGrenadeExplosion"/>
+    </CActorAction>
+    <CActorMissile id="GDIGrenadesAttackMissile" parent="GenericAttackMissile" unitName="ZOCOMGrenadesWeapon"/>
+    <CActorForceSphere id="GDIGrenadesForce">
+        <On Terms="Effect.GDIGrenadesDamage.Start; At Effect" Send="Create"/>
+        <On Terms="ActorCreation" Send="Create NovaGadgetPulseGrenadesUpForce"/>
+        <HostSiteOps Ops="SOpTargetPoint SOp2DRotation"/>
+        <Duration value="0.150000"/>
+        <Magnitude value="25.000000,12.000000"/>
+        <Radius value="2.500000,0.200000"/>
+    </CActorForceSphere>
+    <CActorAction id="GDIGDIShepherdTankAttack" parent="GenericAttack" effectAttack="90mmCannonsShepherd">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Model="SiegeTankAttackLaunch" Sound="GDIShepherdTankAttackLaunch"/>
+        <ImpactMap index="None" Model="SiegeTankAttackImpact" Sound="SiegeTank_AttackImpact"/>
+        <ImpactPhysics Name="90mmCannonImpact" MatchKeys="Basic" Physics="SiegeTankAttackForce"/>
+    </CActorAction>
+    <CActorSound id="GDIDropPodImpact" parent="SoundOneShot">
+        <On Terms="Effect.DroppodDamage.Start; At Caster" Send="Create"/>
+    </CActorSound>
+    <CActorModel id="GDIZoneTrooperJumpLandDownModel" parent="ModelAnimationStyleOneShot">
+        <Inherits index="CloakEffect" value="1"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.LandDown" Send="Create"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.LandUp" Send="Create"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.LandDown" Send="TimerSet 0.300000 TriggerSound"/>
+        <On Terms="TimerExpired; TimerName TriggerSound" Send="Create ReaperJumpLandSound"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpShadow"/>
+        <Model value="ReaperJumpLandDownModel"/>
+    </CActorModel>
+    <CActorSound id="GDIZoneTrooperJumpLandSound" parent="SoundOneShot">
+        <On Terms="Behavior.GDIZoneTrooperjump.LandUp" Send="Create"/>
+        <Sound value="ZonejumpImpact"/>
+    </CActorSound>
+    <CActorModel id="GDIZoneTrooperJumpLaunchModel" parent="ModelAnimationStyleOneShot">
+        <Inherits index="CloakEffect" value="1"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpShadow" HoldPosition="1" HoldRotation="1"/>
+        <Model value="ReaperJumpLaunchModel"/>
+    </CActorModel>
+    <CActorSound id="GDIZoneTrooperJumpLaunchSound" parent="SoundOneShot">
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="Create"/>
+        <Sound value="ZoneJumpLaunch"/>
+    </CActorSound>
+    <CActorSound id="ZoneJumpSound" parent="SoundOneShot">
+        <On Terms="Effect.JumpPackJumpOnly.Start" Send="Create"/>
+        <On Terms="Effect.PrimalSlashJumpOnlyUnit.Start" Send="Create"/>
+        <On Terms="Effect.PrimalSlashUpgradedLMWings.Start" Send="Create"/>
+        <Sound value="ZoneJumpLaunch"/>
+    </CActorSound>
+    <CActorSound id="ZoneJumpLandSound" parent="SoundOneShot">
+        <On Terms="Effect.JumpPackSearchArea.Start" Send="Create"/>
+        <Sound value="ZonejumpImpact"/>
+    </CActorSound>
+    <CActorModel id="JumpPackImpact" parent="ModelAnimationStyleOneShot">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Effect.JumpPackSearchArea.Start" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorModel>
+    <CActorRange id="ZoneJumpRange" parent="RangeAbil" abil="JumpPack"/>
+    <CActorAction id="ZOCOMZoneTrooperAttack" parent="MarauderAttackBase" effectImpact="ATgunDamage" effectLaunch="PunisherGrenadesLM">
+        <On Terms="Effect.ATGunLaunchMissile.Start; At Caster; !ValidateEffect PunisherGrenadesResearched" Send="Create"/>
+        <LaunchAttachQuery Methods="Weapon 0"/>
+        <LaunchAssets Sound="GDIZoneTrooper_AttackLaunch"/>
+        <Missile value="GDIZoneTrooperAttackMissile"/>
+        <ImpactMap index="None" Model="GDIZoneTrooperBaseAttackImpact"/>
+        <ImpactPhysics Name="PunisherGrenadesImpact" MatchKeys="Basic" Physics="MarauderAttackDeathForce"/>
+        <ContainerAssets Model="GDIZoneTrooperAttackLaunch" Sound="GDIZoneTrooper_AttackLaunch"/>
+    </CActorAction>
+    <CActorMissile id="ZOCOMZoneTrooperAttackMissile" parent="GenericAttackMissile" unitName="ZOCOMATGunMissile">
+        <Model value="ZOCOMZoneTrooperLMWeapon"/>
+    </CActorMissile>
+    <CActorAction id="ZOCOMMastodonAttack" parent="MarauderAttackBase" effectImpact="ZOCOMMastodonDamage" effectLaunch="PunisherGrenadesLM">
+        <On Terms="Effect.ZOCOMMastodonLaunch.Start; At Caster; !ValidateEffect PunisherGrenadesResearched" Send="Create"/>
+        <LaunchAttachQuery Methods="AMFilterWeaponLeft"/>
+        <LaunchAssets Model="" Sound="Mastodon_AttackLaunch"/>
+        <ContainerAssets Model="" Sound="Mastodon_AttackLaunch"/>
+        <Missile value="ZOCOMMastodonAttackMissile"/>
+        <ImpactMap index="None" Model=""/>
+        <ImpactPhysics Name="PunisherGrenadesImpact" MatchKeys="Basic" Physics="MarauderAttackDeathForce"/>
+    </CActorAction>
+    <CActorMissile id="ZOCOMMastodonAttackMissile" parent="GenericAttackMissile" unitName="ZOCOMMastodonWeapon">
+        <Model value="MastodonLMWeapon"/>
+    </CActorMissile>
+    <CActorAction id="ZOCOMMammothTankAttack" parent="GenericAttack" effectAttack="ArcliteCannonDamageMammoth">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Model="SiegeTankAttackLaunch" Sound="SiegeTank_AttackLaunch22"/>
+        <ImpactMap index="None" Model="SiegeTankAttackImpact" Sound="SiegeTank_AttackImpact"/>
+        <ImpactPhysics Name="90mmCannonImpact" MatchKeys="Basic" Physics="SiegeTankAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMammothAAAttack" parent="GenericAttack" effectImpact="AntiAirDamageMammoth" effectLaunch="AntiAirLaunchMissileMammoth">
+        <LaunchAttachQuery Methods="Weapon 5"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMammothAAAttack2" parent="GenericAttack" effectImpact="AntiAirDamageMammoth" effectLaunch="AntiAirLaunchMissileMammoth2">
+        <LaunchAttachQuery Methods="Weapon 6"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMastodonAAAttack2" parent="GenericAttack" effectImpact="AntiAirDamageMastodon" effectLaunch="AntiAirLaunchMissileMastodon2">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMammothAAAttack3" parent="GenericAttack" effectImpact="AntiAirDamageMammoth" effectLaunch="AntiAirLaunchMissileMammoth3">
+        <LaunchAttachQuery Methods="Weapon 3"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMastodonAAAttack3" parent="GenericAttack" effectImpact="AntiAirDamageMastodon" effectLaunch="AntiAirLaunchMissileMastodon3">
+        <LaunchAttachQuery Methods="Weapon 2"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMammothAAAttack4" parent="GenericAttack" effectImpact="AntiAirDamageMammoth" effectLaunch="AntiAirLaunchMissileMammoth4">
+        <LaunchAttachQuery Methods="Weapon 4"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMastodonAAAttack4" parent="GenericAttack" effectImpact="AntiAirDamageMastodon" effectLaunch="AntiAirLaunchMissileMastodon4">
+        <LaunchAttachQuery Methods="Weapon 3"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMastodonAAAttack" parent="GenericAttack" effectImpact="AntiAirDamageMastodon" effectLaunch="AntiAirLaunchMissileMastodon">
+        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+        <LaunchAssets Model="ThorAAAttackLaunch" Sound="Thor_AntiAirAttackLaunch"/>
+        <Missile value="ThorAAAttackMissile"/>
+        <ImpactMap index="None" Model="ThorAAAttackImpact" Sound="Thor_AntiAirAttackImpact"/>
+        <ImpactPhysics Name="JavelinImpact" MatchKeys="Basic" Physics="ThorAAAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMZoneRaiderWeaponAttack" parent="GenericAttack" effectAttack="ZOCOMZoneRaiderWeaponShockwaveDamage">
+        <LaunchAttachQuery Methods="Weapon 2"/>
+        <LaunchAssets Sound="ZOCOMZoneRaiderWeapon_AttackLaunch"/>
+        <BeamScope value="Caster"/>
+        <ImpactSiteOps Ops="SOpAttachHarness SOpAttachVolumeNoVizEnhance VoidRaySOpForwardLaunch"/>
+        <ImpactMap index="None" Model="LiberatorAGAttackImpact" Sound="CABALReaper_AttackImpact"/>
+        <ActionFlags index="ImpactMonitorsTeleports" value="1"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorAction>
+    <CActorBeamSimple id="ZOCOMZoneRaiderWeaponAttackBeam" parent="BeamSimpleAnimationStyleOneShot">
+        <Macros value="ActionTargetTeleportDestroy"/>
+        <On Terms="ActorCreation; ValidateUnit NoDarkProtoss" Send="ModelSwap DarkArchonAttackBeam"/>
+        <On Terms="ActorCreation; ValidateUnit NoDarkProtoss" Send="AnimBracketStart BSDb Birth Stand Death ContentPlayOnce"/>
+        <On Terms="AnimBracketState.*.AfterClosing; AnimName BSDb" Send="Destroy"/>
+        <Scale value="0.500000"/>
+    </CActorBeamSimple>
+    <CActorBeamSimple id="ZOCOMHammerHeadAttackBeam" parent="GenericAttackBeam">
+        <Model value="GDILightAttackBeam"/>
+    </CActorBeamSimple>
+    <CActorAction id="ZOCOMHammerHeadAttack" parent="GenericAttack" effectAttack="KelmorianMinerDamage">
+        <On index="0" Terms="Effect.ZOCOMHammerHeadweaponDamage.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
+        <On index="5" Terms="Effect.ZOCOMHammerHeadweaponDamage.Start; At Caster" Send="Create"/>
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon03"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="ZOCOMHammerHead_AttackLaunch"/>
+        <ContainerAssets Model="MarineAttackLaunch" Sound="ZOCOMHammerHead_AttackLaunch"/>
+        <Beam value="ZOCOMHammerHeadAttackBeam"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactMap index="None" Model="MarineAttackImpact" Sound="Marine_AttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactPhysics Name="BulletImpact" MatchKeys="Basic" Physics="MarineAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMammothTankAttack2" parent="GenericAttack" effectAttack="ArcliteCannonDamageMammoth2">
+        <LaunchAttachQuery Methods="Weapon 2"/>
+        <LaunchAssets Model="SiegeTankAttackLaunch" Sound="SiegeTank_AttackLaunch22"/>
+        <ImpactMap index="None" Model="SiegeTankAttackImpact" Sound="SiegeTank_AttackImpact"/>
+        <ImpactPhysics Name="90mmCannonImpact" MatchKeys="Basic" Physics="SiegeTankAttackForce"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMMastodonDamageAttack" parent="GenericAttack" effectImpact="MastodonMissileDamage" effectLaunch="ZOCOMMastodonDamageMissileLM">
+        <LaunchAttachQuery Methods="AMPatternMastodon MastodonFilter"/>
+        <LaunchAssets Sound="Liberator_AA_Launch"/>
+        <ImpactSiteOps Ops="SOpAttachCenter SOpRandomPointInCircle1Dot5"/>
+        <ImpactMap index="None" Model="LiberatorAttackImpact" Sound="Liberator_AA_Launch_Impact"/>
+        <ShieldFlashType value="Full"/>
+    </CActorAction>
+    <CActorMissile id="ZOCOMMastodonDamageAttackMissile" parent="GenericAttackMissile" unitName="LiberatorDamageMissile">
+        <On index="0" Terms="UnitBirth.ZOCOMMastodonMissile" Send="Create"/>
+    </CActorMissile>
+    <CActorAction id="MastodonShieldHitter" parent="AoESplashShieldHitter" effectHit="MastodonMissileDamage"/>
+    <CActorAction id="ZOCOMMastodonAttack2" parent="MarauderAttackBase" effectImpact="ZOCOMMastodonDamage" effectLaunch="PunisherGrenadesLM">
+        <On Terms="Effect.ZOCOMMastodonLaunch2.Start; At Caster; !ValidateEffect PunisherGrenadesResearched" Send="Create"/>
+        <LaunchAttachQuery Methods="AMFilterWeaponRight"/>
+        <LaunchAssets Model="" Sound="Mastodon_AttackLaunch"/>
+        <ContainerAssets Model="" Sound="Mastodon_AttackLaunch"/>
+        <Missile value="ZOCOMMastodonAttackMissile"/>
+        <ImpactMap index="None" Model=""/>
+        <ImpactPhysics Name="PunisherGrenadesImpact" MatchKeys="Basic" Physics="MarauderAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="JamesAttack" parent="GenericAttack" effectAttack="C10CanisterRifle2">
+        <LaunchAssets Model="MagrailMunition_Launch" Sound="James_AttackLaunch"/>
+        <ContainerAssets Model="GhostBunkerAttackLaunch" Sound="Ghost_BunkerAttackLaunch"/>
+        <Beam value="WarHoundBeam"/>
+        <ImpactMap index="None" Model="WarHoundAttackImpact" Sound="Ghost_AttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactPhysics Name="CannisterRifleImpact" MatchKeys="Basic" Physics="GhostAttackDeathForce"/>
+        <AcquisitionYawHalfArc value="10.000000"/>
+        <AcquisitionPitchHalfArc value="15.000000"/>
+        <AccuracyHalfArc value="5.000000"/>
+    </CActorAction>
+    <CActorAction id="ZOCOMZoneRaiderAttack" parent="GenericAttack" effectImpact="ZOCOMZoneRaiderChargeDamage" effectLaunch="ZOCOMZoneRaiderChargeLaunchMissile">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Sound="Reaper_D8ChargeAttackLaunch"/>
+        <ImpactMap index="None" Sound="Reaper_D8ChargeExplode"/>
+    </CActorAction>
+    <CActorMissile id="ZOCOMZoneRaiderAttackMissile" parent="GenericAttackMissile" unitName="ZOCOMZoneRaiderWeapon">
+        <Model value="ZOCOMZoneRaiderChargeWeapon"/>
+    </CActorMissile>
+    <CActorMissile id="ZOCOMHammerHeadMissile" parent="GenericAttackMissile" unitName="ZOCOMHammerHeadRocket">
+        <On Terms="ActorDestruction" Send="Create NodMissileDeath"/>
+    </CActorMissile>
+    <CActorAction id="ZOCOMHammerHeadRocketVolley" parent="GenericAttack" effectImpact="ZOCOMHammerHeadRocketDamage" effectLaunch="ZOCOMHammerHeadRocketLaunchMissile">
+        <LaunchAttachQuery Methods="ZOCOMHammerHeadFilter ZOCOMHammerHeadRocket"/>
+        <LaunchAssets Sound="CABALBikeWeaponAttackLaunch"/>
+        <Missile value="ZOCOMHammerHeadMissile"/>
+        <ImpactMap index="None" Model="HailstormMissileVolleyImpact" Sound="CABALBikeWeaponAttackImpact" ModelReaction="HailstormMissileVolleyImpactReaction"/>
+        <ImpactMap index="Shield" Sound="HailstormMissileVolleyImpactShield" ModelReaction="HailstormMissileVolleyImpactReactionShield"/>
+    </CActorAction>
+    <CActorForceSphere id="PrimalSlashAttackForce2">
+        <On Terms="Effect.JumpPackSearchArea.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.JumpPack.Start; At Target" Send="Create"/>
+        <On Terms="ActorCreation" Send="Create PrimalSlashAttackUpForce"/>
+        <Host Subject="_ImpactGuide"/>
+        <HostSiteOps Ops="SOpRandomPointInSphereDot15"/>
+        <Duration value="0.250000"/>
+        <Magnitude value="37.500000,8.000000"/>
+        <Radius value="1.050000,0.150000"/>
+    </CActorForceSphere>
+    <CActorSound id="PrimalSlashSound2" parent="SoundOneShot">
+        <On Terms="Effect.JumpPack.Start" Send="Create"/>
+        <Sound value="Ultralisk_AttackLaunch2"/>
+    </CActorSound>
+</Catalog>

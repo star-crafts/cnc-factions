@@ -1,0 +1,196 @@
+<Catalog>
+
+    <CAbilBuild id="SpawnCaster">
+        <FlagArray index="IgnoreFood" value="1"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <Range value="999"/>
+    </CAbilBuild>
+    <CAbilBuild id="SpawnCaster1" parent="SpawnCaster">
+        <InfoArray index="Build1" Time="1">
+            <Button DefaultButtonFace="SpawnCaster1"/>
+        </InfoArray>
+        <InfoArray index="Build2" Time="1">
+            <Button DefaultButtonFace="SpawnCaster2"/>
+        </InfoArray>
+        <InfoArray index="Build3" Time="1">
+            <Button DefaultButtonFace="SpawnCaster3"/>
+        </InfoArray>
+        <InfoArray index="Build4" Time="1">
+            <Button DefaultButtonFace="SpawnCaster4"/>
+        </InfoArray>
+        <InfoArray index="Build5" Time="1">
+            <Button DefaultButtonFace="SpawnCaster5"/>
+        </InfoArray>
+        <InfoArray index="Build6" Time="1">
+            <Button DefaultButtonFace="SpawnCaster6"/>
+        </InfoArray>
+        <InfoArray index="Build7" Time="1">
+            <Button DefaultButtonFace="SpawnCaster7"/>
+        </InfoArray>
+        <InfoArray index="Build8" Time="1">
+            <Button DefaultButtonFace="SpawnCaster8"/>
+        </InfoArray>
+        <InfoArray index="Build9" Time="1">
+            <Button DefaultButtonFace="SpawnCaster9"/>
+        </InfoArray>
+        <InfoArray index="Build10" Time="1">
+            <Button DefaultButtonFace="SpawnCaster10"/>
+        </InfoArray>
+        <InfoArray index="Build11" Time="1">
+            <Button DefaultButtonFace="SpawnCaster11"/>
+        </InfoArray>
+        <InfoArray index="Build12" Time="1">
+            <Button DefaultButtonFace="SpawnCaster12"/>
+        </InfoArray>
+        <InfoArray index="Build13" Time="1">
+            <Button DefaultButtonFace="SpawnCaster13"/>
+        </InfoArray>
+        <InfoArray index="Build14" Time="1">
+            <Button DefaultButtonFace="SpawnCaster14"/>
+        </InfoArray>
+        <InfoArray index="Build15" Time="1">
+            <Button DefaultButtonFace="SpawnCaster15"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="SpawnCaster2" parent="SpawnCaster">
+        <InfoArray index="Build1" Time="1">
+            <Button DefaultButtonFace="SpawnCaster16"/>
+        </InfoArray>
+        <InfoArray index="Build2" Time="1">
+            <Button DefaultButtonFace="SpawnCaster17"/>
+        </InfoArray>
+        <InfoArray index="Build3" Time="1">
+            <Button DefaultButtonFace="SpawnCaster18"/>
+        </InfoArray>
+        <InfoArray index="Build4" Time="1">
+            <Button DefaultButtonFace="SpawnCaster19"/>
+        </InfoArray>
+        <InfoArray index="Build5" Time="1">
+            <Button DefaultButtonFace="SpawnCaster20"/>
+        </InfoArray>
+        <InfoArray index="Build6" Time="1">
+            <Button DefaultButtonFace="SpawnCaster21"/>
+        </InfoArray>
+        <InfoArray index="Build7" Time="1">
+            <Button DefaultButtonFace="SpawnCaster22"/>
+        </InfoArray>
+        <InfoArray index="Build8" Time="1">
+            <Button DefaultButtonFace="SpawnCaster23"/>
+        </InfoArray>
+        <InfoArray index="Build9" Time="1">
+            <Button DefaultButtonFace="SpawnCaster24"/>
+        </InfoArray>
+        <InfoArray index="Build10" Time="1">
+            <Button DefaultButtonFace="SpawnCaster25"/>
+        </InfoArray>
+        <InfoArray index="Build11" Time="1">
+            <Button DefaultButtonFace="SpawnCaster26"/>
+        </InfoArray>
+        <InfoArray index="Build12" Time="1">
+            <Button DefaultButtonFace="SpawnCaster27"/>
+        </InfoArray>
+        <InfoArray index="Build13" Time="1">
+            <Button DefaultButtonFace="SpawnCaster28"/>
+        </InfoArray>
+        <InfoArray index="Build14" Time="1">
+            <Button DefaultButtonFace="SpawnCaster29"/>
+        </InfoArray>
+        <InfoArray index="Build15" Time="1">
+            <Button DefaultButtonFace="SpawnCaster30"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="SpawnCaster3" parent="SpawnCaster">
+        <InfoArray index="Build1" Time="1">
+            <Button DefaultButtonFace="SpawnCaster31"/>
+        </InfoArray>
+        <InfoArray index="Build2" Time="1">
+            <Button DefaultButtonFace="SpawnCaster32"/>
+        </InfoArray>
+        <InfoArray index="Build3" Time="1">
+            <Button DefaultButtonFace="SpawnCaster33"/>
+        </InfoArray>
+        <InfoArray index="Build4" Time="1">
+            <Button DefaultButtonFace="SpawnCaster34"/>
+        </InfoArray>
+        <InfoArray index="Build5" Time="1">
+            <Button DefaultButtonFace="SpawnCaster35"/>
+        </InfoArray>
+        <InfoArray index="Build6" Time="1">
+            <Button DefaultButtonFace="SpawnCaster36"/>
+        </InfoArray>
+        <InfoArray index="Build7" Time="1">
+            <Button DefaultButtonFace="SpawnCaster37"/>
+        </InfoArray>
+        <InfoArray index="Build8" Time="1">
+            <Button DefaultButtonFace="SpawnCaster38"/>
+        </InfoArray>
+        <InfoArray index="Build9" Time="1">
+            <Button DefaultButtonFace="SpawnCaster39"/>
+        </InfoArray>
+        <InfoArray index="Build10" Time="1">
+            <Button DefaultButtonFace="SpawnCaster40"/>
+        </InfoArray>
+        <InfoArray index="Build11" Time="1">
+            <Button DefaultButtonFace="SpawnCaster41"/>
+        </InfoArray>
+        <InfoArray index="Build12" Time="1">
+            <Button DefaultButtonFace="SpawnCaster42"/>
+        </InfoArray>
+        <InfoArray index="Build13" Time="1">
+            <Button DefaultButtonFace="SpawnCaster43"/>
+        </InfoArray>
+        <InfoArray index="Build14" Time="1">
+            <Button DefaultButtonFace="SpawnCaster44"/>
+        </InfoArray>
+        <InfoArray index="Build15" Time="1">
+            <Button DefaultButtonFace="SpawnCaster45"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="SpawnCaster4" parent="SpawnCaster">
+        <InfoArray index="Build1" Time="1">
+            <Button DefaultButtonFace="SpawnCaster46"/>
+        </InfoArray>
+        <InfoArray index="Build2" Time="1">
+            <Button DefaultButtonFace="SpawnCaster47"/>
+        </InfoArray>
+        <InfoArray index="Build3" Time="1">
+            <Button DefaultButtonFace="SpawnCaster48"/>
+        </InfoArray>
+        <InfoArray index="Build4" Time="1">
+            <Button DefaultButtonFace="SpawnCaster49"/>
+        </InfoArray>
+        <InfoArray index="Build5" Time="1">
+            <Button DefaultButtonFace="SpawnCaster50"/>
+        </InfoArray>
+        <InfoArray index="Build6" Time="1">
+            <Button DefaultButtonFace="SpawnCaster51"/>
+        </InfoArray>
+        <InfoArray index="Build7" Time="1">
+            <Button DefaultButtonFace="SpawnCaster52"/>
+        </InfoArray>
+        <InfoArray index="Build8" Time="1">
+            <Button DefaultButtonFace="SpawnCaster53"/>
+        </InfoArray>
+        <InfoArray index="Build9" Time="1">
+            <Button DefaultButtonFace="SpawnCaster54"/>
+        </InfoArray>
+        <InfoArray index="Build10" Time="1">
+            <Button DefaultButtonFace="SpawnCaster55"/>
+        </InfoArray>
+        <InfoArray index="Build11" Time="1">
+            <Button DefaultButtonFace="SpawnCaster56"/>
+        </InfoArray>
+        <InfoArray index="Build12" Time="1">
+            <Button DefaultButtonFace="SpawnCaster57"/>
+        </InfoArray>
+        <InfoArray index="Build13" Time="1">
+            <Button DefaultButtonFace="SpawnCaster58"/>
+        </InfoArray>
+        <InfoArray index="Build14" Time="1">
+            <Button DefaultButtonFace="SpawnCaster59"/>
+        </InfoArray>
+        <InfoArray index="Build15" Time="1">
+            <Button DefaultButtonFace="SpawnCaster60"/>
+        </InfoArray>
+    </CAbilBuild>
+</Catalog>

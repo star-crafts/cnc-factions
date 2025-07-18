@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="SovietDesolatorDeathSprayLaunchSound" parent="Voice">
+        <AssetArray File="Assets\Sounds\Abathur_Belch_Vx_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Abathur_Belch_Vx_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Abathur_Burp_Vx_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Abathur_Burp_Vx_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Abathur_Burp_Vx_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Abathur_Burp_Vx_04.wav" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <DupeMuteCount value="5"/>
+        <Pitch value="-2.000000,1.000000"/>
+        <Volume value="-2.000000,0.000000"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="SovietDesolatorDeathSprayLaunch" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Virophage\Virophage_Spell0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Virophage\Virophage_Spell1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Virophage\Virophage_Spell2.wav"/>
+        <DupeDestroyCount value="2"/>
+        <Pitch value="-2.000000,2.000000"/>
+    </CSound>
+    <CSound id="SovietDesolatorDeathSprayLoopSound" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Effects\Zerg_ColonyInfestationLoop0.wav" FacialGroup=""/>
+        <LoopCount value="-1"/>
+        <Pitch value="-5.000000,-5.000000"/>
+        <VolumeRolloffBlend value="Linear"/>
+        <VolumeRolloffPoints Distance="8.356546"/>
+        <VolumeRolloffPoints Distance="24.791086" Volume="-96.000000"/>
+        <DupeDestroyCount value="4"/>
+        <DupeMuteCount value="6"/>
+    </CSound>
+</Catalog>

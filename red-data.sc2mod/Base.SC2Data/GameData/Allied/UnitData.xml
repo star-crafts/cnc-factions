@@ -1,0 +1,2840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit default="1" id="AlliedGround" parent="CNCGround">
+        <Race value="Allied"/>
+        <GlossaryCategory value="Unit/Category/AlliedUnits"/>
+        <HotkeyCategory value="Unit/Category/AlliedUnits"/>
+    </CUnit>
+    <CUnit default="1" id="AlliedAir" parent="CNCAir">
+        <Race value="Allied"/>
+        <GlossaryCategory value="Unit/Category/AlliedUnits"/>
+        <HotkeyCategory value="Unit/Category/AlliedUnits"/>
+    </CUnit>
+    <CUnit default="1" id="AlliedStructure" parent="CNCStructure">
+        <Race value="Allied"/>
+        <GlossaryCategory value="Unit/Category/AlliedUnits"/>
+        <HotkeyCategory value="Unit/Category/AlliedUnits"/>
+    </CUnit>
+    <CUnit default="1" id="AlliedMissile" parent="CNCMissile">
+        <Race value="Allied"/>
+    </CUnit>
+    <CUnit id="AlliedEliteSoldierAcademy" parent="AlliedStructure">
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <EnergyRegenRate value="1"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="75"/>
+        <AbilArray index="1" Link="que1"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="MercCompoundResearch"/>
+        <AbilArray Link="JingBingTrain"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="UnderConstruction"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TrainSovietConscript222" Type="AbilCmd" AbilCmd="JingBingTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry22224" Type="AbilCmd" AbilCmd="JingBingTrain,Train2" Row="0" Column="1"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry224" Type="AbilCmd" AbilCmd="JingBingTrain,Train3" Row="0" Column="2"/>
+            <LayoutButtons Face="BuildSOMUAS3553" Type="AbilCmd" AbilCmd="JingBingTrain,Train4" Row="0" Column="3"/>
+            <LayoutButtons Face="RAConstructStarPacifier" Type="AbilCmd" AbilCmd="JingBingTrain,Train7" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildInterwarFighter4" Type="AbilCmd" AbilCmd="JingBingTrain,Train6" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildInterwarFighter223" Type="AbilCmd" AbilCmd="JingBingTrain,Train5" Row="1" Column="2"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="RAHarbingerGunship2" Type="AbilCmd" AbilCmd="JingBingTrain,Train8" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="300"/>
+        <SubgroupPriority value="3"/>
+        <GlossaryPriority value="31"/>
+        <TechTreeUnlockedUnitArray value=""/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedLightPrismTower" parent="AlliedStructure">
+        <Facing value="135"/>
+        <Attributes index="Light" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmorName value="Unit/LifeArmorName/Auormor"/>
+        <Sight value="12"/>
+        <!--Food value="-2"/-->
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="60"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink224"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="AutowerUnderConstruction"/>
+        <BehaviorArray Link="RALowPowerForitifcations"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <WeaponArray Link="ParticleBeam524"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink224,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Footprint value="Footprint1x1"/>
+        <PlacementFootprint value="Footprint1x1"/>
+        <MinimapRadius value="0"/>
+        <TacticalAI value="PreviewBunkerUpgraded"/>
+        <AIEvaluateAlias value="PreviewBunkerUpgraded"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedRefinery" parent="AlliedStructure">
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <ShieldRegenDelay value="20"/>
+        <Sight value="8"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="66.6667"/>
+        <AttackTargetPriority value="20"/>
+        <AbilArray index="1" Link="que5Passive"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="CityTrain"/>
+        <AbilArray Link="RATechnologyCenterResearch4"/>
+        <AbilArray Link="RA3TechLevel"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <EffectArray index="Birth" value="JurefinerycreateMiner2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildTankTrap2242" Type="AbilCmd" AbilCmd="CityTrain,Train13" Row="0" Column="0"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="0" Column="4"/>
+            <LayoutButtons Face="AutechUnlockT1" Type="AbilCmd" AbilCmd="RA3TechLevel,Research25" Row="0" Column="3"/>
+            <LayoutButtons Face="AutechUnlockT2" Type="AbilCmd" AbilCmd="RA3TechLevel,Research26" Row="0" Column="3"/>
+            <LayoutButtons Face="AutechUnlockT3" Type="AbilCmd" AbilCmd="RA3TechLevel,Research27" Row="0" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint5x5DropOff2"/>
+        <PlacementFootprint value="Footprint5x5DropOff2"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="2"/>
+    </CUnit>
+    <CUnit id="AlliedGrandCannon" parent="AlliedStructure">
+        <Facing value="135"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="450"/>
+        <LifeMax value="450"/>
+        <Sight value="22"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="20"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink2211"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent61"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="AutowerUnderConstruction"/>
+        <BehaviorArray Link="RALowPowerForitifcations"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <WeaponArray Link="75mmATT3" Turret="SovietBigGun_Model"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink2211,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint3x3"/>
+        <ScoreMake value="150"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <TacticalAI value="PreviewBunkerUpgraded"/>
+        <AIEvaluateAlias value="PreviewBunkerUpgraded"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedPowerPlant" parent="AlliedStructure">
+        <Facing value="29.9926"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <Food value="10"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="35"/>
+        <AbilArray Link="attack"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint3x2"/>
+        <PlacementFootprint value="Footprint3x2"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="125"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+    </CUnit>
+    <CUnit id="AlliedAdvancedPowerPlant" parent="AlliedStructure">
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Vespene"/>
+        <FogVisibility value="Visible"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="75"/>
+        <RepairTime value="50"/>
+        <BehaviorArray Link="jiangshichaobaoshi22"/>
+        <BehaviorArray Link="HarvestableVespeneGeyserGas"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <BuiltOn value="VespeneGeyser"/>
+        <BuiltOn value="SpacePlatformGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <BuiltOn value="ProtossVespeneGeyser"/>
+        <BuiltOn value="PurifierVespeneGeyser"/>
+        <BuiltOn value="ShakurasVespeneGeyser"/>
+        <BuildOnAs value="FormulatorRich"/>
+        <ScoreMake value="75"/>
+        <ScoreKill value="75"/>
+        <SubgroupPriority value="1"/>
+        <GlossaryPriority value="14"/>
+    </CUnit>
+    <CUnit id="AlliedPatriotEmplacement" parent="AlliedStructure">
+        <Facing value="135"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FlagArray index="Destructible" value="1"/>
+        <FlagArray index="CameraFollow" value="0"/>
+        <Attributes index="Light" value="1"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <Sight value="13"/>
+        <!--Food value="-1"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <AttackTargetPriority value="20"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink2219"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="AutowerUnderConstruction"/>
+        <BehaviorArray Link="RALowPowerForitifcations"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <WeaponArray Link="LongboltMissile242223" Turret="RABeamTankTurret2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="UpgradetoImprovedFlakCannon,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet19" Type="Passive" Requirements="StortModeRe212" Row="2" Column="0"/>
+            <LayoutButtons Face="AutechBeidongSet20" Type="Passive" Requirements="StortModeRe216" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1"/>
+        <PlacementFootprint value="Footprint1x1"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="MissileTurret"/>
+        <KillDisplay value="Never"/>
+        <RankDisplay value="Never"/>
+        <AIEvaluateAlias value="MissileTurret"/>
+        <ReviveInfoBase>
+            <Charge Link="AutoTurret/Revive"/>
+            <Cooldown Link="AutoTurret/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedConstructionYard" parent="AlliedStructure">
+        <Attributes index="Robotic" value="1"/>
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <FogVisibility value="Visible"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <Sight value="25"/>
+        <Food value="20"/>
+        <RepairTime value="100"/>
+        <AttackTargetPriority value="5"/>
+        <AbilArray index="1" Link="que1"/>
+        <AbilArray Link="SubuildBuildings2"/>
+        <AbilArray Link="Ally"/>
+        <AbilArray Link="RAChooseAirForce"/>
+        <AbilArray Link="SelectShipyards"/>
+        <AbilArray Link="RASelectFactory"/>
+        <AbilArray Link="AucryoShrinBeam22"/>
+        <AbilArray Link="CarrierHangar2"/>
+        <AbilArray Link="CarrierHangar22"/>
+        <AbilArray Link="ReturnAirport22"/>
+        <AbilArray Link="RA3TechLevel"/>
+        <AbilArray Link="AlliedMCVClose"/>
+        <BehaviorArray Link="CommandCenterQueue"/>
+        <BehaviorArray Link="VoidPylonPowerSource2"/>
+        <BehaviorArray Link="AlliedBuildSpeedUPLV1"/>
+        <BehaviorArray Link="VoidPylonPowerSource22"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SubuildBuildings2,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="AlliedBuildCancle" Type="AbilCmd" AbilCmd="ReturnAirport22,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="AssaultMode23" Type="AbilCmd" AbilCmd="AlliedMCVClose,255" Row="2" Column="4"/>
+            <LayoutButtons Face="SovietArchitecturalPage" Type="Passive" Row="0" Column="0"/>
+            <LayoutButtons>
+                <Face value="SovietTowerPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="0002"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="0"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons Face="SovietAircraftPage" Type="AbilCmd" AbilCmd="RAChooseAirForce,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="BuildSovietPowerPlant22" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo12" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildSovietPowerPlant222" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build6" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildSovietPowerPlant33" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo1" Row="1" Column="2"/>
+            <LayoutButtons Face="BuildSovietPowerPlant332" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build18" Row="1" Column="2"/>
+            <LayoutButtons Face="BuildBarracks2" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo2" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildBarracks23" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build21" Row="1" Column="1"/>
+            <LayoutButtons Face="RABuildAlliedSovietArtilleryFactory" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo5" Row="1" Column="3"/>
+            <LayoutButtons Face="RABuildAlliedSovietArtilleryFactoryReady" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build24" Row="1" Column="3"/>
+            <LayoutButtons Face="BuildMachinegunBunker222224" Type="AbilCmd" AbilCmd="CarrierHangar22,Ammo1" Row="2" Column="0"/>
+            <LayoutButtons Face="BuildMachinegunBunker2222242" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build11" Row="2" Column="0"/>
+            <LayoutButtons Face="BuildRadar32" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo7" Row="2" Column="1"/>
+            <LayoutButtons Face="BuildRadar323" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build26" Row="2" Column="1"/>
+            <LayoutButtons Face="BuildSovietPowerPlant3222" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo8" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildSovietPowerPlant32222" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build27" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildSovietPowerPlant223" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo9" Row="2" Column="3"/>
+            <LayoutButtons Face="BuildSovietPowerPlant2232" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build28" Row="2" Column="3"/>
+            <LayoutButtons Face="BuildAirport" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo3" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildAirport3" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build22" Row="1" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="SovietArchitecturalPage" Type="CancelSubmenu" Row="0" Column="0"/>
+            <LayoutButtons Face="SovietTowerPage" Type="Passive" Row="0" Column="1"/>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons Face="SovietAircraftPage" Type="AbilCmd" AbilCmd="RAChooseAirForce,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="BuildMachinegunBunker2" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo15" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildMachinegunBunker23" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build10" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildMachinegunBunker2222" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo17" Row="1" Column="2"/>
+            <LayoutButtons Face="BuildMachinegunBunker22223" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build4" Row="1" Column="2"/>
+            <LayoutButtons Face="OdinBarrage222" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo13" Row="2" Column="3"/>
+            <LayoutButtons Face="OdinBarrage2222" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build1" Row="2" Column="3"/>
+            <LayoutButtons Face="AlliedBuildCancle" Type="AbilCmd" AbilCmd="ReturnAirport22,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="AlliedSpectralTower" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo19" Row="1" Column="1"/>
+            <LayoutButtons Face="AlliedSpectralTowerReady" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build3" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildMachinegunBunker222" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo18" Row="2" Column="0"/>
+            <LayoutButtons Face="BuildMachinegunBunker2223" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build7" Row="2" Column="0"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch42322" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo11" Row="2" Column="2"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch423223" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build2" Row="2" Column="2"/>
+            <LayoutButtons Face="IronCurtain22" Type="AbilCmd" AbilCmd="CarrierHangar2,Ammo10" Row="1" Column="4"/>
+            <LayoutButtons Face="IronCurtain223" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build29" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildMachinegunBunker22222" Type="AbilCmd" AbilCmd="CarrierHangar22,Ammo2" Row="2" Column="1"/>
+            <LayoutButtons Face="BuildMachinegunBunker222223" Type="AbilCmd" AbilCmd="SubuildBuildings2,Build8" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="CommandCenter"/>
+        <TacticalAIThink value="AIThinkCommandCenter"/>
+        <GlossaryPriority value="30"/>
+        <AIEvaluateAlias value="CommandCenter"/>
+        <ReviveInfoBase>
+            <Charge Link="CommandCenter/Revive"/>
+            <Cooldown Link="CommandCenter/Revive"/>
+        </ReviveInfoBase>
+        <EffectArray index="Death" value="DisbandDeath52"/>
+        <CostResource index="Minerals" value="5000"/>
+    </CUnit>
+    <CUnit id="AlliedCommandCenter" parent="AlliedStructure">
+        <DeathRevealDuration value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <Response value="Nothing"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <Sight value="10"/>
+        <!--Food value="-1"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="50"/>
+        <AbilArray index="1" Link="que1"/>
+        <AbilArray Link="RA3TechLevel"/>
+        <AbilArray Link="Blink22172322"/>
+        <BehaviorArray Link="VoidPylonPowerSource2"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AutechUnlockT1" Type="AbilCmd" AbilCmd="RA3TechLevel,Research25" Row="0" Column="0"/>
+            <LayoutButtons Face="AutechUnlockT2" Type="AbilCmd" AbilCmd="RA3TechLevel,Research26" Row="0" Column="0"/>
+            <LayoutButtons Face="AutechUnlockT3" Type="AbilCmd" AbilCmd="RA3TechLevel,Research27" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <Footprint value="Footprint2x2"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <SubgroupPriority value="21"/>
+        <MinimapRadius value="1"/>
+    </CUnit>
+    <CUnit id="AlliedBarrack" parent="AlliedStructure">
+        <Description value="Button/Tooltip/aubarrat"/>
+        <Facing value="29.9926"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Sight value="7"/>
+        <!--Food value="-1"/-->
+        <CostResource index="Minerals" value="500"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="SovietBarracksTrain"/>
+        <BehaviorArray Link="MassProduction22"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TrainSovietConscript22" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train18" Row="0" Column="0"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry222" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train13" Row="2" Column="0"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2222" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train12" Row="2" Column="1"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry22" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train5" Row="0" Column="1"/>
+            <LayoutButtons Face="TrainSniper" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train8" Row="1" Column="1"/>
+            <LayoutButtons Face="TrainCombatEngineer" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train11" Row="1" Column="0"/>
+            <LayoutButtons Face="OdinBarrage22322" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train7" Row="2" Column="3"/>
+            <LayoutButtons Face="TrainCombatEngineer3" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train10" Row="1" Column="2"/>
+        </CardLayouts>
+        <Footprint value="Footprint3x3"/>
+        <MinimapRadius value="1"/>
+        <TacticalAI value="Barracks"/>
+        <AIEvaluateAlias value="Barracks"/>
+    </CUnit>
+    <CUnit id="AlliedProtonCollider" parent="AlliedStructure">
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <Sight value="6"/>
+        <!--Food value="-8"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="5000"/>
+        <RepairTime value="50"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="OdinNuclearStrike22"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent482"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="Lowpower22"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <WeaponArray Turret="RAProtonColliderMainCannon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="OdinBarrage22" Type="AbilCmd" AbilCmd="OdinNuclearStrike22,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="3"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <DeadFootprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="1250000"/>
+        <ScoreKill value="2500"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="3"/>
+    </CUnit>
+    <CUnit id="AlliedWeathercontroller" parent="AlliedStructure">
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <Sight value="6"/>
+        <!--Food value="-8"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="5000"/>
+        <RepairTime value="50"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="OdinNuclearStrike222233"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent482"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="Lowpower22"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced43222323" Type="AbilCmd" AbilCmd="OdinNuclearStrike222233,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="3"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <DeadFootprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="1250000"/>
+        <ScoreKill value="2500"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="3"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedMachinegunBunker" parent="AlliedStructure">
+        <Facing value="315"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Sight value="10"/>
+        <CostResource index="Minerals" value="500"/>
+        <RepairTime value="40"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink2217"/>
+        <BehaviorArray Link="UpgradeLevel14"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="AutowerUnderConstruction"/>
+        <WeaponArray Link="M603" Turret="AlliedGrandCannon_Model"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet18" Type="Passive" Requirements="StortModeRe221" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1"/>
+        <PlacementFootprint value="Footprint1x1"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="PreviewBunkerUpgraded"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="Zealot"/>
+        <GlossaryWeakArray value="SiegeTankSieged"/>
+        <GlossaryWeakArray value="Baneling"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <AIEvaluateAlias value="PreviewBunkerUpgraded"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedRadar" parent="AlliedStructure">
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="0.6015"/>
+        <Sight value="24"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="10"/>
+        <AbilArray Link="ScannerSweep2"/>
+        <BehaviorArray Link="SensorTowerRadar"/>
+        <BehaviorArray Link="UnderConstruction"/>
+        <BehaviorArray Link="Detector8"/>
+        <BehaviorArray Link="Detector12"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="RadarField" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep2,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="Radar_Model"/>
+        <GlossaryPriority value="314"/>
+        <ReviveInfoBase>
+            <Charge Link="Radar_Model/Revive"/>
+            <Cooldown Link="Radar_Model/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedChronoSphere" parent="AlliedStructure">
+        <Facing value="49.9987"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <Sight value="6"/>
+        <!--Food value="-6"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="50"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="AlliedChronoSphere_Actor"/>
+        <AbilArray Link="AlliedOldChronosphere_Actor"/>
+        <AbilArray Link="SovietIronCurtain222"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent4822"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48222"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="Lowpower22"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="IronCurtain3" Type="AbilCmd" AbilCmd="SovietIronCurtain222,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="IronCurtain3" Type="AbilCmd" AbilCmd="SovietIronCurtain22,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="3"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <DeadFootprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="12500"/>
+        <ScoreKill value="2500"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="2"/>
+    </CUnit>
+    <CUnit id="AlliedOldChronosphere" parent="AlliedStructure">
+        <Facing value="49.9987"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="5000"/>
+        <LifeMax value="5000"/>
+        <Sight value="6"/>
+        <!--Food value="-6"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="50"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="ScannerSweep"/>
+        <AbilArray Link="AlliedChronoSphere_Actor"/>
+        <AbilArray Link="AlliedOldChronosphere_Actor"/>
+        <AbilArray Link="SovietIronCurtain222"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent4822"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48222"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="IronCurtain3" Type="AbilCmd" AbilCmd="SovietIronCurtain222,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="IronCurtain3" Type="AbilCmd" AbilCmd="SovietIronCurtain22,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="3"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <DeadFootprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="12500"/>
+        <ScoreKill value="2500"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="2"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedWarFactory" parent="AlliedStructure">
+        <LifeStart value="1250"/>
+        <LifeMax value="1250"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Sight value="8"/>
+        <CostResource index="Minerals" value="2000"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="WarFactoryTrain"/>
+        <AbilArray Link="WarFactoryTrain2"/>
+        <AbilArray Link="Disband22"/>
+        <AbilArray Link="CarrierRepairDroneHanger2"/>
+        <AbilArray Link="WarFactoryTrain22"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <BehaviorArray Link="Maintenancebeedetectshalorange"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildMediumTankAdvanced" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train28" Row="0" Column="1"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced2" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train7" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildSOMUAS354" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train29" Row="0" Column="0"/>
+            <LayoutButtons Face="RAAthenaCannon" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train23" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildSOMUAS355" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train30" Row="0" Column="2"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry22223422" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train8" Row="1" Column="2"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2222342" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train11" Row="1" Column="2"/>
+            <LayoutButtons Face="RAPacifierFAV" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train14" Row="2" Column="0"/>
+            <LayoutButtons Face="AutechBeidongSet17" Type="Passive" Requirements="StortModeRe2142" Row="0" Column="4"/>
+            <LayoutButtons Face="Disband4" Type="AbilCmd" AbilCmd="Disband22,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="CommanderNovaUnlockGriffinTransport2233" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train11" Row="2" Column="1"/>
+            <LayoutButtons Face="BuildTankTrap225" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train26" Row="0" Column="3"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced222" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train13" Row="2" Column="2"/>
+            <LayoutButtons Face="RepairDrones2" Type="AbilCmd" AbilCmd="CarrierRepairDroneHanger2,Ammo2" Row="0" Column="4"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced22" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train12" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="375"/>
+        <SubgroupPriority value="21"/>
+        <!--Food value="-2"/-->
+        <TacticalAI value="Factory"/>
+        <AIEvaluateAlias value="Factory"/>
+    </CUnit>
+    <CUnit id="AlliedOldFactory" parent="AlliedStructure">
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Sight value="7"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="70"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="WarFactoryTrain22"/>
+        <AbilArray Link="Disband22"/>
+        <AbilArray Link="BuildCity3"/>
+        <AbilArray Link="BuildCity"/>
+        <AbilArray Link="NanoRepair"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TrainWehrmachtInfantry2222342" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train11" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="BuildMainBattleTankEarly"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="WarFactoryTrain22,Train10"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="BuildHeavyTankAdvanced22" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train12" Row="2" Column="1"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced222" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train13" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildSOMUAS3552" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train7" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildMediumTankEarly2" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train8" Row="0" Column="1"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="NanoRepair,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry222234" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train9" Row="0" Column="2"/>
+            <LayoutButtons Face="Disband4" Type="AbilCmd" AbilCmd="Disband22,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="375"/>
+        <SubgroupPriority value="21"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedDefenseBureau" parent="AlliedStructure">
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="65"/>
+        <AttackTargetPriority value="10"/>
+        <AbilArray index="1" Link="que2x3CancelToSelection"/>
+        <AbilArray Link="TechCentreResearch"/>
+        <AbilArray Link="RATechnologyCenterResearch2"/>
+        <AbilArray Link="RATechnologyCenterResearch3"/>
+        <AbilArray Link="RATechnologyCenterResearch5"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="RAUpgradeTankSDamageT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research20" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankSDamageT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research16" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankSDamageT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research23" Row="0" Column="0"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankSDamageT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research17" Row="0" Column="0"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="0" Column="0"/>
+            <LayoutButtons Face="RAAdvancedTechnologyTankTrackImprovement" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research29" Row="0" Column="0"/>
+            <LayoutButtons Face="CommanderNovaUnlockGriffinTransport2232" Type="AbilCmd" AbilCmd="TechCentreResearch,Research4" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research19" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research28" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research29" Row="0" Column="1"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research30" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research16" Row="0" Column="2"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research25" Row="0" Column="2"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research26" Row="0" Column="2"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="2"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research27" Row="0" Column="2"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="0" Column="2"/>
+            <LayoutButtons Face="RAAdvancedTechnologyMechaWeaponEnhancement" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research11" Row="0" Column="2"/>
+            <LayoutButtons Face="KraithCrashingCharge2222" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research24" Row="0" Column="2"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que2x3CancelToSelection,CancelLast" Row="0" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research7" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research15" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research18" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research21" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research5" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research22" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research23" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research24" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research3" Row="1" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research7" Row="1" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research8" Row="1" Column="3"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="1" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research9" Row="1" Column="3"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="1" Column="3"/>
+            <LayoutButtons Face="RAAdvancedTechnologyArtilleryModernizationAndUpgrading" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research4" Row="1" Column="3"/>
+            <LayoutButtons Face="RAFinalTechnologyUnlimitedArtillery" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research10" Row="1" Column="3"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry222" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research15" Row="2" Column="0"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry2222" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research10" Row="2" Column="0"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry2223" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research11" Row="2" Column="0"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="2" Column="0"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry2224" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research12" Row="2" Column="0"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="2" Column="0"/>
+            <LayoutButtons Face="RAAdvancedTechnologyFastTraining" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research30" Row="2" Column="0"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research6" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research4" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research5" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research6" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research17" Row="0" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research20" Row="0" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research19" Row="0" Column="3"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research14" Row="0" Column="3"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="0" Column="3"/>
+            <LayoutButtons Face="RAAdvancedTechnologyAdvancedRocketAndMissileGuidanceSystem" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research1" Row="0" Column="3"/>
+            <LayoutButtons Face="RAFinalTechnologyAlternativeNuclearWeapons" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research2" Row="0" Column="3"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research18" Row="1" Column="0"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research16" Row="1" Column="0"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research17" Row="1" Column="0"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="1" Column="0"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research18" Row="1" Column="0"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="1" Column="0"/>
+            <LayoutButtons Face="RAAdvancedTechnologyAdvancedAeronautics" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research28" Row="1" Column="0"/>
+            <LayoutButtons Face="RAFinalTechnologyAirForceFutureTechnologyLicense" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research9" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <ReviveInfoBase>
+            <Charge Link="Armory/Revive"/>
+            <Cooldown Link="Armory/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedBankGun" parent="AlliedStructure">
+        <Facing value="135"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <LifeStart value="550"/>
+        <LifeMax value="550"/>
+        <Sight value="12"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="1600"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="20"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink225"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="AutowerUnderConstruction"/>
+        <WeaponArray Link="AlliedBankGun_Actor" Turret="AlliedBankGun_Model"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink225,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint2x2"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <SubgroupPriority value="3"/>
+    </CUnit>
+    <CUnit id="AlliedArtilleryFactory" parent="AlliedStructure">
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Sight value="6"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="60"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="WarFactoryTrain"/>
+        <AbilArray Link="WarFactoryTrain2"/>
+        <AbilArray Link="Disband22"/>
+        <AbilArray Link="BuildCity"/>
+        <AbilArray Link="NanoRepair"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildTankDestroyerEarly" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train20" Row="0" Column="0"/>
+            <LayoutButtons Face="RAAthenaCannon" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train23" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildFlakTankImproved" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train6" Row="0" Column="1"/>
+            <LayoutButtons Face="RAPacifierFAV" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train14" Row="2" Column="1"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="NanoRepair,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="BuildTankDestroyerImproved" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train1" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildTankDestroyerAdvanced" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train2" Row="2" Column="0"/>
+            <LayoutButtons Face="BuildTankDestroyerAdvanced2" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train12" Row="1" Column="2"/>
+            <LayoutButtons Face="Disband4" Type="AbilCmd" AbilCmd="Disband22,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="Factory"/>
+        <TechAliasArray value="Alias_Factory"/>
+        <GlossaryPriority value="322"/>
+        <TechTreeProducedUnitArray value="Hellion"/>
+        <TechTreeProducedUnitArray value="SiegeTank"/>
+        <TechTreeProducedUnitArray value="Thor"/>
+        <TechTreeProducedUnitArray value="RocketSPA_Model"/>
+        <ReviveInfoBase>
+            <Charge Link="Factory/Revive"/>
+            <Cooldown Link="Factory/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedAntitankgun" parent="AlliedStructure">
+        <Facing value="135"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <Sight value="10"/>
+        <!--Food value="-2"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="25"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink2218"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="BunkerAT" Turret="AlliedGrandCannon_Model"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Disband" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink2218,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.125"/>
+        <SeparationRadius value="0.1"/>
+        <Footprint value="Footprint1x1"/>
+        <PlacementFootprint value="Footprint1x1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedAirport" parent="AlliedStructure">
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <Sight value="10"/>
+        <CostResource index="Minerals" value="1000"/>
+        <AttackTargetPriority value="5"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="AirportTrain"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="CarrierRepairDroneHanger2"/>
+        <BehaviorArray Link="AircraftAirportParkingAircraftTracking"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <BehaviorArray Link="Airportisfull"/>
+        <BehaviorArray Link="Maintenancebeedetectshalorange"/>
+        <BehaviorArray Link="Lowpower"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <EffectArray index="Death" value="CNCAirporttraversaltrackingaircraft"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildLightBomber2" Type="AbilCmd" AbilCmd="AirportTrain,Train8" Row="0" Column="1"/>
+            <LayoutButtons Face="BuildLightBomber22" Type="AbilCmd" AbilCmd="AirportTrain,Train9" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildInterwarFighter" Type="AbilCmd" AbilCmd="AirportTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildInterwarFighter22" Type="AbilCmd" AbilCmd="AirportTrain,Train14" Row="0" Column="2"/>
+            <LayoutButtons Face="RAHarbingerGunship1" Type="AbilCmd" AbilCmd="AirportTrain,Train13" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildInterwarFighter3" Type="AbilCmd" AbilCmd="AirportTrain,Train3" Row="0" Column="3"/>
+            <LayoutButtons Face="RepairDrones2" Type="AbilCmd" AbilCmd="CarrierRepairDroneHanger2,Ammo2" Row="2" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet17" Type="Passive" Requirements="StortModeRe2142" Row="2" Column="2"/>
+        </CardLayouts>
+        <!--Food value="-2"/-->
+        <Radius value="0.1875"/>
+        <SeparationRadius value="0.1875"/>
+        <Footprint value="Footprint4x4Contour2"/>
+        <DeadFootprint value="Footprint4x4Contour2"/>
+        <PlacementFootprint value="Footprint4x42"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <MinimapRadius value="1.8"/>
+    </CUnit>
+    <CUnit id="AlliedSpectrumTower" parent="AlliedStructure">
+        <Facing value="135"/>
+        <Attributes index="Light" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmorName value="Unit/LifeArmorName/Auormor"/>
+        <Sight value="12"/>
+        <!--Food value="-2"/-->
+        <CostResource index="Minerals" value="200"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="AlliedSpectralTowerAdvancedChargeReal"/>
+        <AbilArray Link="AlliedSpectralTowerAdvancedChargeFake"/>
+        <AbilArray Link="Blink223"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="Alliedforcesbuildsmallenergycircle"/>
+        <BehaviorArray Link="PowerUserQueue"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="AutowerUnderConstruction"/>
+        <BehaviorArray Link="RALowPowerForitifcations"/>
+        <BehaviorArray Link="RASufficientpower"/>
+        <WeaponArray Link="AlliedSpectralTowerWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AlliedSpectralRefractionSuperposition" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="AlliedSpectralRefractionSuperposition" Type="AbilCmd" AbilCmd="AlliedSpectralTowerAdvancedChargeReal,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink223,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Footprint value="Footprint1x1"/>
+        <PlacementFootprint value="Footprint1x1"/>
+        <TacticalAI value="PreviewBunkerUpgraded"/>
+        <AIEvaluateAlias value="PreviewBunkerUpgraded"/>
+    </CUnit>
+    <CUnit id="AlliedCombatEngineer" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/gbing"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranAlliedCombatEngineerArmor"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Speed value="1.5"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="500"/>
+        <AttackTargetPriority value="5"/>
+        <AbilArray Link="BuildingCapture2"/>
+        <AbilArray Link="BuildingCapture"/>
+        <AbilArray Link="SovietMotoModeSwhich522"/>
+        <AbilArray Link="BuildingCapture5"/>
+        <BehaviorArray Link="SandbagAuraB6"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="EngineerCapture" Type="AbilCmd" AbilCmd="BuildingCapture,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="EngineerCapture3" Type="AbilCmd" AbilCmd="BuildingCapture2,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus222227533" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich522,Off" Row="1" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus2222226523" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich522,On" Row="1" Column="2"/>
+            <LayoutButtons Face="EngineerCapture7" Type="AbilCmd" AbilCmd="BuildingCapture5,Execute" Row="1" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet16" Type="Passive" Requirements="StortModeRe234" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.3"/>
+        <TacticalAI value="Medic"/>
+        <AIEvaluateAlias value="Medic"/>
+    </CUnit>
+    <CUnit id="AlliedRocketInfantry" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <PushPriority value="5"/>
+        <Collide index="Locust" value="0"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <Speed value="2"/>
+        <Sight value="8"/>
+        <CostResource index="Minerals" value="300"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich23"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="UpgradeLevel127"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <WeaponArray Link="90mmCannons2"/>
+        <WeaponArray Link="90mmCannons25"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AlliedJavaModeSwitch2" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich23,On" Row="2" Column="1"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch3" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich23,Off" Row="1" Column="1"/>
+            <LayoutButtons Face="AutechBeidongSet2" Type="Passive" Requirements="StortModeRe224" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4375"/>
+        <ScoreResult value=""/>
+        <MinimapRadius value="0.3"/>
+    </CUnit>
+    <CUnit id="AlliedAttackDog" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/gbing"/>
+        <PushPriority value="5"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="75"/>
+        <AttackTargetPriority value="5"/>
+        <KillXP value="30"/>
+        <AbilArray Link="BuildInProgress"/>
+        <BehaviorArray Link="UpgradeLevel13"/>
+        <WeaponArray Link="Claws"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="BuildCV222,Halt" Row="2" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.3"/>
+    </CUnit>
+    <CUnit id="AlliedFrozenLegion" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <FlagArray index="AISplash" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="125"/>
+        <LifeMax value="125"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2.1992"/>
+        <Sight value="11"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="10"/>
+        <AbilArray Link="AlliedFrozenLegionJump"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <WeaponArray Link="AlliedCryoLauncher"/>
+        <WeaponArray Link="AlliedFreezeGun"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AlliedFrozenLegionJump" Type="AbilCmd" AbilCmd="AlliedFrozenLegionJump,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="AutechBeidongSet14" Type="Passive" Requirements="StortModeRe215" Row="2" Column="0"/>
+            <LayoutButtons Face="AutechBeidongSet15" Type="Passive" Requirements="StortModeRe220" Row="2" Column="1"/>
+        </CardLayouts>
+        <SubgroupPriority value="5"/>
+        <AIEvaluateAlias value="AlliedCryoLegionnaire_Model"/>
+    </CUnit>
+    <CUnit id="AlliedSpy" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/mengjunbubing"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="75"/>
+        <LifeMax value="75"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="1.5"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1000"/>
+        <KillXP value="1"/>
+        <AbilArray Link="AlliedSpyBribery"/>
+        <AbilArray Link="AlliedSpyInfiltrate"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <WeaponArray Link="AlliedSpyDisguise"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AlliedSpyBribery" Type="AbilCmd" AbilCmd="AlliedSpyBribery,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="AlliedSpyInfiltrate" Type="AbilCmd" AbilCmd="AlliedSpyInfiltrate,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="AutechBeidongSet13" Type="Passive" Requirements="StortModeRe24" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <SubgroupPriority value="18"/>
+        <TacticalAI value="GhostCloaked"/>
+        <AIEvaluateAlias value="Ghost"/>
+    </CUnit>
+    <CUnit id="AlliedSniper" parent="AlliedGround">
+        <!--        <Subtitle value="UnitSubtitle/zhencha"/>-->
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="125"/>
+        <LifeMax value="125"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.6015"/>
+        <Speed value="1.8007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="8"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="600"/>
+        <KillXP value="4"/>
+        <AbilArray Link="RogueGhostCloak"/>
+        <AbilArray Link="RaynorSnipe22"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <WeaponArray Link="K98k"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackGhost" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="CloakOnSpectre" Type="AbilCmd" AbilCmd="RogueGhostCloak,On" Row="1" Column="0"/>
+            <LayoutButtons Face="WraithCloakOff" Type="AbilCmd" AbilCmd="RogueGhostCloak,Off" Row="1" Column="1"/>
+            <LayoutButtons Face="RaynorSnipe3" Type="AbilCmd" AbilCmd="RaynorSnipe22,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="CriusSuit" Type="Passive" Requirements="UseGhostCriusSuit" Row="1" Column="3"/>
+            <LayoutButtons Face="OcularImplants" Type="Passive" Requirements="StortModeRe222" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="19"/>
+        <MinimapRadius value="0.3"/>
+        <TacticalAI value="Ghost"/>
+        <TacticalAIThink value="AIThinkGhost"/>
+        <AIEvalFactor value="1.2"/>
+        <HotkeyAlias value="Ghost"/>
+        <AIEvaluateAlias value="Ghost"/>
+        <ReviveInfoBase>
+            <Charge Link="Ghost/Revive"/>
+            <Cooldown Link="Ghost/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedPeaceKeeper" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/jiqiang"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2.1992"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="200"/>
+        <AbilArray Link="AlliedPeaceKeeperPelletGun"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="UpgradeLevel16"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <WeaponArray Link="AlliedPeaceKeeperWinchester"/>
+        <WeaponArray Link="InfestedClaws22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus22222722" Type="AbilCmd" AbilCmd="AlliedPeaceKeeperPelletGun,On" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus222222622" Type="AbilCmd" AbilCmd="AlliedPeaceKeeperPelletGun,Off" Row="1" Column="1"/>
+            <LayoutButtons Face="AutechBeidongSet10" Type="Passive" Requirements="StortModeRe23" Row="2" Column="2"/>
+            <LayoutButtons Face="AutechBeidongSet" Type="Passive" Requirements="StortModeRe211" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="19"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="21"/>
+        <AIEvaluateAlias value="Marine"/>
+    </CUnit>
+    <CUnit id="AlliedTanya" parent="AlliedGround">
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2.5"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="1599.961"/>
+        <TurningRate value="1599.961"/>
+        <Sight value="10"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="20"/>
+        <KillXP value="40"/>
+        <AbilArray Link="Herrscher2ndBlink2"/>
+        <AbilArray Link="OdinNuclearStrike222232"/>
+        <BehaviorArray Link="RAComprehensiveCapabilitiesGreatlyImproved1"/>
+        <BehaviorArray Link="UpgradeLevel123222"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <WeaponArray Link="AssaultRifle2"/>
+        <WeaponArray Link="AssaultRifle22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildHeavyTankAdvanced43222322" Type="AbilCmd" AbilCmd="OdinNuclearStrike222232,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="Herrscher2Blink3" Type="AbilCmd" AbilCmd="Herrscher2ndBlink2,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research21" Row="0" Column="1"/>
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research11" Row="0" Column="1"/>
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research12" Row="0" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <InnerRadius value="0.5"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="100"/>
+        <TacticalAI value="Marine"/>
+        <AIEvaluateAlias value="Marine"/>
+    </CUnit>
+    <CUnit id="AlliedCryoLegionnaire" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <FlagArray index="AISplash" value="1"/>
+        <PushPriority value="15"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="1600"/>
+        <LifeMax value="1600"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2.1992"/>
+        <Sight value="8"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="41.667"/>
+        <AbilArray Link="AucryoShrinBeam"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <WeaponArray Link="AlliedCryoLauncher"/>
+        <WeaponArray Link="AlliedFreezeGun"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus2222275323" Type="AbilCmd" AbilCmd="AucryoShrinBeam,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <SubgroupPriority value="5"/>
+    </CUnit>
+    <CUnit id="AlliedRocketeer" parent="AlliedAir">
+        <Name value="Unit/Name/Auhuojian"/>
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="55"/>
+        <LifeMax value="55"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2.8007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="600"/>
+        <RepairTime value="20"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="AlliedInfantryArmor"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="RAInfantryAutoHeal"/>
+        <WeaponArray Link="P38ScytheGuassPistol2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AutechBeidongSet11" Type="Passive" Requirements="StortModeRe225" Row="2" Column="0"/>
+            <LayoutButtons Face="AutechBeidongSet12" Type="Passive" Requirements="StortModeRe226" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="7"/>
+        <TacticalAI value="Reaper"/>
+        <GlossaryPriority value="50"/>
+        <AIEvaluateAlias value="Reaper"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedProspector" parent="AlliedGround">
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="50"/>
+        <AttackTargetPriority value="1"/>
+        <KillXP value="50"/>
+        <AbilArray Link="SCVHarvest2"/>
+        <AbilArray Link="RAMinecartExpands"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent63"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="nianyalv1"/>
+        <EffectArray index="Create" value="oreminerSearch"/>
+        <EffectArray index="Birth" value="oreminerSearch"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="SCVHarvest2,Gather" Row="1" Column="0"/>
+            <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest2,Return" Row="1" Column="1"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="WreckingCrewAssaultMode222226" Type="AbilCmd" AbilCmd="RAMinecartExpands,Build6" Row="2" Column="0"/>
+            <LayoutButtons Face="RASingleMaximumCarryingCapacity" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="700"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.875"/>
+    </CUnit>
+    <CUnit id="AlliedMCV" parent="AlliedGround">
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
+        <Facing value="45"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.1992"/>
+        <Acceleration value="1"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="5000"/>
+        <RepairTime value="50"/>
+        <AttackTargetPriority value="1"/>
+        <AbilArray Link="AlliedMCVExpand"/>
+        <BehaviorArray Link="nianayaLevel142"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="nianyalv142"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="WreckingCrewAssaultMode2222262" Type="AbilCmd" AbilCmd="AlliedMCVExpand,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="1"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="700"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.875"/>
+        <Radius value="1.1875"/>
+    </CUnit>
+    <CUnit id="AlliedBattleFortress" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="0.25"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Speed value="1.6992"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="119.8828"/>
+        <TurningRate value="119.8828"/>
+        <Sight value="17"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="45"/>
+        <AttackTargetPriority value="25"/>
+        <KillXP value="25"/>
+        <AbilArray Link="BunkerTransport222"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="healRedirect3"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="nianayaLevel142"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="M602" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="nianyalv142"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="OracleAttack" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="BunkerLoad22" Type="AbilCmd" AbilCmd="BunkerTransport222,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="BunkerUnloadAll22" Type="AbilCmd" AbilCmd="BunkerTransport222,UnloadAll" Row="2" Column="1"/>
+            <LayoutButtons Face="CommanderNovaUnlockGriffinTransport22333332" Type="Passive" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildingRepair22" Type="Passive" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedPrismTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="75"/>
+        <LifeMax value="75"/>
+        <Speed value="1.6015"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <BehaviorArray Link="UpgradeLevel126"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="ParticleBeam34" Turret="RABeamTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AutechBeidongSet22" Type="Passive" Requirements="StortModeRe213" Row="1" Column="4"/>
+        </CardLayouts>
+        <InnerRadius value="0.1875"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedSpectralTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1400"/>
+        <KillXP value="10"/>
+        <BehaviorArray Link="UpgradeLevel126"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="ParticleBeam34" Turret="RABeamTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AutechBeidongSet22" Type="Passive" Requirements="StortModeRe213" Row="1" Column="4"/>
+        </CardLayouts>
+        <InnerRadius value="0.1875"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="12"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedRiptide" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhencha"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <Speed value="2.3007"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="45"/>
+        <KillXP value="2"/>
+        <AbilArray Link="SpecOpsDropshipTransport22"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="WraithG242" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="LongboltMissile24"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BiodomeLoad32" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport22,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="HerculesUnloadAll" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport22,UnloadAt" Row="2" Column="1"/>
+        </CardLayouts>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="Hellion"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedAnnihilatorCannon" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/huopaoying"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="2250"/>
+        <LifeMax value="2250"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.6015"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="540"/>
+        <TurningRate value="540"/>
+        <Sight value="12"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <BehaviorArray Link="UpgradeLevel1226"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="88cmKwK36232"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts/>
+        <InnerRadius value="0.3125"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedLightTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="450"/>
+        <LifeMax value="450"/>
+        <LifeArmor value="1"/>
+        <Speed value="3.5"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="350"/>
+        <RepairTime value="45"/>
+        <KillXP value="2"/>
+        <BehaviorArray Link="UpgradeLevel14"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="50mmCannon22" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts/>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4"/>
+        <InnerRadius value="0.3125"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Hydralisk"/>
+        <GlossaryStrongArray value="Stalker"/>
+        <GlossaryWeakArray value="Banshee"/>
+        <GlossaryWeakArray value="Mutalisk"/>
+        <GlossaryWeakArray value="Immortal"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedDestroyerTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1600"/>
+        <LifeMax value="1600"/>
+        <LifeArmor value="1"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="540"/>
+        <TurningRate value="540"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="900"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="UpgradeLevel1244"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="88cmKwK3623"/>
+        <WeaponArray Link="AlliedTankDesRA2Weapon"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts/>
+        <InnerRadius value="0.3125"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedIFV" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="9"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="90"/>
+        <LifeMax value="90"/>
+        <Speed value="3.3984"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="8"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="600"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich233"/>
+        <AbilArray Link="BunkerTransport223"/>
+        <AbilArray Link="Repair2"/>
+        <AbilArray Link="AttackRedirect"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="SandbagAuraB6"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent662"/>
+        <WeaponArray Link="LongboltMissile242" Turret="SiegeTank"/>
+        <WeaponArray Link="LongboltMissile2422" Turret="SiegeTank"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector2" Type="Passive" Behavior="RAMovementSpeedAndArmor20Percent66" Row="2" Column="3"/>
+            <LayoutButtons Face="BunkerLoad22" Type="AbilCmd" AbilCmd="BunkerTransport223,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="BunkerUnloadAll22" Type="AbilCmd" AbilCmd="BunkerTransport223,UnloadAll" Row="2" Column="1"/>
+            <LayoutButtons Face="CommanderNovaUnlockGriffinTransport223333322" Type="Passive" Row="1" Column="4"/>
+            <LayoutButtons Face="Repair2" Type="AbilCmd" AbilCmd="Repair2,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="AutechBeidongSet40" Type="Passive" Requirements="StortModeRe232" Row="1" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet5" Type="Passive" Requirements="StortModeRe22" Row="1" Column="2"/>
+            <LayoutButtons Face="BunkerAttack" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <SubgroupPriority value="10"/>
+        <AIEvalFactor value="1.5"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedPatriotTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="900"/>
+        <LifeMax value="900"/>
+        <LifeArmor value="1"/>
+        <Speed value="3.5"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="6"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="900"/>
+        <RepairTime value="20"/>
+        <AttackTargetPriority value="15"/>
+        <KillXP value="2"/>
+        <BehaviorArray Link="UpgradeLevel1243"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="LongboltMissile24222" Turret="SiegeTank"/>
+        <WeaponArray Link="LongboltMissile242222" Turret="SiegeTank"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts/>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedMirageTankMK0" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="20"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.3007"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <BehaviorArray Link="RACamouflage"/>
+        <BehaviorArray Link="UpgradeLevel123"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="50mmCannon3" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts/>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <SubgroupPriority value="13"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedFrozenTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.1992"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="540"/>
+        <TurningRate value="540"/>
+        <Sight value="6"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <AbilArray Link="AucryoShrinBeam"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam2"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus2222275323" Type="AbilCmd" AbilCmd="AucryoShrinBeam,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedAthenaTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/huopaoying2"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="540"/>
+        <TurningRate value="540"/>
+        <Sight value="12"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1400"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <AbilArray Link="RAToggleShieldSphere"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="ParticleBeam32" Turret="RAPacifierTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="RAActivateThePowerShield" Type="AbilCmd" AbilCmd="RAToggleShieldSphere,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="AutechBeidongSet6" Type="Passive" Requirements="StortModeRe214" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTankSieged"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedPacifierFAV" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/pingdingzhe"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="22"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmor value="1"/>
+        <Mover value="Colossus22"/>
+        <Speed value="1.6992"/>
+        <Acceleration value="20"/>
+        <StationaryTurningRate value="119.8828"/>
+        <TurningRate value="119.8828"/>
+        <Sight value="15"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="25"/>
+        <AbilArray Link="VolatileBurstBuilding24"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="nianayaLevel13"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="Twin792mm243" Turret="RAPacifierTurret2"/>
+        <WeaponArray Link="BattleshipArtillery223" Turret="RAPacifierTurret2"/>
+        <WeaponArray Link="nianyalv13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus222225" Type="AbilCmd" AbilCmd="VolatileBurstBuilding24,On" Row="2" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus2222224" Type="AbilCmd" AbilCmd="VolatileBurstBuilding24,Off" Row="2" Column="2"/>
+            <LayoutButtons Face="OdinBarrage" Type="AbilCmd" AbilCmd="attack,Barrage" Row="2" Column="0"/>
+            <LayoutButtons Face="AutechBeidongSet23" Type="Passive" Requirements="StortModeRe227" Row="1" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet24" Type="Passive" Requirements="StortModeRe237" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.8125"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.25"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTankSieged"/>
+        <GlossaryPriority value="470"/>
+        <AIEvaluateAlias value="SiegeTankSieged"/>
+    </CUnit>
+    <CUnit id="AlliedFutureTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="0.5"/>
+        <Speed value="1.6992"/>
+        <Acceleration value="100"/>
+        <StationaryTurningRate value="239.9414"/>
+        <TurningRate value="239.9414"/>
+        <Sight value="15"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="25"/>
+        <AbilArray Link="AlliedFSpell"/>
+        <BehaviorArray Link="UpgradeLevel12323"/>
+        <BehaviorArray Link="nianayaLevel13"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="TempestGround2" Turret="RANeutronDisturbanceCannon2"/>
+        <WeaponArray Link="nianyalv13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="OdinBarrage" Type="AbilCmd" AbilCmd="attack,Barrage" Row="2" Column="0"/>
+            <LayoutButtons Face="RARiotBeam2" Type="AbilCmd" AbilCmd="AlliedFSpell,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="AutechBeidongSet4" Type="Passive" Requirements="StortModeRe238" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.25"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <MinimapRadius value="0.375"/>
+        <GlossaryPriority value="470"/>
+    </CUnit>
+    <CUnit id="AlliedMirageTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <CostResource index="Minerals" value="1600"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="125"/>
+        <LifeMax value="125"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.8007"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="12"/>
+        <Food value="-3"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <AbilArray Link="VolatileBurstBuilding25222"/>
+        <BehaviorArray Link="RACamouflage"/>
+        <BehaviorArray Link="UpgradeLevel123"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="ParticleBeam3"/>
+        <WeaponArray Link="InfestedClaws222"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus2222225222" Type="AbilCmd" AbilCmd="VolatileBurstBuilding25222,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus222226222" Type="AbilCmd" AbilCmd="VolatileBurstBuilding25222,On" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="AlliedExplorerGunTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/huopaoying"/>
+        <Response value="AcquireNoFlee"/>
+        <LifeStart value="1600"/>
+        <LifeMax value="1600"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.6992"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="6"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1000"/>
+        <KillXP value="4"/>
+        <AbilArray Link="RAForcedCooling"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="100mmATT" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+            <LayoutButtons Face="AlliedPredTankSpell2" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="AlliedPredTankSpell" Type="AbilCmd" AbilCmd="RAForcedCooling,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <ScoreResult value=""/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedGuardianTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <Response value="AcquireNoFlee"/>
+        <LifeStart value="120"/>
+        <LifeMax value="120"/>
+        <LifeArmorName value="Unit/LifeArmorName/AlliedGuardTank"/>
+        <Speed value="2.6992"/>
+        <TurningRate value="720"/>
+        <Sight value="12"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="950"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich3"/>
+        <AbilArray Link="RocketAngelSpell2"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <BehaviorArray Link="RATheUnitItselfTakesDamageWhenAttackingAnEnemyButItAlsoGainsHigherHealing1"/>
+        <WeaponArray Link="85mmCannon" Turret="MediumFastTurret"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus2222273" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich3,On" Row="1" Column="0"/>
+            <LayoutButtons>
+                <Face value="AutechBeidongSet27"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="StortModeRe2172"/>
+                <Row value="2"/>
+                <Column value="2"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="AutechBeidongSet28"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="StortModeRe217"/>
+                <Row value="2"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons Face="TossGrenadeTychus22222263" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich3,Off" Row="1" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus22222732" Type="AbilCmd" AbilCmd="RocketAngelSpell2,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+    </CUnit>
+    <CUnit id="AlliedGrizzlyBattleTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <Response value="AcquireNoFlee"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Speed value="3"/>
+        <TurningRate value="720"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="700"/>
+        <KillXP value="2"/>
+        <BehaviorArray Link="UpgradeLevel124"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="100mmCannon" Turret="SiegeTank"/>
+        <WeaponArray Link="100mmCannon2" Turret="SiegeTank"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+        </CardLayouts>
+        <InnerRadius value="0.3125"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <ScoreResult value=""/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedAntiAircraftTank" parent="AlliedGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <Response value="AcquireNoFlee"/>
+        <LifeStart value="1050"/>
+        <LifeMax value="1050"/>
+        <LifeArmor value="1"/>
+        <Speed value="2"/>
+        <TurningRate value="720"/>
+        <Sight value="6"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="800"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <WeaponArray Link="47mm" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <ScoreResult value=""/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:RA2"/>
+    </CUnit>
+    <CUnit id="AlliedRepairBee" parent="AlliedAir">
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="AISupport" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/ProtossPlating"/>
+        <EnergyStart value="10"/>
+        <EnergyMax value="10"/>
+        <EnergyRegenRate value="10"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ProtossPlasmaShields"/>
+        <Speed value="2.5"/>
+        <Acceleration value="2.125"/>
+        <AbilArray Link="Warpable"/>
+        <AbilArray Link="Repair3"/>
+        <BehaviorArray Link="AbilityTargetExclusionBehavior"/>
+        <BehaviorArray Link="SJFighterWander2"/>
+        <EffectArray index="Create" value="AurepairDroneHighstart"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="CarrierRepairDroneHeal" Type="AbilCmd" AbilCmd="Repair3,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0"/>
+        <SeparationRadius value="0"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="AlliedCenturyTransport" parent="AlliedAir">
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <LifeArmor value="1"/>
+        <Acceleration value="2.3125"/>
+        <StationaryTurningRate value="359.4726"/>
+        <TurningRate value="359.4726"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="41.6667"/>
+        <KillXP value="40"/>
+        <AbilArray Link="SpecOpsDropshipTransport"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="MedivacLoad" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="MedivacUnloadAll" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport,UnloadAt" Row="2" Column="1"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <ScoreMake value="300"/>
+        <ScoreKill value="600"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.75"/>
+        <LeaderAlias value=""/>
+    </CUnit>
+    <CUnit id="AlliedAruis" parent="AlliedAir">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="160"/>
+        <LifeMax value="160"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.5"/>
+        <SpeedMaximum value="10"/>
+        <Deceleration value="10"/>
+        <Sight value="12"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1600"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <BehaviorArray Link="Detector93"/>
+        <WeaponArray Link="RA100mmImpactCannon"/>
+        <WeaponArray Link="WraithG2422"/>
+        <EffectArray index="Create" value="AurepairDroneHighstart3"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Requirements="StortModeRe235" Row="1" Column="4"/>
+            <LayoutButtons Face="AutechBeidongSet21" Type="Passive" Requirements="StortModeRe228" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.3125"/>
+        <SeparationRadius value="0.3125"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="14"/>
+        <TacticalAI value="Carrier"/>
+        <GlossaryPriority value="160"/>
+    </CUnit>
+    <CUnit id="AlliedVindicator" parent="AlliedAir">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="105"/>
+        <LifeMax value="105"/>
+        <EnergyStart value="40"/>
+        <EnergyMax value="40"/>
+        <Speed value="4.5"/>
+        <Acceleration value="100"/>
+        <Deceleration value="10"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="10"/>
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="2"/>
+        <KillXP value="2"/>
+        <AbilArray index="0" Link="CNCAirplaneMove"/>
+        <AbilArray index="2" Link="attack2"/>
+        <AbilArray Link="CNCReturnToTheAirport"/>
+        <AbilArray Link="CNCAirportPlanetakingoff"/>
+        <AbilArray Link="CNCAirportPlaneLanding"/>
+        <BehaviorArray Link="ThePioneerarmedcombataircraftkeepscirclingwhenstopped"/>
+        <BehaviorArray Link="DisablestopautoandattackinVanguardmovementcommand"/>
+        <BehaviorArray Link="LackOfAmmo"/>
+        <BehaviorArray Link="StopautocirclingdisabledinPeacekeeperbomberattackcommand"/>
+        <BehaviorArray Link="Theaircraftiscirclingtheactor"/>
+        <BehaviorArray Link="Aircraftautomaticallyreplenishesammunitionpeacekeepingbomber"/>
+        <BehaviorArray Link="UpgradeLevel12242"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <BehaviorArray Link="Auweiheshanbi"/>
+        <WeaponArray Link="VXWeaponGround3"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="CNCAirportPlanetakingoff,255" Row="0" Column="4"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack2,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="CNCAirplaneMove,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="ReturnAirport3" Type="AbilCmd" AbilCmd="CNCReturnToTheAirport,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="AutechBeidongSet30" Type="Passive" Requirements="StortModeRe223" Row="1" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet29" Type="Passive" Requirements="StortModeRe2" Row="1" Column="4"/>
+        </CardLayouts>
+        <ScoreMake value="200"/>
+        <SubgroupPriority value="13"/>
+        <GlossaryPriority value="160"/>
+    </CUnit>
+    <CUnit id="AlliedCenturyBomber" parent="AlliedAir">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <LifeArmor value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <Mover value="Fly2"/>
+        <Speed value="2.6992"/>
+        <Acceleration value="100"/>
+        <Deceleration value="10"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="13"/>
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="2"/>
+        <KillXP value="10"/>
+        <AbilArray Link="attack2"/>
+        <AbilArray Link="CNCReturnToTheAirport"/>
+        <AbilArray Link="CNCAirportPlanetakingoff"/>
+        <AbilArray Link="CNCAirportPlaneLanding"/>
+        <AbilArray Link="CNCAirplaneMove"/>
+        <AbilArray Link="SpecOpsDropshipTransport2"/>
+        <AbilArray Link="SovietMotoModeSwhich53"/>
+        <BehaviorArray Link="ThePioneerarmedcombataircraftkeepscirclingwhenstopped"/>
+        <BehaviorArray Link="DisablestopautoandattackinVanguardmovementcommand"/>
+        <BehaviorArray Link="LackOfAmmo"/>
+        <BehaviorArray Link="StopautocirclingdisabledinPeacekeeperbomberattackcommand"/>
+        <BehaviorArray Link="Theaircraftiscirclingtheactor"/>
+        <BehaviorArray Link="Aircraftautomaticallyreplenishesammunitionpeacekeepingbomber"/>
+        <BehaviorArray Link="UpgradeLevel1224"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="StrategicBomb22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="CNCAirplaneMove,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="CNCAirportPlanetakingoff,255" Row="0" Column="4"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack2,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="ReturnAirport3" Type="AbilCmd" AbilCmd="CNCReturnToTheAirport,255" Row="1" Column="0"/>
+            <LayoutButtons Face="BiodomeLoad3" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport2,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="MedivacUnloadAll" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport2,UnloadAll" Row="2" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus22222754" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich53,On" Row="1" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus222222653" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich53,Off" Row="1" Column="2"/>
+            <LayoutButtons Face="AutechBeidongSet25" Type="Passive" Requirements="StortModeRe218" Row="1" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet26" Type="Passive" Requirements="StortModeRe219" Row="1" Column="4"/>
+        </CardLayouts>
+        <SubgroupPriority value="13"/>
+    </CUnit>
+    <CUnit id="AlliedFreezHeli" parent="AlliedAir">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="130"/>
+        <LifeMax value="130"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.3007"/>
+        <Acceleration value="15"/>
+        <Deceleration value="10"/>
+        <LateralAcceleration value="10"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1600"/>
+        <RepairTime value="2"/>
+        <KillXP value="4"/>
+        <AbilArray Link="AucryoShrinBeam"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="Detector10"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam2"/>
+        <EffectArray index="Create" value="AurepairDroneHighstart3"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus2222275323" Type="AbilCmd" AbilCmd="AucryoShrinBeam,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <ScoreMake value="200"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="0.375"/>
+        <GlossaryPriority value="160"/>
+        <GlossaryStrongArray value="SJViking"/>
+        <GlossaryWeakArray value="SJFighter1"/>
+    </CUnit>
+    <CUnit id="AlliedApollofighter" parent="AlliedAir">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Speed value="3.5"/>
+        <Deceleration value="10"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="20"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <WeaponArray Link="JetCannon"/>
+        <EffectArray index="Create" value="AurepairDroneHighstart3"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AutechBeidongSet3" Type="Passive" Requirements="StortModeRe231" Row="1" Column="3"/>
+            <LayoutButtons Face="AutechBeidongSet33" Type="Passive" Requirements="StortModeRe229" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.3125"/>
+        <SeparationRadius value="0.3125"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <GlossaryPriority value="160"/>
+    </CUnit>
+    <CUnit id="AlliedHarberGunship" parent="AlliedAir">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="1"/>
+        <Mover value="Fly2"/>
+        <Speed value="3"/>
+        <Acceleration value="3"/>
+        <Deceleration value="3"/>
+        <LateralAcceleration value="3"/>
+        <StationaryTurningRate value="119.8828"/>
+        <TurningRate value="119.8828"/>
+        <Sight value="17"/>
+        <Food value="-6"/>
+        <CostResource index="Minerals" value="4500"/>
+        <RepairTime value="2"/>
+        <KillXP value="25"/>
+        <AbilArray Link="attack2"/>
+        <AbilArray Link="CNCAirplaneMove"/>
+        <AbilArray Link="RAInvincible"/>
+        <AbilArray Link="VolatileBurstBuilding22"/>
+        <BehaviorArray Link="AutoHeal42"/>
+        <BehaviorArray Link="xfjytzzdpx22"/>
+        <BehaviorArray Link="T4unitveteranbehaviorVanguardarmedcombataircraft"/>
+        <BehaviorArray Link="DisablestopautoandattackinVanguardmovementcommand"/>
+        <BehaviorArray Link="ThePioneerarmedcombataircraftkeepscirclingwhenstopped"/>
+        <BehaviorArray Link="DisableStopAutoCirclingVanguardAttackCommand"/>
+        <WeaponArray Link="RA120mmImpactCannon" Turret="RAVanguardGunshipProtonCannon"/>
+        <WeaponArray Link="RA25mmAnnihilatorChainGun" Turret="RAVanguardGunshipMachineGun"/>
+        <EffectArray index="Create" value="AugunshipBirth"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="CNCAirplaneMove,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack2,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AutechBeidongSet32" Type="Passive" Requirements="StortModeRe233" Row="1" Column="4"/>
+            <LayoutButtons Face="TossGrenadeTychus222223" Type="AbilCmd" AbilCmd="VolatileBurstBuilding22,On" Row="1" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus2222222" Type="AbilCmd" AbilCmd="VolatileBurstBuilding22,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus2222232" Type="AbilCmd" AbilCmd="RAInvincible,Execute" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <ScoreMake value="2000"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Battlecruiser"/>
+        <TacticalAIThink value="AIThinkBattleCruiser"/>
+        <Mass value="0.6"/>
+        <TechAliasArray value="Alias_BattlecruiserClass"/>
+        <GlossaryPriority value="160"/>
+        <GlossaryStrongArray value="Thor"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="Carrier"/>
+        <GlossaryWeakArray value="Corruptor"/>
+        <GlossaryWeakArray value="VoidRay"/>
+        <GlossaryWeakArray value="VikingFighter"/>
+    </CUnit>
+    <!--Vest-->
+    <CUnit id="AlliedBarracksVest">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="500"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AlliedWarFactoryVest">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="2000"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AlliedWarFactoryVest2">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="2000"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="500"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit2">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="800"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AlliedPrismTowerVest">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="1500"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit3">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="1200"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit32">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="1000"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit322">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="2000"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AlliedCannonVest">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="2000"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="AlliedWeatherControllerVest">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="5000"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit322222">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="5000"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit3222222">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="3000"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+    </CUnit>
+    <CUnit id="AlliedChronoPortVest">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="3000"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit32223">
+        <Race value="Allied"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Speed value="30"/>
+        <CostResource index="Minerals" value="2000"/>
+        <EffectArray index="Birth" value="RATemporarilyCloseTheMagazineSkillSearchAreaWhenAlliesAreBuilding"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="AubuildDunmmyUnit323">
+        <Race value="Allied"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Mover value="Fly"/>
+        <SpeedMaximum value="0"/>
+        <AbilArray Link="AucryoShrinBeam222"/>
+        <AbilArray Link="AucryoShrinBeam2"/>
+        <AbilArray Link="AucryoShrinBeam2222"/>
+        <AbilArray Link="AucryoShrinBeam22"/>
+        <CardLayouts>
+            <LayoutButtons Face="BuildingRepair2" Type="AbilCmd" AbilCmd="AucryoShrinBeam222,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="SovietCampspellcastingunitrepairsbuildings">
+        <Race value="Soviet"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Mover value="Fly"/>
+        <SpeedMaximum value="0"/>
+        <AbilArray Link="AucryoShrinBeam222"/>
+        <AbilArray Link="AucryoShrinBeam2"/>
+        <AbilArray Link="AucryoShrinBeam2222"/>
+        <AbilArray Link="AucryoShrinBeam22"/>
+        <CardLayouts>
+            <LayoutButtons Face="BuildingRepair2" Type="AbilCmd" AbilCmd="AucryoShrinBeam22,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectFamily:CNC,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="EmpireImperialcampspellcastingunitrepairsbuildings">
+        <Race value="Empire"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Mover value="Fly"/>
+        <SpeedMaximum value="0"/>
+        <AbilArray Link="AucryoShrinBeam222"/>
+        <AbilArray Link="AucryoShrinBeam2"/>
+        <AbilArray Link="AucryoShrinBeam2222"/>
+        <AbilArray Link="AucryoShrinBeam22"/>
+        <CardLayouts>
+            <LayoutButtons Face="BuildingRepair2" Type="AbilCmd" AbilCmd="AucryoShrinBeam2,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectFamily:CNC,ObjectType:Other"/>
+    </CUnit>
+    <CUnit id="ChinaThespellcastingunitoftheShenzhoucamprepairsthebuilding">
+        <Race value="China"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Uncursorable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Mover value="Fly"/>
+        <SpeedMaximum value="0"/>
+        <AbilArray Link="AucryoShrinBeam222"/>
+        <AbilArray Link="AucryoShrinBeam2"/>
+        <AbilArray Link="AucryoShrinBeam2222"/>
+        <AbilArray Link="AucryoShrinBeam22"/>
+        <CardLayouts>
+            <LayoutButtons Face="BuildingRepair2" Type="AbilCmd" AbilCmd="AucryoShrinBeam2222,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectFamily:CNC,ObjectType:Other"/>
+    </CUnit>
+</Catalog>

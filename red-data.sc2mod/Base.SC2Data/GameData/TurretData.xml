@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTurret id="Cerberus">
+        <YawArc value="360"/>
+    </CTurret>
+    <CTurret id="Katyusha" parent="FreeRotate">
+        <Idle value="Reset"/>
+        <Fidget>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+        <YawRate value="59.9414"/>
+        <YawIdleRate value="59.9414"/>
+    </CTurret>
+    <CTurret id="ZOCOM460mmDevoidgun_Model">
+        <Idle value="Hold"/>
+        <Fidget TurnAngle="29.9926"/>
+    </CTurret>
+    <CTurret id="AlliedBankGun_Model">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="90"/>
+        <YawIdleRate value="29.8828"/>
+        <Fidget TurnAngle="29.9707">
+            <ChanceArray index="Anim" value="30"/>
+            <ChanceArray index="Idle" value="40"/>
+            <ChanceArray index="Turn" value="30"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="SovietBigGun_Model">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="39.9023"/>
+    </CTurret>
+    <CTurret id="AlliedGrandCannon_Model">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="720"/>
+    </CTurret>
+    <CTurret id="KorhalPalaceTurret">
+        <YawArc value="360"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="PlanetaryFortress"/>
+    <CTurret id="ReaperTurret2">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="180"/>
+    </CTurret>
+    <CTurret id="ShrikeTurret">
+        <Fidget TurnAngle="360"/>
+    </CTurret>
+    <CTurret id="SiegeTank">
+        <YawRate value="360"/>
+        <Fidget DelayMax="3600" DelayMin="3600">
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="HeavyTank" parent="FreeRotate">
+        <Idle value="ResetIfMoving"/>
+        <YawRate value="360"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="BunkerATTurret" parent="FreeRotate">
+        <Idle value="ResetIfMoving"/>
+        <YawRate value="90"/>
+    </CTurret>
+    <CTurret id="MediumFastTurret" parent="FreeRotate">
+        <Idle value="ResetIfMoving"/>
+        <YawRate value="180"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="SiegeTank2" parent="FreeRotate">
+        <Idle value="ResetIfMoving"/>
+        <YawRate value="360"/>
+        <Fidget DelayMax="3600" DelayMin="3600">
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="SiegeTank3">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="360"/>
+        <YawRate value="1440"/>
+        <Fidget DelayMax="3600" DelayMin="3600">
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAGhostKingWeapon2">
+        <YawArc value="360"/>
+        <YawRate value="239.9414"/>
+        <YawIdleRate value="239.9414"/>
+    </CTurret>
+    <CTurret id="YaoguangTurret">
+        <YawArc value="360"/>
+        <YawRate value="90"/>
+        <YawIdleRate value="90"/>
+        <Idle value="ResetIfMoving"/>
+    </CTurret>
+    <CTurret id="SiegeTankSieged">
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="SiegeTankSieged2" parent="FreeRotate">
+        <YawStart value="-180"/>
+        <YawRate value="360"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RANeutronDisturbanceCannon2">
+        <YawArc value="360"/>
+        <YawRate value="270"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAApocalypseMainCannon">
+        <YawArc value="360"/>
+        <YawRate value="199.8632"/>
+        <YawIdleRate value="119.8828"/>
+        <Idle value="ResetIfMoving"/>
+    </CTurret>
+    <CTurret id="RAMammothTankMachineGun">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RAVanguardGunshipProtonCannon">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RASuperFortressParticleCannon12">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RASuperFortressParticleCannon22">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RASuperFortressParticleCannon32">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RASuperFortressParticleCannon42">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RAVanguardGunshipBodyTurret">
+        <Idle value="Spin"/>
+        <YawArc value="360"/>
+        <YawRate value="45"/>
+        <YawIdleRate value="45"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RAVanguardGunshipMachineGun">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="ReaperTurret">
+        <YawArc value="360"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="180"/>
+    </CTurret>
+    <CTurret id="GDIMammothMechMissileTurret1">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="RAPacifierTurret2">
+        <YawArc value="360"/>
+        <YawRate value="199.8632"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+        <Idle value="ResetIfMoving"/>
+    </CTurret>
+    <CTurret id="RABeamTankTurret2">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="360"/>
+        <YawRate value="1440"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAShenzhouTankTurret2">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="360"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RASickleMechTurret1">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="119.9926"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RASickleMechaTurret2">
+        <Idle value="ResetIfMoving"/>
+        <YawStart value="-119.9926"/>
+        <YawArc value="360"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RASickleMechTurret32">
+        <Idle value="ResetIfMoving"/>
+        <YawStart value="119.9926"/>
+        <YawArc value="360"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAHarvesterTurret1">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="119.9926"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAHarvesterTurret2">
+        <Idle value="ResetIfMoving"/>
+        <YawStart value="90"/>
+        <YawArc value="119.9926"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAHarvesterTurret3">
+        <Idle value="ResetIfMoving"/>
+        <YawStart value="-90"/>
+        <YawArc value="119.9926"/>
+        <YawRate value="360"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAProtonColliderMainCannon">
+        <YawArc value="360"/>
+        <YawRate value="199.8632"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="RAOtherHeavyTankMainGuns2">
+        <YawArc value="360"/>
+        <YawRate value="239.9414"/>
+        <YawIdleRate value="180"/>
+    </CTurret>
+    <CTurret id="GDIMammothMechMissileTurret2">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="149.9414"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+</Catalog>

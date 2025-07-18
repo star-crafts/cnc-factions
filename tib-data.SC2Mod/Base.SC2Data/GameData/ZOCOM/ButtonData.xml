@@ -1,0 +1,40 @@
+<Catalog>
+    <CButton default="1" id="ZOCOM">
+        <?token id="icon" value="##id##"?>
+        <EditorCategories value="Race:ZOCOM"/>
+        <Icon value="Assets\icons\ZOCOM\##icon##.dds"/>
+    </CButton>
+    <CButton id="ZOCOMZoneDefender" parent="ZOCOM"/>
+    <CButton id="ZOCOMEngineer" parent="ZOCOM"/>
+    <CButton id="ZOCOMZoneTrooper" parent="ZOCOM"/>
+    <CButton id="ZOCOMZoneEnforcer" parent="ZOCOM"/>
+    <CButton id="ZOCOMZoneRaider" parent="ZOCOM"/>
+    <CButton id="ZOCOMZoneCommando" parent="ZOCOM"/>
+    <CButton id="ZOCOMMammoth" parent="ZOCOM"/>
+    <CButton id="ZOCOMStriker" parent="ZOCOM"/>
+    <CButton id="ZOCOMTitan" parent="ZOCOM"/>
+    <CButton id="ZOCOMMastodon" parent="ZOCOM"/>
+    <CButton id="ZOCOMJuggernaut" parent="ZOCOM"/>
+    <CButton id="ZOCOMSpartan" parent="ZOCOM"/>
+    <CButton id="ZOCOMRefractor" parent="ZOCOM"/>
+    <CButton id="ZOCOMHammerHead" parent="ZOCOM"/>
+    <CButton id="ZOCOMArgus" parent="ZOCOM"/>
+    <CButton id="ZOCOMDozer" parent="ZOCOM"/>
+    <CButton id="ZOCOMShepherd" parent="ZOCOM"/>
+
+    <CButton id="GDIHeal" parent="ZOCOM"/>
+    <CButton id="GDIPulseGrenades" parent="ZOCOM">
+        <Icon value="Assets\Textures\btn-upgrade-nova-btn-upgrade-nova-pulsegrenade.dds"/>
+    </CButton>
+    <CButton id="ZOCOMGuardianCannon" parent="ZOCOM"/>
+    <CButton id="ZOCOMFocusBeam" parent="ZOCOM"/>
+    <CButton id="ZOCOMBunker" parent="ZOCOM"/>
+    <CButton id="GDIJetPack" parent="ZOCOM" icon="ZOCOMUpgradeAssaultJetpacks"/>
+    <CButton id="ZOCOMAramUpgrade" parent="ZOCOM" icon="ZOCOMUpgradeBattleHardening">
+        <HotkeyAlias value="NodAramUpgrade"/>
+    </CButton>
+    <CButton id="JumpPack" parent="ZOCOM" icon="ZOCOMUpgradeAssaultJetpacks">
+        <Hotkey value="Button/Hotkey/MindBolt"/>
+    </CButton>
+
+</Catalog>

@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+
+    <CUnit default="1" id="ScrinGround" parent="CNCGround">
+        <Race value="Scrin"/>
+        <GlossaryCategory value="Unit/Category/ScrinUnits"/>
+        <HotkeyCategory value="Unit/Category/ScrinUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ScrinInfantry" parent="ScrinGround">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Sight value="8"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <RepairTime value="20"/>
+        <Speed value="2.3476"/>
+        <LifeArmorName value="Unit/LifeArmorName/ScrinInfantryArmor"/>
+    </CUnit>
+    <CUnit default="1" id="ScrinVehicle" parent="ScrinGround">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <RepairTime value="8"/>
+        <LifeArmorName value="Unit/LifeArmorName/ScrinVehiclesArmor"/>
+        <AbilArray Link="ScrinUncombineWithBuzzers"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinUncombineWithBuzzers" Type="AbilCmd" AbilCmd="ScrinUncombineWithBuzzers,Exexute" Row="2" Column="3"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit default="1" id="ScrinAir" parent="CNCAir">
+        <Race value="Scrin"/>
+        <LifeArmorName value="Unit/LifeArmorName/ScrinVehiclesArmor"/>
+        <GlossaryCategory value="Unit/Category/ScrinUnits"/>
+        <HotkeyCategory value="Unit/Category/ScrinUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ScrinAirPlane" parent="CNCAirPlane">
+        <Race value="Scrin"/>
+        <LifeArmorName value="Unit/LifeArmorName/ScrinVehiclesArmor"/>
+    </CUnit>
+    <CUnit default="1" id="ScrinStructure" parent="CNCStructure">
+        <Race value="Scrin"/>
+        <GlossaryCategory value="Unit/Category/ScrinUnits"/>
+        <HotkeyCategory value="Unit/Category/ScrinUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ScrinMissile" parent="CNCMissile">
+        <Race value="Scrin"/>
+    </CUnit>
+
+    <CUnit parent="ScrinStructure" id="ScrinDronePlatform">
+        <SubgroupPriority value="3"/>
+        <AbilArray Link="ScrinBuild"/>
+        <AbilArray Link="ScrinDefenseBuild"/>
+        <AbilArray Link="ScrinBuildAdvanced"/>
+        <AbilArray Link="ScrinDefenseBuildAdvanced"/>
+        <AbilArray Link="ScrinDronePlatformPack"/>
+        <AbilArray Link="ScrinDronePlatformTrain"/>
+        <AbilArray Link="Rally"/>
+        <BehaviorArray Link="CNCTabConstruction"/>
+        <BehaviorArray Link="CNCConstructionRadius"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinExplorer" Type="AbilCmd" AbilCmd="ScrinDronePlatformTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="ProtossBuild" Type="Submenu" SubmenuCardId="BLD" Row="2" Column="0"/>
+            <LayoutButtons Face="ProtossBuildAdvanced" Type="Submenu" SubmenuCardId="DEF" Row="2" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5PassiveCancelToSelection,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="ScrinDronePlatformPack" Type="AbilCmd" AbilCmd="ScrinDronePlatformPack,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <CardLayouts CardId="BLD">
+            <LayoutButtons Face="ScrinExtractor" Type="AbilCmd" AbilCmd="ScrinBuild,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="ScrinReactor" Type="AbilCmd" AbilCmd="ScrinBuild,Build2" Row="0" Column="1"/>
+            <LayoutButtons Face="ScrinCrane" Type="AbilCmd" AbilCmd="ScrinBuild,Build11" Row="0" Column="2"/>
+            <LayoutButtons Face="ScrinPortal" Type="AbilCmd" AbilCmd="ScrinBuild,Build4" Row="1" Column="0"/>
+            <LayoutButtons Face="ScrinWarpSphere" Type="AbilCmd" AbilCmd="ScrinBuild,Build5" Row="1" Column="1"/>
+            <LayoutButtons Face="ScrinGravityStabilizer" Type="AbilCmd" AbilCmd="ScrinBuild,Build7" Row="1" Column="2"/>
+            <LayoutButtons Face="ScrinWarpChasm" Type="AbilCmd" AbilCmd="ScrinBuildAdvanced,Build14" Row="1" Column="3"/>
+            <LayoutButtons Face="ScrinNerveCenter" Type="AbilCmd" AbilCmd="ScrinBuild,Build6" Row="2" Column="0"/>
+            <LayoutButtons Face="ScrinStasisChamber" Type="AbilCmd" AbilCmd="ScrinBuild,Build8" Row="2" Column="1"/>
+            <LayoutButtons Face="ScrinTechnologyAssembler" Type="AbilCmd" AbilCmd="ScrinBuild,Build9" Row="2" Column="2"/>
+            <LayoutButtons Face="ScrinFoundry" Type="AbilCmd" AbilCmd="ScrinBuild,Build10" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="DEF">
+            <LayoutButtons Face="ScrinGrowthStimulator" Type="AbilCmd" AbilCmd="ScrinDefenseBuild,Build7" Row="0" Column="0"/>
+            <LayoutButtons Face="ScrinBuzzerHive" Type="AbilCmd" AbilCmd="ScrinDefenseBuildAdvanced,Build1" Row="1" Column="0"/>
+            <LayoutButtons Face="ScrinPlasmaMissileBattery" Type="AbilCmd" AbilCmd="ScrinDefenseBuildAdvanced,Build3" Row="1" Column="1"/>
+            <LayoutButtons Face="ScrinPhotonCannon" Type="AbilCmd" AbilCmd="ScrinDefenseBuildAdvanced,Build2" Row="1" Column="2"/>
+            <LayoutButtons Face="ScrinStormColumn" Type="AbilCmd" AbilCmd="ScrinDefenseBuildAdvanced,Build4" Row="1" Column="3"/>
+            <LayoutButtons Face="ScrinRiftGenerator" Type="AbilCmd" AbilCmd="ScrinDefenseBuildAdvanced,Build5" Row="2" Column="0"/>
+            <LayoutButtons Face="CancelBuilding" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="400"/>
+        <AttackTargetPriority value="20"/>
+        <ScoreMake value="700"/>
+        <ScoreKill value="700"/>
+        <RepairTime value="150"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="3"/>
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <Sight value="11"/>
+        <Radius value="3"/>
+        <SeparationRadius value="2.5"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <MinimapRadius value="2.5"/>
+        <TacticalAIThink value="AIThinkCommandCenter"/>
+        <AIEvalFactor value="0.7"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinFoundry">
+        <SubgroupPriority value="3"/>
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="CNCTabConstruction"/>
+        <BehaviorArray Link="CNCConstructionRadiusMedium"/>
+        <AbilArray Link="ScrinBuild"/>
+        <AbilArray Link="ScrinDefenseBuild"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ProtossBuild" Type="Submenu" SubmenuCardId="BLD" Row="2" Column="0"/>
+            <LayoutButtons Face="ProtossBuildAdvanced" Type="Submenu" SubmenuCardId="DEF" Row="2" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5PassiveCancelToSelection,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="BLD">
+            <LayoutButtons Face="ScrinExtractor" Type="AbilCmd" AbilCmd="ScrinBuild,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="ScrinReactor" Type="AbilCmd" AbilCmd="ScrinBuild,Build2" Row="0" Column="1"/>
+            <LayoutButtons Face="ScrinCrane" Type="AbilCmd" AbilCmd="ScrinBuild,Build11" Row="0" Column="2"/>
+            <LayoutButtons Face="ScrinPortal" Type="AbilCmd" AbilCmd="ScrinBuild,Build4" Row="1" Column="0"/>
+            <LayoutButtons Face="ScrinWarpSphere" Type="AbilCmd" AbilCmd="ScrinBuild,Build5" Row="1" Column="1"/>
+            <LayoutButtons Face="ScrinGravityStabilizer" Type="AbilCmd" AbilCmd="ScrinBuild,Build7" Row="1" Column="2"/>
+            <LayoutButtons Face="ScrinNerveCenter" Type="AbilCmd" AbilCmd="ScrinBuild,Build6" Row="2" Column="0"/>
+            <LayoutButtons Face="ScrinStasisChamber" Type="AbilCmd" AbilCmd="ScrinBuild,Build8" Row="2" Column="1"/>
+            <LayoutButtons Face="ScrinTechnologyAssembler" Type="AbilCmd" AbilCmd="ScrinBuild,Build9" Row="2" Column="2"/>
+            <LayoutButtons Face="ScrinFoundry" Type="AbilCmd" AbilCmd="ScrinBuild,Build10" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="DEF">
+            <LayoutButtons Face="ScrinGrowthStimulator" Type="AbilCmd" AbilCmd="ScrinDefenseBuild,Build7" Row="0" Column="0"/>
+            <LayoutButtons Face="CancelBuilding" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <RepairTime value="65"/>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <MinimapRadius value="1.75"/>
+        <GlossaryPriority value="252"/>
+        <SubgroupAlias value="NodConstructionYard"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinGrowthStimulator">
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="HarvestableVespeneGeyserGas"/>
+        <BehaviorArray Link="RefineryMorph"/>
+        <Facing value="315"/>
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Vespene"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="75"/>
+        <RepairTime value="14"/>
+        <EffectArray index="Create" value="RefineryRichSearch"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <BuiltOn value="VespeneGeyser"/>
+        <BuiltOn value="SpacePlatformGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <BuiltOn value="ProtossVespeneGeyser"/>
+        <BuiltOn value="PurifierVespeneGeyser"/>
+        <BuiltOn value="ShakurasVespeneGeyser"/>
+        <BuildOnAs value="ScrinGrowthStimulatorRich"/>
+        <ScoreMake value="75"/>
+        <ScoreKill value="75"/>
+        <SubgroupPriority value="1"/>
+        <GlossaryPriority value="244"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinGrowthStimulatorRich">
+        <Facing value="315"/>
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Vespene"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="75"/>
+        <RepairTime value="14"/>
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="HarvestableRichVespeneGeyserGas"/>
+        <EffectArray index="Create" value="RefineryRichSearch"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <ScoreMake value="75"/>
+        <ScoreKill value="75"/>
+        <SubgroupPriority value="1"/>
+        <GlossaryPriority value="244"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinReactor">
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="UnderConstruction"/>
+        <BehaviorArray Link="GenetronEnergyStateNotFull"/>
+        <BehaviorArray Link="GenetronPowerSupplyTracker"/>
+        <BehaviorArray Link="TrackAndMirrorGenetronPowerSupply"/>
+        <BehaviorArray Link="NPP_Power"/>
+        <Facing value="225"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <CostResource index="Minerals" value="150"/>
+        <RepairTime value="30"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Food value="12"/>
+        <CostCategory value="Economy"/>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.25"/>
+        <GlossaryPriority value="248"/>
+        <AbilArray Link="ScrinReactorFusionCore"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinReactorFusionCore" Type="AbilCmd" AbilCmd="ScrinReactorFusionCore,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinExtractor">
+        <BehaviorArray Link="CNCTabEconomy"/>
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="NodSpawnTibSmallOnDeath"/>
+        <BehaviorArray Link="CNCConstructionRadiusRefinery"/>
+        <BehaviorArray Link="CNCConstructionRadiusRefinery"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="11"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="400"/>
+        <RepairTime value="34"/>
+        <AbilArray Link="NodRefineryTrain"/>
+        <AbilArray Link="RallyCommand"/>
+        <EffectArray index="Create" value="CCCreateSet"/>
+        <EffectArray index="Birth" value="NodRefineryBirthSet"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinHarvester" Type="AbilCmd" AbilCmd="NodRefineryTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="2.5"/>
+        <SeparationRadius value="2.5"/>
+        <Footprint value="Footprint5x5Contour"/>
+        <PlacementFootprint value="Footprint5x5DropOff"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="2.5"/>
+        <TacticalAI value="CommandCenter"/>
+        <TacticalAIThink value="AIThinkCommandCenter"/>
+        <GlossaryPriority value="30"/>
+        <TechTreeProducedUnitArray value="ScrinHarvester"/>
+        <InnerRadius value="2.5"/>
+        <Food value="14"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinPortal">
+        <BehaviorArray Link="CNCTabInfantry"/>
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="CNCEnergyDrain5"/>
+        <LifeStart value="900"/>
+        <LifeMax value="900"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <RepairTime value="65"/>
+        <AbilArray Link="ScrinPortalTrain"/>
+        <AbilArray Link="Rally"/>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+        <TacticalAI value="Barracks"/>
+        <GlossaryPriority value="252"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPortalTrain,Train1" Row="0" Column="0" Face="ScrinBuzzers" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPortalTrain,Train2" Row="0" Column="1" Face="ScrinDisintegrator" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPortalTrain,Train3" Row="0" Column="2" Face="ScrinShockTrooper" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPortalTrain,Train4" Row="0" Column="3" Face="ScrinRavager" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPortalTrain,Train6" Row="1" Column="0" Face="ScrinAssimilator" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPortalTrain,Train5" Row="1" Column="1" Face="ScrinCultist" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPortalTrain,Train7" Row="1" Column="2" Face="ScrinMastermind" />
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+        </CardLayouts>
+        <TechTreeProducedUnitArray value="ScrinBuzzers"/>
+        <TechTreeProducedUnitArray value="ScrinDisintegrator"/>
+        <TechTreeProducedUnitArray value="ScrinShockTrooper"/>
+        <TechTreeProducedUnitArray value="ScrinRavager"/>
+        <TechTreeProducedUnitArray value="ScrinCultist"/>
+        <TechTreeProducedUnitArray value="ScrinAssimilator"/>
+        <TechTreeProducedUnitArray value="ScrinMastermind"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinWarpSphere">
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="FastBuild"/>
+        <BehaviorArray Link="MCVRepairZoneFactory"/>
+        <BehaviorArray Link="CNCTabVehicles"/>
+        <BehaviorArray Link="CNCEnergyDrain5"/>
+        <Facing value="315"/>
+        <LifeStart value="1100"/>
+        <LifeMax value="1100"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="32"/>
+        <AbilArray Link="NodWarFactoryTrain"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="CarrierRepairDroneHanger2"/>
+        <AbilArray Link="ScrinReconstructionDrones"/>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <ScoreMake value="250"/>
+        <ScoreKill value="250"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.625"/>
+        <TacticalAI value="Factory"/>
+        <GlossaryPriority value="322"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train1" Row="0" Column="0"  Face="ScrinGunWalker"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train2" Row="0" Column="1"  Face="ScrinSeeker"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train3" Row="0" Column="2"  Face="ScrinDevourer"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train4" Row="0" Column="3"  Face="ScrinCorrupter"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train5" Row="1" Column="0"  Face="ScrinMechapede"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train6" Row="1" Column="1"  Face="ScrinAnnihilator"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="CarrierRepairDroneHanger2,Ammo2" Row="0" Column="4"  Face="RepairDrones2"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinReconstructionDrones,Execute" Row="2" Column="0"  Face="RepairDrones2"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"  Face="Rally"/>
+        </CardLayouts>
+        <TechTreeProducedUnitArray value="ScrinGunWalker"/>
+        <TechTreeProducedUnitArray value="ScrinSeeker"/>
+        <TechTreeProducedUnitArray value="ScrinDevourer"/>
+        <TechTreeProducedUnitArray value="ScrinCorrupter"/>
+        <TechTreeProducedUnitArray value="ScrinMechapede"/>
+        <TechTreeProducedUnitArray value="ScrinAnnihilator"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinWarpChasm">
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="FastBuild"/>
+        <BehaviorArray Link="MCVRepairZoneFactory"/>
+        <BehaviorArray Link="CNCTabVehicles"/>
+        <BehaviorArray Link="CNCEnergyDrain5"/>
+        <Facing value="315"/>
+        <LifeStart value="1100"/>
+        <LifeMax value="1100"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="32"/>
+        <AbilArray Link="NodWarFactoryTrain"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="CarrierRepairDroneHanger2"/>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <ScoreMake value="250"/>
+        <ScoreKill value="250"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.625"/>
+        <TacticalAI value="Factory"/>
+        <GlossaryPriority value="322"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train1" Row="0" Column="0"  Face="ScrinGunWalker"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train2" Row="0" Column="1"  Face="ScrinSeeker"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train3" Row="0" Column="2"  Face="ScrinDevourer"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train4" Row="0" Column="3"  Face="ScrinCorrupter"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train5" Row="1" Column="0"  Face="ScrinMechapede"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train6" Row="1" Column="1"  Face="ScrinAnnihilator"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="NodWarFactoryTrain,Train7" Row="2" Column="0"  Face="ScrinEradicator"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="CarrierRepairDroneHanger2,Ammo2" Row="0" Column="4"  Face="RepairDrones2"/>
+            <LayoutButtons Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"  Face="Rally"/>
+        </CardLayouts>
+        <TechTreeProducedUnitArray value="ScrinGunWalker"/>
+        <TechTreeProducedUnitArray value="ScrinSeeker"/>
+        <TechTreeProducedUnitArray value="ScrinDevourer"/>
+        <TechTreeProducedUnitArray value="ScrinCorrupter"/>
+        <TechTreeProducedUnitArray value="ScrinMechapede"/>
+        <TechTreeProducedUnitArray value="ScrinAnnihilator"/>
+        <TechTreeProducedUnitArray value="ScrinEradicator"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinGravityStabilizer">
+        <BehaviorArray Link="CNCEnergyDrain5"/>
+        <BehaviorArray Link="CNCTabAirforce"/>
+        <BehaviorArray Link="AirSupport"/>
+        <BehaviorArray Link="Deployable"/>
+        <Facing value="315"/>
+        <Footprint value="Footprint4x4AirTowerContour"/>
+        <PlacementFootprint value="Footprint4x4NodAirTower"/>
+        <LifeStart value="1300"/>
+        <LifeMax value="1300"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="34"/>
+        <AbilArray Link="ScrinGravityStabilizerTrain"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="CarrierRepairDroneHanger2"/>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <ScoreMake value="250"/>
+        <ScoreKill value="250"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.625"/>
+        <TacticalAI value="Starport"/>
+        <GlossaryPriority value="329"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinGravityStabilizerTrain,Train1" Row="0" Column="0" Face="ScrinStormrider" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinGravityStabilizerTrain,Train2" Row="0" Column="1" Face="ScrinDevastator" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinGravityStabilizerTrain,Train3" Row="0" Column="2" Face="ScrinCarrier" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinGravityStabilizerTrain,Train4" Row="1" Column="0" Face="ScrinDroneShip" />
+            <LayoutButtons Face="RepairDrones2" Type="AbilCmd" AbilCmd="CarrierRepairDroneHanger2,Ammo2" Row="0" Column="3"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+        </CardLayouts>
+        <TechTreeProducedUnitArray value="ScrinStormrider"/>
+        <TechTreeProducedUnitArray value="ScrinDevastator"/>
+        <TechTreeProducedUnitArray value="ScrinCarrier"/>
+        <TechTreeProducedUnitArray value="ScrinDroneShip"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinNerveCenter">
+        <BehaviorArray Link="CNCConstructionRadiusSmall"/>
+        <BehaviorArray Link="CNCEnergyDrain10"/>
+        <BehaviorArray Link="Deployable"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="29"/>
+        <AbilArray Link="ScrinNerveCenterResearch"/>
+        <AbilArray Link="ScrinArmyResearch"/>
+        <AbilArray Link="ScrinTiberiumVibrationScan"/>
+        <AbilArray Link="ScrinInfestation"/>
+        <AbilArray Link="ScrinIchorSeed"/>
+        <AbilArray Link="ScrinSwarm"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinTiberiumVibrationScan,Execute" Row="2" Column="0" Face="ScrinTiberiumVibrationScan" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinInfestation,Execute" Row="2" Column="1" Face="ScrinInfestation" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinIchorSeed,Execute" Row="2" Column="2" Face="ScrinIchorSeed" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinSwarm,Execute" Row="2" Column="3" Face="ScrinSwarm" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinLightningSpike,Build1" Row="1" Column="0" Face="ScrinLightningSpike" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research1"  Row="0" Column="0" Face="ScrinGroundWeaponsLevel1" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research2"  Row="0" Column="0" Face="ScrinGroundWeaponsLevel2" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research3"  Row="0" Column="0" Face="ScrinGroundWeaponsLevel3" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research7"  Row="0" Column="1" Face="ScrinGroundArmorsLevel1" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research8"  Row="0" Column="1" Face="ScrinGroundArmorsLevel2" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research9"  Row="0" Column="1" Face="ScrinGroundArmorsLevel3" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research13"  Row="0" Column="2" Face="ScrinShieldsLevel1" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research14"  Row="0" Column="2" Face="ScrinShieldsLevel2" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinArmyResearch,Research15"  Row="0" Column="2" Face="ScrinShieldsLevel3" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinNerveCenterResearch,Research1" Row="0" Column="3" Face="ScrinAttenuatedForcefields" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinNerveCenterResearch,Research2" Row="0" Column="4" Face="ScrinForcefieldGenerators" />
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="3"/>
+        <GlossaryPriority value="318"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinStasisChamber">
+        <BehaviorArray Link="CNCConstructionRadiusSmall"/>
+        <BehaviorArray Link="CNCEnergyDrain10"/>
+        <BehaviorArray Link="Deployable"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="29"/>
+        <AbilArray Link="ScrinUpgradesCache"/>
+        <AbilArray Link="ScrinArmyResearch"/>
+        <AbilArray Link="ScrinStasisShield"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinStasisShield,Execute" Row="2" Column="0" Face="ScrinStasisShield" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinStasisChamberResearch,Research1" Row="1" Column="0" Face="ScrinBlinkPacks" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinStasisChamberResearch,Research2" Row="1" Column="1" Face="ScrinPlasmaDiscLaunchers" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinStasisChamberResearch,Research3" Row="1" Column="2" Face="ScrinAdvancedArticulators" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinStasisChamberResearch,Research4" Row="1" Column="2" Face="ScrinProdigy" />
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="3"/>
+        <GlossaryPriority value="318"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinTechnologyAssembler">
+        <BehaviorArray Link="CNCConstructionRadiusSmall"/>
+        <BehaviorArray Link="CNCEnergyDrain10"/>
+        <BehaviorArray Link="Deployable"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="29"/>
+        <AbilArray Link="ScrinTechnologyAssemblerResearch"/>
+        <AbilArray Link="ScrinPhaseField"/>
+        <AbilArray Link="ScrinTemporalWormhole"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinPhaseField,Execute" Row="2" Column="0" Face="ScrinPhaseField" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinTemporalWormhole,Execute" Row="2" Column="1" Face="ScrinTemporalWormhole" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinTechnologyAssemblerResearch,Research1" Row="1" Column="0" Face="ScrinShardLaunchers" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinTechnologyAssemblerResearch,Research2" Row="1" Column="1" Face="ScrinTravelerEngines" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinTechnologyAssemblerResearch,Research3" Row="1" Column="2" Face="ScrinBlueShards" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinTechnologyAssemblerResearch,Research4" Row="1" Column="3" Face="ScrinConversionReserves" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinTechnologyAssemblerResearch,Research5" Row="1" Column="4" Face="ScrinReaper" />
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="3"/>
+        <GlossaryPriority value="318"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinSignalTransmitter">
+        <BehaviorArray Link="CNCConstructionRadiusSmall"/>
+        <BehaviorArray Link="CNCEnergyDrain10"/>
+        <BehaviorArray Link="Deployable"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="29"/>
+        <CardLayouts index="0">
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="3"/>
+        <GlossaryPriority value="318"/>
+        <AbilArray Link="ScrinGravityStabilizerTrain"/>
+        <AbilArray Link="ScrinOverlordWrath"/>
+        <AbilArray Link="ScrinWormhole"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinOverlordWrath,Execute" Row="2" Column="0" Face="ScrinOverlordWrath" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinWormhole,Execute" Row="2" Column="1" Face="ScrinWormhole" />
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinGravityStabilizerTrain,Train1" Row="0" Column="0" Face="ScrinMothership" />
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinRiftGenerator">
+        <BehaviorArray Link="CNCConstructionRadiusSmall"/>
+        <BehaviorArray Link="CNCEnergyDrain10"/>
+        <BehaviorArray Link="Deployable"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="29"/>
+        <CardLayouts index="0">
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="3"/>
+        <GlossaryPriority value="318"/>
+        <AbilArray Link="ScrinRift"/>
+        <CardLayouts index="0">
+            <LayoutButtons Type="AbilCmd" AbilCmd="ScrinRift,Execute" Row="2" Column="0" Face="ScrinRift" />
+        </CardLayouts>
+    </CUnit>
+
+    <CUnit parent="ScrinStructure" id="ScrinBuzzerHive"/>
+    <CUnit parent="ScrinStructure" id="ScrinPhotonCannon">
+        <BehaviorArray Link="CNCEnergyDrain5"/>
+        <BehaviorArray Link="Deployable"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="150"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="19"/>
+        <WeaponArray Link="ScrinPhotonCannonWeapon"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryPriority value="310"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinPlasmaMissileBattery">
+        <BehaviorArray Link="CNCEnergyDrain5"/>
+        <BehaviorArray Link="Deployable"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="150"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="19"/>
+        <WeaponArray Link="ScrinPlasmaMissileBatteryWeapon"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryPriority value="310"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinStormColumn"/>
+    <CUnit parent="ScrinStructure" id="ScrinLightningSpike">
+        <BehaviorArray Link="CNCEnergyDrain5"/>
+        <BehaviorArray Link="Deployable"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="150"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="19"/>
+        <WeaponArray Link="ScrinLightningSpikeWeapon"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryPriority value="310"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinTiberiumHive"/>
+    <CUnit parent="ScrinStructure" id="ScrinOutpost">
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="30"/>
+        <BehaviorArray Link="CNCConstructionRadiusMedium"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.25"/>
+        <GlossaryPriority value="248"/>
+    </CUnit>
+
+    <CUnit parent="ScrinGround" id="ScrinBuzzers">
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
+        <Food value="1"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinBuzzersWeapon"/>
+        <GlossaryPriority value="35"/>
+        <AbilArray Link="ScrinBuzzersCombineWithVehicle"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinBuzzersCombineWithVehicle" Type="AbilCmd" AbilCmd="ScrinBuzzersCombineWithVehicle,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinDisintegrator">
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
+        <Food value="1"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinDisintegratorWeapon"/>
+        <GlossaryPriority value="35"/>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinAssimilator">
+        <SubgroupPriority value="45"/>
+        <LifeStart value="25"/>
+        <LifeMax value="25"/>
+        <Speed value="1.65"/>
+        <Food value="1"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="75"/>
+        <GlossaryPriority value="75"/>
+        <AbilArray Link="NodSabotage"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="NodSabotage" Type="AbilCmd" AbilCmd="NodSabotage,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="NodSabotage,Cancel" Row="2" Column="4"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinShockTrooper">
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
+        <Food value="1"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinShockTrooperWeapon"/>
+        <WeaponArray Link="ScrinShockTrooperWeaponU"/>
+        <GlossaryPriority value="35"/>
+        <AbilArray Link="ScrinShockTrooperBlink"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinShockTrooperBlink" Type="AbilCmd" AbilCmd="ScrinShockTrooperBlink,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinRavager">
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
+        <Food value="1"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinRavagerShards"/>
+        <WeaponArray Link="ScrinRavagerShardsU"/>
+        <GlossaryPriority value="35"/>
+        <AbilArray Link="ScrinRavagerTiberiumAgitation"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinRavagerTiberiumAgitation" Type="AbilCmd" AbilCmd="ScrinRavagerTiberiumAgitation,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinCultist">
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
+        <Food value="1"/>
+        <CostResource index="Minerals" value="50"/>
+        <GlossaryPriority value="35"/>
+        <AbilArray Link="ScrinCultistMindControl"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinCultistMindControl" Type="AbilCmd" AbilCmd="ScrinCultistMindControl,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinMastermind">
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
+        <Food value="1"/>
+        <CostResource index="Minerals" value="50"/>
+        <GlossaryPriority value="35"/>
+        <AbilArray Link="ScrinCultistMindControl"/>
+        <AbilArray Link="ScrinProdigyAreaMindControl"/>
+        <AbilArray Link="ScrinProdigyTeleportUnits"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinProdigyMindControl" Type="AbilCmd" AbilCmd="ScrinProdigyMindControl,Exexute" Row="2" Column="0"/>
+            <LayoutButtons Face="ScrinProdigyAreaMindControl" Type="AbilCmd" AbilCmd="ScrinProdigyAreaMindControl,Exexute" Row="2" Column="1"/>
+            <LayoutButtons Face="ScrinProdigyTeleportUnits" Type="AbilCmd" AbilCmd="ScrinProdigyTeleportUnits,Exexute" Row="2" Column="2"/>
+        </CardLayouts>
+    </CUnit>
+
+    <CUnit parent="ScrinGround" id="ScrinHarvester">
+        <SubgroupPriority value="6"/>
+        <Speed value="2.1484"/>
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="ArmySelect" value="0"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <RepairTime value="8"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Flee"/>
+        <Attributes index="Armored" value="1"/>
+        <LifeStart value="140"/>
+        <LifeMax value="140"/>
+        <LifeArmor value="1"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="8"/>
+        <Food value="-2"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="100"/>
+        <AIOverideTargetPriority value="10"/>
+        <KillXP value="10"/>
+        <AbilArray Link="ScrinHarvest"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="GatherProt" Type="AbilCmd" AbilCmd="ScrinHarvest,Gather" Row="1" Column="0"/>
+            <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="ScrinHarvest,Return" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="50"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAIThink value="AIThinkSCV"/>
+        <GlossaryPriority value="10"/>
+        <Acceleration value="2.5"/>
+        <LateralAcceleration value="46"/>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinGunWalker">
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Food value="3"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinGunWalkerShards"/>
+        <WeaponArray Link="ScrinGunWalkerShardsU"/>
+        <GlossaryPriority value="35"/>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinSeeker">
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Food value="3"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinSeekerWeapon"/>
+        <WeaponArray Link="ScrinSeekerShards"/>
+        <GlossaryPriority value="35"/>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinDevourer">
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Food value="3"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinDevourerWeapon"/>
+        <WeaponArray Link="ScrinDevourerWeaponCharged"/>
+        <GlossaryPriority value="35"/>
+        <AbilArray Link="ScrinDevourerConversionBeam"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinDevourerConversionBeam" Type="AbilCmd" AbilCmd="ScrinDevourerConversionBeam,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinCorrupter">
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Food value="3"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinCorrupterWeapon"/>
+        <GlossaryPriority value="35"/>
+        <AbilArray Link="ScrinCorruptorTiberiumHeal"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinCorruptorTiberiumHeal" Type="AbilCmd" AbilCmd="ScrinCorruptorTiberiumHeal,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinMechapede">
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Food value="3"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Minerals" value="50"/>
+        <WeaponArray Link="ScrinMechapedeDisentegrator"/>
+        <GlossaryPriority value="35"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinCorruptorTiberiumHeal" Type="AbilCmd" AbilCmd="ScrinCorruptorTiberiumHeal,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit default="1" parent="ScrinGround" id="ScrinMechapedeSegment">
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <Food value="1"/>
+        <GlossaryPriority value="35"/>
+    </CUnit>
+    <CUnit parent="ScrinMechapedeSegment" id="ScrinMechapedeDisintegratorSegment">
+        <WeaponArray Link="ScrinMechapedeDisentegrator"/>
+    </CUnit>
+    <CUnit parent="ScrinMechapedeSegment" id="ScrinMechapedeShardSegment">
+        <WeaponArray Link="ScrinMechapedeShards"/>
+    </CUnit>
+    <CUnit parent="ScrinMechapedeSegment" id="ScrinMechapedeToxinSegment">
+        <WeaponArray Link="ScrinMechapedeToxins"/>
+    </CUnit>
+    <CUnit parent="ScrinMechapedeSegment" id="ScrinMechapedeDiscSegment">
+        <WeaponArray Link="ScrinMechapedeDiscs"/>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinEradicator">
+        <SubgroupPriority value="13"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <PushPriority value="20"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="750"/>
+        <LifeMax value="750"/>
+        <LifeArmor value="3"/>
+        <Mover value="Colossus"/>
+        <Speed value="1.75"/>
+        <Acceleration value="1.75"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="119.8828"/>
+        <TurningRate value="119.8828"/>
+        <Sight value="11"/>
+        <Food value="-10"/>
+        <CostResource index="Minerals" value="1000"/>
+        <CostResource index="Vespene" value="1000"/>
+        <RepairTime value="45"/>
+        <KillXP value="1000"/>
+        <AbilArray Link="ScrinEradicatorTeleport"/>
+        <BehaviorArray Link="HasEmptyPilotSlot1"/>
+        <BehaviorArray Link="HasEmptyPilotSlot2"/>
+        <BehaviorArray Link="HasEmptyPilotSlot3"/>
+        <WeaponArray Link="ScrinEradicatorWeapon"/>
+        <WeaponArray Link="FakeWeaponDummy" Turret="ScrinEradicatorTurretRight"/>
+        <WeaponArray Link="FakeWeaponDummy" Turret="ScrinEradicatorTurretLeft"/>
+        <WeaponArray Link="FakeWeaponDummy" Turret="ScrinEradicatorTurretMiddle"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinEradicatorTeleport" Type="AbilCmd" AbilCmd="ScrinEradicatorTeleport,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ScrinEradicatorKillBonus" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.5"/>
+        <ScoreMake value="275"/>
+        <ScoreKill value="275"/>
+        <MinimapRadius value="1"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <GlossaryPriority value="200"/>
+    </CUnit>
+
+
+
+    <CUnit parent="ScrinStructure" id="ScrinEradicatorDisintegrator">
+        <WeaponArray Link="ScrinEradicatorDisintegrator"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Attributes index="Structure" value="1"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinEradicatorPlasmaDiscLauncher">
+        <WeaponArray Link="ScrinEradicatorPlasmaDiscLauncher"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Attributes index="Structure" value="1"/>
+    </CUnit>
+    <CUnit parent="ScrinStructure" id="ScrinEradicatorTiberiumShardLauncher">
+        <WeaponArray Link="ScrinEradicatorTiberiumShardLauncher"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <Attributes index="Structure" value="1"/>
+    </CUnit>
+
+    <CUnit parent="ScrinGround" id="ScrinExplorer">
+        <GlossaryPriority value="5"/>
+        <SubgroupPriority value="6"/>
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="ArmySelect" value="0"/>
+        <Collide index="Small" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Flee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <Acceleration value="2.5"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="8"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="8"/>
+        <AIOverideTargetPriority value="10"/>
+        <KillXP value="10"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="50"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAIThink value="AIThinkSCV"/>
+        <AbilArray Link="ScrinExplorerDeploy"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinExplorerDeploy" Type="AbilCmd" AbilCmd="ScrinExplorerDeploy,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit parent="ScrinGround" id="ScrinAnnihilator">
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <LifeArmor value="1"/>
+        <ShieldsStart value="100"/>
+        <ShieldsMax value="100"/>
+        <ShieldRegenRate value="2"/>
+        <Mover value="Colossus"/>
+        <Speed value="2.25"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <Food value="-6"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="160"/>
+        <CargoSize value="8"/>
+        <Radius value="1"/>
+        <SeparationRadius value="0.75"/>
+        <InnerRadius value="0.5625"/>
+        <ScoreMake value="500"/>
+        <ScoreKill value="500"/>
+        <SubgroupPriority value="48"/>
+        <MinimapRadius value="1"/>
+        <FlagArray index="Turnable" value="0"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <VisionHeight value="15"/>
+        <Sight value="10"/>
+        <AbilArray Link="ScrinReaperConversionBeam"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="CliffWalk" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="ScrinReaperConversionBeam" Type="AbilCmd" AbilCmd="ScrinReaperConversionBeam,Exexute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <GlossaryPriority value="130"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="200"/>
+<!--        <WeaponArray Link="ThermalLances" Turret="Colossus"/>-->
+        <WeaponArray Link="ScrinAnnihilatorWeapon" Turret="Colossus"/>
+        <WeaponArray Link="ScrinReaperWeaponCharged" Turret="Colossus"/>
+        <ShieldRegenDelay value="10"/>
+        <RepairTime value="75"/>
+    </CUnit>
+
+    <CUnit parent="ScrinAirPlane" id="ScrinStormrider">
+        <LifeStart value="120"/>
+        <LifeMax value="120"/>
+        <ShieldsStart value="60"/>
+        <ShieldsMax value="60"/>
+        <ShieldRegenRate value="2"/>
+        <Speed value="4.25"/>
+        <Acceleration value="3.25"/>
+        <StationaryTurningRate value="1499.9414"/>
+        <TurningRate value="1499.9414"/>
+        <Food value="-2"/>
+        <KillXP value="50"/>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <ScoreMake value="250"/>
+        <ScoreKill value="250"/>
+        <SubgroupPriority value="81"/>
+        <MinimapRadius value="0.75"/>
+        <VisionHeight value="15"/>
+        <Sight value="10"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <AIEvalFactor value="0.7"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <GlossaryPriority value="140"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+<!--        <WeaponArray Link="IonCannons" Turret="Phoenix"/>-->
+        <WeaponArray Link="ScrinStormriderWeapon" Turret="Phoenix"/>
+        <ShieldRegenDelay value="10"/>
+        <RepairTime value="45"/>
+    </CUnit>
+    <CUnit parent="ScrinAir" id="ScrinDevastator">
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmor value="2"/>
+        <ShieldsStart value="100"/>
+        <ShieldsMax value="100"/>
+        <ShieldRegenRate value="2"/>
+        <Speed value="2.25"/>
+        <Acceleration value="3"/>
+        <LateralAcceleration value="46.0625"/>
+        <Height value="3.75"/>
+        <Food value="-4"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="120"/>
+        <Radius value="1.125"/>
+        <SeparationRadius value="1.125"/>
+        <ScoreMake value="425"/>
+        <ScoreKill value="425"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="50"/>
+        <MinimapRadius value="1.125"/>
+        <Mass value="0.6"/>
+        <Sight value="12"/>
+        <AbilArray Link="Warpable"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <GlossaryPriority value="170"/>
+        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Vespene" value="175"/>
+        <WeaponArray Link="ScrinDevastatorWeapon"/>
+        <!--        <WeaponArray Link="Tempest"/>-->
+<!--        <WeaponArray Link="TempestGround"/>-->
+        <ShieldRegenDelay value="10"/>
+        <RepairTime value="75"/>
+        <TacticalAIThink value="AIThinkTempest"/>
+        <Deceleration value="3"/>
+    </CUnit>
+    <CUnit parent="ScrinAir" id="ScrinCarrier">
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmor value="2"/>
+        <ShieldsStart value="150"/>
+        <ShieldsMax value="150"/>
+        <ShieldRegenRate value="2"/>
+        <Mover value="Fly"/>
+        <Speed value="1.875"/>
+        <Acceleration value="1.0625"/>
+        <LateralAcceleration value="46.0625"/>
+        <Height value="3.75"/>
+        <Food value="-6"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="120"/>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <ScoreMake value="540"/>
+        <ScoreKill value="540"/>
+        <SubgroupPriority value="51"/>
+        <MinimapRadius value="1.25"/>
+        <Mass value="0.6"/>
+        <VisionHeight value="15"/>
+        <Sight value="12"/>
+        <EquipmentArray Weapon="InterceptorsDummy"/>
+        <AbilArray Link="ScrinCarrierHangar"/>
+        <AbilArray Link="HangarQueue5"/>
+        <AbilArray Link="Warpable"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Interceptor" Type="AbilCmd" AbilCmd="ScrinCarrierHangar,Ammo1" Row="2" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="HangarQueue5,CancelLast" Row="2" Column="4"/>
+        </CardLayouts>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <GlossaryPriority value="170"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="350"/>
+        <CostResource index="Vespene" value="250"/>
+<!--        <WeaponArray Link="InterceptorLaunch"/>-->
+        <WeaponArray Link="ScrinInterceptorLaunch"/>
+        <ShieldRegenDelay value="10"/>
+        <RepairTime value="120"/>
+        <TacticalAIThink value="AIThinkCarrier"/>
+    </CUnit>
+    <CUnit parent="ScrinAir" id="ScrinInvader">
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
+        <ShieldsStart value="40"/>
+        <ShieldsMax value="40"/>
+        <ShieldRegenRate value="2"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Mover value="Fly"/>
+        <Speed value="7.5"/>
+        <Acceleration value="1000"/>
+        <Height value="3.25"/>
+        <AttackTargetPriority value="19"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="5"/>
+        <Radius value="0.25"/>
+        <SeparationRadius value="0.25"/>
+        <SubgroupPriority value="19"/>
+        <MinimapRadius value="0.25"/>
+        <Mass value="0.2"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="AILifetime" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <AIEvalFactor value="0"/>
+        <EditorFlags index="NoPlacement" value="1"/>
+        <VisionHeight value="15"/>
+        <Sight value="7"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <GlossaryPriority value="180"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="15"/>
+        <WeaponArray Link="ScrinInvaderWeapon"/>
+<!--        <WeaponArray Link="InterceptorBeam"/>-->
+        <ShieldRegenDelay value="10"/>
+        <ScoreMake value="15"/>
+        <ScoreKill value="15"/>
+        <GlossaryAlias value="Interceptor"/>
+    </CUnit>
+    <CUnit parent="ScrinAir" id="ScrinDroneShip">
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <FlagArray index="ArmySelect" value="0"/>
+        <PushPriority value="50"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.5"/>
+        <Acceleration value="1.5"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="58.711"/>
+        <TurningRate value="58.711"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="400"/>
+        <RepairTime value="48"/>
+        <KillXP value="1000"/>
+        <AbilArray Link="ScrinDroneShipDeploy"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ScrinDroneShipDeploy" Type="AbilCmd" AbilCmd="ScrinDroneShipDeploy,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <InnerRadius value="0.875"/>
+        <CargoSize value="8"/>
+        <ScoreMake value="1000"/>
+        <ScoreKill value="1000"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="2.5"/>
+        <AIEvalFactor value="1.5"/>
+        <GlossaryPriority value="1"/>
+        <AlliedPushPriority value="50"/>
+    </CUnit>
+    <CUnit parent="ScrinAir" id="ScrinMothership">
+        <Attributes index="Massive" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="750"/>
+        <LifeMax value="750"/>
+        <LifeArmor value="3"/>
+        <Speed value="0.75"/>
+        <Acceleration value="0.75"/>
+        <LateralAcceleration value="64"/>
+        <Food value="-10"/>
+        <CostResource index="Minerals" value="1000"/>
+        <CostResource index="Vespene" value="1000"/>
+        <WeaponArray Link="ScrinMothershipWeapon"/>
+        <Radius value="0.875"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.5"/>
+        <ScoreMake value="500"/>
+        <ScoreKill value="500"/>
+        <MinimapRadius value="1"/>
+        <AIEvalFactor value="1.5"/>
+        <GlossaryPriority value="200"/>
+    </CUnit>
+</Catalog>

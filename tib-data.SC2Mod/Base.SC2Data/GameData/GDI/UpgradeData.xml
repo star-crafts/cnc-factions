@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+
+    <CUpgrade default="1" id="GDI">
+        <?token id="icon" value="##id##"?>
+        <EditorCategories value="Race:GDI,UpgradeType:SpellResearch"/>
+        <Icon value="Assets\Icons\GDI\##icon##.dds"/>
+        <Race value="GDI"/>
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIOrcaSensorPods">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIZoneScannerPacks">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIFirehawkStratofighterBoosters">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIHardpoints">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDITiberiumFieldSuits">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIEMPGrenades">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIZonePowerPacks">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIRailguns">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIPitbullMortars">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDITungstenShells">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIAdaptiveArmour">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIZoneShatterer">
+    </CUpgrade>
+    <CUpgrade parent="GDI" id="GDIBehemoth">
+    </CUpgrade>
+
+<!--    <CUpgrade parent="GDI" id="GDIArmourPiercingAmmo"/>-->
+<!--    <CUpgrade parent="GDI" id="GDICeramicArmour"/>-->
+<!--    <CUpgrade parent="GDI" id="GDICompositeArmour"/>-->
+
+    <CUpgrade default="1" id="GDILightWeapons" parent="GDI">
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:GDI,UpgradeType:AttackBonus"/>
+        <!-- Effect Damage Amount -->
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,Level" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Icon" Value="Assets\Icons\GDI\##icon##.dds"/>
+        <AffectedUnitArray value="GDIRifleman"/>
+        <AffectedUnitArray value="GDICombatEngineer"/>
+        <AffectedUnitArray value="GDISniper"/>
+        <AffectedUnitArray value="GDICommando"/>
+        <AffectedUnitArray value="GDIAPC"/>
+        <AffectedUnitArray value="GDIHarvester"/>
+        <AffectedUnitArray value="GDIWolverine"/>
+        <AffectedUnitArray value="GDISlingshot"/>
+        <AffectedUnitArray value="GDIHammerHead"/>
+        <AffectedUnitArray value="GDIWatchtower"/>
+        <AffectedUnitArray value="GDIAABattery"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="GDIExplosiveWeapons" parent="GDI">
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:GDI,UpgradeType:AttackBonus"/>
+        <!-- Effect Damage Amount -->
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,Level" Value="1"/>
+        <EffectArrayTemplate Reference="Effect,^ParamId^Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Icon" Value="Assets\Icons\GDI\##icon##.dds"/>
+        <AffectedUnitArray value="GDIMissileTrooper"/>
+        <AffectedUnitArray value="GDIGrenadier"/>
+        <AffectedUnitArray value="GDIZoneRaider"/>
+        <AffectedUnitArray value="GDIPitBull"/>
+        <AffectedUnitArray value="GDIHarvester"/>
+        <AffectedUnitArray value="GDIMammoth"/>
+        <AffectedUnitArray value="GDIOrca"/>
+        <AffectedUnitArray value="GDIFirehawk"/>
+        <AffectedUnitArray value="GDIBattleBase"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="GDIHeavyWeapons" parent="GDI">
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:GDI,UpgradeType:AttackBonus"/>
+        <!-- Effect Damage Amount -->
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,Level" Value="1"/>
+        <EffectArrayTemplate Reference="Effect,^ParamId^Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Icon" Value="Assets\Icons\GDI\##icon##.dds"/>
+        <AffectedUnitArray value="GDIZoneTrooper"/>
+        <AffectedUnitArray value="GDITitan"/>
+        <AffectedUnitArray value="GDIPredator"/>
+        <AffectedUnitArray value="GDIJuggernaut"/>
+        <AffectedUnitArray value="GDIMammoth"/>
+        <AffectedUnitArray value="GDIRig"/>
+        <AffectedUnitArray value="GDIMARV"/>
+        <AffectedUnitArray value="GDIShatterer"/>
+        <AffectedUnitArray value="GDIOrca"/>
+        <AffectedUnitArray value="GDIGuardianTower"/>
+        <AffectedUnitArray value="GDISonicEmitter"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="GDIInfantryArmors" parent="GDI">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:GDI,UpgradeType:ArmorBonus"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Icons\GDI\##icon##.dds"/>
+        <AffectedUnitArray value="GDIRifleman"/>
+        <AffectedUnitArray value="GDIMissileTrooper"/>
+        <AffectedUnitArray value="GDICombatEngineer"/>
+        <AffectedUnitArray value="GDIGrenadier"/>
+        <AffectedUnitArray value="GDISniper"/>
+        <AffectedUnitArray value="GDIZoneTrooper"/>
+        <AffectedUnitArray value="GDIZoneRaider"/>
+        <AffectedUnitArray value="GDICommando"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="GDIVehiclesArmors" parent="GDI">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:GDI,UpgradeType:ArmorBonus"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Icons\GDI\##icon##.dds"/>
+        <AffectedUnitArray value="GDIPitBull"/>
+        <AffectedUnitArray value="GDITitan"/>
+        <AffectedUnitArray value="GDIAPC"/>
+        <AffectedUnitArray value="GDIPredator"/>
+        <AffectedUnitArray value="GDIHarvester"/>
+        <AffectedUnitArray value="GDIMCV"/>
+        <AffectedUnitArray value="GDIWolverine"/>
+        <AffectedUnitArray value="GDIJuggernaut"/>
+        <AffectedUnitArray value="GDISlingshot"/>
+        <AffectedUnitArray value="GDIRig"/>
+        <AffectedUnitArray value="GDIShatterer"/>
+        <AffectedUnitArray value="GDIMammoth"/>
+        <AffectedUnitArray value="GDISurveyor"/>
+        <AffectedUnitArray value="GDIMARV"/>
+        <AffectedUnitArray value="GDIOrca"/>
+        <AffectedUnitArray value="GDIHammerHead"/>
+        <AffectedUnitArray value="GDIFirehawk"/>
+        <AffectedUnitArray value="GDIOx"/>
+    </CUpgrade>
+
+    <CUpgrade id="GDILightWeaponsLevel1" parent="GDILightWeapons">
+        <LeaderLevel value="1"/>
+        <ScoreAmount value="200"/>
+    </CUpgrade>
+    <CUpgrade id="GDILightWeaponsLevel2" parent="GDILightWeapons">
+        <LeaderLevel value="2"/>
+        <ScoreAmount value="300"/>
+    </CUpgrade>
+    <CUpgrade id="GDILightWeaponsLevel3" parent="GDILightWeapons">
+        <LeaderLevel value="3"/>
+        <ScoreAmount value="400"/>
+    </CUpgrade>
+    <CUpgrade id="GDIHeavyWeaponsLevel1" parent="GDIHeavyWeapons">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="GDIHeavyWeaponsLevel2" parent="GDIHeavyWeapons">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="GDIHeavyWeaponsLevel3" parent="GDIHeavyWeapons">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="GDIExplosiveWeaponsLevel1" parent="GDIExplosiveWeapons">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="GDIExplosiveWeaponsLevel2" parent="GDIExplosiveWeapons">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="GDIExplosiveWeaponsLevel3" parent="GDIExplosiveWeapons">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="GDIInfantryArmorsLevel1" parent="GDIInfantryArmors">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="GDIInfantryArmorsLevel2" parent="GDIInfantryArmors">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="GDIInfantryArmorsLevel3" parent="GDIInfantryArmors">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="GDIVehiclesArmorsLevel1" parent="GDIVehiclesArmors">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="GDIVehiclesArmorsLevel2" parent="GDIVehiclesArmors">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="GDIVehiclesArmorsLevel3" parent="GDIVehiclesArmors">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+
+</Catalog>

@@ -1,0 +1,41 @@
+<Catalog>
+    <CValidatorUnitType id="IsDozer">
+        <Value value="ZOCOMDozer"/>
+    </CValidatorUnitType>
+    <!--GDI-->
+    <CValidatorUnitCompareBehaviorCount id="ARGUSAA1">
+        <Value value="1"/>
+        <Behavior value="ARGUSAATarget1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ARGUSMissile1">
+        <Value value="1"/>
+        <Behavior value="ARGUSMissileTarget1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ARGUSAA2">
+        <Value value="1"/>
+        <Behavior value="ARGUSAATarget2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ARGUSMissile2">
+        <Value value="1"/>
+        <Behavior value="ARGUSMissileTarget2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ARGUSMissile3">
+        <Value value="1"/>
+        <Behavior value="ARGUSMissileTarget3"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZOCOMArgusLaser1">
+        <Value value="1"/>
+        <Behavior value="ZOCOMArgusLaserTarget1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZOCOMArgusLaser2">
+        <Value value="1"/>
+        <Behavior value="ZOCOMArgusLaserTarget2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ARGUSAA3">
+        <Value value="1"/>
+        <Behavior value="ARGUSAATarget3"/>
+    </CValidatorUnitCompareBehaviorCount>
+
+    <CValidatorUnitType id="GDIAirfield"><Value value="GDIAirfield"/></CValidatorUnitType>
+    <CValidatorUnitType id="GDICombatSupportAirfield"><Value value="GDICombatSupportAirfield"/></CValidatorUnitType>
+</Catalog>

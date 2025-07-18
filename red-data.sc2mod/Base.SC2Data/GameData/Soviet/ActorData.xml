@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorMissile id="SovietDesolatorDeathSpray" parent="GenericAttackMissile" unitName="BlightbringerVileStream"/>
+    <!--    <CActorAction id="SovietDesolatorDeathSpray" parent="GenericAttack" effectImpact="SovietDesolatorDeathSprayImpact" effectLaunch="SovietDesolatorDeathSprayLauncher">-->
+    <!--        <LaunchAttachQuery Methods="Weapon 1"/>-->
+    <!--        <ImpactSiteOps Ops="SOpAttachHarness SOpAttachVolumeStandard SOpForwardLaunchGuide"/>-->
+    <!--        <AccuracyHalfArc value="10.000000"/>-->
+    <!--    </CActorAction>-->
+    <CActorAction id="SovietDesolatorDeathSprayImpact" parent="GenericAttack" effectImpact="SovietDesolatorDeathSprayImpact" effectLaunch="SovietDesolatorDeathSprayLauncher">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Model="SovietDesolatorDeathSprayLaunch" Sound=""/>
+        <Missile value="SovietDesolatorDeathSprayMissile"/>
+        <ImpactSiteOps Ops="SOpAttachHarness SOpAttachVolumeStandard SOpForwardLaunchGuide"/>
+        <ImpactMap index="None" Model="SovietDesolatorDeathSprayImpact"/>
+        <AccuracyHalfArc value="10.000000"/>
+        <On Terms="Effect.SovietDesolatorDeathSprayDamage.Start; At Effect" Send="Create"/>
+    </CActorAction>
+    <CActorModel id="SovietDesolatorDeathSprayImpactDummy" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.SovietDesolatorDeathSprayImpactDummy.Start" Send="Create"/>
+    </CActorModel>
+    <CActorModel id="SovietDesolatorDeathSprayLaunch" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.SovietDesolatorDeathSprayLauncher.Start" Send="Create"/>
+    </CActorModel>
+    <CActorMissile id="SovietDesolatorDeathSprayMissile" parent="GenericAttackMissile" unitName="SovietDesolatorDeathSpray"/>
+    <CActorSound id="SovietDesolatorDeathSprayLaunchSound" parent="SoundOneShot">
+        <Sound value="SovietDesolatorDeathSprayLaunch"/>
+        <Layers Sound="SovietDesolatorDeathSprayLaunchSound">
+            <Chance value="0"/>
+            <Pitch value="0.000000,0.000000"/>
+            <PlayDelay value="0,0"/>
+            <Volume value="0.000000,0.000000"/>
+        </Layers>
+    </CActorSound>
+    <CActorSound id="SovietDesolatorDeathSprayLoopSound" parent="SoundContinuous"/>
+</Catalog>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAlert id="AttackTownAlly_Terr">
+        <Sound value="RA3Alert"/>
+    </CAlert>
+    <CAlert id="AttackTown_Terr">
+        <Sound value="AlliedLightPrismTower_Actor_Help"/>
+    </CAlert>
+    <CAlert id="AttackUnitAlly_Terr">
+        <Sound value="RA3Alert"/>
+    </CAlert>
+    <CAlert id="AttackUnit_Terr">
+        <Sound value="RA3Alert84"/>
+    </CAlert>
+    <CAlert id="ResearchComplete_Terr">
+        <Sound value="JuSteelVoice422224"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot2">
+        <Sound value="JUConstructionComplete"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot22">
+        <Sound value="JUConstructionComplete2"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot222">
+        <Sound value="JUConstructionComplete22"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot2222">
+        <Sound value="AlliedPowerPlant_Actor_Board"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot22222">
+        <Sound value="JUConstructionComplete2222"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot22223">
+        <Sound value="JUConstructionComplete2224"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot22224">
+        <Sound value="JUConstructionComplete2223"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Prot223">
+        <Sound value="JUConstructionComplete23"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Terr">
+        <Sound value="JuSteelVoice422224"/>
+    </CAlert>
+    <CAlert id="UpgradeComplete_Terr2">
+        <Sound value="JuSteelVoice422224"/>
+        <Peripheral value="UpgradeComplete"/>
+    </CAlert>
+</Catalog>

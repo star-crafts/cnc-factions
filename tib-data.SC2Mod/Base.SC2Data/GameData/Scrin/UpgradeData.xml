@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade default="1" id="Scrin">
+        <?token id="icon" value="##id##"?>
+        <EditorCategories value="Race:Scrin,UpgradeType:SpellResearch"/>
+        <Icon value="Assets\Icons\Scrin\##icon##.dds"/>
+        <Race value="Scrin"/>
+    </CUpgrade>
+    <CUpgrade parent="Scrin" id="ScrinAdvancedArticulators"/>
+    <CUpgrade parent="Scrin" id="ScrinBlinkPacks"/>
+    <CUpgrade parent="Scrin" id="ScrinPlasmaDiscLaunchers"/>
+    <CUpgrade parent="Scrin" id="ScrinShardLaunchers"/>
+    <CUpgrade parent="Scrin" id="ScrinBlueShards"/>
+    <CUpgrade parent="Scrin" id="ScrinTravelerEngines"/>
+    <CUpgrade parent="Scrin" id="ScrinConversionReserves"/>
+    <CUpgrade parent="Scrin" id="ScrinProdigy"/>
+    <CUpgrade parent="Scrin" id="ScrinReaper"/>
+
+    <CUpgrade default="1" id="ScrinGroundWeapons" parent="Scrin">
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:AttackBonus"/>
+        <!-- Effect Damage Amount -->
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,Level" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Icon" Value="Assets\Icons\Scrin\##icon##.dds"/>
+        <AffectedUnitArray value="ScrinMilitant"/>
+        <AffectedUnitArray value="ScrinConfessor"/>
+        <AffectedUnitArray value="ScrinTiberiumTrooper"/>
+        <AffectedUnitArray value="ScrinCommando"/>
+        <AffectedUnitArray value="ScrinAwakened"/>
+        <AffectedUnitArray value="ScrinEnlightened"/>
+        <AffectedUnitArray value="ScrinShadow"/>
+        <AffectedUnitArray value="ScrinShadowFlying"/>
+        <AffectedUnitArray value="ScrinPurifier"/>
+        <AffectedUnitArray value="ScrinRaider"/>
+        <AffectedUnitArray value="ScrinAvatar"/>
+        <AffectedUnitArray value="ScrinBeamCannon"/>
+        <AffectedUnitArray value="ScrinScorpionTank"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="ScrinAirWeapons" parent="Scrin">
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:AttackBonus"/>
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,Level" Value="1"/>
+        <EffectArrayTemplate Reference="Effect,^ParamId^Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+        <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^,Icon" Value="Assets\Icons\Scrin\##icon##.dds"/>
+        <AffectedUnitArray value="ScrinMilitantRocket"/>
+        <AffectedUnitArray value="ScrinFanatic"/>
+        <AffectedUnitArray value="ScrinBlackHand"/>
+        <AffectedUnitArray value="ScrinFlameTank"/>
+        <AffectedUnitArray value="ScrinMantis"/>
+        <AffectedUnitArray value="ScrinBike"/>
+        <AffectedUnitArray value="ScrinPurifier"/>
+        <AffectedUnitArray value="ScrinSpecter"/>
+        <AffectedUnitArray value="ScrinStealthTank"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="ScrinLightArmors" parent="Scrin">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="ScrinMilitant"/>
+        <AffectedUnitArray value="ScrinMilitantRocket"/>
+        <AffectedUnitArray value="ScrinConfessor"/>
+        <AffectedUnitArray value="ScrinFanatic"/>
+        <AffectedUnitArray value="ScrinFanatic"/>
+        <AffectedUnitArray value="ScrinSaboteur"/>
+        <AffectedUnitArray value="ScrinTiberiumTrooper"/>
+        <AffectedUnitArray value="ScrinBlackHand"/>
+        <AffectedUnitArray value="ScrinCommando"/>
+        <AffectedUnitArray value="ScrinAwakened"/>
+        <AffectedUnitArray value="ScrinEnlightened"/>
+        <AffectedUnitArray value="ScrinShadow"/>
+        <AffectedUnitArray value="ScrinShadowFlying"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Icons\Scrin\##icon##.dds"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="ScrinHeavyArmors" parent="Scrin">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="ScrinMilitant"/>
+        <AffectedUnitArray value="ScrinMilitantRocket"/>
+        <AffectedUnitArray value="ScrinConfessor"/>
+        <AffectedUnitArray value="ScrinFanatic"/>
+        <AffectedUnitArray value="ScrinFanatic"/>
+        <AffectedUnitArray value="ScrinSaboteur"/>
+        <AffectedUnitArray value="ScrinTiberiumTrooper"/>
+        <AffectedUnitArray value="ScrinBlackHand"/>
+        <AffectedUnitArray value="ScrinCommando"/>
+        <AffectedUnitArray value="ScrinAwakened"/>
+        <AffectedUnitArray value="ScrinEnlightened"/>
+        <AffectedUnitArray value="ScrinShadow"/>
+        <AffectedUnitArray value="ScrinShadowFlying"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Icons\Scrin\##icon##.dds"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="ScrinGroundShields" parent="Scrin">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="ScrinHarvester"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,ShieldArmorIcon" Value="Assets\Icons\Scrin\##icon##.dds"/>
+    </CUpgrade>
+    <CUpgrade default="1" id="ScrinShields" parent="Scrin">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="ScrinHarvester"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmorLevel" Value="1"/>
+        <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,ShieldArmorIcon" Value="Assets\Icons\Scrin\##icon##.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinAttenuatedForcefields" parent="Scrin">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="ScrinHarvester"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldsStart" Value="100"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldsMax" Value="100"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinForcefieldGenerators" parent="Scrin">
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Scrin,UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray value="ScrinHarvester"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldsStart" Value="100"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldsMax" Value="100"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinLightArmorsLevel1" parent="ScrinLightArmors">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinLightArmorsLevel2" parent="ScrinLightArmors">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinLightArmorsLevel3" parent="ScrinLightArmors">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinHeavyArmorsLevel1" parent="ScrinHeavyArmors">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinHeavyArmorsLevel2" parent="ScrinHeavyArmors">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinHeavyArmorsLevel3" parent="ScrinHeavyArmors">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinGroundWeaponsLevel1" parent="ScrinGroundWeapons">
+        <LeaderLevel value="1"/>
+        <ScoreAmount value="200"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinGroundWeaponsLevel2" parent="ScrinGroundWeapons">
+        <LeaderLevel value="2"/>
+        <ScoreAmount value="300"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinGroundWeaponsLevel3" parent="ScrinGroundWeapons">
+        <LeaderLevel value="3"/>
+        <ScoreAmount value="400"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinAirWeaponsLevel1" parent="ScrinAirWeapons">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinAirWeaponsLevel2" parent="ScrinAirWeapons">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinAirWeaponsLevel3" parent="ScrinAirWeapons">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinShieldsLevel1" parent="ScrinShields">
+        <ScoreAmount value="200"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinShieldsLevel2" parent="ScrinShields">
+        <ScoreAmount value="300"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="ScrinShieldsLevel3" parent="ScrinShields">
+        <ScoreAmount value="400"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+</Catalog>

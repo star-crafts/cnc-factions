@@ -1,0 +1,522 @@
+<Catalog>
+    <CActorUnit default="1" id="ScrinBuilding" parent="GenericUnitStandard">
+        <?token id="unitName" type="CUnitLink" value="##id##"?>
+        <?token id="icon" value="##id##"?>
+        <?token id="wireframe" value="##id##"?>
+        <ModelFlags index="OutlineOccluder" value="1"/>
+        <Aliases value="_CreepEngulfable"/>
+        <CreepHeightClass value="Default"/>
+        <CreepRateGrow value="Grow"/>
+        <CreepRateShrink value="Shrink"/>
+        <!--        <On Terms="UnitConstruction.##unitName##.Start" Send="Create ##unitName##Build"/>-->
+        <On Terms="UnitConstruction.##unitName##.Start" Send="Create BuildingTerrainFlatten"/>
+        <On Terms="UnitConstruction.##unitName##.Cancel" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitConstruction.##unitName##.Finish" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitConstruction.##unitName##.Start" Send="QueryRadius 1.750000 BuildingCrushQueryResponse"/>
+        <On Terms="UnitBirth.##unitName##.Normal" Send="Create BuildingTerrainFlatten"/>
+        <On Terms="UnitBirth.##unitName##.Suppressed" Send="Create BuildingTerrainFlattenInstant"/>
+        <On Terms="UnitBirth.##unitName##.EditorPlaced" Send="Create BuildingTerrainFlattenEditor"/>
+        <On Terms="UnitDeath.##unitName##" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitDeathCustomize; CreepEngulfs" Send="CreepEngulfmentStopTransition"/>
+        <On Terms="ActorCreation; CreepIntersects" Send="CreepEngulfmentStartTransition"/>
+        <On Terms="UnitConstruction.##unitName##.Start" Send="AnimPlay Standup Unburrow"/>
+        <On Terms="UnitConstruction.##unitName##.Start" Send="Create CNCRumble"/>
+        <PlaceholderActorModel value="ScrinPlaceholderActorModel"/>
+        <PlacementActorModel value="ScrinPlaceholderActorModel"/>
+        <!--        <PlacementModel value="##unitName##Placement"/>-->
+        <!--        <PlacementModel value="ChinaCPlacement3x3"/>-->
+        <DeathArray index="Normal" ModelLink="##unitName##_Death" SoundLink=""/>
+        <PlacementSound value="Terran_BuildingPlacement"/>
+        <Macros value="SnowVisualUnitMacroMP"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <PortraitModel value="ScrinPortrait"/>
+        <SoundArray index="Construction" value="Terran_ConstructionWhat"/>
+        <NameOffset value="110"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <Model value="##id##"/>
+        <HeroIcon value="Assets\icons\Scrin\##icon##.dds"/>
+        <UnitIcon value="Assets\icons\Scrin\##icon##.dds"/>
+        <ShieldArmorIcon value="Assets\icons\Scrin\ScrinLaserFencing.dds"/>
+        <GroupIcon>
+            <Image value="Assets\icons\Scrin\##wireframe##.dds"/>
+        </GroupIcon>
+        <Wireframe>
+            <Image value="Assets\icons\Scrin\##wireframe##.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit default="1" id="ScrinUnitBase" parent="GenericUnitBase">
+        <?token id="unitName" type="CUnitLink" value="##id##"?>
+        <?token id="icon" value="##id##"?>
+        <?token id="wireframe" value="##id##"?>
+        <PortraitModel value="ScrinPortrait"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create SoundEmitter GDIZoneTrooper_Ambience"/>
+        <On index="35" Terms="UnitBirth.*.Normal" Send="AnimPlay Birth Stand 0 0.000000"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <HeroIcon value="Assets\icons\Scrin\##icon##.dds"/>
+        <UnitIcon value="Assets\icons\Scrin\##icon##.dds"/>
+        <GroupIcon>
+            <Image value="Assets\icons\Scrin\##wireframe##.dds"/>
+        </GroupIcon>
+        <Wireframe>
+            <Image value="Assets\icons\Scrin\##wireframe##.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit default="1" id="ScrinInfantry" parent="ScrinUnitBase">
+        <Aliases value="_UnitSmall"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create WarPigDropModel"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Marine_Land"/>
+        <LifeArmorIcon value="Assets\icons\Scrin\ScrinInfantryArmors.dds"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <!--        <DeathArray index="Normal" ModelLink="" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="##unitName##_Death"/>-->
+        <DeathArray index="Normal" ModelLink="" SoundLink="Marine_DeathFXBloodSpray" VoiceLink="ScrinMilitant_Death"/>
+        <DeathArray index="Blast" SoundLink="Marine_DeathFXBlast"/>
+        <DeathArray index="Disintegrate" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Eat" AnimProps="Stand" SoundLink="Marine_DeathFXEat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death" SoundLink="Marine_DeathFXEviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death" SoundLink="Marine_DeathFXFire"/>
+        <DeathArray index="Silentkill" SoundLink="Marine_DeathFXSilentKill"/>
+        <DeathArray index="Squish" SoundLink="Marine_DeathFXBloodSpray"/>
+        <GroupSoundArray index="What" value="MarineGroupWhat"/>
+        <GroupSoundArray index="Yes" value="MarineGroupYes"/>
+        <GroupSoundArray index="Attack" value="MarineGroupAttack"/>
+        <GroupSoundArray index="Board" value="MarineGroupBoard"/>
+        <SoundArray index="Birth" value="MarineBirth"/>
+        <SoundArray index="Pissed" value="##unitName##_What"/>
+        <SoundArray index="Movement" value="MarineMovement"/>
+        <SoundArray index="Turning" value="MarineTurning"/>
+        <SoundArray index="Board" value="MarineBoard"/>
+        <SoundArray index="Click" value="MarineClick"/>
+        <SoundArray index="ClickError" value="MarineClickError"/>
+        <SoundArray index="Highlight" value="MarineHighlight"/>
+    </CActorUnit>
+    <CActorUnit default="1" id="ScrinWalker" parent="ScrinUnitBase">
+        <Aliases value="_UnitMedium"/>
+        <CreepHeightClass value="Tiny"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Hellion_Land"/>
+        <On Terms="Behavior.MercGroundDrop.Create" Send="Create MercHellionDropModel"/>
+        <LifeArmorIcon value="Assets\icons\Scrin\ScrinVehiclesArmors.dds"/>
+        <DeathArray index="Normal" ModelLink="CABALRaider_Death" SoundLink="Hellion_Explode"/>
+        <BarOffset value="50"/>
+        <SoundArray index="Movement" value="ScrinVehicleMoveLoopBike"/>
+    </CActorUnit>
+    <CActorUnit default="1" id="ScrinVehicle" parent="ScrinUnitBase">
+        <Aliases value="_UnitLarge"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+        <LifeArmorIcon value="Assets\icons\Scrin\ScrinVehiclesArmors.dds"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SiegeTank_Land"/>
+        <CreepHeightClass value="Tiny"/>
+        <DeathArray index="Normal" ModelLink="CABALAvengerTank_Death" SoundLink="SiegeTank_Explode"/>
+        <DeathCustomData Name="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <StandAnimTurnTime value="3.33"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSiegeTank"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1"/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <ErrorArray Error="CantSeeBuildLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantSeeLandLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantBuildLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CouldntReachTarget" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <SoundArray index="Birth" value="SiegeTankBirth"/>
+        <SoundArray index="Pissed" value="ScrinScorpionTank_What"/>
+        <SoundArray index="Movement" value="CABALAvengerTank_Movement"/>
+        <SoundArray index="Turning" value="SiegeTankTurning"/>
+        <SoundArray index="Board" value="SiegeTankBoard"/>
+        <SoundArray index="Click" value="SiegeTankClick"/>
+        <SoundArray index="ClickError" value="SiegeTankClickError"/>
+        <SoundArray index="Highlight" value="SiegeTankHighlight"/>
+        <GroupSoundArray index="What" value="SiegeTankGroupWhat"/>
+        <GroupSoundArray index="Yes" value="SiegeTankGroupYes"/>
+        <GroupSoundArray index="Attack" value="SiegeTankGroupAttack"/>
+        <GroupSoundArray index="Board" value="SiegeTankGroupBoard"/>
+    </CActorUnit>
+    <CActorUnit default="1" id="ScrinAir" parent="ScrinUnitBase">
+        <Aliases value="_UnitLarge"/>
+        <HostSiteOps Ops="SOpBankerVenom"/>
+        <AnimBlendTime value="0.300000"/>
+        <LifeArmorIcon value="Assets\icons\Scrin\ScrinVehiclesArmors.dds"/>
+        <DeathArray index="Normal" ModelLink="CABALVenom_Death" SoundLink="Wraith_Explode"/>
+        <BarOffset value="55"/>
+        <BarWidth value="66"/>
+        <SoundArray index="Movement" value="Venom_Movement"/>
+    </CActorUnit>
+    
+    <CActorUnit id="ScrinDronePlatform" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinReactor" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinExtractor" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinPortal" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinWarpSphere" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinNerveCenter" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinGravityStabilizer" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinStasisChamber" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinTechnologyAssembler" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinSignalTransmitter" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinWarpChasm" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinFoundry" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinBuzzerHive" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinPhotonCannon" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinPlasmaMissileBattery" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinStormColumn" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinGrowthStimulator" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinRiftGenerator" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinLightningSpike" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinTiberiumHive" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinOutpost" parent="ScrinBuilding"/>
+
+    <CActorUnit id="ScrinBuzzers" parent="ScrinInfantry"/>
+    <CActorUnit id="ScrinDisintegrator" parent="ScrinInfantry"/>
+    <CActorUnit id="ScrinAssimilator" parent="ScrinInfantry"/>
+    <CActorUnit id="ScrinShockTrooper" parent="ScrinInfantry"/>
+    <CActorUnit id="ScrinRavager" parent="ScrinInfantry"/>
+    <CActorUnit id="ScrinMastermind" parent="ScrinInfantry"/>
+    <CActorUnit id="ScrinCultist" parent="ScrinInfantry"/>
+
+    <CActorUnit id="ScrinGunWalker" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinSeeker" parent="ScrinVehicle"/>
+    <CActorUnit id="ScrinHarvester" parent="ScrinVehicle"/>
+    <CActorUnit id="ScrinDevourer" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinCorrupter" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinMechapede" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinMechapedeShardSegment" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinMechapedeToxinSegment" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinMechapedeDisintegratorSegment" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinMechapedeDiscSegment" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinEradicator" parent="ScrinWalker"/>
+    <CActorUnit id="ScrinExplorer" parent="ScrinVehicle"/>
+    <CActorUnit id="ScrinAnnihilator" parent="ScrinWalker"/>
+
+    <CActorUnit id="ScrinDevastator" parent="ScrinAir"/>
+    <CActorUnit id="ScrinInvader" parent="ScrinAir"/>
+    <CActorUnit id="ScrinCarrier" parent="ScrinAir"/>
+    <CActorUnit id="ScrinStormrider" parent="ScrinAir"/>
+    <CActorUnit id="ScrinDroneShip" parent="ScrinAir"/>
+    <CActorUnit id="ScrinMothership" parent="ScrinAir"/>
+
+
+    <CActorUnit id="ScrinEradicatorDisintegrator" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinEradicatorPlasmaDiscLauncher" parent="ScrinBuilding"/>
+    <CActorUnit id="ScrinEradicatorTiberiumShardLauncher" parent="ScrinBuilding"/>
+    
+<!--    <CActorUnit id="ScrinAnnihilator" parent="GenericUnitBase" unitName="ScrinAnnihilator">-->
+<!--        <On Terms="WeaponStart.ThermalLances.AttackStart" Send="AnimPlay Attack Stand,Channel,Start"/>-->
+<!--        <On Terms="WeaponStop.ThermalLances.AttackStop" Send="AnimClear Attack"/>-->
+<!--        <On Terms="Behavior.Hallucination.On" Send="Create HallucinationBirthSoundLarge"/>-->
+<!--        <On Terms="UnitDeathCustomize; ValidateUnit IsHallucination" Send="DeathCustomize Hallucination"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackLaunchSite" Send="Destroy"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackImpactSite" Send="Destroy"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackBeam" Send="Destroy"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackBeamImpact" Send="Destroy"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackLaunchSiteReverse" Send="Destroy"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackImpactSiteReverse" Send="Destroy"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackBeamReverse" Send="Destroy"/>-->
+<!--        <On Terms="AbilTransport.WarpPrismTransport.CargoLoad" Target="ColossusAttackBeamImpactReverse" Send="Destroy"/>-->
+<!--        <On Terms="UnitHeightUpdate.*.Land" Send="Create Colossus_Land"/>-->
+<!--        <On Terms="Effect.ThermalLancesForward.Start" Send="AnimBracketStart Attack Stand,Channel,Start Stand,Channel Stand,Channel,End"/>-->
+<!--        <On Terms="Effect.ThermalLancesForward.Stop" Send="AnimBracketStop Attack"/>-->
+<!--        <DeathArray index="Normal" ModelLink="ColossusDeath"/>-->
+<!--        <DeathCustoms ModelLink="ProtossLargeUnitDeathLow" Name="AntiGravProtoss"/>-->
+<!--        <DeathCustoms ModelLink="HallucinationColossusDeath" SoundLink="Sentry_HallucinationDeathLarge" Name="Hallucination"/>-->
+<!--        <DeathCustoms ActorModel="ColossusDeathRagdoll" ModelLink="ColossusDeathRagdoll" Name="RagdollBasic">-->
+<!--            <BodySquibs Name="Basic" Model="ProtossRobotSquibDeathRagdoll"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollSiegeTank" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="FireHeavy"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="FireHeavy"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Acid"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollBaneling" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Acid"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollUltraUnburrow" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>-->
+<!--        <PortraitModel value="ColossusPortrait"/>-->
+<!--        <WalkAnimMoveSpeed value="2.1445"/>-->
+<!--        <BarWidth value="140"/>-->
+<!--        <BarOffset value="250"/>-->
+<!--        <UnitIcon value="Assets\Icons\Scrin\AUAnnihilatorTripod.dds"/>-->
+<!--        <HeroIcon value="Assets\Icons\Scrin\AUAnnihilatorTripod.dds"/>-->
+<!--        <WireframeShield>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Colossus-Shield01.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Colossus-Shield02.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Colossus-Shield03.dds"/>-->
+<!--        </WireframeShield>-->
+<!--        <GroupIcon>-->
+<!--            <Image value="Assets\Icons\Scrin\AUAnnihilatorTripod.dds"/>-->
+<!--        </GroupIcon>-->
+<!--        <Wireframe>-->
+<!--            <Image value="Assets\Icons\Scrin\AUAnnihilatorTripod.dds"/>-->
+<!--        </Wireframe>-->
+<!--        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel0.dds"/>-->
+<!--        <Aliases value="_UnitHuge"/>-->
+<!--        <Macros value="TerrainSquibAnimations"/>-->
+<!--        <Macros value="PhysicsDeathsSwarmGround"/>-->
+<!--        <Macros value="PhysicsDeathsVoidGround"/>-->
+<!--        <TerrainSquibs MovementDistance="0.150000,0.150000" IdlePeriod="0.250000,0.500000" RangeUp="2.75" RangeDown="0.1">-->
+<!--            <AttachQuery Methods="AMFilterHardpoint"/>-->
+<!--            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMedium"/>-->
+<!--        </TerrainSquibs>-->
+<!--        <TerrainSquibs MovementDistance="0.150000,0.150000" IdlePeriod="0.250000,0.500000" RangeUp="3" RangeDown="0.25">-->
+<!--            <AttachQuery Methods="AMFilterCenter"/>-->
+<!--            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleLargeVehicle"/>-->
+<!--        </TerrainSquibs>-->
+<!--        <ModelFlags index="OutlineEmitter" value="1"/>-->
+<!--        <Remove Terms="WeaponStart.ThermalLances.AttackStart" Send="AnimPlay Attack Stand,Channel,Start"/>-->
+<!--        <Remove Terms="WeaponStop.ThermalLances.AttackStop" Send="AnimClear Attack"/>-->
+<!--    </CActorUnit>-->
+<!--    <CActorUnit id="ScrinDevastator" parent="GenericUnitStandard" unitName="ScrinDevastator">-->
+<!--        <On Terms="UnitHeightUpdate.*.Land" Send="Create Tempest_Land"/>-->
+<!--        <On Terms="ActorCreation" Send="Create StormSphereAttachment"/>-->
+<!--        <On Terms="ActorCreation" Target="StormSphereAttachment" Send="Signal Birth"/>-->
+<!--        <On Terms="Effect.TempestLaunchMissile.Start; At Caster" Target="StormSphereAttachment" Send="Signal Fire"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.On" Send="ModelSwap TempestWarpInStargate"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.On" Send="$Spell 0 0.000000 0.000000 2.100000 AsDuration"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off" Send="ModelSwap Tempest"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off" Send="AnimBracketStart GL_BSD_A GLbirth,A GLstand,A GLdeath,A"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off" Send="AnimBracketStart GL_BSD_B GLbirth,B GLstand,B GLdeath,B"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off" Send="AnimBracketStart GL_BSD_C GLbirth,C GLstand,C GLdeath,C"/>-->
+<!--        <On Terms="Effect.TempestLaunchMissileGround.Start; At Caster" Target="StormSphereAttachment" Send="Signal Fire"/>-->
+<!--        <On Terms="Abil.TempestDisruptionBlast.TargetApproachStart; ValidateUnit TempestDisruptionBlastRangeCheck; !ScopeContains Tempest_DisruptionBlastRangedVO" Send="Create Tempest_DisruptionBlastRangedVO"/>-->
+<!--        <ModelFlags index="AutomateGlobalLoops" value="0"/>-->
+<!--        <ModelFlags index="OutlineEmitter" value="1"/>-->
+<!--        <Baselines index="Walk" BlendIn="1.5" BlendOut="2"/>-->
+<!--        <PortraitModel value="TempestPortrait"/>-->
+<!--        <BuildModel value="TempestWarpIn"/>-->
+<!--        <DeathArray index="Normal" ModelLink="TempestDeath" SoundLink="Tempest_Explode"/>-->
+<!--        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>-->
+<!--        <Macros value="GlobalLoopMacro"/>-->
+<!--        <Macros value="GlobalLoopMacroMore"/>-->
+<!--        <Macros value="PhysicsDeathsSwarmAir"/>-->
+<!--        <Macros value="PhysicsDeathsVoidAir"/>-->
+<!--        <DeathCustoms ActorModel="TempestDeathRagdoll" ModelLink="TempestDeathRagdoll" Name="RagdollBasic" PhysicsMatchKeysOrdered="BasicAir,Basic">-->
+<!--            <BodySquibs Name="Basic" Model="ProtossRobotSquibDeathRagdoll"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Fire"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Fire"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Acid"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>-->
+<!--        <AnimBlendTime value="0.75"/>-->
+<!--        <BarWidth value="140"/>-->
+<!--        <NameOffset value="99"/>-->
+<!--        <UnitIcon value="Assets\Icons\Scrin\AUDevastatorWarship.dds"/>-->
+<!--        <HeroIcon value="Assets\Icons\Scrin\AUDevastatorWarship.dds"/>-->
+<!--        <WireframeShield>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Tempest-Shield01.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Tempest-Shield02.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Tempest-Shield03.dds"/>-->
+<!--        </WireframeShield>-->
+<!--        <GroupIcon>-->
+<!--            <Image value="Assets\Icons\Scrin\AUDevastatorWarship.dds"/>-->
+<!--        </GroupIcon>-->
+<!--        <Wireframe>-->
+<!--            <Image value="Assets\Icons\Scrin\AUDevastatorWarship.dds"/>-->
+<!--        </Wireframe>-->
+<!--        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>-->
+<!--        <HostSiteOps Ops="SOpBankerCarrier"/>-->
+<!--        <Aliases value="_UnitHuge"/>-->
+<!--        <AbilSoundArray AbilCmd="TempestDisruptionBlast,Execute" Sound="Tempest_DisruptionBlastDummyVO"/>-->
+<!--        <Scale value="0.900000"/>-->
+<!--        <BarOffset value="86"/>-->
+<!--    </CActorUnit>-->
+<!--    <CActorUnit id="ScrinInvader" parent="GenericUnitStandard" unitName="ScrinInvader">-->
+<!--        <DeathArray index="Normal" ModelLink="InterceptorDeath" SoundLink="Interceptor_Explode"/>-->
+<!--        <UnitFlags index="ShowBlobShadow" value="0"/>-->
+<!--        <BarWidth value="36"/>-->
+<!--        <BarOffset value="25"/>-->
+<!--        <UnitIcon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>-->
+<!--        <HeroIcon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>-->
+<!--        <SoundArray index="Birth" value=""/>-->
+<!--        <SoundArray index="Movement" value="InterceptorWeaponBirth"/>-->
+<!--        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>-->
+<!--        <Aliases value="_UnitSmall"/>-->
+<!--        <On Terms="UnitHeightUpdate.*.Land" Send="Create Interceptor_Land"/>-->
+<!--        <On Terms="Behavior.ReleaseInterceptorsTimedLifeWarning.Off" Send="AnimPlay Work Work PlayForever"/>-->
+<!--        <DeathActorModel value="UnitDeathModelWithDeathMotionFlier"/>-->
+<!--        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>-->
+<!--        <Macros value="PhysicsDeathsSwarmAir"/>-->
+<!--        <Macros value="PhysicsDeathsVoidAir"/>-->
+<!--        <DeathCustoms ModelLink="InterceptorDeathRagdoll" Name="RagdollBasic" PhysicsMatchKeysOrdered="BasicAir,Basic">-->
+<!--            <BodySquibs Name="Basic" Model="ProtossTinyRobotSquibDeathRagdoll"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Fire"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Fire"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Acid"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>-->
+<!--        <ModelFlags index="OutlineEmitter" value="1"/>-->
+<!--        <StatusBarFlags index="Shields" value="0"/>-->
+<!--        <StatusBarFlags index="Life" value="0"/>-->
+<!--        <StatusBarFlags index="Energy" value="0"/>-->
+<!--        <StatusBarFlags index="Cargo" value="0"/>-->
+<!--        <StatusBarFlags index="Progress" value="0"/>-->
+<!--        <StatusBarFlags index="Magazine" value="0"/>-->
+<!--        <StatusBarFlags index="Workers" value="0"/>-->
+<!--        <StatusBarFlags index="Custom" value="0"/>-->
+<!--    </CActorUnit>-->
+<!--    <CActorUnit id="ScrinCarrier" parent="GenericUnitStandard" unitName="ScrinCarrier">-->
+<!--        <On Terms="Abil.ScrinCarrierHangar.Launch" Send="AnimPlay Cover Cover 0 0.500000 0.500000 3.000000 AsDuration"/>-->
+<!--        <On Terms="UnitHeightUpdate.*.Land" Send="Create Carrier_Land"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.On" Send="ModelSwap CarrierWarpInStargate"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.On" Send="$Spell"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.On" Send="AnimBaselineStop"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off" Send="ModelSwap Carrier"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off; !UnitWalking" Send="AnimBaselineStart"/>-->
+<!--        <On Terms="Behavior.WarpInEffect.Off; UnitWalking" Send="AnimBracketStart ::Baseline Walk,Start Walk Walk,End"/>-->
+<!--        <On Terms="AnimBracketState.*.AfterOpening; AnimName ::Baseline" Send="AnimBaselineStart"/>-->
+<!--        <Baselines index="Walk" BlendIn="1.5" BlendOut="2"/>-->
+<!--        <PortraitModel value="CarrierPortrait"/>-->
+<!--        <BuildModel value="CarrierWarpIn"/>-->
+<!--        <DeathArray index="Normal" ModelLink="CarrierDeath" SoundLink=""/>-->
+<!--        <AnimBlendTime value="0.75"/>-->
+<!--        <BarWidth value="156"/>-->
+<!--        <BarOffset value="60"/>-->
+<!--        <NameOffset value="110"/>-->
+<!--        <UnitIcon value="Assets\Icons\Scrin\AUPlanetaryAssaultCarrier.dds"/>-->
+<!--        <HeroIcon value="Assets\Icons\Scrin\AUPlanetaryAssaultCarrier.dds"/>-->
+<!--        <WireframeShield>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Carrier-Shield01.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Carrier-Shield02.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Carrier-Shield03.dds"/>-->
+<!--        </WireframeShield>-->
+<!--        <GroupIcon>-->
+<!--            <Image value="Assets\Icons\Scrin\AUPlanetaryAssaultCarrier.dds"/>-->
+<!--        </GroupIcon>-->
+<!--        <Wireframe>-->
+<!--            <Image value="Assets\Icons\Scrin\AUPlanetaryAssaultCarrier.dds"/>-->
+<!--        </Wireframe>-->
+<!--        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>-->
+<!--        <HostSiteOps Ops="SOpBankerCarrier"/>-->
+<!--        <Aliases value="_UnitHuge"/>-->
+<!--        <DeathActorModel value="UnitDeathModelWithDeathMotionFlier"/>-->
+<!--        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>-->
+<!--        <Macros value="PhysicsDeathsSwarmAir"/>-->
+<!--        <Macros value="PhysicsDeathsVoidAir"/>-->
+<!--        <DeathCustoms ActorModel="CarrierDeathRagdoll" ModelLink="CarrierDeathRagdoll" Name="RagdollBasic" PhysicsMatchKeysOrdered="BasicAir,Basic">-->
+<!--            <BodySquibs Name="Basic" Model="ProtossRobotSquibDeathRagdoll"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="FireHeavy"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="FireHeavy"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Acid"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>-->
+<!--        <ModelFlags index="OutlineEmitter" value="1"/>-->
+<!--    </CActorUnit>-->
+
+<!--    <CActorUnit id="ScrinStormrider" parent="GenericUnitBase" unitName="ScrinStormrider">-->
+<!--        <Baselines index="Walk" BlendIn="1.5" BlendOut="2"/>-->
+<!--        <PortraitModel value="PhoenixPortrait"/>-->
+<!--        <BuildModel value="PhoenixWarpIn"/>-->
+<!--        <DeathArray index="Normal" ModelLink="PhoenixDeath" SoundLink="Phoenix_Explode"/>-->
+<!--        <AnimBlendTime value="0.45"/>-->
+<!--        <On Terms="Effect.GravitonBeam.Start; At Source" Send="$Spell PlayForever"/>-->
+<!--        <On Terms="Effect.GravitonBeam.Stop; At Source" Send="AnimClear Spell"/>-->
+<!--        <On Terms="Behavior.Hallucination.On" Send="Create HallucinationBirthSoundMedium"/>-->
+<!--        <On Terms="UnitDeathCustomize; ValidateUnit IsHallucination" Send="DeathCustomize Hallucination"/>-->
+<!--        <On Terms="UnitHeightUpdate.*.Land" Send="Create Phoenix_Land"/>-->
+<!--        <On Terms="Effect.GravitonBeam.Start; At Source" Send="AnimPlay Work Work PlayForever"/>-->
+<!--        <On Terms="Effect.GravitonBeam.Stop; At Source" Send="AnimClear Work"/>-->
+<!--        <On Terms="Behavior.WarpInEffect15.On" Send="ModelSwap PhoenixWarpInStargate"/>-->
+<!--        <On Terms="Behavior.WarpInEffect15.On" Send="$Spell"/>-->
+<!--        <On Terms="Behavior.WarpInEffect15.On" Send="AnimBaselineStop"/>-->
+<!--        <On Terms="Behavior.WarpInEffect15.Off" Send="ModelSwap Phoenix"/>-->
+<!--        <On Terms="Behavior.WarpInEffect15.Off" Send="AnimClear Spell"/>-->
+<!--        <On Terms="Behavior.WarpInEffect15.Off" Send="AnimBaselineStart"/>-->
+<!--        <DeathCustoms ModelLink="HallucinationDeath" SoundLink="Sentry_HallucinationDeathMedium" Name="Hallucination"/>-->
+<!--        <DeathCustoms ActorModel="PhoenixDeathRagdoll" ModelLink="PhoenixDeathRagdoll" Name="RagdollBasic" PhysicsMatchKeysOrdered="BasicAir,Basic">-->
+<!--            <BodySquibs Name="Basic" Model="ProtossTinyRobotSquibDeathRagdoll"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Fire"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Fire"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">-->
+<!--            <BodySquibs Name="Acid"/>-->
+<!--        </DeathCustoms>-->
+<!--        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>-->
+<!--        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>-->
+<!--        <BarOffset value="50"/>-->
+<!--        <NameOffset value="50"/>-->
+<!--        <UnitIcon value="Assets\Icons\Scrin\AUStormRider.dds"/>-->
+<!--        <HeroIcon value="Assets\Icons\Scrin\AUStormRider.dds"/>-->
+<!--        <WireframeShield>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Phoenix-Shield01.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Phoenix-Shield02.dds"/>-->
+<!--            <Image value="Assets\Textures\Wireframe-Protoss-Phoenix-Shield03.dds"/>-->
+<!--        </WireframeShield>-->
+<!--        <GroupIcon>-->
+<!--            <Image value="Assets\Icons\Scrin\AUStormRider.dds"/>-->
+<!--        </GroupIcon>-->
+<!--        <Wireframe>-->
+<!--            <Image value="Assets\Icons\Scrin\AUStormRider.dds"/>-->
+<!--        </Wireframe>-->
+<!--        <AbilSoundArray AbilCmd="GravitonBeam.Execute" Sound="Phoenix_GravitonBeamVO"/>-->
+<!--        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>-->
+<!--        <HostSiteOps Ops="SOpBankerPhoenix"/>-->
+<!--        <Aliases value="_UnitLarge"/>-->
+<!--        <DeathActorModel value="PhoenixDeathModel"/>-->
+<!--        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>-->
+<!--        <Macros value="PhysicsDeathsSwarmAir"/>-->
+<!--        <Macros value="PhysicsDeathsVoidAir"/>-->
+<!--        <ModelFlags index="OutlineEmitter" value="1"/>-->
+<!--        <Remove Terms="Effect.GravitonBeam.Start; At Source" Send="$Spell PlayForever"/>-->
+<!--        <Remove Terms="Effect.GravitonBeam.Stop; At Source" Send="AnimClear Spell"/>-->
+<!--    </CActorUnit>-->
+<!--    <CActorUnit id="ScrinGravityStabilizer" parent="GenericUnitBase" unitName="ScrinGravityStabilizer"/>-->
+</Catalog>

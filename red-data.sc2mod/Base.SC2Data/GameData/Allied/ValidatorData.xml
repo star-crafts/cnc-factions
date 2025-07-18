@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorUnitType id="IsAlliedSpectrumTower">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="AlliedSpectrumTower"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="AlliedSpectralTowerChargingStackVerifierLevel1">
+        <Value value="1"/>
+        <Behavior value="AlliedSpectraltowerchargingbehaviorverificationbehavior"/>
+        <WhichUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="AlliedSpectralTowerChargingStackVerifier2ndFloor">
+        <Value value="2"/>
+        <Behavior value="AlliedSpectraltowerchargingbehaviorverificationbehavior"/>
+        <WhichUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="AlliedSpectralTowerChargingStackVerifier3rdFloor">
+        <Value value="3"/>
+        <Behavior value="AlliedSpectraltowerchargingbehaviorverificationbehavior"/>
+        <WhichUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="AlliedSpectralTowerChargingStackVerifier4thFloor">
+        <Value value="4"/>
+        <Behavior value="AlliedSpectraltowerchargingbehaviorverificationbehavior"/>
+        <WhichUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RATheSpectrumTowerChargingStackValidatorCannotExceed4Layers">
+        <Compare value="LE"/>
+        <Value value="4"/>
+        <Behavior value="AlliedSpectraltowerchargingbehaviorverificationbehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RATheSpectralTowerDetectsThatTheTargetHasAttackChargingBehavior">
+        <Value value="1"/>
+        <Behavior value="AlliedSpectralTowerAttackApplicationDetection"/>
+    </CValidatorUnitCompareBehaviorCount>
+</Catalog>

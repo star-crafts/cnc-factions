@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRace id="Allied">
+        <Icon value="Assets\icons\factions\Allied-color.dds"/>
+        <Flags index="Selectable" value="1"/>
+        <Flags index="TrialAllowed" value="1"/>
+    </CRace>
+</Catalog>

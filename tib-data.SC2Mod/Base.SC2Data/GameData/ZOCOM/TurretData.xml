@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTurret id="ZOCOMArgusLaser">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="225"/>
+        <YawRate value="119.8828"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+</Catalog>

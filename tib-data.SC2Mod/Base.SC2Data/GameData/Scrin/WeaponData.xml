@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy default="1" id="ScrinWeapon">
+        <?token id="icon" value="ScrinInfantryWeapons"?>
+        <EditorCategories value="Race:Scrin"/>
+        <Icon value="Assets\icons\Scrin\##icon##.dds"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinBuzzerHiveWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinPhotonCannonWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinPhotonCannonWeaponU">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinPlasmaMissileBatteryWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinPlasmaMissileBatteryWeaponU">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinStormColumnWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinLightningSpikeWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinBuzzersWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinDisintegratorWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinShockTrooperWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinShockTrooperWeaponU">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinRavagerShards">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinRavagerShardsU">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinGunWalkerShards">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinGunWalkerShardsU">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinSeekerWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinSeekerShards">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinDevourerWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinDevourerWeaponCharged">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinCorrupterWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinMechapedeDisentegrator">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinMechapedeShards">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinMechapedeToxins">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinMechapedeDiscs">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinAnnihilatorWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinReaperWeaponCharged">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinEradicatorWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinStormriderWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinDevastatorWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinInvaderWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinMothershipWeapon">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinInterceptorLaunch">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinEradicatorDisintegrator">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinEradicatorPlasmaDiscLauncher">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinEradicatorTiberiumShardLauncher">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Effect value="##id##CP"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinEradicatorDisintegratorFake">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <DisplayEffect value="ScrinEradicatorDisintegratorDamage"/>
+        <DisplayAttackCount value="2"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinEradicatorPlasmaDiscLauncherFake">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <DisplayEffect value="ScrinEradicatorPlasmaDiscLauncherDamage"/>
+        <DisplayAttackCount value="2"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy parent="ScrinWeapon" id="ScrinEradicatorTiberiumShardLauncherFake">
+        <TargetFilters value="Visible,Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <DisplayEffect value="ScrinEradicatorTiberiumShardLauncherDamage"/>
+        <DisplayAttackCount value="2"/>
+        <Range value="7"/>
+        <Period value="1.85"/>
+    </CWeaponLegacy>
+
+</Catalog>

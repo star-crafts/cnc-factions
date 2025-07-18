@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="CNCCrate" parent="Unit">
+        <Model value="Assets\Units\Neutral\Crate.m3"/>
+    </CModel>
+    <CModel id="TibMineralField" parent="Unit">
+        <Model value="Assets\Buildings\Neutral\TiberiumCell.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/><ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="Visceroid" parent="Unit">
+        <Model value="Assets\Units\Neutral\Visceroid.m3"/>
+        <EditorCategories value="Race:Neut"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.250000"/>
+        <ScaleMax value="1.600000,1.600000,1.600000"/><ScaleMin value="1.600000,1.600000,1.600000"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+    </CModel>
+</Catalog>

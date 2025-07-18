@@ -1,0 +1,1718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit default="1" id="EmpireAir" parent="CNCAir">
+        <Race value="Empire"/>
+        <GlossaryCategory value="Unit/Category/EmpireUnits"/>
+        <HotkeyCategory value="Unit/Category/EmpireUnits"/>
+    </CUnit>
+    <CUnit default="1" id="EmpireStructure" parent="CNCStructure">
+        <Race value="Empire"/>
+        <GlossaryCategory value="Unit/Category/EmpireUnits"/>
+        <HotkeyCategory value="Unit/Category/EmpireUnits"/>
+    </CUnit>
+    <CUnit default="1" id="EmpireMissile" parent="CNCMissile">
+        <Race value="Empire"/>
+    </CUnit>
+    <CUnit default="1" id="EmpireGround" parent="CNCGround">
+        <Race value="Empire"/>
+        <GlossaryCategory value="Unit/Category/EmpireUnits"/>
+        <HotkeyCategory value="Unit/Category/EmpireUnits"/>
+    </CUnit>
+    <CUnit id="EmpireImperialMine" parent="EmpireStructure">
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <ShieldRegenDelay value="20"/>
+        <Sight value="8"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="66.6667"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="20"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="CityTrain"/>
+        <AbilArray Link="RATechnologyCenterResearch4"/>
+        <BehaviorArray Link="JurefinerycreateMiner"/>
+        <BehaviorArray Link="RefineryB"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildTankTrap224" Type="AbilCmd" AbilCmd="CityTrain,Train2" Row="0" Column="0"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="0" Column="4"/>
+            <LayoutButtons Face="RAMinerUpgradeCollectionVolume" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch4,Research21" Row="1" Column="0"/>
+            <LayoutButtons Face="RAMinerUpgradeMiningSpeed1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch4,Research22" Row="1" Column="1"/>
+            <LayoutButtons Face="RAUpgradeCollectionCapacity" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch4,Research26" Row="1" Column="2"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint5x5DropOff2"/>
+        <PlacementFootprint value="Footprint5x5DropOff2"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="2"/>
+    </CUnit>
+    <CUnit id="EmpireWaveTower" parent="EmpireStructure">
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <Sight value="12"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="15"/>
+        <KillXP value="10"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="SovietMotoModeSwhich2322"/>
+        <AbilArray Link="Blink2215"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="UpgradeLevel1222"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam3" Turret="RAPacifierTurret2"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam32" Turret="RAPacifierTurret2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch423" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich2322,On" Row="1" Column="1"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch53" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich2322,Off" Row="1" Column="2"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink2215,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <SubgroupPriority value="3"/>
+    </CUnit>
+    <CUnit id="EmpirePowerPlant" parent="EmpireStructure">
+        <Facing value="29.9926"/>
+        <LifeStart value="1250"/>
+        <LifeMax value="1250"/>
+        <Food value="10"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="35"/>
+        <KillXP value="8"/>
+        <AbilArray Link="attack"/>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="125"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+    </CUnit>
+    <CUnit id="EmpireConstructionYard" parent="EmpireStructure">
+        <Attributes index="Robotic" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <FogVisibility value="Visible"/>
+        <LifeStart value="8000"/>
+        <LifeMax value="8000"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="5"/>
+        <Sight value="25"/>
+        <Food value="20"/>
+        <RepairTime value="100"/>
+        <AttackTargetPriority value="5"/>
+        <AbilArray index="1" Link="que2CancelToSelection"/>
+        <AbilArray Link="CityTrain2"/>
+        <AbilArray Link="Ally"/>
+        <AbilArray Link="RAChooseAirForce"/>
+        <AbilArray Link="RallyCommand"/>
+        <AbilArray Link="SelectShipyards"/>
+        <AbilArray Link="RASelectFactory"/>
+        <AbilArray Link="AucryoShrinBeam2"/>
+        <BehaviorArray Link="CommandCenterQueue"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent44"/>
+        <BehaviorArray Link="AlliedBuildSpeedUPLV19"/>
+        <BehaviorArray Link="AlliedBuildSpeedUPLV192"/>
+        <BehaviorArray Link="AlliedBuildSpeedUPLV193"/>
+        <BehaviorArray Link="AlliedBuildSpeedUPLV194"/>
+        <CardLayouts index="0">
+            <LayoutButtons>
+                <Face value="SovietTowerPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="0002"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="0"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="KraithCrashingCharge2232" Type="AbilCmd" AbilCmd="CityTrain2,Train1" Row="1" Column="0"/>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietArchitecturalPage" Type="Passive" AbilCmd="BuildCity,Build7" Row="0" Column="0"/>
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons Face="BuildBarracks22" Type="AbilCmd" AbilCmd="CityTrain2,Train3" Row="1" Column="1"/>
+            <LayoutButtons Face="KraithCrashingCharge22322" Type="AbilCmd" AbilCmd="CityTrain2,Train2" Row="1" Column="2"/>
+            <LayoutButtons Face="Rally2" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="0" Column="4"/>
+            <LayoutButtons Face="RABuildEmpireWarFactory" Type="AbilCmd" AbilCmd="CityTrain2,Train4" Row="1" Column="3"/>
+            <LayoutButtons Face="RABuildingImperialMechFactoryCore" Type="AbilCmd" AbilCmd="CityTrain2,Train5" Row="1" Column="3"/>
+            <LayoutButtons Face="SovietBuildingRepair" Type="AbilCmd" AbilCmd="AucryoShrinBeam2,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="KraithCrashingCharge22323" Type="AbilCmd" AbilCmd="CityTrain2,Train8" Row="2" Column="3"/>
+            <LayoutButtons Face="BuildRadar2" Type="AbilCmd" AbilCmd="CityTrain2,Train7" Row="2" Column="1"/>
+            <LayoutButtons Face="KraithCrashingCharge223222" Type="AbilCmd" AbilCmd="CityTrain2,Train6" Row="2" Column="2"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="SovietArchitecturalPage" Type="CancelSubmenu" Row="0" Column="0"/>
+            <LayoutButtons Face="SovietTowerPage" Type="Passive" Row="0" Column="1"/>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons Face="SovietBuildingRepair" Type="AbilCmd" AbilCmd="AucryoShrinBeam2,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="BuildStatic105mmArtillery" Type="AbilCmd" AbilCmd="CityTrain2,Train9" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildJBTower" Type="AbilCmd" AbilCmd="CityTrain2,Train11" Row="1" Column="2"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch4232" Type="AbilCmd" AbilCmd="CityTrain2,Train12" Row="2" Column="0"/>
+            <LayoutButtons Face="RABuildPlasmaCore" Type="AbilCmd" AbilCmd="CityTrain2,Train14" Row="2" Column="1"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildCoastalBattery222" Type="AbilCmd" AbilCmd="CityTrain2,Train13" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildCoastalBattery" Type="AbilCmd" AbilCmd="CityTrain2,Train10" Row="1" Column="3"/>
+            <LayoutButtons Face="BuildAntitankBunker" Type="AbilCmd" AbilCmd="CityTrain2,Train17" Row="1" Column="1"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="2" Column="3"/>
+            <LayoutButtons Face="OdinBarrage22422" Type="AbilCmd" AbilCmd="CityTrain2,Train15" Row="2" Column="3"/>
+            <LayoutButtons Face="KraithCrashingCharge223" Type="AbilCmd" AbilCmd="CityTrain2,Train16" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="CommandCenter"/>
+        <TacticalAIThink value="AIThinkCommandCenter"/>
+        <GlossaryPriority value="30"/>
+        <ReviveInfoBase>
+            <Charge Link="CommandCenter/Revive"/>
+            <Cooldown Link="CommandCenter/Revive"/>
+        </ReviveInfoBase>
+        <KillXP value="500"/>
+        <EffectArray index="Death" value="DisbandDeath52"/>
+        <CostResource index="Minerals" value="5000"/>
+    </CUnit>
+    <CUnit id="EmpireBarracks" parent="EmpireStructure">
+        <FlagArray index="KillCredit" value="0"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <Sight value="7"/>
+        <!--Food value="-4"/-->
+        <CostResource index="Minerals" value="500"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="SovietBarracksTrain"/>
+        <AbilArray Link="CityTrain"/>
+        <AbilArray Link="RA3TechLevel"/>
+        <AbilArray Link="heal"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TrainSovietConscript2" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train19" Row="0" Column="0"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry22223" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train9" Row="2" Column="0"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2222332" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train22" Row="2" Column="1"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry222233" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train6" Row="0" Column="1"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry222232" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train21" Row="1" Column="1"/>
+            <LayoutButtons Face="JUTechUnlockT1" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT2" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT3" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT4" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="OdinBarrage223222" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train23" Row="2" Column="3"/>
+            <LayoutButtons Face="TrainCombatEngineer22" Type="AbilCmd" AbilCmd="SovietBarracksTrain,Train24" Row="1" Column="0"/>
+            <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="heal,255" Row="1" Column="4"/>
+        </CardLayouts>
+        <Footprint value="Footprint3x3"/>
+        <MinimapRadius value="1"/>
+        <TacticalAI value=""/>
+        <AIEvaluateAlias value=""/>
+        <Facing value="29.9926"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <BehaviorArray Link="MassProduction222"/>
+        <KillXP value="5"/>
+    </CUnit>
+    <CUnit id="EmpireDfenderVX" parent="EmpireStructure">
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <Sight value="10"/>
+        <!--Food value="-1"/-->
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="40"/>
+        <KillXP value="5"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="VolatileBurstBuilding244"/>
+        <AbilArray Link="Blink2216"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="WraithG2432" Turret="AlliedGrandCannon_Model"/>
+        <WeaponArray Link="VXWeaponGround23" Turret="AlliedGrandCannon_Model"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="TossGrenadeTychus2222254" Type="AbilCmd" AbilCmd="VolatileBurstBuilding244,On" Row="1" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus22222244" Type="AbilCmd" AbilCmd="VolatileBurstBuilding244,Off" Row="1" Column="2"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink2216,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="Bunker"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <HotkeyAlias value="Bunker"/>
+        <AIEvaluateAlias value="Bunker"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireRadar" parent="EmpireStructure">
+        <ReviveType value="Radar_Model"/>
+        <Facing value="315"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeRegenRate value="5"/>
+        <Sight value="24"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="10"/>
+        <KillXP value="10"/>
+        <AbilArray Link="ScannerSweep"/>
+        <BehaviorArray Link="SensorTowerRadar"/>
+        <BehaviorArray Link="UnderConstruction"/>
+        <BehaviorArray Link="Detector8"/>
+        <BehaviorArray Link="Detector12"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="RadarField" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:RA2"/>
+        <TacticalAI value="Radar_Model"/>
+        <LeaderAlias value="Radar_Model"/>
+        <HotkeyAlias value="Radar_Model"/>
+        <SelectAlias value="Radar_Model"/>
+        <SubgroupAlias value="Radar_Model"/>
+        <GlossaryPriority value="314"/>
+        <AIEvaluateAlias value="Radar_Model"/>
+        <ReviveInfoBase>
+            <Charge Link="Radar_Model/Revive"/>
+            <Cooldown Link="Radar_Model/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireNanoSwarm" parent="EmpireStructure">
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="4000"/>
+        <LifeMax value="4000"/>
+        <Sight value="6"/>
+        <!--Food value="-6"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="50"/>
+        <KillXP value="100"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="ScannerSweep"/>
+        <AbilArray Link="EmpireNanoSwarm_Actor"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent4822"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48222"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="IronCurtain5" Type="AbilCmd" AbilCmd="SovietIronCurtain4,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="3"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="12500"/>
+        <ScoreKill value="2500"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="2"/>
+    </CUnit>
+    <CUnit id="EmpirePsionicDecimator" parent="EmpireStructure">
+        <Facing value="330.996"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="4000"/>
+        <LifeMax value="4000"/>
+        <Sight value="6"/>
+        <!--Food value="-8"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="5000"/>
+        <RepairTime value="50"/>
+        <KillXP value="200"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="ScannerSweep"/>
+        <AbilArray Link="OdinNuclearStrike2222"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent482"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="OdinBarrage2242" Type="AbilCmd" AbilCmd="OdinNuclearStrike2222,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="3"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <DeadFootprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="1250000"/>
+        <ScoreKill value="2500"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="3"/>
+    </CUnit>
+    <CUnit id="EmpireImperialNanohost" parent="EmpireStructure">
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeRegenDelay value="30"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="65"/>
+        <AttackTargetPriority value="10"/>
+        <KillXP value="30"/>
+        <AbilArray index="1" Link="que2x3CancelToSelection"/>
+        <AbilArray Link="TechCentreResearch"/>
+        <AbilArray Link="RATechnologyCenterResearch2"/>
+        <AbilArray Link="RATechnologyCenterResearch3"/>
+        <AbilArray Link="RATechnologyCenterResearch5"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="RAUpgradeTankSDamageT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research20" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankSDamageT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research16" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankSDamageT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research23" Row="0" Column="0"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankSDamageT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research17" Row="0" Column="0"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="0" Column="0"/>
+            <LayoutButtons Face="RAAdvancedTechnologyTankTrackImprovement" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research29" Row="0" Column="0"/>
+            <LayoutButtons Face="CommanderNovaUnlockGriffinTransport2232" Type="AbilCmd" AbilCmd="TechCentreResearch,Research4" Row="0" Column="0"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research19" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research28" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research29" Row="0" Column="1"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeTankDefenseT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research30" Row="0" Column="1"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research16" Row="0" Column="2"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research25" Row="0" Column="2"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research26" Row="0" Column="2"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="2"/>
+            <LayoutButtons Face="RAUpgradeMechaAttackLevelT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research27" Row="0" Column="2"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="0" Column="2"/>
+            <LayoutButtons Face="RAAdvancedTechnologyMechaWeaponEnhancement" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research11" Row="0" Column="2"/>
+            <LayoutButtons Face="KraithCrashingCharge2222" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research24" Row="0" Column="2"/>
+            <LayoutButtons Face="RAUpgradeTurretAttackAndDefenseLevelT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research13" Row="2" Column="2"/>
+            <LayoutButtons Face="RAUpgradeTurretAttackAndDefenseLevelT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research13" Row="2" Column="2"/>
+            <LayoutButtons Face="RAUpgradeTurretAttackAndDefenseLevelT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research14" Row="2" Column="2"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="2" Column="2"/>
+            <LayoutButtons Face="RAUpgradeTurretAttackAndDefenseLevelT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research15" Row="2" Column="2"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="2" Column="2"/>
+            <LayoutButtons Face="RAAdvancedTechnologySimpleArchitecture" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research2" Row="2" Column="2"/>
+            <LayoutButtons Face="RAFinalTechnologyUnlimitedNuclearWeapons" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research22" Row="2" Column="2"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que2x3CancelToSelection,CancelLast" Row="0" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research7" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research15" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research18" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research21" Row="1" Column="4"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research5" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research22" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research23" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArmorOfMechaT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research24" Row="1" Column="2"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research3" Row="1" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research7" Row="1" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research8" Row="1" Column="3"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="1" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryDamageT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research9" Row="1" Column="3"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="1" Column="3"/>
+            <LayoutButtons Face="RAAdvancedTechnologyArtilleryModernizationAndUpgrading" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research4" Row="1" Column="3"/>
+            <LayoutButtons Face="RAFinalTechnologyUnlimitedArtillery" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research10" Row="1" Column="3"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry222" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research15" Row="2" Column="0"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry2222" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research10" Row="2" Column="0"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry2223" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research11" Row="2" Column="0"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="2" Column="0"/>
+            <LayoutButtons Face="TechnologySpecializedInfantry2224" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research12" Row="2" Column="0"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="2" Column="0"/>
+            <LayoutButtons Face="RAAdvancedTechnologyFastTraining" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research30" Row="2" Column="0"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research6" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research4" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research5" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeArtilleryArmorT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research6" Row="2" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research17" Row="0" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research20" Row="0" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research19" Row="0" Column="3"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="3"/>
+            <LayoutButtons Face="RAUpgradeRocketAndMissileDamageT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research14" Row="0" Column="3"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="0" Column="3"/>
+            <LayoutButtons Face="RAAdvancedTechnologyAdvancedRocketAndMissileGuidanceSystem" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research1" Row="0" Column="3"/>
+            <LayoutButtons Face="RAFinalTechnologyAlternativeNuclearWeapons" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research2" Row="0" Column="3"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research18" Row="1" Column="0"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research16" Row="1" Column="0"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research17" Row="1" Column="0"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="1" Column="0"/>
+            <LayoutButtons Face="RAUpgradeAirForceAttackAndDefenseT4" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch5,Research18" Row="1" Column="0"/>
+            <LayoutButtons Face="buttonlocked2222232" Type="Passive" Requirements="UnlockTechRequirement2223" Row="1" Column="0"/>
+            <LayoutButtons Face="RAAdvancedTechnologyAdvancedAeronautics" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research28" Row="1" Column="0"/>
+            <LayoutButtons Face="RAFinalTechnologyAirForceFutureTechnologyLicense" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch2,Research9" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <ReviveInfoBase>
+            <Charge Link="Armory/Revive"/>
+            <Cooldown Link="Armory/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireWarFactory" parent="EmpireStructure">
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <Sight value="8"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="50"/>
+        <RepairTime value="60"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="WarFactoryTrain"/>
+        <AbilArray Link="WarFactoryTrain2"/>
+        <AbilArray Link="Disband22"/>
+        <AbilArray Link="BuildCity"/>
+        <AbilArray Link="RA3TechLevel"/>
+        <AbilArray Link="NanoRepair"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="KraithCrashingCharge22" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train12" Row="0" Column="1"/>
+            <LayoutButtons Face="EmpireBuildWaveForceArtillery" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train3" Row="1" Column="1"/>
+            <LayoutButtons Face="Disband4" Type="AbilCmd" AbilCmd="Disband22,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="KraithCrashingCharge224" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train18" Row="0" Column="2"/>
+            <LayoutButtons Face="EmpireBuildSuddenFav" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train7" Row="0" Column="0"/>
+            <LayoutButtons Face="EmpireBuildRazorTank" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train5" Row="1" Column="0"/>
+            <LayoutButtons Face="EmpireBuildTsunamiTank" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train2" Row="2" Column="0"/>
+            <LayoutButtons Face="JUTechUnlockT1" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT2" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT3" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT4" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="NanoRepair,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="buildzibaokache" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train25" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="Factory"/>
+        <ReviveInfoBase>
+            <Charge Link="Factory/Revive"/>
+            <Cooldown Link="Factory/Revive"/>
+        </ReviveInfoBase>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <KillXP value="20"/>
+    </CUnit>
+    <CUnit id="EmpireWaveenergythreeguns" parent="EmpireStructure">
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <LifeStart value="6000"/>
+        <LifeMax value="6000"/>
+        <Sight value="20"/>
+        <!--Food value="-4"/-->
+        <CostResource index="Minerals" value="4000"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="30"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink2"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <WeaponArray Link="ParticleBeam222" Turret="AlliedBankGun_Model"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink2,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <ScoreMake value="50000"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+    </CUnit>
+    <CUnit id="EmpireMechFactory" parent="EmpireStructure">
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <Sight value="6"/>
+        <CostResource index="Minerals" value="50"/>
+        <RepairTime value="60"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="WarFactoryTrain"/>
+        <AbilArray Link="WarFactoryTrain2"/>
+        <AbilArray Link="Disband22"/>
+        <AbilArray Link="BuildCity"/>
+        <AbilArray Link="RA3TechLevel"/>
+        <AbilArray Link="NanoRepair"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="EmpireBuildSteelRonin" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train4" Row="0" Column="1"/>
+            <LayoutButtons Face="EmpireGF222" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train13" Row="1" Column="1"/>
+            <LayoutButtons Face="Disband4" Type="AbilCmd" AbilCmd="Disband22,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="EmpireBuildHoverMecha" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train6" Row="0" Column="0"/>
+            <LayoutButtons Face="EmpireBuildTengu" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train21" Row="1" Column="0"/>
+            <LayoutButtons Face="AssaultMode222" Type="AbilCmd" AbilCmd="WarFactoryTrain2,Train5" Row="2" Column="0"/>
+            <LayoutButtons Face="JUTechUnlockT1" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT2" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT3" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="JUTechUnlockT4" Type="AbilCmd" AbilCmd="RA3TechLevel,255" Row="0" Column="4"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="NanoRepair,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="EmpireBuildKingOniX" Type="AbilCmd" AbilCmd="WarFactoryTrain,Train24" Row="0" Column="2"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="Factory"/>
+        <TechAliasArray value="Alias_Factory"/>
+        <GlossaryPriority value="322"/>
+        <TechTreeProducedUnitArray value="Hellion"/>
+        <TechTreeProducedUnitArray value="SiegeTank"/>
+        <TechTreeProducedUnitArray value="Thor"/>
+        <TechTreeProducedUnitArray value="RocketSPA_Model"/>
+        <ReviveInfoBase>
+            <Charge Link="Factory/Revive"/>
+            <Cooldown Link="Factory/Revive"/>
+        </ReviveInfoBase>
+        <!--Food value="-5"/-->
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <KillXP value="20"/>
+    </CUnit>
+    <CUnit id="EmpireRocketAngel" parent="EmpireAir">
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="15"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2.6015"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="12"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="900"/>
+        <RepairTime value="20"/>
+        <KillXP value="10"/>
+        <AbilArray Link="SovietMotoModeSwhich52"/>
+        <AbilArray Link="RocketAngelSpell"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="RATheUnitItselfTakesDamageWhenAttackingAnEnemyButItAlsoGainsHigherHealing1"/>
+        <WeaponArray Link="VXWeaponGround5"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam23"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus222227532" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich52,On" Row="1" Column="1"/>
+            <LayoutButtons Face="TossGrenadeTychus2222275322" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich52,Off" Row="1" Column="2"/>
+            <LayoutButtons Face="TossGrenadeTychus2222275324" Type="AbilCmd" AbilCmd="RocketAngelSpell,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="7"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Reaper"/>
+        <AIEvalFactor value="1.5"/>
+        <GlossaryPriority value="50"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireTengoMechaJetMode" parent="EmpireAir">
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <PushPriority value="5"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="560"/>
+        <LifeMax value="560"/>
+        <LifeArmor value="1"/>
+        <Speed value="5"/>
+        <Acceleration value="4.625"/>
+        <Sight value="10"/>
+        <Food value="-0.5"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="41.6667"/>
+        <KillXP value="2"/>
+        <AbilArray Link="AssaultMode3"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent50"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <WeaponArray Link="WraithG22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AssaultMode2" Type="AbilCmd" AbilCmd="AssaultMode3,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreMake value="225"/>
+        <ScoreKill value="225"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkVikingFighter"/>
+        <HotkeyAlias value="EmpireTengoMechaMechaMode"/>
+        <SelectAlias value="EmpireTengoMechaMechaMode"/>
+    </CUnit>
+    <CUnit id="EmpireVXFighter" parent="EmpireAir">
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="650"/>
+        <LifeMax value="650"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.5"/>
+        <Acceleration value="4.625"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="41.6667"/>
+        <KillXP value="4"/>
+        <AbilArray Link="AssaultMode32"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent5022"/>
+        <WeaponArray Link="VXWeaponGround"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AssaultMode22" Type="AbilCmd" AbilCmd="AssaultMode32,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.5625"/>
+        <SeparationRadius value="0.5625"/>
+        <ScoreMake value="225"/>
+        <ScoreKill value="225"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkVikingFighter"/>
+        <SelectAlias value="EmpireStrikerVX"/>
+        <TechAliasArray value="Alias_Viking"/>
+        <GlossaryPriority value="150"/>
+        <GlossaryStrongArray value="Battlecruiser"/>
+        <GlossaryStrongArray value="Corruptor"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="Mutalisk"/>
+        <GlossaryWeakArray value="Stalker"/>
+    </CUnit>
+    <CUnit id="EmpireGFFighter" parent="EmpireAir">
+        <Subtitle value="UnitSubtitle/chaojiyaosai2"/>
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="7500"/>
+        <LifeMax value="7500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="10"/>
+        <LifeDamageLeech index="Spell" value="0.5"/>
+        <LifeDamageLeech index="Melee" value="0.5"/>
+        <LifeDamageLeech index="Ranged" value="0.5"/>
+        <LifeDamageLeech index="Splash" value="0.5"/>
+        <LifeDamageLeech index="NoProc" value="0.5"/>
+        <Speed value="1"/>
+        <Acceleration value="2.625"/>
+        <Deceleration value="2"/>
+        <StationaryTurningRate value="90"/>
+        <TurningRate value="90"/>
+        <Sight value="14"/>
+        <Food value="-6"/>
+        <CostResource index="Minerals" value="6300"/>
+        <RepairTime value="10"/>
+        <KillXP value="30"/>
+        <AbilArray Link="AssaultMode2"/>
+        <AbilArray Link="FighterMode2"/>
+        <BehaviorArray Link="UpgradeLevel12326"/>
+        <BehaviorArray Link="RADetector9"/>
+        <WeaponArray Link="75mmATT23"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="WreckingCrewAssaultMode2" Type="AbilCmd" AbilCmd="AssaultMode2,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="2"/>
+        <SeparationRadius value="2"/>
+        <InnerRadius value="2"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="WreckingCrewFighter"/>
+        <TacticalAIThink value="AIThinkVikingFighter"/>
+        <SelectAlias value="EmpireGigaFortressGrounded"/>
+        <TechAliasArray value="Alias_Viking"/>
+        <GlossaryPriority value="202"/>
+        <GlossaryStrongArray value="Battlecruiser"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryStrongArray value="Carrier"/>
+        <GlossaryWeakArray value="Hydralisk"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="Stalker"/>
+    </CUnit>
+    <CUnit id="EmpireMiniFortressAirMode" parent="EmpireAir">
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="80000"/>
+        <LifeMax value="80000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="10000"/>
+        <Speed value="7"/>
+        <Acceleration value="2.625"/>
+        <Deceleration value="2"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="10"/>
+        <CostResource index="Minerals" value="63000"/>
+        <RepairTime value="10"/>
+        <KillXP value="30"/>
+        <AbilArray Link="AssaultMode22"/>
+        <AbilArray Link="FighterMode2"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent162"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent1622"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="WreckingCrewAssaultMode2" Type="AbilCmd" AbilCmd="AssaultMode22,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="2"/>
+        <SeparationRadius value="2"/>
+        <InnerRadius value="2"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="WreckingCrewFighter"/>
+        <TacticalAIThink value="AIThinkVikingFighter"/>
+        <SelectAlias value="EmpireGigaFortressGrounded"/>
+        <TechAliasArray value="Alias_Viking"/>
+        <GlossaryPriority value="202"/>
+        <GlossaryStrongArray value="Battlecruiser"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryStrongArray value="Carrier"/>
+        <GlossaryWeakArray value="Hydralisk"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="Stalker"/>
+    </CUnit>
+    <CUnit id="EmpireTankKiller" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <PushPriority value="5"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="900"/>
+        <LifeMax value="900"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranEmpireTankKillerArmor"/>
+        <Speed value="1.5"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="300"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <WeaponArray Link="ParticleBeam523"/>
+        <CardLayouts/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="25"/>
+        <MinimapRadius value="0.3"/>
+        <GlossaryPriority value="70"/>
+    </CUnit>
+    <CUnit id="EmpireShinobi" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/zhencha"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranEmpireShinobiArmor"/>
+        <Speed value="2.5"/>
+        <LateralAcceleration value="46.0625"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="10"/>
+        <AbilArray Link="RANinjaTurnsOnSmokeBomb"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <WeaponArray Link="50mmATT23"/>
+        <WeaponArray Link="SwannMelee2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="JUNinjaSpell" Type="AbilCmd" AbilCmd="RANinjaTurnsOnSmokeBomb,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="25"/>
+        <MinimapRadius value="0.3"/>
+        <GlossaryPriority value="70"/>
+    </CUnit>
+    <CUnit id="EmpireYurikoOmega" parent="EmpireGround">
+        <Description value="Button/Tooltip/JuYurico"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="5000"/>
+        <LifeMax value="5000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Mover value="Colossus22"/>
+        <Speed value="2.8007"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="719.2968"/>
+        <TurningRate value="719.2968"/>
+        <Sight value="10"/>
+        <Food value="-50"/>
+        <CostResource index="Minerals" value="6000"/>
+        <RepairTime value="20"/>
+        <KillXP value="40"/>
+        <AbilArray Link="ScannerSweep"/>
+        <AbilArray Link="RATechnologyCenterResearch3"/>
+        <AbilArray Link="ZHybridPsionicShockwave2"/>
+        <AbilArray Link="ImmortalOverload2"/>
+        <BehaviorArray Link="Detector8"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent52"/>
+        <BehaviorArray Link="RAComprehensiveCapabilitiesGreatlyImproved2"/>
+        <BehaviorArray Link="UpgradeLevel123222"/>
+        <WeaponArray Link="ArtanisMeleeVoidUlnar23"/>
+        <WeaponArray Link="ArtanisMeleeVoidUlnar232"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="PsionicShockwave" Type="AbilCmd" AbilCmd="ZHybridPsionicShockwave2,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="ImmortalOverload2" Type="AbilCmd" AbilCmd="ImmortalOverload2,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="RestoreShields2" Type="Passive" Row="2" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research21" Row="0" Column="1"/>
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research11" Row="0" Column="1"/>
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research12" Row="0" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <InnerRadius value="0.5"/>
+        <ScoreMake value="500000"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="100"/>
+        <TacticalAI value="Marine"/>
+        <AIEvaluateAlias value="Marine"/>
+    </CUnit>
+    <CUnit id="EmpireImperialEngineer" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/gbing"/>
+        <PushPriority value="5"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranEmpireImperialEngineerArmor"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="500"/>
+        <AttackTargetPriority value="5"/>
+        <KillXP value="30"/>
+        <AbilArray Link="BuildingCapture2"/>
+        <AbilArray Link="BuildingCapture"/>
+        <AbilArray Link="zhukefuxingfenji2"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="EngineerCapture" Type="AbilCmd" AbilCmd="BuildingCapture,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="EngineerCapture3" Type="AbilCmd" AbilCmd="BuildingCapture2,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Stim2" Type="AbilCmd" AbilCmd="zhukefuxingfenji2,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.3"/>
+    </CUnit>
+    <CUnit id="EmpireImperialOreMiner" parent="EmpireGround">
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="11"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="50"/>
+        <AttackTargetPriority value="1"/>
+        <KillXP value="50"/>
+        <AbilArray Link="SCVHarvest2"/>
+        <AbilArray Link="VolatileBurstBuilding2"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent63"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="WraithG244" Turret="SiegeTank"/>
+        <WeaponArray Link="nianyalv1"/>
+        <EffectArray index="Create" value="oreminerSearch"/>
+        <EffectArray index="Birth" value="oreminerSearch"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="SCVHarvest2,Gather" Row="1" Column="0"/>
+            <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest2,Return" Row="1" Column="1"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="TossGrenadeTychus222222" Type="AbilCmd" AbilCmd="VolatileBurstBuilding2,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus22222" Type="AbilCmd" AbilCmd="VolatileBurstBuilding2,On" Row="2" Column="1"/>
+            <LayoutButtons Face="RASingleMaximumCarryingCapacity" Type="Passive" Row="1" Column="2"/>
+        </CardLayouts>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="700"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.875"/>
+    </CUnit>
+    <CUnit id="EmpireSuddenFav" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/zhencha"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="550"/>
+        <LifeMax value="550"/>
+        <Speed value="3.5"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="500"/>
+        <RepairTime value="45"/>
+        <KillXP value="2"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="WraithG24" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireGhostKingK" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/xianjinfantankepao"/>
+        <FogVisibility value="Dimmed"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="3500"/>
+        <LifeMax value="3500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <LifeArmorName value="Unit/LifeArmorName/ProtossArmor"/>
+        <Mover value="Colossus22"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="12"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="2000"/>
+        <KillXP value="25"/>
+        <AbilArray Link="Warpable"/>
+        <AbilArray Link="ProgressRally"/>
+        <AbilArray Link="KraithCrashingCharge22"/>
+        <BehaviorArray Link="Detector10"/>
+        <BehaviorArray Link="UpgradeLevel123"/>
+        <BehaviorArray Link="nianayaLevel13"/>
+        <WeaponArray Link="ParticleBeam23" Turret="RAGhostKingWeapon2"/>
+        <WeaponArray Link="JavelinMissileLaunchers222" Turret="RAGhostKingWeapon2"/>
+        <WeaponArray Link="nianyalv13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="KraithCrashingCharge23" Type="AbilCmd" AbilCmd="KraithCrashingCharge22,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="10000"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="20"/>
+        <MinimapRadius value="0.375"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireGhostKing" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/xianjinfantankepao"/>
+        <FogVisibility value="Dimmed"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="2"/>
+        <LifeArmorName value="Unit/LifeArmorName/ProtossArmor"/>
+        <Mover value="Colossus22"/>
+        <Speed value="2.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="12"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="2000"/>
+        <KillXP value="10"/>
+        <AbilArray Link="Warpable"/>
+        <AbilArray Link="ProgressRally"/>
+        <AbilArray Link="KraithCrashingCharge"/>
+        <BehaviorArray Link="Detector10"/>
+        <BehaviorArray Link="UpgradeLevel123"/>
+        <BehaviorArray Link="nianayaLevel13"/>
+        <WeaponArray Link="ParticleBeam22" Turret="RAGhostKingWeapon2"/>
+        <WeaponArray Link="nianyalv13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="KraithCrashingCharge2" Type="AbilCmd" AbilCmd="KraithCrashingCharge,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="19"/>
+        <MinimapRadius value="0.375"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireTsunamiTank" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="770"/>
+        <LifeMax value="770"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.3007"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <AbilArray Link="RATsunamiTankActivatesNanoDeflectionShield"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="50mmCannon2" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus22222323" Type="AbilCmd" AbilCmd="RATsunamiTankActivatesNanoDeflectionShield,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4"/>
+        <InnerRadius value="0.3125"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireSteelRonin" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/xianjinfantankepao"/>
+        <FogVisibility value="Dimmed"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/ProtossArmor"/>
+        <Mover value="Colossus22"/>
+        <Speed value="2.5"/>
+        <LateralAcceleration value="46.0625"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1600"/>
+        <KillXP value="10"/>
+        <AbilArray Link="Warpable"/>
+        <AbilArray Link="ProgressRally"/>
+        <AbilArray Link="RAOnimuShockWave"/>
+        <BehaviorArray Link="Detector10"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent1624"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="ArtanisMeleeVoidUlnar24"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="KraithCrashingCharge24" Type="AbilCmd" AbilCmd="RAOnimuShockWave,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="20"/>
+        <MinimapRadius value="0.375"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireWarrior" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/jiqiang"/>
+        <PushPriority value="5"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="5"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="150"/>
+        <RepairTime value="20"/>
+        <KillXP value="1"/>
+        <AbilArray Link="RAEmpireAntiInfantryInfantryBonzai"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <WeaponArray Link="MosinNagant2"/>
+        <WeaponArray Link="ArtanisMeleeVoidUlnar22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus22222322" Type="AbilCmd" AbilCmd="RAEmpireAntiInfantryInfantryBonzai,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="DarkTemplarNobleSacrifice" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <MinimapRadius value="0.3"/>
+    </CUnit>
+    <CUnit id="EmpireRazorTank" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1350"/>
+        <LifeMax value="1350"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="6"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="700"/>
+        <RepairTime value="45"/>
+        <AttackTargetPriority value="15"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich23222"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="VXWeaponGround22" Turret="SiegeTank"/>
+        <WeaponArray Link="VXWeaponGround222" Turret="SiegeTank"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AlliedJavaModeSwitch52" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich23222,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch422" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich23222,On" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireHoverMecha" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="450"/>
+        <LifeMax value="450"/>
+        <LifeArmor value="1"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="6"/>
+        <Food value="-0.5"/>
+        <CostResource index="Minerals" value="200"/>
+        <RepairTime value="45"/>
+        <AttackTargetPriority value="15"/>
+        <KillXP value="2"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="VXWeaponGround223"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts/>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireWaveForceArtillery" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="16"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="1"/>
+        <Speed value="1"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="540"/>
+        <TurningRate value="540"/>
+        <Sight value="14"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1800"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <AbilArray Link="SovietMotoModeSwhich2322"/>
+        <BehaviorArray Link="UpgradeLevel1222"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam3" Turret="RAPacifierTurret2"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam32" Turret="RAPacifierTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AlliedJavaModeSwitch5" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich2322,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="AlliedJavaModeSwitch42" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich2322,On" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.6875"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="EmpireTengoMechaMechaMode" parent="EmpireGround">
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="560"/>
+        <LifeMax value="560"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranShipPlating"/>
+        <Speed value="2.5"/>
+        <Sight value="10"/>
+        <Food value="-0.5"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="41.6667"/>
+        <KillXP value="2"/>
+        <AbilArray Link="FighterMode3"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <WeaponArray Link="WraithG2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="FighterMode2" Type="AbilCmd" AbilCmd="FighterMode3,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <ScoreKill value="225"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkVikingAssault"/>
+        <GlossaryPriority value="155"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="15"/>
+            <ChanceArray index="Idle" value="55"/>
+            <ChanceArray index="Turn" value="30"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireStrikerVX" parent="EmpireGround">
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="650"/>
+        <LifeMax value="650"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranShipPlating"/>
+        <Speed value="2"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="41.6667"/>
+        <KillXP value="4"/>
+        <AbilArray Link="FighterMode32"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent502"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <WeaponArray Link="VXWeaponGround2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="FighterMode22" Type="AbilCmd" AbilCmd="FighterMode32,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.5625"/>
+        <SeparationRadius value="0.5625"/>
+        <InnerRadius value="0.375"/>
+        <ScoreKill value="225"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkVikingAssault"/>
+        <TechAliasArray value="Alias_Viking"/>
+        <GlossaryPriority value="155"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="15"/>
+            <ChanceArray index="Idle" value="55"/>
+            <ChanceArray index="Turn" value="30"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireGigaFortressGrounded" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/chaojiyaosai"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="7500"/>
+        <LifeMax value="7500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="10"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranShipPlating"/>
+        <Mover value="Colossus22"/>
+        <Speed value="0.8007"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="14"/>
+        <Food value="-6"/>
+        <CostResource index="Minerals" value="6300"/>
+        <RepairTime value="10"/>
+        <KillXP value="30"/>
+        <AbilArray Link="FighterMode2"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="AssaultMode2"/>
+        <BehaviorArray Link="UpgradeLevel12326"/>
+        <BehaviorArray Link="RADetector9"/>
+        <WeaponArray Link="RAParticleFragmentationCannon" Turret="RASuperFortressParticleCannon12"/>
+        <WeaponArray Link="RAParticleDisintegrationCannon2" Turret="RASuperFortressParticleCannon22"/>
+        <WeaponArray Link="RAParticleDisintegrationCannon3" Turret="RASuperFortressParticleCannon32"/>
+        <WeaponArray Link="RAParticleDisintegrationCannon4" Turret="RASuperFortressParticleCannon42"/>
+        <WeaponArray Link="90mmCannons23"/>
+        <WeaponArray Link="90mmCannons232"/>
+        <WeaponArray Link="90mmCannons2322"/>
+        <WeaponArray Link="90mmCannons23222"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="LiberatorAAMode2" Type="AbilCmd" AbilCmd="FighterMode2,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="WreckingCrewAssault"/>
+        <TacticalAIThink value="AIThinkVikingAssault"/>
+        <TechAliasArray value="Alias_Viking"/>
+        <GlossaryPriority value="203"/>
+        <GlossaryStrongArray value="Reaper"/>
+        <GlossaryWeakArray value="Hydralisk"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="Stalker"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="15"/>
+            <ChanceArray index="Idle" value="55"/>
+            <ChanceArray index="Turn" value="30"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireMiniFortressSeaMode" parent="EmpireGround">
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="80000"/>
+        <LifeMax value="80000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="10000"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranShipPlating"/>
+        <Speed value="7"/>
+        <Acceleration value="2.625"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="10"/>
+        <CostResource index="Minerals" value="63000"/>
+        <BuildTime value="20"/>
+        <RepairTime value="10"/>
+        <KillXP value="30"/>
+        <AbilArray Link="FighterMode22"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="AssaultMode2"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent162"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent1622"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="LiberatorAAMode2" Type="AbilCmd" AbilCmd="FighterMode22,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.375"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="1"/>
+        <Footprint value="FootprintSieged"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="WreckingCrewAssault"/>
+        <TacticalAIThink value="AIThinkVikingAssault"/>
+        <TechAliasArray value="Alias_Viking"/>
+        <GlossaryPriority value="203"/>
+        <GlossaryStrongArray value="Reaper"/>
+        <GlossaryWeakArray value="Hydralisk"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="Stalker"/>
+        <GlossaryAlias value="EmpireGigaFortressGrounded"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="15"/>
+            <ChanceArray index="Idle" value="55"/>
+            <ChanceArray index="Turn" value="30"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireKingOniX" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/xianjinfantankepao"/>
+        <FogVisibility value="Dimmed"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="4500"/>
+        <LifeMax value="4500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="5"/>
+        <LifeArmorName value="Unit/LifeArmorName/ProtossArmor"/>
+        <Mover value="Colossus22"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="14"/>
+        <Food value="-5"/>
+        <CostResource index="Minerals" value="4500"/>
+        <KillXP value="25"/>
+        <AbilArray Link="Warpable"/>
+        <AbilArray Link="ProgressRally"/>
+        <AbilArray Link="KraithCrashingCharge2"/>
+        <BehaviorArray Link="Detector10"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="GDIMammothCrushLevel4"/>
+        <WeaponArray Link="ParticleBeam2" Turret="RAGhostKingWeapon2"/>
+        <WeaponArray Link="RARoller4"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="KraithCrashingCharge23" Type="AbilCmd" AbilCmd="KraithCrashingCharge2,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="KraithCrashingCharge232" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="10000"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="20"/>
+        <MinimapRadius value="0.375"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+    </CUnit>
+    <CUnit id="EmpireArcherMaiden" parent="EmpireGround">
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <Description value="Button/Tooltip/JuArrow"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="950"/>
+        <LifeMax value="950"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranEmpireArcherMaidenArmor"/>
+        <Speed value="1.6992"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="8"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="500"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich524"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel127"/>
+        <WeaponArray Link="50mmATT2"/>
+        <WeaponArray Link="50mmATT22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus22222265222" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich524,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus2222226522" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich524,On" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="25"/>
+        <MinimapRadius value="0.3"/>
+    </CUnit>
+    <CUnit default="1" id="EmpireCore" parent="EmpireGround">
+        <?token id="build"?>
+        <FlagArray index="Worker" value="1"/>
+        <Collide index="Small" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Flee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Robotic" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="1.8007"/>
+        <Acceleration value="1"/>
+        <Deceleration value="500"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="8"/>
+        <Food value="-8"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="5000"/>
+        <RepairTime value="16.667"/>
+        <AIOverideTargetPriority value="10"/>
+        <KillXP value="10"/>
+        <AbilArray Link="RAunpackGigaFortress"/>
+        <BehaviorArray Link="NanocoreSpeedUp"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="WreckingCrewAssaultMode222" Type="AbilCmd" AbilCmd="RAunpackGigaFortress,build##build##" Row="1" Column="1"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <ScoreMake value="60000"/>
+        <ScoreKill value="6000"/>
+        <SubgroupPriority value="6"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAIThink value="AIThinkSCV"/>
+        <GlossaryPriority value="10"/>
+    </CUnit>
+    <CUnit id="EmpireNanoSwarmCore" parent="EmpireCore" build="21"/>
+    <CUnit id="EmpirePowerPlantCore" parent="EmpireCore" build="22"/>
+    <CUnit id="EmpireRefineryCore" parent="EmpireCore" build="23"/>
+    <CUnit id="EmpireDojoCore" parent="EmpireCore" build="24"/>
+    <CUnit id="EmpireWarFactoryCore" parent="EmpireCore" build="25"/>
+    <CUnit id="EmpireMechFactoryCore" parent="EmpireCore" build="26"/>
+    <CUnit id="EmpireNanoHostCore" parent="EmpireCore" build="27"/>
+    <CUnit id="EmpireRadarCore" parent="EmpireCore" build="28"/>
+    <CUnit id="EmpireAntitankbunkercore" parent="EmpireCore" build="5"/>
+    <CUnit id="EmpireType92InfantrysupportgunCore" parent="EmpireCore" build="30"/>
+    <CUnit id="EmpireDefenderCore" parent="EmpireCore" build="7"/>
+    <CUnit id="EmpireHeavyGunCore" parent="EmpireCore" build="1"/>
+    <CUnit id="EmpireTowerCore" parent="EmpireCore" build="2"/>
+    <CUnit id="EmpireWaveEnergyThreeGunCores" parent="EmpireCore" build="4"/>
+    <CUnit id="EmpirePlasmaCore" parent="EmpireCore" build="3"/>
+    <CUnit id="EmpireNuclearPowerPlantCore" parent="EmpireCore" build="29"/>
+    <CUnit id="EmpirePowerPlantCore_Model" parent="EmpireCore" build="18"/>
+    <CUnit id="EmpireGigaFortressCore" parent="EmpireCore" build="6"/>
+</Catalog>

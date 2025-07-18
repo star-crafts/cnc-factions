@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade default="1" id="CABAL">
+        <?token id="icon" value="CABALUpgradeArachnophobiaUpgrade"?>
+        <EditorCategories value="Race:CABAL,UpgradeType:SpellResearch"/>
+        <Icon value="Assets\Icons\CABAL\##icon##.dds"/>
+        <Race value="CABAL"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="TacticalChargeDevice" icon="DarkArmamentsUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-superscience.dds"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALWidowLongerons" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Unit,CABALWidow,LifeMax" Value="120"/>
+        <EffectArray Reference="Unit,CABALWidow,LifeStart" Value="120"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALSurvivorBug" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Unit,CABALSpider,LifeMax" Value="20"/>
+        <EffectArray Reference="Unit,CABALSpider,LifeStart" Value="20"/>
+        <EffectArray Reference="Unit,CABALTyrant,LifeMax" Value="25"/>
+        <EffectArray Reference="Unit,CABALTyrant,LifeStart" Value="25"/>
+        <EffectArray Reference="Unit,CABALTyrantBurrow,LifeMax" Value="25"/>
+        <EffectArray Reference="Unit,CABALTyrantBurrow,LifeStart" Value="25"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALDevoutUpgradeGuardianGroup">
+        <Icon value="Assets\Textures\btn-upgrade-karax-anionpulsecrystals.dds"/>
+        <EffectArray Reference="Unit,CABALDevout,LifeStart" Value="15"/>
+        <EffectArray Reference="Unit,CABALDevout,LifeMax" Value="15"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALLeviathanWeaponSystem" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Effect,LeviathanLiquidTibCreatePersistent,PeriodCount" Value="10"/>
+        <EffectArray Reference="Effect,NodLaserCannonDamage,Amount" Value="20"/>
+        <EffectArray Reference="Effect,PulseCannonDamageNod,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile1,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile2,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile3,Range" Value="1"/>
+        <EffectArray Reference="Weapon,NodLaserCannon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALInterceptorBeam,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALInterceptorLaunch,Range" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALWidowReconstitutionStructure" icon="DarkArmamentsUpgrade">
+        <Icon value="Assets\Textures\btn-ability-protoss-carrierrepairdrones.dds"/>
+        <EffectArray Reference="Unit,CABALWidowWreckage,LifeMax" Value="300"/>
+        <EffectArray Reference="Unit,CABALWidowWreckage,LifeStart" Value="300"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALFlameMine" icon="DarkArmamentsUpgrade">
+        <LeaderAlias value="CABALFlameZone"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="AirStealthUpgrade" icon="CloakModuleUpgrade"/>
+    <CUpgrade parent="CABAL" id="BikeSpeed">
+        <EffectArray Reference="Unit,CABALBike,Speed" Value="0.250000"/>
+        <EffectArray Reference="Unit,NodRaider,Speed" Value="0.250000"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALBikeWeapon,AllowedMovement" Value="Moving"/>
+        <EffectArray Reference="Weapon,NodRaiderMachinegun,Range" Value="1"/>
+        <AffectedUnitArray value="CABALBike"/>
+        <AffectedUnitArray value="NodRaider"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="BirthObelisk"/>
+    <CUpgrade parent="CABAL" id="BuildTurret"/>
+    <CUpgrade parent="CABAL" id="COmmandoUpgrade"/>
+    <CUpgrade parent="CABAL" id="CarryallCapacity">
+        <EffectArray Reference="Abil,SpecOpsDropshipTransport,TotalCargoSpace" Value="8"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="ChemicalPlantUpgrade">
+        <EffectArray Operation="Set" Reference="Abil,NodBuild,InfoArray[Train5].Button.Requirements" Value="NodChemicalPlantRequirements3"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CobraStealth">
+        <AffectedUnitArray value="CABALCobra"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CarryallSupply">
+        <EffectArray Operation="Subtract" Reference="Unit,NodCarryall,Food" Value="2"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CommandoUpgrade1">
+        <EffectArray Operation="Set" Reference="Weapon,CABALCommandoWeapon,Options[Hidden]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALCommandoWeaponUpgrade,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALCommandoWeapon,TargetFilters" Value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALCommandoWeaponUpgrade,TargetFilters" Value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CyberCommanderUpgrade">
+        <EffectArray Operation="Set" Reference="Abil,NodHandTrain,InfoArray[Train13].Button.Requirements" Value="NodComandoRequirementCC3X3"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CyberCommandoUpgrade2">
+        <EffectArray Operation="Set" Reference="Weapon,CABALCommandoWeaponU,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,NodCommandoWeapon,Options[Hidden]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,NodCommandoWeapon,TargetFilters" Value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALCommandoWeaponU,TargetFilters" Value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="FactorySpeed"/>
+    <CUpgrade parent="CABAL" id="GatherUpgrade">
+        <EffectArray Reference="Abil,SCVHarvest,ResourceAmountBonus[Minerals]" Value="1"/>
+        <EffectArray Reference="Abil,SCVHarvest,ResourceAmountBonus[Vespene]" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="InvertWarHead"/>
+    <CUpgrade parent="CABAL" id="LightVehicleJump">
+        <EffectArray Operation="Set" Reference="Unit,CABALBike,Mover" Value="CliffJumper"/>
+        <EffectArray Operation="Set" Reference="Unit,NodRaider,Mover" Value="CliffJumper"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALMantisRocketRag" icon="DarkArmamentsUpgrade">
+        <AffectedUnitArray value="NodMantis"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="MantisRange" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Weapon,CABALMantisWeapon,Range" Value="2"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALMedusaHeal"/>
+    <CUpgrade parent="CABAL" id="CABALMedusaHalo"/>
+    <CUpgrade parent="CABAL" id="NodNuke"/>
+    <CUpgrade parent="CABAL" id="ObeliskCharge" icon="FXNod_AmplificationOverridesUpgrade"/>
+    <CUpgrade parent="CABAL" id="ObeliskUpgrade">
+        <EffectArray Reference="Unit,NodObelisk,LifeStart" Value="100"/>
+        <EffectArray Reference="Unit,NodObelisk,LifeMax" Value="100"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALReapairRadius"/>
+    <CUpgrade parent="CABAL" id="CABALSalamanderFire">
+        <EffectArray Reference="Effect,LiquidTibCreatePersistent,PeriodCount" Value="129"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALSalamanderFlameThrower">
+        <EffectArray Operation="Set" Reference="Weapon,CABALSalmanderFlamethrower,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALSalmanderFlamethrower,TargetFilters" Value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="SpecterStealth"/>
+    <CUpgrade parent="CABAL" id="StealthInvertField"/>
+    <CUpgrade parent="CABAL" id="StealthTankRocket">
+        <EffectArray Reference="Effect,CABALStealthRocketCreatePersistent,PeriodCount" Value="6"/>
+        <EffectArray Reference="Effect,CABALStealthRocketCreatePersistentUP,PeriodCount" Value="6"/>
+        <EffectArray Reference="Weapon,CABALStealthRocket,DisplayAttackCount" Value="6"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="SpecterWarhead">
+        <EffectArray Operation="Set" Reference="Weapon,NodSpecterWeapon,Options[Hidden]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,NodSpecterWeapon,Options[Disabled]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALSpecterWeaponUpgrade,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALSpecterWeaponUpgrade,Options[Disabled]" Value="0"/>
+        <AffectedUnitArray value="NodSpecter"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="IntelligenceHighground" icon="DarkArmamentsUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-superscience.dds"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="TechII"/>
+    <CUpgrade parent="CABAL" id="TechIII"/>
+    <CUpgrade parent="CABAL" id="CABALTibBomb" icon="DarkArmamentsUpgrade">
+        <AffectedUnitArray value="CABALBlackHand"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="NodGenericBlackDisciple" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Unit,NodBlackHand,LifeMax" Value="20"/>
+        <EffectArray Reference="Unit,NodBlackHand,LifeStart" Value="20"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALTiberiumCoreMissiles">
+        <EffectArray Operation="Set" Reference="Weapon,CABALAscendedMissile,Effect" Value="CABALAscendedMissileUpPack"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALAscendedMissile,DisplayEffect" Value="AscendedUpDamage"/>
+        <EffectArray Reference="Effect,CABALSalamanderRocketDamage,Amount" Value="5"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALVenomMissile,DisplayEffect" Value="CABALVenomMissilePackup"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALVenomMissile,Effect" Value="CABALVenomMissilePackUp"/>
+        <EffectArray Reference="Effect,CABALHailstormMissilePodsDamage,Amount" Value="2"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALStealthTankRocketLauncher,Effect" Value="CABALStealthRocketCreatePersistentUP"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALStealthRocket,DisplayEffect" Value="CABALStealthRocketDamageUP"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALMantisWeapon,Effect" Value="CABALMantisUpMissilePack"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALMantisWeapon,DisplayEffect" Value="CABALMantisUpWeaponMissilePackCP"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALBikeWeapon,Effect" Value="CABALBikeWeaponUpCreatePersistent"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALBikeWeapon,RateMultiplier" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,NodMilitantRocketWeapon,Effect" Value="NodMilitantRocketMissilePackUp"/>
+        <EffectArray Operation="Set" Reference="Weapon,NodMilitantRocketWeapon,DisplayEffect" Value="NodMilitantRocketDamageUp"/>
+        <AffectedUnitArray value="NodMilitantRocket"/>
+        <AffectedUnitArray value="NodBike"/>
+        <AffectedUnitArray value="NodMantis"/>
+        <AffectedUnitArray value="NodStealthTank"/>
+        <AffectedUnitArray value="NodRedeemer"/>
+        <AffectedUnitArray value="NodMissileTurret"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="EngineerHeal" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Effect,CNCheal,RechargeVitalRate" Value="3.000000"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="DarkArmorEnlightened" icon="FXNod_LasersAddonUpgrade">
+        <EffectArray Operation="Set" Reference="Weapon,CABALEnlightenedWeapon,Options[Hidden]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALAwakenLaser,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALEnlightenedWeapon,TargetFilters" Value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALAwakenLaser,TargetFilters" Value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="EngineerCost" icon="DarkArmamentsUpgrade">
+        <EffectArray Operation="Subtract" Reference="Unit,CABALEngineer,CostResource[Vespene]" Value="25"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALFlameZone" icon="DarkArmamentsUpgrade"/>
+    <CUpgrade parent="CABAL" id="ParticalBeam" icon="DarkArmamentsUpgrade">
+        <EffectArray Operation="Set" Reference="Weapon,CABALReaperWeapon,Options[Hidden]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALReaperWeaponUpgrade,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALReaperWeapon,TargetFilters" Value="Visible;Air,Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALReaperWeaponUpgrade,TargetFilters" Value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="Leader" icon="DarkArmamentsUpgrade"/>
+    <CUpgrade parent="CABAL" id="SuicideEnlightened" icon="FXNod_TiberiumCatalystUpgrade"/>
+    <CUpgrade parent="CABAL" id="RepairUpgrade" icon="BackUpSystemsUpgrade">
+        <EffectArray Reference="Unit,CABALHolySpirit,LifeRegenRate" Value="3.000000"/>
+        <EffectArray Reference="Unit,NodPurifier,LifeRegenRate" Value="3.000000"/>
+        <EffectArray Reference="Unit,NodRedeemer,LifeRegenRate" Value="3.000000"/>
+        <EffectArray Reference="Unit,CABALWidow,LifeRegenRate" Value="3.000000"/>
+        <EffectArray Reference="Unit,CABALSalamander,LifeRegenRate" Value="3.000000"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="RangeUpgrade" icon="RangeUpgradeBTN">
+        <EffectArray Reference="Weapon,CABALDevoutWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALEnlightenedWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAscendedMissile,Range" Value="1"/>
+        <EffectArray Reference="Weapon,MilitantWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,NodMilitantRocketWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,NodRaiderMachinegun,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBikeWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,NodBikeWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,NodScorpionTankWeaponU,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAvengerCannon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALVenomMissile,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCobraWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCenturionWeapon,Range" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMarauderWeapon,Range" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="ReloadUpgrade" icon="ReloadUpgrade">
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALDevoutWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALEnlightenedWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALAscendedMissile,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,MilitantWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,NodMilitantRocketWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,NodRaiderMachinegun,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALBikeWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,NodBikeWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,NodScorpionTankWeaponU,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALAvengerCannon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALVenomMissile,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALCobraWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALCenturionWeapon,Period" Value="0.100000"/>
+        <EffectArray Operation="SubtractBaseMultiply" Reference="Weapon,CABALMarauderWeapon,Period" Value="0.100000"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="DarkArmor" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Unit,CABALDevout,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALAscended,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Militant,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MilitantRocket,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALBlackHand,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALBlackHand,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Militant,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MilitantRocket,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Awaken,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALDevout,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALAscended,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Awaken,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,NodBlackHand,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,NodBlackHand,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,NodCommando,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,NodCommando,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALSalvator,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALSalvator,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALCenturion,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALCenturion,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALReaper,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALReaper,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,GideonAwaken,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,GideonAwaken,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALReaper,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALReaper,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALEngineer,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALEngineer,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALHijacker,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALHijacker,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALSaint,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALSaint,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALBlackHand,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALBlackHand,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CABALDominator,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,CABALDominator,LifeArmorLevel" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="DarkArmorDevout" icon="DarkArmamentsUpgrade">
+        <EffectArray Operation="Set" Reference="Weapon,CABALDevoutWeapon,Effect" Value="DevoutSet"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALDevoutWeapon,DisplayAttackCount" Value="2"/>
+        <AffectedUnitArray value="CABALDevout"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CobraLaser">
+        <EffectArray Operation="Set" Reference="Weapon,CABALCobraWeapon,Options[Hidden]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALCobraWeapon,Options[Disabled]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALCobraLaser,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALCobraLaser,Options[Disabled]" Value="0"/>
+        <AffectedUnitArray value="CABALCobra"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="TibField"/>
+    <CUpgrade parent="CABAL" id="TopEMP"/>
+    <CUpgrade parent="CABAL" id="TopEyesofPeople"/>
+    <CUpgrade parent="CABAL" id="TurretWeaponUP">
+        <EffectArray Operation="Set" Reference="Weapon,CABALHailstormMissilePods,TargetFilters" Value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EffectArray Operation="Set" Reference="Weapon,CABALHailstormMissilePodsO,TargetFilters" Value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CABALViperTurret,CostResource[Minerals]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CABALViperTurret0,CostResource[Minerals]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CABALViperTurretUG,CostResource[Minerals]" Value="25"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="VenomStealth"/>
+    <CUpgrade parent="CABAL" id="NodVenom">
+        <EffectArray Operation="Set" Reference="Abil,CABALAirTowerTrain,InfoArray[Train2].Unit[0]" Value="NodVenom"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="Venomcloaking">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <LeaderAlias value="VenomStealth"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="WidowSpace">
+        <EffectArray Reference="Abil,WidowTransport,TotalCargoSpace" Value="4"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="SpeedUpgrade" icon="SpeedupgradeBTN">
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Awaken,Speed" Value="0.101500"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Militant,Speed" Value="0.101500"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MilitantRocket,Speed" Value="0.101500"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,NodBlackHand,Speed" Value="0.101500"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,NodCommando,Speed" Value="0.101500"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="enrichedTib">
+        <EffectArray Reference="Unit,NodPowerPlantUpgraded,Food" Value="8"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="CABALViperTurretUP">
+        <EffectArray Operation="Set" Reference="Abil,GDIBuild,InfoArray[Build23].Unit" Value="CABALViperTurret"/>
+        <EffectArray Operation="Set" Reference="Abil,GDIBuild,InfoArray[Build24].Unit" Value="CABALMissilePod"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="Level2TiberiumAssiminationUpgrade" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Weapon,NodBikeWeapon,Level" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamageCC3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodScorpionTankWeaponUDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,BeamWeaponCC3Damage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodSpecterDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MantisWeaponMissilePackCP,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMantisRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodFlameTankFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodFlameTankFlamethrowerUDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALStealthRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodAvatarBeamDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,AvatarFlameThrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerThermalLancesMU2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerThermalLancesFriendlyDamage2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,TyrantBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAvengerCannon,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMarauderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALFlameTankFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALFlameTankFlamethrowerDamageBlue,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALStealthRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALDefenseCrawlerCannon,Amount" Value="5"/>
+        <EffectArray Reference="Effect,NodArtilleryDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALOffenseCrawlerLaserDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,CABALOffenseCrawlerLaserDamage2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,CABALCrawlerRocketDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALScorpionBeamDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALVisceroidClaws,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALSpiderWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,UnderminerAttack,Amount" Value="4"/>
+        <EffectArray Reference="Effect,CABALWidowLaserDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,CABALWidowLaserDamage,AttributeBonus[Massive]" Value="3"/>
+        <EffectArray Reference="Effect,earthquakeDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons4,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons5,Amount" Value="2"/>
+        <EffectArray Reference="Effect,VenomparticlebeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HCShockwaveDamage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,90mmCannonsCobra,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CobraDamageLaser,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALSalamanderRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,VenomAU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodVertigoweaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALVenomMissilePackup,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMedusaWeaponSBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodLaserCannonDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,InterceptorBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,NodRaiderMachinegun,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodScorpionTankWeaponU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMantisWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodSpecterWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSpecterWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodBeamCannonWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodFlameTankFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodFlameTankFlamethrowerU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALStealthRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodAvatarFlameThrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodAvatarLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRedeemerRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRFT,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRedeemerThermalLances,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBikeWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALTyrantLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAvengerCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMarauderWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALStealthRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALFlameTankFlamethrowerBlue,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALFlameTankFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALTwinObeliskDamage,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALArtillery,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALOffenseCrawlerLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCrawlerRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALClawsVisceroid,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALScorpionLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSpiderWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALWidowLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAftershockWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAvatar90mmCannons,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodVenomParticleBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBasiliskWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalmanderFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket4,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALInterceptorLaunch,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile1,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodLaserCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCobraWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCobraLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALVenomMissile,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMedusaWeaponS,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSlaveFusionCutter,Level" Value="1"/>
+        <EffectArray Reference="Effect,CABALSlaveFusionCutter,Amount" Value="1"/>
+        <LeaderAlias value="Level1TiberiumAssiminationUpgrade"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="Level3TiberiumAssiminationUpgrade" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Weapon,NodBikeWeapon,Level" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamageCC3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodScorpionTankWeaponUDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,BeamWeaponCC3Damage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodSpecterDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MantisWeaponMissilePackCP,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMantisRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodFlameTankFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodFlameTankFlamethrowerUDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALStealthRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodAvatarBeamDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,AvatarFlameThrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerThermalLancesMU2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerThermalLancesFriendlyDamage2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,TyrantBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAvengerCannon,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMarauderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALFlameTankFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALFlameTankFlamethrowerDamageBlue,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALStealthRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALDefenseCrawlerCannon,Amount" Value="5"/>
+        <EffectArray Reference="Effect,NodArtilleryDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALOffenseCrawlerLaserDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,CABALOffenseCrawlerLaserDamage2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,CABALCrawlerRocketDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALScorpionBeamDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALVisceroidClaws,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALSpiderWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,UnderminerAttack,Amount" Value="4"/>
+        <EffectArray Reference="Effect,CABALWidowLaserDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,CABALWidowLaserDamage,AttributeBonus[Massive]" Value="3"/>
+        <EffectArray Reference="Effect,earthquakeDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons4,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons5,Amount" Value="2"/>
+        <EffectArray Reference="Effect,VenomparticlebeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HCShockwaveDamage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,90mmCannonsCobra,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CobraDamageLaser,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALSalamanderRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,VenomAU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodVertigoweaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALVenomMissilePackup,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMedusaWeaponSBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodLaserCannonDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,InterceptorBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,NodRaiderMachinegun,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodScorpionTankWeaponU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMantisWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodSpecterWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSpecterWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodBeamCannonWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodFlameTankFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodFlameTankFlamethrowerU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALStealthRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodAvatarFlameThrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodAvatarLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRedeemerRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRFT,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRedeemerThermalLances,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBikeWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALTyrantLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAvengerCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMarauderWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALStealthRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALFlameTankFlamethrowerBlue,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALFlameTankFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALTwinObeliskDamage,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALArtillery,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALOffenseCrawlerLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCrawlerRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALClawsVisceroid,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALScorpionLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSpiderWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALWidowLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAftershockWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAvatar90mmCannons,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodVenomParticleBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBasiliskWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalmanderFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket4,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALInterceptorLaunch,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile1,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodLaserCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCobraWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCobraLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALVenomMissile,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMedusaWeaponS,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSlaveFusionCutter,Level" Value="1"/>
+        <EffectArray Reference="Effect,CABALSlaveFusionCutter,Amount" Value="1"/>
+        <LeaderAlias value="Level1TiberiumAssiminationUpgrade"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="Level1TiberiumAssiminationUpgrade" icon="DarkArmamentsUpgrade">
+        <EffectArray Reference="Weapon,NodBikeWeapon,Level" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamageCC3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodScorpionTankWeaponUDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,BeamWeaponCC3Damage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodSpecterDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MantisWeaponMissilePackCP,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMantisRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodFlameTankFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodFlameTankFlamethrowerUDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALStealthRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodAvatarBeamDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,AvatarFlameThrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerThermalLancesMU2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRedeemerThermalLancesFriendlyDamage2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,TyrantBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAvengerCannon,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMarauderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALFlameTankFlamethrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALFlameTankFlamethrowerDamageBlue,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALStealthRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALDefenseCrawlerCannon,Amount" Value="5"/>
+        <EffectArray Reference="Effect,NodArtilleryDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALOffenseCrawlerLaserDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,CABALOffenseCrawlerLaserDamage2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,CABALCrawlerRocketDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALScorpionBeamDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALVisceroidClaws,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALSpiderWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,UnderminerAttack,Amount" Value="4"/>
+        <EffectArray Reference="Effect,CABALWidowLaserDamage,Amount" Value="5"/>
+        <EffectArray Reference="Effect,CABALWidowLaserDamage,AttributeBonus[Massive]" Value="3"/>
+        <EffectArray Reference="Effect,earthquakeDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons4,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALAvatar90mmCannons5,Amount" Value="2"/>
+        <EffectArray Reference="Effect,VenomparticlebeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HCShockwaveDamage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,90mmCannonsCobra,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CobraDamageLaser,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALSalamanderRocketDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,VenomAU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodVertigoweaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALVenomMissilePackup,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMedusaWeaponSBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodLaserCannonDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,InterceptorBeamDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,NodRaiderMachinegun,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodScorpionTankWeaponU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMantisWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodSpecterWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSpecterWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodBeamCannonWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodFlameTankFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodFlameTankFlamethrowerU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALStealthRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodAvatarFlameThrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodAvatarLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRedeemerRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRFT,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodRedeemerThermalLances,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBikeWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALTyrantLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAvengerCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMarauderWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALStealthRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALFlameTankFlamethrowerBlue,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALFlameTankFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALTwinObeliskDamage,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALArtillery,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALOffenseCrawlerLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCrawlerRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALClawsVisceroid,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALScorpionLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSpiderWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALWidowLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAftershockWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAvatar90mmCannons,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodVenomParticleBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBasiliskWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalmanderFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalamanderRocket4,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALInterceptorLaunch,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile1,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALLeviathanMissile3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodLaserCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCobraWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCobraLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALVenomMissile,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALMedusaWeaponS,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSlaveFusionCutter,Level" Value="1"/>
+        <EffectArray Reference="Effect,CABALSlaveFusionCutter,Amount" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="NodInfantryAccuracyUpgradeLevel3" icon="AccuracyUpgrade">
+        <EffectArray Reference="Effect,EnlightenedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,DevoutDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAscendedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantRocketAU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamageCC3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALCenturionWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMarauderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,BlackHandFlameThrowerDamageCC3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALBlackHandFlameThrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CommandoWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALCommandoShockwaveDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALCommandoShockwaveDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GideonAwakenDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,GideonAwakenWeaponDamageLaser,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamageUp2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamageUp,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HCShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodEideonSaintHCShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAscendedMissile,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALEnlightenedWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAwakenWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAwakenLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBlackHandFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,BlackHandFlamethrowerCC3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBlackHandFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCenturionWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodCommandoWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeaponU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALDevoutWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MilitantWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodMilitantRocketWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalvatorWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSaintHCWeapon,Level" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="AccuracyUpgrade" icon="AccuracyUpgrade">
+        <EffectArray Reference="Effect,EnlightenedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,DevoutDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAscendedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantRocketAU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamageCC3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALCenturionWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMarauderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,BlackHandFlameThrowerDamageCC3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALBlackHandFlameThrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CommandoWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALCommandoShockwaveDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALCommandoShockwaveDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GideonAwakenDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,GideonAwakenWeaponDamageLaser,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamageUp2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamageUp,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HCShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodEideonSaintHCShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAscendedMissile,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALEnlightenedWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAwakenWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAwakenLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBlackHandFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,BlackHandFlamethrowerCC3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBlackHandFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCenturionWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodCommandoWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeaponU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALDevoutWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MilitantWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodMilitantRocketWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalvatorWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSaintHCWeapon,Level" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="VehicleAccuracyUpgrade" icon="AccuracyUpgrade">
+        <EffectArray Reference="Effect,EnlightenedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,DevoutDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAscendedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantRocketAU,Amount" Value="1"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Effect,90mmCannonsCobra,Amount" Value="0.2"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamageCC3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamage,Amount" Value="1"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Effect,NodScorpionTankWeaponUDamage,Amount" Value="0.2"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Effect,CABALAvengerCannon,Amount" Value="0.2"/>
+        <EffectArray Reference="Effect,VenomAU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Effect,CABALCenturionWeaponDamage,Amount" Value="0.2"/>
+        <EffectArray Reference="Effect,CABALMarauderDamage,Amount" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="NodInfantryAccuracyUpgradeLevel2" icon="AccuracyUpgrade">
+        <EffectArray Reference="Effect,EnlightenedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,DevoutDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALAscendedDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,MilitantRocketAU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamageCC3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodBikeWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodRaiderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALCenturionWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALMarauderDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,BlackHandFlameThrowerDamageCC3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALBlackHandFlameThrowerDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CommandoWeaponDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALCommandoShockwaveDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,CABALCommandoShockwaveDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GideonAwakenDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,GideonAwakenWeaponDamageLaser,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamageUp2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamageUp,Amount" Value="1"/>
+        <EffectArray Reference="Effect,CABALReaperShockwaveDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HCShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NodEideonSaintHCShockwaveDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAscendedMissile,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALEnlightenedWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAwakenWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALAwakenLaser,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBlackHandFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,BlackHandFlamethrowerCC3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALBlackHandFlamethrower,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCenturionWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodCommandoWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeaponU,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALDevoutWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALCommandoWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeaponUpgrade,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALReaperWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MilitantWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NodMilitantRocketWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSalvatorWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CABALSaintHCWeapon,Level" Value="1"/>
+    </CUpgrade>
+    <CUpgrade parent="CABAL" id="NodGenericChargedPracticeBeam" icon="DarkArmamentsUpgrade">
+        <EffectArray Operation="Set" Reference="Weapon,CABALAwakenLaser,Options[Disabled]" Value="0"/>
+    </CUpgrade>
+</Catalog>

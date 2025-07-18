@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+
+
+    <Frame type="CommandPanel" name="SpawnPanel" template="CommandPanel/CommandPanelTemplate">
+        <Width val="384"/>
+        <Height val="232"/>
+        <OffsetX val="0"/>
+        <OffsetY val="0"/>
+        <Anchor side="Top" relative="$parent" pos="Min" offset="1"/>
+        <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+        <HideUnusedButtons val="true"/>
+        <DisplayCancelCommandCard val="false"/>
+
+
+        <Animation name="FadeIn">
+            <Event event="OnShown" action="Reset,Play" frame="$this"/>
+
+            <Controller name="Fade_0" type="Fade" end="Pause" frame="$this">
+                <Key type="CurveReal" time="0" inout="Linear,Slow" value="0"/>
+                <Key type="CurveReal" time="0.25" inout="Slow,Linear" value="255"/>
+            </Controller>
+        </Animation>
+
+        <Frame type="CommandTooltip" name="SoACommandTooltip" template="CommandButton/CommandTooltipTemplate">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="-300"/>
+            <Anchor side="Left" relative="$parent" pos="Max" offset="-300"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton00" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent" pos="Min" offset="0"/><Anchor side="Left" relative="$parent" pos="Min" offset="0"/><Anchor side="Right" relative="$this" pos="Min" offset="0"/></Frame>
+        <Frame type="CommandButton" name="CommandButton01" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton00" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton02" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton01" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton01" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton03" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton02" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton02" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton04" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton03" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton03" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+
+        <Frame type="CommandButton" name="CommandButton05" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton00" pos="Max" offset="1"/><Anchor side="Left" relative="$parent" pos="Min" offset="0"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton06" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton05" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton05" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton07" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton06" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton06" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton08" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton07" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton07" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton09" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton08" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton08" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+
+        <Frame type="CommandButton" name="CommandButton10" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton05" pos="Max" offset="1"/><Anchor side="Left" relative="$parent" pos="Min" offset="0"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton11" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton10" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton10" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton12" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton11" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton11" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton13" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton12" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton12" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+        <Frame type="CommandButton" name="CommandButton14" template="LotV_SoAMissionUIPanel/SoACommandButtonTemplate"><Anchor side="Top" relative="$parent/CommandButton13" pos="Min" offset="0"/><Anchor side="Left" relative="$parent/CommandButton13" pos="Max" offset="1"/><Anchor side="Bottom" relative="$this" pos="Min" offset="76"/><Anchor side="Right" relative="$this" pos="Min" offset="76"/></Frame>
+
+        <Frame type="Label" name="RowText0">
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$parent/CommandButton00" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+            <Style val="@@CommandRow"/>
+        </Frame>
+
+        <Frame type="Label" name="RowText1">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Label" name="RowText2">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Image" name="CommandTargetImage">
+            <Anchor side="Left" relative="$parent" pos="Max" offset="200"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="200"/>
+            <Anchor side="Top" relative="$parent" pos="Max" offset="200"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="200"/>
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Label" name="CommandTargetName">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Label" name="CommandTargetPrompt">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Frame" name="UncontrollableUnitFrame">
+            <Visible val="false"/>
+
+            <Frame type="Label" name="UncontrollableUnitTitleLabel">
+                <Visible val="false"/>
+            </Frame>
+
+            <Frame type="Label" name="UncontrollableUnitPromptLabel">
+                <Visible val="false"/>
+            </Frame>
+        </Frame>
+    </Frame>
+
+
+    <Frame type="Image" name="PageButtonTemplate">
+        <Texture val="Assets/Images/Slim_InfoPaneGroup.dds"/>
+        <LayerColor val="###ColorMenuButtonIcon"/>
+        <StateCount val="1"/>
+        <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+        <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+        <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+        <Alpha val="255"/>
+        <DescFlags val="Internal"/>
+    </Frame>
+
+    <Frame type="Image" name="SlimBackgroundImageTemplate">
+        <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+        <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+        <Anchor side="Left" relative="$parent" pos="min" offset="0"/>
+        <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+        <Texture val="Assets/Images/Slim_InfoBorder.dds"/>
+        <TextureType val="NineSlice"/>
+        <Alpha val="220"/>
+        <RenderPriority val="400"/>
+        <Visible val="False"/>
+        <RenderType val="HDR"/>
+    </Frame>
+
+    <Frame type="Frame" name="GameUI/UIContainer/FullscreenUpperContainer" file="GameUI">
+        <!-- MenuBar-->
+        <Frame type="MenuBar" name="MenuBar">
+                <Frame type="Button" name="MenuButton">
+                        <Frame type="Image" name="Icon">
+                            <Anchor side="Top" relative="$parent" pos="Min" offset="8"/>
+                            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-8"/>
+                            <Anchor side="Left" relative="$parent" pos="min" offset="8"/>
+                            <Anchor side="Right" relative="$parent" pos="Max" offset="-8"/>
+                            <Texture val="Assets/Images/Slim_OptionsIcon.dds"/>
+                            <TextureType val="Normal"/>
+                            <Alpha val="200"/>
+                            <Visible val="False"/>
+                            <DesaturateOnDisable val="True"/>
+                            <Color val="###ColorMenuButtonIcon"/>
+                        </Frame>
+                </Frame>
+        </Frame>
+    </Frame>
+
+    <Frame type="Button" name="TesterRaceButton">
+        <Width val="50"/>
+        <Height val="50"/>
+        <DisplayType val="ImageLayer"/>
+        <ClickSound val="@UI_ActionButtonSelect"/>
+        <Label val="Label"/>
+        <NormalImage val="NormalImage"/>
+        <HoverImage val="HoverImage"/>
+        <Frame type="Image" name="NormalImage">
+            <Anchor relative="$parent"/>
+            <LayerCount val="4"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_normal_forged.dds" layer="0"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_pressed_forged.dds" layer="1"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_selected_forged.dds" layer="2"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_disabled_forged.dds" layer="3"/>
+            <!--            <Texture val="Assets\Textures\ui_console_menubutton_normal_defaultprotoss.dds" layer="0"/>-->
+            <!--            <Texture val="Assets\Textures\ui_console_menubutton_pressed_defaultprotoss.dds" layer="1"/>-->
+            <!--            <Texture val="Assets\Textures\ui_console_menubutton_selected_defaultprotoss.dds" layer="2"/>-->
+            <!--            <Texture val="Assets\Textures\ui_console_menubutton_disabled_defaultprotoss.dds" layer="3"/>-->
+            <TextureType val="NineSlice"/>
+        </Frame>
+        <Frame type="Image" name="HoverImage">
+            <Anchor relative="$parent"/>
+            <LayerCount val="4"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_hover_forged.dds" layer="0"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_pressed_forged.dds" layer="1"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_selected_forged.dds" layer="2"/>
+            <Texture val="Assets\Textures\ui_console_menubutton_disabled_forged.dds" layer="3"/>
+            <TextureType val="NineSlice"/>
+        </Frame>
+        <Frame type="Label" name="Label">
+            <Anchor relative="$parent"/>
+            <!--Style val="TesterButtonLabel"/-->
+        </Frame>
+        <Frame type="Image" name="FaceImage">
+            <Anchor relative="$parent"/>
+            <Visible val="False"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="Button" name="TesterItemButton">
+        <Width val="76"/>
+        <Height val="76"/>
+        <DisplayType val="ImageLayer"/>
+        <ClickSound val="@UI_GenericButton"/>
+        <NormalImage val="NormalImage"/>
+        <Frame type="Image" name="NormalImage">
+            <Anchor relative="$parent"/>
+            <LayerCount val="4"/>
+            <Texture val="Assets\Textures\ui_console_commandbutton_normal_forged.dds" layer="0"/>
+            <Texture val="Assets\Textures\ui_console_commandbutton_highlighted_forged.dds" layer="1"/>
+            <Texture val="Assets\Textures\ui_console_commandbutton_superhighlighted_forged.dds" layer="2"/>
+            <Texture val="Assets\Textures\ui_techtree_buttonframe_disabled.dds" layer="3"/>
+            <!--            <Texture val="Assets\Textures\ui_console_commandbutton_normal_defaultprotoss.dds" layer="0"/>-->
+            <!--            <Texture val="Assets\Textures\ui_console_commandbutton_highlighted_defaultprotoss.dds" layer="1"/>-->
+            <!--            <Texture val="Assets\Textures\ui_console_commandbutton_superhighlighted_defaultprotoss.dds" layer="2"/>-->
+            <TextureType val="NineSlice"/>
+        </Frame>
+        <Frame type="Image" name="HoverImage">
+            <Anchor relative="$parent"/>
+            <LayerCount val="4"/>
+            <Texture val="Assets\Textures\ui_console_commandbutton_normal_forged.dds" layer="0"/>
+            <Texture val="Assets\Textures\ui_console_commandbutton_highlighted_forged.dds" layer="1"/>
+            <Texture val="Assets\Textures\ui_console_commandbutton_superhighlighted_forged.dds" layer="2"/>
+            <Texture val="Assets\Textures\ui_techtree_buttonframe_disabled.dds" layer="3"/>
+            <TextureType val="NineSlice"/>
+        </Frame>
+        <Frame type="Image" name="FaceImage">
+            <Anchor relative="$parent"/>
+            <Visible val="False"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="Frame" name="ItemCard">
+        <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+        <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+        <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+        <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+        <Frame type="Button" name="Top" template="SpawnPanel/SmallPanelLeftButtonTemplate">
+            <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+            <Width val="120"/>
+            <Height val="50"/>
+            <Visible val="False"/>
+            <Frame type="Label" name="ButtonLabel">
+                <Text val="^"/>
+            </Frame>
+        </Frame>
+        <Frame type="Button" name="Bottom" template="SpawnPanel/SmallPanelLeftButtonTemplate">
+            <Anchor side="Right" relative="$parent/Top" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+            <Width val="120"/>
+            <Height val="50"/>
+            <Visible val="False"/>
+            <Frame type="Label" name="ButtonLabel">
+                <Text val="v"/>
+            </Frame>
+        </Frame>
+    </Frame>
+    <Frame type="Frame" name="GameUI/UIContainer/ConsoleUIContainer" file="GameUI">
+        <Frame type="Frame" name="TesterPanel1">
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Top" relative="$parent" pos="Min" offset="200"/>
+            <Width val="434"/>
+            <Height val="819"/>
+            <Visible val="True"/>
+            <Frame type="Frame" name="ItemCard0" template="SpawnPanel/ItemCard">
+                <Anchor side="Left" relative="$parent" pos="Min" offset="50"/>
+                <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+            </Frame>
+            <Frame type="Frame" name="ItemCard1" template="SpawnPanel/ItemCard">
+                <Anchor side="Left" relative="$parent" pos="Min" offset="50"/>
+                <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+            </Frame>
+            <Frame type="Frame" name="ItemCard2" template="SpawnPanel/ItemCard">
+                <Anchor side="Left" relative="$parent" pos="Min" offset="50"/>
+                <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+            </Frame>
+            <Frame type="Frame" name="ItemCard3" template="SpawnPanel/ItemCard">
+                <Anchor side="Left" relative="$parent" pos="Min" offset="50"/>
+                <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+            </Frame>
+        </Frame>
+    </Frame>
+</Desc>
+

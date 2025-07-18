@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="AlliedSpectralTowerWeapon">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-adept-recochetglaive.dds"/>
+        <DisplayEffect value="AlliedSpectralTowerDamageDisplay"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <Period value="3"/>
+        <Effect value="AlliedSpectralTowerAttackSet"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+</Catalog>

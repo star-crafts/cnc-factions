@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorPlayerRequirement id="AlliedConstructionYardTechlv02">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="AlliedConstructionYardLevel33"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="AlliedConstructionYardTechlv12">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="AlliedConstructionYardLevel2"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="AlliedConstructionYardTechlv13">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="AlliedConstructionYardLevel3"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="AlliedConstructionYardTechlv0">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="AlliedConstructionYardLevel32"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="AlliedPowerPlantM">
+        <Find value="1"/>
+        <Value value="AlliedBuildingNumber"/>
+        <WhichUnit Value="Source"/>
+        <UnitSelectionNotRequired value="1"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="AlliedConstructionYardTechlv1">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="AlliedConstructionYardLevel"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareVital id="CasterHasEnergy2">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LE"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="CasterHasEnergy22">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LE"/>
+        <Value value="9"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="CasterHasEnergy222">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="10"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareSpeed id="CasterIsNotStationary23">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorLocationCompareRange id="ChargeMaxDistance2">
+        <ResultFailed value="TargetIsOutOfRange"/>
+        <WhichLocation Value="SourceUnit"/>
+        <Compare value="LT"/>
+        <Range value="13"/>
+        <Pathing value="1"/>
+        <Value Value="TargetUnit"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareOrderTargetRange id="ChargeMinTriggerDistance2">
+        <ResultFailed value="TargetIsTooClose"/>
+        <WhichUnit Value="Caster"/>
+        <OtherUnit Value="Target"/>
+        <Compare value="GT"/>
+        <AbilLink value="attack"/>
+        <Value value="3"/>
+    </CValidatorUnitCompareOrderTargetRange>
+    <CValidatorLocationCompareCliffLevel id="CliffLevelGreater2">
+        <WhichLocation Value="TargetUnit"/>
+        <OtherLocation Value="OriginUnit"/>
+        <Compare value="GE"/>
+    </CValidatorLocationCompareCliffLevel>
+    <CValidatorPlayerCompareFoodAvailable id="FoodAvailableOneHalf2">
+        <ResultFailed value="NotEnoughFood,Lowpower"/>
+        <WhichPlayer Value="Caster"/>
+        <Compare value="LE"/>
+    </CValidatorPlayerCompareFoodAvailable>
+    <CValidatorUnitCompareCargo id="HasCargo2">
+        <ResultFailed value="NotWhileOccupied"/>
+        <Type value="Load"/>
+    </CValidatorUnitCompareCargo>
+    <CValidatorUnitCompareCargo id="HasCargo22">
+        <ResultFailed value="NotWhileOccupied"/>
+        <Compare value="GT"/>
+        <Type value="Load"/>
+    </CValidatorUnitCompareCargo>
+    <CValidatorUnitCompareBehaviorCount id="Herrscher2WeaponMark5">
+        <Value value="4"/>
+        <Behavior value="Herrscher2WeaponMark"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Herrscher2ndUltimateCompareBehaviorCountNotHaveCasterAction">
+        <ResultFailed value="Error,Error/NotWidowMineTarget"/>
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="Herrscher2ndUltimateCasterAction"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="IsDead2">
+        <Filters value="-;Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitType id="IsNotHellionTank2">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="HellionTank"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank22">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="HellionTank"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank23">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Abomination22"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank232">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="SpineCrawler"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank2322">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="ZombieHive"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank2323">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="EmpireSteelRonin"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank23232">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="SovietDesolator"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank23233">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="ChinaTheLawyerofKnowledge"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank233">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="SporeCrawler"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank2332">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="ZealotAiur2"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank234">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Overmind"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank2342">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="AlliedSpectrumTower"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank23422">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="TechCentre"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank234222">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="RuSolvebuilding"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank234223">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="TechCentre3"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank2343">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Leviathan"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank2344">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="KerriganChar"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank235">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="DestructibleWallStraightHorizontalBF"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank23522">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="HeavyTankAdvanced23"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank23532">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="AlliedConstructionYard"/>
+    </CValidatorUnitType>
+    <CValidatorLocationCompareRange id="MothershipRangeCheck2">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="12"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareMarkerCount id="NoMedivacMarkers2">
+        <ResultFailed value="AlreadyTargeted"/>
+        <WhichUnit Effect="Repair22"/>
+    </CValidatorUnitCompareMarkerCount>
+    <CValidatorUnitCompareMarkerCount id="NoMedivacMarkers22">
+        <ResultFailed value="AlreadyTargeted"/>
+        <WhichUnit Effect="ArtanisVoidUlnarDamage22252"/>
+    </CValidatorUnitCompareMarkerCount>
+    <CValidatorPlayerCompareResource id="NoMedivacMarkers23">
+        <ResultFailed value="NotEnoughMinerals"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+    </CValidatorPlayerCompareResource>
+    <CValidatorUnitCompareMarkerCount id="NoMedivacMarkers24">
+        <ResultFailed value="AlreadyTargeted"/>
+        <WhichUnit Effect="Repair3"/>
+        <Compare value="LE"/>
+        <Value value="1"/>
+    </CValidatorUnitCompareMarkerCount>
+    <CValidatorUnitCompareVital id="NotFullLife2">
+        <ResultFailed value="TooMuchLife"/>
+        <Type value="Fraction"/>
+        <Value value="1"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="NotFullLife22">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="GE"/>
+        <Type value="Fraction"/>
+        <Value value="0.75"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="NotFullLife222">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="LE"/>
+        <Type value="Fraction"/>
+        <Value value="0.5"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="NotFullLife2222">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="LE"/>
+        <Type value="Fraction"/>
+        <Value value="0.15"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="NotFullLife22222">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="LE"/>
+        <Type value="Fraction"/>
+        <Value value="0.3"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="NotFullLife2223">
+        <ResultFailed value="TooMuchLife"/>
+        <WhichUnit Value="Caster"/>
+        <Compare value="LE"/>
+        <Type value="Fraction"/>
+        <Value value="0.5"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitFilters id="NotUnderConstruction2">
+        <Filters value="UnderConstruction;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorCombine id="PickupCheck2">
+        <Type value="And"/>
+        <CombineArray value="PickupPlayerCheck"/>
+        <CombineArray value="NotSpiderMine"/>
+        <CombineArray value="NotSpiderMineBurrowed"/>
+        <CombineArray value="NotHiddenSelf"/>
+        <CombineArray value="NotInterceptor"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="Shrinkbeam">
+        <Type value="And"/>
+        <CombineArray value="RAExcludeTargetsThatHaveBeenReduced"/>
+        <CombineArray value="Shrinkbeam2"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="Shrinkbeam2">
+        <CombineArray value="zombie72"/>
+        <CombineArray value="zombie62"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="SovietAirport">
+        <Value value="SovietAirport"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="AlliedAirfield">
+        <Value value="AlliedAirport"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ShenzhouAirport">
+        <Value value="ChinaAirport"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="TargetIsEnemy2">
+        <Filters value="-;Player,Ally,Neutral"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="TargetNotDead2">
+        <ResultFailed value="CantTargetDeadUnits"/>
+        <Filters value="Light;Self,Ally,Neutral"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareVeterancyLevel id="RAAirDefenseCrawlerVehicleStarRatingVerification">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="T2unitveteranbehaviorantiaircraftcrawler"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitCompareVeterancyLevel id="RASecondgenerationMultifunctionalInfantryFightingVehicleStarVerification">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="UpgradeLevel1243"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitCompareVeterancyLevel id="RAVerificationOfTheEffectOfStarratedFutureTanks">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="UpgradeLevel12323"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitCompareVeterancyLevel id="RAStarPioneerGunshipEffectVerification">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="T4unitveteranbehaviorVanguardarmedcombataircraft"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitCompareVeterancyLevel id="RAStarApocalypseTankEffectVerification">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="UpgradeLevel1233"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitCompareVeterancyLevel id="RAVerificationOfTheEffectOfTheSecondgenerationStarratedApocalypseTank">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="UpgradeLevel1223"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitCompareVeterancyLevel id="RAStarAresEffectVerification">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="UpgradeLevel122"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitCompareVeterancyLevel id="RAStarSuperFortressEffectVerification">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="UpgradeLevel12326"/>
+    </CValidatorUnitCompareVeterancyLevel>
+    <CValidatorUnitType id="RAItsAQuantumPackagingDrone">
+        <Value value="ChinaQuantumPackagingDrone"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="RAQuantumPackagingDroneBehaviorVerificationdroneSurvival">
+        <Value value="1"/>
+        <Behavior value="RAMovementSpeedAndArmor20Percent59"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAVerificationOfSimultaneousDestructionOfBuildingsByQuantumPackagingDrones">
+        <Behavior value="RAMovementSpeedAndArmor20Percent58"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAQuantumPackagingDroneBehaviorVerificationBuildingBurial">
+        <WhichUnit Effect="RAQuantumPackagingDroneBaseApplicationVerificationBehaviorBuildingBurial" Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="RAMovementSpeedAndArmor20Percent59"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="RAQuantumPackagingDroneVerificationCanceledConstruction">
+        <Type value="And"/>
+        <CombineArray value="RAQuantumPackagingDroneBehaviorVerificationdroneSurvival"/>
+        <CombineArray value="RAItsAQuantumPackagingDrone"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RAQuantumPackagingDroneDeathSynchronizedDestructionOfBuildingVerificationSet">
+        <CombineArray value="RAVerificationOfSimultaneousDestructionOfBuildingsByQuantumPackagingDrones"/>
+        <CombineArray value="RAQuantumPackagingDroneBehaviorVerificationBuildingBurial"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="RAMustBeEngineer1">
+        <Value value="EmpireImperialEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="RAMustBeEngineer2">
+        <Value value="AlliedCombatEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="RAMustBeEngineerMultiFunction2">
+        <WhichUnit Value="Caster"/>
+        <Value value="AlliedCombatEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="RAMustBeEngineer3">
+        <Value value="ChinaEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="RAMustBeAnEngineerMultifunctional3">
+        <WhichUnit Value="Caster"/>
+        <Value value="ChinaEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="RAMustBeEngineer4">
+        <Value value="SovietEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="RAMustBeAnEngineerMultifunctional4">
+        <WhichUnit Value="Caster"/>
+        <Value value="SovietEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="RAMustBeAnEngineerMultifunctional1">
+        <WhichUnit Value="Caster"/>
+        <Value value="EmpireImperialEngineer"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="RAMustBeAnEngineer">
+        <CombineArray value="RAMustBeEngineer1"/>
+        <CombineArray value="RAMustBeEngineer2"/>
+        <CombineArray value="RAMustBeEngineer3"/>
+        <CombineArray value="RAMustBeEngineer4"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RAMustBeAnEngineerMultipurpose">
+        <CombineArray value="RAMustBeAnEngineerMultifunctional1"/>
+        <CombineArray value="RAMustBeEngineerMultiFunction2"/>
+        <CombineArray value="RAMustBeAnEngineerMultifunctional3"/>
+        <CombineArray value="RAMustBeAnEngineerMultifunctional4"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RAFrozenHostileZombieHealthValidatorT1">
+        <Type value="And"/>
+        <CombineArray value="RAApplyFrozenHealthToZombiesToVerifyLessThan50"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareVitality id="RAApplyFrozenHealthToZombiesToVerifyLessThan50">
+        <Compare value="LE"/>
+        <Value value="50"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorUnitCompareVitality id="RAApplyFrozenHealthVerificationToZombiesGreaterThan50">
+        <Compare value="GT"/>
+        <Value value="50"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorUnitCompareVitality id="RAApplyFrozenHealthToZombiesToVerifyLessThan100">
+        <Compare value="LE"/>
+        <Value value="100"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorUnitCompareVitality id="RAApplyFrozenHealthVerificationToZombiesGreaterThan100">
+        <Compare value="GT"/>
+        <Value value="100"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorUnitCompareVitality id="RAApplyingFrozenHealthToZombiesVerifiesLessThan250">
+        <Compare value="LE"/>
+        <Value value="250"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorUnitCompareVitality id="RAApplyFrozenHealthVerificationToZombiesGreaterThan250">
+        <Compare value="GT"/>
+        <Value value="250"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorUnitCompareVitality id="RAEnableProtectionWhenHealthIsLessThan200">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="200"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorCombine id="RAFrozenHostileZombieHealthValidatorT2">
+        <Type value="And"/>
+        <CombineArray value="RAApplyFrozenHealthVerificationToZombiesGreaterThan50"/>
+        <CombineArray value="RAApplyFrozenHealthToZombiesToVerifyLessThan100"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RAFrozenHostileZombieHealthValidatorT3">
+        <Type value="And"/>
+        <CombineArray value="RAApplyFrozenHealthVerificationToZombiesGreaterThan100"/>
+        <CombineArray value="RAApplyingFrozenHealthToZombiesVerifiesLessThan250"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RAFrozenHostileZombieHealthValidatorT4">
+        <Type value="And"/>
+        <CombineArray value="RAApplyFrozenHealthVerificationToZombiesGreaterThan250"/>
+    </CValidatorCombine>
+    <CValidatorUnitState id="RAMiningTruckIdle">
+        <WhichUnit Value="Source"/>
+        <Enabled value="1"/>
+        <State value="Idle"/>
+    </CValidatorUnitState>
+    <CValidatorUnitCompareBehaviorCount id="RATheHerrscherOfKnowledgeTakesOffToVerifyThe5thFloor">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="RAMovingSpeed20Percent422"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGhostKing">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="gwgjztz22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGhostKing2">
+        <WhichUnit Value="Caster"/>
+        <Value value="2"/>
+        <Behavior value="gwgjztz22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGhostKing3">
+        <WhichUnit Value="Caster"/>
+        <Value value="3"/>
+        <Behavior value="gwgjztz22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGhostKing4">
+        <WhichUnit Value="Caster"/>
+        <Value value="4"/>
+        <Behavior value="gwgjztz22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGhostKing5">
+        <WhichUnit Value="Caster"/>
+        <Value value="5"/>
+        <Behavior value="gwgjztz22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGatlingStackValidatorLayer1">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="GategunAttackbuff2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGatlingStackValidator2Layers">
+        <WhichUnit Value="Caster"/>
+        <Value value="2"/>
+        <Behavior value="GategunAttackbuff2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAApplyFullFreezeValidatorZombieLevel2">
+        <Compare value="GE"/>
+        <Value value="19"/>
+        <Behavior value="RATheTargetIsFreezingAndSlowingDown1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAApplyFullFreezeValidatorZombieLevel3">
+        <Compare value="GE"/>
+        <Value value="29"/>
+        <Behavior value="RATheTargetIsFreezingAndSlowingDown1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAApplyFullFreezeValidatorZombieLevel4">
+        <Compare value="GE"/>
+        <Value value="49"/>
+        <Behavior value="RATheTargetIsFreezingAndSlowingDown1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeTheBuiltShenzhouMine">
+        <Behavior value="RAMovementSpeedAndArmor20Percent612"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAGatlingMustBeInAttackMode">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="GategunAttackbuff"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAEliminateIdeologicalWeapons">
+        <Behavior value="SandbagAuraB5"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeStarPhantomTank">
+        <Behavior value="RAMirageTankEnhancedVersionMirageTankSAttackCapabilityHasBeenGreatlyImprovedNTheTankWillActivateOnceItReachesLevel40"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludedUpgradeToLevel2AndRemoveLevel1">
+        <Behavior value="unitLevelxianshi12"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludedUpgradeToLevel3AndRemoveLevel2">
+        <Behavior value="unitLevelxianshi13"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeMagneticHarpoon">
+        <Behavior value="VolatileBurstBuilding23"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludingTheInvincibilityOfTheTimeBelt">
+        <Behavior value="xianfeng4"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludingTimeAndSpaceTeleportationInvincibility">
+        <Behavior value="xianfeng42"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeLoadedAlliedEngineers">
+        <Behavior value="RAMovementSpeedAndArmor20Percent66"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="RAExcludeBuildingsAndHeroUnits">
+        <Filters value="-;Structure,Heroic,HeroUnit"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="RAAfterExcludingYurikosShield">
+        <Behavior value="ImmortalOverload"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeBuildingsBeingRepaired">
+        <ResultFailed value="Error,cannotrepair2dn"/>
+        <Behavior value="RAMovementSpeedAndArmor20Percent56"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeCarrierbasedAircraftStartingToReturn">
+        <Behavior value="RAMovementSpeedAndArmor20Percent36"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAFluctlightThatExcludesAscension">
+        <Behavior value="RAMovementSpeedAndArmor20Percent682"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAMaintenanceBeeTargetAwaitingMaintenanceVerification">
+        <Value value="1"/>
+        <Behavior value="Waitingformaintenancebee"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RARuleOutTheSouthChinaSeaFire">
+        <Behavior value="RAMovementSpeedAndArmor20Percent332"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeBombers">
+        <Behavior value="RAMovementSpeedAndArmor20Percent122"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeLockedTargets">
+        <Behavior value="natashalock"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RANeedToBeParasitizedByTerroristRobots">
+        <WhichUnit Effect="ParasiticInvasionLeapApplyBehavior2"/>
+        <Behavior value="ParasiticInvasion2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RABeyondTheIronCurtain">
+        <Behavior value="VoidShade22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludingTheAdditionOfDivinePower">
+        <Behavior value="zhukefuxingfenji3"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeTargetsThatHaveBeenReduced">
+        <Behavior value="RAMovementSpeedAndArmor20Percent452"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareSpeed id="RAUnitMovement">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="bntankcnjs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz2">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="bntankcnjs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz22">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="bntankcnjs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz222">
+        <WhichUnit Value="Caster"/>
+        <Value value="2"/>
+        <Behavior value="bntankcnjs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz2222">
+        <WhichUnit Value="Caster"/>
+        <Value value="3"/>
+        <Behavior value="bntankcnjs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz22222">
+        <WhichUnit Value="Caster"/>
+        <Value value="4"/>
+        <Behavior value="bntankcnjs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz23">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="tqfs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="bntkcnddzdz232">
+        <WhichUnit Value="Caster"/>
+        <Compare value="NE"/>
+        <Behavior value="tqfs"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="bntkcxyzq">
+        <Type value="And"/>
+        <CombineArray value="bntkcnddzdz23"/>
+    </CValidatorCombine>
+    <CValidatorPlayerCompareFoodUsed id="overmindlimit">
+        <Compare value="LE"/>
+        <Value value="150"/>
+    </CValidatorPlayerCompareFoodUsed>
+    <CValidatorPlayerCompareFoodUsed id="overmindlimit2">
+        <Compare value="LE"/>
+        <Value value="500"/>
+    </CValidatorPlayerCompareFoodUsed>
+    <CValidatorUnitState id="TheCasterIsIdle">
+        <WhichUnit Value="Caster"/>
+        <Enabled value="1"/>
+        <State value="Idle"/>
+    </CValidatorUnitState>
+    <CValidatorUnitType id="zombie">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Zombie1"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotHellionTank2353">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="DumpTruck2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="KraithCrashingChargeAbort"/>
+    <CValidatorLocationCompareRange id="KraithCrashingChargeTargetClose"/>
+    <CValidatorCombine id="KraithCrashingChargeTargetCloseAndKraithCrashingChargeAbort"/>
+    <CValidatorUnitCompareBehaviorCount id="MoveSpeedGT22">
+        <Value value="1"/>
+        <Behavior value="AirfieldAuraB216"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Herrscher2ndUltimateCompareBehaviorCountHaveCasterAction">
+        <ResultFailed value="Error,Error/NotWidowMineTarget"/>
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="Herrscher2ndUltimateCasterAction"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="RangedMoveCombineLookatUnitDeath">
+        <Type value="And"/>
+        <CombineArray value="RangedMoveCompareBehaviorCountHaveCaster"/>
+        <CombineArray value="RangedMoveUnitFiltersLookatUnitNotDead"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RangedMoveCombineMoveCasterNotEnd">
+        <CombineArray value="RangedMoveCombineMoveCasterNotEndOrAction"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RangedMoveCombineMoveCasterNotEndOrAction"/>
+    <CValidatorCombine id="RangedMoveCombineTargetUnitDeath">
+        <Type value="And"/>
+        <CombineArray value="RangedMoveCompareBehaviorCountHaveCaster"/>
+        <CombineArray value="RangedMoveUnitFiltersTargetUnitNotDead"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="RangedMoveCompareBehaviorCountHaveCaster">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="RangedMoveCaster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RangedMoveCompareBehaviorCountNotHaveCaster">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="RangedMoveCaster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="RangedMoveLocationCompareRangeTargetEnd">
+        <WhichLocation Effect="RangedMoveCase" Value="TargetUnitOrPoint"/>
+        <Compare value="GE"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="RangedMoveLocationCompareRangeTargetRangeNoTurn">
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Compare value="LT"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="RangedMoveLocationCompareRangeTargetRangeTurn">
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Compare value="GE"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationPathable id="RangedMoveLocationPathableIsGround">
+        <Types index="Building" value="0"/>
+        <Types index="WaterShallow" value="0"/>
+    </CValidatorLocationPathable>
+    <CValidatorUnitFilters id="RangedMoveUnitFiltersCasterNotDead">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="RangedMoveUnitFiltersLookatUnitNotDead">
+        <WhichUnit Effect="RangedMoveSetCreateUnitLookatUnit"/>
+        <Filters value="-;Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="RangedMoveUnitFiltersTargetIsUnitNotDeadStasis">
+        <WhichUnit Effect="RangedMoveCreatePersistentTargetIsUnit"/>
+        <Filters value="-;Stasis,Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="RangedMoveUnitFiltersTargetUnitNotDead">
+        <WhichUnit Effect="RangedMoveSetCreateUnitTargetUnit"/>
+        <Filters value="-;Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="TargetCanBeThrown">
+        <Filters value="-;Air,Massive,Structure"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="TargetIsEnemyUnit">
+        <Filters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeMaxLevelInfantry">
+        <Behavior value="BlitzkriegAuraBehaviour22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAApplyFullFreezeValidatorZombieLevel1">
+        <Compare value="GE"/>
+        <Value value="9"/>
+        <Behavior value="RATheTargetIsFreezingAndSlowingDown1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAApplyFullFreezeToRemoveFreezeSlowdownValidator">
+        <Behavior value="RATheTargetIsCompletelyFrozenAndVulnerable1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAVerifierWithChargedStormCoil">
+        <Compare value="GE"/>
+        <Value value="2"/>
+        <Behavior value="RAMovementSpeedAndArmor20Percent39"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAImmunityAfterChargingTheMagneticStormCoil">
+        <Behavior value="RATheTeslaCoilHasBeenChargedAttackSpeedDamageAndRangeAreGreatlyIncreased"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAOpenWhenTheGateIsStagnant">
+        <Compare value="GT"/>
+        <Behavior value="被减速模型22"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludedBullCharge">
+        <Behavior value="RAMovementSpeedAndArmor20Percent11"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeMaxLevelSuperFortress">
+        <Behavior value="RAMovementSpeedAndArmor20Percent1622"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeLeviathan">
+        <Behavior value="RAMovementSpeedAndArmor20Percent102224"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludePhantomTanksWithSkillsEnabled">
+        <Behavior value="miratankspell"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludeMaxLevelMinecarts">
+        <Behavior value="RAProspectorWillIgnorePowerOutagesToMaintainMaximumEfficiency"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAAdvancedAssaultCannonWeaponCooldown">
+        <Behavior value="RAMovementSpeedAndArmor20Percent33"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RA1TheMagneticHarpoonCannotPullImmobilizedUnits">
+        <Behavior value="PsiDisruption232"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareSpeed id="RAPhantomTankStationary">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LE"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitCompareSpeed id="RAAircraftStationary">
+        <Compare value="LE"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitAlliance id="RANotAllowedToAttackAllies">
+        <Find value="0"/>
+    </CValidatorUnitAlliance>
+    <CValidatorUnitCompareCooldown id="RASuperDestructionDeviceSkillProgressVerification">
+        <Ability value="OdinNuclearStrike2222"/>
+    </CValidatorUnitCompareCooldown>
+    <CValidatorLocationCompareRange id="RAGreaterThan001Range">
+        <Compare value="GE"/>
+        <Range value="0.01"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="RALessThan02Range">
+        <Compare value="LE"/>
+        <Range value="0.2"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="gwbzgjztz">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="gwgjztz"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="gwbzgjztz2">
+        <WhichUnit Value="Caster"/>
+        <Compare value="NE"/>
+        <Behavior value="gwgjztz"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="gwfjydfjzjtz">
+        <WhichLocation Value="CasterUnit"/>
+        <AreaArray Count="1" Radius="1"/>
+        <Compare value="Eq"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <SearchFilters value="Ground,Structure;Self,Player,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="NotWidowMineTarget2">
+        <ResultFailed value="Error,Error/NotWidowMineTarget"/>
+        <Behavior value="MineDroneCountdown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotWidowMineTarget22">
+        <ResultFailed value="Error,Error/NotWidowMineTarget"/>
+        <Behavior value="MineDroneCountdown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="RangeCheckLE15">
+        <Range value="500"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareField id="RequiresTerran2">
+        <ResultFailed value="MustTargetRace"/>
+        <Field value="Race"/>
+        <Value value="Terr"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareField id="RequiresTerran22">
+        <ResultFailed value="MustTargetRace"/>
+        <Field value="Race"/>
+        <Value value="Terr"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareMarkerCount id="RAMagneticHarpoonVerifier">
+        <ResultNoUnit value="AlreadyTargeted"/>
+    </CValidatorUnitCompareMarkerCount>
+    <CValidatorUnitType id="RANotTheSniperHimself">
+        <Value value="Sniper"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareSpeed id="RAVanguardGunshipSpeed">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LE"/>
+        <Value value="0.1992"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitCompareBehaviorCount id="RAEliminateTheInvincibilityOfTheAceMammothTank">
+        <Behavior value="VoidShade2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RAExcludePacifiers">
+        <Behavior value="RAMovementSpeedAndArmor20Percent18"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="ValidateUSSR">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="RequirementUSSR"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="ValidateItaly">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="RequirementItaly"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="ValidateGermany">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="RequirementGermany"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="ValidateUK">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="RequirementUK"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorCombine id="kncfcxxgyzq">
+        <Type value="And"/>
+        <CombineArray value="KraithCrashingChargeTargetCloseAndKraithCrashingChargeAbort"/>
+        <CombineArray value="gwfjydfjzjtz"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="v4xydy6fw">
+        <WhichLocation Effect="ATRocket42"/>
+        <Compare value="LE"/>
+        <Range value="8"/>
+        <Value Value="SourceUnit"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitType id="zombie10">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Zergling"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie102">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="GuardianMP"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie103">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Zergling"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie1032">
+        <ResultFailed value="CantLoadThatUnit,oilonly"/>
+        <Value value="SovietDerrick"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie11">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Zombie2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie112">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Zombie2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie12">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Swimmer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie122">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Swimmer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie13">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="InfestedTerranCampaign"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie132">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="ChinaType95AresTank"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie133">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="InfestedTerranCampaign"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie14">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="InfestedExploder"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie142">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="InfestedExploder"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie15">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Abomination"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie16">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="InfestedAbomination"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie162">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="InfestedAbomination"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie1622">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Zombie22"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie17">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Zombie1"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie172">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="KerriganInfestBroodling"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie2">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="HotSHunter"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie3">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Baneling"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie32">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Baneling"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie4">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="DefilerMP"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie42">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="DefilerMP"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie5">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Abomination2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie52">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Abomination2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie6">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Abomination22"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie62">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Abomination22"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie622">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="GuardianMP"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie7">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Ravasaur"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie72">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Ravasaur"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie8">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Mutalisk"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie9">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <WhichUnit Value="Source"/>
+        <Value value="Scourge"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie92">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Leviathan"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="zombie922">
+        <ResultFailed value="CantLoadThatUnit"/>
+        <Value value="Overmind"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="zombiecrashlv1">
+        <CombineArray value="zombie17"/>
+        <CombineArray value="zombie172"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="zombiecrashlv12">
+        <CombineArray value="zombie17"/>
+        <CombineArray value="zombie172"/>
+        <CombineArray value="zombie133"/>
+        <CombineArray value="zombie112"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="zombiecrashlv122">
+        <CombineArray value="zombie17"/>
+        <CombineArray value="zombie172"/>
+        <CombineArray value="zombie133"/>
+        <CombineArray value="zombie112"/>
+        <CombineArray value="zombie122"/>
+        <CombineArray value="zombie162"/>
+        <CombineArray value="zombie142"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="zombiecrashlv1222">
+        <CombineArray value="zombie17"/>
+        <CombineArray value="zombie172"/>
+        <CombineArray value="zombie133"/>
+        <CombineArray value="zombie112"/>
+        <CombineArray value="zombie122"/>
+        <CombineArray value="zombie162"/>
+        <CombineArray value="zombie103"/>
+        <CombineArray value="zombie42"/>
+        <CombineArray value="zombie142"/>
+        <CombineArray value="zombie32"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="zombiecrashlv12222">
+        <CombineArray value="zombie17"/>
+        <CombineArray value="zombie172"/>
+        <CombineArray value="zombie133"/>
+        <CombineArray value="zombie112"/>
+        <CombineArray value="zombie122"/>
+        <CombineArray value="zombie162"/>
+        <CombineArray value="zombie103"/>
+        <CombineArray value="zombie42"/>
+        <CombineArray value="zombie142"/>
+        <CombineArray value="zombie52"/>
+        <CombineArray value="zombie72"/>
+        <CombineArray value="zombie32"/>
+        <CombineArray value="zombie1622"/>
+    </CValidatorCombine>
+</Catalog>

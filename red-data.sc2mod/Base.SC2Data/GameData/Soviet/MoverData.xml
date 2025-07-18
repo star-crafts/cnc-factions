@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CMoverMissile id="SovietDesolatorDeathSpray">
+        <MotionPhases>
+            <Driver value="Ballistic"/>
+            <Gravity value="4"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <FlightTime value="0.875"/>
+        </MotionPhases>
+    </CMoverMissile>
+</Catalog>

@@ -1,0 +1,66 @@
+<Catalog>
+
+    <CButton id="SpawnCaster">
+        <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+    </CButton>
+    <CButton id="SpawnCaster1" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster2" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster3" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster4" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster5" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster6" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster7" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster8" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster9" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster10" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster11" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster12" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster13" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster14" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster15" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster16" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster17" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster18" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster19" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster20" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster21" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster22" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster23" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster24" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster25" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster26" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster27" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster28" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster29" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster30" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster31" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster32" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster33" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster34" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster35" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster36" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster37" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster38" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster39" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster40" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster41" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster42" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster43" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster44" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster45" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster46" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster47" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster48" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster49" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster50" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster51" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster52" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster53" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster54" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster55" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster56" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster57" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster58" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster59" parent="SpawnCaster"/>
+    <CButton id="SpawnCaster60" parent="SpawnCaster"/>
+</Catalog>

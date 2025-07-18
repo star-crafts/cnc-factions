@@ -1,0 +1,24 @@
+<Catalog>
+    <CValidatorLocationPlacement id="TiberiumFieldPlacementCheck">
+        <Range value="2"/>
+        <Unit value="TibMineralField"/>
+    </CValidatorLocationPlacement>
+    <CValidatorCombine id="TiberiumRadiationDamageValidator">
+        <Type value="And"/>
+        <CombineArray value="HasNoTiberiumProtection"/>
+        <CombineArray value="HasNoNodTiberiumInfusion"/>
+        <CombineArray value="TiberiumRadiationDamageFilters"/>
+        <CombineArray value="IsNotLarva"/>
+        <CombineArray value="IsNotEgg"/>
+        <CombineArray value="IsNotWorker"/>
+    </CValidatorCombine>
+    <CValidatorUnitFilters id="TiberiumRadiationDamageFilters">
+        <ResultFailed value="CantTargetThatUnit"/>
+        <Filters value="Ground,Biological;Self,Structure,RawResource,HarvestableResource,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="HasNoTiberiumProtection">
+        <Compare value="LE"/>
+        <Behavior value="TiberiumProtection"/>
+    </CValidatorUnitCompareBehaviorCount>
+
+</Catalog>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectSet id="AlliedSpectralTowerAttackSet">
+        <EffectArray value="AlliedSpectralTowerAttackStartDelay"/>
+        <EffectArray value="AlliedSpectralTowerAttacksItsOwnApplicationBehaviorDetection"/>
+        <TargetLocationType value="Unknown"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="AlliedSpectralTowerAttackStartDelay">
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialDelay value="1"/>
+        <InitialEffect value="AlliedSpectralTowerDamageEffectSwitching5Stages"/>
+        <ExpireDelay value="0.1"/>
+        <FinalEffect value="AlliedSpectralTowerRemovesDamageBonusVerificationBehavior"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="AlliedSpectralTowerScatteringVestUnit"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="AlliedSpectralTowerAttacksItsOwnApplicationBehaviorDetection">
+        <ValidatorArray index="0" removed="1"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="AlliedSpectralTowerAttackApplicationDetection"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AlliedSpectralTowerCollectionOfChargingEffects">
+        <EffectArray value="AlliedSpectralTowerChargesFakeDamage"/>
+        <!-- <EffectArray value="AlliedSpectralTowerChargingImposesBehavioralVerification"/> -->
+    </CEffectSet>
+    <CEffectApplyBehavior id="AlliedSpectralTowerChargingImposesBehavioralVerification">
+        <Behavior value="AlliedSpectraltowerchargingbehaviorverificationbehavior"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="AlliedSpectralTowerChargingStartDelay">
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <InitialDelay value="0.05"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="AlliedSpectralTowerCollectionOfChargingEffects"/>
+        <PeriodicPeriodArray value="0.02"/>
+    </CEffectCreatePersistent>
+    <CEffectSwitch id="AlliedSpectralTowerSplashDamageEffectSwitching5Stages">
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifierLevel1" Effect="AlliedSpectralSplashDamageSearchLevel2"/>
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifier2ndFloor" Effect="AlliedSpectralSplashDamageSearchLevel3"/>
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifier3rdFloor" Effect="AlliedSpectralSplashDamageSearchLevel4"/>
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifier4thFloor" Effect="AlliedSpectralSplashDamageSearchLevel5"/>
+        <CaseDefault value="AlliedSpectralSplashDamageSearchLevel1"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="AlliedSpectralTowerDamageEffectSwitching5Stages">
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifierLevel1" Effect="AlliedSpectralTowerDamageLevel2"/>
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifier2ndFloor" Effect="AlliedSpectralTowerDamageLevel3"/>
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifier3rdFloor" Effect="AlliedSpectralTowerDamageLevel4"/>
+        <CaseArray Validator="AlliedSpectralTowerChargingStackVerifier4thFloor" Effect="AlliedSpectralTowerDamageLevel5"/>
+        <CaseDefault value="AlliedSpectralTowerDamageLevel1"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSwitch>
+    <CEffectDamage id="AlliedSpectralTowerChargesFakeDamage"/>
+    <CEffectRemoveBehavior id="AlliedSpectralTowerRemovesDamageBonusVerificationBehavior">
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="AlliedSpectraltowerchargingbehaviorverificationbehavior"/>
+    </CEffectRemoveBehavior>
+    <CEffectCreateUnit id="AlliedSpectralTowerScatteringVestUnit">
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Origin Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="AlliedSpectralTowerSplashDamageEffectSwitching5Stages"/>
+        <SpawnUnit value="AlliedPhantomTankSpectralVestUnit"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="AlliedSpectralTowerDamageLevel1" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="15"/>
+        <SearchFilters value="-;Player,Ally,Neutral"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="AlliedSpectralTowerDamageLevel2" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="30"/>
+        <SearchFilters value="-;Player,Ally,Neutral"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="AlliedSpectralTowerDamageLevel3" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="45"/>
+        <SearchFilters value="-;Player,Ally,Neutral"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="AlliedSpectralTowerDamageLevel4" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="60"/>
+        <SearchFilters value="-;Player,Ally,Neutral"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="AlliedSpectralTowerDamageLevel5" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="75"/>
+        <SearchFilters value="-;Player,Ally,Neutral"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="AlliedSpectralTowerDamageDisplay" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="30"/>
+        <SearchFilters value="-;Player,Ally,Neutral"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="AlliedSpectralTowerTurnOffAttackSkillsWhenCharging">
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="AlliedSpectralSplashDamageSearchLevel1">
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
+        <AreaArray MaxCount="4" Radius="2" Effect="AlliedSpectralTowerDamageLevel1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="AlliedSpectralSplashDamageSearchLevel2">
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
+        <AreaArray MaxCount="5" Radius="2.5" Effect="AlliedSpectralTowerDamageLevel2"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="AlliedSpectralSplashDamageSearchLevel3">
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
+        <AreaArray MaxCount="6" Radius="3" Effect="AlliedSpectralTowerDamageLevel3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="AlliedSpectralSplashDamageSearchLevel4">
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
+        <AreaArray MaxCount="7" Radius="3.5" Effect="AlliedSpectralTowerDamageLevel4"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="AlliedSpectralSplashDamageSearchLevel5">
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
+        <AreaArray MaxCount="8" Radius="4" Effect="AlliedSpectralTowerDamageLevel5"/>
+    </CEffectEnumArea>
+</Catalog>

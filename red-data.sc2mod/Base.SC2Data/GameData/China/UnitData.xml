@@ -1,0 +1,2240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+
+    <CUnit default="1" id="ChinaGround" parent="CNCGround">
+        <Race value="China"/>
+        <GlossaryCategory value="Unit/Category/ChinaUnits"/>
+        <HotkeyCategory value="Unit/Category/ChinaUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ChinaAir" parent="CNCAir">
+        <Race value="China"/>
+        <GlossaryCategory value="Unit/Category/ChinaUnits"/>
+        <HotkeyCategory value="Unit/Category/ChinaUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ChinaStructure" parent="CNCStructure">
+        <Race value="China"/>
+        <GlossaryCategory value="Unit/Category/ChinaUnits"/>
+        <HotkeyCategory value="Unit/Category/ChinaUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ChinaMissile" parent="CNCMissile">
+        <Race value="China"/>
+    </CUnit>
+
+    <CUnit parent="ChinaStructure" id="ChinaAirport">
+        <Facing value="339.994"/>
+        <Attributes index="Robotic" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <EnergyStart value="200"/>
+        <EnergyMax value="500"/>
+        <EnergyRegenRate value="2"/>
+        <Sight value="10"/>
+        <!--Food value="-4"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="50"/>
+        <AttackTargetPriority value="5"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="AirportTrain"/>
+        <AbilArray Link="attack"/>
+        <BehaviorArray Link="AircraftAirportParkingAircraftTracking"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <WeaponArray Link="InterceptorLaunch2"/>
+        <WeaponArray Link="InterceptorLaunch22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="ReturnAirport2" Type="AbilCmd" AbilCmd="CNCDestroyTheBomberInside,255" Row="2" Column="4"/>
+            <LayoutButtons Face="BuildTacticalBomber22" Type="AbilCmd" AbilCmd="AirportTrain,Train2" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildTacticalBomber2" Type="AbilCmd" AbilCmd="AirportTrain,Train17" Row="0" Column="1"/>
+            <LayoutButtons Face="BuildStrategicBomber" Type="AbilCmd" AbilCmd="AirportTrain,Train7" Row="0" Column="3"/>
+            <LayoutButtons Face="BuildTacticalBomber" Type="AbilCmd" AbilCmd="AirportTrain,Train5" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildLightBomber" Type="AbilCmd" AbilCmd="AirportTrain,Train4" Row="0" Column="2"/>
+        </CardLayouts>
+        <CardLayouts CardId="CAMP">
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <Footprint value="Footprint5x5Contour"/>
+        <DeadFootprint value="Footprint5x5Contour"/>
+        <PlacementFootprint value="Footprint5x5Contour"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.8"/>
+        <TacticalAI value="Starport"/>
+        <TechAliasArray value="Alias_Starport"/>
+        <AIEvaluateAlias value="Starport"/>
+        <ReviveInfoBase>
+            <Charge Link="Starport/Revive"/>
+            <Cooldown Link="Starport/Revive"/>
+        </ReviveInfoBase>
+        <KillXP value="10"/>
+        <EffectArray index="Death" value="CNCAirporttraversaltrackingaircraft"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaSmeltingFurnace">
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <LifeStart value="2200"/>
+        <LifeMax value="2200"/>
+        <ShieldRegenDelay value="20"/>
+        <Sight value="8"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="20"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="CityTrain"/>
+        <AbilArray Link="RATechnologyCenterResearch4"/>
+        <BehaviorArray Link="JurefinerycreateMiner4"/>
+        <BehaviorArray Link="RefineryB"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent612"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildTankTrap224222" Type="AbilCmd" AbilCmd="CityTrain,Train6" Row="0" Column="0"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="0" Column="4"/>
+            <LayoutButtons Face="RAMinerUpgradeCollectionVolume" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch4,Research21" Row="1" Column="0"/>
+            <LayoutButtons Face="RAMinerUpgradeMiningSpeed1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch4,Research22" Row="1" Column="1"/>
+            <LayoutButtons Face="RAUpgradeCollectionCapacity" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch4,Research26" Row="1" Column="2"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="2"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaNuclearPowerPlant">
+        <Facing value="29.9926"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <Food value="30"/>
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="35"/>
+        <KillXP value="30"/>
+        <AbilArray Link="attack"/>
+        <BehaviorArray Link="jiangshichaobaoshi2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="NukeCalldown2" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="125"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaLargeFossilfuelpowerstation">
+        <Facing value="239.9963"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <Food value="30"/>
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="35"/>
+        <KillXP value="30"/>
+        <AbilArray Link="attack"/>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint4x423"/>
+        <PlacementFootprint value="Footprint4x423"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="125"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaTeslaReactor">
+        <Facing value="329.9963"/>
+        <LifeStart value="850"/>
+        <LifeMax value="850"/>
+        <Food value="10"/>
+        <CostResource index="Minerals" value="600"/>
+        <RepairTime value="35"/>
+        <KillXP value="8"/>
+        <AbilArray Link="attack"/>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint3x2"/>
+        <PlacementFootprint value="Footprint3x2"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="125"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaDongfeng41Launchsilo">
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="5000"/>
+        <LifeMax value="5000"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="4000"/>
+        <RepairTime value="40"/>
+        <KillXP value="200"/>
+        <AbilArray Link="TacNukeStrike2"/>
+        <AbilArray Link="GhostAcademyResearch"/>
+        <AbilArray Link="ScannerSweep"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent482"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="NukeCalldown3" Type="AbilCmd" AbilCmd="TacNukeStrike2,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="3"/>
+        <TechAliasArray value="Alias_ShadowOps"/>
+        <GlossaryPriority value="318"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaBarracks">
+        <Facing value="29.9926"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <Sight value="7"/>
+        <!--Food value="-4"/-->
+        <CostResource index="Minerals" value="500"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="BarracksTrain22"/>
+        <AbilArray Link="CityTrain"/>
+        <AbilArray Link="heal"/>
+        <BehaviorArray Link="MassProduction22"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TrainWehrmachtInfantry223" Type="AbilCmd" AbilCmd="BarracksTrain22,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="heal,255" Row="1" Column="4"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2236" Type="AbilCmd" AbilCmd="BarracksTrain22,Train3" Row="0" Column="1"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2232" Type="AbilCmd" AbilCmd="BarracksTrain22,Train5" Row="1" Column="0"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2233" Type="AbilCmd" AbilCmd="BarracksTrain22,Train4" Row="1" Column="1"/>
+            <LayoutButtons Face="TrainCombatEngineer222" Type="AbilCmd" AbilCmd="BarracksTrain22,Train2" Row="2" Column="0"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2234" Type="AbilCmd" AbilCmd="BarracksTrain22,Train6" Row="2" Column="1"/>
+            <LayoutButtons Face="TrainWehrmachtInfantry2235" Type="AbilCmd" AbilCmd="BarracksTrain22,Train7" Row="2" Column="2"/>
+            <LayoutButtons Face="TrainBritishInfantry" Type="AbilCmd" AbilCmd="BarracksTrain22,Train8" Row="0" Column="2"/>
+        </CardLayouts>
+        <Footprint value="Footprint3x3"/>
+        <MinimapRadius value="1"/>
+        <TacticalAI value=""/>
+        <AIEvaluateAlias value=""/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <KillXP value="5"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaConstructionofRelayStations">
+        <DeathRevealDuration value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <Response value="Nothing"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <Sight value="10"/>
+        <VisionHeight value="20"/>
+        <!--Food value="-1"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="50"/>
+        <KillXP value="8"/>
+        <AbilArray index="1" Link="que1"/>
+        <AbilArray Link="CityTrain"/>
+        <AbilArray Link="Ally"/>
+        <AbilArray Link="RAChooseAirForce"/>
+        <AbilArray Link="SelectShipyards"/>
+        <AbilArray Link="RASelectFactory"/>
+        <AbilArray Link="AucryoShrinBeam2222"/>
+        <AbilArray Link="SubuildBuildings3"/>
+        <AbilArray Link="move"/>
+        <BehaviorArray Link="MassProduction223"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SubuildBuildings3,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons>
+                <Face value="SovietTowerPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="0002"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="0"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietArchitecturalPage" Type="Passive" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildSovietPowerPlant224" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build6" Row="1" Column="0"/>
+            <LayoutButtons Face="SovietBuildingRepair" Type="AbilCmd" AbilCmd="AucryoShrinBeam2222,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Move3" Type="AbilCmd" AbilCmd="stop,Stop" Row="1" Column="4"/>
+            <LayoutButtons Face="RABuildBarracks" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build18" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildSovietPowerPlant34" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build21" Row="1" Column="2"/>
+            <LayoutButtons Face="BuildAirport22" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build29" Row="1" Column="3"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced43222" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build22" Row="1" Column="3"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced432224" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build28" Row="1" Column="3"/>
+            <LayoutButtons Face="BuildRadar322" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build25" Row="2" Column="1"/>
+            <LayoutButtons Face="BuildSovietPowerPlant2233" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build24" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced4322" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build26" Row="2" Column="3"/>
+            <LayoutButtons Face="SovietAircraftPage" Type="AbilCmd" AbilCmd="RAChooseAirForce,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="SubuildBuildings3,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="SovietArchitecturalPage" Type="CancelSubmenu" Row="0" Column="0"/>
+            <LayoutButtons Face="SovietTowerPage" Type="Passive" Row="0" Column="1"/>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced432223" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build23" Row="1" Column="4"/>
+            <LayoutButtons Face="KraithCrashingCharge24222" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build27" Row="1" Column="4"/>
+            <LayoutButtons Face="CntowerdefenseBuild7" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build8" Row="1" Column="4"/>
+            <LayoutButtons Face="SovietBuildingRepair" Type="AbilCmd" AbilCmd="AucryoShrinBeam2222,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SovietAircraftPage" Type="AbilCmd" AbilCmd="RAChooseAirForce,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="CntowerdefenseBuild" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build30" Row="1" Column="0"/>
+            <LayoutButtons Face="CntowerdefenseBuild3" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build1" Row="1" Column="1"/>
+            <LayoutButtons Face="CntowerdefenseBuild2" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build2" Row="1" Column="2"/>
+            <LayoutButtons Face="CntowerdefenseBuild4" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build4" Row="1" Column="3"/>
+            <LayoutButtons Face="CntowerdefenseBuild5" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build5" Row="2" Column="1"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="2" Column="2"/>
+            <LayoutButtons Face="CntowerdefenseBuild6" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build7" Row="2" Column="2"/>
+            <LayoutButtons Face="CntowerdefenseBuild42" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build3" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <SubgroupPriority value="21"/>
+        <MinimapRadius value="1"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaWatchtower">
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <Sight value="10"/>
+        <!--Food value="-1"/-->
+        <CostResource index="Minerals" value="500"/>
+        <RepairTime value="40"/>
+        <KillXP value="2"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink221732"/>
+        <AbilArray Link="BunkerTransport2222"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="M6033"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink221732,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="BiodomeLoad2" Type="AbilCmd" AbilCmd="BunkerTransport2222,Load" Row="1" Column="3"/>
+            <LayoutButtons Face="BunkerUnloadAll22" Type="AbilCmd" AbilCmd="BunkerTransport2222,UnloadAll" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaTowerofFire">
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <Sight value="10"/>
+        <!--Food value="-2"/-->
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="40"/>
+        <KillXP value="3"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink221734"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="AlliedFrozenLegion_Actor" Turret="RAShenzhouTankTurret2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink221734,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaGatlingCannon">
+        <Description value="Button/Tooltip/Cnjiatelin"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <Sight value="10"/>
+        <!--Food value="-1"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="40"/>
+        <KillXP value="3"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink221733"/>
+        <AbilArray Link="SovietMotoModeSwhich65"/>
+        <BehaviorArray Link="UpgradeLevel129"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="Twin792mm243223" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="Twin792mm2432232" Turret="RAShenzhouTankTurret2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink221733,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus222222664" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich65,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus22222764" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich65,On" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaHeavyBallista">
+        <Description value="Button/Tooltip/Cnzhongnupao"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <Sight value="13"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="40"/>
+        <KillXP value="2"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink221735"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="88cmKwK362423" Turret="RAShenzhouTankTurret2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink221735,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaBroadcastTower">
+        <Description value="Button/Tooltip/Cnguangbo"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <Sight value="20"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="1800"/>
+        <RepairTime value="40"/>
+        <KillXP value="5"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink221737"/>
+        <BehaviorArray Link="SandbagAuraA63"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="RAConcealedWeaponsInBroadcastTower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink221737,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced4332" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaEagleStrikeMissileLaunchTower">
+        <Description value="Button/Tooltip/Cngategun"/>
+        <Facing value="315"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="3500"/>
+        <LifeMax value="3500"/>
+        <Sight value="14"/>
+        <!--Food value="-4"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="40"/>
+        <KillXP value="10"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink221736"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="DutchConcussiveGrenade24"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink221736,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaHuntianTower">
+        <Description value="Button/Tooltip/Cnhuntian"/>
+        <Facing value="315"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="5000"/>
+        <LifeMax value="5000"/>
+        <Sight value="15"/>
+        <!--Food value="-6"/-->
+        <CostResource index="Minerals" value="4000"/>
+        <RepairTime value="40"/>
+        <KillXP value="20"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink221738"/>
+        <BehaviorArray Link="UpgradeLevel12327"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam2222"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink221738,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaWarFactory">
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="70"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="WarFactoryTrain22"/>
+        <AbilArray Link="Disband22"/>
+        <AbilArray Link="NanoRepair"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildCnlingbo4" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train19" Row="2" Column="0"/>
+            <LayoutButtons Face="BuildCnlingbo2" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train15" Row="0" Column="1"/>
+            <LayoutButtons Face="BuildCnlingbo" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train14" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildCnlingbo7" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train16" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildCnlingbo6" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train17" Row="1" Column="1"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="NanoRepair,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildCnlingbo3" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train20" Row="0" Column="2"/>
+            <LayoutButtons Face="BuildCnlingbo5" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train18" Row="2" Column="1"/>
+            <LayoutButtons Face="Disband4" Type="AbilCmd" AbilCmd="Disband22,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="375"/>
+        <SubgroupPriority value="21"/>
+        <KillXP value="20"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaRadar">
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <Sight value="24"/>
+        <!--Food value="-3"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="10"/>
+        <KillXP value="10"/>
+        <AbilArray Link="ScannerSweep"/>
+        <BehaviorArray Link="SensorTowerRadar"/>
+        <BehaviorArray Link="UnderConstruction"/>
+        <BehaviorArray Link="Detector8"/>
+        <BehaviorArray Link="Detector12"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="RadarField" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <TacticalAI value="Radar_Model"/>
+        <GlossaryPriority value="314"/>
+        <ReviveInfoBase>
+            <Charge Link="Radar_Model/Revive"/>
+            <Cooldown Link="Radar_Model/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaSundialarray">
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="6000"/>
+        <LifeMax value="6000"/>
+        <Sight value="6"/>
+        <!--Food value="-6"/-->
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="50"/>
+        <KillXP value="100"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="ScannerSweep"/>
+        <AbilArray Link="RAActivateTheZhigeForceField"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent48"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent482"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5PassiveCancelToSelection,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="KraithCrashingCharge2422" Type="AbilCmd" AbilCmd="RAActivateTheZhigeForceField,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="3"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="12500"/>
+        <ScoreKill value="2500"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="2"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaHeavyArmorWorkshop">
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <!--Food value="-5"/-->
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="70"/>
+        <KillXP value="20"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="WarFactoryTrain22"/>
+        <AbilArray Link="Disband22"/>
+        <AbilArray Link="NanoRepair"/>
+        <AbilArray Link="BuildCity3"/>
+        <AbilArray Link="BuildCity"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="MassProduction2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildHeavyTankAdvanced4222" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train3" Row="2" Column="0"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced42223" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train1" Row="0" Column="1"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced42" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train6" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced422232" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train4" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced422" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train2" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced42222" Type="AbilCmd" AbilCmd="WarFactoryTrain22,Train5" Row="1" Column="2"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="NanoRepair,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="Disband4" Type="AbilCmd" AbilCmd="Disband22,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint4x4"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="375"/>
+        <SubgroupPriority value="21"/>
+    </CUnit>
+    <CUnit parent="ChinaStructure" id="ChinaConstructionYard">
+        <Attributes index="Robotic" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <FogVisibility value="Visible"/>
+        <LifeStart value="10000"/>
+        <LifeMax value="10000"/>
+        <LifeRegenDelay value="30"/>
+        <LifeRegenRate value="5"/>
+        <Sight value="25"/>
+        <Food value="20"/>
+        <CostResource index="Minerals" value="5000"/>
+        <AttackTargetPriority value="5"/>
+        <AbilArray index="1" Link="que1"/>
+        <AbilArray Link="CityTrain"/>
+        <AbilArray Link="Ally"/>
+        <AbilArray Link="RAChooseAirForce"/>
+        <AbilArray Link="SelectShipyards"/>
+        <AbilArray Link="RASelectFactory"/>
+        <AbilArray Link="AucryoShrinBeam2222"/>
+        <AbilArray Link="SubuildBuildings3"/>
+        <AbilArray Link="move"/>
+        <BehaviorArray Link="CommandCenterQueue"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent44"/>
+        <BehaviorArray Link="MassProduction223"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons>
+                <Face value="SovietTowerPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="0002"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="0"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SubuildBuildings3,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietArchitecturalPage" Type="Passive" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildSovietPowerPlant224" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build6" Row="1" Column="0"/>
+            <LayoutButtons Face="SovietBuildingRepair" Type="AbilCmd" AbilCmd="AucryoShrinBeam2222,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced432224" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build28" Row="2" Column="0"/>
+            <LayoutButtons Face="RABuildBarracks" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build18" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildSovietPowerPlant34" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build21" Row="1" Column="2"/>
+            <LayoutButtons Face="Move3" Type="AbilCmd" AbilCmd="stop,Stop" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildRadar322" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build25" Row="2" Column="1"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced43222" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build22" Row="1" Column="3"/>
+            <LayoutButtons Face="BuildAirport22" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build29" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildSovietPowerPlant2233" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build24" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced4322" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build26" Row="2" Column="3"/>
+            <LayoutButtons Face="SovietAircraftPage" Type="AbilCmd" AbilCmd="RAChooseAirForce,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="SubuildBuildings3,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="SovietArchitecturalPage" Type="CancelSubmenu" Row="0" Column="0"/>
+            <LayoutButtons Face="SovietTowerPage" Type="Passive" Row="0" Column="1"/>
+            <LayoutButtons Face="SovietInfantryPage" Type="AbilCmd" AbilCmd="SelectShipyards,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="SovietVehiclePage" Type="AbilCmd" AbilCmd="RASelectFactory,Execute" Row="0" Column="3"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="1" Column="4"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced432223" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build23" Row="1" Column="4"/>
+            <LayoutButtons Face="KraithCrashingCharge24222" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build27" Row="1" Column="4"/>
+            <LayoutButtons Face="CntowerdefenseBuild7" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build8" Row="1" Column="4"/>
+            <LayoutButtons Face="SovietBuildingRepair" Type="AbilCmd" AbilCmd="AucryoShrinBeam2222,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SovietAircraftPage" Type="AbilCmd" AbilCmd="RAChooseAirForce,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="CntowerdefenseBuild" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build30" Row="1" Column="0"/>
+            <LayoutButtons Face="CntowerdefenseBuild3" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build1" Row="1" Column="1"/>
+            <LayoutButtons Face="CntowerdefenseBuild2" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build2" Row="1" Column="2"/>
+            <LayoutButtons Face="CntowerdefenseBuild4" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build4" Row="1" Column="3"/>
+            <LayoutButtons Face="CntowerdefenseBuild5" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build5" Row="2" Column="1"/>
+            <LayoutButtons Face="buttonlocked222223" Type="Passive" Requirements="UnlockTechRequirement222" Row="2" Column="2"/>
+            <LayoutButtons Face="CntowerdefenseBuild6" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build7" Row="2" Column="2"/>
+            <LayoutButtons Face="CntowerdefenseBuild42" Type="AbilCmd" AbilCmd="SubuildBuildings3,Build3" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <Footprint value="Footprint4x4Contour"/>
+        <PlacementFootprint value="Footprint4x4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryAlias value="ChinaConstructionYard"/>
+        <KillXP value="500"/>
+        <EffectArray index="Death" value="DisbandDeath52"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaJ20WeilongFighter">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="3.5"/>
+        <Deceleration value="1000"/>
+        <Sight value="10"/>
+        <Food value="-0.5"/>
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="2"/>
+        <KillXP value="4"/>
+        <AbilArray Link="GravitonBeam2"/>
+        <BehaviorArray Link="AirfieldAuraB216"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <WeaponArray Link="LongboltMissile222"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="GravitonBeam2" Type="AbilCmd" AbilCmd="GravitonBeam2,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaSkyLantern">
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="AlwaysThreatens" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <SpeedMaximum value="0"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <CostResource index="Minerals" value="500"/>
+        <KillXP value="20"/>
+        <AbilArray Link="NanoRepair"/>
+        <AbilArray Link="BuildInProgress"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="NanoRepair,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.125"/>
+        <SeparationRadius value="0.1"/>
+        <InnerRadius value="0.1"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.375"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="5"/>
+        <TauntDuration index="Dance" value="5"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaH6HeavyBomber">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeArmor value="1"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="50"/>
+        <Speed value="3.5"/>
+        <Acceleration value="20"/>
+        <Deceleration value="10"/>
+        <LateralAcceleration value="10"/>
+        <Sight value="8"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="2"/>
+        <KillXP value="4"/>
+        <AbilArray Link="CNCReturnToTheAirport"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent122"/>
+        <BehaviorArray Link="UpgradeLevel12242"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent1222"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent362"/>
+        <WeaponArray Link="90mmCannons24"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ReturnAirport" Type="AbilCmd" AbilCmd="CNCReturnToTheAirport,255" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <ScoreMake value="200"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="13"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaH20StealthBomber">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <LifeArmor value="1"/>
+        <EnergyStart value="30"/>
+        <EnergyMax value="30"/>
+        <Speed value="4.3007"/>
+        <Acceleration value="20"/>
+        <Deceleration value="3"/>
+        <LateralAcceleration value="10"/>
+        <Sight value="12"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="2"/>
+        <KillXP value="10"/>
+        <AbilArray Link="CNCReturnToTheAirport"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent122"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent1222"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent362"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent52"/>
+        <WeaponArray Link="90mmCannons242"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ReturnAirport" Type="AbilCmd" AbilCmd="CNCReturnToTheAirport,255" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <ScoreMake value="200"/>
+        <SubgroupPriority value="13"/>
+        <GlossaryPriority value="160"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaYaoguangSpaceStrikePlatform">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <PushPriority value="15"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="6000"/>
+        <LifeMax value="6000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="5"/>
+        <EnergyStart value="80"/>
+        <EnergyMax value="80"/>
+        <EnergyRegenRate value="1.5"/>
+        <Speed value="2"/>
+        <Acceleration value="20"/>
+        <Deceleration value="10"/>
+        <LateralAcceleration value="10"/>
+        <Sight value="15"/>
+        <Food value="-7"/>
+        <CostResource index="Minerals" value="5000"/>
+        <RepairTime value="2"/>
+        <KillXP value="30"/>
+        <AbilArray Link="SovietMotoModeSwhich523"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent68"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent6822"/>
+        <WeaponArray Link="JetCannon3"/>
+        <WeaponArray Link="JetCannon32" Turret="YaoguangTurret"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus2222226524" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich523,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus222227534" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich523,On" Row="2" Column="1"/>
+            <LayoutButtons Face="OdinBarrage" Type="AbilCmd" AbilCmd="attack,Barrage" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <ScoreMake value="200"/>
+        <SubgroupPriority value="16"/>
+        <GlossaryPriority value="160"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaJ10RaptorFigher">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="700"/>
+        <LifeMax value="700"/>
+        <LifeArmor value="1"/>
+        <Speed value="5"/>
+        <Acceleration value="5"/>
+        <Deceleration value="500"/>
+        <Sight value="8"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="2"/>
+        <KillXP value="2"/>
+        <AbilArray Link="VolatileBurstBuilding232"/>
+        <BehaviorArray Link="AirfieldAuraB216"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <WeaponArray Link="100mmATT4"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="scoutattackmode" Type="AbilCmd" AbilCmd="VolatileBurstBuilding232,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="scoutmode" Type="AbilCmd" AbilCmd="VolatileBurstBuilding232,On" Row="1" Column="1"/>
+        </CardLayouts>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaB29HeavyBomber">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Nothing"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenDelay value="10"/>
+        <LifeRegenRate value="1"/>
+        <Speed value="1"/>
+        <Acceleration value="2.5"/>
+        <Deceleration value="1"/>
+        <LateralAcceleration value="10"/>
+        <Sight value="8"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="2"/>
+        <WeaponArray Link="StrategicBomb"/>
+        <WeaponArray Link="StrategicBomb3"/>
+        <WeaponArray Link="StrategicBomb32"/>
+        <Radius value="0.1875"/>
+        <SeparationRadius value="0.2"/>
+        <ScoreMake value="200"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="0.375"/>
+        <GlossaryPriority value="160"/>
+        <GlossaryStrongArray value="SJViking"/>
+        <GlossaryWeakArray value="SJFighter1"/>
+    </CUnit>
+    <CUnit parent="ChinaAir" id="ChinaLightBomber">
+        <Subtitle value="UnitSubtitle/hangk"/>
+        <Collide index="FlyingEscorts" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Nothing"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeRegenDelay value="10"/>
+        <LifeRegenRate value="0.1992"/>
+        <Speed value="3"/>
+        <Acceleration value="50"/>
+        <Deceleration value="0.5"/>
+        <LateralAcceleration value="10"/>
+        <Sight value="6"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="2"/>
+        <WeaponArray Link="LightBomb" Turret="SiegeTank"/>
+        <WeaponArray Link="LightBomb4" Turret="SiegeTank"/>
+        <WeaponArray Link="LightBomb5" Turret="SiegeTank"/>
+        <ScoreMake value="50"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <MinimapRadius value="0.375"/>
+        <GlossaryPriority value="160"/>
+        <GlossaryStrongArray value="SJViking"/>
+        <GlossaryWeakArray value="SJFighter1"/>
+    </CUnit>
+
+    <CUnit parent="ChinaGround" id="ChinaDragonFlame">
+        <Subtitle value="UnitSubtitle/jiqiang"/>
+        <PushPriority value="5"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="1.8007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="275"/>
+        <RepairTime value="20"/>
+        <KillXP value="1"/>
+        <AbilArray Link="RAActivateDragonFlameArmyDragonBreathBullet"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <WeaponArray Link="LeeEnfield2"/>
+        <WeaponArray Link="Flamethrower3"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus222223222" Type="AbilCmd" AbilCmd="RAActivateDragonFlameArmyDragonBreathBullet,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.3"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="21"/>
+        <TauntDuration index="Cheer" value="5"/>
+        <TauntDuration index="Dance" value="5"/>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaArmorbreakingIronGuard">
+        <Subtitle value="UnitSubtitle/fantanke"/>
+        <Description value="Button/Tooltip/Cnpojiatiewei"/>
+        <PushPriority value="5"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranChinaArmorbreakingIronGuardArmor"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="11"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="500"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="4"/>
+        <AbilArray Link="VolatileBurstBuilding2432"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <WeaponArray Link="88cmKwK362424"/>
+        <WeaponArray Link="88cmKwK3624242"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus22222532" Type="AbilCmd" AbilCmd="VolatileBurstBuilding2432,Off" Row="1" Column="1"/>
+            <LayoutButtons>
+                <Face value="zhukefuxingfenji24"/>
+                <Type value="Passive"/>
+                <Behavior value="SovietStrongwilloftheRedArmy"/>
+                <Requirements value="RARedArmyWillUnlocksPrerequisites"/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons Face="TossGrenadeTychus222222432" Type="AbilCmd" AbilCmd="VolatileBurstBuilding2432,On" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.3"/>
+        <GlossaryPriority value="70"/>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaOreMiner">
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="11"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="50"/>
+        <AttackTargetPriority value="1"/>
+        <KillXP value="50"/>
+        <AbilArray Link="SCVHarvest2"/>
+        <AbilArray Link="RAMinecartExpands"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent63"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="nianyalv1"/>
+        <EffectArray index="Create" value="oreminerSearch"/>
+        <EffectArray index="Birth" value="oreminerSearch"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="SCVHarvest2,Gather" Row="1" Column="0"/>
+            <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest2,Return" Row="1" Column="1"/>
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="WreckingCrewAssaultMode2222252" Type="AbilCmd" AbilCmd="RAMinecartExpands,Build21" Row="2" Column="0"/>
+            <LayoutButtons Face="RASingleMaximumCarryingCapacity" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.1875"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="700"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.875"/>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaOverlordTank">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="7000"/>
+        <LifeMax value="7000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="1.8007"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="14"/>
+        <Food value="-5"/>
+        <CostResource index="Minerals" value="3000"/>
+        <RepairTime value="45"/>
+        <KillXP value="25"/>
+        <AbilArray Link="FighterMode232"/>
+        <AbilArray Link="FighterMode2322"/>
+        <AbilArray Link="FighterMode2323"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="nianayaLevel142"/>
+        <WeaponArray Link="90mmHTCannon23" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="nianyalv142"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildHeavyTankAdvanced43" Type="AbilCmd" AbilCmd="FighterMode232,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced4" Type="AbilCmd" AbilCmd="FighterMode2322,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="BuildHeavyTankAdvanced432" Type="AbilCmd" AbilCmd="FighterMode2323,Execute" Row="1" Column="2"/>
+        </CardLayouts>
+        <Radius value="0.8125"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaOverlordTankBroadcastattachment">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="7000"/>
+        <LifeMax value="7000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="1.3984"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="15"/>
+        <Food value="-5"/>
+        <CostResource index="Minerals" value="4500"/>
+        <RepairTime value="45"/>
+        <KillXP value="25"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="SandbagAuraA6"/>
+        <BehaviorArray Link="nianayaLevel142"/>
+        <WeaponArray Link="90mmHTCannon23" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="nianyalv142"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildHeavyTankAdvanced433" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.8125"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <SelectAlias value="ChinaOverlordTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaOverlordTankGunattachment">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="7000"/>
+        <LifeMax value="7000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="1.3984"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="15"/>
+        <Food value="-5"/>
+        <CostResource index="Minerals" value="4500"/>
+        <RepairTime value="45"/>
+        <KillXP value="25"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="nianayaLevel142"/>
+        <WeaponArray Link="90mmHTCannon23" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="Twin792mm243222" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="nianyalv142"/>
+        <CardLayouts/>
+        <Radius value="0.8125"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <SelectAlias value="ChinaOverlordTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaOverlordTankRocketLauncherattachment">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="7000"/>
+        <LifeMax value="7000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="1.3984"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="15"/>
+        <Food value="-5"/>
+        <CostResource index="Minerals" value="4500"/>
+        <RepairTime value="45"/>
+        <KillXP value="25"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="nianayaLevel142"/>
+        <WeaponArray Link="90mmHTCannon23" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="VXWeaponGround4" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="nianyalv142"/>
+        <CardLayouts/>
+        <Radius value="0.8125"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <SelectAlias value="ChinaOverlordTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaType95AresTank">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.3984"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="12"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="1750"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="SandbagAuraA62"/>
+        <BehaviorArray Link="nianayaLevel13"/>
+        <WeaponArray Link="90mmHTCannon4" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="nianyalv13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildHeavyTankAdvanced422222" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaLongswordTank">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <LifeArmor value="1"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="45"/>
+        <KillXP value="2"/>
+        <AbilArray Link="SovietMotoModeSwhich62"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="ParticleBeam52" Turret="RABeamTankTurret2"/>
+        <WeaponArray Link="ParticleBeam522" Turret="RABeamTankTurret2"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus222222662" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich62,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus22222762" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich62,On" Row="2" Column="1"/>
+        </CardLayouts>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaFlameDragonFireBreathingTank">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.5"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="10"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1600"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="AlliedCryoLegionnaire_Actor" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts/>
+        <Radius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="11"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaIronGuardCannonTank">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="900"/>
+        <LifeMax value="900"/>
+        <LifeArmor value="1"/>
+        <Speed value="2"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="540"/>
+        <TurningRate value="540"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich6"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="Twin792mm2432" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="Twin792mm24322" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="TossGrenadeTychus22222266" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich6,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus2222276" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich6,On" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaJeep">
+        <Subtitle value="UnitSubtitle/zhencha"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmor value="1"/>
+        <Speed value="3.5"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="15"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="500"/>
+        <RepairTime value="45"/>
+        <KillXP value="2"/>
+        <AbilArray Link="ScannerSweep"/>
+        <BehaviorArray Link="UpgradeLevel14"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="Twin792mm3" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="Suppression2" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaMagneticcrossbowantiairtank">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1400"/>
+        <LifeMax value="1400"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.6015"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="540"/>
+        <TurningRate value="540"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="850"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich64"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="LongboltMissile2422232" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="LongboltMissile24222322" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="CncinuAirmode" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich64,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="CncinuGroundmode" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich64,On" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="11"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaKirinVehicles">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.6992"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="700"/>
+        <RepairTime value="45"/>
+        <KillXP value="2"/>
+        <AbilArray Link="FighterMode233"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="88cmKwK3624" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="LiberatorAAMode222" Type="AbilCmd" AbilCmd="FighterMode233,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaKirinBreakingTank">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.6992"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="12"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="700"/>
+        <RepairTime value="45"/>
+        <KillXP value="4"/>
+        <AbilArray Link="SovietMotoModeSwhich642"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="88cmKwK36242" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="CncinuAirmode2" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich642,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="CncinuGroundmode2" Type="AbilCmd" AbilCmd="SovietMotoModeSwhich642,On" Row="1" Column="1"/>
+        </CardLayouts>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaWhiteTigerTank">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <LifeArmor value="1"/>
+        <Speed value="1"/>
+        <Acceleration value="2"/>
+        <Deceleration value="5"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="14"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1800"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <AbilArray Link="RATigerRoarLiuhe"/>
+        <BehaviorArray Link="UpgradeLevel1222"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="75mmATT33" Turret="RAShenzhouTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="KraithCrashingCharge242" Type="AbilCmd" AbilCmd="RATigerRoarLiuhe,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <CargoSize value="4"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaLingbo">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="5"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="650"/>
+        <LifeMax value="650"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/LingboTank"/>
+        <Speed value="2.5"/>
+        <LateralAcceleration value="64"/>
+        <Sight value="12"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="45"/>
+        <AttackTargetPriority value="10"/>
+        <KillXP value="2"/>
+        <BehaviorArray Link="UpgradeLevel14"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="LaserDrillTripodLaserBeam222" Turret="MediumFastTurret"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="10"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaSniper">
+        <Subtitle value="UnitSubtitle/zhencha"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="650"/>
+        <LifeMax value="650"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="1.5"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="40"/>
+        <KillXP value="4"/>
+        <AbilArray Link="RaynorSnipe22"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="RAMovementSpeedAndArmor20Percent18"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <WeaponArray Link="K98k"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackGhost" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="RaynorSnipe3" Type="AbilCmd" AbilCmd="RaynorSnipe22,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <MinimapRadius value="0.3"/>
+        <TacticalAI value="Ghost"/>
+        <TacticalAIThink value="AIThinkGhost"/>
+        <AIEvalFactor value="1.2"/>
+        <HotkeyAlias value="Ghost"/>
+        <ReviveInfoBase>
+            <Charge Link="Ghost/Revive"/>
+            <Cooldown Link="Ghost/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaQingfengMissileLaunchVehicle">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="900"/>
+        <LifeMax value="900"/>
+        <LifeArmor value="1"/>
+        <Speed value="1.8007"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="8"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="800"/>
+        <RepairTime value="45"/>
+        <AttackTargetPriority value="15"/>
+        <KillXP value="4"/>
+        <AbilArray Link="RALaunchSmokeGrenade"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="VXWeaponGround2232" Turret="RABeamTankTurret2"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="CnqingfengSpell" Type="AbilCmd" AbilCmd="RALaunchSmokeGrenade,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <AIEvalFactor value="1.5"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaZhurongTank">
+        <Subtitle value="UnitSubtitle/zhuangjia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="1.3984"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="10"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="2000"/>
+        <RepairTime value="45"/>
+        <KillXP value="10"/>
+        <AbilArray Link="RAFireInTheSouthChinaSea"/>
+        <BehaviorArray Link="UpgradeLevel123"/>
+        <BehaviorArray Link="nianayaLevel13"/>
+        <WeaponArray Link="100mmATT3" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="nianyalv13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AlliedPredTankSpell22" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="AlliedPredTankSpell3" Type="AbilCmd" AbilCmd="RAFireInTheSouthChinaSea,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaAntiAircrafGunTank">
+        <Subtitle value="UnitSubtitle/huopaoying"/>
+        <FlagArray index="AISupport" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+        <LifeArmor value="1"/>
+        <Speed value="2"/>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+        <Sight value="6"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="800"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="JuAirDamageReduce"/>
+        <BehaviorArray Link="nianayaLevel1"/>
+        <WeaponArray Link="FlakCannonMobile" Turret="SiegeTank"/>
+        <WeaponArray Link="nianyalv1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.25"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <ScoreResult value=""/>
+        <MinimapRadius value="0.375"/>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaUnionHeavytank">
+        <Subtitle value="UnitSubtitle/xianjintanke"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="21"/>
+        <Collide index="Small" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="6000"/>
+        <LifeMax value="6000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Speed value="1"/>
+        <Acceleration value="100"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="119.8828"/>
+        <TurningRate value="119.8828"/>
+        <Sight value="15"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="3500"/>
+        <RepairTime value="45"/>
+        <AttackTargetPriority value="25"/>
+        <KillXP value="25"/>
+        <AbilArray Link="BunkerTransport22"/>
+        <AbilArray Link="healRedirect22"/>
+        <AbilArray Link="StimpackMarauderRedirect22"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="healRedirect2"/>
+        <AbilArray Link="StimpackMarauderRedirect2"/>
+        <BehaviorArray Link="SovietT4unitveteranbehavior"/>
+        <BehaviorArray Link="GDIMammothCrushLevel4"/>
+        <WeaponArray Link="90mmHTCannon22" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="JavelinMissileLaunchers22" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="RARoller4"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="OracleAttack" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="BunkerLoad22" Type="AbilCmd" AbilCmd="BunkerTransport22,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="BunkerUnloadAll22" Type="AbilCmd" AbilCmd="BunkerTransport22,UnloadAll" Row="2" Column="1"/>
+            <LayoutButtons Face="CommanderNovaUnlockGriffinTransport2233333" Type="Passive" Row="1" Column="4"/>
+            <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="healRedirect2,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="NanoRepair" Type="AbilCmd" AbilCmd="healRedirect22,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="SniperBotSnipe" Type="AbilCmd" AbilCmd="StimpackMarauderRedirect22,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="BuildingRepair22" Type="Passive" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <SeparationRadius value="0.875"/>
+        <InnerRadius value="0.1875"/>
+        <CargoSize value="4"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <ScoreResult value="Units"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <HotkeyAlias value="SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <AIEvaluateAlias value="SiegeTank"/>
+        <ReviveInfoBase>
+            <Charge Link="SiegeTank/Revive"/>
+            <Cooldown Link="SiegeTank/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaMacheteTeam">
+        <Subtitle value="UnitSubtitle/Cnbubingdadaodui"/>
+        <Description value="Button/Tooltip/Cndadao"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/Cnarmor"/>
+        <Mover value="Colossus22"/>
+        <Speed value="2.5"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="11"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1000"/>
+        <KillXP value="10"/>
+        <AbilArray Link="Warpable"/>
+        <AbilArray Link="ProgressRally"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel1210"/>
+        <BehaviorArray Link="CNdadaoduibuff"/>
+        <BehaviorArray Link="suanfushoubaoshi222"/>
+        <WeaponArray Link="ArtanisMeleeVoidUlnar243"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband2" Type="AbilCmd" AbilCmd="Disband,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RADyingInstinct" Type="Passive" Row="1" Column="3"/>
+            <LayoutButtons Face="RABraveAndFearless" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaThunderTiangang">
+        <Subtitle value="UnitSubtitle/bubing"/>
+        <Description value="Button/Tooltip/Cnxunleitiangang"/>
+        <PushPriority value="16"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="1.6992"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="14"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1200"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="10"/>
+        <AbilArray Link="RAThunderTiangangSkill"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <BehaviorArray Link="UpgradeLevel123"/>
+        <BehaviorArray Link="SovietMotoCycleBehavior52232"/>
+        <WeaponArray Link="Twin792mm24323"/>
+        <WeaponArray Link="Twin792mm243232"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="CnqingfengSpell3" Type="AbilCmd" AbilCmd="RAThunderTiangangSkill,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus22223" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="18"/>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaEngineer">
+        <Subtitle value="UnitSubtitle/gbing"/>
+        <PushPriority value="5"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranChinaEngineerArmor"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Speed value="1.3007"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="7"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="500"/>
+        <AttackTargetPriority value="5"/>
+        <KillXP value="30"/>
+        <AbilArray Link="BuildingCapture2"/>
+        <AbilArray Link="BuildingCapture"/>
+        <AbilArray Link="BuildCV222"/>
+        <BehaviorArray Link="SovietSandbagAuraB"/>
+        <BehaviorArray Link="SovietStrongwilloftheRedArmy"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="BuildCV222,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="EngineerCapture" Type="AbilCmd" AbilCmd="BuildingCapture,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="EngineerCapture3" Type="AbilCmd" AbilCmd="BuildingCapture2,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="EngineerCapture2" Type="AbilCmd" AbilCmd="BuildCV222,Build6" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.3"/>
+        <TacticalAI value="SpecterUnit"/>
+        <TacticalAIThink value="AIThinkGhost"/>
+    </CUnit>
+    <CUnit parent="ChinaGround" id="ChinaTheLawyerofKnowledge">
+        <Subtitle value="UnitSubtitle/fuhua"/>
+        <Description value="Button/Tooltip/fuhua"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <PushPriority value="20"/>
+        <LifeStart value="9600"/>
+        <LifeMax value="9600"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <LifeArmorName value="Unit/LifeArmorName/fuhua"/>
+        <EnergyMax value="235"/>
+        <Mover value="Colossus22"/>
+        <Speed value="2"/>
+        <Acceleration value="20"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+        <Sight value="14"/>
+        <Food value="-50"/>
+        <CostResource index="Minerals" value="6000"/>
+        <AttackTargetPriority value="21"/>
+        <KillResource index="Minerals" value="4"/>
+        <AbilArray Link="RABranchOfTheHerrscherSwordOfKnowledge"/>
+        <AbilArray Link="Herrscher3rdInstant2"/>
+        <AbilArray Link="RATechnologyCenterResearch3"/>
+        <AbilArray Link="ScannerSweep"/>
+        <BehaviorArray Link="RAMovingSpeed20Percent42"/>
+        <BehaviorArray Link="UpgradeLevel1232222"/>
+        <BehaviorArray Link="RAMovingSpeed20Percent4222"/>
+        <BehaviorArray Link="RAComprehensiveCapabilitiesGreatlyImproved3"/>
+        <BehaviorArray Link="herrschertenpotlocked222222"/>
+        <BehaviorArray Link="herrschertenpotlocked2222222"/>
+        <WeaponArray Link="ArtanisMeleeVoidUlnar2432"/>
+        <WeaponArray Link="ArtanisMeleeVoidUlnar24322"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Herrscher2Blink22" Type="AbilCmd" AbilCmd="Herrscher3rdInstant2,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus222223223" Type="AbilCmd" AbilCmd="RABranchOfTheHerrscherSwordOfKnowledge,Execute" Row="1" Column="1"/>
+            <LayoutButtons>
+                <Face value="RAupgradeOfHeroSkills"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="0002"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="BuildHeavyTankAdvanced322"/>
+                <Type value="Passive"/>
+                <Behavior value="RAComprehensiveCapabilitiesGreatlyImproved3"/>
+                <Requirements value="RARedArmyWillUnlocksPrerequisites"/>
+                <Row value="2"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons Face="bushitaiju" Type="Passive" Row="1" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry1" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research21" Row="0" Column="1"/>
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry2" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research11" Row="0" Column="1"/>
+            <LayoutButtons Face="RAImproveTheSkillsOfTheHeroInfantry3" Type="AbilCmd" AbilCmd="RATechnologyCenterResearch3,Research12" Row="0" Column="1"/>
+            <LayoutButtons Face="LockOnCancel" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <ScoreKill value="20"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="30"/>
+        <GlossaryPriority value="300"/>
+    </CUnit>
+    <CUnit id="ChinaQuantumPackagingDrone">
+        <DeathTime value="0.2"/>
+        <Race value="China"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="AlwaysThreatens" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
+        <LifeArmor value="1"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="100"/>
+        <Mover value="Fly"/>
+        <Speed value="1.3984"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="6"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="20"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="BuildingCapture3"/>
+        <AbilArray Link="BuildInProgress"/>
+        <WeaponArray Link="SovietApoSpecialWeapon23"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="EngineerCapture4" Type="AbilCmd" AbilCmd="BuildingCapture3,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="21"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+    </CUnit>
+</Catalog>

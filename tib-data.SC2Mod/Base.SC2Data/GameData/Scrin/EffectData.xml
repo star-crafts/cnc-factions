@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="ScrinDamage" default="1">
+        <EditorCategories value="Race:Scrin"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinBuzzerHiveWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinPhotonCannonWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinPhotonCannonWeaponU">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinPlasmaMissileBatteryWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinPlasmaMissileBatteryWeaponU">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinStormColumnWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinLightningSpikeWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinBuzzersWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinDisintegratorWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinShockTrooperWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinShockTrooperWeaponU">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinRavagerShards">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinRavagerShardsU">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinSeekerWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinSeekerShards">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinGunWalkerShards">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinGunWalkerShardsU">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinDevourerWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinDevourerWeaponCharged">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinCorrupterWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinMechapedeDisentegrator">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinMechapedeShards">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinMechapedeToxins">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinMechapedeDiscs">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinAnnihilatorWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinReaperWeaponCharged">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinEradicatorWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinStormriderWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinDevastatorWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinInvaderWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinMothershipWeapon">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinInterceptorLaunch">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinEradicatorDisintegrator">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinEradicatorPlasmaDiscLauncher">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+    <CEffectDamage parent="ScrinDamage" id="ScrinEradicatorTiberiumShardLauncher">
+        <Amount value="4"/>
+    </CEffectDamage>
+
+</Catalog>

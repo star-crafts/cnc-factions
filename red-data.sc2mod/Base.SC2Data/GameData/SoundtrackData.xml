@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSoundtrack id="Music_Au2" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicAlliedVictory2"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_Au3" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicAlliedVictory22"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_Au4" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicAlliedVictory23"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_WW22" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223742"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_Au" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicAlliedVictory"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_WW222" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223742"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732232"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_WW223" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222233"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222233"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222233"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222233"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223742"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322322"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_WW224" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222232"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223742"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW22223732"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223222"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_WW225" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_WW2252" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW222237322"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_WW2253" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="GameMusicWW2222373223"/>
+        </CueArray>
+        <Delay value="1,1"/>
+        <Select value="Sequential"/>
+    </CSoundtrack>
+</Catalog>

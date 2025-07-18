@@ -1,0 +1,8 @@
+<Catalog>
+    <CTurret id="NodCarryallTurret">
+        <YawArc value="360"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="45"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+</Catalog>

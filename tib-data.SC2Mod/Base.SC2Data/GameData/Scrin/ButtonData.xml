@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton default="1" id="Scrin">
+        <?token id="icon" value="##id##"?>
+        <EditorCategories value="Race:Scrin"/>
+        <Icon value="Assets\icons\Scrin\##icon##.dds"/>
+    </CButton>
+    <!--abilities-->
+    <CButton parent="Scrin" id="ScrinBuzzersCombineWithVehicle"/>
+    <CButton parent="Scrin" id="ScrinUncombineWithBuzzers"/>
+    <CButton parent="Scrin" id="ScrinShockTrooperBlink"/>
+    <CButton parent="Scrin" id="ScrinRavagerTiberiumAgitation"/>
+    <CButton parent="Scrin" id="ScrinProdigyTeleportUnits"/>
+    <CButton parent="Scrin" id="ScrinProdigyMindControl"/>
+    <CButton parent="Scrin" id="ScrinCultistMindControl"/>
+    <CButton parent="Scrin" id="ScrinProdigyAreaMindControl"/>
+    <CButton parent="Scrin" id="ScrinDevourerConversionBeam"/>
+    <CButton parent="Scrin" id="ScrinAnnihilatorConversionBeam"/>
+    <CButton parent="Scrin" id="ScrinCorruptorTiberiumHeal"/>
+    <CButton parent="Scrin" id="ScrinEradicatorTeleport"/>
+    <CButton parent="Scrin" id="ScrinCarrierIonStorm"/>
+    <CButton parent="Scrin" id="ScrinReactorFusionCore"/>
+    <CButton parent="Scrin" id="ScrinReconstructionDrones"/>
+    <CButton parent="Scrin" id="ScrinRepair"/>
+    <CButton parent="Scrin" id="ScrinTiberiumVibrationScan"/>
+    <CButton parent="Scrin" id="ScrinInfestation"/>
+    <CButton parent="Scrin" id="ScrinIchorSeed"/>
+    <CButton parent="Scrin" id="ScrinStasisShield"/>
+    <CButton parent="Scrin" id="ScrinTemporalWormhole"/>
+    <CButton parent="Scrin" id="ScrinPhaseField"/>
+    <CButton parent="Scrin" id="ScrinWormhole"/>
+    <CButton parent="Scrin" id="ScrinOverlordWrath"/>
+    <!--upgrades-->
+    <CButton parent="Scrin" id="ScrinAdvancedArticulators"/>
+    <CButton parent="Scrin" id="ScrinBlinkPacks"/>
+    <CButton parent="Scrin" id="ScrinPlasmaDiscLaunchers"/>
+    <CButton parent="Scrin" id="ScrinShardLaunchers"/>
+    <CButton parent="Scrin" id="ScrinBlueShards"/>
+    <CButton parent="Scrin" id="ScrinTravelerEngines"/>
+    <CButton parent="Scrin" id="ScrinConversionReserves"/>
+    <CButton parent="Scrin" id="ScrinAttenuatedForcefields"/>
+    <CButton parent="Scrin" id="ScrinForcefieldGenerators"/>
+    <!--structures-->
+    <CButton parent="Scrin" id="ScrinDronePlatform"/>
+    <CButton parent="Scrin" id="ScrinReactor"/>
+    <CButton parent="Scrin" id="ScrinExtractor"/>
+    <CButton parent="Scrin" id="ScrinPortal"/>
+    <CButton parent="Scrin" id="ScrinWarpSphere"/>
+    <CButton parent="Scrin" id="ScrinNerveCenter"/>
+    <CButton parent="Scrin" id="ScrinGravityStabilizer"/>
+    <CButton parent="Scrin" id="ScrinStasisChamber"/>
+    <CButton parent="Scrin" id="ScrinTechnologyAssembler"/>
+    <CButton parent="Scrin" id="ScrinSignalTransmitter"/>
+    <CButton parent="Scrin" id="ScrinWarpChasm"/>
+    <CButton parent="Scrin" id="ScrinFoundry"/>
+    <CButton parent="Scrin" id="ScrinBuzzerHive"/>
+    <CButton parent="Scrin" id="ScrinPhotonCannon"/>
+    <CButton parent="Scrin" id="ScrinPlasmaMissileBattery"/>
+    <CButton parent="Scrin" id="ScrinStormColumn"/>
+    <CButton parent="Scrin" id="ScrinGrowthStimulator"/>
+    <CButton parent="Scrin" id="ScrinRiftGenerator"/>
+    <CButton parent="Scrin" id="ScrinLightningSpike"/>
+    <CButton parent="Scrin" id="ScrinTiberiumHive"/>
+    <CButton parent="Scrin" id="ScrinOutpost"/>
+    <!--units-->
+    <CButton parent="Scrin" id="ScrinBuzzers"/>
+    <CButton parent="Scrin" id="ScrinDisintegrator"/>
+    <CButton parent="Scrin" id="ScrinAssimilator"/>
+    <CButton parent="Scrin" id="ScrinShockTrooper"/>
+    <CButton parent="Scrin" id="ScrinRavager"/>
+    <CButton parent="Scrin" id="ScrinMastermind"/>
+    <CButton parent="Scrin" id="ScrinCultist"/>
+    <CButton parent="Scrin" id="ScrinWalker"/>
+    <CButton parent="Scrin" id="ScrinSeeker"/>
+    <CButton parent="Scrin" id="ScrinHarvester"/>
+    <CButton parent="Scrin" id="ScrinDevourer"/>
+    <CButton parent="Scrin" id="ScrinCorrupter"/>
+    <CButton parent="Scrin" id="ScrinMechapede"/>
+    <CButton parent="Scrin" id="ScrinMechapedeShardSegment"/>
+    <CButton parent="Scrin" id="ScrinMechapedeToxinSegment"/>
+    <CButton parent="Scrin" id="ScrinMechapedeDisintegratorSegment"/>
+    <CButton parent="Scrin" id="ScrinMechapedeDiscSegment"/>
+    <CButton parent="Scrin" id="ScrinEradicator"/>
+    <CButton parent="Scrin" id="ScrinExplorer"/>
+    <CButton parent="Scrin" id="ScrinAnnihilator"/>
+    <CButton parent="Scrin" id="ScrinDevastator"/>
+    <CButton parent="Scrin" id="ScrinInvader"/>
+    <CButton parent="Scrin" id="ScrinCarrier"/>
+    <CButton parent="Scrin" id="ScrinStormrider"/>
+    <CButton parent="Scrin" id="ScrinDroneShip"/>
+    <CButton parent="Scrin" id="ScrinMothership"/>
+
+    <CButton id="ScrinDronePlatformPack" parent="Scrin">
+        <Icon value="Assets\Icons\Neutral\Pack.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="ScrinDroneShipDeploy" parent="Scrin">
+        <TintRacially value="1"/>
+        <Icon value="Assets\Icons\Neutral\Deploy.dds"/>
+    </CButton>
+    <CButton parent="Scrin" id="ScrinExplorerDeploy">
+        <TintRacially value="1"/>
+        <Icon value="Assets\Icons\Neutral\Deploy.dds"/>
+    </CButton>
+
+    <CButton parent="Scrin" id="ScrinEradicatorKillBonus"/>
+</Catalog>

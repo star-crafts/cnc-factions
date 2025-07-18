@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAttachMethodArcTest id="AMArcTestWeapon2">
+        <Tests index="Weapon" value="1"/>
+        <Tests index="ActionAcquisition" value="1"/>
+        <Type value="Preference"/>
+    </CAttachMethodArcTest>
+    <CAttachMethodFilter id="AMFilterWeapon2">
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMFilterWeapon22">
+        <Keys Keyword="Weapon" Index="9"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMFilterWeapon23">
+        <Keys Keyword="Weapon" Index="10"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder2222">
+        <Keys Keyword="SetB"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="AMPatternMarauder259">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="YingjiLaunch"/>
+    </CAttachMethodPattern>
+    <CAttachMethodFilter id="shenxiangWeapon">
+        <Keys Keyword="SetA" Index="0"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="AMPatternBanshee2">
+        <Keyword value="Weapon"/>
+        <Driver value="BacklashRocketsLM"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder2">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="RAFutureTankFiringProjectiles"/>
+    </CAttachMethodPattern>
+    <CAttachMethodFilter id="AMPatternMarauder22">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder222">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder223">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder2232">
+        <Keys Keyword="SetB"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder224">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder2242">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder2243">
+        <Keys Keyword="SetB"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder2244">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder22442">
+        <Keys Keyword="SetB"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder225">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder2252">
+        <Keys Keyword="SetB"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder2253">
+        <Keys Keyword="SetA"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMPatternMarauder22532">
+        <Keys Keyword="SetB"/>
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="AMPatternMarauder23">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="RAFutureTankFiringProjectiles"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder24">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="RASuperFortressSeaModeLaunchesParticleCannon1"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder242">
+        <Keyword value="SetB"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="RASuperFortressSeaModeLaunchesParticleCannon2"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder25">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="BattleshipArtilleryLM223"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder252">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="OdinNukeDetonate22"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder253">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="WraithGLaunchMissile2"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder2532">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="ATRocketMissile4"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder25322">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="DfenderVXLM"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder253222">
+        <Keyword value="SetB"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="WraithGLaunchMissile2322"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder25323">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="ATRocket55"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder2533">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="WraithGLaunchMissile23"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder25332">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder254">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="AGRocket"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder255">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="BattleshipArtilleryLM2242"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder256">
+        <Keyword value="SetB"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="ATRocket53"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder2562">
+        <Keyword value="SetB"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="ReaperRocket"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder257">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="ATRocket54"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder258">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="RA3duogongnengLM2"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder26">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="LongboltMissileLM2"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder262">
+        <Keyword value="SetB"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="Twin792mm"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder263">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="LongboltMissileLM23"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder2632">
+        <Keyword value="SetA"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="RA3duogongnengLM"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternMarauder2633">
+        <Keyword value="SetB"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="AlliedACVgunLaunch"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternThorAALance2">
+        <Keyword value="Weapon"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="ParticleBeam322"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPortAllocator id="AMPortAllocatorBunker2">
+        <PortLimit value="3"/>
+    </CAttachMethodPortAllocator>
+    <CAttachMethodProximity id="AMProximityTargetAll2">
+        <RequestCount value="0"/>
+        <SortResults value="1"/>
+        <Location Value="TargetUnitOrPoint"/>
+    </CAttachMethodProximity>
+    <CAttachMethodVolumesRequery id="AMVolumesRequery2"/>
+    <CAttachMethodVolumesTargets id="AMVolumesTargets2"/>
+    <CAttachMethodVolumesWeightedPick id="AMVolumesWeightedPick2">
+        <VolumeFactor value="1.000000"/>
+        <ProximityFactorNear value="3.000000"/>
+        <ProximityFactorFar value="1.000000"/>
+    </CAttachMethodVolumesWeightedPick>
+</Catalog>

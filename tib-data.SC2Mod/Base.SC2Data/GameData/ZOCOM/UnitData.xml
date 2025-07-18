@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit default="1" id="ZOCOMGround" parent="CNCGround">
+        <Race value="ZOCOM"/>
+        <GlossaryCategory value="Unit/Category/ZOCOMUnits"/>
+        <HotkeyCategory value="Unit/Category/ZOCOMUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ZOCOMInfantry" parent="ZOCOMGround">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Sight value="8"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <RepairTime value="20"/>
+        <Speed value="2.3476"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZOCOMInfantryArmor"/>
+    </CUnit>
+    <CUnit default="1" id="ZOCOMVehicle" parent="ZOCOMGround">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <RepairTime value="8"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZOCOMVehiclesArmor"/>
+    </CUnit>
+    <CUnit default="1" id="ZOCOMAir" parent="CNCAir">
+        <Race value="ZOCOM"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZOCOMVehiclesArmor"/>
+        <GlossaryCategory value="Unit/Category/ZOCOMUnits"/>
+        <HotkeyCategory value="Unit/Category/ZOCOMUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ZOCOMAirPlane" parent="CNCAirPlane">
+        <Race value="ZOCOM"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZOCOMVehiclesArmor"/>
+    </CUnit>
+    <CUnit default="1" id="ZOCOMStructure" parent="CNCStructure">
+        <Race value="ZOCOM"/>
+        <GlossaryCategory value="Unit/Category/ZOCOMUnits"/>
+        <HotkeyCategory value="Unit/Category/ZOCOMUnits"/>
+    </CUnit>
+    <CUnit default="1" id="ZOCOMMissile" parent="CNCMissile">
+        <Race value="ZOCOM"/>
+    </CUnit>
+
+    <CUnit parent="ZOCOMGround" id="ZOCOMDozer">
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="ArmySelect" value="0"/>
+        <Collide index="Small" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Flee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="45"/>
+        <LifeMax value="45"/>
+        <Acceleration value="2.5"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="8"/>
+        <Food value="-1"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="50"/>
+        <RepairTime value="16.667"/>
+        <AIOverideTargetPriority value="10"/>
+        <KillXP value="50"/>
+        <AbilArray Link="Repair"/>
+        <AbilArray Link="SCVHarvest"/>
+        <AbilArray Link="ZOCOMBuild"/>
+        <AbilArray Link="TerranBuildDrop"/>
+        <WeaponArray Link="FusionCutter"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackWorker" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="Repair,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="GatherTerr" Type="AbilCmd" AbilCmd="SCVHarvest,Gather" Row="1" Column="0"/>
+            <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest,Return" Row="1" Column="1"/>
+            <LayoutButtons Face="TerranBuild" Type="Submenu" SubmenuCardId="TBl1" Row="2" Column="0"/>
+            <LayoutButtons Face="TerranBuildAdvanced" Type="Submenu" SubmenuCardId="TBl2" Row="2" Column="1"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="TerranBuild,Halt" Row="2" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="TBl1">
+<!--            <LayoutButtons Face="GDIRefinery" Type="AbilCmd" AbilCmd="GDIBuild,Build2" Row="0" Column="0"/>-->
+<!--            <LayoutButtons Face="GDISilo" Type="AbilCmd" AbilCmd="GDIBuild,Build3" Row="0" Column="1"/>-->
+<!--            <LayoutButtons Face="GDIPowerPlant" Type="AbilCmd" AbilCmd="GDIBuild,Build1" Row="0" Column="2"/>-->
+<!--            <LayoutButtons Face="GDIBarracks" Type="AbilCmd" AbilCmd="GDIBuild,Build4" Row="1" Column="0"/>-->
+<!--            <LayoutButtons Face="GDICommandPost" Type="AbilCmd" AbilCmd="GDIBuild,Build5" Row="1" Column="1"/>-->
+            <LayoutButtons Face="ZOCOMBunker" Type="AbilCmd" AbilCmd="GDIBuild,Build9" Row="2" Column="0"/>
+            <LayoutButtons Face="ZOCOMGuardianCannon" Type="AbilCmd" AbilCmd="GDIBuild,Build8" Row="2" Column="1"/>
+            <LayoutButtons Face="ZOCOMFocusBeam" Type="AbilCmd" AbilCmd="GDIBuild,Build10" Row="2" Column="2"/>
+            <LayoutButtons Face="CancelBuilding" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="TBl2">
+<!--            <LayoutButtons Face="GDIFactory" Type="AbilCmd" AbilCmd="GDIBuild,Build6" Row="0" Column="0"/>-->
+<!--            <LayoutButtons Face="ZOCOMAirfield" Type="AbilCmd" AbilCmd="GDIBuild,Build7" Row="0" Column="1"/>-->
+            <LayoutButtons Face="CancelBuilding" Type="CancelSubmenu" Row="2" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="50"/>
+        <SubgroupPriority value="6"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAIThink value="AIThinkSCV"/>
+        <GlossaryPriority value="10"/>
+        <TechTreeProducedUnitArray value="ZOCOMBunker"/>
+        <TechTreeProducedUnitArray value="ZOCOMGuardianCannon"/>
+        <TechTreeProducedUnitArray value="ZOCOMFocusBeam"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMStructure" id="ZOCOMDefenseCrawlerUnpack">
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="3"/>
+        <Sight value="11"/>
+        <Food value="14"/>
+        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Vespene" value="400"/>
+        <RepairTime value="150"/>
+        <AttackTargetPriority value="20"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="RallyCommand"/>
+        <AbilArray Link="ZOCOMRefineryTrain"/>
+        <AbilArray Link="CommandCenterTransport"/>
+        <AbilArray Link="ZOCOMDefenseMCVpack"/>
+        <BehaviorArray Link="CNCConstructionRadius"/>
+        <!--        <BehaviorArray Link="CommandCenterQueue"/>-->
+        <!--        <BehaviorArray Link="CABALShieldGenerator"/>-->
+        <WeaponArray Link="TwinIbiksCannon" Turret="PlanetaryFortress"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="PlanetaryFortressLoad" Type="AbilCmd" AbilCmd="CommandCenterTransport,LoadAll" Row="2" Column="0"/>
+            <LayoutButtons Face="CommandCenterUnloadAll" Type="AbilCmd" AbilCmd="CommandCenterTransport,UnloadAll" Row="2" Column="1"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="ZOCOMDozer" Type="AbilCmd" AbilCmd="ZOCOMRefineryTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="packD" Type="AbilCmd" AbilCmd="ZOCOMDefenseMCVpack,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <Radius value="3"/>
+        <SeparationRadius value="2.5"/>
+        <Footprint value="Footprint5x5Contour"/>
+        <PlacementFootprint value="Footprint5x5DropOff"/>
+        <ScoreMake value="700"/>
+        <ScoreKill value="700"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="2.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:CNC"/>
+        <TacticalAI value="PlanetaryFortress"/>
+        <TacticalAIThink value="AIThinkCommandCenter"/>
+        <AIEvalFactor value="0.7"/>
+        <TechAliasArray value="Alias_CommandCenter"/>
+        <TechAliasArray value="Alias_CommandCenter"/>
+        <GlossaryPriority value="240"/>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMDefenseCrawler">
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <PushPriority value="50"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="3"/>
+        <Speed value="0.6992"/>
+        <Acceleration value="1.5"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="58.711"/>
+        <TurningRate value="58.711"/>
+        <Sight value="11"/>
+        <Food value="14"/>
+        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Vespene" value="400"/>
+        <RepairTime value="45"/>
+        <KillXP value="1300"/>
+        <AbilArray Link="ZOCOMDefenseMCVdeploy"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="DeployD" Type="AbilCmd" AbilCmd="ZOCOMDefenseMCVdeploy,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="2.5"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.875"/>
+        <ScoreMake value="1300"/>
+        <ScoreKill value="1300"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="2.5"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <AlliedPushPriority value="50"/>
+    </CUnit>
+
+    <CUnit parent="ZOCOMStructure" id="ZOCOMBunker">
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="BunkerNotJumbo"/>
+        <BehaviorArray Link="ShrikeTurret"/>
+        <Facing value="315"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <Sight value="10"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="40"/>
+        <AttackTargetPriority value="19"/>
+        <AbilArray Link="BunkerTransport"/>
+        <AbilArray Link="SalvageShared"/>
+        <AbilArray Link="SalvageBunkerRefund"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="StimpackRedirect"/>
+        <AbilArray Link="StimpackMarauderRedirect"/>
+        <AbilArray Link="StopRedirect"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="healRedirect"/>
+        <AbilArray Link="BunkerAttack"/>
+        <AbilArray Link="BunkerStop"/>
+        <WeaponArray Link="ShrikeTurret" Turret="ShrikeTurret"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackRedirect" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="StopRedirect,Execute" Row="0" Column="1"/>
+            <!--            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="0"/>-->
+            <!--            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackMarauderRedirect,Execute" Row="2" Column="0"/>-->
+            <LayoutButtons Face="SetBunkerRallyPoint" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="2" Column="1"/>
+            <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="2" Column="2"/>
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
+            <LayoutButtons Face="StopBunker" Type="AbilCmd" AbilCmd="BunkerStop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="ShrikeTurret" Type="Passive" Requirements="ShrikeTurretResearched" Row="1" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="BunkerAttack,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryPriority value="300"/>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMJuggernaut">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="225"/>
+        <LifeMax value="225"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.6875"/>
+        <LateralAcceleration value="115.1875"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="125"/>
+        <RepairTime value="33.3332"/>
+        <KillXP value="325"/>
+        <BehaviorArray Link="TitanVeterancyUpgrade"/>
+        <WeaponArray Link="TitanLaser" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.65"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="0.65"/>
+        <GlossaryPriority value="100"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMSpartan">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="225"/>
+        <LifeMax value="225"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.6875"/>
+        <LateralAcceleration value="115.1875"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="125"/>
+        <RepairTime value="33.3332"/>
+        <KillXP value="325"/>
+        <BehaviorArray Link="TitanVeterancyUpgrade"/>
+        <WeaponArray Link="TitanLaser" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.65"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="0.65"/>
+        <GlossaryPriority value="100"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMMammoth">
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="15"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="7"/>
+        <Speed value="1.75"/>
+        <LateralAcceleration value="64"/>
+        <TurningRate value="360"/>
+        <Sight value="11"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="150"/>
+        <RepairTime value="45"/>
+        <KillXP value="450"/>
+        <WeaponArray Link="ZOCOMMammoth120mmCannons" Turret="SiegeTank"/>
+        <WeaponArray Link="ZOCOMMammothMissile" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.875"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="275"/>
+        <ScoreKill value="275"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="1"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <BehaviorArray Link="GDIMammothTankVeterancyUpgrade"/>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMRefractor">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="225"/>
+        <LifeMax value="225"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.6875"/>
+        <LateralAcceleration value="115.1875"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="125"/>
+        <RepairTime value="33.3332"/>
+        <KillXP value="325"/>
+        <BehaviorArray Link="TitanVeterancyUpgrade"/>
+        <WeaponArray Link="TitanLaser" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.65"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="0.65"/>
+        <GlossaryPriority value="100"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+
+    <CUnit parent="ZOCOMStructure" id="ZOCOMFocusBeam">
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <Sight value="7"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="25"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="Detector11"/>
+        <WeaponArray Link="CABALViperTurretWeaponO" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Detector" Type="Passive" Behavior="DistortionSensors" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryPriority value="230"/>
+        <KillDisplay value="Always"/>
+        <RankDisplay value="Always"/>
+    </CUnit>
+    <CUnit parent="ZOCOMStructure" id="ZOCOMGuardianCannon">
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <Sight value="7"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="25"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <BehaviorArray Link="Deployable"/>
+        <BehaviorArray Link="Detector11"/>
+        <WeaponArray Link="CABALViperTurretWeaponO" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Detector" Type="Passive" Behavior="DistortionSensors" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryPriority value="230"/>
+        <KillDisplay value="Always"/>
+        <RankDisplay value="Always"/>
+    </CUnit>
+
+    <CUnit parent="ZOCOMInfantry" id="ZOCOMEngineer">
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
+        <LifeRegenDelay value="10"/>
+        <LifeRegenRate value="2"/>
+        <Mover value="CliffJumper"/>
+        <Speed value="2.75"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="50"/>
+        <CostResource index="Vespene" value="50"/>
+        <RepairTime value="20"/>
+        <KillXP value="50"/>
+        <AbilArray Link="healCNC"/>
+        <BehaviorArray Link="ReaperJump"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="GDIJetPack" Type="Passive" AbilCmd="255,255" Row="2" Column="0"/>
+            <LayoutButtons Face="GDIHeal" Type="AbilCmd" AbilCmd="healCNC,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="7"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Reaper"/>
+        <AIEvalFactor value="1.5"/>
+        <GlossaryPriority value="50"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMInfantry" id="ZOCOMZoneTrooper">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="75"/>
+        <LifeMax value="75"/>
+        <Speed value="2.25"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="10"/>
+        <RepairTime value="20"/>
+        <AbilArray Link="Stimpack"/>
+        <AbilArray Link="JumpPack"/>
+        <WeaponArray Link="ATgun"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="JumpPack" Type="AbilCmd" AbilCmd="JumpPack,Execute" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="CombatShield"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseCombatShield"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="31"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <BehaviorArray Link="GDIZoneTrooperjump"/>
+        <BehaviorArray Link="GDIZoneTrooperVeterancyUpgrade"/>
+        <KillXP value="85"/>
+    </CUnit>
+    <CUnit parent="ZOCOMInfantry" id="ZOCOMZoneDefender">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
+        <Speed value="2.25"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="50"/>
+        <RepairTime value="20"/>
+        <AbilArray Link="Stimpack"/>
+        <AbilArray Link="JumpPack"/>
+        <WeaponArray Link="DefenderMissile"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="JumpPack" Type="AbilCmd" AbilCmd="JumpPack,Execute" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="CombatShield"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseCombatShield"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="31"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <BehaviorArray Link="GDIZoneTrooperjump"/>
+        <BehaviorArray Link="GDIZoneDefenderVeterancyUpgrade"/>
+        <KillXP value="50"/>
+    </CUnit>
+    <CUnit parent="ZOCOMInfantry" id="ZOCOMZoneCommando">
+        <FlagArray index="Hero" value="1"/>
+        <PushPriority value="20"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="2"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="2.25"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="200"/>
+        <RepairTime value="20"/>
+        <KillXP value="350"/>
+        <AbilArray Link="Stimpack"/>
+        <AbilArray Link="JumpPack"/>
+        <AbilArray Link="CommandoC4"/>
+        <BehaviorArray Link="GDIZoneTrooperjump"/>
+        <BehaviorArray Link="GDIZoneCommandoVeterancyUpgrade"/>
+        <WeaponArray Link="CommandoWeapon"/>
+        <WeaponArray Link="CommandoWeapon2"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="JumpPack" Type="AbilCmd" AbilCmd="JumpPack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="PlantC4" Type="AbilCmd" AbilCmd="CommandoC4,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="31"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMInfantry" id="ZOCOMZoneEnforcer">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="55"/>
+        <LifeMax value="55"/>
+        <Speed value="2.25"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="50"/>
+        <RepairTime value="20"/>
+        <KillXP value="50"/>
+        <AbilArray Link="Stimpack"/>
+        <AbilArray Link="JumpPack"/>
+        <AbilArray Link="ZoneEGrenades"/>
+        <BehaviorArray Link="GDIZoneTrooperjump"/>
+        <BehaviorArray Link="ZoneEnforcerVeterancyUpgrade"/>
+        <WeaponArray Link="Enforcerweapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="JumpPack" Type="AbilCmd" AbilCmd="JumpPack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="GDIPulseGrenades" Type="Passive" AbilCmd="255,255" Row="2" Column="1"/>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="31"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMInfantry" id="ZOCOMJames">
+        <FlagArray index="Hero" value="1"/>
+        <PushPriority value="20"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="2"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="2.25"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="200"/>
+        <RepairTime value="20"/>
+        <AbilArray Link="Stimpack"/>
+        <AbilArray Link="JumpPack"/>
+        <BehaviorArray Link="GDIZoneTrooperjump"/>
+        <BehaviorArray Link="JamesVeterancyUpgrade"/>
+        <WeaponArray Link="GDIJamesC10CanisterRifleSnipe"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="JumpPack" Type="AbilCmd" AbilCmd="JumpPack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="31"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <KillXP value="350"/>
+    </CUnit>
+
+    <!--    <CUnit parent="SovietGround" id="GDIMammothMecha">-->
+    <!--        <Subtitle value="UnitSubtitle/Sujijia"/>-->
+    <!--        <Race value="GDI"/>-->
+    <!--        <FlagArray index="AIPressForwardDisabled" value="1"/>-->
+    <!--        <PushPriority value="21"/>-->
+    <!--        <Response value="AcquireNoFlee"/>-->
+    <!--        <Attributes index="Mechanical" value="1"/>-->
+    <!--        <LifeStart value="4000"/>-->
+    <!--        <LifeMax value="4000"/>-->
+    <!--        <LifeArmor value="1"/>-->
+    <!--        <LifeRegenRate value="5"/>-->
+    <!--        <Speed value="1.1015"/>-->
+    <!--        <Deceleration value="500"/>-->
+    <!--        <Sight value="17"/>-->
+    <!--        <Food value="-5"/>-->
+    <!--        <CostResource index="Minerals" value="4500"/>-->
+    <!--        <RepairTime value="41.667"/>-->
+    <!--        <KillXP value="25"/>-->
+    <!--        <AbilArray Link="GDIMammothSacrificialLaunch"/>-->
+    <!--        <BehaviorArray Link="SovietT4unitveteranbehavior"/>-->
+    <!--        <BehaviorArray Link="GDIMammothCrushLevel4"/>-->
+    <!--        <WeaponArray Link="GDIMammothMechDualArmorPiercingCannon" Turret="RAApocalypseMainCannon"/>-->
+    <!--        <WeaponArray Link="GDIMammothMultitubeMissileLauncher1" Turret="GDIMammothMechMissileTurret1"/>-->
+    <!--        <WeaponArray Link="GDIMammothMultitubeMissileLauncher2" Turret="GDIMammothMechMissileTurret2"/>-->
+    <!--        <WeaponArray Link="RARoller4"/>-->
+    <!--        <CardLayouts index="0">-->
+    <!--            <LayoutButtons Face="Stim3222" Type="AbilCmd" AbilCmd="GDIMammothSacrificialLaunch,255" Row="1" Column="0"/>-->
+    <!--            <LayoutButtons Face="Stim322" Type="AbilCmd" AbilCmd="GDIMammothSacrificialLaunch,255" Row="1" Column="1"/>-->
+    <!--        </CardLayouts>-->
+    <!--        <Radius value="1"/>-->
+    <!--        <InnerRadius value="0.5"/>-->
+    <!--        <SubgroupPriority value="15"/>-->
+    <!--    </CUnit>-->
+    <CUnit parent="ZOCOMGround" id="ZOCOMMastodon">
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="30"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="700"/>
+        <LifeMax value="700"/>
+        <LifeArmor value="6"/>
+        <Speed value="1.6992"/>
+        <LateralAcceleration value="64"/>
+        <StationaryTurningRate value="119.8828"/>
+        <TurningRate value="119.8828"/>
+        <Sight value="11"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="250"/>
+        <RepairTime value="45"/>
+        <KillXP value="325"/>
+        <WeaponArray Link="ZOCOMMastodonWeapon" Turret="SiegeTank"/>
+        <WeaponArray Link="ZOCOMMastodonAttackMissile" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.875"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="275"/>
+        <ScoreKill value="275"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="1"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <BehaviorArray Link="GDIMastodonVeterancyUpgrade"/>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMStriker">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="225"/>
+        <LifeMax value="225"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.6875"/>
+        <LateralAcceleration value="115.1875"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="125"/>
+        <RepairTime value="33.3332"/>
+        <KillXP value="325"/>
+        <BehaviorArray Link="TitanVeterancyUpgrade"/>
+        <WeaponArray Link="TitanLaser" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.65"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="0.65"/>
+        <GlossaryPriority value="100"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMTitan">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="225"/>
+        <LifeMax value="225"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.6875"/>
+        <LateralAcceleration value="115.1875"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="125"/>
+        <RepairTime value="33.3332"/>
+        <KillXP value="325"/>
+        <WeaponArray Link="TitanLaser" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.65"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="0.65"/>
+        <GlossaryPriority value="100"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <BehaviorArray Link="TitanVeterancyUpgrade"/>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMZoneRaider">
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="160"/>
+        <LifeMax value="160"/>
+        <LifeArmor value="1"/>
+        <Mover value="CliffJumper"/>
+        <Speed value="2.9492"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="50"/>
+        <RepairTime value="20"/>
+        <KillXP value="50"/>
+        <AbilArray Link="Stimpack"/>
+        <AbilArray Link="JumpPack"/>
+        <BehaviorArray Link="GDIZoneTrooperjump"/>
+        <BehaviorArray Link="GDIZoneRaiderVeterancyUpgrade"/>
+        <WeaponArray Link="ZOCOMZoneRaiderWeapon"/>
+        <WeaponArray Link="ZOCOMZoneRaiderCharge"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="JumpPack" Type="AbilCmd" AbilCmd="JumpPack,Execute" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="CombatShield"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseCombatShield"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Marine"/>
+        <GlossaryPriority value="31"/>
+        <AIEvaluateAlias value="Marine"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMShepherd">
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.25"/>
+        <LateralAcceleration value="64"/>
+        <TurningRate value="360"/>
+        <Sight value="11"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="125"/>
+        <RepairTime value="45"/>
+        <KillXP value="225"/>
+        <WeaponArray Link="90mmCannonsShepherd" Turret="SiegeTank"/>
+        <WeaponArray Link="GDIShepherdMachineGun" Turret="SiegeTank"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.875"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="275"/>
+        <ScoreKill value="275"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="1"/>
+        <TacticalAI value="SiegeTank"/>
+        <AIEvalFactor value="1.5"/>
+        <TechAliasArray value="Alias_SiegeTank"/>
+        <GlossaryPriority value="130"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <PushPriority value="15"/>
+        <BehaviorArray Link="GDIShepherdTankVeterancyUpgrade"/>
+    </CUnit>
+    <!--Air-->
+    <CUnit parent="ZOCOMAir" id="ZOCOMArgus">
+        <Attributes index="Massive" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <Attributes index="MapBoss" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="3"/>
+        <LifeRegenRate value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranShipPlating"/>
+        <Speed value="1.875"/>
+        <Acceleration value="1"/>
+        <StationaryTurningRate value="119.8828"/>
+        <TurningRate value="119.8828"/>
+        <Sight value="12"/>
+        <Food value="-6"/>
+        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Vespene" value="300"/>
+        <RepairTime value="90"/>
+        <KillXP value="700"/>
+        <BehaviorArray Link="ARGUSWeaponSearch"/>
+        <BehaviorArray Link="ArgusVeterancyUpgrade"/>
+        <BehaviorArray Link="ArgusReapirZone"/>
+        <WeaponArray Link="ZOCOMArgusLaser"/>
+        <WeaponArray Link="ZOCOMArgusLaser3"/>
+        <WeaponArray Link="ArgusChaingun1"/>
+        <WeaponArray Link="ArgusChaingun2"/>
+        <WeaponArray Link="ArgusChaingun3"/>
+        <WeaponArray Link="ARGUSMissilePod"/>
+        <WeaponArray Link="ARGUSMissilePod2"/>
+        <WeaponArray Link="ARGUSMissilePod3"/>
+        <CardLayouts>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <ScoreMake value="700"/>
+        <ScoreKill value="700"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="1.25"/>
+        <TacticalAIThink value="AIThinkBattleCruiser"/>
+        <AIEvalFactor value="0.9"/>
+        <Mass value="0.6"/>
+        <TechAliasArray value="Alias_BattlecruiserClass"/>
+        <GlossaryPriority value="210"/>
+    </CUnit>
+
+    <CUnit parent="ZOCOMGround" id="ZOCOMStrikerMecha">
+        <Subtitle value="UnitSubtitle/Sujijia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="1"/>
+        <Speed value="2.1992"/>
+        <Deceleration value="500"/>
+        <Sight value="12"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="4"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="nianayaLevel12"/>
+        <WeaponArray Link="GDIStrikerMechaAassaultGun"/>
+        <WeaponArray Link="GDIStrikerMechaRoller"/>
+        <CardLayouts/>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.6875"/>
+        <SubgroupPriority value="13"/>
+    </CUnit>
+    <CUnit parent="ZOCOMGround" id="ZOCOMJuggernautMecha">
+        <Subtitle value="UnitSubtitle/Sujijia"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PushPriority value="15"/>
+        <Response value="AcquireNoFlee"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="3"/>
+        <Speed value="1.5"/>
+        <Deceleration value="500"/>
+        <Sight value="14"/>
+        <Food value="-3"/>
+        <CostResource index="Minerals" value="1500"/>
+        <RepairTime value="41.667"/>
+        <KillXP value="10"/>
+        <AbilArray Link="RALaunchStickyBombs"/>
+        <BehaviorArray Link="UpgradeLevel123"/>
+        <BehaviorArray Link="nianayaLevel13"/>
+        <WeaponArray Link="88cmKwK3626" Turret="RAApocalypseMainCannon"/>
+        <WeaponArray Link="nianyalv13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="CnqingfengSpell2" Type="AbilCmd" AbilCmd="RALaunchStickyBombs,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <SeparationRadius value="0.4375"/>
+        <InnerRadius value="0.6875"/>
+        <SubgroupPriority value="14"/>
+    </CUnit>
+
+    <CUnit parent="ZOCOMAir" id="ZOCOMHammerHead">
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="450"/>
+        <LifeMax value="450"/>
+        <LifeArmor value="3"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranShipPlating"/>
+        <Speed value="2.25"/>
+        <SpeedMaximum value="2.25"/>
+        <Acceleration value="1"/>
+        <Deceleration value="1"/>
+        <Sight value="12"/>
+        <Food value="-6"/>
+        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Vespene" value="200"/>
+        <RepairTime value="90"/>
+        <KillXP value="450"/>
+        <AbilArray Link="SpecOpsDropshipTransport"/>
+        <WeaponArray Link="ZOCOMHammerHeadWeapon" Turret="SiegeTank"/>
+        <WeaponArray Link="ZOCOMHammerHeadRocket"/>
+        <CardLayouts>
+            <LayoutButtons Face="MedivacLoad" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="MedivacUnloadAll" Type="AbilCmd" AbilCmd="SpecOpsDropshipTransport,UnloadAt" Row="2" Column="1"/>
+            <LayoutButtons Face="ZOCOMAramUpgrade" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <ScoreMake value="700"/>
+        <ScoreKill value="700"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="1.25"/>
+        <TacticalAIThink value="AIThinkBattleCruiser"/>
+        <AIEvalFactor value="0.9"/>
+        <Mass value="0.6"/>
+        <TechAliasArray value="Alias_BattlecruiserClass"/>
+        <GlossaryPriority value="210"/>
+        <BehaviorArray Link="ZOCOMHammerHeadVeterancyUpgrade"/>
+    </CUnit>
+
+    <!--missiles-->
+    <CUnit parent="ZOCOMMissile" id="ZOCOMATGunMissileCommando">
+        <Mover value="ATgunWeapon"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMDefenderMissile">
+        <Mover value="DefenderMissile"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMMastodonMissile">
+        <Mover value="LiberatorMissile"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMMastodonWeapon">
+        <Mover value="ATgunWeapon"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMHammerHeadRocket">
+        <Mover value="GoliathMissile"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMZoneRaiderWeapon">
+        <Mover value="D8Charge"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMDefenderAAWeapon">
+        <Mover value="DefenderMissile"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMArgusMissile">
+        <Mover value="DefenderMissile"/>
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMATGunMissile">
+        <Mover value="ATgunWeapon"/>
+    </CUnit>
+
+
+    <CUnit parent="ZOCOMStructure" id="ZOCOM460mmDevoidgun">
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <Sight value="10"/>
+        <!--Food value="-2"/-->
+        <CostResource index="Minerals" value="1000"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="5"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink2214"/>
+        <BehaviorArray Link="UpgradeLevel12"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="CoastalBattery" Turret="GunTower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink2214,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal"/>
+        <ScoreKillCostFactor index="Minerals" value="1.25"/>
+        <ScoreKillCostFactor index="Vespene" value="1.25"/>
+        <SubgroupPriority value="3"/>
+    </CUnit>
+    <CUnit parent="ZOCOMStructure" id="ZOCOMPlasmaCannon">
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <Sight value="10"/>
+        <!--Food value="-4"/-->
+        <CostResource index="Minerals" value="1500"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="10"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink23"/>
+        <BehaviorArray Link="UpgradeLevel122"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="RAParticleCannon" Turret="GunTower"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink23,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint1x1CreepNormal2"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal2"/>
+        <SubgroupPriority value="3"/>
+    </CUnit>
+    <CUnit parent="ZOCOMStructure" id="ZOCOMATBunker">
+        <LifeStart value="900"/>
+        <LifeMax value="900"/>
+        <Sight value="10"/>
+        <!--Food value="-2"/-->
+        <CostResource index="Minerals" value="500"/>
+        <KillXP value="2"/>
+        <AbilArray Link="Disband2"/>
+        <AbilArray Link="Blink2213"/>
+        <BehaviorArray Link="UpgradeLevel1"/>
+        <BehaviorArray Link="RATowerdefensemovementCDreduced"/>
+        <WeaponArray Link="BunkerAT" Turret="GunTower23"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Disband3" Type="AbilCmd" AbilCmd="Disband2,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="RAHandlingturrets" Type="AbilCmd" AbilCmd="Blink2213,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.125"/>
+        <SeparationRadius value="0.1"/>
+        <Footprint value="Footprint1x1CreepNormal"/>
+        <PlacementFootprint value="Footprint1x1CreepNormal"/>
+        <!--GlossaryCategory value="Unit/Category/TerranUnits"/-->
+    </CUnit>
+    <CUnit parent="ZOCOMMissile" id="ZOCOMGrenadesWeapon">
+        <Mover value="TossGrenade"/>
+    </CUnit>
+    <CUnit id="ZOCOMCrawlerDeployCaster">
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="450"/>
+        <LifeMax value="450"/>
+        <LifeArmor value="1"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.4218"/>
+        <ShieldsStart value="450"/>
+        <ShieldsMax value="450"/>
+        <ShieldRegenDelay value="10"/>
+        <ShieldRegenRate value="2"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ProtossPlasmaShields"/>
+        <Sight value="0.5"/>
+        <CostResource index="Minerals" value="150"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="GDIIonCannonAttack"/>
+        <CardLayouts>
+            <LayoutButtons Face="IonCannonAttack" Type="AbilCmd" AbilCmd="GDIIonCannonAttack,Execute" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="1.75"/>
+        <EditorCategories value="ObjectType:Other,ObjectFamily:CNC"/>
+        <Race value="GDI"/>
+    </CUnit>
+
+</Catalog>

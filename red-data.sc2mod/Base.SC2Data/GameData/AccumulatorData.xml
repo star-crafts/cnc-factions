@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAccumulatorBehavior id="RAEngineerHealthRegenerationAccumulatorWhenLoading">
+        <Behavior value="AutoHeal"/>
+    </CAccumulatorBehavior>
+    <CAccumulatorArithmetic id="RATheHealthRegenerationAccumulatorCountsWhenTheEngineerLoads">
+        <Parameters value="1"/>
+        <Parameters value="1"/>
+        <Parameters value="1"/>
+        <Parameters value="1"/>
+        <Parameters value="1"/>
+        <Parameters value="1"/>
+        <Parameters value="1"/>
+        <Parameters value="1"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorCargo id="RAEngineerLoadsHealthRecoveryCargo"/>
+</Catalog>

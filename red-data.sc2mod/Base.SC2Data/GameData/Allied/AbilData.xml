@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilEffectTarget id="AlliedSpectralTowerAdvancedChargeReal">
+        <Cost>
+            <Cooldown TimeUse="2.9"/>
+        </Cost>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Range value="999"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AlliedSpectralRefractionSuperposition"/>
+        <Effect index="0" value="AlliedSpectralTowerChargingImposesBehavioralVerification"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="AlliedSpectralTowerAdvancedChargeFake">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <!-- <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/> -->
+        <Cost>
+            <Cooldown TimeUse="2.9"/>
+        </Cost>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <!-- <AutoCastFilters value="Ground,Structure,Visible;Self,Ally,Neutral,Enemy"/>
+        <AutoCastRange value="9"/>
+        <AutoCastValidatorArray value="IsAlliedSpectrumTower"/>
+        <AutoCastValidatorArray value="TargetIsFiringWeapon"/>
+        <AutoCastValidatorArray value="RATheSpectrumTowerChargingStackValidatorCannotExceed4Layers"/>
+        <AutoCastValidatorArray value="RATheSpectralTowerDetectsThatTheTargetHasAttackChargingBehavior"/> -->
+        <CmdButtonArray index="Execute" DefaultButtonFace="AlliedSpectralRefractionSuperposition"/>
+        <PrepEffect value="AlliedSpectralTowerTurnOffAttackSkillsWhenCharging"/>
+        <Effect index="0" value="AlliedSpectralTowerChargingStartDelay"/>
+    </CAbilEffectTarget>
+</Catalog>

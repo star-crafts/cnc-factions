@@ -1,0 +1,499 @@
+<Catalog>
+
+    <CBehaviorVeterancy id="GDIZoneCommandoVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="700">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <DamageDealtUnscaled index="Splash" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="700">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <DamageDealtUnscaled index="Splash" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="700">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <DamageDealtUnscaled index="Splash" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="GDIZoneRaiderVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <DamageDealtUnscaled index="Splash" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <DamageDealtUnscaled index="Splash" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <DamageDealtUnscaled index="Splash" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="ZoneEnforcerVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="GDIZoneTrooperVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="GDIMastodonVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="1100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="3"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="1100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="3"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="1100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="3"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="JamesVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="700">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="700">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="700">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="5"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="TitanVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="650">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="650">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="650">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+
+    <CBehaviorBuff id="ARGUSMissileTarget1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ARGUSAATarget2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArgusReapirZone">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Period value="3"/>
+        <PeriodicEffect value="MCVRepairSearchArgus"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ARGUSMissileTarget2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ARGUSAATarget3">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ARGUSMissileTarget3">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZOCOMArgusLaserTarget1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ARGUSAATarget1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZOCOMArgusLaserTarget2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ARGUSWeaponSearch">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="ARGUSWeaponsearchSet"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GDIdroppodland">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <Duration value="2"/>
+        <ExpireEffect value="DroppodDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IonCannonTarget">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-ultrasonicpulse.dds"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+    </CBehaviorBuff>
+    <CBehaviorJump id="GDIZoneTrooperjump">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:GDI,AbilityorEffectType:Units"/>
+        <TriggerHeightDeltaMin value="1.5"/>
+        <TriggerHeightDeltaMax value="4.5"/>
+        <InitiateRangeUp value="1.5"/>
+        <InitiateRangeDown value="0.5"/>
+        <JumpRangeMax value="12"/>
+        <Mover value="CliffJumper"/>
+        <MoverUp value="ReaperJumpDown"/>
+        <MoverDown value="ReaperJumpDown"/>
+        <DurationPreLaunch value="0.05"/>
+        <DurationPostLand value="0.075"/>
+        <DurationMoveOut value="0.08"/>
+        <Placeholder value="ReaperPlaceholder"/>
+        <LandAdjustmentDown value="1"/>
+        <LandArrivalRange value="0.05"/>
+        <LandCheckRadius value="5"/>
+        <Requirements value="HaveGDIjetpack"/>
+    </CBehaviorJump>
+    <CBehaviorVeterancy id="ZOCOMHammerHeadVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="900">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="900">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="900">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="GDIMammothTankVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="900">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="900">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="900">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="ArgusVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="1400">
+            <Modification>
+                <DamageDealtUnscaled index="Spell" value="3"/>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="1400">
+            <Modification>
+                <DamageDealtUnscaled index="Spell" value="3"/>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="1400">
+            <Modification>
+                <DamageDealtUnscaled index="Spell" value="3"/>
+                <DamageDealtUnscaled index="Ranged" value="2"/>
+                <DamageDealtUnscaled index="Splash" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="GDIShepherdTankVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="450">
+            <Modification>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="450">
+            <Modification>
+                <DamageTotalMultiplier index="Ranged" value="0.15"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="450">
+            <Modification>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+    <CBehaviorVeterancy id="GDIZoneDefenderVeterancyUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units,Race:GDI"/>
+        <ShareFilters index="Kills" value="-;Neutral,Enemy"/>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="100">
+            <Modification>
+                <DamageDealtUnscaled index="Ranged" value="1"/>
+                <LifeArmorBonus value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="0.5"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorVeterancy>
+</Catalog>

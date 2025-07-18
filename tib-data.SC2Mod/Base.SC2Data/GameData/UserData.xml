@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUser id="Airports">
+        <Instances Id="Nod AirTower">
+            <Fixed Fixed="45">
+                <Field Id="SlotsFacing"/>
+            </Fixed>
+            <Fixed Fixed="315">
+                <Field Id="SlotsFacing" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="135">
+                <Field Id="SlotsFacing" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="225">
+                <Field Id="SlotsFacing" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="1.1">
+                <Field Id="SlotsOffsetX"/>
+            </Fixed>
+            <Fixed Fixed="1.1">
+                <Field Id="SlotsOffsetX" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="-1.1">
+                <Field Id="SlotsOffsetX" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="-1.1">
+                <Field Id="SlotsOffsetX" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="1.1">
+                <Field Id="SlotsOffsetY"/>
+            </Fixed>
+            <Fixed Fixed="-1.1">
+                <Field Id="SlotsOffsetY" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="-1.1">
+                <Field Id="SlotsOffsetY" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="1.1">
+                <Field Id="SlotsOffsetY" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="3.4">
+                <Field Id="SlotsHeight"/>
+            </Fixed>
+            <Fixed Fixed="3.4">
+                <Field Id="SlotsHeight" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="3.4">
+                <Field Id="SlotsHeight" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="3.4">
+                <Field Id="SlotsHeight" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="-1.5">
+                <Field Id="SlotsOffsetX" Index="5"/>
+            </Fixed>
+            <Fixed Fixed="1.5">
+                <Field Id="SlotsOffsetY" Index="6"/>
+            </Fixed>
+            <Fixed Fixed="2.2">
+                <Field Id="SlotsHeight" Index="4"/>
+            </Fixed>
+            <Fixed Fixed="2.2">
+                <Field Id="SlotsHeight" Index="5"/>
+            </Fixed>
+            <Fixed Fixed="2.2">
+                <Field Id="SlotsHeight" Index="6"/>
+            </Fixed>
+            <Fixed Fixed="2.2">
+                <Field Id="SlotsHeight" Index="7"/>
+            </Fixed>
+            <Fixed Fixed="180">
+                <Field Id="SlotsFacing" Index="5"/>
+            </Fixed>
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing" Index="6"/>
+            </Fixed>
+            <Fixed Fixed="-1.5">
+                <Field Id="SlotsOffsetY" Index="4"/>
+            </Fixed>
+            <Fixed Fixed="1.5">
+                <Field Id="SlotsOffsetX" Index="7"/>
+            </Fixed>
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing" Index="4"/>
+            </Fixed>
+            <Int Int="4">
+                <Field Id="Slots"/>
+            </Int>
+            <Unit Unit="NodAirTower">
+                <Field Id="Airport"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit" Index="1"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit" Index="2"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit" Index="3"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit" Index="4"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit" Index="5"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit" Index="6"/>
+            </Unit>
+            <Unit Unit="NodAirPad">
+                <Field Id="SlotUnit" Index="7"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Nod AirSupport">
+            <Fixed Fixed="180">
+                <Field Id="SlotsFacing" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="90">
+                <Field Id="SlotsFacing" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="270">
+                <Field Id="SlotsFacing" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="1.25">
+                <Field Id="SlotsOffsetX"/>
+            </Fixed>
+            <Fixed Fixed="-1.25">
+                <Field Id="SlotsOffsetX" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="1.25">
+                <Field Id="SlotsOffsetY" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="1.5">
+                <Field Id="SlotsHeight"/>
+            </Fixed>
+            <Fixed Fixed="1.5">
+                <Field Id="SlotsHeight" Index="1"/>
+            </Fixed>
+            <Fixed Fixed="1.5">
+                <Field Id="SlotsHeight" Index="2"/>
+            </Fixed>
+            <Fixed Fixed="1.5">
+                <Field Id="SlotsHeight" Index="3"/>
+            </Fixed>
+            <Fixed Fixed="-1.25">
+                <Field Id="SlotsOffsetY" Index="3"/>
+            </Fixed>
+            <Int Int="4">
+                <Field Id="Slots"/>
+            </Int>
+            <Unit Unit="NodAirSupport">
+                <Field Id="Airport"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Nod AirSupport Dock">
+            <Fixed Fixed="0.65">
+                <Field Id="SlotsOffsetX"/>
+            </Fixed>
+            <Unit Unit="NodAirPad">
+                <Field Id="Airport"/>
+            </Unit>
+        </Instances>
+    </CUser>
+</Catalog>

@@ -1,0 +1,80 @@
+<Catalog>
+
+    <!--Neutral-->
+    <CUnit id="TibMineralField" parent="MineralFieldDefault">
+        <Name value="Unit/Name/TIBMineralField"/>
+        <Description value="Button/Tooltip/MineralFieldsmall"/>
+        <BehaviorArray index="0" Link="TiberiumMineralField50"/>
+        <BehaviorArray Link="TiberiumIrradiated"/>
+        <BehaviorArray Link="TiberiumGrow"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Small" value="0"/>
+        <Footprint value="Footprint1x2TibField"/>
+        <PlacementFootprint value="Footprint1x2TibField"/>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <EditorCategories value="ObjectType:Resource,ObjectFamily:CNC"/>
+        <FlagArray index="Invulnerable" value="0"/>
+    </CUnit>
+    <CUnit id="Visceroid">
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:CNC"/>
+        <DeathRevealRadius value="3"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="NoScore" value="1"/>
+        <FlagArray index="AILifetime" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Summoned" value="1"/>
+        <LifeRegenRate value="2"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZergGroundArmor"/>
+        <Sight value="7"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="25"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <TacticalAI value="Broodling"/>
+        <AIEvalFactor value="0"/>
+        <LeaderAlias value=""/>
+        <HotkeyAlias value="Broodling"/>
+        <Description value="Button/Tooltip/ve"/>
+        <Mob value="Multiplayer"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <LifeArmor value="5"/>
+        <LifeRegenDelay value="1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ZergWildMutation"/>
+        <Speed value="3.836"/>
+        <SpeedMultiplierCreep value="1.3"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <CostCategory value="Army"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <WeaponArray Link="ClawsVisceroid"/>
+        <BehaviorArray Link="TiberiumProtection"/>
+        <BehaviorArray Link="TiberiumHeal"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+        </CardLayouts>
+        <GlossaryPriority value="200"/>
+<!--        <GlossaryCategory value="Unit/Category/ForgottenUnits"/>-->
+<!--        <HotkeyCategory value="Unit/Category/ForgottenUnits"/>-->
+    </CUnit>
+</Catalog>

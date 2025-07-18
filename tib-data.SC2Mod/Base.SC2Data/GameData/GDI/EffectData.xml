@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="GDIDamage" default="1">
+        <EditorCategories value="Race:GDI"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <!--Rifleman-->
+    <CEffectDamage parent="GDIDamage" id="GDIRiflemanWeaponDamage">
+        <Amount value="4"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIRiflemanWeaponCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="GDIRiflemanWeaponDamage"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDIRiflemanWeaponDamageDummy"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage parent="GDIDamage" id="GDIRiflemanWeaponDamageDummy"/>
+    <!--Missile Trooper-->
+    <CEffectDamage parent="GDIDamage" id="GDIMissileTrooperWeaponDamage">
+        <AttributeBonus index="Armored" value="18"/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GDIMissileTrooperWeaponLM">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIMissileTrooperWeaponDamage"/>
+        <AmmoUnit value="GDIInfantryMissile"/>
+    </CEffectLaunchMissile>
+    <!--Combat Engineer-->
+    <CEffectDamage parent="GDIDamage" id="GDICombatEngineerWeaponDamage">
+        <Amount value="1"/>
+        <AttributeBonus index="Light" value="5"/>
+    </CEffectDamage>
+    <!--Grenadier-->
+    <CEffectDamage parent="GDIDamage" id="GDIGrenadierWeaponDamage">
+        <Amount value="8"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <SearchFilters value="Ground;Stasis,Dead,Hidden,Invulnerable"/>
+        <KindSplash value="Splash"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GDIGrenadierWeaponLM">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIGrenadierWeaponDamage"/>
+        <AmmoUnit value="GDIInfantryGrenade"/>
+    </CEffectLaunchMissile>
+    <!--Sniper-->
+    <CEffectDamage parent="GDIDamage" id="GDISniperWeaponDamage">
+        <Amount value="20"/>
+        <AttributeBonus index="Light" value="40"/>
+    </CEffectDamage>
+    <!--Zone Trooper-->
+    <CEffectDamage parent="GDIDamage" id="GDIZoneTrooperRailDamage">
+        <AttributeBonus index="Armored" value="15"/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <!--Zone Raider-->
+    <CEffectDamage parent="GDIDamage" id="GDIZoneRaiderSonicDamage">
+        <Amount value="8"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <SearchFilters value="Ground;Stasis,Dead,Hidden,Invulnerable"/>
+        <KindSplash value="Splash"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GDIZoneRaiderSonicLM">
+        <ImpactEffect value="GDIZoneRaiderSonicDamage"/>
+        <AmmoUnit value="GDIInfantrySonicEmitter"/>
+        <Movers Link="GDIInfantrySonicEmitter"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage parent="GDIDamage" id="GDIZoneRaiderRocketsDamage">
+        <AttributeBonus index="Armored" value="18"/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <!--Commando-->
+    <CEffectDamage parent="GDIDamage" id="GDICommandoWeaponDamage"/>
+    <!--PitBull-->
+    <CEffectDamage parent="GDIDamage" id="GDIPitBullWeaponDamage"/>
+    <CEffectDamage parent="GDIDamage" id="GDIPitBullMortarDamage"/>
+    <!--Titan-->
+    <CEffectDamage parent="GDIDamage" id="GDITitanCannonDamage">
+        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="18"/>
+    </CEffectDamage>
+    <CEffectDamage parent="GDIDamage" id="GDITitanRailgunDamage">
+        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="18"/>
+    </CEffectDamage>
+    <!--APC-->
+    <CEffectDamage parent="GDIDamage" id="GDIAPCMachinegunDamage">
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIAPCMachinegunCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="GDIAPCMachinegunDamage"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDIAPCMachinegunDamageDummy"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage parent="GDIDamage" id="GDIAPCMachinegunDamageDummy"/>
+    <!--Predator-->
+    <CEffectDamage parent="GDIDamage" id="GDIPredatorCannonDamage">
+        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="18"/>
+    </CEffectDamage>
+    <CEffectDamage parent="GDIDamage" id="GDIPredatorRailgunDamage">
+        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="18"/>
+    </CEffectDamage>
+    <!--Harvester-->
+    <CEffectDamage parent="GDIDamage" id="GDIHarvesterMachinegunDamage">
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIHarvesterMachinegunCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="GDIHarvesterMachinegunDamage"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDIHarvesterMachinegunDamageDummy"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage parent="GDIDamage" id="GDIHarvesterMachinegunDamageDummy"/>
+    <!--Harvester-->
+    <CEffectDamage parent="GDIDamage" id="GDIHarvesterRocketsDamage">
+        <AttributeBonus index="Armored" value="18"/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIHarvesterRocketsCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="GDIHarvesterRocketsLM1"/>
+        <PeriodicEffectArray value="GDIHarvesterRocketsLM2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIHarvesterRocketsLM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIHarvesterRocketsDamage"/>
+        <AmmoUnit value="GDIHarvesterRocketsMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIHarvesterRocketsLM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIHarvesterRocketsDamage"/>
+        <AmmoUnit value="GDIHarvesterRocketsMissile"/>
+    </CEffectLaunchMissile>
+    <!--Wolverine-->
+    <CEffectDamage parent="GDIDamage" id="GDIWolverineMachinegunDamage">
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIWolverineMachinegunCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="GDIWolverineMachinegunDamage"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDIWolverineMachinegunDamageDummy"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage parent="GDIDamage" id="GDIWolverineMachinegunDamageDummy"/>
+    <!--Juggernaut-->
+    <CEffectDamage parent="GDIDamage" id="GDIJuggernautWeaponDamage"/>
+    <!--Slingshot-->
+    <CEffectDamage parent="GDIDamage" id="GDISlingshotWeaponDamage">
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDISlingshotWeaponCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDISlingshotWeaponDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage parent="GDIDamage" id="GDISlingshotWeaponUDamage">
+        <Amount value="8"/>
+        <AttributeBonus index="Armored" value="8"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDISlingshotWeaponUCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDISlingshotWeaponUDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <!--Shatterer-->
+    <CEffectDamage parent="GDIDamage" id="GDIShattererWeaponDamage">
+        <ValidatorArray value="noMarkers"/>
+        <Amount value="12"/>
+    </CEffectDamage>
+    <CEffectSet id="GDIShattererWeaponSet">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="GDIShattererWeaponCP"/>
+        <EffectArray value="GDIShattererWeaponDamage"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="GDIShattererWeaponCP">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="SourcePoint"/>
+        <OffsetVectorStartLocation Value="SourcePoint"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="30"/>
+        <PeriodicEffectArray value="GDIShattererWeaponEA"/>
+        <PeriodicOffsetArray value="0.5,-0.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-0.5,0"/>
+        <PeriodicOffsetArray value="0.5,-1,0"/>
+        <PeriodicOffsetArray value="-0.5,-1,0"/>
+        <PeriodicOffsetArray value="0.5,-1.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-1.5,0"/>
+        <PeriodicOffsetArray value="0.5,-2,0"/>
+        <PeriodicOffsetArray value="-0.5,-2,0"/>
+        <PeriodicOffsetArray value="0.5,-2.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-2.5,0"/>
+        <PeriodicOffsetArray value="0.5,-3,0"/>
+        <PeriodicOffsetArray value="-0.5,-3,0"/>
+        <PeriodicOffsetArray value="0.5,-3.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-3.5,0"/>
+        <PeriodicOffsetArray value="0.5,-4,0"/>
+        <PeriodicOffsetArray value="-0.5,-4,0"/>
+        <PeriodicOffsetArray value="0.5,-4.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-4.5,0"/>
+        <PeriodicOffsetArray value="0.5,-5,0"/>
+        <PeriodicOffsetArray value="-0.5,-5,0"/>
+        <PeriodicOffsetArray value="0.5,-5.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-5.5,0"/>
+        <PeriodicOffsetArray value="0.5,-6,0"/>
+        <PeriodicOffsetArray value="-0.5,-6,0"/>
+        <PeriodicOffsetArray value="0.5,-6.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-6.5,0"/>
+        <PeriodicOffsetArray value="0.5,-7,0"/>
+        <PeriodicOffsetArray value="-0.5,-7,0"/>
+        <PeriodicOffsetArray value="0.5,-7.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-7.5,0"/>
+        <PeriodicPeriodArray value="0.033"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="GDIShattererWeaponEA" parent="EA_WEAP">
+        <EditorCategories value="Race:GDI"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.6" Effect="GDIShattererWeaponDamage"/>
+    </CEffectEnumArea>
+    <!--Mammoth-->
+    <CEffectDamage parent="GDIDamage" id="GDIMammothCannonDamage">
+        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="18"/>
+    </CEffectDamage>
+    <CEffectDamage parent="GDIDamage" id="GDIMammothRailgunDamage">
+        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="18"/>
+    </CEffectDamage>
+    <!--Mammoth Rockets-->
+    <CEffectDamage parent="GDIDamage" id="GDIMammothRocketsDamage">
+        <AttributeBonus index="Armored" value="18"/>
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIMammothRocketsCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="GDIMammothRocketsLM1"/>
+        <PeriodicEffectArray value="GDIMammothRocketsLM2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIMammothRocketsLM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIMammothRocketsDamage"/>
+        <AmmoUnit value="GDIMammothRocketsMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIMammothRocketsLM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIMammothRocketsDamage"/>
+        <AmmoUnit value="GDIMammothRocketsMissile"/>
+    </CEffectLaunchMissile>
+    <!--MARV-->
+    <CEffectDamage parent="GDIDamage" id="GDIMARVWeaponDamage">
+        <Amount value="100"/>
+    </CEffectDamage>
+    
+    <CEffectApplyBehavior id="GDIEquipmentMachineGunFrontRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentMachineGunFrontLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentMachineGunRearLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentMachineGunRearRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentRocketLauncherFrontRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentRocketLauncherFrontLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentRocketLauncherRearLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentRocketLauncherRearRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentGrenadeLauncherFrontRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentGrenadeLauncherFrontLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentGrenadeLauncherRearLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentGrenadeLauncherRearRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentSniperTurretFrontRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentSniperTurretFrontLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentSniperTurretRearLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentSniperTurretRearRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentRailTurretFrontRight"/>
+    <CEffectApplyBehavior id="GDIEquipmentRailTurretFrontLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentRailTurretRearLeft"/>
+    <CEffectApplyBehavior id="GDIEquipmentRailTurretRearRight"/>
+
+    <!--MARV Machinegun-->
+    <CEffectDamage parent="GDIDamage" id="GDIEquipmentMachineGunDamage">
+        <Amount value="3"/>
+        <AttributeBonus index="Light" value="6"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIEquipmentMachineGunCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="GDIEquipmentMachineGunDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.3"/>
+    </CEffectCreatePersistent>
+    <!--MARV Rockets-->
+    <CEffectDamage parent="GDIDamage" id="GDIEquipmentRocketsDamage">
+        <AttributeBonus index="Armored" value="18"/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIEquipmentRocketsCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="GDIEquipmentRocketsLM1"/>
+        <PeriodicEffectArray value="GDIEquipmentRocketsLM2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIEquipmentRocketsLM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIEquipmentRocketsDamage"/>
+        <AmmoUnit value="GDIVehicleMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIEquipmentRocketsLM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIEquipmentRocketsDamage"/>
+        <AmmoUnit value="GDIVehicleMissile"/>
+    </CEffectLaunchMissile>
+    <!--MARV Greanades-->
+    <CEffectDamage parent="GDIDamage" id="GDIEquipmentGrenadesDamage">
+        <Amount value="8"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <SearchFilters value="Ground;Stasis,Dead,Hidden,Invulnerable"/>
+        <KindSplash value="Splash"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIEquipmentGrenadesCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="GDIEquipmentGrenadesLM1"/>
+        <PeriodicEffectArray value="GDIEquipmentGrenadesLM2"/>
+        <PeriodicEffectArray value="GDIEquipmentGrenadesLM3"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIEquipmentGrenadesLM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIEquipmentGrenadesDamage"/>
+        <AmmoUnit value="GDIVehicleMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIEquipmentGrenadesLM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIEquipmentGrenadesDamage"/>
+        <AmmoUnit value="GDIVehicleMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIEquipmentGrenadesLM3">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIEquipmentGrenadesDamage"/>
+        <AmmoUnit value="GDIVehicleMissile"/>
+    </CEffectLaunchMissile>
+    <!--MARV Sniper-->
+    <CEffectDamage parent="GDIDamage" id="GDIEquipmentSniperDamage">
+        <Amount value="20"/>
+        <AttributeBonus index="Light" value="40"/>
+    </CEffectDamage>
+    <!--MARV Rail-->
+    <CEffectDamage parent="GDIDamage" id="GDIEquipmentRailDamage">
+        <AttributeBonus index="Armored" value="15"/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <!--MARV Sonic-->
+    <CEffectDamage parent="GDIDamage" id="GDIEquipmentSonicDamage">
+        <Amount value="8"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <SearchFilters value="Ground;Stasis,Dead,Hidden,Invulnerable"/>
+        <KindSplash value="Splash"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GDIEquipmentSonicLM">
+        <ImpactEffect value="GDIEquipmentSonicDamage"/>
+        <AmmoUnit value="GDIInfantrySonicEmitter"/>
+        <Movers Link="GDIInfantrySonicEmitter"/>
+    </CEffectLaunchMissile>
+    <!--Orca-->
+    <CEffectDamage parent="GDIDamage" id="GDIOrcaRocketsDamage">
+        <AttributeBonus index="Armored" value="18"/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIOrcaRocketsCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="GDIOrcaRocketsLM1"/>
+        <PeriodicEffectArray value="GDIOrcaRocketsLM2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIOrcaRocketsLM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIOrcaRocketsDamage"/>
+        <AmmoUnit value="GDIAirMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIOrcaRocketsLM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIOrcaRocketsDamage"/>
+        <AmmoUnit value="GDIAirMissile"/>
+    </CEffectLaunchMissile>
+    <!--HammerHead-->
+    <CEffectDamage parent="GDIDamage" id="GDIHammerHeadMachinegunDamage">
+        <Amount value="8"/>
+        <AttributeBonus index="Light" value="6"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIHammerHeadMachinegunCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="GDIHammerHeadMachinegunDamage"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDIHammerHeadMachinegunDamageDummy"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage parent="GDIDamage" id="GDIHammerHeadMachinegunDamageDummy"/>
+    <!--Firehawk AA-->
+    <CEffectDamage parent="GDIDamage" id="GDIFirehawkRocketsAADamage">
+        <AttributeBonus index="Armored" value="30"/>
+        <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIFirehawkRocketsAACP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="GDIFirehawkRocketsAALM1"/>
+        <PeriodicEffectArray value="GDIFirehawkRocketsAALM2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIFirehawkRocketsAALM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIFirehawkRocketsAADamage"/>
+        <AmmoUnit value="GDIAirMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIFirehawkRocketsAALM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIFirehawkRocketsAADamage"/>
+        <AmmoUnit value="GDIAirMissile"/>
+    </CEffectLaunchMissile>
+    <!--Firehawk AG-->
+    <CEffectDamage parent="GDIDamage" id="GDIFirehawkRocketsAGDamage">
+        <AttributeBonus index="Armored" value="30"/>
+        <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIFirehawkRocketsAGCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="GDIFirehawkRocketsAGLM1"/>
+        <PeriodicEffectArray value="GDIFirehawkRocketsAGLM2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIFirehawkRocketsAGLM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIFirehawkRocketsAGDamage"/>
+        <AmmoUnit value="GDIAirMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIFirehawkRocketsAGLM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIFirehawkRocketsAGDamage"/>
+        <AmmoUnit value="GDIAirMissile"/>
+    </CEffectLaunchMissile>
+    <!--Watchtower-->
+    <CEffectDamage parent="GDIDamage" id="GDIWatchtowerMachinegunDamage">
+        <Amount value="6"/>
+        <AttributeBonus index="Light" value="6"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIWatchtowerMachinegunCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="GDIWatchtowerMachinegunDamage"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="GDIWatchtowerMachinegunDamageDummy"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage parent="GDIDamage" id="GDIWatchtowerMachinegunDamageDummy"/>
+    <!--GuardianCannon-->
+    <CEffectDamage parent="GDIDamage" id="GDIGuardianTowerCannonDamage"/>
+    <CEffectDamage parent="GDIDamage" id="GDIGuardianTowerRailgunDamage"/>
+    <!--AntiAirBattery-->
+    <CEffectDamage parent="GDIDamage" id="GDIAABatteryWeaponDamage"/>
+    <CEffectDamage parent="GDIDamage" id="GDIAABatteryWeaponUDamage"/>
+    <!--SonicEmitter-->
+    <CEffectDamage parent="GDIDamage" id="GDISonicEmitterWeaponDamage"/>
+    <!--BattleBase-->
+    <CEffectDamage parent="GDIDamage" id="GDIBattleBaseRocketsDamage">
+        <AttributeBonus index="Armored" value="18"/>
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="GDIBattleBaseRocketsRocketsCP">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="GDIBattleBaseRocketsRocketsLM1"/>
+        <PeriodicEffectArray value="GDIBattleBaseRocketsRocketsLM2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="GDIBattleBaseRocketsRocketsLM2">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIBattleBaseRocketsRocketsDamage"/>
+        <AmmoUnit value="GDIBattleBaseRocketsRocketsMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GDIBattleBaseRocketsRocketsLM1">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="GDIBattleBaseRocketsRocketsDamage"/>
+        <AmmoUnit value="GDIBattleBaseRocketsRocketsMissile"/>
+    </CEffectLaunchMissile>
+
+
+</Catalog>

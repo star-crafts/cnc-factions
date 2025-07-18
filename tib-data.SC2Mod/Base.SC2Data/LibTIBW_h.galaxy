@@ -1,0 +1,138 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Tiberium Wars
+//--------------------------------------------------------------------------------------------------
+// Preset Declarations
+const int libTIBW_ge_NEVA_NEVA_YouHaveLost = 0;
+const int libTIBW_ge_NEVA_NEVA_missionFailed = 1;
+const int libTIBW_ge_NEVA_NEVA_BattleControlTerminated = 2;
+const int libTIBW_ge_NEVA_NEVA_UnitUnderAttack = 3;
+const int libTIBW_ge_NEVA_NEVA_HarvesterUnderAttack = 4;
+const int libTIBW_ge_NEVA_NEVA_BaseUnderAttack = 5;
+const int libTIBW_ge_NEVA_NEVA_AllyUnderAttack = 6;
+const int libTIBW_ge_NEVA_NEVA_AllyDefeated = 7;
+const int libTIBW_ge_NEVA_NEVA_BuildingOffline = 8;
+const int libTIBW_ge_NEVA_NEVA_BuildingOnline = 9;
+const int libTIBW_ge_NEVA_NEVA_EnemyCommando = 10;
+const int libTIBW_ge_NEVA_NEVA_EnemyUnitDetected = 11;
+const int libTIBW_ge_NEVA_NEVA_StructureSold = 12;
+const int libTIBW_ge_NEVA_NEVA_NewTechnologyAvailable = 13;
+const int libTIBW_ge_NEVA_NEVA_NewStructureAvailable = 14;
+const int libTIBW_ge_NEVA_NEVA_PrimaryObjectiveAchieved = 15;
+const int libTIBW_ge_NEVA_NEVA_SecondaryObjectiveAchieved = 16;
+const int libTIBW_ge_NEVA_NEVA_BonusObjectiveAchieved = 17;
+const int libTIBW_ge_NEVA_NEVA_NewConstructionOptions = 18;
+const int libTIBW_ge_NEVA_NEVA_ReinforcementsHaveArrived = 19;
+const int libTIBW_ge_NEVA_NEVA_PowerRestored = 20;
+const int libTIBW_ge_NEVA_NEVA_AllianceRequested = 21;
+const int libTIBW_ge_NEVA_NEVA_AllianceFormed = 22;
+const int libTIBW_ge_NEVA_NEVA_UnitLost = 23;
+const int libTIBW_ge_NEVA_NEVA_Repairing = 24;
+const int libTIBW_ge_NEVA_NEVA_WarningNuclearWarheadApproaching = 25;
+const int libTIBW_ge_NEVA_NEVA_NewRallyPointEstablished = 26;
+const int libTIBW_ge_NEVA_NEVA_BuildingCaptured = 27;
+const int libTIBW_ge_NEVA_NEVA_EnemyBuildingCaptured = 28;
+const int libTIBW_ge_NEVA_NEVA_RedeemerDestroyed = 29;
+const int libTIBW_ge_NEVA_NEVA_ionCannonDestroyed = 30;
+const int libTIBW_ge_NEVA_NEVA_StartBattle = 31;
+const int libTIBW_ge_NEVA_NEVA_YouFiredNuke = -1;
+const int libTIBW_ge_NEVA_NEVA_OnHold = 32;
+const int libTIBW_ge_NEVA_NEVA_LowPower = 33;
+const int libTIBW_ge_NEVA_NEVA_NuclearMissileLaunched = 34;
+const int libTIBW_ge_NEVA_NEVA_LiquidTibBombLaunched = 35;
+const int libTIBW_ge_NEVA_NEVA_AlliedRiftGenerator = 36;
+const int libTIBW_ge_NEVA_NEVA_RiftGeneratorReady = 37;
+const int libTIBW_ge_NEVA_NEVA_AlliedTempleOfNod = 38;
+const int libTIBW_ge_NEVA_NEVA_AlliedionCannon = 39;
+const int libTIBW_ge_NEVA_NEVA_UnitReady = 40;
+const int libTIBW_ge_NEVA_NEVA_SelectTarget = 41;
+const int libTIBW_ge_NEVA_NEVA_SelectUnit = 42;
+const int libTIBW_ge_NEVA_NEVA_SelectDestination = 43;
+const int libTIBW_ge_NEVA_NEVA_SelectLlocation = 44;
+const int libTIBW_ge_NEVA_NEVA_WarnMothership = 45;
+const int libTIBW_ge_NEVA_NEVA_WarnionCannonActivated = 46;
+const int libTIBW_ge_NEVA_NEVA_MothershipDeployed = 47;
+const int libTIBW_ge_NEVA_NEVA_EnemyBaseSighted = 48;
+const int libTIBW_ge_NEVA_NEVA_EnemyBaseDetected = 49;
+const int libTIBW_ge_NEVA_NEVA_RedeemerBuild = 50;
+const int libTIBW_ge_NEVA_NEVA_BaseDestroyed = 51;
+const int libTIBW_ge_NEVA_NEVA_Cancelled = 52;
+const int libTIBW_ge_NEVA_NEVA_UnitPromoted = 53;
+const int libTIBW_ge_NEVA_NEVA_UpgradeComplete = 54;
+const int libTIBW_ge_NEVA_NEVA_WarningSuperWeaponDetected = 55;
+const int libTIBW_ge_NEVA_NEVA_WarningTempleOfNod = 56;
+const int libTIBW_ge_NEVA_NEVA_HeroUnitLost = 57;
+const int libTIBW_ge_NEVA_NEVA_DisruptionGeneratorOnline = 58;
+const int libTIBW_ge_NEVA_NEVA_NuclearSiloDetected = 59;
+const int libTIBW_ge_NEVA_NEVA_IncominTransmission = 60;
+const int libTIBW_ge_NEVA_NEVA_Building = 61;
+const int libTIBW_ge_NEVA_NEVA_Training = 62;
+const int libTIBW_ge_NEVA_NEVA_NoComply = 63;
+const int libTIBW_ge_DropPodRace_Terran = 0;
+const int libTIBW_ge_DropPodRace_Zerg = 1;
+
+// Constants
+const int libTIBW_gv_platformMaxCountRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel = 100;
+
+// Variable Declarations
+timer[17][201] libTIBW_gv_announcerTimers;
+int libTIBW_gv_platformNowCountRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel;
+int libTIBW_gv_bomberUsable;
+unitgroup[libTIBW_gv_platformMaxCountRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel + 1] libTIBW_gv_bomberPFUnitsGroupRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel;
+unitgroup libTIBW_gv_bomberPlatformTempGroup;
+unitgroup libTIBW_gv_bomberFighterDebugGroup;
+unitgroup libTIBW_gv_bomberFighterTempGroup;
+unit libTIBW_gv_aOEStrikeCasterTemp;
+int libTIBW_gv_nODCommandPanl;
+int libTIBW_gv_nODCommandPanelDialog;
+unit libTIBW_gv_nODCaster;
+int libTIBW_gv_mCVDeploymentPanelRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel;
+int libTIBW_gv_mCVDeploymentTip;
+int libTIBW_gv_decoration;
+int libTIBW_gv_mCVPanel;
+unit libTIBW_gv_mCVCasterRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel;
+point libTIBW_gv_cNC_TP_DropPod_LocationRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel;
+unitgroup libTIBW_gv_cNC_TP_DropPod_Units;
+int libTIBW_gv_playerIntegerRoyalGuardExperienceGainingUnitGroupReturnedworkunitgroupPickedupweaponsetWeaponPickupUnitGroupStarChargeLevel;
+
+// Function Declarations
+void libTIBW_gf_PlayAnnounceSound (int lp_type, int lp_player);
+void libTIBW_gf_ApplyPlayerVoicePack (int lp_player, string lp_voiceID);
+void libTIBW_gf_NodAirRaid (unit lp_unit, region lp_area);
+void libTIBW_gf_ShowhideNodtoppanel (bool lp_showHide, int lp_player);
+void libTIBW_gf_Showhidetoppanel (bool lp_showHide);
+void libTIBW_gf__NodDropPod (point lp_location, unitgroup lp_units, int lp_player);
+void libTIBW_gf__GDIDropPod (point lp_location, unitgroup lp_units, int lp_player);
+void libTIBW_gf_CreateDropPod (int lp_race, point lp_location, unitgroup lp_units, bool lp_waitDontWait, int lp_playerinteger);
+
+// Trigger Declarations
+trigger libTIBW_gt_AllyDefeated;
+trigger libTIBW_gt_UnitComplete;
+trigger libTIBW_gt_Nuke;
+trigger libTIBW_gt_Attacking;
+trigger libTIBW_gt_Pushing;
+trigger libTIBW_gt_PushingEnd;
+trigger libTIBW_gt_HubBuild;
+trigger libTIBW_gt_NodTurretReconstructSet;
+trigger libTIBW_gt_NodBeamCannonDistantAttackDelay;
+trigger libTIBW_gt_NodBeamCannonWeaponDelay;
+trigger libTIBW_gt_MoveCommandOverrideExecute;
+trigger libTIBW_gt_MoveCommandOverrideCancel;
+trigger libTIBW_gt_MoveCommandOverrideComplete;
+trigger libTIBW_gt_Test;
+trigger libTIBW_gt_PlayNod;
+trigger libTIBW_gt_Borrowedbombercustomreturntrajectory;
+trigger libTIBW_gt_BorrowedbombercreationbindingStarchainTest;
+trigger libTIBW_gt_LaunchairstrikeStarchainTest;
+trigger libTIBW_gt_NodTopPanelStarchainTest;
+trigger libTIBW_gt_MCVDeployPanelStarchainTest;
+trigger libTIBW_gt_DeploymentdetectionStarchainTest;
+trigger libTIBW_gt_DisableotherMCVsStarchainTest;
+trigger libTIBW_gt_MCVredeployStarchainTest;
+trigger libTIBW_gt__NodDropPodStarchainTest;
+trigger libTIBW_gt__GDIDropPod;
+
+// Library Initialization
+void libTIBW_InitVariables ();
+

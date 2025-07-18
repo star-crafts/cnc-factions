@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton default="1" id="GDI">
+        <?token id="icon" value="##id##"?>
+        <EditorCategories value="Race:GDI"/>
+        <Icon value="Assets\icons\GDI\##icon##.dds"/>
+    </CButton>
+    <!--units-->
+    <CButton parent="GDI" id="GDIRifleman"/>
+    <CButton parent="GDI" id="GDIMissileTrooper"/>
+    <CButton parent="GDI" id="GDICombatEngineer"/>
+    <CButton parent="GDI" id="GDIGrenadier"/>
+    <CButton parent="GDI" id="GDISniper"/>
+    <CButton parent="GDI" id="GDIZoneTrooper"/>
+    <CButton parent="GDI" id="GDIZoneRaider"/>
+    <CButton parent="GDI" id="GDICommando"/>
+    <CButton parent="GDI" id="GDIPitBull"/>
+    <CButton parent="GDI" id="GDITitan"/>
+    <CButton parent="GDI" id="GDIAPC"/>
+    <CButton parent="GDI" id="GDIPredator"/>
+    <CButton parent="GDI" id="GDIHarvester"/>
+    <CButton parent="GDI" id="GDIMCV"/>
+    <CButton parent="GDI" id="GDIWolverine"/>
+    <CButton parent="GDI" id="GDIJuggernaut"/>
+    <CButton parent="GDI" id="GDISlingshot"/>
+    <CButton parent="GDI" id="GDIRig"/>
+    <CButton parent="GDI" id="GDIShatterer"/>
+    <CButton parent="GDI" id="GDIMammoth"/>
+    <CButton parent="GDI" id="GDISurveyor"/>
+    <CButton parent="GDI" id="GDIMARV"/>
+    <CButton parent="GDI" id="GDIOrca"/>
+    <CButton parent="GDI" id="GDIHammerHead"/>
+    <CButton parent="GDI" id="GDIFirehawk"/>
+    <CButton parent="GDI" id="GDIOx"/>
+    <!--structures-->
+    <CButton parent="GDI" id="GDIConstructionYard"/>
+    <CButton parent="GDI" id="GDIPowerPlant"/>
+    <CButton parent="GDI" id="GdiSilo"/>
+    <CButton parent="GDI" id="GDIRefinery"/>
+    <CButton parent="GDI" id="GDIBarracks"/>
+    <CButton parent="GDI" id="GDIWarFactory"/>
+    <CButton parent="GDI" id="GDICommandPost"/>
+    <CButton parent="GDI" id="GDIAirfield"/>
+    <CButton parent="GDI" id="GDIArmoury"/>
+    <CButton parent="GDI" id="GDITechCenter"/>
+    <CButton parent="GDI" id="GDISpaceCommandUplink"/>
+    <CButton parent="GDI" id="GDIReclamatorHub"/>
+    <CButton parent="GDI" id="GDICrane"/>
+    <CButton parent="GDI" id="GDIWatchtower"/>
+    <CButton parent="GDI" id="GDIGuardianTower"/>
+    <CButton parent="GDI" id="GDIAABattery"/>
+    <CButton parent="GDI" id="GDISonicEmitter"/>
+    <CButton parent="GDI" id="GDICombatSupportAirfield"/>
+    <CButton parent="GDI" id="GDIIonCannon"/>
+    <CButton parent="GDI" id="GDIFoxhole"/>
+    <CButton parent="GDI" id="GDIOutpost"/>
+    <CButton parent="GDI" id="GDIBattleBase"/>
+    <!--abilities-->
+    <CButton parent="GDI" id="GDIDigIn"/>
+    <CButton parent="GDI" id="GDIEMPGrenade"/>
+    <CButton parent="GDI" id="GDISpotLocation"/>
+    <CButton parent="GDI" id="GDIZoneTroopersJetpack"/>
+    <CButton parent="GDI" id="GDIZoneRaidersJetpack"/>
+    <CButton parent="GDI" id="GDICommandoJetpack"/>
+    <CButton parent="GDI" id="GDICommandoC4"/>
+    <CButton parent="GDI" id="GDIEnableAdaptiveArmour" icon="GDIAdaptiveArmour"/>
+    <CButton parent="GDI" id="GDIAPCRepair"/>
+    <CButton parent="GDI" id="GDIAPCMinefield"/>
+    <CButton parent="GDI" id="GDIJuggernautBombardArea"/>
+    <CButton parent="GDI" id="GDIShattererOverloadBeam"/>
+    <CButton parent="GDI" id="GDISlingshottTungstenShells"/>
+    <CButton parent="GDI" id="GDIAABatteryTungstenShells"/>
+    <CButton parent="GDI" id="GDIOrcaPulseScan"/>
+    <CButton parent="GDI" id="GDIOrcaSensorPod"/>
+    <CButton parent="GDI" id="GDIFirehawkAGLoadout"/>
+    <CButton parent="GDI" id="GDIFirehawkAALoadout"/>
+    <CButton parent="GDI" id="GDIFirehawkStratofighterBoost" icon="GDIFirehawkStratofighterBoosters"/>
+    <CButton parent="GDI" id="GDIPowerPlantAdvancedTurbines"/>
+    <CButton parent="GDI" id="GDIWarFactoryRepair"/>
+    <CButton parent="GDI" id="GDIRadarScan"/>
+    <CButton parent="GDI" id="GDISpaceCommandUplinkDropPods"/>
+    <CButton parent="GDI" id="GDIShockwaveArtillery"/>
+    <CButton parent="GDI" id="GDISupersonicAirAttack"/>
+    <CButton parent="GDI" id="GDIOrbitalStrike"/>
+    <CButton parent="GDI" id="GDIIonCannonStrike"/>
+    <CButton parent="GDI" id="GDISonicRepulsionField"/>
+    <CButton parent="GDI" id="GDIMCVDeploy">
+        <Icon value="Assets\Icons\Neutral\Deploy.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton parent="GDI" id="GDISurveyorDeploy">
+        <Icon value="Assets\Icons\Neutral\Deploy.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton parent="GDI" id="GDIRigDeploy">
+        <Icon value="Assets\Icons\Neutral\Deploy.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="GDIMCVPack" parent="NodButton">
+        <Icon value="Assets\Icons\Neutral\Pack.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="GDIRigPack" parent="NodButton">
+        <Icon value="Assets\Icons\Neutral\Pack.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <!--upgrades-->
+    <CButton parent="GDI" id="GDIArmourPiercingAmmo"/>
+    <CButton parent="GDI" id="GDIImprovedBallistics"/>
+    <CButton parent="GDI" id="GDIImprovedExplosives"/>
+    <CButton parent="GDI" id="GDICeramicArmour"/>
+    <CButton parent="GDI" id="GDICompositeArmour"/>
+    <CButton parent="GDI" id="GDIOrcaSensorPods"/>
+    <CButton parent="GDI" id="GDIZoneScannerPacks"/>
+    <CButton parent="GDI" id="GDIFirehawkStratofighterBoosters"/>
+    <CButton parent="GDI" id="GDIHardpoints"/>
+    <CButton parent="GDI" id="GDITiberiumFieldSuits"/>
+    <CButton parent="GDI" id="GDIEMPGrenades"/>
+    <CButton parent="GDI" id="GDIZonePowerPacks"/>
+    <CButton parent="GDI" id="GDIRailguns"/>
+    <CButton parent="GDI" id="GDIPitbullMortars"/>
+    <CButton parent="GDI" id="GDITungstenShells"/>
+    <CButton parent="GDI" id="GDIAdaptiveArmour"/>
+    <CButton parent="GDI" id="GDIRailgunAccelerators"/>
+
+</Catalog>

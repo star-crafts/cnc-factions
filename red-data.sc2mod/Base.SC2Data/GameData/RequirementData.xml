@@ -1,0 +1,2415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="ArmCABALLeviathanDrone">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndLT3532700161SumCountUnitAlliedCenturyBomberQueuedOrBetterAtUnitCountUnitSovietBeaverQueuedOrBetterAtUnitCountUnitSovietTheIlAttackAircraftQueuedOrBetterAtUnitCountUnitAlliedVindicatorQueuedOrBetterAtUn3174662664"/>
+    </CRequirement>
+    <CRequirement id="ArmCABALLeviathanDrone2">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndLT3532700161SumCountUnitAlliedCenturyBomberQueuedOrBetterAtUnitCountUnitSovietBeaverQueuedOrBetterAtUnitCountUnitSovietTheIlAttackAircraftQueuedOrBetterAtUnitCountUnitAlliedVindicatorQueuedOrBetterAtUn2694550159"/>
+    </CRequirement>
+    <CRequirement id="ArmCABALLeviathanDrone22">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndLT3532700161SumCountUnitAlliedCenturyBomberQueuedOrBetterAtUnitCountUnitSovietBeaverQueuedOrBetterAtUnitCountUnitSovietTheIlAttackAircraftQueuedOrBetterAtUnitCountUnitAlliedVindicatorQueuedOrBetterAtUn3096380095"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel">
+        <NodeArray index="Show" Link="NotOrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOn1630384531"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel2">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel22">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel3">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel32">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel33">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel34">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel35">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBUildcancel36">
+        <NodeArray index="Use" Link="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847"/>
+    </CRequirement>
+    <CRequirement id="AlliedBuildingNumber">
+        <NodeArray index="Use" Link="LTSumCountUnitAlliedPowerPlantCompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="AlliedConstructionYardLevel">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="EqSumCountUpgradeAlliedTechLevelUnlock1CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock2CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock3CompleteOnlyTechTreeCheat1"/>
+    </CRequirement>
+    <CRequirement id="AlliedConstructionYardLevel2">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="EqSumCountUpgradeAlliedTechLevelUnlock1CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock2CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock3CompleteOnlyTechTreeCheat2"/>
+    </CRequirement>
+    <CRequirement id="AlliedConstructionYardLevel3">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="EqSumCountUpgradeAlliedTechLevelUnlock1CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock2CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock3CompleteOnlyTechTreeCheat3"/>
+    </CRequirement>
+    <CRequirement id="AlliedConstructionYardLevel32">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="EqSumCountUpgradeAlliedTechLevelUnlock1CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock2CompleteOnlyTechTreeCheatCountUpgradeAlliedTechLevelUnlock3CompleteOnlyTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="AlliedConstructionYardLevel33">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUpgradeFascist242224CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup2">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup3">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup4">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly4"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup5">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly5"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup6">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly6"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup7">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly7"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup8">
+        <NodeArray index="Use" Link="GTECountUnitAlliedAdvancedPowerPlantCompleteOnly8"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup9">
+        <NodeArray index="Use" Link="GTECountUnitChinaNuclearPowerPlantCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup92">
+        <NodeArray index="Use" Link="GTECountUnitChinaNuclearPowerPlantCompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup93">
+        <NodeArray index="Use" Link="GTECountUnitChinaNuclearPowerPlantCompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="AubuildSpeedup94">
+        <NodeArray index="Use" Link="GTECountUnitChinaNuclearPowerPlantCompleteOnly4"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant2">
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22">
+        <EditorCategories value="TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyLTE1999833820SumCountUnitRAAlliesBuildVestUnitsAlliedMinesQueuedOrBetterCountUnitAlliedRefineryQueuedOrBetter9"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant222">
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedBarracksVestCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant223">
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedRefineryCompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitRATheAlliesBuildVestUnitsAlliedArtilleryCompleteOnlyAtUnit0OrCountUpgradeunlockupgrade12QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant2232">
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedRefineryCompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedWarFactoryVest2CompleteOnlyAtUnit0OrCountUpgradeunlockupgrade23QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant2233">
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedRefineryCompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedWarFactoryVestCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant223310">
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnlyLT2232793349SumCountUnitAubuildDunmmyUnit3222222QueuedOrBetterCountUnitAlliedChronoSphereQueuedOrBetter1"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnit0CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant223311">
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnlyLT2232793349CountUnitAlliedOldChronosphereQueuedOrBetter1"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit0OrCountUpgradeunlockupgrade23QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant223312">
+        <NodeArray index="Use" Link="CountUpgradeAlliedTechLevelUnlock1CompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnit2CompleteOnlyAtUnit0OrCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant223313">
+        <NodeArray index="Use" Link="CountUpgradeAlliedTechLevelUnlock1CompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22332">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedRefineryCompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedRadarVestCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant223322">
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedRefineryCompleteOnlyCountUnitAlliedRadarCompleteOnlyCountUnitAlliedAdvancedPowerPlantCompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitRAAlliedForcesBuildVestUnitAlliedDefenseAgencyCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant2233222">
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedRefineryCompleteOnlyCountUnitAlliedRadarCompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitRATheAlliesBuildVestUnitsAndTheAlliedPowerPlantCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22333">
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnitCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22334">
+        <NodeArray index="Use" Link="CountUpgradeAlliedTechLevelUnlock1CompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnit3CompleteOnlyAtUnit0CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22335">
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22336">
+        <NodeArray index="Use" Link="CountUpgradeAlliedTechLevelUnlock3CompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22337">
+        <NodeArray index="Use" Link="CountUpgradeAlliedTechLevelUnlock2CompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedCannonVestCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22338">
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnlyLT2543532441SumCountUnitAlliedProtonColliderQueuedOrBetterCountUnitAubuildDunmmyUnit322222QueuedOrBetter1"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnit322222CompleteOnlyAtUnit0CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant22339">
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnlyLT1635586031SumCountUnitAlliedWeatherControllerVestQueuedOrBetterCountUnitAlliedWeathercontrollerQueuedOrBetter1"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant224">
+        <EditorCategories value="TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnlyLTE4230491795SumCountUnitAubuildDunmmyUnit32223QueuedOrBetterCountUnitAlliedEliteSoldierAcademyQueuedOrBetter0"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitAubuildDunmmyUnit32223CompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant23">
+        <NodeArray index="Use" Link="AndCountUnitAlliedPowerPlantCompleteOnly"/>
+        <NodeArray index="Show" Link="AndOrLTESumCountUnitRATheAlliesBuildVestUnitsAndAlliedAirfieldsCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant232">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Aupowerplant2322">
+        <NodeArray index="Use" Link="AndCountUnitChinaTeslaReactorCompleteOnlyCountUnitChinaSmeltingFurnaceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Autechlv1">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUpgradeAlliedTechlvP12CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Autechlv12">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="NotCountUpgradeAlliedJunTechlvP127CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAlliedJunTechlvP127CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock11">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock12">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock13">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock14">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock15">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock16">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock17">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock18">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock182">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUnitAlliedDefenseBureauCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock19">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock2">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock20">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock21">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUnitAlliedDefenseBureauCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock22">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock23">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="And"/>
+        <NodeArray index="Show" Link="CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock24">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock25">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="And"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock26">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock27">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock3">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock32">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock322">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedDefenseBureauCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="CampaignUnitsUnlock3222">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUnitAlliedPowerPlantCompleteOnlyCountUnitAlliedDefenseBureauCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeZZZ"/>
+    </CRequirement>
+    <CRequirement id="ChinaTechUnlock2">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="ChinaTechUnlock3">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="ChinaTechUnlock4">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="CntechUnlockT22">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeChinaTechUnlockT13InProgressOrBetterCountUpgradeChinaTechUnlockT12CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeChinaTechUnlockT13QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="CntechUnlockT23">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeChinaTechUnlockT14InProgressOrBetterCountUpgradeChinaTechUnlockT13CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeChinaTechUnlockT14QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTE2978590484CountUnitBarracks2QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTE31271432CountUnitSwannQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT3222219809CountUnitSovietNatashaQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre2222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT578829177CountUnitSovietIronCurtainQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre22222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLT3694299198CountUnitAlliedChronoSphereQueuedOrBetter1CountUpgradeAlliedTechLevelUnlock1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre222222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLT3694299198CountUnitAlliedOldChronosphereQueuedOrBetter1CountUpgradeTechnologyMainBattleTanks11CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre22223">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT2996263348CountUnitSovietOldIronCurtainQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre2223">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLT3345950179CountUnitAlliedTanyaQueuedOrBetter1CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre22232">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT1215717999CountUnitEmpireYurikoOmegaQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre22233">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT261468915CountUnitChinaTheLawyerofKnowledgeQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre3">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndLT3548155773CountUnitAlliedProtonColliderQueuedOrBetter1CountUpgradeTechnologyImprovedArtillery2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre32">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="LT3570101738CountUnitKorhalCannon22QueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre322">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="LT736274670CountUnitChinaDongfeng41LaunchsiloQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre4">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT1142719170CountUnitGovernmentCentre2QueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyAdvancedAntitankGunsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade222255CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyCountUpgradeAlliedTechLevelUnlock1CompleteOnlyNotCountUpgradeUnknownUpgrade12InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade12QueuedOrBetter5CountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222CompleteOnlyNotCountUpgradeUnknownUpgrade10InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade10QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyNotCountUpgradeUnknownUpgrade102InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade102QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns2222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyNotCountUpgradeUnknownUpgrade1022InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade1022QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns2223">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyNotCountUpgradeUnknownUpgrade1024InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade1024QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns2224">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock4CompleteOnlyCountUpgradeZombieUpgrade22224CompleteOnlyNotCountUpgradeUnknownUpgrade1023InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade1023QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns223">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="OrCountUpgradeTechnologyRadarCompleteOnlyCountUpgradeWarpGateResearchCompleteOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeZombieUpgrade3322QueuedOrBetter20"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns224">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade22222CompleteOnlyNotCountUpgradeUnknownUpgrade103InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade103QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns225">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade22223CompleteOnlyNotCountUpgradeUnknownUpgrade105InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade105QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns226">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade22224CompleteOnlyNotCountUpgradeUnknownUpgrade104InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade104QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns23">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222554CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyCountUpgradeAlliedTechLevelUnlock2CompleteOnlyNotCountUpgradeUnknownUpgrade122InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade122QueuedOrBetter5CountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns24">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222552CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyCountUpgradeAlliedTechLevelUnlock3CompleteOnlyNotCountUpgradeUnknownUpgrade124InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade124QueuedOrBetter5CountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns25">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222553CompleteOnlyCountUpgradeZombieUpgrade22224CompleteOnlyCountUpgradeAlliedTechLevelUnlock4CompleteOnlyNotCountUpgradeUnknownUpgrade123InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade123QueuedOrBetter5CountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyAdvancedAntitankGuns3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAdvancedAntitankGuns32">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTE970227199SumCountUnitEmpireDestructiondevicecoreQueuedOrBetterCountUnitEmpirePsionicDecimatorQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveAssaultRifles">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyAssaultRiflesCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechRockets4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyImprovedArtillery23CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyImprovedArtillery2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery23">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyImprovedArtillery22CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery232">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyImprovedArtillery222CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery242">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery243">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery244">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery245">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2452">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2453">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2454">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2455">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24552">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery245522">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24553">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery245532">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24554">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery245542">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24555">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2456">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock1CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24562">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24563">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock3CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24564">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock4CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="ChinaTechUnlock">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery246">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2462">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2463">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZombieUpgrade22223CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2464">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery2465">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24652">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24653">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveHeavyArtillery24654">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+    </CRequirement>
+    <CRequirement id="HaveImprovedArtillery2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechRockets1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveImprovedArtillery3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechRockets4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyLTE1586392053CountUnitSovietRefineryQueuedOrBetter2"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUnitChinaTeslaReactorCompleteOnlyLTE1586392053SumCountUnitChinaSmeltingFurnaceQueuedOrBetter2"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment23">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUnitEmpirePowerPlantCompleteOnlyLTE247099226SumCountUnitEmpireImperialMineQueuedOrBetterCountUnitEmpireRefineryCoreQueuedOrBetter2"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment24">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUnitEmpirePowerPlantCompleteOnlyCountUnitEmpireImperialMineCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment242">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUnitChinaTeslaReactorCompleteOnlyCountUnitChinaSmeltingFurnaceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment243">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment32">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment33">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE496025228SumCountUnitUniversityQueuedOrBetterCountUnitShadowShieldGeneratorSmallQueuedOrBetterCountUnitUniversity4QueuedOrBetter19LTE2134063264CountUnitCityTier52QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment332">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE646425522SumCountUnitSecurityGateStraightHorizontalQueuedOrBetterCountUnitSecurityGateStraightHorizontalLoweredQueuedOrBetterCountUnitSecurityGateStraightVerticalQueuedOrBetterCountUnitSecurityG203204687"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment333">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE208744392SumCountUnitSpaceArmoredGeneratorQueuedOrBetterCountUnitSpaceArmoredGenerator2QueuedOrBetter11"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And219397711LTECountUnitBarracks2QueuedOrBetter15"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE3797693086SumCountUnitLightIndustryQueuedOrBetterCountUnitIndustryQueuedOrBetterCountUnitHeavyIndustryQueuedOrBetterCountUnitAdvancedIndustryQueuedOrBetterCountUnitIndustrialComplexQueuedOrBetter19LTE2131575934CountUnitCityTier52QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And3766301403LTECountUnitAlliedAirportQueuedOrBetter9"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes223">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2954857534LTECountUnitIndustryQueuedOrBetter5"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2232">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2368256968LTECountUnitHeavyIndustryQueuedOrBetter19"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22322">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE3774085599CountUnitAdvancedIndustryQueuedOrBetter19CountUpgradeTechnologyEconomicMobilizationCompleteOnly1745088833"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes223222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE1089703056CountUnitIndustrialComplexQueuedOrBetter19OrCountUpgradeWarpGateResearchCompleteOnlyCountUpgradeTechnologyRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2232222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE4156847471SumCountUnitJoriumStockpileQueuedOrBetterCountUnitColonistBiodomeHalfBuilt2QueuedOrBetterCountUnitJoriumStockpile22QueuedOrBetter17CountUpgradeTechnologyRadarCompleteOnly1869717555"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2233">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2954857534LTECountUnitIndustryQueuedOrBetter5"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes224">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2422380596LTECountUnitGDIAntitankbunkerQueuedOrBetter15"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes225">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE2604333995SumCountUnitSpiderMineQueuedOrBetterCountUnitSpiderMineBurrowedQueuedOrBetter23"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2252">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And4073460313LTECountUnitChinaLightBomberQueuedOrBetter11CountUpgradeTechnologyCombatAircraft1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2253">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And3828158312LTECountUnitTacticalBomberQueuedOrBetter23CountUpgradeTechnologyCombatAircraft3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22532">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And4073460313LTECountUnitAlliedApollofighterQueuedOrBetter35CountUpgradeSJHyperionHangerCheckQueuedOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2254">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE4111560735CountUnitChinaFixedartillerypositionQueuedOrBetter11"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22542">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE873848284CountUnitTankTrapQueuedOrBetter15"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes225422">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE1615008604CountUnitSandbagsQueuedOrBetter11"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2254222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE1470207237CountUnitInfestedDominionHousing3QueuedOrBetter15"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes225423">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE495145857CountUnitBattleStationMineralField2QueuedOrBetter4"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2254232">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE1178522114SumCountUnitEmpireImperialOreMinerQueuedOrBetterCountUnitSovietHarvesterQueuedOrBetterCountUnitAlliedProspectorQueuedOrBetterCountUnitChinaOreMinerQueuedOrBetter29"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2255">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE1547388912SumCountUnitChinaSkyLanternQueuedOrBetter31"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes226">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2711547232LTECountUnitTechCentreQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2262">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And637907118LTECountUnitCombatEngineerQueuedOrBetter7"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2263">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And1845959737LTECountUnitRuSolvebuildingQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22632">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE2337428781SumCountUnitJoriumStockpileQueuedOrBetterCountUnitColonistBiodomeHalfBuilt2QueuedOrBetterCountUnitJoriumStockpile22QueuedOrBetter15LTE1686219344CountUnitColonistBiodomeHalfBuilt2QueuedOrBetter15"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2264">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2500721320LTE2500721320CountUnitDrakkenLaserDrillQueuedOrBetter4CountUpgradeTechTurret3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22642">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE864313196CountUnitAlliedGrandCannonQueuedOrBetter11CountUpgradeTechTurret4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22643">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE2760870947CountUnitSovietBigGunQueuedOrBetter11CountUpgradeTechTurret4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes226432">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTE2741656239CountUnitKorhalCannon223QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2264322">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE2085203615CountUnitAlliedWeathercontrollerQueuedOrBetter0CountUpgradeTechTurret2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2264323">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTE3773297871SumCountUnitEmpireNanoSwarmCoreQueuedOrBetterCountUnitEmpireNanoSwarmQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes2264324">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTE625421090CountUnitChinaSundialarrayQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes22644">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE158632584SumCountUnitEmpireWaveEnergyThreeGunCoresQueuedOrBetterCountUnitEmpireWaveenergythreegunsQueuedOrBetter11CountUpgradeTechTurret4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes227">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE4087798154SumCountUnitLightIndustryQueuedOrBetterCountUnitIndustryQueuedOrBetterCountUnitHeavyIndustryQueuedOrBetterCountUnitAdvancedIndustryQueuedOrBetterCountUnitIndustrialComplexQueuedOrBette254801765"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade16CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveNuke">
+        <NodeArray index="Use" Link="CountUnitNukeCompleteOnly3177553715"/>
+    </CRequirement>
+    <CRequirement id="HaveRadar2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade1232CompleteOnlyCountUpgradeunlockupgrade1222CompleteOnlyCountUpgradeunlockupgrade12223CompleteOnlyCountUpgradeunlockupgrade12222CompleteOnlyCountUpgradeunlockupgrade32CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveRadar3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeWarpGateResearchCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyRadarQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveSpecializedInfantry">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechInfantry1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveTurbojets">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2762615259CountUpgradeTechnologyCombatAircraft2CompleteOnlyLTECountUnitChinaJ10RaptorFigherQueuedOrBetter15"/>
+    </CRequirement>
+    <CRequirement id="HaveRailRockets">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechRockets2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveAviation">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyCombatAircraft1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveEconomicMobilization">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyEconomicMobilizationCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveCombatAircraft">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyCombatAircraft3CompleteOnlyGTE263404243115CountUnitFighterQueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyCombatAircraft2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveIndustrialDevelopment">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="HaveImprovedAntitankGuns">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyImprovedAntitankGunsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveImprovedArtillery">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechRockets3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveLargeAirframes">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And952070841CountUpgradeTechnologyLargeAirframesCompleteOnly4031298786GTE7CountUnitChinaB29HeavyBomberQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveRadar">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyRadarCompleteOnly"/>
+        <NodeArray index="Show" Link="Not"/>
+    </CRequirement>
+    <CRequirement id="HaveTurbojets2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And3371211903CountUpgradeTechnologyCombatAircraft2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveTurbojets3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2762615259CountUpgradeTechnologyCombatAircraft2CompleteOnlyLTECountUnitChinaJ10RaptorFigherQueuedOrBetter15"/>
+        <NodeArray index="Show" Link="NotCountUpgradeWarpGateResearchCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JUPowerPlantAdvanced">
+        <NodeArray index="Use" Link="AndCountUnitEmpirePowerPlantCompleteOnlyCountUnitEmpireImperialMineCompleteOnlyCountUnitRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JUPowerPlantAdvanced2">
+        <NodeArray index="Use" Link="AndCountUnitChinaTeslaReactorCompleteOnlyCountUnitChinaSmeltingFurnaceCompleteOnlyCountUnitChinaRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JUPowerPlantAdvanced3">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnlyCountUnitSovietRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JuTechCenterBuild">
+        <NodeArray index="Use" Link="AndCountUnitEmpirePowerPlantCompleteOnlyCountUnitEmpireImperialMineCompleteOnlyCountUnitRadarCompleteOnlyCountUnitChinaNuclearPowerPlantCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JuTechCenterBuild2">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnlyCountUnitSovietRadarCompleteOnlyCountUnitSovietSuperReactorCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JuTechCenterBuild22">
+        <NodeArray index="Use" Link="AndCountUnitChinaTeslaReactorCompleteOnlyCountUnitChinaSmeltingFurnaceCompleteOnlyCountUnitChinaRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JuUnlockTechRequirement2">
+        <NodeArray index="Use" Link="AndCountUnitEmpirePowerPlantCompleteOnlyCountUnitEmpireImperialMineCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LandOnly">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountBehaviorAirportlandedCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorAirportlandedCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="LandOnly2">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Show" Link="EqCountBehaviorAirportlandedCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="LearnAdvancedAntitankGuns">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyImprovedAntitankGunsCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyAdvancedAntitankGunsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnAdvancedAntitankGuns2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyAdvancedAntitankGuns2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnAdvancedAntitankGuns3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyAdvancedAntitankGunsCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyAdvancedAntitankGuns3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnCombatAircraft2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyCombatAircraft1CompleteOnlyCountUpgradeTechnologyCombatAircraft2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyCombatAircraft3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnCombatAircraft22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyCombatAircraft1CompleteOnlyCountUpgradeTechnologyCombatAircraft2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnCombatAircraft23">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyCombatAircraft3CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyCombatAircraft4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnHallucination">
+        <NodeArray index="Use" Link="CountUpgradeFascist23CompleteOnly1494008865"/>
+    </CRequirement>
+    <CRequirement id="LearnHeavyArtillery">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechRockets3CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechRockets4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnHeavyArtillery2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechRockets4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnHeavyArtillery3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechRockets1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechRockets2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnHeavyArtillery4">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="OrCountUpgradeWarpGateResearchCompleteOnlyCountUpgradeTechnologyRadarCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechRockets1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanksCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUpgradeRailRockets22QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanksCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUpgradeRailRockets222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks222">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeUpgradeRailRockets222CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUpgradeRailRockets2222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeWarpGateResearchCompleteOnly3556108412"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks32">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountUpgradeTechnologyIndustrialDevelopmentCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyIndustrialDevelopmentCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks33">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeFascist212CompleteOnly1886161343"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks34">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeWarpGateResearchQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks35">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeWarpGateResearchCompleteOnly3556108412"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechTurret3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMainBattleTanks36">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeWarpGateResearchCompleteOnly3556108412GTE1893706628CountUnitUniversity4CompleteOnly12LTE2640933098SumCountUnitColonistBiodome2QueuedOrBetterCountUnitJoriumStockpileQueuedOrBetterCountUn3367701183"/>
+    </CRequirement>
+    <CRequirement id="LearnProtossAirWeapon2">
+        <NodeArray index="Use" Link=""/>
+    </CRequirement>
+    <CRequirement id="LearnRadar2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountUpgradeTechnologyRadarCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnRadar3">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeWarpGateResearchCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyRadarQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnReinforcedConcrete2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechTurret3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnSpecializedInfantry">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyIndustrialDevelopmentCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechInfantry1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnLargeAirframes">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMediumAirframesCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyLargeAirframesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnAssaultRifles">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeUpgradeSemiautomaticRiflesCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyAssaultRiflesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnImprovedArtillery">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechRockets2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechRockets3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnSpecializedInfantry2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechInfantry3CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechInfantry4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnSpecializedInfantry22">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechInfantry2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechInfantry3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnSpecializedInfantry23">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And990531308CountUpgradeTechInfantry2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnSpecializedInfantry24">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And1056394401CountUpgradeTechInfantry1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechInfantry2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnTurbojets">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="Or3219389284CountUpgradeTechnologyCombatAircraft1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyCombatAircraft2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnRailRockets">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="OrCountUpgradeTechRockets1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechRockets2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnSemiautomaticRifles">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechInfantry1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUpgradeSemiautomaticRiflesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnAdvancedMediumTanks">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And2295993317CountUpgradeTechnologyImprovedMediumTanksCompleteOnlyCountUpgradeTechInfantry2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyAdvancedMediumTanksQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnRadar">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeWarpGateResearchCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyRadarQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnImprovedAntitankGuns">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade8CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyImprovedAntitankGunsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnEconomicMobilization">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyEconomicMobilizationQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnIndustrialDevelopment">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyIndustrialDevelopmentQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnReinforcedConcrete">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyIndustrialDevelopmentCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechTurret3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnWarpGate">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyEconomicMobilizationCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RequirementGermany">
+        <EditorCategories value="Race:Zerg,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeCountryGermanyCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RequirementUSSR">
+        <EditorCategories value="Race:Zerg,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeCountryUSSRCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RequirementUK">
+        <EditorCategories value="Race:Zerg,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeCountryUKCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SpectreTrainNuke">
+        <NodeArray index="Use" Link="AndNot1621375380CountUnitSpectreNukeQueuedOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe211">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP114CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP114CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe212">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP110CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP110CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe213">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP118CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP118CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe214">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP189CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP189CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe2142">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe215">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP119CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP119CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe216">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP19CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP19CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe217">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP186CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP186CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe2172">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP187CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP187CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe218">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1812CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1812CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe219">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1813CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1813CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe22">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP185CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP185CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe220">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP120CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP120CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe221">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedTechlvP1326CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedTechlvP1326CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe222">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeOcularImplantsCompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeOcularImplantsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe223">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1816CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1816CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe224">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP121CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP121CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe225">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP122CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe226">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP123CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP123CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe227">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1810CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1810CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe228">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1814CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1814CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe229">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP126CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP126CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe23">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP113CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP113CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe230">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP14CompleteOnly1881220206"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe231">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP125CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP125CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe232">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP184CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP184CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe233">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP127CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP127CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe234">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP115CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP115CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe235">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1815CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1815CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe236">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP128CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP128CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe237">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP1811CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP1811CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe238">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP16CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP16CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe239">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP188CompleteOnly3377986000"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe24">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP15CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP15CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe240">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlliedDefenseBureauCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe2">
+        <NodeArray index="Show" Link="NotLTCountUnitKorhalCannon22CompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe22">
+        <NodeArray index="Show" Link="NotLTSumCountUnitAlliedChronoSphereCompleteOnlyCountUnitAlliedOldChronosphereCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe3">
+        <NodeArray index="Show" Link="NotLTCountUnitKorhalCannon223CompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe32">
+        <NodeArray index="Show" Link="NotLTCountUnitAlliedWeathercontrollerCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe322">
+        <NodeArray index="Show" Link="NotLTCountUnitEmpireNanoSwarmCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe33">
+        <NodeArray index="Show" Link="NotLTCountUnitChinaSundialarrayCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe4">
+        <NodeArray index="Show" Link="NotLTCountUnitSovietNuclearBombSiloCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe42">
+        <NodeArray index="Show" Link="NotLTCountUnitChinaDongfeng41LaunchsiloCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe5">
+        <NodeArray index="Show" Link="NotLTCountUnitSovietIronCurtainCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe52">
+        <NodeArray index="Show" Link="NotLTCountUnitEmpirePsionicDecimatorCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe53">
+        <NodeArray index="Show" Link="NotLTCountUnitSovietOldIronCurtainCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel1">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade2222InProgressOrBetter"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade2222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel12">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade22222InProgressOrBetterCountUpgradeZombieUpgrade2222CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade22222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel13">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade22223InProgressOrBetterCountUpgradeZombieUpgrade22222CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade22223QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel14">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade22224InProgressOrBetterCountUpgradeZombieUpgrade22223CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade22224QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel15">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeAlliedTechLevelUnlock1InProgressOrBetter"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeAlliedTechLevelUnlock1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel152">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeAlliedTechLevelUnlock2InProgressOrBetterCountUpgradeAlliedTechLevelUnlock1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeAlliedTechLevelUnlock2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel1522">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeAlliedTechLevelUnlock3InProgressOrBetterCountUpgradeAlliedTechLevelUnlock2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeAlliedTechLevelUnlock3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel1523">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeAlliedTechLevelUnlock4InProgressOrBetterCountUpgradeAlliedTechLevelUnlock3CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeAlliedTechLevelUnlock4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel1524">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade2222554InProgressOrBetterCountUpgradeZombieUpgrade222255CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade2222554QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel15242">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade2222552InProgressOrBetterCountUpgradeZombieUpgrade2222554CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade2222552QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel15243">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade2222553InProgressOrBetterCountUpgradeZombieUpgrade2222552CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade2222553QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="CntechUnlockT2">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeChinaTechUnlockT12InProgressOrBetterCountUpgradeChinaTechUnlockT1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeChinaTechUnlockT12QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Sutechlevel153">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade222255InProgressOrBetter"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeZombieUpgrade222255QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="CntechUnlockT1">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeChinaTechUnlockT1InProgressOrBetter"/>
+        <NodeArray index="Show" Link="NotAndCountUpgradeChinaTechUnlockT1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TankDestroyerEarly">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMediumTanksCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMediumAirframes">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And3382154054CountUpgradeTechnologyCombatAircraft3CompleteOnlyLTECountUnitTacticalBomberQueuedOrBetter12"/>
+    </CRequirement>
+    <CRequirement id="HaveTechCentre">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And3924604155LTECountUnitTechCentre3QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="DoNotHaveGovernmentCentre">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT3783775875CountUnitGovernmentCentreQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="LearnCombatAircraft">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyCombatAircraft3CompleteOnly4132363545"/>
+    </CRequirement>
+    <CRequirement id="LearnMediumAirframes">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTechnologyCombatAircraft3CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMediumAirframesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnImprovedMediumTanks">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And1056394401CountUpgradeTechnologyMediumTanksCompleteOnlyCountUpgradeTechInfantry1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyImprovedMediumTanksQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnRockets">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade8CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechRockets2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnAviation">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="OrCountUpgradeTechnologyRadarCompleteOnlyCountUpgradeWarpGateResearchCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyCombatAircraft1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RequirementItaly">
+        <EditorCategories value="Race:Zerg,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeCountryItalyCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="TrainNuke">
+        <NodeArray index="Use" Link="AndOr887025761CountUnitGhostAcademyCompleteOnly3379379089TechTreeCheatNot1758163331CountUnitNukeQueuedOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="RANeedForEconomicMobilization">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyEconomicMobilizationCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAEarlyImperialMecha">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade8CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankArmorT1">
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade32InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade32QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankArmorT4">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222552CompleteOnlyCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyCountUpgradeChinaTechUnlockT13CompleteOnlyNotCountUpgradeZombieUpgrade325InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade325QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RAAerialBomb">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyCombatAircraft1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade9QueuedOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankAttackT1">
+        <NodeArray index="Use" Link="AndNotCountUpgradeZombieUpgrade3InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeShenzhouTankAttackT1">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMainBattleTanksCompleteOnlyNotCountUpgradeZombieUpgrade33InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeZombieUpgrade33QueuedOrBetter5"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeShenzhouTankAttackT2">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMainBattleTanks11CompleteOnlyNotCountUpgradeZombieUpgrade333InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeZombieUpgrade333QueuedOrBetter5"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeShenzhouTankAttackT3">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMainBattleTanks5CompleteOnlyNotCountUpgradeZombieUpgrade335InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeZombieUpgrade335QueuedOrBetter5"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeShenzhouTankAttackT4">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMainBattleTanks7CompleteOnlyNotCountUpgradeZombieUpgrade334InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeZombieUpgrade334QueuedOrBetter5"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankAttackT2">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade222255CompleteOnlyCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyCountUpgradeChinaTechUnlockT1CompleteOnlyNotCountUpgradeZombieUpgrade35InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade35QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankAttackT3">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222554CompleteOnlyCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyCountUpgradeChinaTechUnlockT12CompleteOnlyNotCountUpgradeZombieUpgrade37InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade37QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankAttackT4">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222552CompleteOnlyCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyCountUpgradeChinaTechUnlockT13CompleteOnlyNotCountUpgradeZombieUpgrade36InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade36QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeInfantryAttackAndDefenseT1">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeTechnologySpecializedInfantry23InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeTechnologySpecializedInfantry23QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeInfantryAttackAndDefenseT2">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade222255CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeChinaTechUnlockT1CompleteOnlyNotCountUpgradeTechnologySpecializedInfantry233InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeTechnologySpecializedInfantry233QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeInfantryAttackAndDefenseT3">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222554CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUpgradeChinaTechUnlockT12CompleteOnlyNotCountUpgradeTechnologySpecializedInfantry235InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeTechnologySpecializedInfantry235QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeInfantryAttackAndDefenseT4">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222552CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUpgradeChinaTechUnlockT13CompleteOnlyNotCountUpgradeTechnologySpecializedInfantry234InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeTechnologySpecializedInfantry234QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMechaDefenseT1">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade222255CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyNotCountUpgradeZombieUpgrade3222InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3222QueuedOrBetter5OrCountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMechaDefenseT2">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222554CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyNotCountUpgradeZombieUpgrade32223InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade32223QueuedOrBetter5OrCountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMechaDefenseT3">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222552CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyNotCountUpgradeZombieUpgrade32225InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade32225QueuedOrBetter5OrCountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMechaDefenseT4">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222553CompleteOnlyCountUpgradeZombieUpgrade22224CompleteOnlyNotCountUpgradeZombieUpgrade32224InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade32224QueuedOrBetter5OrCountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMediumRangeArtilleryArmorT1">
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyNotCountUpgradeZombieUpgrade32222InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade32222QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeAndAircraftUpgradeToT1">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndNotCountUpgradeUnknownUpgrade9InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade9QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTowerDefenseUpgradeT1">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade222255CompleteOnlyCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyCountUpgradeChinaTechUnlockT1CompleteOnlyNotCountUpgradeZombieUpgrade332InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade332QueuedOrBetter3OrCountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTowerDefenseUpgradeT2">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222554CompleteOnlyCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyCountUpgradeChinaTechUnlockT12CompleteOnlyNotCountUpgradeZombieUpgrade3323InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3323QueuedOrBetter3OrCountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTowerDefenseUpgradeT3">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222552CompleteOnlyCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyCountUpgradeChinaTechUnlockT13CompleteOnlyNotCountUpgradeZombieUpgrade3325InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3325QueuedOrBetter3OrCountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTowerDefenseUpgradeT4">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222553CompleteOnlyCountUpgradeAlliedTechLevelUnlock4CompleteOnlyCountUpgradeZombieUpgrade22224CompleteOnlyCountUpgradeChinaTechUnlockT14CompleteOnlyNotCountUpgradeZombieUpgrade3324InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3324QueuedOrBetter3OrCountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeAircraftUpgradeToT2">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade222255CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeChinaTechUnlockT1CompleteOnlyNotCountUpgradeUnknownUpgrade92InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade92QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeAircraftUpgradeToT3">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222554CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUpgradeChinaTechUnlockT12CompleteOnlyNotCountUpgradeUnknownUpgrade94InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade94QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeAircraftUpgradeToT4">
+        <EditorCategories value="TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222552CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUpgradeChinaTechUnlockT13CompleteOnlyNotCountUpgradeUnknownUpgrade93InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeUnknownUpgrade93QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMediumRangeArtilleryArmorT2">
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyNotCountUpgradeZombieUpgrade322222InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade322222QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMediumRangeGunArmorT3">
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock3CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyNotCountUpgradeZombieUpgrade322224InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade322224QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeMediumRangeGunArmorT4">
+        <NodeArray index="Use" Link="AndOrCountUpgradeAlliedTechLevelUnlock4CompleteOnlyCountUpgradeZombieUpgrade22224CompleteOnlyNotCountUpgradeZombieUpgrade322223InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade322223QueuedOrBetter5OrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeRocketLauncherAndMissileLauncherArmoredT1">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222CompleteOnlyNotCountUpgradeZombieUpgrade322InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade322QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeRocketLauncherAndMissileLauncherArmoredT2">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade22222CompleteOnlyNotCountUpgradeZombieUpgrade3223InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3223QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeRocketLauncherAndMissileLauncherArmoredT3">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade22223CompleteOnlyNotCountUpgradeZombieUpgrade3225InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3225QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeRocketLauncherAndMissileLauncherArmoredT4">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade22224CompleteOnlyNotCountUpgradeZombieUpgrade3224InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade3224QueuedOrBetter5OrCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankArmorT2">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade222255CompleteOnlyCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeZombieUpgrade2222CompleteOnlyCountUpgradeChinaTechUnlockT1CompleteOnlyNotCountUpgradeZombieUpgrade324InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade324QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RATankUpgradeTankArmorT3">
+        <NodeArray index="Use" Link="AndOrCountUpgradeZombieUpgrade2222554CompleteOnlyCountUpgradeAlliedTechLevelUnlock2CompleteOnlyCountUpgradeZombieUpgrade22222CompleteOnlyCountUpgradeChinaTechUnlockT12CompleteOnlyNotCountUpgradeZombieUpgrade326InProgressOnly"/>
+        <NodeArray index="Show" Link="AndNotGTECountUpgradeZombieUpgrade326QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RAHeroLevel12">
+        <NodeArray index="Use" Link="AndTechTreeCheatGTE1401256498CountBehaviorLevelnumCompleteOnlyAtUnitTechTreeCheat1TechTreeCheatCountUpgradeTechnologyEconomicMobilizationCompleteOnly3209323480"/>
+    </CRequirement>
+    <CRequirement id="RAHeroLevel18Preset">
+        <NodeArray index="Use" Link="AndTechTreeCheatLTE1774293863SumTechTreeCheatCountUnitJoriumStockpileQueuedOrBetterCountUnitColonistBiodome2QueuedOrBetterCountUnitPylonContainmentUnitQueuedOrBetterCountUnitColonistBiodomeHalfBuilt2Q3808026357"/>
+    </CRequirement>
+    <CRequirement id="RAElectricity">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyRadarCompleteOnlyCountUpgradeTechnologyCombatAircraft2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAEarlyImperialMechaFrontUnit">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade8QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RANuclearSiloRestrictions">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="LTE3957478660CountUnitSovietNuclearBombSiloQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="RAOwnsAutomationOrIndustrialPark">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="OrCountUpgradeTechnologyRadarCompleteOnly2088378926CountUpgradeWarpGateResearchCompleteOnly406619800"/>
+    </CRequirement>
+    <CRequirement id="RAOvercomeTheWeaknessOfTheImperialMechaToReachFullLevel">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTECountUpgradeUnknownUpgrade123CompleteOnly5"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade11QueuedOrBetterAndCountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RARestrictionsOnMobilizationRecruitment">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndLTE2980567727CountUnitBritishInfantryQueuedOrBetter39"/>
+    </CRequirement>
+    <CRequirement id="RARecruitmentRestrictionsForAmericanSoldiers">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="And1969887027LTECountUnitMachinegunnerQueuedOrBetter19"/>
+    </CRequirement>
+    <CRequirement id="RAAdvancedAeronauticsPrerequisite">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTECountUpgradeUnknownUpgrade93CompleteOnly5"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeFascist24222QueuedOrBetterOrCountUpgradeunlockupgrade1222CompleteOnlyCountUpgradeunlockupgrade12222CompleteOnlyCountUpgradeunlockupgrade12223CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAAdvancedMediumTank">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks5CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATankWithFullAttackUnlocksTracks">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="OrGTECountUpgradeZombieUpgrade334CompleteOnly5GTECountUpgradeZombieUpgrade36CompleteOnly5"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade13QueuedOrBetterOrCountUpgradeunlockupgrade222CompleteOnlyCountUpgradeunlockupgrade2CompleteOnlyCountUpgradeunlockupgrade23CompleteOnlyCountUpgradeunlockupgrade22Comple112959863"/>
+    </CRequirement>
+    <CRequirement id="RATracksUnlocked">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade13CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAInfantryAtFullLevel">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTECountUpgradeTechnologySpecializedInfantry234CompleteOnly5"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade14QueuedOrBetterCountUpgradeunlockupgrade123CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAInfantryAttackAndDefenseReachesLevel40">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTE4230354914CountUpgradeTechnologySpecializedInfantry234CompleteOnly4"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade2322CompleteOnly5"/>
+    </CRequirement>
+    <CRequirement id="RAInfantryAttackAndDefenseReachesLevel20">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTE2519830990CountUpgradeTechnologySpecializedInfantry235CompleteOnly5"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade23CompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="RAInfantryAttackAndDefenseReachesLevel30">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTE2918904512CountUpgradeTechnologySpecializedInfantry234CompleteOnly1"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade232CompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="RATankAttackPowerReachesLevel40">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTE1045210514CountUpgradeZombieUpgrade3CompleteOnly40"/>
+    </CRequirement>
+    <CRequirement id="RAEarlyHeavyTank">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAEarlyMainBattleTank">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks7CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAEarlyAssaultGun">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMainBattleTanksCompleteOnlyCountUpgradeTechnologyMainBattleTanks4CompleteOnlyCountUpgradeTechnologyAdvancedAntitankGuns2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAImprovedAssaultCannon">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMainBattleTanks11CompleteOnlyCountUpgradeTechnologyMainBattleTanks3CompleteOnlyCountUpgradeTechnologyImprovedAntitankGunsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAAdvancedAssaultCannon">
+        <NodeArray index="Use" Link="AndCountUpgradeTechnologyMainBattleTanks6CompleteOnlyCountUpgradeTechnologyMainBattleTanks5CompleteOnlyCountUpgradeTechnologyAdvancedAntitankGunsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAImprovedMediumTanks">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks11CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAImprovedHeavyTanks">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAAdvancedHeavyTank">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks6CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RARocketLaunchersAndMissilesUpgradedToFullLevel">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTECountUpgradeUnknownUpgrade104CompleteOnly5"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade15QueuedOrBetterCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAMidrangeArtilleryAttackUpgradedToFullLevel">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTECountUpgradeUnknownUpgrade1023CompleteOnly5"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade152QueuedOrBetterOrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAEarlyMediumTank"/>
+    <CRequirement id="RASteelDefenseAtFullLevel">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="GTECountUpgradeZombieUpgrade3324CompleteOnly5"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade16QueuedOrBetterCountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RALargeIndustrialPark16AutomatedFactories">
+        <EditorCategories value="TechType:Ability"/>
+        <NodeArray index="Use" Link="AndGTE3914852782CountUnitIndustrialComplexCompleteOnly16LTE475383213SumCountUnitColonistBiodome2QueuedOrBetterCountUnitJoriumStockpileQueuedOrBetterCountUnitColonistBiodomeHalfBuilt2QueuedOrBetterCoun1308265185"/>
+    </CRequirement>
+    <CRequirement id="RAPrerequisitesForCombatLaboratory">
+        <NodeArray index="Use" Link="AndGTE3333194904CountUnitIndustrialComplexCompleteOnly8LTE868676992SumCountUnitColonistBiodome2QueuedOrBetterCountUnitJoriumStockpileQueuedOrBetterCountUnitColonistBiodomeHalfBuilt2QueuedOrBetterCount3464701342"/>
+    </CRequirement>
+    <CRequirement id="RAPrerequisitesForAdvancedWarfightingLaboratory">
+        <NodeArray index="Use" Link="AndLTE2123371133SumCountUnitJoriumStockpile22QueuedOrBetter13"/>
+    </CRequirement>
+    <CRequirement id="RAResearchOnMainBattleTanks">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks5CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMainBattleTanks7QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAUnlockLargeIndustrialPark">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="And1745088833CountUpgradeTechnologyEconomicMobilizationCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyRadarQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAResearchAdvancedDefenseTowerFront">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndOr770163873CountUpgradeTechnologyRadarCompleteOnlyCountUpgradeWarpGateResearchCompleteOnlyCountUpgradeTechTurret2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechTurret3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAResearchOnEarlyMediumTanks">
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMainBattleTanksQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAResearchOnEarlyHeavyTanks">
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMainBattleTanks4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAResearchAndImproveMediumTanks">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanksCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMainBattleTanks11QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAResearchAndImproveHeavyTanks">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks4CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMainBattleTanks3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAResearchAdvancedMediumTanks">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks11CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMainBattleTanks5QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAResearchAdvancedHeavyTanks">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks3CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyMainBattleTanks6QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAFutureAviationProtocolUnlocked">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyCombatAircraft4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RANewVersionOfAdvancedInfantryEquipmentUnlocked">
+        <NodeArray index="Use" Link="OrCountUpgradeTechInfantry3CompleteOnlyCountUpgradeTechnologyMainBattleTanks7CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RANewVersionOfHeroicInfantryEquipmentUnlocked">
+        <NodeArray index="Use" Link="CountUpgradeTechInfantry4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAZhukovTurretNumberLimit">
+        <NodeArray index="Use" Link="And2678675098LTE2678675098CountUnitFlamingBettyQueuedOrBetter39CountUpgradeunlockupgrade1233CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAZhukovMagneticTankQuantityLimit">
+        <NodeArray index="Use" Link="AndLTE1862045968CountUnitSovietTeslaTankQueuedOrBetter29CountUpgradeunlockupgrade1233CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAFutureTankUnlockTrainingPrerequisite">
+        <NodeArray index="Use" Link="AndGTE2074927184CountUpgradeZombieUpgrade325CompleteOnly5Or3441158499GTECountUpgradeZombieUpgrade36CompleteOnly5GTECountUpgradeZombieUpgrade334CompleteOnly5CountUpgradeUnknownUpgrade13CompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade20QueuedOrBetterOrCountUpgradeunlockupgrade222CompleteOnlyCountUpgradeunlockupgrade2CompleteOnlyCountUpgradeunlockupgrade23CompleteOnlyCountUpgradeunlockupgrade22Comple2469742510"/>
+    </CRequirement>
+    <CRequirement id="RATheButtonDisappearsAfterAllFutureTanksAreUpgraded">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyMainBattleTanks7CompleteOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade19CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="RAZhukovsCallBombButtonDisappearsAfterAllUpgrades">
+        <NodeArray index="Use" Link="AndCountUpgradeunlockupgrade1233CompleteOnlyNotCountUpgradeUnknownUpgrade18InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade18CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="RAConstructionVehicleMaintenanceWillDisappearAfterItIsFullyUpgraded">
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade72323CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="SuperWeaponRe">
+        <NodeArray index="Show" Link="NotLTCountUnitAlliedProtonColliderCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="RATheButtonDisappearsAfterTheZhukovAttackPowerUpgradeIsCompleted">
+        <NodeArray index="Use" Link="AndCountUpgradeunlockupgrade1233CompleteOnlyNotCountUpgradeUnknownUpgrade172InProgressOnlyOrCountUpgradeZombieUpgrade22223CompleteOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade172CompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="RATheButtonDisappearsAfterTheZhukovAttackSpeedUpgradeIsCompleted">
+        <NodeArray index="Use" Link="AndCountUpgradeunlockupgrade1233CompleteOnlyNotCountUpgradeUnknownUpgrade1723InProgressOnlyOrCountUpgradeZombieUpgrade22222CompleteOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade1723CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="RATheButtonDisappearsAfterTheAttackPowerUpgradeOfZhukovsTurretIsCompleted">
+        <NodeArray index="Use" Link="AndCountUpgradeunlockupgrade1233CompleteOnlyNotCountUpgradeUnknownUpgrade1722InProgressOnlyOrCountUpgradeZombieUpgrade22222CompleteOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade1722CompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="RATheButtonDisappearsAfterZhukovsDefenseUpgradeIsCompleted">
+        <NodeArray index="Use" Link="AndCountUpgradeunlockupgrade1233CompleteOnlyNotCountUpgradeUnknownUpgrade17InProgressOnlyOrCountUpgradeZombieUpgrade2222CompleteOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade17CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="RATheButtonDisappearsAfterTheDefenseUpgradeOfZhukovTurretIsCompleted">
+        <NodeArray index="Use" Link="AndCountUpgradeunlockupgrade1233CompleteOnlyNotCountUpgradeUnknownUpgrade17222InProgressOnlyOrCountUpgradeZombieUpgrade2222CompleteOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade17222CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="RAPrerequisitesForAllowingTheUseOfTheSuperweaponProtonCollider">
+        <NodeArray index="Use" Link="AndGTE1320414881CountUpgradeZombieUpgrade322223CompleteOnly5GTE2454377030CountUpgradeUnknownUpgrade1023CompleteOnly5CountUpgradeUnknownUpgrade152CompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade22QueuedOrBetterOrCountUpgradeunlockupgrade12CompleteOnlyCountUpgradeunlockupgrade124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAPrerequisitesForAllowingUnlimitedUseOfVacuumImplosionBombs">
+        <NodeArray index="Use" Link="AndGTECountUpgradeZombieUpgrade3224CompleteOnly5GTE3263517731CountUpgradeUnknownUpgrade104CompleteOnly5CountUpgradeUnknownUpgrade15CompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade222QueuedOrBetterCountUpgradeunlockupgrade122CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAAirForceFutureTechnologyLicensePreliminary">
+        <NodeArray index="Use" Link="CountUpgradeFascist24222CompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade21QueuedOrBetterOrCountUpgradeunlockupgrade1222CompleteOnlyCountUpgradeunlockupgrade12222CompleteOnlyCountUpgradeunlockupgrade12223CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAUnitMustBeNatasha">
+        <NodeArray index="Use" Link="AllowUnitSovietNatasha"/>
+    </CRequirement>
+    <CRequirement id="RAFinalSkillUnlockPrerequisite">
+        <NodeArray index="Use" Link="AndGTE859359287CountUpgradeUnknownUpgrade23CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="RARedArmyWillUnlocksPrerequisites">
+        <NodeArray index="Use" Link="AndGTE30629274CountUpgradeUnknownUpgrade2322CompleteOnly5CountUpgradeUnknownUpgrade14CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAUnlimitedUseOfNuclearBombsToAttackTheFront">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade16CompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade24QueuedOrBetterOrCountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAStudyOfTheSteelIndustry">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade6QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RATheFinalUnlockedPrerequisiteForTheGhostKingUpgrade">
+        <NodeArray index="Use" Link="AndGTECountUpgradeZombieUpgrade32224CompleteOnly5CountUpgradeUnknownUpgrade11CompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUnknownUpgrade26QueuedOrBetterCountUpgradeunlockupgrade1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RASuperFortressFinalPreamble">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade26CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAMarshalZhukovHimselfIsAtFullLevel">
+        <NodeArray index="Use" Link="AndGTECountUpgradeUnknownUpgrade172CompleteOnly20GTECountUpgradeUnknownUpgrade1723CompleteOnly10GTECountUpgradeUnknownUpgrade17CompleteOnly10GTECountUpgradeUnknownUpgrade1722CompleteOnly20GTECountUpgr952785199"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade182QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAPrerequisitesForEducationalFeedback">
+        <NodeArray index="Use" Link="AndGTE2922464331CountUnitJoriumStockpileCompleteOnly18"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade28QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAZhukovUnlocksTheFinalCarrierbasedAircraftCallForBombing">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade182CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATheFortIsAtFullLevel">
+        <NodeArray index="Use" Link="And1968816717GTECountUpgradeUnknownUpgrade1722CompleteOnly20GTECountUpgradeUnknownUpgrade17222CompleteOnly10"/>
+    </CRequirement>
+    <CRequirement id="RAEngineeringVehicleDistanceUpgradeFront">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade29QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAIronCurtainDeviceOpens">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade31CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RABuiltinConditionsRequiredFor2SecondsOfInvincibility">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade33CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAStudyTheFrontOfPrimaryDefenseTower">
+        <NodeArray index="Show" Link="NotCountUpgradeTechTurret1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RABuildPrimaryDefenseTowerFront">
+        <NodeArray index="Use" Link="CountUpgradeTechTurret1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAStudyingTheFrontOfIntermediateDefenseTowers">
+        <NodeArray index="Use" Link="CountUpgradeTechTurret1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechTurret2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RABuildIntermediateDefenseTowerFront">
+        <NodeArray index="Use" Link="CountUpgradeTechTurret2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RABuildAGiantDefenseTowerFront">
+        <NodeArray index="Use" Link="CountUpgradeTechTurret4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAStudyingTheFrontOfTheGiantDefenseTower">
+        <NodeArray index="Use" Link="CountUpgradeTechTurret3CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechTurret4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAInvestInTheSteelIndustry100Times">
+        <NodeArray index="Use" Link="GTE3751744254CountUpgradeUnknownUpgrade6CompleteOnly100"/>
+    </CRequirement>
+    <CRequirement id="RAInvestInEducation100Times">
+        <NodeArray index="Use" Link="GTE1605297424CountUpgradeUnknownUpgrade6222CompleteOnly100"/>
+    </CRequirement>
+    <CRequirement id="RASteelIndustry">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade6CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAMineCartAdvancedUpgrade">
+        <NodeArray index="Use" Link="And1523723315GTECountUpgradeUnknownUpgrade36CompleteOnly30GTECountUpgradeUnknownUpgrade3623CompleteOnly3"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade37QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAMineCartAdvancedUpgradeCompleted">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade37CompleteOnly2504193117"/>
+    </CRequirement>
+    <CRequirement id="RACollectionTimeUpgradeNew">
+        <NodeArray index="Use" Link="AndNotCountUpgradeUnknownUpgrade362InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade362QueuedOrBetter10"/>
+    </CRequirement>
+    <CRequirement id="RACollectionTimeUpgrade2">
+        <NodeArray index="Use" Link="GTECountUpgradeUnknownUpgrade362CompleteOnly3"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade3622QueuedOrBetter4"/>
+    </CRequirement>
+    <CRequirement id="RACollectionTimeUpgrade3">
+        <NodeArray index="Use" Link="GTECountUpgradeUnknownUpgrade3622CompleteOnly4"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade3623QueuedOrBetter3"/>
+    </CRequirement>
+    <CRequirement id="RACollectionVolumeUpgrade">
+        <NodeArray index="Use" Link="AndNotCountUpgradeUnknownUpgrade36InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade36QueuedOrBetter10"/>
+    </CRequirement>
+    <CRequirement id="RASingleCollectionPortableCapacityUpgrade">
+        <NodeArray index="Use" Link="AndNotCountUpgradeUnknownUpgrade363InProgressOnly"/>
+        <NodeArray index="Show" Link="NotGTECountUpgradeUnknownUpgrade363QueuedOrBetter10"/>
+    </CRequirement>
+    <CRequirement id="RATopSecretProtocolUnlocked">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade20CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAInstantTrainingOrTopSecretProtocolUnlocked">
+        <NodeArray index="Use" Link="OrCountUpgradeUnknownUpgrade20CompleteOnlyCountUpgradeUnknownUpgrade14CompleteOnlyCountUpgradeTechTurret3CompleteOnlyCountUpgradeTechnologyMainBattleTanks7CompleteOnlyAndCountUpgradeZombieUpgrade22222292218219"/>
+    </CRequirement>
+    <CRequirement id="RAInstantTrainingOrTopSecretProtocolUnlockedEmpire">
+        <NodeArray index="Use" Link="AndCountUpgradeUnknownUpgrade14CompleteOnlyAndOrCountUpgradeunlockupgrade123CompleteOnlyOrCountUpgradeZombieUpgrade2222553CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATheUltimateTowerDefenseTechnologyUnlocked">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade24CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAUnableToCompletelyFreezeZombiesInApocalypseMode">
+        <NodeArray index="Use" Link="NotCountUpgradeUnknownUpgrade39CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RACashRewardsOpenFor6People">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade41CompleteOnly2106517133"/>
+    </CRequirement>
+    <CRequirement id="RAQuicklyUnlockTechnology">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade5CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RASovietBuildGeneralRestrictions">
+        <NodeArray index="Use" Link="NotCountAbilSovietCYardBuildInProgressOnly"/>
+    </CRequirement>
+    <CRequirement id="RAInvincibilityAuraRemoved">
+        <NodeArray index="Use" Link="NotCountUpgradeUnknownUpgrade30CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RACenturyBomberApocalypseDamageResistanceRemoved">
+        <NodeArray index="Use" Link="NotCountUpgradeUnknownUpgrade43CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RATowerDefenseHasNoEnergyRequirementAfterUnlockingTheFinalTechnology">
+        <NodeArray index="Use" Link="OrCountUpgradeUnknownUpgrade24CompleteOnlyCountUpgradeFascist24222CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe1">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP116CompleteOnly1680061034"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP13CompleteOnly4211245639"/>
+    </CRequirement>
+    <CRequirement id="StortModeRe2">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUpgradeAlliedJunTechlvP124CompleteOnly4115139914"/>
+        <NodeArray index="Show" Link="OrCountUpgradeAlliedJunTechlvP124CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAFluctuatorAmmoLimitations">
+        <NodeArray index="Use" Link="LTECountUnitSJHyperionYamatoWeaponQueuedOrBetterAtUnit7"/>
+    </CRequirement>
+    <CRequirement id="RATwoMastersRemaining">
+        <NodeArray index="Use" Link="OrLTESumCountUnitSporeCrawlerCompleteOnlyTechTreeCheatCountUnitZombieHiveCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="RAOneMasterRemains">
+        <NodeArray index="Use" Link="OrGTECountUnitOvermindKilled1"/>
+    </CRequirement>
+    <CRequirement id="RADominatorRemovesInvincibility">
+        <NodeArray index="Use" Link="OrGTSumCountUnitSporeCrawlerCompleteOnlyTechTreeCheatCountUnitZombieHiveCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="RANewVersionImprovedInfantryEquipment">
+        <NodeArray index="Use" Link="OrCountUpgradeTechInfantry2CompleteOnlyCountUpgradeTechnologyMainBattleTanks5CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAUnlockablePrerequisitesForMagneticExplosiveInfantry">
+        <NodeArray index="Use" Link="OrCountUpgradeTechInfantry2CompleteOnlyCountUpgradeTechTurret3CompleteOnlyCountUpgradeTechnologyMainBattleTanks7CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgradeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAImprovedFrontPlacementOfMediumRangeGuns">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyImprovedArtillery23CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyImprovedArtillery2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAEarlyMediumrangeArtilleryUnlockedInOneGo">
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyImprovedArtillery23QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAAdvancedMediumrangeArtilleryFront">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyImprovedArtillery2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyImprovedArtillery22QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAAdvancedUltralongrangeArtilleryFront">
+        <NodeArray index="Use" Link="CountUpgradeTechnologyImprovedArtillery22CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTechnologyImprovedArtillery222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="RAConcrete">
+        <NodeArray index="Use" Link="CountUpgradeTechTurret3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RANewVersionOfBasicInfantryEquipment">
+        <NodeArray index="Use" Link="OrCountUpgradeTechInfantry1CompleteOnlyCountUpgradeTechnologyMainBattleTanks11CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RAResearchOnEarlyAntitankGuns">
+        <NodeArray index="Use" Link="CountUpgradeTechInfantry1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade8QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement22">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade123QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement222">
+        <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade39CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2222">
+        <NodeArray index="Use" Link="Not2669235783CountUpgradeUnknownUpgrade39CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2223">
+        <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade393CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement22232">
+        <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade3932CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2224">
+        <NodeArray index="Use" Link="NotCountUpgradeUnknownUpgrade39CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement223">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade123QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2232">
+        <NodeArray index="Use" Link="AndOrAndCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeAlliedTechLevelUnlock1CompleteOnlyAndCountUpgradeAlliedTechLevelUnlock3CompleteOnlyAndCountUpgradeAlliedTechLevelUnlock1CompleteOnlyCountUpgradeunlockupgrade2CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeunlockupgrade23CompleteOnlyCountUpgradeunlockupgradeCompleteOnlyCountUpgradeunlockupgrade2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement22322">
+        <NodeArray index="Use" Link="AndOrAndCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeAlliedTechLevelUnlock2CompleteOnlyAndCountUpgradeAlliedTechLevelUnlock4CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeunlockupgrade23CompleteOnlyCountUpgradeunlockupgradeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement22323">
+        <NodeArray index="Use" Link="AndOrAndCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeAlliedTechLevelUnlock3CompleteOnlyAndCountUpgradeAlliedTechLevelUnlock4CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeunlockupgrade23CompleteOnlyCountUpgradeunlockupgradeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement22324">
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock1CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement223242"/>
+    <CRequirement id="UnlockTechRequirement2232422"/>
+    <CRequirement id="UnlockTechRequirement2232423">
+        <NodeArray index="Use" Link="AndOrAndCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeZombieUpgrade22223CompleteOnlyAndCountUpgradeZombieUpgrade22224CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeunlockupgrade23CompleteOnlyCountUpgradeunlockupgradeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement22324232">
+        <NodeArray index="Use" Link="AndCountUpgradeZombieUpgrade222255CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade123CompleteOnlyCountUpgradeunlockupgrade23CompleteOnlyCountUpgradeunlockupgradeCompleteOnlyCountUpgradeunlockupgrade222CompleteOnlyCountUpgradeunlockupgrade1CompleteOnlyCountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement223242322"/>
+    <CRequirement id="UnlockTechRequirement223242323"/>
+    <CRequirement id="UnlockTechRequirement22324233"/>
+    <CRequirement id="UnlockTechRequirement2232424"/>
+    <CRequirement id="UnlockTechRequirement22324242"/>
+    <CRequirement id="UnlockTechRequirement22324243"/>
+    <CRequirement id="UnlockTechRequirement2232425"/>
+    <CRequirement id="UnlockTechRequirement223243"/>
+    <CRequirement id="UnlockTechRequirement223244">
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock3CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement223245">
+        <NodeArray index="Use" Link="AndCountUpgradeAlliedTechLevelUnlock4CompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeunlockupgrade2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement23">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade12QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement232">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade12QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2322">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade124QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement233">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade124QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement24">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade122QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement242">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade122QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2422">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="JuUnlockTechRequirement">
+        <NodeArray index="Use" Link="AndCountUnitEmpirePowerPlantCompleteOnlyCountUnitEmpireImperialMineCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement24222">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement242222">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement24225">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement242252">
+        <NodeArray index="Use" Link="AndCountUnitChinaTeslaReactorCompleteOnlyCountUnitChinaSmeltingFurnaceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2422522">
+        <NodeArray index="Use" Link="AndCountUnitChinaTeslaReactorCompleteOnlyCountUnitChinaSmeltingFurnaceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement24226">
+        <NodeArray index="Use" Link="AndCountUnitSovietReactorCompleteOnlyCountUnitSovietRefineryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement25">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade1233QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement26">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement262">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1232QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement27">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade1222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement272">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade12222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement2722">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade12222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement273">
+        <NodeArray index="Show" Link="NotOrCountUpgradeunlockupgrade1222QueuedOrBetterCountUpgradeunlockupgrade12222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement274">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement275">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade12223QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement28">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement3">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement32">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade23QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement322"/>
+    <CRequirement id="UnlockTechRequirement32222">
+        <NodeArray index="Use" Link="AndGTESumCountUnitRATheAlliesBuildVestUnitsAndAlliedAirfieldsCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement32223">
+        <NodeArray index="Use" Link="AndGTESumCountUnitAlliedWarFactoryVest2CompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement32224">
+        <NodeArray index="Use" Link="AndGTESumCountUnitRATheAlliesBuildVestUnitsAlliedArtilleryCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement32225">
+        <NodeArray index="Use" Link="AndGTESumCountUnitAlliedWarFactoryVestCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement33">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement4">
+        <NodeArray index="Show" Link="NotOrCountUpgradeunlockupgrade2QueuedOrBetterCountUpgradeunlockupgradeQueuedOrBetterCountUpgradeunlockupgrade22QueuedOrBetterCountUpgradeunlockupgrade222QueuedOrBetterCountUpgradeunlockupgrade4QueuedOrBetterCountUpgradeunlockupgrade23QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement5">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade22QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement52">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement522">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement53">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade22QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement532">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade223QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement54">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade223QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement6">
+        <NodeArray index="Show" Link="NotCountUpgradeunlockupgrade4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement62">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgrade4QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnlockTechRequirement7">
+        <NodeArray index="Show" Link="AndCountUpgradeunlockupgradeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="ZergSteelRequire">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUpgradeAlliedTechlvP13255CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="buildfast">
+        <NodeArray index="Use" Link="OrCountUpgradeUnknownUpgrade26CompleteOnlyCountUpgradeUnknownUpgrade22CompleteOnlyCountUpgradeUnknownUpgrade21CompleteOnlyCountUpgradeUnknownUpgrade24CompleteOnlyCountUpgradeUnknownUpgrade20CompleteOn2034709328"/>
+    </CRequirement>
+    <CRequirement id="infantrypage">
+        <NodeArray index="Use" Link="Or1102341502CountUnitEmpireBarracksCompleteOnlyCountUnitAlliedBarrackCompleteOnlyCountUnitSovietBarracksCompleteOnlyCountUnitChinaBarracksCompleteOnlyCountUnitBarracks2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="infantrypage2">
+        <NodeArray index="Use" Link="Or721801824CountUnitAlliedOldFactoryCompleteOnlyCountUnitAlliedWarFactoryCompleteOnlyCountUnitSovietRussiamArtilleryFactoryCompleteOnlyCountUnitNukeSiloNovaCompleteOnlyCountUnitChinaHeavyArmorWorkshopCompleteOnlyCou2478812270"/>
+    </CRequirement>
+    <CRequirement id="infantrypage22">
+        <NodeArray index="Use" Link="Or3852769700CountUnitSovietAirportCompleteOnlyCountUnitAlliedAirportCompleteOnlyCountUnitAlliedAirport2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="nianyadiff">
+        <NodeArray index="Use" Link="NotCountUpgradenianyadiffCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ra3rqzbndysj">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="And3668464799LTSumCountUnitAlliedVindicatorQueuedOrBetterCountUnitAlliedCenturyBomberQueuedOrBetterMulSumMulCountUnitAlliedAirportCompleteOnly4EqCountBehaviorAirportisfullQueuedOrBetterAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="ra3rqzbndysj2">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndLT3668464799SumCountUnitAlliedVindicatorQueuedOrBetterCountUnitAlliedCenturyBomberQueuedOrBetterMulSumMulCountUnitAlliedAirportCompleteOnly4CountUpgradeAlliedTechLevelUnlock2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="towercommander">
+        <NodeArray index="Show" Link="CountUpgradeunlockupgrade1232CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="towercommander2">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade16CompleteOnly"/>
+    </CRequirement>
+    <CRequirementAnd id="AndCountUpgradeAlliedTechLevelUnlock2CompleteOnlyLT1635586031SumCountUnitAlliedWeatherControllerVestQueuedOrBetterCountUnitAlliedWeathercontrollerQueuedOrBetter1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeAlliedTechLevelUnlock2CompleteOnly"/>
+        <OperandArray value="LT1635586031SumCountUnitAlliedWeatherControllerVestQueuedOrBetterCountUnitAlliedWeathercontrollerQueuedOrBetter1"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrLTESumCountUnitAlliedCannonVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="OrLTESumCountUnitAlliedCannonVestCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrLTESumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit0OrCountUpgradeunlockupgrade23QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="OrLTESumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit0"/>
+        <OperandArray value="OrCountUpgradeunlockupgrade23QueuedOrBetter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="OrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrLTESumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="OrLTESumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrLTESumCountUnitAlliedRadarVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="OrLTESumCountUnitAlliedRadarVestCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrLTESumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="OrLTESumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementCountUnit id="CountUnitAlliedCannonVestCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AlliedCannonVest" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlliedChronoPortVestCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AlliedChronoPortVest" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlliedPowerPlantVestCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AlliedPowerPlantVest" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlliedPrismTowerVestCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AlliedPrismTowerVest" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlliedRadarVestCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AlliedRadarVest" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AlliedWeatherControllerVest" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlliedWeatherControllerVestQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AlliedWeatherControllerVest" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementGTE id="GTESumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCou465935847">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCountU3497347080"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementLT id="LT1635586031SumCountUnitAlliedWeatherControllerVestQueuedOrBetterCountUnitAlliedWeathercontrollerQueuedOrBetter1">
+        <OperandArray index="0" value="SumCountUnitAlliedWeatherControllerVestQueuedOrBetterCountUnitAlliedWeathercontrollerQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementLTE id="LTESumCountUnitAlliedCannonVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAlliedCannonVestCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTESumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtU4138420380">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnit391228071"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTESumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTESumCountUnitAlliedRadarVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAlliedRadarVestCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTESumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="SumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementLTE>
+    <CRequirementNot id="NotOrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOn1630384531">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="OrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyA3403741767"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrLTESumCountUnitAlliedCannonVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTESumCountUnitAlliedCannonVestCompleteOnlyAtUnit0"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrLTESumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTESumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit0"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit0"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrLTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyA3403741767">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTESumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtU4138420380"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrLTESumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTESumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit0"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrLTESumCountUnitAlliedRadarVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTESumCountUnitAlliedRadarVestCompleteOnlyAtUnit0"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrLTESumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTESumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit0"/>
+    </CRequirementOr>
+    <CRequirementSum id="SumCountUnitAlliedCannonVestCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedCannonVestCompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAlliedChronoPortVestCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedChronoPortVestCompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedPowerPlantVestCompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAlliedPowerPlantVestCompleteOnlyAtUnitCountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnitCountUnitAlliedBarracksVestCompleteOnlyAtUnit391228071">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedPowerPlantVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedBarracksVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedBarracksVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRATheAlliesBuildVestUnitsAndTheAlliedPowerPlantCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRAAlliedForcesBuildVestUnitAlliedDefenseAgencyCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRATheAlliesBuildVestUnitsAndAlliedAirfieldsCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRATheAlliesBuildVestUnitsAlliedArtilleryCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedRadarVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedWarFactoryVest2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedWarFactoryVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit32CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit322CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedChronoPortVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedPrismTowerVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit3CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnitCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedCannonVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit322222CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit32223CompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAlliedPrismTowerVestCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedPrismTowerVestCompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAlliedRadarVestCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedRadarVestCompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAlliedWeatherControllerVestQueuedOrBetterCountUnitAlliedWeathercontrollerQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlliedWeatherControllerVestQueuedOrBetter"/>
+        <OperandArray value="CountUnitAlliedWeathercontrollerQueuedOrBetter"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitAubuildDunmmyUnit32CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit322CompleteOnlyAtUnitCountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnitCountUnitAlliedChronoPortVestCompleteOnlyAtUnitCountU3497347080">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit32CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit322CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit3222222CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedChronoPortVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedPowerPlantVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedPrismTowerVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit3CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnitCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedCannonVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedBarracksVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRATheAlliesBuildVestUnitsAndTheAlliedPowerPlantCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRAAlliedForcesBuildVestUnitAlliedDefenseAgencyCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRATheAlliesBuildVestUnitsAndAlliedAirfieldsCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRATheAlliesBuildVestUnitsAlliedArtilleryCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitRAAlliesBuildVestUnitsAlliedMinesCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedRadarVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedWeatherControllerVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedWarFactoryVest2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAlliedWarFactoryVestCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit322222CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitAubuildDunmmyUnit32223CompleteOnlyAtUnit"/>
+    </CRequirementSum>
+    <CRequirementAnd id="And3668464799LTSumCountUnitAlliedVindicatorQueuedOrBetterCountUnitAlliedCenturyBomberQueuedOrBetterMulSumMulCountUnitAlliedAirportCompleteOnly4EqCountBehaviorAirportisfullQueuedOrBetterAtUnit0">
+        <OperandArray value="LTSumCountUnitAlliedVindicatorQueuedOrBetterCountUnitAlliedCenturyBomberQueuedOrBetterMulSumMulCountUnitAlliedAirportCompleteOnly4"/>
+        <OperandArray value="EqCountBehaviorAirportisfullQueuedOrBetterAtUnit0"/>
+    </CRequirementAnd>
+</Catalog>

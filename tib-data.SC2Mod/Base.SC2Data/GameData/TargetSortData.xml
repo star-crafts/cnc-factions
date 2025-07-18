@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTargetSortVital id="TSShieldsLargestFirst">
+        <Descending value="1"/>
+        <Vital value="Shields"/>
+    </CTargetSortVital>
+    <CTargetSortDistance id="RATSDistance"/>
+    <CTargetSortInterruptible id="RATSInterruptible">
+        <Value value="1"/>
+    </CTargetSortInterruptible>
+</Catalog>

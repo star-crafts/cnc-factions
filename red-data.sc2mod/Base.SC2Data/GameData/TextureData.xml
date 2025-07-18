@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTexture id="comet">
+        <File value="Assets\Textures\phoenixtaldarim_overload.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="cybercat_diffuse">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="kingtiger">
+        <File value="Assets\Textures\xelnagaengine_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="infantryemissive">
+        <File value="Assets\Textures\hatcherymorph_emissive.dds"/>
+        <Slot value="main.emissive"/>
+    </CTexture>
+    <CTexture id="is2">
+        <File value="Assets\Textures\collapsibleterrantower_diffuse_belshir.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="cromwell">
+        <File value="Assets\Textures\reaver_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+<!--    <CTexture id="spectregreen_diffuse">-->
+<!--        <File value="spectregreen_tosh_diffuse.dds"/>-->
+<!--        <Slot value="main.diffuse"/>-->
+<!--    </CTexture>-->
+    <CTexture id="reaperemissive">
+        <Slot value="main.emissive"/>
+    </CTexture>
+    <CTexture id="aircraftcarrier">
+        <File value="Assets\Textures\AircraftCarrier.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="cargotruck_diffuse_green">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="transporttruck_diffuse">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="marauderkillsquad_diffuse">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="cerberus_diffuse">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="wreckedcargotruck_diffuse">
+        <File value="Assets\Textures\wreckedcargotruck_diffuse_yellow.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="colonistshipabandonedparts_diffuse">
+        <File value="Assets\Textures\colonistshipabandoned_parts_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="zhakuldaslibrary_specular">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="ulaan_dirt_low">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="raven_diffuse">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="havenrocks_diffuse">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="tarsonis_grass_low">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="desertworld_5_low">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="ZealotDiffuse">
+        <File value="Assets\Textures\zealot_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="Haven_grass_dark_low">
+        <File value="Assets\Textures\haven_grass_dark_low.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="diamondback_diffuse">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="zealotpurifier_diff">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="bel_shir_dirt_dark_low">
+        <Slot value="main.diffuse"/>
+    </CTexture>
+<!--    <CTexture id="purifier_colossus_diffuse">-->
+<!--        <File value="Assets\Textures\twilightcouncil_diffuse_dark.dds"/>-->
+<!--        <Slot value="main.diffuse"/>-->
+<!--    </CTexture>-->
+<!--    <CTexture id="siegetankgreen_diffuse">-->
+<!--        <File value="assets\textures\siegetankgreen_diffuse.dds"/>-->
+<!--        <Slot value="main.diffuse"/>-->
+<!--    </CTexture>-->
+    <CTexture id="panther">
+        <File value="Assets\Textures\wraith_diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+</Catalog>

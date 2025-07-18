@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorUnit id="AlliedSpectrumTower_Actor" parent="TerranBuildingEx" unitName="AlliedSpectrumTower">
+        <On index="64" Send="AnimGroupApply Ready {} {} 0 4.000000 AsTimeScale"/>
+        <On Terms="Effect.AlliedSpectralTowerChargingStartDelay.Start" Send="AnimBracketStart 111 Ready Attack"/>
+        <On Terms="Effect.AlliedSpectralTowerChargingStartDelay.Stop" Send="AnimBracketStop 111"/>
+        <On Terms="ActorCreation" Send="AnimPlay Attack1 Birth PlayForever,NonLooping -1.000000 -1.000000 1.000000 AsTimeScale"/>
+        <On Terms="AnimDone.*.Complete; AnimName Attack1" Send="AnimClear Attack1"/>
+        <On Terms="AnimDone.*.Complete; AnimName Attack1" Send="ModelSwap AlliedSpectrumTower_Actor"/>
+        <On Terms="AnimDone.*.Complete; AnimName Attack1" Send="AnimBaselineStart"/>
+        <DeathArray index="Normal" ModelLink="TerranLargeBuildingDeath" SoundLink="Terran_ExplosionLarge" VoiceLink="InfestedDominionHousing3DeathVoice"/>
+        <PlacementSound value="Terran_BuildingPlacement2"/>
+        <PortraitModel value="StaticPortrait9"/>
+        <BarWidth value="50"/>
+        <GroupIcon>
+            <Image value="Assets\Icons\spectrum-tower-wireframe.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="What" value=""/>
+        <GroupSoundArray index="Yes" value=""/>
+        <GroupSoundArray index="Attack" value=""/>
+        <GroupSoundArray index="Board" value=""/>
+        <HeroIcon value="Assets\Icons\spectrum-tower-icon.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-ability-protoss-heavilyarmored.dds"/>
+        <MinimapIcon value="Assets\Textures\minimapiconcreeploc.dds"/>
+        <MinimapIconScale value="0.500000"/>
+        <SoundArray index="Birth" value=""/>
+        <SoundArray index="Ready" value=""/>
+        <SoundArray index="Help" value="AlliedLightPrismTower_Actor_Help"/>
+        <SoundArray index="What" value="AlliedBaseDefenceAdvancedVoiceSelect"/>
+        <SoundArray index="Yes" value=""/>
+        <SoundArray index="Attack" value=""/>
+        <SoundArray index="Pissed" value=""/>
+        <SoundArray index="Movement" value=""/>
+        <SoundArray index="Turning" value=""/>
+        <SoundArray index="Board" value=""/>
+        <SoundArray index="Construction" value=""/>
+        <SoundArray index="Click" value="AlliedBaseDefenceAdvancedVoiceSelect"/>
+        <SoundArray index="ClickError" value=""/>
+        <SoundArray index="Highlight" value=""/>
+        <UnitIcon value="Assets\Icons\spectrum-tower-icon.dds"/>
+        <Wireframe>
+            <Image value="Assets\Icons\spectrum-tower-wireframe.dds"/>
+        </Wireframe>
+        <Model value="AlliedSpectrumTower_Model"/>
+        <HighlightTooltip value="Unit/Name/AlliedSpectrumTower_Actor"/>
+    </CActorUnit>
+    <CActorSound id="AlliedSpectralTowerChargingSoundEffect" parent="SoundOneShot">
+        <FogVisibility value="Visible"/>
+        <On Terms="Effect.AlliedSpectralTowerChargingStartDelay.Start" Send="Create"/>
+        <On Terms="Effect.AlliedSpectralTowerAttackStartDelay.Start" Send="Create"/>
+        <On Terms="Effect.RALightPrismTowerAttackStartDelay.Start" Send="Create"/>
+        <Sound value="Karass_PsionicStormImpact253"/>
+    </CActorSound>
+    <CActorAction id="AlliedSpectralTowerSplashDamageEffectSwitching5StagesActor" parent="GenericAttack" effectAttack="AlliedSpectralTowerSplashDamageEffectSwitching5Stages">
+        <Beam value="ProbeAttackBeam442"/>
+        <ImpactMap index="None" Model="ProbeAttackImpact4" Sound="Karass_PsionicStormImpact2522"/>
+        <Inherits index="Scale" value="1"/>
+    </CActorAction>
+    <CActorAction id="AlliedSpectralTowerChargesFakeDamageActor" parent="GenericAttack" effectAttack="AlliedSpectralTowerChargesFakeDamage">
+        <LaunchSiteOps Ops="SOpAttachWeapon"/>
+        <Beam value="ProbeAttackBeam43"/>
+        <ImpactSiteOps Ops="SOpAttachWeapon"/>
+        <ImpactMap index="None" Model="ProbeAttackImpact4" Sound=""/>
+        <DamageSiteOps Ops="SOpAttachWeapon"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+    </CActorAction>
+    <CActorAction id="AlliedSpectralTowerDamageLevel1Actor" parent="GenericAttack" effectAttack="AlliedSpectralTowerDamageLevel1">
+        <LaunchSiteOps Ops="SOpAttachWeapon"/>
+        <Beam value="ProbeAttackBeam432"/>
+        <ImpactMap index="None" Model="ProbeAttackImpact4" Sound="Karass_PsionicStormImpact2522"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+    </CActorAction>
+    <CActorAction id="AlliedSpectralTowerDamageLevel2Actor" parent="GenericAttack" effectAttack="AlliedSpectralTowerDamageLevel2">
+        <LaunchSiteOps Ops="SOpAttachWeapon"/>
+        <Beam value="ProbeAttackBeam4322"/>
+        <ImpactMap index="None" Model="ProbeAttackImpact4" Sound="Karass_PsionicStormImpact2522" ModelReaction="ProbeAttack432ImpactReaction"/>
+        <ImpactMap index="Shield" Sound="ProbeAttack432ImpactShield" ModelReaction="ProbeAttack432ImpactReactionShield"/>
+        <DamageMap index="None" Model="ProbeAttack432Damage" Sound="ProbeAttack432Damage" ModelReaction="ProbeAttack432DamageReaction"/>
+        <DamageMap index="Shield" Sound="ProbeAttack432DamageShield" ModelReaction="ProbeAttack432DamageReactionShield"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+    </CActorAction>
+    <CActorAction id="AlliedSpectralTowerDamageLevel3Actor" parent="GenericAttack" effectAttack="AlliedSpectralTowerDamageLevel3">
+        <LaunchSiteOps Ops="SOpAttachWeapon"/>
+        <Beam value="ProbeAttackBeam4323"/>
+        <ImpactMap index="None" Model="ProbeAttackImpact4" Sound="Karass_PsionicStormImpact2522" ModelReaction="ProbeAttack432ImpactReaction"/>
+        <ImpactMap index="Shield" Sound="ProbeAttack432ImpactShield" ModelReaction="ProbeAttack432ImpactReactionShield"/>
+        <DamageMap index="None" Model="ProbeAttack432Damage" Sound="ProbeAttack432Damage" ModelReaction="ProbeAttack432DamageReaction"/>
+        <DamageMap index="Shield" Sound="ProbeAttack432DamageShield" ModelReaction="ProbeAttack432DamageReactionShield"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+    </CActorAction>
+    <CActorAction id="AlliedSpectralTowerDamageLevel4Actor" parent="GenericAttack" effectAttack="AlliedSpectralTowerDamageLevel4">
+        <LaunchSiteOps Ops="SOpAttachWeapon"/>
+        <Beam value="ProbeAttackBeam4324"/>
+        <ImpactMap index="None" Model="ProbeAttackImpact4" Sound="Karass_PsionicStormImpact2522" ModelReaction="ProbeAttack432ImpactReaction"/>
+        <ImpactMap index="Shield" Sound="ProbeAttack432ImpactShield" ModelReaction="ProbeAttack432ImpactReactionShield"/>
+        <DamageMap index="None" Model="ProbeAttack432Damage" Sound="ProbeAttack432Damage" ModelReaction="ProbeAttack432DamageReaction"/>
+        <DamageMap index="Shield" Sound="ProbeAttack432DamageShield" ModelReaction="ProbeAttack432DamageReactionShield"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+    </CActorAction>
+    <CActorAction id="AlliedSpectralTowerDamageLevel5Actor" parent="GenericAttack" effectAttack="AlliedSpectralTowerDamageLevel5">
+        <LaunchSiteOps Ops="SOpAttachWeapon"/>
+        <Beam value="ProbeAttackBeam4325"/>
+        <ImpactMap index="None" Model="ProbeAttackImpact4" Sound="Karass_PsionicStormImpact2522" ModelReaction="ProbeAttack432ImpactReaction"/>
+        <ImpactMap index="Shield" Sound="ProbeAttack432ImpactShield" ModelReaction="ProbeAttack432ImpactReactionShield"/>
+        <DamageMap index="None" Model="ProbeAttack432Damage" Sound="ProbeAttack432Damage" ModelReaction="ProbeAttack432DamageReaction"/>
+        <DamageMap index="Shield" Sound="ProbeAttack432DamageShield" ModelReaction="ProbeAttack432DamageReactionShield"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+    </CActorAction>
+
+</Catalog>

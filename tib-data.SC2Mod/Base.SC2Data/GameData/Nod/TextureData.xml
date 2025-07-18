@@ -1,0 +1,29 @@
+<Catalog>
+    <CTexture id="HoloMainDiff">
+        <!--        <File value="Assets/Textures/hololinesRed.dds"/>-->
+        <File value="Assets/Textures/NBPower_Placement.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="HoloMainEmis">
+        <File value="Assets/Textures/hololinesRed.dds"/>
+        <Slot value="main.emissive"/>
+    </CTexture>
+
+    <CTexture id="NodWarFactoryAlternate">
+        <File value="Assets\Textures\NB_DropZone2.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="NodAirTowerAlternate">
+        <File value="Assets\Textures\NBHangar2.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="NodHandAlternate">
+        <File value="Assets\Textures\NBHand2.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="GideonSlaveAlternate">
+        <File value="Assets\Textures\NUS_VehicleAE2.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+
+</Catalog>

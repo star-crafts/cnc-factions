@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <!--Unit Count-->
+    <CRequirementCountUnit parent="UC" id="UC_GDIPowerPlant" unit="GDIPowerPlant"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIPowerPlantUpgraded" unit="GDIPowerPlantUpgraded"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIRefinery" unit="GDIRefinery"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIBarracks" unit="GDIBarracks"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDICommandPost" unit="GDICommandPost"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIWarFactory" unit="GDIWarFactory"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIAirfield" unit="GDIAirfield"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIArmoury" unit="GDIArmoury"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDITechCenter" unit="GDITechCenter"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDISpaceCommandUplink" unit="GDISpaceCommandUplink"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIReclamatorHub" unit="GDIReclamatorHub"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDISilo" unit="GDISilo"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDICombatSupportAirfield" unit="GDICombatSupportAirfield"/>
+    <CRequirementCountUnit parent="UC" id="UC_GDIIonCannon" unit="GDIIonCannon"/>
+
+    <!--UNIT Queued -->
+    <CRequirementCountUnit parent="UQ" id="UQ_GDIReclamatorHub" unit="GDIReclamatorHub"/>
+    <CRequirementCountUnit parent="UQ" id="UQ_GDIIonCannon" unit="GDIIonCannon"/>
+    <CRequirementCountUnit parent="UQ" id="UQ_GDICommando" unit="GDICommando"/>
+    <CRequirementCountUnit parent="UQ" id="UQ_GDIMARV" unit="GDIMARV"/>
+
+    <!--Unit NOT QUEUED and NOT EXIST-->
+    <CRequirementEq parent="UN" id="UN_GDIReclamatorHub" unit="GDIReclamatorHub"/>
+    <CRequirementEq parent="UN" id="UN_GDIIonCannon" unit="GDIIonCannon"/>
+    <CRequirementEq parent="UN" id="UN_GDICommando" unit="GDICommando"/>
+    <CRequirementEq parent="UN" id="UN_GDIMARV" unit="GDIMARV"/>
+    
+    <!--Research Complete-->
+    <CRequirementCountUpgrade parent="RC" id="RC_GDILightWeaponsLevel1" upgrade="GDILightWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDILightWeaponsLevel2" upgrade="GDILightWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDILightWeaponsLevel3" upgrade="GDILightWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIHeavyWeaponsLevel1" upgrade="GDIHeavyWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIHeavyWeaponsLevel2" upgrade="GDIHeavyWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIHeavyWeaponsLevel3" upgrade="GDIHeavyWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIExplosiveWeaponsLevel1" upgrade="GDIExplosiveWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIExplosiveWeaponsLevel2" upgrade="GDIExplosiveWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIExplosiveWeaponsLevel3" upgrade="GDIExplosiveWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIInfantryArmorsLevel1" upgrade="GDIInfantryArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIInfantryArmorsLevel2" upgrade="GDIInfantryArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIInfantryArmorsLevel3" upgrade="GDIInfantryArmorsLevel3"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIVehiclesArmorsLevel1" upgrade="GDIVehiclesArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIVehiclesArmorsLevel2" upgrade="GDIVehiclesArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIVehiclesArmorsLevel3" upgrade="GDIVehiclesArmorsLevel3"/>
+
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIOrcaSensorPods" upgrade="GDIOrcaSensorPods"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIZoneScannerPacks" upgrade="GDIZoneScannerPacks"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIFirehawkStratofighterBoosters" upgrade="GDIFirehawkStratofighterBoosters"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIHardpoints" upgrade="GDIHardpoints"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDITiberiumFieldSuits" upgrade="GDITiberiumFieldSuits"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIEMPGrenades" upgrade="GDIEMPGrenades"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIZonePowerPacks" upgrade="GDIZonePowerPacks"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIRailguns" upgrade="GDIRailguns"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIPitbullMortars" upgrade="GDIPitbullMortars"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDITungstenShells" upgrade="GDITungstenShells"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIAdaptiveArmour" upgrade="GDIAdaptiveArmour"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIZoneShatterer" upgrade="GDIZoneShatterer"/>
+    <CRequirementCountUpgrade parent="RC" id="RC_GDIBehemoth" upgrade="GDIBehemoth"/>
+
+    <!--Research Queued-->
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDILightWeaponsLevel1" upgrade="GDILightWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDILightWeaponsLevel2" upgrade="GDILightWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDILightWeaponsLevel3" upgrade="GDILightWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIHeavyWeaponsLevel1" upgrade="GDIHeavyWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIHeavyWeaponsLevel2" upgrade="GDIHeavyWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIHeavyWeaponsLevel3" upgrade="GDIHeavyWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIExplosiveWeaponsLevel1" upgrade="GDIExplosiveWeaponsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIExplosiveWeaponsLevel2" upgrade="GDIExplosiveWeaponsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIExplosiveWeaponsLevel3" upgrade="GDIExplosiveWeaponsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIInfantryArmorsLevel1" upgrade="GDIInfantryArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIInfantryArmorsLevel2" upgrade="GDIInfantryArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIInfantryArmorsLevel3" upgrade="GDIInfantryArmorsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIVehiclesArmorsLevel1" upgrade="GDIVehiclesArmorsLevel1"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIVehiclesArmorsLevel2" upgrade="GDIVehiclesArmorsLevel2"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIVehiclesArmorsLevel3" upgrade="GDIVehiclesArmorsLevel3"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIOrcaSensorPods" upgrade="GDIOrcaSensorPods"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIZoneScannerPacks" upgrade="GDIZoneScannerPacks"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIFirehawkStratofighterBoosters" upgrade="GDIFirehawkStratofighterBoosters"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIHardpoints" upgrade="GDIHardpoints"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDITiberiumFieldSuits" upgrade="GDITiberiumFieldSuits"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIEMPGrenades" upgrade="GDIEMPGrenades"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIZonePowerPacks" upgrade="GDIZonePowerPacks"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIRailguns" upgrade="GDIRailguns"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIPitbullMortars" upgrade="GDIPitbullMortars"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDITungstenShells" upgrade="GDITungstenShells"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIAdaptiveArmour" upgrade="GDIAdaptiveArmour"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIZoneShatterer" upgrade="GDIZoneShatterer"/>
+    <CRequirementCountUpgrade parent="RQ" id="RQ_GDIBehemoth" upgrade="GDIBehemoth"/>
+
+
+    <!--Research NOT QUEUED and NOT complete-->
+    <CRequirementNot parent="RN" id="RN_GDILightWeaponsLevel1" upgrade="GDILightWeaponsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_GDILightWeaponsLevel2" upgrade="GDILightWeaponsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_GDILightWeaponsLevel3" upgrade="GDILightWeaponsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_GDIHeavyWeaponsLevel1" upgrade="GDIHeavyWeaponsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_GDIHeavyWeaponsLevel2" upgrade="GDIHeavyWeaponsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_GDIHeavyWeaponsLevel3" upgrade="GDIHeavyWeaponsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_GDIExplosiveWeaponsLevel1" upgrade="GDIExplosiveWeaponsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_GDIExplosiveWeaponsLevel2" upgrade="GDIExplosiveWeaponsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_GDIExplosiveWeaponsLevel3" upgrade="GDIExplosiveWeaponsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_GDIInfantryArmorsLevel1" upgrade="GDIInfantryArmorsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_GDIInfantryArmorsLevel2" upgrade="GDIInfantryArmorsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_GDIInfantryArmorsLevel3" upgrade="GDIInfantryArmorsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_GDIVehiclesArmorsLevel1" upgrade="GDIVehiclesArmorsLevel1"/>
+    <CRequirementNot parent="RN" id="RN_GDIVehiclesArmorsLevel2" upgrade="GDIVehiclesArmorsLevel2"/>
+    <CRequirementNot parent="RN" id="RN_GDIVehiclesArmorsLevel3" upgrade="GDIVehiclesArmorsLevel3"/>
+    <CRequirementNot parent="RN" id="RN_GDIOrcaSensorPods" upgrade="GDIOrcaSensorPods"/>
+    <CRequirementNot parent="RN" id="RN_GDIZoneScannerPacks" upgrade="GDIZoneScannerPacks"/>
+    <CRequirementNot parent="RN" id="RN_GDIFirehawkStratofighterBoosters" upgrade="GDIFirehawkStratofighterBoosters"/>
+    <CRequirementNot parent="RN" id="RN_GDIHardpoints" upgrade="GDIHardpoints"/>
+    <CRequirementNot parent="RN" id="RN_GDITiberiumFieldSuits" upgrade="GDITiberiumFieldSuits"/>
+    <CRequirementNot parent="RN" id="RN_GDIEMPGrenades" upgrade="GDIEMPGrenades"/>
+    <CRequirementNot parent="RN" id="RN_GDIZonePowerPacks" upgrade="GDIZonePowerPacks"/>
+    <CRequirementNot parent="RN" id="RN_GDIRailguns" upgrade="GDIRailguns"/>
+    <CRequirementNot parent="RN" id="RN_GDIPitbullMortars" upgrade="GDIPitbullMortars"/>
+    <CRequirementNot parent="RN" id="RN_GDITungstenShells" upgrade="GDITungstenShells"/>
+    <CRequirementNot parent="RN" id="RN_GDIAdaptiveArmour" upgrade="GDIAdaptiveArmour"/>
+    <CRequirementNot parent="RN" id="RN_GDIZoneShatterer" upgrade="GDIZoneShatterer"/>
+    <CRequirementNot parent="RN" id="RN_GDIBehemoth" upgrade="GDIBehemoth"/>
+
+    <!--Construction-->
+    <CRequirementOr id="REQC_GDIPower">
+        <OperandArray value="UC_GDIPowerPlant"/>
+        <OperandArray value="UC_GDIPowerPlantUpgraded"/>
+    </CRequirementOr>
+
+    <!--Units Requirements-->
+    <CRequirementAnd id="BuildGDIBarracks">
+        <OperandArray value="REQC_GDIPower"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDICommandPost">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_GDIRefinery"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIWarFactory">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_GDIRefinery"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIAirfield">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIArmoury">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_Barracks"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDITechCenter">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDISpaceCommandUplink">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIReclamatorHub">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDISilo">
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDICombatSupportAirfield">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_GDIAirfield"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIWatchtower">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIGuardianTower">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIAABattery">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDISonicEmitter">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="BuildGDIIonCannon">
+        <OperandArray value="REQC_GDIPower"/>
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+
+    <CRequirementAnd id="TrainGDICombatEngineer">
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIGrenadier">
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDISniper">
+        <OperandArray value="UC_GDIArmoury"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIZoneTrooper">
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIZoneRaider">
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDICommando">
+        <OperandArray value="UC_GDIArmoury"/>
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIAPC"/>
+    <CRequirementAnd id="TrainGDIPitBull"/>
+    <CRequirementAnd id="TrainGDIPredator"/>
+    <CRequirementAnd id="TrainGDIWolverine"/>
+    <CRequirementAnd id="TrainGDITitan"/>
+    <CRequirementAnd id="TrainGDISlingshot">
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIShatterer">
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIMammoth">
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIJuggernaut">
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIRig">
+        <OperandArray value="UC_CommandPost"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIMCV"/>
+    <CRequirementAnd id="TrainGDIMARV">
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIOrca"/>
+    <CRequirementAnd id="TrainGDIHammerHead"/>
+    <CRequirementAnd id="TrainGDIFirehawk">
+        <OperandArray value="UC_TechCenter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="TrainGDIOx"/>
+
+    <!--Upgrades Requirements -->
+    <CRequirementAnd id="LearnGDILightWeaponsLevel2"><OperandArray value="RC_GDILightWeaponsLevel2"/><OperandArray value="UC_GDIArmoury"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDILightWeaponsLevel3"><OperandArray value="RC_GDILightWeaponsLevel3"/><OperandArray value="UC_GDIArmoury"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIHeavyWeaponsLevel2"><OperandArray value="RC_GDIHeavyWeaponsLevel2"/><OperandArray value="UC_GDITechCenter"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIHeavyWeaponsLevel3"><OperandArray value="RC_GDIHeavyWeaponsLevel3"/><OperandArray value="UC_GDITechCenter"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIExplosiveWeaponsLevel2"><OperandArray value="RC_GDIExplosiveWeaponsLevel2"/><OperandArray value="UC_GDITechCenter"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIExplosiveWeaponsLevel3"><OperandArray value="RC_GDIExplosiveWeaponsLevel3"/><OperandArray value="UC_GDITechCenter"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIInfantryArmorsLevel2"><OperandArray value="RC_GDIInfantryArmorsLevel2"/><OperandArray value="UC_GDIArmoury"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIInfantryArmorsLevel3"><OperandArray value="RC_GDIInfantryArmorsLevel3"/><OperandArray value="UC_GDIArmoury"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIVehiclesArmorsLevel2"><OperandArray value="RC_GDIVehiclesArmorsLevel2"/><OperandArray value="UC_GDITechCenter"/></CRequirementAnd>
+    <CRequirementAnd id="LearnGDIVehiclesArmorsLevel3"><OperandArray value="RC_GDIVehiclesArmorsLevel3"/><OperandArray value="UC_GDITechCenter"/></CRequirementAnd>
+
+
+
+
+
+
+
+
+
+
+
+</Catalog>

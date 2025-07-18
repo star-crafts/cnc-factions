@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="90mmCannonsShepherd" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <Kind value="Ranged"/>
+        <Amount value="25"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectSet id="GDIReinforcement">
+        <EditorCategories value="Race:GDI"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="IonCannonCP">
+        <EditorCategories value="Race:Nod"/>
+        <FinalEffect value="IonCannonDamage"/>
+        <PeriodCount value="1"/>
+        <PeriodicPeriodArray value="5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="IonCannonWarningCP">
+        <EditorCategories value="Race:Nod"/>
+        <FinalEffect value="IonCannonCP"/>
+        <PeriodCount value="1"/>
+        <PeriodicPeriodArray value="5"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="MCVRepairImpactArgus">
+        <ValidatorArray value="LifeNotFull"/>
+        <EditorCategories value="Race:Nod"/>
+        <VitalArray index="Life">
+            <Change value="10"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="MCVRepairSearchArgus">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Neutral,Enemy,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="9" Effect="MCVRepairImpactArgus"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="AntiAirDamageMastodon" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Light" value="6"/>
+        <AttributeBonus index="Armored" value="8"/>
+        <KindSplash value="Splash"/>
+        <Amount value="6"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArcliteCannonDamageMammoth" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="50"/>
+        <Kind value="Ranged"/>
+        <Amount value="25"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArcliteCannonDamageMammoth2" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="50"/>
+        <Kind value="Ranged"/>
+        <Amount value="25"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="AntiAirDamageMammoth" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Light" value="6"/>
+        <AttributeBonus index="Armored" value="8"/>
+        <KindSplash value="Splash"/>
+        <Amount value="6"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="MastodonMissileDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="SourceUnitOrPoint"/>
+        <Visibility value="Visible"/>
+        <Amount value="7"/>
+        <Death value="Fire"/>
+        <AreaArray Radius="1.5" Fraction="1"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Air;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZOCOMMastodonDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Structure" value="40"/>
+        <Kind value="Ranged"/>
+        <Amount value="30"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1" Fraction="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMammoth2">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMammoth"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMastodon2">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMastodon"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMammoth3">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMammoth"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMastodon3">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMastodon"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMammoth4">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMammoth"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMastodon4">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMastodon"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMastodon">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMastodon"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AntiAirLaunchMissileMammoth">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="AntiAirDamageMammoth"/>
+        <AmmoUnit value="ThorAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="MammothAntiAirPersistent">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMammoth"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMammoth2"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMammoth3"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMammoth4"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="MastodonAntiAirPersistent">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMastodon"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMastodon2"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMastodon3"/>
+        <PeriodicEffectArray value="AntiAirLaunchMissileMastodon4"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="ZOCOMMastodonDamageMissileLM">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactEffect value="MastodonMissileDamage"/>
+        <AmmoUnit value="ZOCOMMastodonMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="MastodonMissileBurstPersistent">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="ZOCOMMastodonDamageMissileLM"/>
+        <PeriodicEffectArray value="ZOCOMMastodonDamageMissileLM"/>
+        <PeriodicPeriodArray value="0.05"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="MammothMissileBurstPersistent">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="ArcliteCannonDamageMammoth"/>
+        <PeriodicEffectArray value="ArcliteCannonDamageMammoth2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="ZOCOMMastodonLaunch">
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="ZOCOMMastodonDamage"/>
+        <AmmoUnit value="ZOCOMMastodonWeapon"/>
+        <Movers Link="ATgunWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="ZOCOMMastodonLaunch2">
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="ZOCOMMastodonDamage"/>
+        <AmmoUnit value="ZOCOMMastodonWeapon"/>
+        <Movers Link="ATgunWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="ZOCOMMastodonWeapon">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="ZOCOMMastodonLaunch"/>
+        <PeriodicEffectArray value="ZOCOMMastodonLaunch2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="IonCannonDamage">
+        <EditorCategories value="Race:Nod"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Amount value="300"/>
+        <Death value="Fire"/>
+        <AreaArray Radius="4" Fraction="1"/>
+        <AreaArray Radius="6" Fraction="0.5"/>
+        <AreaArray Radius="8" Fraction="0.25"/>
+        <SearchFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZOCOMZoneRaiderWeaponShockwaveDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:GDI"/>
+        <AttributeBonus index="Massive" value="25"/>
+        <Kind value="Splash"/>
+        <KindSplash value="Splash"/>
+        <Amount value="15"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZOCOMZoneRaiderChargeDamage">
+        <EditorCategories value="Race:GDI"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="40"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="ZOCOMZoneRaiderChargeLaunchMissile">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="ZOCOMZoneRaiderChargeDamage"/>
+        <AmmoUnit value="ZOCOMZoneRaiderWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="ZOCOMHammerHeadweaponDamage">
+        <EditorCategories value="Race:Nod"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Light" value="9"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="ZOCOMHammerHeadWeaponCP">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="6"/>
+        <PeriodicEffectArray value="ZOCOMHammerHeadweaponDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="ZOCOMHammerHeadCreatePersistent">
+        <EditorCategories value="Race:GDI"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="8"/>
+        <PeriodicEffectArray value="ZOCOMHammerHeadRocketLaunchMissile"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="ZOCOMHammerHeadRocketDamage">
+        <EditorCategories value="Race:Nod"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Armored" value="10"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="3"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable,Benign,Passive"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="ZOCOMHammerHeadRocketLaunchMissile">
+        <EditorCategories value="Race:GDI"/>
+        <ImpactEffect value="ZOCOMHammerHeadRocketDamage"/>
+        <AmmoUnit value="ZOCOMHammerHeadRocket"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="ARGUSAA1CP">
+        <ValidatorArray value="ARGUSAA1"/>
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="ArgusChaingun1set"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="ARGUSAA2CP">
+        <ValidatorArray value="ARGUSAA2"/>
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="ArgusChaingun2set"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="ARGUSAA3CP">
+        <ValidatorArray value="ARGUSAA3"/>
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="ArgusChaingun3set"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ARGUSMissileAB1">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ARGUSMissileTarget1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ARGUSAAAB2">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ARGUSAATarget2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ARGUSMissileAB2">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ARGUSMissileTarget2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ARGUSAAAB3">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ARGUSAATarget3"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ARGUSMissileAB3">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ARGUSMissileTarget3"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ARGUSMissileSearchCP">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="CasterPoint"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="ARGUSMissileSearchArea1"/>
+        <PeriodicEffectArray value="ARGUSMissileSearchArea2"/>
+        <PeriodicEffectArray value="ARGUSMissileSearchArea3"/>
+        <PeriodicOffsetArray value="1,1.2,0"/>
+        <PeriodicOffsetArray value="-1,1.2,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ARGUSMissileSearchArea1">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="90" Radius="13" Effect="ARGUSMissileAB1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSAASearchArea2">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="Air;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="149.9963" Radius="13" Effect="ARGUSAAAB2"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissileSearchArea2">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="90" Radius="13" Effect="ARGUSMissileAB2"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSAASearchArea3">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="Air;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="149.9963" Radius="13" Effect="ARGUSAAAB3"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissileSearchArea3">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="149.9963" Radius="13" Effect="ARGUSMissileAB3"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="ZOCOMArgusLaserAB1">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ZOCOMArgusLaserTarget1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ARGUSAAAB1">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ARGUSAATarget1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZOCOMArgusLaserAB2">
+        <EditorCategories value="Race:Nod"/>
+        <Behavior value="ZOCOMArgusLaserTarget2"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ZOCOMArgusLaserCannonSearchCP">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="CasterPoint"/>
+        <PeriodCount value="2"/>
+        <PeriodicOffsetArray value="1.72,1,0"/>
+        <PeriodicOffsetArray value="-1.72,1,0"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicEffectArray value="ZOCOMArgusLaserSearchArea1"/>
+        <PeriodicEffectArray value="ZOCOMArgusLaserSearchArea2"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="ARGUSAACannonSearchCP">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="CasterPoint"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="ARGUSAASearchArea1"/>
+        <PeriodicEffectArray value="ARGUSAASearchArea2"/>
+        <PeriodicEffectArray value="ARGUSAASearchArea3"/>
+        <PeriodicOffsetArray value="1.72,1,0"/>
+        <PeriodicOffsetArray value="-1.72,1,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ZOCOMArgusLaserSearchArea1">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Air,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="149.9963" Radius="13" Effect="ZOCOMArgusLaserAB1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSAASearchArea1">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="Air;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="149.9963" Radius="13" Effect="ARGUSAAAB1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ZOCOMArgusLaserSearchArea2">
+        <EditorCategories value="Race:Nod"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Air,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="149.9963" Radius="13" Effect="ZOCOMArgusLaserAB2"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea1">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea11">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM11"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea12">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM12"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea2">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM2"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea3">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea4">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM4"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea5">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM5"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea6">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM6"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea7">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM7"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea8">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea9">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM9"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ARGUSMissilePodArea10">
+        <EditorCategories value="Race:Nod"/>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="3" Radius="4" Effect="CommandoALM10"/>
+    </CEffectEnumArea>
+    <CEffectSet id="ARGUSMissilePodSet1">
+        <ValidatorArray value="ARGUSMissile1"/>
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ARGUSMissilePodArea1"/>
+        <EffectArray value="ARGUSMissilePodArea2"/>
+        <EffectArray value="ARGUSMissilePodArea3"/>
+        <EffectArray value="ARGUSMissilePodArea4"/>
+    </CEffectSet>
+    <CEffectSet id="ARGUSMissilePodSet2">
+        <ValidatorArray value="ARGUSMissile2"/>
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ARGUSMissilePodArea5"/>
+        <EffectArray value="ARGUSMissilePodArea6"/>
+        <EffectArray value="ARGUSMissilePodArea7"/>
+        <EffectArray value="ARGUSMissilePodArea8"/>
+    </CEffectSet>
+    <CEffectSet id="ARGUSMissilePodSet3">
+        <ValidatorArray value="ARGUSMissile3"/>
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ARGUSMissilePodArea9"/>
+        <EffectArray value="ARGUSMissilePodArea10"/>
+        <EffectArray value="ARGUSMissilePodArea11"/>
+        <EffectArray value="ARGUSMissilePodArea12"/>
+    </CEffectSet>
+    <CEffectSet id="ARGUSWeaponsearchSet">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ZOCOMArgusLaserCannonSearchCP"/>
+        <EffectArray value="ARGUSAACannonSearchCP"/>
+        <EffectArray value="ARGUSMissileSearchCP"/>
+    </CEffectSet>
+    <CEffectDamage id="TitanBeam1" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="30"/>
+        <AttributeBonus index="Massive" value="40"/>
+        <Kind value="Ranged"/>
+        <Amount value="15"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusBeam2" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <Kind value="Spell"/>
+        <Amount value="30"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusBeam3" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <Kind value="Spell"/>
+        <Amount value="30"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusBeam4" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <Kind value="Spell"/>
+        <Amount value="30"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusChaingun1Dummy1">
+        <EditorCategories value="Race:Nod"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusChaingun1Dummy2">
+        <EditorCategories value="Race:Nod"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusChaingun1Dummy3">
+        <EditorCategories value="Race:Nod"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusChaingun3">
+        <EditorCategories value="Race:Nod"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Splash"/>
+        <Amount value="6"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="ArgusChaingun2set">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ArgusChaingun2"/>
+        <EffectArray value="ArgusChaingun1Dummy2"/>
+    </CEffectSet>
+    <CEffectDamage id="ArgusChaingun2">
+        <EditorCategories value="Race:Nod"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Splash"/>
+        <Amount value="6"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="ArgusChaingun3set">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ArgusChaingun3"/>
+        <EffectArray value="ArgusChaingun1Dummy3"/>
+    </CEffectSet>
+    <CEffectSet id="ZOCOMArgusLaserset1">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ArgusBeam1"/>
+        <EffectArray value="ArgusBeam2"/>
+        <ValidatorArray value="ZOCOMArgusLaser1"/>
+    </CEffectSet>
+    <CEffectSet id="ZOCOMArgusLaserset12">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ArgusBeam3"/>
+        <EffectArray value="ArgusBeam4"/>
+        <ValidatorArray value="ZOCOMArgusLaser2"/>
+    </CEffectSet>
+    <CEffectSet id="ArgusChaingun1set">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="ArgusChaingun1"/>
+        <EffectArray value="ArgusChaingun1Dummy1"/>
+    </CEffectSet>
+    <CEffectDamage id="ZOCOMArgusMissile" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArgusBeam1" parent="DU_WEAP">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <Kind value="Spell"/>
+        <Amount value="30"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="GDIShepherdMachineGunDamage">
+        <EditorCategories value="Race:GDI"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Light" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="2"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="JumpPack">
+        <EditorCategories value="Race:Nod"/>
+        <Amount value="150"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="JumpPackJumpOnly">
+        <ValidatorArray value="Pathable"/>
+        <EditorCategories value="Race:GDI"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <FinishEffect value="JumpPackSearchArea"/>
+        <Flags index="2D" value="1"/>
+        <Flags index="Placement" value="1"/>
+        <PlacementRange value="1"/>
+        <Movers Link="ZoneJumpUp"/>
+        <DeathType value="Unknown"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="JumpPackPointSearch">
+        <EditorCategories value="Race:Nod"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="JumpPackPointSearchSet"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="JumpPackPointSearchImpactSet">
+        <EffectArray value="JumpPackPointSearch"/>
+        <EditorCategories value="Race:Nod"/>
+    </CEffectSet>
+    <CEffectSet id="JumpPackPointSearchSet">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="JumpPack"/>
+    </CEffectSet>
+    <CEffectDamage id="GDIGrenadesDamage">
+        <EditorCategories value="Race:GDI"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Amount value="8"/>
+        <AreaArray Radius="0.4" Fraction="1"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GDIGrenadesLaunchMissile">
+        <ValidatorArray index="0" value="HasVision"/>
+        <EditorCategories value="Race:GDI"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactOffset value="0,0,0.1"/>
+        <ImpactEffect value="GDIGrenadesDamage"/>
+        <AmmoUnit value="ZOCOMGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="ArgusChaingun1">
+        <EditorCategories value="Race:Nod"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Splash"/>
+        <Amount value="16"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+
+
+    <CEffectCreatePersistent id="machinegunCP">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="5"/>
+        <PeriodicEffectArray value="GDIShepherdMachineGunDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="EnforcerDamage">
+        <EditorCategories value="Race:GDI"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Light" value="3"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="1"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="DefenderA">
+        <EditorCategories value="Race:Nod"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="DefenderALM2"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="DefenderALM"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="DefenderALM">
+        <EditorCategories value="Race:Nod"/>
+        <ImpactEffect value="DefenderAU"/>
+        <AmmoUnit value="ZOCOMDefenderAAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="DefenderAU" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Nod"/>
+        <AttributeBonus index="Armored" value="10"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="JumpPackSearchArea">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MinorDanger" value="1"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="KD8ChargeEndSet"/>
+        <EditorCategories value="Race:Nod"/>
+    </CEffectEnumArea>
+
+
+</Catalog>

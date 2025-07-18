@@ -1,0 +1,1010 @@
+include "TriggerLibs/NativeLib"
+
+include "LibDPAN_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Spawn Panel
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void libDPAN_InitLibraries () {
+    libNtve_InitVariables();
+}
+
+// Variable Initialization
+bool libDPAN_InitVariables_completed = false;
+
+void libDPAN_InitVariables () {
+    int init_i;
+    int init_j;
+
+    if (libDPAN_InitVariables_completed) {
+        return;
+    }
+
+    libDPAN_InitVariables_completed = true;
+
+    for (init_i = 0; init_i <= 16; init_i += 1) {
+        libDPAN_gv_creator_selectedRace[init_i] = "Neutral";
+    }
+    libDPAN_gv_allPlayers = PlayerGroupEmpty();
+    libDPAN_gv_allStructures = "";
+    libDPAN_gv_allRaces = "";
+    libDPAN_gv_allUnits = "";
+    libDPAN_gv_allUpgradesSkills = "";
+    libDPAN_gv_allUpgradesLevels = "";
+    libDPAN_gv_currentStructures = "";
+    libDPAN_gv_currentUnits = "";
+    libDPAN_gv_currentUpgradesSkills = "";
+    libDPAN_gv_currentUpgradesLevels = "";
+    libDPAN_gv_spawnPanel = c_invalidDialogControlId;
+    libDPAN_gv_spawnDialog = c_invalidDialogId;
+    for (init_i = 0; init_i <= libDPAN_gv_spawnSets; init_i += 1) {
+        libDPAN_gv_spawnDialogCommandsSet[init_i] = c_invalidDialogControlId;
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_spawnSets; init_i += 1) {
+        for (init_j = 0; init_j <= 14; init_j += 1) {
+            libDPAN_gv_spawnDialogCommandsSetButtons[init_i][init_j] = c_invalidDialogControlId;
+        }
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        libDPAN_gv_creator_tabsButtons[init_i] = c_invalidDialogControlId;
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        libDPAN_gv_creator_tabsButtonsimage[init_i] = c_invalidDialogControlId;
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        libDPAN_gv_creator_bottomButton[init_i] = c_invalidDialogControlId;
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        libDPAN_gv_creator_upButton[init_i] = c_invalidDialogControlId;
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        for (init_j = 0; init_j <= libDPAN_gv_buttonsMax; init_j += 1) {
+            libDPAN_gv_creator_itembutton[init_i][init_j] = c_invalidDialogControlId;
+        }
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        for (init_j = 0; init_j <= libDPAN_gv_buttonsMax; init_j += 1) {
+            libDPAN_gv_creator_itemunit[init_i][init_j] = "";
+        }
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        for (init_j = 0; init_j <= libDPAN_gv_buttonsMax; init_j += 1) {
+            libDPAN_gv_creator_itemface[init_i][init_j] = c_invalidDialogControlId;
+        }
+    }
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        libDPAN_gv_buttons_panels[init_i] = c_invalidDialogControlId;
+    }
+}
+
+// Functions
+int libDPAN_gf_CountWords (string lp_str) {
+    // Variable Declarations
+    int lv_word;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_word = 1;
+
+    // Implementation
+    while ((StringWord(lp_str, lv_word) != "")) {
+        lv_word = (lv_word + 1);
+    }
+    return (lv_word - 1);
+}
+
+void libDPAN_gf_RunTester () {
+    // Automatic Variable Declarations
+    // Implementation
+    libDPAN_gf_SetupUnitTesterData();
+    libDPAN_gf_MakeUnitTesterPlacementCard();
+    libDPAN_gf_SelectPanel(1, 2);
+    libDPAN_gf_Selectplayer(1, 1);
+    libDPAN_gf_SelectRace(PlayerRace(1), 1);
+    libDPAN_gf_RenderUnitTesterPlacementCard(1);
+}
+
+void libDPAN_gf_SelectRace (string lp_race, int lp_triggeringPlayer) {
+    // Variable Declarations
+    string lv_upgradeID;
+    string lv_unitEntry;
+    string lv_upgrade;
+    string lv_unitID;
+    string lv_raceID;
+    string lv_raceID2;
+    string lv_race;
+    int lv_upgradeLevel;
+    string lv_upgradeLevelString;
+    string lv_upgradeBase;
+    int lv_wordIndex;
+    string lv_upgradesTemp;
+
+    // Automatic Variable Declarations
+    int autoBCE51555_ae;
+    const int autoBCE51555_ai = 1;
+    int autoA4F65F1D_ae;
+    const int autoA4F65F1D_ai = 1;
+    int auto7063AD97_ae;
+    const int auto7063AD97_ai = 1;
+    int autoC6169E15_ae;
+    const int autoC6169E15_ai = 1;
+
+    // Variable Initialization
+    lv_upgradeID = "";
+    lv_unitID = "";
+    lv_raceID = "";
+    lv_raceID2 = (lp_race);
+    lv_upgradeLevelString = "";
+    lv_upgradeBase = "";
+    lv_upgradesTemp = "";
+
+    // Implementation
+    libNtve_gf_SetDialogItemImage(libDPAN_gv_creator_tabsButtonsimage[1], (CatalogFieldValueGet(c_gameCatalogRace, lp_race, "Icon", c_playerAny)), PlayerGroupAll());
+    libDPAN_gv_creator_selectedRace[lp_triggeringPlayer] = (lp_race);
+    libDPAN_gv_currentUnits = "";
+    libDPAN_gv_currentStructures = "";
+    libDPAN_gv_currentUpgradesSkills = "";
+    libDPAN_gv_currentUpgradesLevels = "";
+    autoBCE51555_ae = libDPAN_gf_CountWords(libDPAN_gv_allUnits);
+    lv_wordIndex = 1;
+    for ( ; ( (autoBCE51555_ai >= 0 && lv_wordIndex <= autoBCE51555_ae) || (autoBCE51555_ai < 0 && lv_wordIndex >= autoBCE51555_ae) ) ; lv_wordIndex += autoBCE51555_ai ) {
+        lv_unitID = StringWord(libDPAN_gv_allUnits, lv_wordIndex);
+        lv_raceID = CatalogFieldValueGet(c_gameCatalogUnit, lv_unitID, "Race", c_playerAny);
+        if ((lv_raceID == lv_raceID2)) {
+            libDPAN_gv_currentUnits = (libDPAN_gv_currentUnits + ((lv_unitID) + " "));
+        }
+
+    }
+    autoA4F65F1D_ae = libDPAN_gf_CountWords(libDPAN_gv_allStructures);
+    lv_wordIndex = 1;
+    for ( ; ( (autoA4F65F1D_ai >= 0 && lv_wordIndex <= autoA4F65F1D_ae) || (autoA4F65F1D_ai < 0 && lv_wordIndex >= autoA4F65F1D_ae) ) ; lv_wordIndex += autoA4F65F1D_ai ) {
+        lv_unitID = StringWord(libDPAN_gv_allStructures, lv_wordIndex);
+        lv_raceID = CatalogFieldValueGet(c_gameCatalogUnit, lv_unitID, "Race", c_playerAny);
+        if ((lv_raceID == lv_raceID2)) {
+            libDPAN_gv_currentStructures = (libDPAN_gv_currentStructures + ((lv_unitID) + " "));
+        }
+
+    }
+    auto7063AD97_ae = libDPAN_gf_CountWords(libDPAN_gv_allUpgradesSkills);
+    lv_wordIndex = 1;
+    for ( ; ( (auto7063AD97_ai >= 0 && lv_wordIndex <= auto7063AD97_ae) || (auto7063AD97_ai < 0 && lv_wordIndex >= auto7063AD97_ae) ) ; lv_wordIndex += auto7063AD97_ai ) {
+        lv_upgradeID = StringWord(libDPAN_gv_allUpgradesSkills, lv_wordIndex);
+        lv_raceID = CatalogFieldValueGet(c_gameCatalogUpgrade, lv_upgradeID, "Race", c_playerAny);
+        if ((lv_raceID == lv_raceID2)) {
+            libDPAN_gv_currentUpgradesSkills = (libDPAN_gv_currentUpgradesSkills + ((lv_upgradeID) + " "));
+        }
+
+    }
+    autoC6169E15_ae = libDPAN_gf_CountWords(libDPAN_gv_allUpgradesLevels);
+    lv_wordIndex = 1;
+    for ( ; ( (autoC6169E15_ai >= 0 && lv_wordIndex <= autoC6169E15_ae) || (autoC6169E15_ai < 0 && lv_wordIndex >= autoC6169E15_ae) ) ; lv_wordIndex += autoC6169E15_ai ) {
+        lv_upgradeID = (StringWord(libDPAN_gv_allUpgradesLevels, lv_wordIndex) + "1");
+        if ((CatalogEntryIsValid(c_gameCatalogUpgrade, lv_upgradeID) == true) && (CatalogFieldValueGet(c_gameCatalogUpgrade, lv_upgradeID, "Race", c_playerAny) == lv_raceID2)) {
+            libDPAN_gv_currentUpgradesLevels = (libDPAN_gv_currentUpgradesLevels + (StringWord(libDPAN_gv_allUpgradesLevels, lv_wordIndex) + " "));
+        }
+
+    }
+}
+
+void libDPAN_gf_Selectplayer (int lp_player, int lp_triggeringPlayer) {
+    // Variable Declarations
+    int lv_i;
+    int lv_j;
+
+    // Automatic Variable Declarations
+    const int autoF1EC4DDD_ae = libDPAN_gv_panels;
+    const int autoF1EC4DDD_ai = 1;
+    int auto365AD0DD_ae;
+    const int auto365AD0DD_ai = 1;
+
+    // Variable Initialization
+
+    // Implementation
+    libDPAN_gv_creator_selectedPlayer[lp_triggeringPlayer] = lp_player;
+    lv_i = 0;
+    for ( ; ( (autoF1EC4DDD_ai >= 0 && lv_i <= autoF1EC4DDD_ae) || (autoF1EC4DDD_ai < 0 && lv_i >= autoF1EC4DDD_ae) ) ; lv_i += autoF1EC4DDD_ai ) {
+        libNtve_gf_SetDialogItemDesaturationColor(libDPAN_gv_creator_tabsButtons[lv_i], libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lp_player, false)), PlayerGroupAll());
+        libNtve_gf_SetDialogItemDesaturationColor(libDPAN_gv_creator_tabsButtonsimage[lv_i], libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lp_player, false)), PlayerGroupAll());
+        libNtve_gf_SetDialogItemDesaturated(libDPAN_gv_creator_tabsButtonsimage[lv_i], true, PlayerGroupAll());
+        auto365AD0DD_ae = ((libDPAN_gv_placementCardRows * libDPAN_gv_placementCardColumns) - 1);
+        lv_j = 0;
+        for ( ; ( (auto365AD0DD_ai >= 0 && lv_j <= auto365AD0DD_ae) || (auto365AD0DD_ai < 0 && lv_j >= auto365AD0DD_ae) ) ; lv_j += auto365AD0DD_ai ) {
+            libNtve_gf_SetDialogItemDesaturationColor(libDPAN_gv_creator_itembutton[lv_i][lv_j], libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lp_player, false)), PlayerGroupAll());
+        }
+    }
+}
+
+void libDPAN_gf_SelectPanel (int lp_player, int lp_tab) {
+    // Variable Declarations
+    playergroup lv_players;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_players = PlayerGroupSingle(lp_player);
+
+    // Implementation
+    if ((libDPAN_gv_selectedTab[lp_player] != -1)) {
+        DialogControlSetVisible(libDPAN_gv_buttons_panels[libDPAN_gv_selectedTab[lp_player]], lv_players, false);
+        DialogSetVisible(libDPAN_gv_spawnDialog, lv_players, false);
+    }
+
+    libDPAN_gv_selectedTab[lp_player] = lp_tab;
+    if ((lp_tab == -1)) {
+        return ;
+    }
+
+    libDPAN_gv_placementCardOffset[lp_tab] = 0;
+    libDPAN_gf_RenderUnitTesterPlacementCard(lp_player);
+    DialogControlSetVisible(libDPAN_gv_buttons_panels[lp_tab], lv_players, true);
+    if (((lp_tab == 2) || (lp_tab == 3))) {
+        DialogSetVisible(libDPAN_gv_spawnDialog, lv_players, true);
+    }
+
+}
+
+void libDPAN_gf_SetupUnitTesterData () {
+    // Variable Declarations
+    string lv_upgradeID;
+    string lv_unitEntry;
+    string lv_upgrade;
+    string lv_unitID;
+    string lv_race;
+    int lv_upgradeLevel;
+    string lv_upgradeLevelString;
+    string lv_upgradeBase;
+    int lv_wordIndex;
+    string lv_upgradesTemp;
+    int lv_i;
+    int lv_j;
+    string lv_term;
+    string lv_termEvent;
+    string lv_termUnit;
+    string lv_unitIcon;
+    string lv_send;
+    string lv_actor;
+    int lv_eventsTotal;
+    int lv_actorsTotal;
+
+    // Automatic Variable Declarations
+    int autoF9CF12F7_catalog;
+    int autoF9CF12F7_i;
+    int auto310DDEE5_catalog;
+    int auto310DDEE5_i;
+    int autoF5E0548B_catalog;
+    int autoF5E0548B_i;
+    int autoFDC882EA_ae;
+    const int autoFDC882EA_ai = 1;
+    int autoE5AAA761_ae;
+    const int autoE5AAA761_ai = 1;
+
+    // Variable Initialization
+    lv_upgradeID = "";
+    lv_unitID = "";
+    lv_upgradeLevelString = "";
+    lv_upgradeBase = "";
+    lv_upgradesTemp = "";
+    lv_term = "";
+    lv_termEvent = "";
+    lv_termUnit = "";
+    lv_unitIcon = "";
+    lv_send = "";
+    lv_actorsTotal = CatalogEntryCount(c_gameCatalogActor);
+
+    // Implementation
+    libNtve_gf_AddPlayerGroupToPlayerGroup(PlayerGroupActive(), libDPAN_gv_allPlayers);
+    PlayerGroupAdd(libDPAN_gv_allPlayers, 0);
+    PlayerGroupAdd(libDPAN_gv_allPlayers, 15);
+    autoF9CF12F7_catalog = c_gameCatalogRace;
+    autoF9CF12F7_i = 1;
+    for ( ; autoF9CF12F7_i <= CatalogEntryCount(c_gameCatalogRace) ; autoF9CF12F7_i += 1 ) {
+        lv_race = CatalogEntryGet(autoF9CF12F7_catalog, autoF9CF12F7_i);
+        libDPAN_gv_allRaces = (libDPAN_gv_allRaces + ((lv_race) + " "));
+    }
+    auto310DDEE5_catalog = c_gameCatalogUnit;
+    auto310DDEE5_i = 1;
+    for ( ; auto310DDEE5_i <= CatalogEntryCount(c_gameCatalogUnit) ; auto310DDEE5_i += 1 ) {
+        lv_unitEntry = CatalogEntryGet(auto310DDEE5_catalog, auto310DDEE5_i);
+        if (((CatalogFieldValueGet(c_gameCatalogUnit, lv_unitEntry, "FlagArray[" + IntToString(c_unitFlagUnselectable) + "]", c_playerAny) == "1"))) {
+            continue;
+        }
+        else {
+            if ((UnitTypeTestAttribute(lv_unitEntry, c_unitAttributeStructure) == true)) {
+                libDPAN_gv_allStructures = (libDPAN_gv_allStructures + ((lv_unitEntry) + " "));
+            }
+            else {
+                libDPAN_gv_allUnits = (libDPAN_gv_allUnits + ((lv_unitEntry) + " "));
+            }
+        }
+    }
+    autoF5E0548B_catalog = c_gameCatalogUpgrade;
+    autoF5E0548B_i = 1;
+    for ( ; autoF5E0548B_i <= CatalogEntryCount(c_gameCatalogUpgrade) ; autoF5E0548B_i += 1 ) {
+        lv_upgrade = CatalogEntryGet(autoF5E0548B_catalog, autoF5E0548B_i);
+        lv_upgradeID = (lv_upgrade);
+        lv_upgradeLevelString = StringSub(lv_upgradeID, StringLength(lv_upgradeID), (StringLength(lv_upgradeID) + 1));
+        if (((lv_upgradeLevelString == "1") || (lv_upgradeLevelString == "2") || (lv_upgradeLevelString == "3") || (lv_upgradeLevelString == "4") || (lv_upgradeLevelString == "5") || (lv_upgradeLevelString == "6") || (lv_upgradeLevelString == "7"))) {
+            lv_upgradeLevel = StringToInt(StringSub(lv_upgradeID, StringLength(lv_upgradeID), (StringLength(lv_upgradeID) + 1)));
+            lv_upgradeBase = StringSub(lv_upgradeID, 1, (StringLength(lv_upgradeID) - 1));
+            if ((StringFind((" " + libDPAN_gv_allUpgradesLevels), lv_upgradeBase, c_stringCase) <= 0)) {
+                libDPAN_gv_allUpgradesLevels = (libDPAN_gv_allUpgradesLevels + (lv_upgradeBase + " "));
+            }
+
+        }
+        else {
+            lv_upgradeLevel = 0;
+            libDPAN_gv_allUpgradesSkills = (libDPAN_gv_allUpgradesSkills + (lv_upgradeID + " "));
+        }
+    }
+    autoFDC882EA_ae = lv_actorsTotal;
+    lv_i = 1;
+    for ( ; ( (autoFDC882EA_ai >= 0 && lv_i <= autoFDC882EA_ae) || (autoFDC882EA_ai < 0 && lv_i >= autoFDC882EA_ae) ) ; lv_i += autoFDC882EA_ai ) {
+        lv_actor = CatalogEntryGet(c_gameCatalogActor, lv_i);
+        if (((CatalogEntryClass(c_gameCatalogActor, lv_actor) == 122) || (CatalogEntryClass(c_gameCatalogActor, lv_actor) == 124))) {
+            lv_unitIcon = CatalogFieldValueGet(c_gameCatalogActor, lv_actor, "UnitIcon", c_playerAny);
+            if ((lv_unitIcon == "")) {
+                continue;
+            }
+
+            lv_eventsTotal = (CatalogFieldValueCount(c_gameCatalogActor, lv_actor, "On", c_playerAny) - 1);
+            autoE5AAA761_ae = lv_eventsTotal;
+            lv_j = 0;
+            for ( ; ( (autoE5AAA761_ai >= 0 && lv_j <= autoE5AAA761_ae) || (autoE5AAA761_ai < 0 && lv_j >= autoE5AAA761_ae) ) ; lv_j += autoE5AAA761_ai ) {
+                lv_send = CatalogFieldValueGet(c_gameCatalogActor, lv_actor, "On[" + IntToString(lv_j) + "].Send", c_playerAny);
+                lv_term = CatalogFieldValueGet(c_gameCatalogActor, lv_actor, "On[" + IntToString(lv_j) + "].Terms", c_playerAny);
+                if ((lv_send == "Create") && (StringFind(lv_term, "UnitBirth", c_stringCase) == 1)) {
+                    lv_termUnit = StringSub(lv_term, 11, StringLength(lv_term));
+                    if ((StringFind(lv_termUnit, "#", c_stringCase) != 0)) {
+                        DataTableSetString(true, ("^ACTOR_" + lv_termUnit), (lv_actor));
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+void libDPAN_gf_MakeUnitTesterPlacementCard () {
+    int init_i;
+
+    // Variable Declarations
+    int lv_x;
+    int lv_y;
+    int lv_i;
+    int lv_j;
+    int lv_panel;
+    string lv_factionString;
+    string[libDPAN_gv_panels + 1] lv_icons;
+    string[libDPAN_gv_panels + 1] lv_tooltips;
+    string lv_bottom;
+    int lv_buttonsSet;
+
+    // Automatic Variable Declarations
+    const int autoAD1C7A24_ae = 4;
+    const int autoAD1C7A24_ai = 1;
+    const int auto891F423F_ae = 14;
+    const int auto891F423F_ai = 1;
+    const int auto2FF9B0EA_ae = libDPAN_gv_panels;
+    const int auto2FF9B0EA_ai = 1;
+    int auto27BD8D4D_ae;
+    const int auto27BD8D4D_ai = 1;
+
+    // Variable Initialization
+    lv_panel = c_invalidDialogControlId;
+    lv_factionString = "";
+    for (init_i = 0; init_i <= libDPAN_gv_panels; init_i += 1) {
+        lv_tooltips[init_i] = "";
+    }
+    lv_bottom = "Assets\\Textures\\ui_planetpanel_arrowbutton_left_normaloverpressedover.dds";
+
+    // Implementation
+    DialogCreate((77 * 5), (77 * 12), c_anchorTopLeft, 50, 150, true);
+    DialogSetImageVisible(DialogLastCreated(), false);
+    libDPAN_gv_spawnDialog = DialogLastCreated();
+    lv_buttonsSet = 1;
+    for ( ; ( (autoAD1C7A24_ai >= 0 && lv_buttonsSet <= autoAD1C7A24_ae) || (autoAD1C7A24_ai < 0 && lv_buttonsSet >= autoAD1C7A24_ae) ) ; lv_buttonsSet += autoAD1C7A24_ai ) {
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, (("SpawnCaster" + IntToString(lv_buttonsSet))), c_unitCreateIgnorePlacement, 1, Point(0.0, 0.0));
+        libDPAN_gv_spawnCasters[lv_buttonsSet] = UnitLastCreated();
+        DialogControlCreateFromTemplate(libDPAN_gv_spawnDialog, c_triggerControlTypeCommandPanel, "SpawnPanel/SpawnPanel");
+        libDPAN_gv_spawnDialogCommandsSet[lv_buttonsSet] = DialogControlLastCreated();
+        DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, 0, (232 * (lv_buttonsSet - 1)));
+        libNtve_gf_SetDialogItemUnitGroup(libDPAN_gv_spawnDialogCommandsSet[lv_buttonsSet], libNtve_gf_ConvertUnitToUnitGroup(libDPAN_gv_spawnCasters[lv_buttonsSet]), PlayerGroupAll());
+        lv_i = 0;
+        for ( ; ( (auto891F423F_ai >= 0 && lv_i <= auto891F423F_ae) || (auto891F423F_ai < 0 && lv_i >= auto891F423F_ae) ) ; lv_i += auto891F423F_ai ) {
+            if ((lv_i < 10)) {
+                DialogControlHookup(libDPAN_gv_spawnDialogCommandsSet[lv_buttonsSet], c_triggerControlTypeButton, "CommandButton0" + IntToString(lv_i));
+            }
+            else {
+                DialogControlHookup(libDPAN_gv_spawnDialogCommandsSet[lv_buttonsSet], c_triggerControlTypeButton, "CommandButton" + IntToString(lv_i));
+            }
+            libDPAN_gv_spawnDialogCommandsSetButtons[lv_buttonsSet][lv_i] = DialogControlLastCreated();
+        }
+    }
+    DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsoleUIContainer/TesterPanel1");
+    lv_panel = DialogControlLastCreated();
+    libDPAN_gv_spawnPanel = DialogControlLastCreated();
+    DialogControlSetPosition(lv_panel, PlayerGroupAll(), c_anchorTopLeft, 0, 150);
+    lv_icons[0] = "Assets\\Icons\\infantry-page.dds";
+    lv_icons[1] = "Assets\\Textures\\ui_battlenet_glues_multiplayer_racebutton_raceicon_selected_rand.dds";
+    lv_icons[2] = "Assets\\Icons\\tank-page.dds";
+    lv_icons[3] = "Assets\\Icons\\building-page.dds";
+    lv_icons[4] = "assets\\icons\\upgrade-page.dds";
+    lv_tooltips[0] = "Select Player";
+    lv_tooltips[1] = "Select Race";
+    lv_tooltips[2] = "Spawn Units";
+    lv_tooltips[3] = "Spawn Buildings";
+    lv_tooltips[4] = "Set Upgrades";
+    libDPAN_gv_selectedTab[0] = 0;
+    lv_i = 0;
+    for ( ; ( (auto2FF9B0EA_ai >= 0 && lv_i <= auto2FF9B0EA_ae) || (auto2FF9B0EA_ai < 0 && lv_i >= auto2FF9B0EA_ae) ) ; lv_i += auto2FF9B0EA_ai ) {
+        DialogControlCreateInPanelFromTemplate(lv_panel, c_triggerControlTypeButton, "SpawnPanel/TesterRaceButton");
+        libDPAN_gv_creator_tabsButtons[lv_i] = DialogControlLastCreated();
+        libNtve_gf_SetDialogItemDesaturated(libDPAN_gv_creator_tabsButtons[lv_i], true, PlayerGroupAll());
+        DialogControlSetPosition(libDPAN_gv_creator_tabsButtons[lv_i], PlayerGroupAll(), c_anchorTopLeft, 0, (lv_i * 50));
+        libNtve_gf_SetDialogItemRenderPriority(libDPAN_gv_creator_tabsButtons[lv_i], 199, PlayerGroupAll());
+        DialogControlSetVisible(libDPAN_gv_creator_tabsButtons[lv_i], PlayerGroupAll(), true);
+        DialogControlHookup(libDPAN_gv_creator_tabsButtons[lv_i], c_triggerControlTypeImage, "FaceImage");
+        libDPAN_gv_creator_tabsButtonsimage[lv_i] = DialogControlLastCreated();
+        libNtve_gf_SetDialogItemImage(libDPAN_gv_creator_tabsButtonsimage[lv_i], lv_icons[lv_i], PlayerGroupAll());
+        libNtve_gf_SetDialogItemTooltip(DialogControlLastCreated(), StringToText(lv_tooltips[lv_i]), PlayerGroupAll());
+        DialogControlSetVisible(libDPAN_gv_creator_tabsButtonsimage[lv_i], PlayerGroupAll(), true);
+        lv_x = 0;
+        lv_y = 0;
+        DialogControlCreateInPanelFromTemplate(lv_panel, c_triggerControlTypePanel, "SpawnPanel/ItemCard");
+        libDPAN_gv_buttons_panels[lv_i] = DialogControlLastCreated();
+        DialogControlSetPosition(libDPAN_gv_buttons_panels[lv_i], PlayerGroupAll(), c_anchorTopLeft, 50, 0);
+        DialogControlSetSize(DialogControlLastCreated(), PlayerGroupAll(), (libDPAN_gv_placementCardColumns * 77), (50 + (libDPAN_gv_placementCardRows * 77)));
+        DialogControlSetVisible(libDPAN_gv_buttons_panels[lv_i], PlayerGroupAll(), false);
+        auto27BD8D4D_ae = ((libDPAN_gv_placementCardRows * libDPAN_gv_placementCardColumns) - 1);
+        lv_j = 0;
+        for ( ; ( (auto27BD8D4D_ai >= 0 && lv_j <= auto27BD8D4D_ae) || (auto27BD8D4D_ai < 0 && lv_j >= auto27BD8D4D_ae) ) ; lv_j += auto27BD8D4D_ai ) {
+            DialogControlCreateInPanelFromTemplate(libDPAN_gv_buttons_panels[lv_i], c_triggerControlTypeButton, "SpawnPanel/TesterItemButton");
+            DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, (lv_x * 77), (lv_y * 77));
+            libDPAN_gv_creator_itembutton[lv_i][lv_j] = DialogControlLastCreated();
+            libNtve_gf_SetDialogItemDesaturated(libDPAN_gv_creator_itembutton[lv_i][lv_j], true, PlayerGroupAll());
+            DialogControlHookup(DialogControlLastCreated(), c_triggerControlTypeImage, "FaceImage");
+            libDPAN_gv_creator_itemface[lv_i][lv_j] = DialogControlLastCreated();
+            lv_x += 1;
+            if ((lv_x == libDPAN_gv_placementCardColumns)) {
+                lv_x = 0;
+                lv_y += 1;
+            }
+
+        }
+        DialogControlCreateInPanelFromTemplate(libDPAN_gv_buttons_panels[lv_i], c_triggerControlTypeButton, "SpawnPanel/TesterRaceButton");
+        libNtve_gf_SetDialogItemRenderPriority(DialogControlLastCreated(), 199, PlayerGroupAll());
+        libDPAN_gv_creator_bottomButton[lv_i] = DialogControlLastCreated();
+        DialogControlSetSize(libDPAN_gv_creator_bottomButton[lv_i], PlayerGroupAll(), 50, 50);
+        DialogControlSetPosition(libDPAN_gv_creator_bottomButton[lv_i], PlayerGroupAll(), c_anchorBottomRight, 0, 0);
+        DialogControlSetVisible(libDPAN_gv_creator_bottomButton[lv_i], PlayerGroupAll(), true);
+        DialogControlHookup(libDPAN_gv_creator_bottomButton[lv_i], c_triggerControlTypeImage, "FaceImage");
+        libNtve_gf_SetDialogItemImage(DialogControlLastCreated(), "Assets\\Textures\\ui_arrowwhite.dds", PlayerGroupAll());
+        libNtve_gf_SetDialogItemRotation(DialogControlLastCreated(), 180, PlayerGroupAll());
+        DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
+        DialogControlCreateInPanelFromTemplate(libDPAN_gv_buttons_panels[lv_i], c_triggerControlTypeButton, "SpawnPanel/TesterRaceButton");
+        libNtve_gf_SetDialogItemRenderPriority(DialogControlLastCreated(), 199, PlayerGroupAll());
+        libDPAN_gv_creator_upButton[lv_i] = DialogControlLastCreated();
+        DialogControlSetSize(libDPAN_gv_creator_upButton[lv_i], PlayerGroupAll(), 50, 50);
+        DialogControlSetPosition(libDPAN_gv_creator_upButton[lv_i], PlayerGroupAll(), c_anchorBottomRight, 50, 0);
+        DialogControlSetVisible(libDPAN_gv_creator_upButton[lv_i], PlayerGroupAll(), true);
+        DialogControlSetVisible(libDPAN_gv_creator_upButton[lv_i], PlayerGroupAll(), true);
+        DialogControlHookup(libDPAN_gv_creator_upButton[lv_i], c_triggerControlTypeImage, "FaceImage");
+        libNtve_gf_SetDialogItemImage(DialogControlLastCreated(), "Assets\\Textures\\ui_arrowwhite.dds", PlayerGroupAll());
+        libNtve_gf_SetDialogItemRotation(DialogControlLastCreated(), 0, PlayerGroupAll());
+        DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
+    }
+}
+
+void libDPAN_gf_RenderUnitTesterPlacementCard (int lp_player) {
+    // Variable Declarations
+    int lv_minShow;
+    int lv_maxShow;
+    int lv_maxTotal;
+    int lv_x;
+    int lv_y;
+    int lv_selectedTab;
+    int lv_itemIndex;
+    int lv_buttonIndex;
+    string lv_unit;
+    string lv_actor;
+    string lv_upgrade;
+    abilcmd lv_command;
+    string lv_button;
+    playergroup lv_players;
+    int lv_bottom_panel;
+    int lv_buttons_panel;
+    string lv_factionString;
+    int lv_p;
+    int lv_level;
+    int lv_buttonSetIndex;
+    int lv_abilityCommandIndex;
+    string lv_casterAbility;
+    string lv_casterButton;
+    string lv_icon;
+    string lv_unitsDataString;
+
+    // Automatic Variable Declarations
+    int autoCC074D5B_ae;
+    const int autoCC074D5B_ai = 1;
+    int autoC5DD09CE_val;
+    const int autoE07A6B7D_ae = libDPAN_gv_spawnSets;
+    const int autoE07A6B7D_ai = 1;
+    const int auto4B56B4C7_ae = 14;
+    const int auto4B56B4C7_ai = 1;
+    int auto70BF7EAF_ae;
+    const int auto70BF7EAF_ai = 1;
+    int autoF3BC7874_ae;
+    const int autoF3BC7874_ai = 1;
+    int autoF49377F9_ae;
+    const int autoF49377F9_ai = 1;
+    int auto1A4060EB_ae;
+    const int auto1A4060EB_ai = 1;
+
+    // Variable Initialization
+    lv_selectedTab = libDPAN_gv_selectedTab[lp_player];
+    lv_actor = "";
+    lv_players = PlayerGroupSingle(lp_player);
+    lv_bottom_panel = c_invalidDialogControlId;
+    lv_buttons_panel = c_invalidDialogControlId;
+    lv_factionString = "";
+    lv_icon = "";
+    lv_unitsDataString = "";
+
+    // Implementation
+    if ((lv_selectedTab == -1)) {
+        return ;
+    }
+
+    autoCC074D5B_ae = ((libDPAN_gv_placementCardRows * libDPAN_gv_placementCardColumns) - 1);
+    lv_itemIndex = 0;
+    for ( ; ( (autoCC074D5B_ai >= 0 && lv_itemIndex <= autoCC074D5B_ae) || (autoCC074D5B_ai < 0 && lv_itemIndex >= autoCC074D5B_ae) ) ; lv_itemIndex += autoCC074D5B_ai ) {
+        DialogControlSetEnabled(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_itemIndex], lv_players, false);
+        DialogControlSetVisible(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_itemIndex], lv_players, false);
+        libNtve_gf_SetDialogItemTooltip(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_itemIndex], StringToText(""), lv_players);
+        DialogControlSetVisible(libDPAN_gv_creator_itemface[lv_selectedTab][lv_itemIndex], lv_players, false);
+    }
+    autoC5DD09CE_val = libDPAN_gv_selectedTab[lp_player];
+    if (autoC5DD09CE_val == 0) {
+        lv_maxTotal = PlayerGroupCount(libDPAN_gv_allPlayers);
+        lv_minShow = (1 + (libDPAN_gv_placementCardOffset[lv_selectedTab] * libDPAN_gv_placementCardColumns));
+        lv_maxShow = MinI(lv_maxTotal, ((lv_minShow - 1) + (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows)));
+        autoF3BC7874_ae = lv_maxShow;
+        lv_itemIndex = lv_minShow;
+        for ( ; ( (autoF3BC7874_ai >= 0 && lv_itemIndex <= autoF3BC7874_ae) || (autoF3BC7874_ai < 0 && lv_itemIndex >= autoF3BC7874_ae) ) ; lv_itemIndex += autoF3BC7874_ai ) {
+            lv_buttonIndex = (lv_itemIndex - lv_minShow);
+            lv_p = PlayerGroupPlayer(libDPAN_gv_allPlayers, lv_itemIndex);
+            libDPAN_gv_creator_itemunit[lv_selectedTab][lv_buttonIndex] = IntToString(lv_p);
+            DialogControlSetVisible(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            DialogControlSetEnabled(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            DialogControlSetEnabled(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            libNtve_gf_SetDialogItemTooltip(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], PlayerName(lv_p), lv_players);
+            lv_factionString = (PlayerRace(lv_p));
+            if ((lv_factionString != "")) {
+                libNtve_gf_SetDialogItemImage(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], (CatalogFieldValueGet(c_gameCatalogRace, PlayerRace(lv_p), "Icon", c_playerAny)), lv_players);
+                DialogControlSetVisible(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            }
+            else {
+                DialogControlSetVisible(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], lv_players, false);
+            }
+        }
+    }
+    else if (autoC5DD09CE_val == 1) {
+        lv_maxTotal = libDPAN_gf_CountWords(libDPAN_gv_allRaces);
+        lv_minShow = (1 + (libDPAN_gv_placementCardOffset[lv_selectedTab] * libDPAN_gv_placementCardColumns));
+        lv_maxShow = MinI(lv_maxTotal, ((lv_minShow - 1) + (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows)));
+        autoF49377F9_ae = lv_maxShow;
+        lv_itemIndex = lv_minShow;
+        for ( ; ( (autoF49377F9_ai >= 0 && lv_itemIndex <= autoF49377F9_ae) || (autoF49377F9_ai < 0 && lv_itemIndex >= autoF49377F9_ae) ) ; lv_itemIndex += autoF49377F9_ai ) {
+            lv_buttonIndex = (lv_itemIndex - lv_minShow);
+            lv_factionString = StringWord(libDPAN_gv_allRaces, lv_itemIndex);
+            libDPAN_gv_creator_itemunit[lv_selectedTab][lv_buttonIndex] = lv_factionString;
+            DialogControlSetVisible(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            DialogControlSetEnabled(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            if ((lv_factionString != "")) {
+                DialogControlSetEnabled(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], lv_players, true);
+                TextExpressionSetToken("Param/Expression/lib_DPAN_96DE2498", "name", StringExternal(CatalogFieldValueGet(c_gameCatalogRace, lv_factionString, "Name", c_playerAny)));
+                libNtve_gf_SetDialogItemTooltip(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], TextExpressionAssemble("Param/Expression/lib_DPAN_96DE2498"), lv_players);
+                libNtve_gf_SetDialogItemImage(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], (CatalogFieldValueGet(c_gameCatalogRace, lv_factionString, "Icon", c_playerAny)), lv_players);
+                DialogControlSetVisible(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            }
+            else {
+                DialogControlSetVisible(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], lv_players, false);
+            }
+        }
+    }
+    else if (autoC5DD09CE_val == 4) {
+        lv_maxTotal = (libDPAN_gf_CountWords(libDPAN_gv_currentUpgradesSkills) + libDPAN_gf_CountWords(libDPAN_gv_currentUpgradesLevels));
+        lv_minShow = (1 + (libDPAN_gv_placementCardOffset[lv_selectedTab] * libDPAN_gv_placementCardColumns));
+        lv_maxShow = MinI(lv_maxTotal, ((lv_minShow - 1) + (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows)));
+        auto1A4060EB_ae = lv_maxShow;
+        lv_itemIndex = lv_minShow;
+        for ( ; ( (auto1A4060EB_ai >= 0 && lv_itemIndex <= auto1A4060EB_ae) || (auto1A4060EB_ai < 0 && lv_itemIndex >= auto1A4060EB_ae) ) ; lv_itemIndex += auto1A4060EB_ai ) {
+            lv_buttonIndex = (lv_itemIndex - lv_minShow);
+            if ((lv_itemIndex <= libDPAN_gf_CountWords(libDPAN_gv_currentUpgradesLevels))) {
+                lv_level = 1;
+                while ((CatalogEntryIsValid(c_gameCatalogUpgrade, (StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level))) == true) && (TechTreeUpgradeCount(libDPAN_gv_creator_selectedPlayer[lp_player], ((StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level))), c_techCountCompleteOnly) > 0)) {
+                    lv_level = (lv_level + 1);
+                }
+                lv_level = (lv_level - 1);
+                if ((lv_level == 0)) {
+                    lv_upgrade = ((StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(1)));
+                }
+                else {
+                    lv_upgrade = ((StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level)));
+                }
+            }
+            else {
+                lv_upgrade = (StringWord(libDPAN_gv_currentUpgradesSkills, (lv_itemIndex - libDPAN_gf_CountWords(libDPAN_gv_currentUpgradesLevels))));
+            }
+            lv_command = TechTreeUpgradeProducedAbilCmd(lv_upgrade, 0);
+            libDPAN_gv_creator_itemunit[lv_selectedTab][lv_buttonIndex] = (lv_upgrade);
+            if ((lv_command != null)) {
+                lv_button = (CatalogFieldValueGet(c_gameCatalogAbil, AbilityCommandGetAbility(lv_command), "InfoArray[" + IntToString(AbilityCommandGetCommand(lv_command)) + "].Button.DefaultButtonFace", lp_player));
+                TextExpressionSetToken("Param/Expression/lib_DPAN_947C4D19", "name", StringExternal(CatalogFieldValueGet(c_gameCatalogButton, lv_button, "Name", c_playerAny)));
+                TextExpressionSetToken("Param/Expression/lib_DPAN_947C4D19", "min_icon", StringExternal("UI/Icon22_Minerals_Terr"));
+                TextExpressionSetToken("Param/Expression/lib_DPAN_947C4D19", "min_val", IntToText(CatalogFieldValueGetAsInt(c_gameCatalogAbil, AbilityCommandGetAbility(lv_command), "InfoArray[" + IntToString(AbilityCommandGetCommand(lv_command)) + "].Resource[" + IntToString(0) + "]", c_playerAny)));
+                TextExpressionSetToken("Param/Expression/lib_DPAN_947C4D19", "gas_icon", StringExternal("UI/Icon22_Vespene_Terr"));
+                TextExpressionSetToken("Param/Expression/lib_DPAN_947C4D19", "gas_val", IntToText(CatalogFieldValueGetAsInt(c_gameCatalogAbil, AbilityCommandGetAbility(lv_command), "InfoArray[" + IntToString(AbilityCommandGetCommand(lv_command)) + "].Resource[" + IntToString(1) + "]", c_playerAny)));
+                TextExpressionSetToken("Param/Expression/lib_DPAN_947C4D19", "desc", StringExternal(CatalogFieldValueGet(c_gameCatalogButton, lv_button, "Tooltip", c_playerAny)));
+                libNtve_gf_SetDialogItemTooltip(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], TextExpressionAssemble("Param/Expression/lib_DPAN_947C4D19"), lv_players);
+            }
+            else {
+                TextExpressionSetToken("Param/Expression/lib_DPAN_21CBA28B", "name", StringExternal(CatalogFieldValueGet(c_gameCatalogUpgrade, lv_upgrade, "Name", c_playerAny)));
+                libNtve_gf_SetDialogItemTooltip(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], TextExpressionAssemble("Param/Expression/lib_DPAN_21CBA28B"), lv_players);
+            }
+            DialogControlSetVisible(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            DialogControlSetEnabled(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], lv_players, true);
+            libNtve_gf_SetDialogItemImage(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], (CatalogFieldValueGet(c_gameCatalogUpgrade, lv_upgrade, "Icon", c_playerAny)), lv_players);
+            if ((lv_itemIndex <= libDPAN_gf_CountWords(libDPAN_gv_currentUpgradesLevels))) {
+                if ((lv_level > 0)) {
+                    DialogControlSetEnabled(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], PlayerGroupSingle(lp_player), true);
+                }
+                else {
+                    DialogControlSetEnabled(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], PlayerGroupSingle(lp_player), false);
+                }
+            }
+            else {
+                if ((TechTreeUpgradeCount(libDPAN_gv_creator_selectedPlayer[lp_player], lv_upgrade, c_techCountCompleteOnly) > 0)) {
+                    DialogControlSetEnabled(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], PlayerGroupSingle(lp_player), true);
+                }
+                else {
+                    DialogControlSetEnabled(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], PlayerGroupSingle(lp_player), false);
+                }
+            }
+            DialogControlSetVisible(libDPAN_gv_creator_itemface[lv_selectedTab][lv_buttonIndex], lv_players, true);
+        }
+    }
+    else {
+        lv_buttonSetIndex = 1;
+        for ( ; ( (autoE07A6B7D_ai >= 0 && lv_buttonSetIndex <= autoE07A6B7D_ae) || (autoE07A6B7D_ai < 0 && lv_buttonSetIndex >= autoE07A6B7D_ae) ) ; lv_buttonSetIndex += autoE07A6B7D_ai ) {
+            lv_abilityCommandIndex = 0;
+            for ( ; ( (auto4B56B4C7_ai >= 0 && lv_abilityCommandIndex <= auto4B56B4C7_ae) || (auto4B56B4C7_ai < 0 && lv_abilityCommandIndex >= auto4B56B4C7_ae) ) ; lv_abilityCommandIndex += auto4B56B4C7_ai ) {
+                lv_casterAbility = (("SpawnCaster" + IntToString(lv_buttonSetIndex)));
+                CatalogFieldValueSet(c_gameCatalogAbil, lv_casterAbility, "InfoArray[" + IntToString(lv_abilityCommandIndex) + "].Unit", lp_player, "");
+            }
+        }
+        if ((lv_selectedTab == 2)) {
+            lv_unitsDataString = libDPAN_gv_currentUnits;
+        }
+        else {
+            lv_unitsDataString = libDPAN_gv_currentStructures;
+        }
+        lv_maxTotal = libDPAN_gf_CountWords(lv_unitsDataString);
+        lv_minShow = (1 + (libDPAN_gv_placementCardOffset[lv_selectedTab] * libDPAN_gv_placementCardColumns));
+        lv_maxShow = MinI(lv_maxTotal, ((lv_minShow - 1) + (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows)));
+        auto70BF7EAF_ae = lv_maxShow;
+        lv_itemIndex = lv_minShow;
+        for ( ; ( (auto70BF7EAF_ai >= 0 && lv_itemIndex <= auto70BF7EAF_ae) || (auto70BF7EAF_ai < 0 && lv_itemIndex >= auto70BF7EAF_ae) ) ; lv_itemIndex += auto70BF7EAF_ai ) {
+            lv_buttonIndex = (lv_itemIndex - lv_minShow);
+            lv_unit = (StringWord(lv_unitsDataString, lv_itemIndex));
+            lv_actor = DataTableGetString(true, ("^ACTOR_" + (lv_unit)));
+            if ((CatalogEntryIsValid(c_gameCatalogActor, lv_actor) == true)) {
+                lv_icon = CatalogFieldValueGet(c_gameCatalogActor, lv_actor, "UnitIcon", lp_player);
+            }
+            else {
+                lv_icon = ("Assets\\Textures\\sc2_ui_glues_icons_purchasewarning.dds");
+            }
+            libDPAN_gv_creator_itemunit[lv_selectedTab][lv_buttonIndex] = (lv_unit);
+            DialogControlSetVisible(libDPAN_gv_creator_itembutton[lv_selectedTab][lv_buttonIndex], lv_players, false);
+            if ((lv_buttonIndex >= 15)) {
+                if ((lv_buttonIndex >= 30)) {
+                    if ((lv_buttonIndex >= 45)) {
+                        lv_buttonSetIndex = 4;
+                        lv_abilityCommandIndex = (lv_buttonIndex - 45);
+                    }
+                    else {
+                        lv_buttonSetIndex = 3;
+                        lv_abilityCommandIndex = (lv_buttonIndex - 30);
+                    }
+                }
+                else {
+                    lv_buttonSetIndex = 2;
+                    lv_abilityCommandIndex = (lv_buttonIndex - 15);
+                }
+            }
+            else {
+                lv_buttonSetIndex = 1;
+                lv_abilityCommandIndex = lv_buttonIndex;
+            }
+            lv_casterAbility = (("SpawnCaster" + IntToString(lv_buttonSetIndex)));
+            lv_casterButton = (("SpawnCaster" + IntToString((lv_buttonIndex + 1))));
+            CatalogFieldValueSet(c_gameCatalogAbil, lv_casterAbility, "InfoArray[" + IntToString(lv_abilityCommandIndex) + "].Unit", lp_player, (lv_unit));
+            CatalogFieldValueSet(c_gameCatalogButton, lv_casterButton, "Icon", lp_player, lv_icon);
+            CatalogFieldValueSet(c_gameCatalogButton, lv_casterButton, "Name", lp_player, CatalogFieldValueGet(c_gameCatalogUnit, lv_unit, "Name", c_playerAny));
+            CatalogFieldValueSet(c_gameCatalogButton, lv_casterButton, "Tooltip", lp_player, CatalogFieldValueGet(c_gameCatalogUnit, lv_unit, "Description", c_playerAny));
+        }
+    }
+    if ((lv_minShow > 1)) {
+        DialogControlSetVisible(libDPAN_gv_creator_upButton[lv_selectedTab], lv_players, true);
+    }
+    else {
+        DialogControlSetVisible(libDPAN_gv_creator_upButton[lv_selectedTab], lv_players, false);
+    }
+    if ((lv_maxShow < lv_maxTotal)) {
+        DialogControlSetVisible(libDPAN_gv_creator_bottomButton[lv_selectedTab], lv_players, true);
+    }
+    else {
+        DialogControlSetVisible(libDPAN_gv_creator_bottomButton[lv_selectedTab], lv_players, false);
+    }
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: Map Init
+//--------------------------------------------------------------------------------------------------
+bool libDPAN_gt_MapInit_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libDPAN_gf_RunTester();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libDPAN_gt_MapInit_Init () {
+    libDPAN_gt_MapInit = TriggerCreate("libDPAN_gt_MapInit_Func");
+    TriggerAddEventMapInit(libDPAN_gt_MapInit);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Toggle Visibility
+//--------------------------------------------------------------------------------------------------
+bool libDPAN_gt_ToggleVisibility_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((DialogControlIsVisible(libDPAN_gv_spawnPanel, EventPlayer()) == true)) {
+        DialogControlSetVisible(libDPAN_gv_spawnPanel, PlayerGroupSingle(EventPlayer()), false);
+        DialogSetVisible(libDPAN_gv_spawnDialog, PlayerGroupSingle(EventPlayer()), false);
+    }
+    else {
+        DialogControlSetVisible(libDPAN_gv_spawnPanel, PlayerGroupSingle(EventPlayer()), true);
+        if (((libDPAN_gv_selectedTab[EventPlayer()] == 2) || (libDPAN_gv_selectedTab[EventPlayer()] == 3))) {
+            DialogSetVisible(libDPAN_gv_spawnDialog, PlayerGroupSingle(EventPlayer()), true);
+        }
+
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libDPAN_gt_ToggleVisibility_Init () {
+    libDPAN_gt_ToggleVisibility = TriggerCreate("libDPAN_gt_ToggleVisibility_Func");
+    TriggerAddEventKeyPressed(libDPAN_gt_ToggleVisibility, c_playerAny, c_keyTab, true, c_keyModifierStateIgnore, c_keyModifierStateIgnore, c_keyModifierStateIgnore);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Change Spawned Unit Owner
+//--------------------------------------------------------------------------------------------------
+bool libDPAN_gt_ChangeSpawnedUnitOwner_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitSetOwner(EventUnitCreatedUnit(), libDPAN_gv_creator_selectedPlayer[UnitGetOwner(EventUnitCreatedUnit())], true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libDPAN_gt_ChangeSpawnedUnitOwner_Init () {
+    libDPAN_gt_ChangeSpawnedUnitOwner = TriggerCreate("libDPAN_gt_ChangeSpawnedUnitOwner_Func");
+    TriggerAddEventUnitCreated(libDPAN_gt_ChangeSpawnedUnitOwner, null, "SpawnCaster1", null);
+    TriggerAddEventUnitCreated(libDPAN_gt_ChangeSpawnedUnitOwner, null, "SpawnCaster2", null);
+    TriggerAddEventUnitCreated(libDPAN_gt_ChangeSpawnedUnitOwner, null, "SpawnCaster3", null);
+    TriggerAddEventUnitCreated(libDPAN_gt_ChangeSpawnedUnitOwner, null, "SpawnCaster4", null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Card Button Cliked
+//--------------------------------------------------------------------------------------------------
+bool libDPAN_gt_CardButtonCliked_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_cardlayout;
+    string lv_unit;
+    int lv_offset;
+    int lv_itemIndex;
+    string lv_upgrade;
+    int lv_level;
+
+    // Automatic Variable Declarations
+    const int auto683D162C_ae = libDPAN_gv_panels;
+    int auto683D162C_var;
+    const int autoF1F3AA7B_ae = libDPAN_gv_panels;
+    int autoF1F3AA7B_var;
+    int autoF0521618_ae;
+    int autoF0521618_var;
+    int auto0EC35E3C_ae;
+    int auto0EC35E3C_var;
+    int autoB77A828D_ae;
+    int autoB77A828D_var;
+    int auto47D30471_ae;
+    int auto47D30471_var;
+    int auto8B2E3A4C_ae;
+    int auto8B2E3A4C_var;
+
+    // Variable Initialization
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto683D162C_var = 0;
+    for ( ; auto683D162C_var <= auto683D162C_ae; auto683D162C_var += 1 ) {
+        if ((EventDialogControl() == libDPAN_gv_creator_bottomButton[auto683D162C_var])) {
+            libDPAN_gv_placementCardOffset[auto683D162C_var] += 8;
+            libDPAN_gf_RenderUnitTesterPlacementCard(EventPlayer());
+            return true;
+        }
+
+        if ((EventDialogControl() == libDPAN_gv_creator_upButton[auto683D162C_var])) {
+            libDPAN_gv_placementCardOffset[auto683D162C_var] -= 8;
+            libDPAN_gf_RenderUnitTesterPlacementCard(EventPlayer());
+            return true;
+        }
+
+    }
+    autoF1F3AA7B_var = 0;
+    for ( ; autoF1F3AA7B_var <= autoF1F3AA7B_ae; autoF1F3AA7B_var += 1 ) {
+        if ((EventDialogControl() == libDPAN_gv_creator_tabsButtons[autoF1F3AA7B_var])) {
+            if ((libDPAN_gv_selectedTab[EventPlayer()] == autoF1F3AA7B_var)) {
+                libDPAN_gf_SelectPanel(EventPlayer(), -1);
+            }
+            else {
+                libDPAN_gf_SelectPanel(EventPlayer(), autoF1F3AA7B_var);
+            }
+            return true;
+        }
+
+    }
+    lv_cardlayout = 0;
+    autoF0521618_ae = (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows);
+    autoF0521618_var = 0;
+    for ( ; autoF0521618_var <= autoF0521618_ae; autoF0521618_var += 1 ) {
+        if ((EventDialogControl() == libDPAN_gv_creator_itembutton[lv_cardlayout][autoF0521618_var])) {
+            libDPAN_gf_Selectplayer(StringToInt(libDPAN_gv_creator_itemunit[lv_cardlayout][autoF0521618_var]), EventPlayer());
+            libDPAN_gf_SelectPanel(EventPlayer(), 1);
+            return true;
+        }
+
+    }
+    lv_cardlayout = (lv_cardlayout + 1);
+    auto0EC35E3C_ae = (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows);
+    auto0EC35E3C_var = 0;
+    for ( ; auto0EC35E3C_var <= auto0EC35E3C_ae; auto0EC35E3C_var += 1 ) {
+        if ((EventDialogControl() == libDPAN_gv_creator_itembutton[lv_cardlayout][auto0EC35E3C_var])) {
+            libDPAN_gv_creator_selectedRace[EventPlayer()] = libDPAN_gv_creator_itemunit[lv_cardlayout][auto0EC35E3C_var];
+            libDPAN_gf_SelectRace((libDPAN_gv_creator_selectedRace[EventPlayer()]), 0);
+            libDPAN_gf_RenderUnitTesterPlacementCard(EventPlayer());
+            libDPAN_gf_SelectPanel(EventPlayer(), 2);
+            return true;
+        }
+
+    }
+    lv_cardlayout = (lv_cardlayout + 1);
+    autoB77A828D_ae = (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows);
+    autoB77A828D_var = 0;
+    for ( ; autoB77A828D_var <= autoB77A828D_ae; autoB77A828D_var += 1 ) {
+        if ((EventDialogControl() == libDPAN_gv_creator_itembutton[lv_cardlayout][autoB77A828D_var])) {
+            lv_unit = (libDPAN_gv_creator_itemunit[lv_cardlayout][autoB77A828D_var]);
+            libNtve_gf_CreateUnitsWithDefaultFacing(1, lv_unit, 0, libDPAN_gv_creator_selectedPlayer[EventPlayer()], CameraGetTarget(EventPlayer()));
+            UnitGroupSelect(UnitLastCreatedGroup(), EventPlayer(), true);
+            return true;
+        }
+
+    }
+    lv_cardlayout = (lv_cardlayout + 1);
+    auto47D30471_ae = (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows);
+    auto47D30471_var = 0;
+    for ( ; auto47D30471_var <= auto47D30471_ae; auto47D30471_var += 1 ) {
+        if ((EventDialogControl() == libDPAN_gv_creator_itembutton[lv_cardlayout][auto47D30471_var])) {
+            lv_unit = (libDPAN_gv_creator_itemunit[lv_cardlayout][auto47D30471_var]);
+            libNtve_gf_CreateUnitsWithDefaultFacing(1, lv_unit, 0, libDPAN_gv_creator_selectedPlayer[EventPlayer()], CameraGetTarget(EventPlayer()));
+            UnitGroupSelect(UnitLastCreatedGroup(), EventPlayer(), true);
+            return true;
+        }
+
+    }
+    lv_cardlayout = (lv_cardlayout + 1);
+    lv_offset = (1 + (libDPAN_gv_placementCardOffset[lv_cardlayout] * libDPAN_gv_placementCardColumns));
+    auto8B2E3A4C_ae = (libDPAN_gv_placementCardColumns * libDPAN_gv_placementCardRows);
+    auto8B2E3A4C_var = 0;
+    for ( ; auto8B2E3A4C_var <= auto8B2E3A4C_ae; auto8B2E3A4C_var += 1 ) {
+        if ((EventDialogControl() == libDPAN_gv_creator_itembutton[lv_cardlayout][auto8B2E3A4C_var])) {
+            lv_itemIndex = (auto8B2E3A4C_var - lv_offset);
+            lv_itemIndex = (lv_itemIndex + 2);
+            if ((lv_itemIndex <= libDPAN_gf_CountWords(libDPAN_gv_currentUpgradesLevels))) {
+                lv_level = 1;
+                while ((CatalogEntryIsValid(c_gameCatalogUpgrade, (StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level))) == true) && (TechTreeUpgradeCount(libDPAN_gv_creator_selectedPlayer[EventPlayer()], ((StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level))), c_techCountCompleteOnly) > 0)) {
+                    lv_level = (lv_level + 1);
+                }
+                if ((CatalogEntryIsValid(c_gameCatalogUpgrade, (StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level))) == true)) {
+                    lv_upgrade = ((StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level)));
+                    libNtve_gf_SetUpgradeLevelForPlayer(libDPAN_gv_creator_selectedPlayer[EventPlayer()], lv_upgrade, 1);
+                }
+                else {
+                    lv_level = 1;
+                    while ((CatalogEntryIsValid(c_gameCatalogUpgrade, (StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level))) == true)) {
+                        lv_upgrade = ((StringWord(libDPAN_gv_currentUpgradesLevels, lv_itemIndex) + IntToString(lv_level)));
+                        libNtve_gf_SetUpgradeLevelForPlayer(libDPAN_gv_creator_selectedPlayer[EventPlayer()], lv_upgrade, 0);
+                        lv_level = (lv_level + 1);
+                    }
+                }
+            }
+            else {
+                lv_upgrade = (libDPAN_gv_creator_itemunit[lv_cardlayout][auto8B2E3A4C_var]);
+                if ((TechTreeUpgradeCount(libDPAN_gv_creator_selectedPlayer[EventPlayer()], lv_upgrade, c_techCountCompleteOnly) == 1)) {
+                    libNtve_gf_SetUpgradeLevelForPlayer(libDPAN_gv_creator_selectedPlayer[EventPlayer()], lv_upgrade, 0);
+                }
+                else {
+                    libNtve_gf_SetUpgradeLevelForPlayer(libDPAN_gv_creator_selectedPlayer[EventPlayer()], lv_upgrade, 1);
+                }
+            }
+            libDPAN_gf_RenderUnitTesterPlacementCard(EventPlayer());
+            break;
+        }
+
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libDPAN_gt_CardButtonCliked_Init () {
+    libDPAN_gt_CardButtonCliked = TriggerCreate("libDPAN_gt_CardButtonCliked_Func");
+    TriggerAddEventDialogControl(libDPAN_gt_CardButtonCliked, c_playerAny, c_invalidDialogControlId, c_triggerControlEventTypeClick);
+}
+
+void libDPAN_InitTriggers () {
+    libDPAN_gt_MapInit_Init();
+    libDPAN_gt_ToggleVisibility_Init();
+    libDPAN_gt_ChangeSpawnedUnitOwner_Init();
+    libDPAN_gt_CardButtonCliked_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool libDPAN_InitLib_completed = false;
+
+void libDPAN_InitLib () {
+    if (libDPAN_InitLib_completed) {
+        return;
+    }
+
+    libDPAN_InitLib_completed = true;
+
+    libDPAN_InitLibraries();
+    libDPAN_InitVariables();
+    libDPAN_InitTriggers();
+}
+

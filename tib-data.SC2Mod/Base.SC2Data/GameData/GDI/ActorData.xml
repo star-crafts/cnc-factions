@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorUnit default="1" parent="GenericUnitBase" id="GDIUnit">
+        <?token id="unitName" type="CUnitLink" value="##id##"?>
+        <?token id="icon" value="##id##"?>
+        <?token id="wireframe" value="##id##"?>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+        <PortraitModel value="GDIPortrait"/>
+        <Macros value="UnloadDropAnim"/>
+        <On index="0" Send="Create SoundEmitter GDIZoneTrooper_Ambience"/>
+        <On index="35" Terms="UnitBirth.*.Normal" Send="AnimPlay Birth Stand 0 0.000000"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <StandAnimTurnTime value="5"/>
+        <WalkAnimMoveSpeed value="2"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <HeroIcon value="Assets\icons\GDI\##icon##.dds"/>
+        <UnitIcon value="Assets\icons\GDI\##icon##.dds"/>
+        <GroupIcon>
+            <Image value="Assets\icons\GDI\##wireframe##.dds"/>
+        </GroupIcon>
+        <Wireframe>
+            <Image value="Assets\icons\GDI\##wireframe##.dds"/>
+        </Wireframe>
+        <ErrorArray Error="CantSeeBuildLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantSeeLandLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantBuildLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CouldntReachTarget" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+    </CActorUnit>
+    <CActorUnit default="1" parent="GDIUnit" id="GDIInfantry">
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBracketStart Jump Jump,Start Jump Jump,End ClosingFull,ContentPlayOnce 1.500000 AsTimeScale"/>
+        <On Terms="Abil.JumpPack.SourcePrepStart" Send="AnimBlendTimeApply"/>
+        <On Terms="Effect.JumpPackPointSearch.Stop; At Caster" Send="AnimBlendTimeApply"/>
+        <On Terms="Behavior.GDIZoneTrooperjump.Launch" Send="AnimBracketStart Jump Jump,Start Jump Jump,End"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear Jump"/>
+        <LifeArmorIcon value="Assets\textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+    </CActorUnit>
+    <CActorUnit default="1" parent="GDIUnit" id="GDIVehicle">
+        <Aliases value="_UnitLarge"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create SiegeTank_Land"/>
+        <Model value="##id##"/>
+        <CreepHeightClass value="Tiny"/>
+        <BuildModel value="##id##"/>
+        <DeathArray index="Normal" ModelLink="##id##DeathRagdoll" SoundLink="SiegeTank_Explode"/>
+        <DeathCustomData Name="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PlacementModel value="##id##"/>
+        <StandAnimTurnTime value="3.33"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSiegeTank"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1"/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <ErrorArray Error="CantSeeBuildLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantSeeLandLocation" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantBuildLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <ErrorArray Error="CouldntReachTarget" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <HighlightTooltip value="Unit/Name/##id##"/>
+        <LifeArmorIcon value="Assets\textures\btn-upgrade-terran-vehicleplatinglevel0.dds"/>
+<!--        <SoundArray index="Ready" value="Shepherd_Ready"/>-->
+<!--        <SoundArray index="Help" value="Shepherd_Help"/>-->
+<!--        <SoundArray index="What" value="Shepherd_What"/>-->
+<!--        <SoundArray index="Yes" value="Shepherd_Yes"/>-->
+<!--        <SoundArray index="Attack" value="Shepherd_Attack"/>-->
+<!--        <SoundArray index="Pissed" value="Shepherd_What"/>-->
+        <SoundArray index="Movement" value="Shepherd_Movement"/>
+    </CActorUnit>
+    <CActorUnit default="1" parent="GDIUnit" id="GDIAir" >
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmAir"/>
+        <Macros value="PhysicsDeathsVoidAir"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Battlecruiser_Land"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionFlier"/>
+        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.250000,0.500000"/>
+            <RangeDown value="5.000000"/>
+            <RangeDownFade value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMassive2"/>
+        </TerrainSquibs>
+        <BarOffset value="75"/>
+        <BarWidth value="130"/>
+        <Aliases value="_UnitLarge"/>
+        <HostSiteOps Ops="SOpBankerVenom"/>
+        <AnimBlendTime value="0.300000"/>
+        <LifeArmorIcon value="Assets\icons\Nod\NodVehiclesArmors.dds"/>
+        <DeathArray index="Normal" ModelLink="CABALVenom_Death" SoundLink="Wraith_Explode"/>
+        <SoundArray index="Movement" value="Venom_Movement"/>
+    </CActorUnit>
+    <CActorUnit default="1" parent="GenericUnitStandard" id="GDIBuilding">
+        <?token id="unitName" type="CUnitLink" value="##id##"?>
+        <?token id="icon" value="##id##"?>
+        <?token id="wireframe" value="##id##"?>
+        <BuildModel value="##id##_Birth"/>
+        <ModelFlags index="OutlineOccluder" value="1"/>
+        <Aliases value="_CreepEngulfable"/>
+        <Aliases value="_UnitHuge"/>
+        <CreepHeightClass value="Default"/>
+        <CreepRateGrow value="Grow"/>
+        <CreepRateShrink value="Shrink"/>
+        <Macros value="QueueAnim"/>
+        <On index="69" Terms="UnitConstruction.##unitName##.Start" Send="Create GDIbuild"/>
+        <!--        <On Terms="UnitConstruction.##unitName##.Start" Send="Create ##unitName##Build"/>-->
+        <On Terms="UnitConstruction.##unitName##.Start" Send="Create BuildingTerrainFlatten"/>
+        <On Terms="UnitConstruction.##unitName##.Cancel" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitConstruction.##unitName##.Finish" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitConstruction.##unitName##.Start" Send="QueryRadius 1.750000 BuildingCrushQueryResponse"/>
+        <On Terms="UnitBirth.##unitName##.Normal" Send="Create BuildingTerrainFlatten"/>
+        <On Terms="UnitBirth.##unitName##.Suppressed" Send="Create BuildingTerrainFlattenInstant"/>
+        <On Terms="UnitBirth.##unitName##.EditorPlaced" Send="Create BuildingTerrainFlattenEditor"/>
+        <On Terms="UnitDeath.##unitName##" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On Terms="UnitDeathCustomize; CreepEngulfs" Send="CreepEngulfmentStopTransition"/>
+        <On Terms="ActorCreation; CreepIntersects" Send="CreepEngulfmentStartTransition"/>
+        <DeathArray index="Normal" ModelLink="##unitName##_Death" SoundLink=""/>
+        <PlacementModel value="##unitName##Placement"/>
+        <PlacementSound value="Terran_BuildingPlacement"/>
+        <Macros value="SnowVisualUnitMacroMP"/>
+        <LifeArmorIcon value="Assets\icons\Nod\FXNod_EnhancedShieldsUpgrade.dds"/>
+        <PortraitModel value="GDIPortrait"/>
+        <SoundArray index="Construction" value="Terran_ConstructionWhat"/>
+        <NameOffset value="110"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <Model value="##id##"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <HeroIcon value="Assets\icons\GDI\##icon##.dds"/>
+        <UnitIcon value="Assets\icons\GDI\##icon##.dds"/>
+        <GroupIcon>
+            <Image value="Assets\icons\GDI\##wireframe##.dds"/>
+        </GroupIcon>
+        <Wireframe>
+            <Image value="Assets\icons\GDI\##wireframe##.dds"/>
+        </Wireframe>
+    </CActorUnit>
+
+    <CActorUnit parent="GDIBuilding" id="GDIBarracks">
+        <DeathArray index="Normal" ModelLink="BarracksDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="Barracks_Explode"/>
+        <BarOffset value="155"/>
+        <BarWidth value="160"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Barracks_Ready"/>
+        <SoundArray index="What" value="Barracks_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIWarFactory">
+        <DeathArray index="Normal" ModelLink="FactoryDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Factory_Explode"/>
+        <BarOffset value="150"/>
+        <BarWidth value="160"/>
+        <HighlightTooltip value="Unit/Name/GDIFactory"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Factory_Ready"/>
+        <SoundArray index="What" value="Factory_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIAirfield">
+        <DeathArray index="Normal" ModelLink="FactoryDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Factory_Explode"/>
+        <BarOffset value="150"/>
+        <BarWidth value="160"/>
+        <Scale value="0.900000"/>
+        <HighlightTooltip value="Unit/Name/GDIFactory"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Factory_Ready"/>
+        <SoundArray index="What" value="Factory_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDICombatSupportAirfield"/>
+    <CActorUnit parent="GDIBuilding" id="GDIRefinery">
+        <DeathArray index="Normal" ModelLink="RefineryDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Refinery_Explode"/>
+        <DeathCustoms ModelLink="RefineryEmptyDeath" Name="Empty"/>
+        <DeathCustoms ModelLink="RefineryDeathLow" SoundLink="Terran_ExplosionMedium" Name="Low"/>
+        <Scale value="1.200000"/>
+        <BarOffset value="160"/>
+        <BarWidth value="120"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Refinery_Ready"/>
+        <SoundArray index="What" value="Refinery_What"/>
+        <StatusHarvesterData Text="UI/HarvesterCountMinerals" SearchFilters="HarvestableResource;Player,Ally,Enemy" SearchRadius="8"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIConstructionYard">
+        <Macros value="BuildingFlattenTerrainMacro"/>
+        <Macros value="MacroTownhallDeco_Terran"/>
+        <Macros value="TerranPlanetaryFortressPlayerDecalMacro"/>
+        <AcceptedHostedPropTransfers index="Decal" value="0"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo GDIConstructionYard" Send="Create"/>
+        <On Terms="UnitBirth.GDIConstructionYard; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
+        <On Terms="UnitBirth.GDIConstructionYard; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom GDIConstructionYard" Send="Destroy"/>
+        <DeathArray index="Normal" ModelLink="GDIConyardDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="PlanetaryFortress_Explode"/>
+        <BarOffset value="180"/>
+        <BarWidth value="200"/>
+        <MinimapFlashWhenAttacked value="0"/>
+        <MinimapUseSelfColor value="0"/>
+        <MinimapUseSelectionColor value="0"/>
+        <NameOffset value="150"/>
+        <SoundArray index="Ready" value="GDIMCV_Ready"/>
+        <SoundArray index="What" value="GDIMCV_What"/>
+        <Scale value="0.900000"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDISilo">
+        <Macros value="ExtractAnim"/>
+        <On index="35" Send="AnimPlay Birth Stand 0 0.000000"/>
+        <On Terms="Behavior.HarvestableVespeneGeyserGas.Deplete" Send="SetTintColor 255,170,170"/>
+        <On Terms="Behavior.HarvestableVespeneGeyserGas.Deplete" Send="AnimGroupRemove D"/>
+        <On Terms="Behavior.HarvestableVespeneGeyserGas.Deplete" Send="AnimGroupApply B"/>
+        <On Terms="Behavior.HarvestableVespeneGeyserGas.Restore" Send="SetTintColor 255,255,255"/>
+        <On Terms="Behavior.HarvestableVespeneGeyserGas.Restore" Send="AnimGroupRemove B"/>
+        <On Terms="Behavior.HarvestableVespeneGeyserGas.Restore" Send="AnimGroupApply D"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit NoVespene" Send="DeathCustomize Empty"/>
+        <On Terms="UnitBirth.GDISilo" Send="TimerSet 0.100000 HideGeyser"/>
+        <On Terms="Behavior.NodGroundDrop.On" Send="AnimPlay Attack Birth,B NonLooping 0.000000 0.000000"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Refinery_Explode"/>
+        <DeathCustoms ModelLink="RefineryEmptyDeath" Name="Empty"/>
+        <DeathCustoms ModelLink="RefineryDeathLow" SoundLink="Terran_ExplosionMedium" Name="Low"/>
+        <BarOffset value="160"/>
+        <BarWidth value="120"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Refinery_Ready"/>
+        <SoundArray index="What" value="Refinery_What"/>
+        <StatusHarvesterData Text="UI/HarvesterCountVespene"/>
+    </CActorUnit>
+    <CActorUnit id="GDISiloRich" parent="GDIBuilding" wireframe="GDISiloWireframe" icon="GDISilo">
+        <Macros value="ExtractAnim"/>
+        <Model value="GDISilo"/>
+        <On index="35" Send="AnimPlay Birth Stand 0 0.000000"/>
+        <On Terms="Behavior.HarvestableRichVespeneGeyserGas.Deplete" Send="SetTintColor 255,170,170"/>
+        <On Terms="Behavior.HarvestableRichVespeneGeyserGas.Deplete" Send="AnimGroupRemove D"/>
+        <On Terms="Behavior.HarvestableRichVespeneGeyserGas.Deplete" Send="AnimGroupApply B"/>
+        <On Terms="Behavior.HarvestableRichVespeneGeyserGas.Restore" Send="SetTintColor 255,255,255"/>
+        <On Terms="Behavior.HarvestableRichVespeneGeyserGas.Restore" Send="AnimGroupRemove B"/>
+        <On Terms="Behavior.HarvestableRichVespeneGeyserGas.Restore" Send="AnimGroupApply D"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit NoVespene" Send="DeathCustomize Empty"/>
+        <On Terms="UnitBirth.RefineryRich" Send="TimerSet 0.100000 HideGeyser"/>
+        <CreepHeightClass value="Medium"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Refinery_Explode"/>
+        <DeathCustoms ModelLink="RefineryEmptyDeath" Name="Empty"/>
+        <DeathCustoms ModelLink="RefineryDeathLow" SoundLink="Terran_ExplosionMedium" Name="Low"/>
+        <BarOffset value="160"/>
+        <BarWidth value="120"/>
+        <SoundArray index="Ready" value="Refinery_Ready"/>
+        <SoundArray index="What" value="Refinery_What"/>
+        <StatusHarvesterData Text="UI/HarvesterCountVespene"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDICommandPost">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIArmoury">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDITechCenter">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDISpaceCommandUplink">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIReclamatorHub">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDICrane">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIWatchtower">
+        <DeathArray index="Normal" ModelLink="CABALObelisk_Death"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <BarOffset value="90"/>
+        <SoundArray index="Ready" value="MissileTurret_Ready"/>
+        <SoundArray index="What" value="MissileTurret_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIGuardianTower">
+        <DeathArray index="Normal" ModelLink="CABALObelisk_Death"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <BarOffset value="90"/>
+        <SoundArray index="Ready" value="MissileTurret_Ready"/>
+        <SoundArray index="What" value="MissileTurret_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIAABattery">
+        <DeathArray index="Normal" ModelLink="CABALObelisk_Death"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <BarOffset value="90"/>
+        <SoundArray index="Ready" value="MissileTurret_Ready"/>
+        <SoundArray index="What" value="MissileTurret_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDISonicEmitter">
+        <DeathArray index="Normal" ModelLink="CABALObelisk_Death"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <BarOffset value="90"/>
+        <SoundArray index="Ready" value="MissileTurret_Ready"/>
+        <SoundArray index="What" value="MissileTurret_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIFoxhole">
+        <DeathArray index="Normal" ModelLink="CABALObelisk_Death"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <BarOffset value="90"/>
+        <SoundArray index="Ready" value="MissileTurret_Ready"/>
+        <SoundArray index="What" value="MissileTurret_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIIonCannon">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIOutpost">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIBattleBase">
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIPowerPlant" >
+        <Aliases value="_UnitLarge"/>
+        <CreepHeightClass value="Small"/>
+        <DeathArray index="Normal" SoundLink="SupplyDepot_Explode"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="SupplyDepot_Explode"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <BarOffset value="70"/>
+        <BarWidth value="80"/>
+        <NameOffset value="40"/>
+        <SoundArray index="Ready" value="SupplyDepot_Ready"/>
+        <SoundArray index="What" value="SupplyDepot_What"/>
+        <On Terms="ActorCreation" Send="AnimPlay CoverA Cover,A PlayForever 0.000000"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo NodPowerPlantUpgraded" Send="Destroy"/>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,0,128,255"/>
+        </StatusColors>
+        <VitalColors index="Energy">
+            <ColorArray value="255,120,240,255"/>
+        </VitalColors>
+        <VitalNames index="Energy" value="UI/VitalName/Power"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIBuilding" id="GDIPowerPlantUpgraded" >
+        <On Terms="AbilMorph.*.Finish; MorphTo NodPowerPlantUpgraded" Send="Create"/>
+        <Aliases value="_UnitLarge"/>
+        <CreepHeightClass value="Small"/>
+        <Model value="NodPowerPlant"/>
+        <DeathArray index="Normal" SoundLink="SupplyDepot_Explode"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="SupplyDepot_Explode"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <BarOffset value="70"/>
+        <BarWidth value="80"/>
+        <NameOffset value="40"/>
+        <SoundArray index="Ready" value="SupplyDepot_Ready"/>
+        <SoundArray index="What" value="SupplyDepot_What"/>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,0,128,255"/>
+        </StatusColors>
+        <VitalColors index="Energy">
+            <ColorArray value="255,120,240,255"/>
+        </VitalColors>
+        <VitalNames index="Energy" value="UI/VitalName/Power"/>
+    </CActorUnit>
+
+    <CActorUnit parent="GDIInfantry" id="GDIRifleman"/>
+    <CActorUnit parent="GDIInfantry" id="GDIMissileTrooper"/>
+    <CActorUnit parent="GDIInfantry" id="GDIEngineer"/>
+    <CActorUnit parent="GDIInfantry" id="GDIGrenadier"/>
+    <CActorUnit parent="GDIInfantry" id="GDISniper"/>
+    <CActorUnit parent="GDIInfantry" id="GDIZoneTrooper"/>
+    <CActorUnit parent="GDIInfantry" id="GDIZoneRaider"/>
+    <CActorUnit parent="GDIInfantry" id="GDICommando"/>
+
+    <CActorUnit parent="GDIVehicle" id="GDIMCV">
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo ##unitName##" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom ##unitName##" Send="Destroy"/>
+        <Aliases value="_UnitLarge"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <AcceptedTransfers index="ModelMaterials" value="1"/>
+        <On Terms="Behavior.GDIGroundDrop.On" Send="AnimPlay BirthB Birth,B NonLooping 0.000000 0.000000"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <CreepHeightClass value="Tiny"/>
+        <DeathArray index="Normal" ModelLink="GDIMCVCC3Death" SoundLink="SiegeTank_Explode"/>
+        <DeathCustomData Name="RagdollBasic"/>
+        <StandAnimTurnTime value="4.5"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleSiegeTank"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1.5"/>
+        <AbilSoundArray/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <MinimapFlashWhenAttacked value="0"/>
+        <MinimapUseSelfColor value="0"/>
+        <MinimapUseSelectionColor value="0"/>
+        <SoundArray index="Ready" value="GDIMCV_Ready"/>
+        <SoundArray index="Help" value="GDIMCV_Help"/>
+        <SoundArray index="What" value="GDIMCV_What"/>
+        <SoundArray index="Yes" value="GDIMCV_Yes"/>
+        <SoundArray index="Attack" value="GDICrawler_Attack"/>
+        <SoundArray index="Pissed" value="GDIMCV_What"/>
+        <SoundArray index="Movement" value="GDIVehicleMoveLoopMCVA"/>
+        <Scale value="0.900000"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIVehicle" id="GDISurveyor"/>
+    <CActorUnit parent="GDIVehicle" id="GDIRig"/>
+    <CActorUnit parent="GDIVehicle" id="GDIPitBull"/>
+    <CActorUnit parent="GDIVehicle" id="GDIAPC"/>
+    <CActorUnit parent="GDIVehicle" id="GDIPredator"/>
+    <CActorUnit parent="GDIVehicle" id="GDIHarvester"/>
+    <CActorUnit parent="GDIVehicle" id="GDISlingshot"/>
+    <CActorUnit parent="GDIVehicle" id="GDIWolverine"/>
+    <CActorUnit parent="GDIVehicle" id="GDITitan"/>
+    <CActorUnit parent="GDIVehicle" id="GDIJuggernaut"/>
+    <CActorUnit parent="GDIVehicle" id="GDIShatterer"/>
+    <CActorUnit parent="GDIVehicle" id="GDIMammoth"/>
+    <CActorUnit parent="GDIVehicle" id="GDIMARV"/>
+
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentMachineGun"/>
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentRockets"/>
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentGrenades"/>
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentSniper"/>
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentRail"/>
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentSonic"/>
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentRepair"/>
+    <CActorUnit parent="GDIBuilding" id="GDIEquipmentGolumn">
+        <Model value="GDIGuardianTower"/>
+        <On Terms="ActorCreation" Send="AnimPlay HideRail Cover,A PlayForever 0.000000"/>
+        <On Terms="ActorCreation" Send="AnimPlay HideBasement Cover,B PlayForever 0.000000"/>
+    </CActorUnit>
+
+    <CActorUnit parent="GDIAir" id="GDIOx">
+        <On Terms="ActorCreation" Send="AnimPlay CoverA Cover,A PlayForever 0.000000"/>
+        <On Terms="Abil.NodCarryallTransport.TransportOccupy" Send="AnimClear CoverA"/>
+        <On Terms="Abil.NodCarryallTransport.TransportEmpty" Send="AnimPlay CoverA Cover,A PlayForever 0.000000"/>
+        <On Terms="UnitDeath.##unitName##; AnimPlaying CoverA" Target="_DeathModel" Send="AnimPlay CoverA Cover,A PlayForever"/>
+    </CActorUnit>
+    <CActorUnit parent="GDIAir" id="GDIFireHawk"/>
+    <CActorUnit parent="GDIAir" id="GDIOrca"/>
+    <CActorUnit parent="GDIAir" id="GDIHammerHead"/>
+    <CActorUnit parent="GDIAir" id="GDIRepairDrone"/>
+
+    <CActorMissile id="GDIInfantryMissile" parent="GenericAttackMissile" unitName="GDIInfantryMissile">
+        <On Terms="ActorDestruction" Send="Create GDIMissileDeath"/>
+    </CActorMissile>
+    <CActorMissile id="GDIVehicleMissile" parent="GenericAttackMissile" unitName="GDIVehicleMissile">
+        <On Terms="ActorDestruction" Send="Create GDIMissileDeath"/>
+    </CActorMissile>
+    <CActorMissile id="GDIAirMissile" parent="GenericAttackMissile" unitName="GDIAirMissile">
+        <On Terms="ActorDestruction" Send="Create GDIMissileDeath"/>
+    </CActorMissile>
+    <CActorMissile id="GDIInfantryGrenade" parent="GenericAttackMissile" unitName="GDIInfantryMissile">
+        <On Terms="ActorDestruction" Send="Create GDIMissileDeath"/>
+    </CActorMissile>
+    <CActorMissile id="GDIInfantrySonicEmitter" parent="GenericAttackMissile" unitName="GDIInfantrySonicEmitter"/>
+
+
+    <CActorAction id="GDIRiflemanAttack" parent="GenericAttack" effectAttack="GDIRiflemanWeaponDamage">
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="NodMilitant_AttackLaunch"/>
+        <ContainerAssets Model="GhostAttackLaunch" Sound="NodMilitant_AttackLaunch"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactMap index="None" Model="MarineAttackImpact" Sound="Marine_AttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactPhysics Name="BulletImpact" MatchKeys="Basic" Physics="MarineAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="GDIMissileTrooperAttack" parent="GenericAttack" effectImpact="GDIMissileTrooperWeaponDamage" effectLaunch="GDIMissileTrooperWeaponLM">
+        <LaunchAttachQuery Methods="Weapon"/>
+        <LaunchAssets Sound="CABALBikeWeaponAttackLaunch"/>
+        <Missile value="GDIInfantryMissile"/>
+        <ImpactMap index="None" Model="HailstormMissileVolleyImpact" Sound="CABALBikeWeaponAttackImpact" ModelReaction="HailstormMissileVolleyImpactReaction"/>
+        <ImpactMap index="Shield" Sound="HailstormMissileVolleyImpactShield" ModelReaction="HailstormMissileVolleyImpactReactionShield"/>
+    </CActorAction>
+    <CActorAction id="GDIZoneRaiderRocketsAttack" parent="GenericAttack" effectImpact="GDIZoneRaiderRocketsDamage" effectLaunch="GDIZoneRaiderRocketsLM">
+        <LaunchAttachQuery Methods="Weapon"/>
+        <LaunchAssets Sound="CABALBikeWeaponAttackLaunch"/>
+        <Missile value="GDIInfantryMissile"/>
+        <ImpactMap index="None" Model="HailstormMissileVolleyImpact" Sound="CABALBikeWeaponAttackImpact" ModelReaction="HailstormMissileVolleyImpactReaction"/>
+        <ImpactMap index="Shield" Sound="HailstormMissileVolleyImpactShield" ModelReaction="HailstormMissileVolleyImpactReactionShield"/>
+    </CActorAction>
+    <CActorAction id="GDICombatEngineerAttack" parent="GenericAttack" effectAttack="GDICombatEngineerWeaponDamage">
+        <LaunchAttachQuery Methods="AMPatternReaper"/>
+        <LaunchAssets Model="ReaperAttackLaunch" Sound="Reaper_AttackLaunch"/>
+        <ContainerAssets Model="ReaperBunkerAttackLaunch" Sound="Reaper_BunkerAttackLaunch"/>
+        <ImpactMap index="None" Model="ReaperAttackImpact" Sound="Reaper_AttackImpact"/>
+    </CActorAction>
+    <CActorAction id="GDIGrenadierAttack" parent="GenericAttack" effectImpact="GDIGrenadierWeaponDamage" effectLaunch="GDIGrenadierWeaponLM">
+        <LaunchAttachQuery Methods="Weapon"/>
+        <LaunchAssets Sound="GDIInfantryGrenadeLaunch"/>
+        <Missile value="GDIInfantryGrenade"/>
+        <ImpactMap index="None" Model="HailstormMissileVolleyImpact" Sound="CABALBikeWeaponAttackImpact" ModelReaction="HailstormMissileVolleyImpactReaction"/>
+        <ImpactMap index="Shield" Sound="HailstormMissileVolleyImpactShield" ModelReaction="HailstormMissileVolleyImpactReactionShield"/>
+    </CActorAction>
+    <CActorAction id="GDISniperAttack" parent="GenericAttack" effectAttack="GDISniperWeaponDamage">
+        <LaunchSiteOps HoldPosition="1" HoldRotation="1"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+        <LaunchAssets Model="GhostAttackLaunch" Sound="NodMilitant_AttackLaunch"/>
+        <ContainerAssets Model="GhostAttackLaunch" Sound="NodMilitant_AttackLaunch"/>
+        <ImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+        <ImpactMap index="None" Model="MarineAttackImpact" Sound="Marine_AttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactPhysics Name="BulletImpact" MatchKeys="Basic" Physics="MarineAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="GDIZoneTrooperAttack" parent="GenericAttack" effectAttack="GDIZoneTrooperRailDamage">
+        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+        <LaunchAssets Sound="Argus_AttackImpact"/>
+        <Beam value="GDIRailgunBeam"/>
+        <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="CNCRailgunAttackDeathForce"/>
+    </CActorAction>
+    <CActorAction id="GDIZoneRaiderSonicAttack" parent="GenericAttack" effectImpact="GDIZoneRaiderSonicDamage" effectLaunch="GDIZoneRaiderSonicLM">
+        <LaunchAssets Sound="Adept_AttackLaunch"/>
+        <ImpactMap index="None" Model="AdeptImpact" Sound="Adept_AttackImpact"/>
+        <ImpactModel value="AdeptAttackImpactModel"/>
+    </CActorAction>
+
+
+
+<!--    <CActorAction id="NodScorpionTankWeaponAttack" parent="GenericAttack" effectAttack="NodScorpionTankWeaponDamage">-->
+<!--        <LaunchAttachQuery Methods="AMFilterWeapon02"/>-->
+<!--        <LaunchAssets Model="NodAvatarAttackLaunch3" Sound="NodAvatar_AttackLaunch"/>-->
+<!--        <ImpactMap index="None" Model="NodAvatarAttackImpact3" Sound="NodAvatar_AttackImpact"/>-->
+<!--        <ImpactPhysics Name="90mmCannonImpact" MatchKeys="Basic" Physics="SiegeTankAttackForce"/>-->
+<!--    </CActorAction>-->
+<!--    <CActorAction id="NodScorpionTankWeaponUAttack" parent="GenericAttack" effectAttack="NodScorpionTankWeaponUDamage">-->
+<!--        <LaunchAssets Sound="NodCommando_AttackLaunch"/>-->
+<!--        <BeamScope value="Caster"/>-->
+<!--        <ImpactSiteOps Ops="SOpAttachHarness SOpAttachVolumeNoVizEnhance VoidRaySOpForwardLaunch"/>-->
+<!--        <ImpactMap index="None" Model="" Sound="HC_AttackImpact"/>-->
+<!--        <ActionFlags index="ImpactMonitorsTeleports" value="1"/>-->
+<!--    </CActorAction>-->
+<!--    <CActorBeamSimple id="NodScorpionTankWeaponUAttackBeam" parent="BeamSimpleAnimationStyleOneShot">-->
+<!--        <Macros value="ActionTargetTeleportDestroy"/>-->
+<!--        <On Terms="ActorCreation" Send="ModelSwap DarkArchonAttackBeam"/>-->
+<!--        <On Terms="ActorCreation" Send="AnimBracketStart BSDb Birth Stand Death ContentPlayOnce"/>-->
+<!--        <On Terms="AnimBracketState.*.AfterClosing; AnimName BSDb" Send="Destroy"/>-->
+<!--        <Scale value="0.500000"/>-->
+<!--    </CActorBeamSimple>-->
+
+
+    <CActorModel id="GDIMissileDeath" parent="ModelAnimationStyleOneShotNoOrphan">
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <Host Subject="_Missile"/>
+    </CActorModel>
+
+    <CActorUnit parent="GenericUnitStandardNoAutoSoundLinks" id="GDIDropPod" unitName="DropPodGDI">
+        <On Terms="ActorCreation" Send="Create GDIDropPodIncoming"/>
+        <On Terms="UnitBirth.*.Suppressed" Send="$Birth NonLooping 0.000000 0.000000"/>
+        <DeathArray index="Normal" VoiceLink="GDIDropPodAscend"/>
+        <WalkAnimMoveSpeed value="0"/>
+        <HighlightTooltip value="Unit/Name/GDIDropPod"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+    </CActorUnit>
+</Catalog>

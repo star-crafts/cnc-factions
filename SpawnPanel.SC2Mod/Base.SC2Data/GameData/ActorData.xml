@@ -1,0 +1,15 @@
+<Catalog>
+
+    <CActorUnit id="SpawnCaster1" parent="GenericUnitStandard" unitName="SpawnCaster1">
+        <Model value="SpawnCaster"/>
+    </CActorUnit>
+    <CActorUnit id="SpawnCaster2" parent="GenericUnitStandard" unitName="SpawnCaster2">
+        <Model value="SpawnCaster"/>
+    </CActorUnit>
+    <CActorUnit id="SpawnCaster3" parent="GenericUnitStandard" unitName="SpawnCaster3">
+        <Model value="SpawnCaster"/>
+    </CActorUnit>
+    <CActorUnit id="SpawnCaster4" parent="GenericUnitStandard" unitName="SpawnCaster4">
+        <Model value="SpawnCaster"/>
+    </CActorUnit>
+</Catalog>

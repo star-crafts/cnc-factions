@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRace id="China">
+        <GameMusic value="Music_WW25"/>
+        <Flags index="Selectable" value="1"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <ShowResource index="Vespene" value="0"/>
+        <ShowResource index="Terrazine" value="1"/>
+        <StartingUnitArray Range="1" Unit="ChinaConstructionYard">
+            <Flags index="ResourceRally" value="1"/>
+            <Flags index="ResourceSetRally" value="1"/>
+            <Offset value="0,0"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="400"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,255,128,0"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete2"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Fenix"/>
+        <Icon value="Assets\icons\factions\china-color.dds"/>
+    </CRace>
+</Catalog>

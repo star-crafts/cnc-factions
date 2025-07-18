@@ -1,0 +1,73 @@
+<Catalog>
+    <CEffectSet id="HotSZerglingVisceroidClaws">
+        <EditorCategories value="Race:Nod"/>
+        <EffectArray value="NodInvertWarheadAttackAB"/>
+        <EffectArray value="Claws"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="VisceroidWander">
+        <EditorCategories value="Race:Nod"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="SpawnVisceroid">
+        <EditorCategories value="Race:Nod"/>
+        <OwningPlayer Value="Hostile"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnOwner Value="Hostile"/>
+        <SpawnUnit value="Visceroid"/>
+        <DebugTrace value="1"/>
+        <!--SpawnEffect value="VisceroidWander"/-->
+    </CEffectCreateUnit>
+    <CEffectCreatePersistent id="SpawnVisceroidDelay">
+        <EditorCategories value="Race:Nod"/>
+        <ExpireDelay value="0.5"/>
+        <FinalEffect value="SpawnVisceroid"/>
+        <DebugTrace value="1"/>
+    </CEffectCreatePersistent>
+
+    <CEffectCreateUnit id="TiberiumSpawn">
+        <ValidatorArray value="TiberiumFieldPlacementCheck"/>
+        <SpawnUnit value="TibMineralField"/>
+        <SpawnOwner Value="Neutral"/>
+        <EditorCategories value="Race:Nod"/>
+    </CEffectCreateUnit>
+    <CEffectModifyUnit id="TiberiumGrow">
+        <ResourceRestoreBonus value="1"/>
+        <EditorCategories value="Race:Nod"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="TiberiumHealTick">
+        <ValidatorArray value="NotDisintegrating"/>
+        <ValidatorArray value="HasTiberiumHeal"/>
+        <EditorCategories value="Race:Nod"/>
+        <VitalArray index="Life">
+            <Change value="0.3125"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="TiberiumIrradiate@SearchPeriodic">
+        <EditorCategories value="Race:Nod"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MinorDanger" value="1"/>
+        <ExcludeArray Value="Outer"/>
+        <IncludeArray Value="Target"/>
+        <SearchFilters value="Ground,Biological;Self,Structure,RawResource,HarvestableResource,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="TiberiumIrradiateDamagePeriodicSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TiberiumIrradiateDamagePeriodicSet">
+        <EffectArray value="TiberiumIrradiateDamagePeriodic"/>
+        <EffectArray value="NodInvertWarheadAttackAB"/>
+        <EditorCategories value="Race:Nod"/>
+    </CEffectSet>
+    <CEffectDamage id="TiberiumIrradiateDamagePeriodic">
+        <ValidatorArray value="TiberiumRadiationDamageValidator"/>
+        <EditorCategories value="Race:Nod"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Amount value="3"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
+    <CEffectDamage id="WreckageLoseHP">
+        <ImpactLocation Value="CasterUnit"/>
+        <Amount value="1"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+</Catalog>

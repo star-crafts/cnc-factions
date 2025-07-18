@@ -1,0 +1,9 @@
+﻿DocInfo/DescLong=Completely devoid of any description whatsoever.
+DocInfo/DescShort=Any
+DocInfo/Name=Just Another StarCraft II Mod
+Param/Expression/lib_DPAN_14CAA8F7=SHOW ~A~ ~B~
+Param/Expression/lib_DPAN_21CBA28B=<s val="StandardTooltipHeader_Terr">~name~</s>
+Param/Expression/lib_DPAN_947C4D19=<s val="StandardTooltipHeader_Terr">~name~</s></n></n>~min_icon~ ~min_val~ ~gas_icon~ ~gas_val~</n></n>~desc~
+Param/Expression/lib_DPAN_96DE2498=<s val="StandardTooltipHeader_Terr">~name~</s>
+Param/Expression/lib_DPAN_AD70F63B=<s val="StandardTooltipHeader_Terr">~name~ [~ID~]</s><n/><n/>~min_icon~ ~min_val~ ~gas_icon~ ~gas_val~ ~food_icon~ ~food_val~<n/><n/>~desc~
+Param/Expression/lib_DPAN_CDF34A09=HIDE ~A~ ~B~

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CDataCollectionUnit default="1" id="GDIUnit">
+        <?token id="unitName" type="CUnitLink" value="##id##"?>
+        <EditorCategories value="DataGroup:Unit,Race:GDI"/>
+        <EditorIconSource value="Unit"/>
+        <DataRecord Entry="Unit,##id##"/>
+        <DataRecord Entry="Actor,##id##"/>
+        <DataRecord Entry="Model,##id##"/>
+        <DataRecord Entry="Sound,##id##_Help"/>
+        <DataRecord Entry="Sound,##id##_What"/>
+        <DataRecord Entry="Sound,##id##_Yes"/>
+        <DataRecord Entry="Sound,##id##_Ready"/>
+        <DataRecord Entry="Sound,##id##_Attack"/>
+        <DataRecord Entry="Sound,##id##_Death"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit default="1" id="GDIInfantry" parent="GDIUnit">
+        <TechInfoUpgradeUsed value="GDIInfantryArmorsLevel1"/>
+        <TechInfoUpgradeUsed value="GDIInfantryArmorsLevel2"/>
+        <TechInfoUpgradeUsed value="GDIInfantryArmorsLevel3"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit default="1" id="GDIVehicle" parent="GDIUnit">
+        <TechInfoUpgradeUsed value="GDIVehiclesArmorsLevel1"/>
+        <TechInfoUpgradeUsed value="GDIVehiclesArmorsLevel2"/>
+        <TechInfoUpgradeUsed value="GDIVehiclesArmorsLevel3"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit default="1" id="GDIBuilding" parent="GDIUnit"/>
+    <CDataCollectionUnit default="1" id="GDIWeapon">
+        <?token id="damageUpgrade" type="CUpgradeLink"?>
+        <EditorCategories value="DataGroup:Weapon,Race:GDI,ObjectType:Projectile"/>
+        <EditorIconSource value="Weapon"/>
+        <DataRecord Entry="Effect,##id##Damage"/>
+        <DataRecord Entry="Effect,##id##UDamage"/>
+        <DataRecord Entry="Weapon,##id##"/>
+        <DataRecord Entry="Weapon,##id##U"/>
+        <TechInfoUpgradeUsed value="##damageUpgrade##Level1"/>
+        <TechInfoUpgradeUsed value="##damageUpgrade##Level2"/>
+        <TechInfoUpgradeUsed value="##damageUpgrade##Level3"/>
+        <UpgradeInfoWeapon DamagePerDice="1"/>
+    </CDataCollectionUnit>
+
+    <CDataCollectionUnit id="GDIRifleman" parent="GDIInfantry">
+<!--        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>-->
+        <TechInfoUpgradeUsed value="GDITiberiumFieldSuits"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIMissileTrooper" parent="GDIInfantry">
+        <TechInfoUpgradeUsed value="GDITiberiumFieldSuits"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDICombatEngineer" parent="GDIInfantry"/>
+    <CDataCollectionUnit id="GDIGrenadier" parent="GDIInfantry">
+        <TechInfoUpgradeUsed value="GDITiberiumFieldSuits"/>
+        <TechInfoUpgradeUsed value="GDIEMPGrenades"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDISniper" parent="GDIInfantry"/>
+    <CDataCollectionUnit id="GDIZoneTrooper" parent="GDIInfantry">
+        <TechInfoUpgradeUsed value="GDIZoneScannerPacks"/>
+        <TechInfoUpgradeUsed value="GDIZonePowerPacks"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIZoneRaider" parent="GDIInfantry">
+        <TechInfoUpgradeUsed value="GDIZoneScannerPacks"/>
+        <TechInfoUpgradeUsed value="GDIZonePowerPacks"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDICommando" parent="GDIInfantry"/>
+
+    <CDataCollectionUnit id="GDIPitBull" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIPitbullMortars"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDITitan" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIAdaptiveArmour"/>
+        <TechInfoUpgradeUsed value="GDIRailguns"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIAPC" parent="GDIVehicle">
+<!--        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>-->
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIPredator" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIRailguns"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIHarvester" parent="GDIVehicle"/>
+    <CDataCollectionUnit id="GDIMCV" parent="GDIVehicle"/>
+    <CDataCollectionUnit id="GDIWolverine" parent="GDIVehicle">
+<!--        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>-->
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIJuggernaut" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIBehemoth"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDISlingshot" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDITungstenShells"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIRig" parent="GDIVehicle"/>
+    <CDataCollectionUnit id="GDIShatterer" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIZoneShatterer"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIMammoth" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIAdaptiveArmour"/>
+        <TechInfoUpgradeUsed value="GDIRailguns"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDISurveyor" parent="GDIVehicle"/>
+    <CDataCollectionUnit id="GDIMARV" parent="GDIVehicle"/>
+    <CDataCollectionUnit id="GDIOrca" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIOrcaSensorPods"/>
+        <TechInfoUpgradeUsed value="GDIHardpoints"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIHammerHead" parent="GDIVehicle">
+        <!--        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>-->
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIFirehawk" parent="GDIVehicle">
+        <TechInfoUpgradeUsed value="GDIFirehawkStratofighterBoosters"/>
+        <TechInfoUpgradeUsed value="GDIHardpoints"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIOx" parent="GDIVehicle"/>
+
+    <CDataCollectionUnit id="GDIWatchtower" parent="GDIBuilding">
+<!--        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>-->
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIAABattery" parent="GDIBuilding">
+        <TechInfoUpgradeUsed value="GDITungstenShells"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIGuardaTower" parent="GDIBuilding">
+        <TechInfoUpgradeUsed value="GDIRailguns"/>
+    </CDataCollectionUnit>
+
+    <CDataCollectionUnit id="GDIRiflemanWeapon" parent="GDIWeapon" damageUpgrade="GDILightWeapons">
+        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDICombatEngineerWeapon" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDISniperWeapon" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDICommandoWeapon" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDIAPCMachinegun" parent="GDIWeapon" damageUpgrade="GDILightWeapons">
+        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIHarvesterMachinegun" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDIWolverineMachinegun" parent="GDIWeapon" damageUpgrade="GDILightWeapons">
+        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDISlingshotWeapon" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDISlingshotWeaponU" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDIHammerHeadMachinegun" parent="GDIWeapon" damageUpgrade="GDILightWeapons">
+        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIWatchtowerMachinegun" parent="GDIWeapon" damageUpgrade="GDILightWeapons">
+        <TechInfoUpgradeUsed value="GDIArmourPiercingAmmo"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GDIAABatteryWeapon" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDIAABatteryWeaponU" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDIEquipmentMachineGun" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+    <CDataCollectionUnit id="GDIEquipmentSniper" parent="GDIWeapon" damageUpgrade="GDILightWeapons"/>
+
+     <CDataCollectionUnit id="GDIMissileTrooperWeapon" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIGrenadierWeapon" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIZoneRaiderRockets" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIPitBullWeapon" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIPitBullMortar" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIHarvesterRockets" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIMammothRockets" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIOrcaRockets" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIFirehawkRocketsAA" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIFirehawkRocketsAG" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIBattleBaseRockets" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIEquipmentRockets" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+     <CDataCollectionUnit id="GDIEquipmentGrenades" parent="GDIWeapon" damageUpgrade="GDIExplosiveWeapons"/>
+
+     <CDataCollectionUnit id="GDIZoneTrooperRail" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDITitanCannon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDITitanRailgun" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIPredatorCannon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIPredatorRailgun" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIJuggernautWeapon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIMammothCannon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIMammothRailgun" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIGuardianTowerCannon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIMARVWeapon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIEquipmentRail" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIZoneRaiderSonic" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIShattererWeapon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIOrcaImpulse" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDISonicEmitterWeapon" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+     <CDataCollectionUnit id="GDIEquipmentSonic" parent="GDIWeapon" damageUpgrade="GDIHeavyWeapons"/>
+</Catalog>

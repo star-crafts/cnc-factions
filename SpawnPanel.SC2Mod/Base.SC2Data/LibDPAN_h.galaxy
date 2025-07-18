@@ -1,0 +1,60 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Spawn Panel
+//--------------------------------------------------------------------------------------------------
+// Constants
+const int libDPAN_gv_spawnSets = 4;
+const int libDPAN_gv_buttonsMax = 40;
+const int libDPAN_gv_panels = 4;
+const int libDPAN_gv_placementCardRows = 8;
+const int libDPAN_gv_placementCardColumns = 5;
+
+// Variable Declarations
+string[17] libDPAN_gv_creator_selectedRace;
+int[17] libDPAN_gv_creator_selectedPlayer;
+int[17] libDPAN_gv_selectedTab;
+int[libDPAN_gv_panels + 1] libDPAN_gv_placementCardOffset;
+playergroup libDPAN_gv_allPlayers;
+string libDPAN_gv_allStructures;
+string libDPAN_gv_allRaces;
+string libDPAN_gv_allUnits;
+string libDPAN_gv_allUpgradesSkills;
+string libDPAN_gv_allUpgradesLevels;
+string libDPAN_gv_currentStructures;
+string libDPAN_gv_currentUnits;
+string libDPAN_gv_currentUpgradesSkills;
+string libDPAN_gv_currentUpgradesLevels;
+int libDPAN_gv_spawnPanel;
+int libDPAN_gv_spawnDialog;
+int[libDPAN_gv_spawnSets + 1] libDPAN_gv_spawnDialogCommandsSet;
+int[libDPAN_gv_spawnSets + 1][15] libDPAN_gv_spawnDialogCommandsSetButtons;
+unit[libDPAN_gv_spawnSets + 1] libDPAN_gv_spawnCasters;
+int[libDPAN_gv_panels + 1] libDPAN_gv_creator_tabsButtons;
+int[libDPAN_gv_panels + 1] libDPAN_gv_creator_tabsButtonsimage;
+int[libDPAN_gv_panels + 1] libDPAN_gv_creator_bottomButton;
+int[libDPAN_gv_panels + 1] libDPAN_gv_creator_upButton;
+int[libDPAN_gv_panels + 1][libDPAN_gv_buttonsMax + 1] libDPAN_gv_creator_itembutton;
+string[libDPAN_gv_panels + 1][libDPAN_gv_buttonsMax + 1] libDPAN_gv_creator_itemunit;
+int[libDPAN_gv_panels + 1][libDPAN_gv_buttonsMax + 1] libDPAN_gv_creator_itemface;
+int[libDPAN_gv_panels + 1] libDPAN_gv_buttons_panels;
+
+// Function Declarations
+int libDPAN_gf_CountWords (string lp_str);
+void libDPAN_gf_RunTester ();
+void libDPAN_gf_SelectRace (string lp_race, int lp_triggeringPlayer);
+void libDPAN_gf_Selectplayer (int lp_player, int lp_triggeringPlayer);
+void libDPAN_gf_SelectPanel (int lp_player, int lp_tab);
+void libDPAN_gf_SetupUnitTesterData ();
+void libDPAN_gf_MakeUnitTesterPlacementCard ();
+void libDPAN_gf_RenderUnitTesterPlacementCard (int lp_player);
+
+// Trigger Declarations
+trigger libDPAN_gt_MapInit;
+trigger libDPAN_gt_ToggleVisibility;
+trigger libDPAN_gt_ChangeSpawnedUnitOwner;
+trigger libDPAN_gt_CardButtonCliked;
+
+// Library Initialization
+void libDPAN_InitVariables ();
+

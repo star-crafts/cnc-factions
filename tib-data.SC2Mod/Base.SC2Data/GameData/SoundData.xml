@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <!--Announcer-->
+    <CSound id="NEVABattlefieldExpand" parent="ACVO_ProtossAlert">
+        <AssetArray File="Assets\Sounds\Neva_BattleExpande.ogg" FacialGroup=""/>
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+        <Category value="User35"/>
+        <Volume value="0.000000,0.000000"/>
+        <CategoryDuckingLocal value="ZeratulAlertVictory"/>
+    </CSound>
+    <CSound id="ZeratulA_AllyBaseUnderAttack">
+        <AssetArray File="Neva_AllyUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_AllyUnderAttack">
+        <AssetArray File="Neva_AllyUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BadLZ">
+        <AssetArray File="Neva_CantDeploHere.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BaseUnderAttack">
+        <AssetArray File="Assets\Sounds\Neva_StrucUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BaseUnderAttackProtoss">
+        <AssetArray File="Assets\Sounds\Neva_StrucUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BaseUnderAttackTerran">
+        <AssetArray File="Assets\Sounds\Neva_StrucUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BaseUnderAttackZerg">
+        <AssetArray File="Assets\Sounds\Neva_StrucUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BuildError">
+        <AssetArray File="Neva_CantDeploHere.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BuildErrorProtoss">
+        <AssetArray File="Neva_CantDeploHere.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BuildErrorTerran">
+        <AssetArray File="Neva_CantDeploHere.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_BuildErrorZerg">
+        <AssetArray File="Neva_CantDeploHere.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_CalldownLaunch">
+        <AssetArray File="Neva_WarnSuperDetected.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_IonCannon" parent="ACVO_ProtossAlert">
+        <AssetArray File="Assets\Sounds\Neva_WarnIonCannonActi.ogg" FacialGroup=""/>
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="ZeratulA_CommandCenterUpgraded">
+        <AssetArray File="Neva_UpgradeComple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_ConstructInterrupt">
+        <AssetArray File="Neva_Cancel.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_Countdown">
+        <LoopCount value="4"/>
+        <Select value="Sequential"/>
+    </CSound>
+    <CSound id="ZeratulA_EndGame">
+        <AssetArray File="Neva_YouHaveLost.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_EndGameLost">
+        <AssetArray File="Neva_YouHaveLost.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_EvolutionComplete">
+        <AssetArray File="Neva_UpgradeComple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_ForcesUnderAttack">
+        <AssetArray File="Neva_UnitUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_ForcesUnderAttackProtoss">
+        <AssetArray File="Neva_UnitUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_ForcesUnderAttackTerran">
+        <AssetArray File="Neva_UnitUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_ForcesUnderAttackZerg">
+        <AssetArray File="Neva_UnitUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_GGLose">
+        <AssetArray File="Neva_YouHaveLost.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_GGWin"/>
+    <CSound id="ZeratulA_GeyserExhausted">
+        <AssetArray File="Neva_TibFieldDeple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_GoodLuckHaveFun">
+        <AssetArray File="Neva_EstablishingB.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_LandingInterrupt">
+        <AssetArray File="Neva_CantDeploHere.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_MaxSupply">
+        <AssetArray File="Neva_InsuffCommand.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_MaxSupplyProtoss">
+        <AssetArray File="Neva_InsuffCommand.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_MaxSupplyTerran">
+        <AssetArray File="Neva_InsuffCommand.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_MaxSupplyZerg">
+        <AssetArray File="Neva_InsuffCommand.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_MetamorphosisComplete">
+        <AssetArray File="Neva_UpgradeComple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_MineralsDepleted">
+        <AssetArray File="Neva_TibFieldDeple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_MutationComplete">
+        <AssetArray File="Neva_UpgradeComple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NeedMoreFood">
+        <AssetArray File="Neva_LowPower.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NeedMoreFoodProtoss">
+        <AssetArray File="Neva_LowPower.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NeedMoreFoodTerran">
+        <AssetArray File="Neva_LowPower.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NeedMoreFoodZerg">
+        <AssetArray File="Neva_LowPower.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NeedMoreGas">
+        <AssetArray File="Neva_InsufficTSL.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NeedMoreMinerals">
+        <AssetArray File="Neva_InsufficFunds.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NotEnoughEnergy">
+        <AssetArray File="Neva_InsuffCommand.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_NukeReady">
+        <AssetArray File="Neva_NuclearMissReady.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_PlaceInPowerField">
+        <AssetArray File="Neva_CantDeploHere.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_ResearchComplete">
+        <AssetArray File="Neva_UpgradeComple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_SalvageComplete">
+        <AssetArray File="Neva_StructureSold.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_StartGame">
+        <AssetArray File="Neva_EstablishingB.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_ThorRepaired">
+        <AssetArray File="Neva_UnitRecovered.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_Transmission">
+        <AssetArray File="Neva_EstablishingVideo.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_UpgradeComplete">
+        <AssetArray File="Neva_UpgradeComple.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_WorkersUnderAttack">
+        <AssetArray File="Neva_HarvUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_WorkersUnderAttackProtoss">
+        <AssetArray File="Neva_HarvUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_WorkersUnderAttackTerran">
+        <AssetArray File="Neva_HarvUndAttack.ogg"/>
+    </CSound>
+    <CSound id="ZeratulA_WorkersUnderAttackZerg">
+        <AssetArray File="Neva_HarvUndAttack.ogg"/>
+    </CSound>
+    <CSound id="Kane_Sounds" parent="ProtossAck_Void">
+        <AssetArray File="Assets\Sounds\MG32_Kane12.ogg" FacialGroup=""/>
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="Alert_GDIEconomyUnderAttack" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Geva_UnitUndAttack.ogg" FacialAnim="Alert_TerranEconomyUnderAttack"/>
+    </CSound>
+    <CSound id="Alert_NodEconomyUnderAttack" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Neva_HarvUndAttack.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Alert_NodEconomydeath" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Neva_HarvesterLost.ogg" FacialGroup=""/>
+    </CSound>
+    <!--music-->
+    <CSound id="GameMusicActoninstinct" parent="MUSIC">
+        <AssetArray File="Assets\Music\审胖从天而降 - act on instinct remix.mp3" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicMissionStart" parent="MUSIC">
+        <AssetArray File="Assets\Music\Nod Mission Start 01.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Nod Mission Start 03.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicNodBrife" parent="MUSIC">
+        <AssetArray File="Assets\Music\Nod Briefing.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicNodMissionMiddle" parent="MUSIC">
+        <AssetArray File="Assets\Music\Nod Mission Start 02.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicNodVictory" parent="MUSIC">
+        <AssetArray File="Assets\Music\Nod Victory.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="CNC3GameMusiclose" parent="MUSIC">
+        <AssetArray File="Assets\Music\Steve Jablonsky,Trevor Morris - Mourning Hour.mp3" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="CNC3GameMusicLoading" parent="MUSIC">
+        <AssetArray File="Assets\Music\Steve Jablonsky,Trevor Morris - More Than We Bargained For.mp3" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="CNC3GameMusicvictory" parent="MUSIC">
+        <AssetArray File="Assets\Music\Steve Jablonsky,Trevor Morris - Guilty Pleasure.mp3" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="CNC3GameMusicvictoryGDI" parent="MUSIC">
+        <AssetArray File="Assets\Music\Steve Jablonsky,Trevor Morris - Blue Glory.mp3" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+        <NonLocalVolumeAdjustment value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="CNC3GameMusic" parent="MUSIC">
+        <AssetArray File="Aftermath.mp3" FacialGroup=""/>
+        <AssetArray File="Alien Substance.mp3" FacialGroup=""/>
+        <AssetArray File="Apocalypse.mp3" FacialGroup=""/>
+        <AssetArray File="Black Dawn.mp3" FacialGroup=""/>
+        <AssetArray File="Blue Control.mp3" FacialGroup=""/>
+        <AssetArray File="Crimson City.mp3" FacialGroup=""/>
+        <AssetArray File="Crystalline.mp3" FacialGroup=""/>
+        <AssetArray File="Deadly Force.mp3" FacialGroup=""/>
+        <AssetArray File="Defense Line.mp3" FacialGroup=""/>
+        <AssetArray File="Drop Attack.mp3" FacialGroup=""/>
+        <AssetArray File="Gathering Intel.mp3" FacialGroup=""/>
+        <AssetArray File="Havoc.mp3" FacialGroup=""/>
+        <AssetArray File="Heavy Handed.mp3" FacialGroup=""/>
+        <AssetArray File="Infection.mp3" FacialGroup=""/>
+        <AssetArray File="Infestation.mp3" FacialGroup=""/>
+        <AssetArray File="Intelligence.mp3" FacialGroup=""/>
+        <AssetArray File="Light Infantry.mp3" FacialGroup=""/>
+        <AssetArray File="Maelstrom.mp3" FacialGroup=""/>
+        <AssetArray File="More Than We Bargained For.mp3" FacialGroup=""/>
+        <AssetArray File="No Surrender.mp3" FacialGroup=""/>
+        <AssetArray File="Radiation Alert.mp3" FacialGroup=""/>
+        <AssetArray File="Rebel Forces.mp3" FacialGroup=""/>
+        <AssetArray File="Red Ashes.mp3" FacialGroup=""/>
+        <AssetArray File="Red Life.mp3" FacialGroup=""/>
+        <AssetArray File="Renegade Attack.mp3" FacialGroup=""/>
+        <AssetArray File="Research Initiative.mp3" FacialGroup=""/>
+        <AssetArray File="Retaliation.mp3" FacialGroup=""/>
+        <AssetArray File="Returning To Base.mp3" FacialGroup=""/>
+        <AssetArray File="The Zenith.mp3" FacialGroup=""/>
+        <AssetArray File="Tiberian Influx.mp3" FacialGroup=""/>
+        <AssetArray File="Unleashed.mp3" FacialGroup=""/>
+        <AssetArray File="War Machine.mp3" FacialGroup=""/>
+        <AssetArray File="War Zone.mp3" FacialGroup=""/>
+        <AssetArray File="Yellow Dawn.mp3" FacialGroup=""/>
+        <AssetArray File="Yellow Explore.mp3" FacialGroup=""/>
+        <AssetArray File="alien arrival.mp3" FacialGroup=""/>
+        <AssetArray File="base repairs.mp3" FacialGroup=""/>
+        <AssetArray File="global response.mp3" FacialGroup=""/>
+        <AssetArray File="waiting game.mp3" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="GameMusicNodsummary" parent="MUSIC">
+        <AssetArray File="Assets\Music\Nod Victory Summary.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicCNC4" parent="MUSIC">
+        <AssetArray File="Assets\Music\01 To Save Humanity.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\02 Welcome Back Commander.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\03 Bad To Worse.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\04 Transport Down.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\05 Entanglement.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\06 Insurrection.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\07 Paradise Fabricated.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\08 Whatever It Takes.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\09 Love And Death.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\10 Cold Hard Truth.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\11 The Beginning Of The End.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\11 The Beginning Of The EndP1.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\11 The Beginning Of The EndP2.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s Ascension.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP1.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP2.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP3.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP4.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP5.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP6.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP7.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP8.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\13 Things Fall Apart.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\14 The Harder They Fall.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\15 We Rise.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\16 The Pacific Hub.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\17 False Prophet.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\18 Heresy&apos;s Reward.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\19 To The Death.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\20 Bleed Out.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\21 The End Of All Things.mp3" FacialGroup=""/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="GameMusicGDIearly" parent="MUSIC">
+        <AssetArray File="Assets\Music\04 Transport Down.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\07 Paradise Fabricated.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\11 The Beginning Of The EndP1.mp3" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusic01CNC4" parent="MUSIC">
+        <AssetArray File="Assets\Music\01 To Save Humanity.mp3" FacialGroup=""/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="GameMusicGDIFight" parent="MUSIC">
+        <AssetArray File="Assets\Music\08 Whatever It Takes.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\10 Cold Hard Truth.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\05 Entanglement.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\06 Insurrection.mp3" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusic03CNC4" parent="MUSIC">
+        <AssetArray File="Assets\Music\03 Bad To Worse.mp3" FacialGroup=""/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="GameMusicNodFight" parent="MUSIC">
+        <AssetArray File="Assets\Music\19 To The Death.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\18 Heresy&apos;s Reward.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Nod We Rise.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicNodearlyLow" parent="MUSIC">
+        <AssetArray File="Assets\music\Aftermath.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\music\Base Repairs.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\music\Drop Attack.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\music\Global Response.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\music\Havoc.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicNodearly" parent="MUSIC">
+        <AssetArray File="Assets\musicHigh\Havoc.mp3"/>
+        <AssetArray File="Assets\musicHigh\Heavy Handed.mp3"/>
+        <AssetArray File="Assets\musicHigh\Infection.mp3"/>
+        <AssetArray File="Assets\musicHigh\Infestation.mp3"/>
+        <AssetArray File="Assets\musicHigh\Intelligence.mp3"/>
+        <AssetArray File="Assets\musicHigh\Light Infantry.mp3"/>
+        <AssetArray File="Assets\musicHigh\Maelstrom.mp3"/>
+        <AssetArray File="Assets\musicHigh\mechanical mind.mp3"/>
+        <AssetArray File="Assets\musicHigh\More Than We Bargained For.mp3"/>
+        <AssetArray File="Assets\musicHigh\Mourning Hour.mp3"/>
+        <AssetArray File="Assets\musicHigh\No Surrender.mp3"/>
+        <AssetArray File="Assets\musicHigh\Nod We Rise.ogg"/>
+        <AssetArray File="Assets\musicHigh\Radiation Alert.mp3"/>
+        <AssetArray File="Assets\musicHigh\Rebel Forces.mp3"/>
+        <AssetArray File="Assets\musicHigh\Red Ashes.mp3"/>
+        <AssetArray File="Assets\musicHigh\red dusk.mp3"/>
+        <AssetArray File="Assets\musicHigh\Red Life.mp3"/>
+        <AssetArray File="Assets\musicHigh\Renegade Attack.mp3"/>
+        <AssetArray File="Assets\musicHigh\Research Initiative.mp3"/>
+        <AssetArray File="Assets\musicHigh\Retaliation.mp3"/>
+        <AssetArray File="Assets\musicHigh\Returning To Base.mp3"/>
+        <AssetArray File="Assets\musicHigh\The Zenith.mp3"/>
+        <AssetArray File="Assets\musicHigh\Tiberian Influx.mp3"/>
+        <AssetArray File="Assets\musicHigh\Unleashed.mp3"/>
+        <AssetArray File="Assets\musicHigh\waiting game.mp3"/>
+        <AssetArray File="Assets\musicHigh\War Machine.mp3"/>
+        <AssetArray File="Assets\musicHigh\War Zone.mp3"/>
+        <AssetArray File="Assets\musicHigh\Yellow Dawn.mp3"/>
+        <AssetArray File="Assets\musicHigh\Yellow Explore.mp3"/>
+
+        <AssetArray File="Assets\musicHigh\act on instinct remix.mp3"/>
+        <AssetArray File="Assets\musicHigh\Aftermath.mp3"/>
+        <AssetArray File="Assets\musicHigh\alien arrival.mp3"/>
+        <AssetArray File="Assets\musicHigh\Alien Substance.mp3"/>
+        <AssetArray File="Assets\musicHigh\Apocalypse.mp3"/>
+        <AssetArray File="Assets\musicHigh\base repairs.mp3"/>
+        <AssetArray File="Assets\musicHigh\Black Dawn.mp3"/>
+        <AssetArray File="Assets\musicHigh\bleak twilight.mp3"/>
+        <AssetArray File="Assets\musicHigh\Blue Control.mp3"/>
+        <AssetArray File="Assets\musicHigh\Blue Glory.mp3"/>
+        <AssetArray File="Assets\musicHigh\Crimson City.mp3"/>
+        <AssetArray File="Assets\musicHigh\Crystalline.mp3"/>
+        <AssetArray File="Assets\musicHigh\Deadly Force.mp3"/>
+        <AssetArray File="Assets\musicHigh\Defense Line.mp3"/>
+        <AssetArray File="Assets\musicHigh\Drop Attack.mp3"/>
+        <AssetArray File="Assets\musicHigh\Gathering Intel.mp3"/>
+        <AssetArray File="Assets\musicHigh\global response.mp3"/>
+        <AssetArray File="Assets\musicHigh\Guilty Pleasure.mp3"/>
+    </CSound>
+    <CSound id="GameMusic12p6" parent="MUSIC">
+        <AssetArray File="Assets\Music\12 The Prophet&apos;s AscensionP6.mp3" FacialGroup=""/>
+    </CSound>
+    <CSound id="GameMusicCNC4NodAll" parent="MUSIC">
+        <AssetArray File="Assets\Music\13 Things Fall Apart.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\14 The Harder They Fall.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\16 The Pacific Hub.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\17 False Prophet.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\18 Heresy&apos;s Reward.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\19 To The Death.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\20 Bleed Out.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\21 The End Of All Things.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Nod We Rise.ogg" FacialGroup=""/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="DarkTideGameMusic" parent="MUSIC">
+        <AssetArray File="Assets\Music\马可_弗拉维乌斯 - Reject Unite(reminx with DOOM).mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\马可_弗拉维乌斯 - Reject Unite.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Jesper Kyd - Data Interference.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Jesper Kyd - Imperial Advance.mp3" FacialGroup=""/>
+        <AssetArray File="Assets\Music\Jesper Kyd - Warp Traveller.mp3" FacialGroup=""/>
+    </CSound>
+    <!--Ambient-->
+    <CSound id="KaneSound_Loop" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\WAKaneSpeechJibb_Distant_Quada.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\WAKaneSpeechJibb_Distant_Quadb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\WAKaneSpeechJibb_Distant_Quadc.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\WAKaneSpeechJibb_Distant_Stereoa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\WAKaneSpeechJibb_Distant_Stereob.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\WAKaneSpeechJibb_Distant_Stereoc.ogg" FacialGroup=""/>
+        <DupeHistoryCount value="3"/>
+        <DupeMuteCount value="2"/>
+        <PanLevel value="0.600000"/>
+        <Spread value="120.000000"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopMCVA" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUCrawD_CraA_moveLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUCrawD_CraA_moveLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUCrawD_CraA_moveLoopc.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopWidow" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUWidow_VehAD_moveLoop2a.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUWidow_VehAD_moveLoop2b.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUWidow_VehAD_moveLoop2c.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUWidow_VehAD_moveLoop2d.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopCABALMedusa" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUMedus_AirO_moveLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUMedus_AirO_moveLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUMedus_AirO_moveLoopc.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopA" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLoopc.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLoopd.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLoope.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLoopf.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLoopg.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_moveLooph.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+        <Volume value="-4.000000,1.000000"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopB" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_H_moveLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_H_moveLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_H_moveLoopc.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_H_moveLoopd.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopCABALCenturion" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUCentu_VehV_footstepa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUCentu_VehV_footstepb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUCentu_VehV_footstepc.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUCentu_VehV_footstepd.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUCentu_VehV_footstepe.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUCentu_VehV_footstepf.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopC" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_I_moveLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_I_moveLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_I_moveLoopc.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopAvatar" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepc.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepd.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepe.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepf.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepg.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footsteph.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepi.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUAvata_footstepj.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopFlameTank" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoopc.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoopd.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoope.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoopf.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoopg.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLooph.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUFlame_moveLoopi.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+    </CSound>
+    <CSound id="NodVehicleMoveLoopBike" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\GDI\GUMiniO_moveLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\GDI\GUMiniO_moveLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\GDI\GUMiniO_moveLoopc.ogg" FacialGroup=""/>
+        <Category value="Movement"/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="NodVehicleStandLoopA" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopa.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopb.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopc.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopd.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoope.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopf.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopg.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLooph.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopi.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nod\NUVeh_C_idleLoopj.ogg" FacialGroup=""/>
+        <LoopCount value="-1"/>
+        <Select value="Random"/>
+        <Volume value="0.000000,1.000000"/>
+    </CSound>
+</Catalog>

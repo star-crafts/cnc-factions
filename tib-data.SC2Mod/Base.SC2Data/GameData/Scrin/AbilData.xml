@@ -1,0 +1,709 @@
+<Catalog>
+
+    <CAbilHarvest id="ScrinHarvest" parent="SCVHarvest">
+        <ResourceAmountMultiplier index="Minerals" value="4"/>
+        <ResourceAmountMultiplier index="Vespene" value="4"/>
+        <ResourceAmountMultiplier index="Terrazine" value="4"/>
+        <!--        <ResourceTimeMultiplier index="Minerals" value="3.25"/>-->
+        <!--        <ResourceTimeMultiplier index="Vespene" value="3.25"/>-->
+        <!--        <ResourceTimeMultiplier index="Terrazine" value="3.25"/>-->
+        <ResourceTimeMultiplier index="Minerals" value="3.55"/>
+        <ResourceTimeMultiplier index="Vespene" value="3.55"/>
+        <ResourceTimeMultiplier index="Terrazine" value="3.55"/>
+    </CAbilHarvest>
+    <CAbilMorph id="ScrinDroneShipDeploy">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilMorph>
+    <CAbilMorph id="ScrinDronePlatformPack">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilMorph>
+    <CAbilMorph id="ScrinExplorerDeploy">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NodEmissaryDeploy"/>
+        <InfoArray index="0" Unit="ScrinExplorerDeployed" CollideRange="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="40"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="0.5"/>
+                <DurationArray index="Duration" value="40"/>
+            </SectionArray>
+        </InfoArray>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="IgnoreCollision" value="0"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Alert value="BuildComplete"/>
+    </CAbilMorph>
+    <CAbilEffectTarget id="ScrinBuzzersCombineWithVehicle">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ScrinUncombineWithBuzzers">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ScrinShockTrooperBlink">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinRavagerTiberiumAgitation">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinProdigyTeleportUnits">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinProdigyMindControl">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinCultistMindControl">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ScrinProdigyAreaMindControl">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ScrinDevourerConversionBeam">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinReaperConversionBeam">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinCorruptorTiberiumHeal">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinEradicatorTeleport">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ScrinCarrierIonStorm">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilSpecialize id="ScrinReactorFusionCore">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilSpecialize>
+    <CAbilEffectTarget id="ScrinReconstructionDrones">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinRepair">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ScrinTiberiumVibrationScan">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ScrinInfestation">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinIchorSeed">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinStasisShield">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinTemporalWormhole">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinPhaseField">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinWormhole">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinOverlordWrath">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinRift">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrinSwarm">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+
+    <CAbilBuild id="ScrinDefenseBuild">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Structures"/>
+        <InfoArray index="Build1" Unit="ScrinGrowthStimulator" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinGrowthStimulator" Requirements="BuildScrinGrowthStimulator"/>
+            <ValidatorArray value="HasVespene"/>
+        </InfoArray>
+        <Range value="999"/>
+    </CAbilBuild>
+    <CAbilBuild id="ScrinDefenseBuildAdvanced">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Structures"/>
+        <InfoArray index="Build1" Unit="ScrinBuzzerHive" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/ScrinDefenseBuild"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Abil/ScrinDefenseBuild" Location="Unit"/>
+            <Button DefaultButtonFace="ScrinBuzzerHive" Requirements="BuildScrinBuzzerHive"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="ScrinPhotonCannon" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/ScrinDefenseBuild"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Abil/ScrinDefenseBuild" Location="Unit"/>
+            <Button DefaultButtonFace="ScrinPhotonCannon" Requirements="BuildScrinPhotonCannon"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="ScrinPlasmaMissileBattery" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/ScrinDefenseBuild"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Abil/ScrinDefenseBuild" Location="Unit"/>
+            <Button DefaultButtonFace="ScrinPlasmaMissileBattery" Requirements="BuildScrinPlasmaMissileBattery"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="ScrinStormColumn" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/ScrinDefenseBuild"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Abil/ScrinDefenseBuild" Location="Unit"/>
+            <Button DefaultButtonFace="ScrinStormColumn" Requirements="BuildScrinStormColumn"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="ScrinRiftGenerator" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/ScrinDefenseBuild"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Abil/ScrinDefenseBuild" Location="Unit"/>
+            <Button DefaultButtonFace="ScrinRiftGenerator" State="Restricted" Requirements="BuildScrinRiftGenerator"/>
+        </InfoArray>
+        <Range value="999"/>
+    </CAbilBuild>
+    <CAbilBuild id="ScrinBuild">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Structures"/>
+        <InfoArray index="Build1" Unit="ScrinExtractor" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinExtractor"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="ScrinReactor" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinReactor"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="ScrinPortal" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinPortal" Requirements="BuildScrinPortal"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="ScrinWarpSphere" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinWarpSphere" Requirements="BuildScrinWarpSphere"/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="ScrinNerveCenter" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinNerveCenter" Requirements="BuildScrinNerveCenter"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="ScrinGravityStabilizer" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinGravityStabilizer" Requirements="BuildScrinGravityStabilizer"/>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="ScrinStasisChamber" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinStasisChamber" Requirements="BuildScrinStasisChamber"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="ScrinTechnologyAssembler" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinTechnologyAssembler" Requirements="BuildScrinTechnologyAssembler"/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="ScrinSignalTransmitter" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinSignalTransmitter" State="Restricted" Requirements="BuildScrinSignalTransmitter"/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="ScrinFoundry" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinFoundry" Requirements="BuildScrinFoundry"/>
+        </InfoArray>
+        <Range value="999"/>
+        <!--        <EffectArray index="Start" value="ScrinStructureSpawnSet"/>-->
+    </CAbilBuild>
+    <CAbilBuild id="ScrinBuildAdvanced">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Structures"/>
+        <InfoArray index="Build14" Unit="ScrinWarpChasm" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/ScrinBuild"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Link="Abil/ScrinBuild" Location="Unit"/>
+            <Button DefaultButtonFace="ScrinWarpChasm" State="Restricted" Requirements="BuildScrinWarpChasm"/>
+        </InfoArray>
+        <Range value="999"/>
+        <!--        <EffectArray index="Start" value="ScrinStructureSpawnSet"/>-->
+    </CAbilBuild>
+    <CAbilBuild id="ScrinLightningSpike">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Structures"/>
+        <InfoArray index="Build1" Unit="ScrinLightningSpike" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="ScrinLightningSpike"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilTrain id="ScrinPortalTrain">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <Range value="5"/>
+        <InfoArray index="Train1" Time="30">
+            <Button DefaultButtonFace="ScrinBuzzers"/>
+            <Unit value="ScrinBuzzers"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="30">
+            <Button DefaultButtonFace="ScrinDisintegrator" Requirements="TrainScrinDisintegrator"/>
+            <Unit value="ScrinDisintegrator"/>
+            <Unit value="ScrinDisintegrator"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="30">
+            <Button DefaultButtonFace="ScrinShockTrooper" Requirements="TrainScrinShockTrooper"/>
+            <Unit value="ScrinShockTrooper"/>
+            <Unit value="ScrinShockTrooper"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="30">
+            <Button DefaultButtonFace="ScrinRavager" Requirements="TrainScrinRavager"/>
+            <Unit value="ScrinRavager"/>
+            <Unit value="ScrinRavager"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="30">
+            <Button DefaultButtonFace="ScrinCultist" Requirements="TrainScrinCultist"/>
+            <Unit value="ScrinCultist"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="30">
+            <Button DefaultButtonFace="ScrinAssimilator" Requirements="TrainScrinAssimilator"/>
+            <Unit value="ScrinAssimilator"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="30">
+            <Button DefaultButtonFace="ScrinMastermind" State="Restricted" Requirements="TrainScrinMastermind"/>
+            <Unit value="ScrinMastermind"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="ScrinSignalTransmitterTrain">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <Range value="5"/>
+        <Activity value="UI/Building"/>
+        <InfoArray index="Train1" Time="60">
+            <Button DefaultButtonFace="ScrinMothership" Requirements="TrainScrinMothership"/>
+            <Unit value="ScrinMothership"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="ScrinDronePlatformTrain">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilTrain>
+    <CAbilTrain id="ScrinExtractorTrain">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+    </CAbilTrain>
+    <CAbilTrain id="ScrinWarpSphereTrain">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <Range value="5"/>
+        <Activity value="UI/Building"/>
+        <InfoArray index="Train1" Time="30">
+            <Button DefaultButtonFace="ScrinGunWalker" Requirements="TrainScrinGunWalker"/>
+            <Unit value="ScrinGunWalker"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="30">
+            <Button DefaultButtonFace="ScrinSeeker" Requirements="TrainScrinSeeker"/>
+            <Unit value="ScrinSeeker"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="30">
+            <Button DefaultButtonFace="ScrinDevourer" Requirements="TrainScrinDevourer"/>
+            <Unit value="ScrinDevourer"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="30">
+            <Button DefaultButtonFace="ScrinCorrupter" Requirements="TrainScrinCorrupter"/>
+            <Unit value="ScrinCorrupter"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="30">
+            <Button DefaultButtonFace="ScrinMechapede" Requirements="TrainScrinMechapede"/>
+            <Unit value="ScrinMechapede"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="35">
+            <Button DefaultButtonFace="ScrinAnnihilator" Requirements="TrainScrinAnnihilator"/>
+            <Unit value="ScrinAnnihilator"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="60">
+            <Button DefaultButtonFace="ScrinEradicator" Requirements="TrainScrinEradicator"/>
+            <Unit value="ScrinEradicator"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="ScrinMechapedeTrain">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <Range value="5"/>
+        <Activity value="UI/Building"/>
+        <InfoArray index="Train1" Time="30">
+            <Button DefaultButtonFace="ScrinGunWalker" Requirements="TrainScrinGunWalker"/>
+            <Unit value="ScrinGunWalker"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="30">
+            <Button DefaultButtonFace="ScrinSeeker" Requirements="TrainScrinSeeker"/>
+            <Unit value="ScrinSeeker"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="30">
+            <Button DefaultButtonFace="ScrinDevourer" Requirements="TrainScrinDevourer"/>
+            <Unit value="ScrinDevourer"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="30">
+            <Button DefaultButtonFace="ScrinCorrupter" Requirements="TrainScrinCorrupter"/>
+            <Unit value="ScrinCorrupter"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="30">
+            <Button DefaultButtonFace="ScrinMechapede" Requirements="TrainScrinMechapede"/>
+            <Unit value="ScrinMechapede"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="35">
+            <Button DefaultButtonFace="ScrinAnnihilator" Requirements="TrainScrinAnnihilator"/>
+            <Unit value="ScrinAnnihilator"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="60">
+            <Button DefaultButtonFace="ScrinEradicator" Requirements="TrainScrinEradicator"/>
+            <Unit value="ScrinEradicator"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="ScrinGravityStabilizerTrain">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <Range value="5"/>
+        <Activity value="UI/Building"/>
+        <InfoArray index="Train1" Time="30">
+            <Button DefaultButtonFace="ScrinStormrider" Requirements="TrainScrinStormrider"/>
+            <Unit value="ScrinStormrider"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="30">
+            <Button DefaultButtonFace="ScrinDevastator" Requirements="TrainScrinDevastator"/>
+            <Unit value="ScrinDevastator"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="30">
+            <Button DefaultButtonFace="ScrinCarrier" Requirements="TrainScrinCarrier"/>
+            <Unit value="ScrinCarrier"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="30">
+            <Button DefaultButtonFace="ScrinDroneShip" Requirements="TrainScrinDroneShip"/>
+            <Unit value="ScrinDroneShip"/>
+        </InfoArray>
+    </CAbilTrain>
+
+    <CAbilResearch id="ScrinArmyResearch">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="160" Upgrade="ScrinGroundWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinGroundWeaponsLevel0" Requirements="LearnScrinGroundWeaponsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="190" Upgrade="ScrinGroundWeaponsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ScrinGroundWeaponsLevel2" Requirements="LearnScrinGroundWeaponsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="220" Upgrade="ScrinGroundWeaponsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ScrinGroundWeaponsLevel3" Requirements="LearnScrinGroundWeaponsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="160" Upgrade="ScrinAirWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinAirWeaponsLevel1" Requirements="LearnScrinAirWeaponsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="190" Upgrade="ScrinAirWeaponsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ScrinAirWeaponsLevel2" Requirements="LearnScrinAirWeaponsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="220" Upgrade="ScrinAirWeaponsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ScrinAirWeaponsLevel3" Requirements="LearnScrinAirWeaponsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="160" Upgrade="ScrinLightArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinLightArmorsLevel1" Requirements="LearnScrinLightArmorsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="190" Upgrade="ScrinLightArmorsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ScrinLightArmorsLevel2" Requirements="LearnScrinLightArmorsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="220" Upgrade="ScrinLightArmorsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ScrinLightArmorsLevel3" Requirements="LearnScrinLightArmorsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="160" Upgrade="ScrinHeavyArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinHeavyArmorsLevel1" Requirements="LearnScrinHeavyArmorsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="190" Upgrade="ScrinHeavyArmorsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ScrinHeavyArmorsLevel2" Requirements="LearnScrinHeavyArmorsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="220" Upgrade="ScrinHeavyArmorsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ScrinHeavyArmorsLevel3" Requirements="LearnScrinHeavyArmorsLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research13" Time="160" Upgrade="ScrinShieldsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinShieldsLevel1" Requirements="LearnScrinShieldsLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research14" Time="190" Upgrade="ScrinShieldsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ScrinShieldsLevel2" Requirements="LearnScrinShieldsLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research15" Time="220" Upgrade="ScrinShieldsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ScrinShieldsLevel3" Requirements="LearnScrinShieldsLevel3"/>
+        </InfoArray>
+    </CAbilResearch>
+    
+    <CAbilResearch id="ScrinNerveCenterResearch">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="60" Upgrade="ScrinAttenuatedForcefields">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinAttenuatedForcefields" Requirements="LearnScrinAttenuatedForcefields"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="60" Upgrade="ScrinForcefieldGenerators">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinForcefieldGenerators" Requirements="LearnScrinForcefieldGenerators"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ScrinStasisChamberResearch">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="60" Upgrade="ScrinBlinkPacks">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinBlinkPacks" Requirements="LearnScrinBlinkPacks"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="60" Upgrade="ScrinPlasmaDiscLaunchers">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinPlasmaDiscLaunchers" Requirements="LearnScrinPlasmaDiscLaunchers"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="60" Upgrade="ScrinAdvancedArticulators">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinAdvancedArticulators" Requirements="LearnScrinAdvancedArticulators"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="60" Upgrade="ScrinProdigy">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinProdigy" Requirements="LearnScrinProdigy"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ScrinTechnologyAssemblerResearch">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="60" Upgrade="ScrinShardLaunchers">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinShardLaunchers" Requirements="LearnScrinShardLaunchers"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="60" Upgrade="ScrinTravelerEngines">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinTravelerEngines" Requirements="LearnScrinTravelerEngines"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="60" Upgrade="ScrinBlueShards">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinBlueShards" Requirements="LearnScrinBlueShards"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="60" Upgrade="ScrinConversionReserves">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinConversionReserves" Requirements="LearnScrinConversionReserves"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="60" Upgrade="ScrinReaper">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ScrinReaper" Requirements="LearnScrinReaper"/>
+        </InfoArray>
+    </CAbilResearch>
+
+    <CAbilArmMagazine id="ScrinCarrierHangar">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <AbilSetId value="CarrierHanger"/>
+        <Leash value="12"/>
+        <Flags index="Retarget" value="1"/>
+        <EffectArray index="Death" value="InterceptorFate"/>
+        <InfoArray index="Ammo1" Time="12" CountStart="4" Manage="Recall" Unit="ScrinInvader">
+            <Charge Link="CarrierInterceptor" Location="Unit"/>
+            <Button DefaultButtonFace="Interceptor" Requirements="ArmInterceptor">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="LeashRetarget" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Cooldown Link="CarrierTrainInterceptor" TimeUse="0.01"/>
+        </InfoArray>
+        <Alert value="TrainComplete"/>
+        <MaxCount value="8"/>
+    </CAbilArmMagazine>
+    <CAbilMorph id="ScrinAnnihilatorWreckage">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Thor"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="IgnoreFood" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="NodAvatarWreckage"/>
+    </CAbilMorph>
+    <CAbilMorph id="ScrinAnnihilatorReborn">
+        <EditorCategories value="Race:Scrin,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Thor"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="IgnoreFood" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <RefundFraction>
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+            <Resource index="Terrazine" value="0"/>
+            <Resource index="Custom" value="0"/>
+        </RefundFraction>
+        <InfoArray Score="1" Unit="NodAvatar">
+            <SectionArray index="Abils">
+                <!--                <EffectArray index="Start" value="NodAvatarWreckageRemoveCargo"/>-->
+                <DurationArray index="Delay" value="5"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <!--                <DurationArray index="Delay" value="5"/>-->
+                <DurationArray index="Duration" value="5"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Delay" value="5"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="RebornCompleteWidow"/>
+    </CAbilMorph>
+</Catalog>

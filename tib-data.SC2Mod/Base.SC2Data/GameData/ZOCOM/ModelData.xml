@@ -1,0 +1,330 @@
+<catalog>
+    <CModel default="1" id="ZOCOMUnit" parent="Unit">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Units\ZOCOM\##model##.m3"/>
+        <EditorCategories value="Race:ZOCOM"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+        <UnitGlossaryCamera value="Star2CameraMid03"/>
+    </CModel>
+    <CModel default="1" id="ZOCOMVehicle" parent="ZOCOMUnit">
+        <Tipability value="0.750000"/>
+        <TipabilityWidth value="0.800000"/>
+        <TipabilityLength value="0.800000"/>
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel default="1" id="ZOCOMInfantry" parent="ZOCOMUnit">
+        <SquibTypeDefault value="Flesh"/>
+    </CModel>
+    <CModel default="1" id="ZOCOMAir" parent="ZOCOMUnit">
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel default="1" id="ZOCOMBuilding" parent="Unit">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Buildings\ZOCOM\##model##.m3"/>
+        <SelectionLayer value="2"/>
+        <EditorCategories value="Race:ZOCOM"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+        <UnitGlossaryCamera value="Star2CameraMid03"/>
+    </CModel>
+    <CModel default="1" id="ZOCOMBuildingDeath" parent="BuildingDeath">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Buildings\ZOCOM\##model##.m3"/>
+        <LowQualityModel value="TerranBuildingDeathLow"/>
+        <EditorCategories value="Race:ZOCOM"/>
+    </CModel>
+    <CModel default="1" id="ZOCOMUnitDeath" parent="UnitDeath">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Units\ZOCOM\##model##.m3"/>
+        <EditorCategories value="Race:ZOCOM"/>
+        <Occlusion value="Show"/>
+    </CModel>
+
+    <CModel id="ZOCOMJames" parent="ZOCOMInfantry">
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+    </CModel>
+    <CModel id="ZOCOMZoneRaider" parent="ZOCOMInfantry">
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+    </CModel>
+    <CModel id="ZOCOMZoneCommando" parent="ZOCOMInfantry">
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+    </CModel>
+    <CModel id="ZOCOMJuggernaut" parent="ZOCOMVehicle">
+    </CModel>
+    <CModel id="ZOCOMSpartan" parent="ZOCOMVehicle">
+    </CModel>
+    <CModel id="ZOCOMStriker" parent="ZOCOMVehicle">
+    </CModel>
+    <CModel id="ZOCOMRefractor" parent="ZOCOMVehicle">
+    </CModel>
+    <CModel id="ZOCOMTitan" parent="ZOCOMVehicle" >
+        <PlanetPanelCamera value="Star2CameraHigh09"/>
+        <Radius value="0.650000"/>
+        <SelectionRadius value="0.999700"/>
+        <ShadowRadius value="0.999700"/>
+        <TechPurchaseCamera value="TechPurchaseGoliath"/>
+    </CModel>
+    <CModel id="ZOCOMGuardianCannon" parent="ZOCOMInfantry">
+    </CModel>
+    <CModel id="ZOCOMZoneEnforcer" parent="ZOCOMInfantry">
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+    </CModel>
+    <CModel id="ZOCOMZoneTrooper" parent="ZOCOMInfantry">
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+    </CModel>
+    <CModel id="ZOCOMZoneDefender" parent="ZOCOMInfantry">
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+    </CModel>
+    <CModel id="ZOCOMMastodon" parent="ZOCOMVehicle">
+        <RequiredAnims index="0" removed="1"/>
+        <AttachProps index="0" removed="1"/>
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+        <SelectionRadius value="1.000000"/>
+        <ShadowRadius value="1.000000"/>
+        <Tipability value="0.100000"/>
+        <TipabilityLength value="0.100000"/>
+        <TipabilityWidth value="0.100000"/>
+    </CModel>
+    <CModel id="ZOCOMDefenseCrawler" parent="ZOCOMVehicle">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+        <SelectionRadius value="0.500000"/>
+        <ShadowRadius value="0.500000"/>
+        <RequiredAnims index="0" removed="1"/>
+        <AttachProps index="0" removed="1"/>
+    </CModel>
+    <CModel id="ZOCOMShepherd" parent="ZOCOMVehicle">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+        <SelectionRadius value="1.000000"/>
+        <ShadowRadius value="1.000000"/>
+        <RequiredAnims index="0" removed="1"/>
+        <AttachProps index="0" removed="1"/>
+    </CModel>
+    <CModel id="ZOCOMMammoth" parent="ZOCOMVehicle">
+    </CModel>
+    <CModel id="ZOCOMDozer" parent="ZOCOMInfantry">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+        <RequiredAnims index="0" removed="1"/>
+        <AttachProps index="0" removed="1"/>
+    </CModel>
+    <CModel id="ZOCOMEngineer" parent="ZOCOMInfantry">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+    </CModel>
+    <CModel id="ZOCOMFocusBeam" parent="ZOCOMBuilding">
+    </CModel>
+    <CModel id="ZOCOMHammerHead" parent="ZOCOMAir">
+        <AttachProps index="0" removed="1"/>
+        <AttachProps index="1" removed="1"/>
+        <AttachProps index="2" removed="1"/>
+        <AttachProps index="3" removed="1"/>
+        <AttachProps index="4" removed="1"/>
+        <AttachProps index="5" removed="1"/>
+        <AttachProps index="6" removed="1"/>
+        <AttachProps index="7" removed="1"/>
+        <AttachProps index="8" removed="1"/>
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+    </CModel>
+    <CModel id="ZOCOMBunker" parent="ZOCOMBuilding">
+    </CModel>
+    <CModel id="ZOCOMDefenseCrawler_Deployed" parent="ZOCOMBuilding">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+    </CModel>
+    <CModel id="ZOCOMDefenseCrawler_Morph" parent="ZOCOMUnit">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+    </CModel>
+    <CModel id="ZOCOMArgus" parent="ZOCOMAir">
+        <ScaleMax value="1.200000,1.200000,1.200000"/>
+        <ScaleMin value="1.200000,1.200000,1.200000"/>
+        <AttachProps index="0" removed="1"/>
+        <AttachProps index="1" removed="1"/>
+        <AttachProps index="2" removed="1"/>
+        <AttachProps index="3" removed="1"/>
+        <AttachProps index="4" removed="1"/>
+        <AttachProps index="5" removed="1"/>
+        <AttachProps index="6" removed="1"/>
+        <AttachProps index="7" removed="1"/>
+        <AttachProps index="8" removed="1"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ZOCOMMastodonDeath" parent="ZOCOMUnitDeath">
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ZOCOMShepherdDeath" parent="ZOCOMUnitDeath">
+        <AttachProps index="0" removed="1"/>
+        <AttachProps index="1" removed="1"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ZOCOMZoneTrooperDeath" parent="ZOCOMUnitDeath">
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ZOCOMMammothDeath" parent="ZOCOMUnitDeath">
+        <AttachProps index="0" removed="1"/>
+        <AttachProps index="1" removed="1"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    
+    
+    <CModel id="GDIbuild" parent="BarracksBuildBase">
+        <Model value="Assets\Models\GDI\GDI DropPod\GDI Build.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="DropPodGDI" parent="PersistentSpellFX">
+        <Model value="Assets\Models\GDI\GDI DropPod\GDIDroppod.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ZOCOMZoneRaiderAttackImpact" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\TerranSmallBlast\TerranSmallBlast.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ZOCOMZoneRaiderChargeWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Terran\MagneticMineMissile\MagneticMineMissile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="ZOCOMHammerHeadRocket" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ScoutAirMissile\ScoutAirMissile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="0.666500"/>
+        <ShadowRadius value="0.666500"/>
+    </CModel>
+    <CModel id="IonCannonAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Models\GDI\Storm_FX_Nova_Spectre_OrbitalBombardment.m3"/>
+        <AnimSpeed value="0.300000"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="1.200000,1.200000,1.200000"/>
+        <ScaleMin value="1.200000,1.200000,1.200000"/>
+    </CModel>
+    <CModel id="MCVReapirImpactArgus" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Zerg\RegenerativeBileBuff\RegenerativeBileBuff.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <Flags index="Wait" value="1"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="ZOCOMZoneRaiderWeaponAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\Liberator_GroundCannon_Upgrade\Liberator_GroundCannon_Upgrade.m3"/>
+        <LowQualityModel value="ArchonAttackBeamLow"/>
+        <AnimSpeed value="4.000000"/>
+        <EditorCategories value="Race:GDI"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="RepairZoneArgus" parent="PersistentSpellFX">
+        <Model value="Assets\Splats\TerranCircle_Ex3\TerranCircle_Ex3.m3"/>
+        <ScaleMax value="1.600000,1.600000,1.600000"/>
+        <ScaleMin value="1.600000,1.600000,1.600000"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="MastodonLMWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\PsionicShift\PsionicShift.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="ZOCOMArgusAttackBeam1" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\DiamondbackBeam\DiamondbackBeam.m3"/>
+        <LowQualityModel value="DiamondbackAttackBeamLow"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ARGUSMissileWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ScoutAirMissile\ScoutAirMissile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ARGUSAirAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\Raven_Scrambler_Missile_MP_Impact\Raven_Scrambler_Missile_MP_Impact.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ARGUSAirAttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\VikingFighterMissileLaunch\VikingFighterMissileLaunch.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="GDILightAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Models\GDI\GhostSnipeBeamBlue.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <AnimSpeed value="2.000000"/>
+    </CModel>
+    <CModel id="DefenderAWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ScoutAirMissile\ScoutAirMissile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="DefenderAirAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\GoliathAirMissileImpact\GoliathAirMissileImpact.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="DefenderAirAttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\VikingFighterMissileLaunch\VikingFighterMissileLaunch.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="JumpPackImpact" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\SiegeTank_BlackOps_JumpJets_Land\SiegeTank_BlackOps_JumpJets_Land.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="GDIGrenadesAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\Nova_PulseGrenade\Nova_PulseGrenade.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="0.300000,0.300000,0.300000"/>
+        <ScaleMin value="0.300000,0.300000,0.300000"/>
+    </CModel>
+    <CModel id="ZOCOMGrenadesWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Terran\Nova_PulseGrenade_Missile\Nova_PulseGrenade_Missile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+        <SelectionRadius value="0.833200"/>
+        <ShadowRadius value="0.833200"/>
+    </CModel>
+    <CModel id="GDIZoneTrooperAttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\SiegeTankWeaponLaunch\SiegeTankWeaponLaunch.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="GDIZoneTrooperBaseAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\TankWeaponImpact\TankWeaponImpact.m3"/>
+        <EditorCategories value="Race:GDI"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZOCOMZoneTrooperLMWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Terran\Marauder_ConcussiveShell_MP_Missile\Marauder_ConcussiveShell_MP_Missile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="LMWeaponCommando" parent="MissileFX">
+        <Model value="Assets\Effects\Terran\Marauder_ConcussiveShell_MP_Missile\Marauder_ConcussiveShell_MP_Missile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+    <CModel id="ZOCOMZoneTrooperLMWeapon2" parent="MissileFX">
+        <Model value="Assets\Effects\Terran\ThorShoulderMissile\ThorShoulderMissile.m3"/>
+        <EditorCategories value="Race:GDI"/>
+    </CModel>
+</catalog>

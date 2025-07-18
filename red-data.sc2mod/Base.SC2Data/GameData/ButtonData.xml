@@ -1,0 +1,3182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton default="1" id="ResearchLocked2" parent="ResearchLocked">
+        <Tooltip value="Button/Tooltip/ResearchLocked2"/>
+    </CButton>
+    <CButton default="1" id="ResearchLocked22" parent="ResearchLocked2">
+        <Tooltip value="Button/Tooltip/ResearchLocked22"/>
+    </CButton>
+    <CButton id="1000100">
+        <Icon value="Assets\Textures\btn-ability-protoss-oracle-stasisward.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="AcquireMove2">
+        <Icon value="Assets\Textures\btn-command-attack.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Attack"/>
+    </CButton>
+    <CButton id="Ally">
+        <Icon value="Assets\Textures\btn-tips-challengecounter.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="AirSuperiority">
+        <Icon value="Assets\Textures\btn-tips-coolanttower.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="RuSolvebuilding_Model">
+        <Icon value="Assets\Textures\btn-building-terran-engineeringbay.dds"/>
+    </CButton>
+    <CButton id="AssaultMode2">
+        <Icon value="assets\icons\tengu-switches-to-mecha-mode.dds"/>
+        <HotkeySet value="VikingModes"/>
+    </CButton>
+    <CButton id="AssaultMode22">
+        <Icon value="assets\icons\vx-switches-to-striker-mode.dds"/>
+        <HotkeySet value="VikingModes"/>
+    </CButton>
+    <CButton id="AssaultMode222">
+        <Icon value="assets\icons\vx-build-icon.dds"/>
+        <HotkeySet value="VikingModes"/>
+    </CButton>
+    <CButton id="SovietBeaverTransport">
+        <Tooltip value="Button/Tooltip/BuildInterwarFighter222222"/>
+        <Icon value="Assets\icons\bandicoot-bomber-construction-icon.dds"/>
+        <AlertName value="Button/Name/BuildInterwarFighter222222"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="EmpireBuildTengu">
+        <Icon value="assets\icons\tengu-building-icon.dds"/>
+        <HotkeySet value="VikingModes"/>
+    </CButton>
+    <CButton id="AssaultMode22222">
+        <Icon value="Assets\icons\horror-robot-building-icon.dds"/>
+    </CButton>
+    <CButton id="AssaultMode222222">
+        <Icon value="Assets\icons\sickle-mech-construction-icon.dds"/>
+    </CButton>
+    <CButton id="AssaultMode222223">
+        <Icon value="Assets\icons\harvester-mecha-construction-icon.dds"/>
+    </CButton>
+    <CButton id="AssaultMode222224">
+        <Icon value="Assets\icons\raider-mech-build-icon.dds"/>
+    </CButton>
+    <CButton id="AssaultMode222225">
+        <Icon value="Assets\icons\idol-mecha-construction-icon.dds"/>
+    </CButton>
+    <CButton id="AssaultMode222226">
+        <Icon value="Assets\icons\mammoth-mech-construction-icon.dds"/>
+    </CButton>
+    <CButton id="AssaultMode23">
+        <Icon value="Assets\icons\Allied\allied-base-car-packing-icon.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch2">
+        <Icon value="assets\icons\javelin-trooper-laser-guidance-mode.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch22">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-corruptorMissileaoe.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch3">
+        <Icon value="assets\icons\javelin-soldier-self-guided-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch32">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-c.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch4">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-trooper-missileLauncher.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch42">
+        <Icon value="assets\icons\wave-energy-tank-early-launch-mode.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch422">
+        <Icon value="Assets\Textures\btn-ability-stetmann-corruptorMissilebarrage.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch423">
+        <Icon value="assets\icons\wave-energy-tank-early-launch-mode.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch4232">
+        <Icon value="Assets\icons\wave-energy-tower-construction-icon.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch42322">
+        <Icon value="Assets\icons\weather-controller-build-icon.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch423222">
+        <Icon value="Assets\icons\nano-swarm-core-construction-icon.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch423223">
+        <Icon value="Assets\icons\weather-controller-build-icon.dds"/>
+        <HotkeyAlias value="AlliedJavaModeSwitch42322"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch42323">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch5">
+        <Icon value="Assets\Textures\btn-ability-mengsk-siegetank-shockandawe.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch52">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechahydraliskMissileDamage.dds"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch53">
+        <Icon value="Assets\Textures\btn-ability-mengsk-siegetank-shockandawe.dds"/>
+    </CButton>
+    <CButton id="AlliedPredTankSpell">
+        <Icon value="Assets\Textures\Weapon_Cannon_B7_48_5.tga"/>
+    </CButton>
+    <CButton id="AlliedPredTankSpell2">
+        <Icon value="Assets\Textures\btn-ability-stetmann-battlecarrierlordmechayamatocannon.dds"/>
+    </CButton>
+    <CButton id="AlliedPredTankSpell22">
+        <Icon value="Assets\Textures\btn-ability-stetmann-battlecarrierlordmechayamatocannon.dds"/>
+        <HotkeyAlias value="AlliedPredTankSpell2"/>
+    </CButton>
+    <CButton id="AlliedPredTankSpell3">
+        <Icon value="Assets\icons\zhurong&apos;s-battle-tank-skill-icon.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet10">
+        <Icon value="Assets\Textures\btn-upgrade-nova-shotgun.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet11">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-u238rounds.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet12">
+        <Icon value="Assets\Textures\btn-upgrade-nova-jetpack.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet13">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-tankhealth.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet14">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-tychus-vanadiumshell.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet15">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-reaper-shadesuit.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet16">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-stabilizermedpacks.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet17">
+        <Icon value="Assets\Textures\talent-swann-level05-vespenedrone.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet18">
+        <Icon value="Assets\Textures\killbots_coop.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet19">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-ripwaveMissiles.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet2">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-kineticfoam.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet20">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-warhound-thunderboltMissiles.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet21">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-tomahawkpowercell.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet22">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-adeptchampionbounceattack.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet23">
+        <Icon value="Assets\Textures\btn-progression-mengsk-06-engineeringbayupgradecache.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet24">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-shapedblast.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet25">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-rapiddeployment.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet26">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-neosteelbunker.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet27">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet28">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-shapedhull.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet29">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-titaniumhousing.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet3">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-fullborecanisterammo.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet30">
+        <Icon value="Assets\Textures\btn-ability-mengsk-earthsplitterordnance-earthsplitterbombardment.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet32">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-attackspeed.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet33">
+        <Icon value="Assets\icons\story-mode-allied-accord:-aircraft-thrusters.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet4">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadon.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet40">
+        <Icon value="Assets\Textures\war3_btnengineeringupgrade.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet5">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechahydraliskMissileDamage.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet6">
+        <Icon value="Assets\Textures\btn-karax-upgrade-purifierbeam.dds"/>
+        <HotkeyAlias value="AutechBeidongSet"/>
+    </CButton>
+    <CButton id="AutechUnlockT1">
+        <Icon value="Assets\icons\Allied\allied-tech-level-unlocked-1.dds"/>
+    </CButton>
+    <CButton id="AutechUnlockT2">
+        <Icon value="Assets\icons\Allied\allied-tech-level-unlocked-2.dds"/>
+        <Hotkey value="Button/Hotkey/AutechUnlockT1"/>
+    </CButton>
+    <CButton id="AutechUnlockT3">
+        <Icon value="Assets\icons\Allied\allied-tech-level-unlocked-3.dds"/>
+        <Hotkey value="Button/Hotkey/AutechUnlockT1"/>
+    </CButton>
+    <CButton id="AutechUnlockT4">
+        <Icon value="Assets\icons\Allied\allied-forces-four-technology-unlock-buttons.dds"/>
+        <Hotkey value="Button/Hotkey/AutechUnlockT1"/>
+    </CButton>
+    <CButton id="BiodomeLoad2">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+    </CButton>
+    <CButton id="BiodomeLoad3">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+    </CButton>
+    <CButton id="BiodomeLoad32">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+    </CButton>
+    <CButton id="BiodomeUnloadAll2">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+    </CButton>
+    <CButton id="BiodomeUnloadAll3">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+    </CButton>
+    <CButton id="RAHandlingturrets">
+        <Icon value="Assets\Textures\btn-tips-challengecounter.dds"/>
+        <Hotkey value="Button/Hotkey/TowerMove"/>
+    </CButton>
+    <CButton id="Blink22">
+        <Icon value="Assets\Textures\btn-tips-challengecounter.dds"/>
+        <Hotkey value="Button/Hotkey/TowerMove"/>
+    </CButton>
+    <CButton id="Blink222">
+        <Icon value="Assets\Textures\btn-tips-challengecounter.dds"/>
+        <Hotkey value="Button/Hotkey/TowerMove"/>
+        <HotkeyAlias value="Blink22"/>
+    </CButton>
+    <CButton id="Build155mmSPH">
+        <Icon value="Assets\icons\155-rocket-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="SovietBuildAirport">
+        <Icon value="Assets\icons\Soviet\soviet-airfield-construction-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildAirport22">
+        <Icon value="Assets\icons\hato-navigation-platform-construction-guide.dds"/>
+    </CButton>
+    <CButton id="BuildAirport3">
+        <Icon value="Assets\icons\Allied\allied-airfield-construction-icon.dds"/>
+        <HotkeyAlias value="BuildAirport"/>
+    </CButton>
+    <CButton id="BuildAntitankBunker2">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildAntitankGunAdvanced">
+        <Icon value="Assets\Textures\btn-unit-terran-sniperbot3000.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildBarracks2">
+        <Icon value="Assets\icons\Allied\allied-barracks-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildAubarracks"/>
+    </CButton>
+    <CButton id="BuildBarracks22">
+        <Icon value="Assets\icons\empire\empire-toilet-building-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildBarracks2"/>
+    </CButton>
+    <CButton id="BuildBarracks23">
+        <Icon value="Assets\icons\Allied\allied-barracks-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildAubarracks"/>
+        <HotkeyAlias value="BuildBarracks2"/>
+    </CButton>
+    <CButton id="BuildBattleship2">
+        <Icon value="Assets\Textures\btn-unit-terran-battlecruiser.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildCnlingbo2">
+        <Icon value="Assets\icons\magnetic-crossbow-air-defense-system-construction-icon.dds"/>
+        <HotkeyAlias value="BuildCnlingbo"/>
+    </CButton>
+    <CButton id="BuildCnlingbo3">
+        <Icon value="Assets\icons\pojun-golden-armor-construction-icon.dds"/>
+        <HotkeyAlias value="BuildCnlingbo"/>
+    </CButton>
+    <CButton id="BuildCnlingbo4">
+        <Icon value="Assets\icons\white-tiger-siege-artillery-construction-icon.dds"/>
+        <HotkeyAlias value="BuildCnlingbo"/>
+    </CButton>
+    <CButton id="BuildCnlingbo5">
+        <Icon value="Assets\icons\zhurong-assault-tank-construction-icon.dds"/>
+        <HotkeyAlias value="BuildCnlingbo"/>
+    </CButton>
+    <CButton id="BuildCnlingbo6">
+        <Icon value="Assets\icons\qingfeng-missile-vehicle-construction-icon.dds"/>
+        <HotkeyAlias value="BuildCnlingbo"/>
+    </CButton>
+    <CButton id="BuildCnlingbo7">
+        <Icon value="Assets\icons\kirin-formation-tank-construction-icon.dds"/>
+        <HotkeyAlias value="BuildCnlingbo"/>
+    </CButton>
+    <CButton id="BuildCoastalBattery2">
+        <Icon value="Assets\icons\brighton-coastal-defense-battery-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildUkranianCannon">
+        <Icon value="Assets\icons\ukrainian-cannon-construction-button.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildCoastalBattery222">
+        <Icon value="Assets\icons\wave-energy-three-cannon-build-button.dds"/>
+    </CButton>
+    <CButton id="EmpireBuildWaveForceArtillery">
+        <Icon value="assets\icons\wave-energy-tank-construction-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="EmpireBuildRazorTank">
+        <Icon value="Assets\icons\naginata-tank-building-icon.dds"/>
+    </CButton>
+    <CButton id="EmpireBuildTsunamiTank">
+        <Icon value="assets\icons\tsunami-tank-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildInterwarFighter223">
+        <Icon value="Assets\icons\star-frozen-helicopter-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildInterwarFighter3">
+        <Icon value="Assets\icons\ares-interceptor-icon.dds"/>
+    </CButton>
+    <CButton id="BuildInterwarFighter4">
+        <Icon value="Assets\icons\star-apollo-fighter-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker222224">
+        <Icon value="Assets\icons\elite-academy-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker2222242">
+        <Icon value="Assets\icons\elite-academy-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSOMUAS3553">
+        <Icon value="Assets\icons\star-multifunctional-infantry-fighting-vehicle-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTankTrap225">
+        <Icon value="Assets\icons\Allied\allied-base-vehicle-build-icon.dds"/>
+    </CButton>
+    <CButton id="AlliedFrozenLegionJump">
+        <Icon value="Assets\icons\frozen-legion-skill-icon.dds"/>
+    </CButton>
+    <CButton id="Detector2">
+        <Icon value="Assets\Textures\BTN-Status-Detector.dds"/>
+        <HotkeyAlias value="Detector"/>
+    </CButton>
+    <CButton id="Disband4">
+        <Icon value="Assets\Textures\btn-ability-terran-salvage.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Disband"/>
+    </CButton>
+    <CButton id="AlliedSpyBribery">
+        <Icon value="Assets\icons\spy-skill-icon.dds"/>
+    </CButton>
+    <CButton id="AlliedSpyInfiltrate">
+        <Icon value="Assets\Textures\ui_glues_ladder_score_rating_down.dds"/>
+    </CButton>
+    <CButton id="EngineerCapture7">
+        <Icon value="Assets\Textures\househunters_coop.dds"/>
+    </CButton>
+    <CButton id="NukeCalldown4">
+        <Icon value="Assets\Textures\btn-progression-mengsk-10-nuclearannihilation.dds"/>
+        <Hotkey value="Button/Hotkey/IronCurtain"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="OdinBarrage3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>
+    </CButton>
+    <CButton id="PsionicShockwave2">
+        <Icon value="assets\icons\yuriko-super-wave-blast.dds"/>
+    </CButton>
+    <CButton id="RepairDrones2">
+        <Icon value="Assets\Textures\btn-ability-protoss-carrierrepairdrones.dds"/>
+        <HotkeyAlias value="RepairDrones"/>
+    </CButton>
+    <CButton id="ReturnAirport3">
+        <Icon value="Assets\icons\return-to-the-airport.dds"/>
+    </CButton>
+    <CButton id="SovietBuildDerrick">
+        <Icon value="Assets\icons\technology-oil-well-icons-and-wireframes.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222653">
+        <Icon value="Assets\Textures\talent-raynor-level02-bansheeairstrike.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222732">
+        <Icon value="assets\icons\guardian-tank-laser-calibrator.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222754">
+        <Icon value="Assets\icons\century-bomber-unloading-infantry-icon.dds"/>
+    </CButton>
+    <CButton id="TrainCombatEngineer3">
+        <Icon value="Assets\icons\Allied\allied-spy-build-icon.dds"/>
+    </CButton>
+    <CButton id="AutechBeidongSet">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-combatshield-color.dds"/>
+    </CButton>
+    <CButton id="TrainSovietConscript222">
+        <Icon value="Assets\icons\peacekeeper-infantry-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry22224">
+        <Icon value="Assets\icons\frozen-legion-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry224">
+        <Icon value="Assets\icons\javelin-trooper-build-icon.dds"/>
+    </CButton>
+    <CButton id="RAConstructStarPacifier">
+        <Icon value="Assets\icons\pacifier-build-icon.dds"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode2222262">
+        <Icon value="Assets\icons\Allied\allied-base-vehicle-unfolded.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode22222622">
+        <Icon value="Assets\icons\Allied\allied-base-vehicle-unfolded.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="buildzibaokache">
+        <Icon value="Assets\icons\self-destruct-truck-icon.dds"/>
+    </CButton>
+    <CButton id="EmpireBuildSteelRonin">
+        <Icon value="assets\icons\iron-ronin-build-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="EmpireBuildSuddenFav">
+        <Icon value="Assets\icons\thunder-assault-vehicle-construction-icon.dds"/>
+    </CButton>
+    <CButton id="EmpireBuildHoverMecha">
+        <Icon value="Assets\icons\levitator-mecha-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildCoastalBattery2223">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+    </CButton>
+    <CButton id="BuildCoastalBattery23">
+        <Icon value="Assets\icons\brighton-coastal-defense-battery-construction-icon.dds"/>
+        <HotkeyAlias value="BuildCoastalBattery2"/>
+    </CButton>
+    <CButton id="BuildCoastalBattery3">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+    </CButton>
+    <CButton id="BuildConstructionVehicle2">
+        <Icon value="Assets\Textures\wireframe-terran-bulldozer01.dds"/>
+    </CButton>
+    <CButton id="BuildConstructionVehicle3">
+        <Icon value="Assets\Textures\wireframe-terran-nomad.dds"/>
+    </CButton>
+    <CButton id="BuildConstructionVehicle4">
+        <Icon value="Assets\Textures\wireframe-terran-flatbedtruck.dds"/>
+    </CButton>
+    <CButton id="BuildConstructionVehicle42">
+        <Icon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+    </CButton>
+    <CButton id="BuildFlakTankImproved">
+        <Icon value="Assets\icons\Allied\allied-anti-aircraft-artillery-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="SovietBuildFlakTurret">
+        <Icon value="Assets\icons\Soviet\soviet-anti-aircraft-gun-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildFrigate2">
+        <Icon value="Assets\Textures\btn-ability-terran-liberator-agmode.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced2">
+        <Icon value="assets\icons\phantom-tank-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced22">
+        <Icon value="assets\icons\phantom-tank-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced222">
+        <Icon value="Assets\icons\war-gate-fortress-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced3">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced32">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced322">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced4">
+        <Icon value="Assets\Textures\war3_btnclusterrockets.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced42">
+        <Icon value="Assets\icons\yanhuang-tank-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced422">
+        <Icon value="Assets\icons\beam-tank-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced4222">
+        <Icon value="Assets\icons\flame-dragon-fire-tank-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced42222">
+        <Icon value="Assets\icons\95-ares-tank-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced422222">
+        <Icon value="Assets\Textures\btn-ability-mengsk-trooper-advancedconstruction.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced42223">
+        <Icon value="Assets\icons\jeep-tank-building-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced422232">
+        <Icon value="Assets\icons\iron-guard-cannon-tank-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildCnlingbo">
+        <Icon value="Assets\icons\limbo-escort-chariot-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced43">
+        <Icon value="Assets\Textures\btn-ability-mengsk-blimp-propagandamode.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced432">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced4322">
+        <Icon value="Assets\icons\solve-main-building-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced43222">
+        <Icon value="Assets\icons\china-heavy-armor-workshop-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced432222">
+        <Icon value="assets\icons\china-construction-site.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced432223">
+        <Icon value="assets\icons\build-a-sun-bathing-altar.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced4322232">
+        <Icon value="assets\icons\launch-a-corona-storm.dds"/>
+        <HotkeyAlias value="Spectre"/>
+        <Hotkey value="Button/Hotkey/IronCurtain"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced43222322">
+        <Icon value="Assets\Textures\ui_hots_icon_flashfreeze.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced43222323">
+        <Icon value="Assets\icons\launch-a-lightning-storm!.dds"/>
+        <Hotkey value="Button/Hotkey/Lighting"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced432224">
+        <Icon value="Assets\icons\general-administration-of-manufacturing-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced433">
+        <Icon value="Assets\Textures\btn-ability-mengsk-blimp-propagandamode.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced4332">
+        <Icon value="Assets\Textures\btn-ability-mengsk-blimp-propagandamode.dds"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced5">
+        <Icon value="Assets\icons\second-generation-apocalypse-tank-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietMigFighter">
+        <Icon value="Assets\icons\mig-fighter-aircraft-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildInterwarFighter22">
+        <Icon value="Assets\icons\frozen-helicopter-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietTwinbladeHelicopter">
+        <Icon value="Assets\icons\twin-blade-helicopter-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="SovietSecondAttackaircraft">
+        <Icon value="Assets\icons\il-attack-aircraft-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="SovietBuildBeaverBomber">
+        <Icon value="Assets\icons\bandicoot-bomber-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildJBTower2">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+    </CButton>
+    <CButton id="BuildLandingVehicle2">
+        <Icon value="Assets\Textures\wireframe-terran-colonisttransport.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildLandingVehicle3">
+        <Icon value="Assets\icons\cupping-car-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildFensuizhe">
+        <Icon value="Assets\icons\crusher-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildLightBomber2">
+        <Icon value="Assets\icons\peacekeeper-bomber-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildLightBomber22">
+        <Icon value="Assets\icons\century-bomber-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker2">
+        <Icon value="Assets\icons\machine-gun-bunker-building-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker22">
+        <Icon value="Assets\icons\Allied\allied-anti-tank-bunker-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker222">
+        <Icon value="Assets\icons\light-prism-tower-construction-icon-new.dds"/>
+        <Hotkey value="Button/Hotkey/BuildPrismT"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker2222">
+        <Icon value="Assets\icons\patriot-missile-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker22222">
+        <Icon value="Assets\icons\french-cannon-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildMachinegunGun">
+        <Icon value="Assets\icons\sentry-gun-tower-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildSentinelArtilleryGun">
+        <Icon value="Assets\icons\sentry-gun-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildBunker">
+        <Icon value="Assets\icons\Soviet\soviet-battle-bunker-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildSpirfireTower">
+        <Icon value="Assets\icons\Soviet\soviet-fire-tower-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildJBTower">
+        <Icon value="Assets\icons\build-defender-vx-core-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker222223">
+        <Icon value="Assets\icons\french-cannon-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildMachinegunBunker22222"/>
+        <HotkeyAlias value="BuildMachinegunBunker22222"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker22223">
+        <Icon value="Assets\icons\patriot-missile-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildMachinegunBunker2222"/>
+        <HotkeyAlias value="BuildMachinegunBunker2222"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker2223">
+        <Icon value="Assets\icons\second-generation-light-prism-tower-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildPrismT"/>
+        <HotkeyAlias value="BuildMachinegunBunker222"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker223">
+        <Icon value="Assets\icons\Allied\allied-anti-tank-bunker-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildMachinegunBunker22"/>
+        <HotkeyAlias value="BuildMachinegunBunker22"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker23">
+        <Icon value="Assets\icons\machine-gun-bunker-building-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildMachinegunBunker2"/>
+        <HotkeyAlias value="BuildMachinegunBunker2"/>
+    </CButton>
+    <CButton id="BuildMe2622">
+        <Icon value="Assets\icons\btn-unit-terran-bvp170.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildMediumTankEarly2">
+        <Icon value="Assets\icons\Allied\allied-light-tank-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildPanzerIV2">
+        <Icon value="Assets\icons\freeze-tank-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildRadar2">
+        <Icon value="Assets\icons\imperial-radar-build-icon.dds"/>
+        <HotkeyAlias value="Radar_Model"/>
+    </CButton>
+    <CButton id="SovietBuildRadar">
+        <Icon value="Assets\icons\Soviet\soviet-radar-construction-icon.dds"/>
+        <HotkeyAlias value="Radar_Model"/>
+    </CButton>
+    <CButton id="BuildRadar32">
+        <Icon value="Assets\icons\Allied\allied-radar-construction-icon.dds"/>
+        <HotkeyAlias value="Radar_Model"/>
+    </CButton>
+    <CButton id="BuildRadar322">
+        <Icon value="Assets\icons\shenzhou-radar-construction-icon.dds"/>
+        <HotkeyAlias value="Radar_Model"/>
+    </CButton>
+    <CButton id="BuildRadar323">
+        <Icon value="Assets\icons\Allied\allied-radar-construction-icon.dds"/>
+        <HotkeyAlias value="Radar_Model"/>
+    </CButton>
+    <CButton id="SovietBuildZenithTank">
+        <Icon value="Assets\icons\anti-aircraft-armored-vehicle-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildSOMUAS353">
+        <Icon value="Assets\icons\anti-aircraft-crawler-vehicle-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSOMUAS3532">
+        <Icon value="Assets\icons\build-fire-tank.dds"/>
+    </CButton>
+    <CButton id="BuildSOMUAS35322">
+        <Icon value="Assets\icons\Soviet\soviet-second-generation-magnetic-energy-tank-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSOMUAS354">
+        <Icon value="Assets\icons\torrent-acv-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSOMUAS355">
+        <Icon value="Assets\icons\multipurpose-infantry-fighting-vehicle-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSOMUAS3552">
+        <Icon value="Assets\icons\Allied\allied-patriot-missile-tank-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="SovietBuildSuperReactor">
+        <Icon value="Assets\icons\Soviet\soviet-nuclear-power-plant-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildReactor">
+        <Icon value="Assets\icons\Soviet\soviet-power-plant-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant22">
+        <Icon value="Assets\icons\Allied\allied-power-plant-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant222">
+        <Icon value="Assets\icons\Allied\allied-power-plant-construction-icon.dds"/>
+        <HotkeyAlias value="BuildSovietPowerPlant22"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant223">
+        <Icon value="Assets\icons\Allied\allied-advanced-power-plant-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant2232">
+        <Icon value="Assets\icons\Allied\allied-advanced-power-plant-build-icon.dds"/>
+        <HotkeyAlias value="BuildSovietPowerPlant223"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant2233">
+        <Icon value="Assets\icons\shenzhou-power-plant-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant224">
+        <Icon value="Assets\icons\china-magnetic-energy-reactor-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildRefinery">
+        <Icon value="Assets\icons\Soviet\soviet-mine-construction-icon.dds"/>
+        <HotkeyAlias value="SovietBuildSuperReactor"/>
+    </CButton>
+    <CButton id="SovietBuildCrane">
+        <Icon value="Assets\icons\crane-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildWarLaboratory">
+        <Icon value="Assets\icons\Soviet\soviet-warfare-laboratory-construction-icon.dds"/>
+        <HotkeyAlias value="SovietBuildCrane"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant3222">
+        <Icon value="Assets\icons\Allied\allied-defense-agency-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant32222">
+        <Icon value="Assets\icons\Allied\allied-defense-agency-build-icon.dds"/>
+        <HotkeyAlias value="BuildSovietPowerPlant3222"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant33">
+        <Icon value="Assets\icons\build-allied-mine-icon.dds"/>
+        <HotkeyAlias value="SovietBuildSuperReactor"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant332">
+        <Icon value="Assets\icons\build-allied-mine-icon.dds"/>
+        <HotkeyAlias value="SovietBuildSuperReactor"/>
+    </CButton>
+    <CButton id="BuildSovietPowerPlant34">
+        <Icon value="Assets\icons\shenzhou-mine-construction-icon.dds"/>
+        <HotkeyAlias value="SovietBuildSuperReactor"/>
+    </CButton>
+    <CButton id="BuildTacticalBomber2">
+        <Icon value="Assets\icons\j-20-veyron-fighter-jet-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTacticalBomber22">
+        <Icon value="Assets\icons\tiangong-rail-gun-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTankDestroyerAdvanced2">
+        <Icon value="Assets\icons\Allied\allied-annihilator-artillery-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTankTrap2">
+        <Icon value="Assets\Textures\btn-building-terran-mineralstoragedepot.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildTankTrap22">
+        <Icon value="assets\icons\mining-vehicle.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildTankTrap222">
+        <Icon value="Assets\Textures\btn-doodad-minerals.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildTankTrap223">
+        <Icon value="Assets\Textures\talent-swann-level08-improvedscvs.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildTankTrap224">
+        <Icon value="Assets\icons\imperial-mining-cart-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTankTrap2242">
+        <Icon value="Assets\icons\Allied\allied-minecart-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTankTrap22422">
+        <Icon value="Assets\icons\Soviet\soviet-minecart-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTankTrap224222">
+        <Icon value="Assets\icons\shenzhou-mining-vehicle-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildTigerI2">
+        <Icon value="Assets\icons\second-generation-rhino-tank-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildLogisticsDepot">
+        <Icon value="Assets\Textures\btn-building-terran-supplydepot.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildSpyCentre">
+        <Icon value="Assets\Textures\btn-building-terran-ghostacademy.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildRocketSPA">
+        <Icon value="Assets\icons\self-propelled-rocket-launcher-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildUniversity22">
+        <Icon value="Assets\Textures\btn-building-terran-psiindoctrinator.dds"/>
+    </CButton>
+    <CButton id="BuildUniversity3">
+        <Icon value="Assets\Textures\btn-building-terran-techreactor.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildingRepair2">
+        <Icon value="Assets\Textures\ui_tipicon_campaign_space01-repair.dds"/>
+    </CButton>
+    <CButton id="BuildingRepair22">
+        <Icon value="Assets\Textures\btn-upgrade-swann-improvednanorepair.dds"/>
+    </CButton>
+    <CButton id="BunkerLoad2">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="BunkerLoad22">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="BunkerUnloadAll2">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="BunkerUnloadAll22">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="Cancel2">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="Cancel3">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="Cancel32">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="CancelBuilding2">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Cancel"/>
+    </CButton>
+    <CButton id="CancelBuilding3">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Cancel"/>
+    </CButton>
+    <CButton id="CancelBuilding4">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Cancel"/>
+    </CButton>
+    <CButton id="CancelBuilding5">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Cancel"/>
+    </CButton>
+    <CButton id="CancelBuilding52">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="Cancel"/>
+    </CButton>
+    <CButton id="Charge2">
+        <Icon value="Assets\icons\electric-switch-icon.dds"/>
+    </CButton>
+    <CButton id="CloakingDrone">
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="CloakingDrone2">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-armor-level3.dds"/>
+        <HotkeyAlias value="CloakingDrone"/>
+    </CButton>
+    <CButton id="ChinaTechUnlockT12">
+        <Icon value="Assets\icons\shenzhou-technology-level-unlocked-2-hundred-days-and-nights.dds"/>
+        <Hotkey value="Button/Hotkey/ChinaTechUnlockT1"/>
+    </CButton>
+    <CButton id="ChinaTechUnlockT13">
+        <Icon value="Assets\icons\china-technology-level-unlocks-3-thousand-years-galaxy.dds"/>
+        <Hotkey value="Button/Hotkey/ChinaTechUnlockT1"/>
+    </CButton>
+    <CButton id="ChinaTechUnlockT14">
+        <Icon value="Assets\icons\shenzhou-technology-level-unlocks-4-everything-is-clear.dds"/>
+        <Hotkey value="Button/Hotkey/ChinaTechUnlockT1"/>
+    </CButton>
+    <CButton id="CncinuAirmode2">
+        <Icon value="Assets\icons\kirin-formation-breaking-tank-main-gun-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="CncinuGroundmode2">
+        <Icon value="Assets\icons\kirin-breaking-chariot-defense-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="CnqingfengSpell2">
+        <Icon value="Assets\Textures\btn-top-hornerhan-bombers.dds"/>
+    </CButton>
+    <CButton id="CnqingfengSpell3">
+        <Tooltip value="Button/Tooltip/Cnxunleitianggangspell"/>
+        <Icon value="Assets\icons\thunder-tiangang-skill-icon.dds"/>
+        <AlertTooltip value="Button/Tooltip/Cnxunleitianggangspell"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild">
+        <Icon value="Assets\icons\watchtower-icon.dds"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild2">
+        <Icon value="Assets\icons\gatling-gun-icon.dds"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild3">
+        <Icon value="Assets\icons\shenzhou-fire-tower-icon.dds"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild4">
+        <Icon value="Assets\icons\heavy-ballista-icon.dds"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild42">
+        <Icon value="Assets\icons\broadcasting-tower-icon.dds"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild5">
+        <Icon value="Assets\icons\shenzhou-missile-tower-icon.dds"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild6">
+        <Icon value="Assets\icons\huntian-tower-icon.dds"/>
+    </CButton>
+    <CButton id="CntowerdefenseBuild7">
+        <Icon value="Assets\icons\chinese-nuclear-bomb-silo-icon.dds"/>
+    </CButton>
+    <CButton id="CommanderAlarakEmpowerMeSlaves"/>
+    <CButton id="CommanderAlarakForgeAlarakUpgrades"/>
+    <CButton id="CommanderArtanisStartingMaxSupply"/>
+    <CButton id="CommanderKaraxForgeUpgradesPack">
+        <Icon value="Assets\Textures\btn-upgrade-nova-holographicdecoy.dds"/>
+    </CButton>
+    <CButton id="CommanderKaraxForgeUpgradesPack2">
+        <Icon value="Assets\Textures\btn-upgrade-nova-holographicdecoy.dds"/>
+        <HotkeyAlias value="CommanderKaraxForgeUpgradesPack"/>
+    </CButton>
+    <CButton id="CommanderNovaBarracksTechLabUpgradesPack"/>
+    <CButton id="CommanderNovaUnlockGriffinTransport"/>
+    <CButton id="CommanderNovaUnlockGriffinTransport2">
+        <Icon value="Assets\Textures\nova coop_lvl 05_unlock griffin transport.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport22">
+        <Icon value="Assets\icons\third-generation-magnetic-energy-tank-button.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport222">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-solarbombardment.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport2222">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-12-yamatocannons.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport22222">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-3-starportraven.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport2223">
+        <Icon value="Assets\Textures\RA3tankequn.tga"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport223">
+        <Icon value="Assets\Textures\btn-ability-mengsk-siegetank-shockandawe.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport2232">
+        <Icon value="Assets\Textures\btn-progression-mengsk-15-promotiongranted.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport22322">
+        <Icon value="Assets\Textures\btn-ability-mengsk-royalguard-mightoftheempire.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport2233">
+        <Icon value="Assets\Textures\RA3weilaitanke.tga"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport22332">
+        <Icon value="Assets\Textures\RA3weilaitanke.tga"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport223322">
+        <Icon value="Assets\Textures\RA3weilaitanke.tga"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport22333">
+        <Icon value="Assets\icons\mammoth-tank-build-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport223332">
+        <Icon value="assets\icons\alliance-super-heavy-tank-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+        <Hotkey value="Button/Hotkey/CommanderNovaUnlockGriffinTransport22333"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport223333">
+        <Icon value="Assets\icons\alliance-super-heavy-tank-build-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport2233332">
+        <Icon value="assets\icons\alliance-heavy-tank-build-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport2233333">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-improvedbunkersights.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport22333332">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-improvedbunkersights.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport223333322">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-improvedbunkersights.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport22333333">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-improvedbunkersights.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="DehakaLeap2">
+        <Icon value="Assets\icons\sickle-mech-skill-icon.dds"/>
+    </CButton>
+    <CButton id="DehakaLeap22">
+        <Icon value="Assets\icons\harvester-mecha-skill-icon.dds"/>
+    </CButton>
+    <CButton id="Disband3">
+        <Icon value="Assets\Textures\btn-ability-terran-salvage.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="EngineerCapture">
+        <Icon value="Assets\Textures\war3_btnreplay-speeddown.dds"/>
+    </CButton>
+    <CButton id="EngineerCapture2">
+        <Icon value="Assets\icons\chinese-engineer’s-sky-lantern-lighting-skill.dds"/>
+    </CButton>
+    <CButton id="EngineerCapture3">
+        <Icon value="Assets\Textures\ui_tipicon_campaign_space01-repair.dds"/>
+    </CButton>
+    <CButton id="EngineerCapture4">
+        <Icon value="Assets\Textures\btn-ability-stetmann-topbar-speedconfiguration.dds"/>
+    </CButton>
+    <CButton id="FighterMode2">
+        <Icon value="assets\icons\tengu-switches-to-fighter-mode.dds"/>
+        <HotkeySet value="VikingModes"/>
+    </CButton>
+    <CButton id="FighterMode22">
+        <Icon value="assets\icons\vx-switches-to-helicopter-mode.dds"/>
+        <HotkeySet value="VikingModes"/>
+    </CButton>
+    <CButton id="GravitonBeam2">
+        <Icon value="Assets\icons\j-20-fighter-skill-icon.dds"/>
+    </CButton>
+    <CButton id="Herrscher2Blink22">
+        <Icon value="Assets\icons\knowledge-of-laws-and-certain-killing-techniques-all-worldly-things-are-a-sea-of-​​misery.dds"/>
+    </CButton>
+    <CButton id="Herrscher2Blink3">
+        <Icon value="assets\icons\tanya-time-and-space-belt.dds"/>
+    </CButton>
+    <CButton id="ImmortalOverload2">
+        <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+    </CButton>
+    <CButton id="SovietBuildIronCurtain">
+        <Icon value="assets\icons\iron-curtain-construction-icon.dds"/>
+        <HotkeyAlias value="OdinBarrage2"/>
+    </CButton>
+    <CButton id="IronCurtain22">
+        <Icon value="Assets\icons\time-and-space-teleportation-device-icon.dds"/>
+    </CButton>
+    <CButton id="IronCurtain222">
+        <Icon value="Assets\icons\second-generation-hypertime-teleportation-device-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/IronCurtain22"/>
+    </CButton>
+    <CButton id="IronCurtain2222">
+        <Icon value="Assets\icons\second-generation-hypertime-teleportation-device-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/IronCurtain22"/>
+        <HotkeyAlias value="IronCurtain222"/>
+    </CButton>
+    <CButton id="IronCurtain223">
+        <Icon value="Assets\icons\time-and-space-teleportation-device-icon.dds"/>
+        <Hotkey value="Button/Hotkey/IronCurtain22"/>
+        <HotkeyAlias value="IronCurtain22"/>
+    </CButton>
+    <CButton id="IronCurtain23">
+        <Icon value="Assets\icons\二代iron-curtain-construction-icon.dds"/>
+        <HotkeyAlias value="OdinBarrage2"/>
+    </CButton>
+    <CButton id="IronCurtain3">
+        <Icon value="Assets\icons\activate-teleportation.dds"/>
+        <Hotkey value="Button/Hotkey/Chrono"/>
+    </CButton>
+    <CButton id="IronCurtain4">
+        <Icon value="Assets\icons\launch-the-iron-curtain!-!.dds"/>
+    </CButton>
+    <CButton id="IronCurtain5">
+        <Icon value="assets\icons\activate-the-nano-swarm!.dds"/>
+    </CButton>
+    <CButton id="JUTechUnlockT1">
+        <Icon value="Assets\icons\imperial-tech-level-unlocked-1.dds"/>
+    </CButton>
+    <CButton id="JUTechUnlockT2">
+        <Icon value="Assets\icons\imperial-tech-level-unlocked-2.dds"/>
+        <Hotkey value="Button/Hotkey/JUTechUnlockT1"/>
+    </CButton>
+    <CButton id="JUTechUnlockT3">
+        <Icon value="Assets\icons\imperial-tech-level-unlocked-3.dds"/>
+        <Hotkey value="Button/Hotkey/JUTechUnlockT1"/>
+    </CButton>
+    <CButton id="JUTechUnlockT4">
+        <Icon value="Assets\icons\imperial-four-technology-unlock-button.dds"/>
+        <Hotkey value="Button/Hotkey/JUTechUnlockT1"/>
+    </CButton>
+    <CButton id="JetPack2">
+        <Tooltip value="Button/Tooltip/Cnpojun"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-vanguard-increasedarmorDamage.dds"/>
+        <AlertTooltip value="Button/Tooltip/Cnpojun"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge232">
+        <Icon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge242">
+        <Icon value="Assets\icons\white-tiger-siege-heavy-artillery-skills.dds"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge2422">
+        <Icon value="Assets\icons\activate-the-stopping-force-field.dds"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge24222">
+        <Icon value="Assets\icons\sundial-array-construction-icon.dds"/>
+    </CButton>
+    <CButton id="LiberatorAAMode222">
+        <Icon value="Assets\icons\thunder-icon.dds"/>
+        <HotkeySet value="LiberatorModes"/>
+    </CButton>
+    <CButton id="NukeCalldown2">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-14-nukefortelefrag.dds"/>
+        <Hotkey value="Button/Hotkey/Nukeexplo"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="AlliedBuildCancle">
+        <Icon value="Assets\Textures\war3_btncancel.dds"/>
+    </CButton>
+    <CButton id="NukeCalldown3">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <Hotkey value="Button/Hotkey/IronCurtain"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="OdinBarrage2222">
+        <Icon value="Assets\Textures\RA3zhizizhuangjipao.tga"/>
+        <HotkeyAlias value="OdinBarrage222"/>
+    </CButton>
+    <CButton id="PickupMinerals1002">
+        <Icon value="Assets\Textures\btn-ability-terran-salvage.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="RaynorSnipe3">
+        <Icon value="Assets\icons\lan-shadow-thorn-skill-icon.dds"/>
+    </CButton>
+    <CButton id="Repair2">
+        <Icon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="SUTechUnlockT1">
+        <Icon value="Assets\icons\Soviet\soviet-technology-unlock-level-1.dds"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge2232">
+        <Icon value="Assets\icons\empire\empire-power-plant-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/JuGnerator"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge22322">
+        <Icon value="Assets\icons\empire\empire-mine-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/Jurefinery"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge223222">
+        <Icon value="Assets\icons\nanohost-core-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/NanoSwarmcoreMainrain"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge22323">
+        <Icon value="Assets\icons\imperial-nuclear-power-plant-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/NukePower"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge24">
+        <Icon value="Assets\icons\iron-ronin-skill-icon.dds"/>
+    </CButton>
+    <CButton id="LiberatorAAMode22">
+        <Icon value="Assets\icons\suapospella.dds"/>
+        <HotkeySet value="LiberatorModes"/>
+    </CButton>
+    <CButton id="OdinBarrage22322">
+        <Icon value="assets\icons\tanya-build-icon.dds"/>
+    </CButton>
+    <CButton id="OdinBarrage223222">
+        <Icon value="assets\icons\yuriko-construction-icon.dds"/>
+        <HotkeyAlias value="OdinBarrage223"/>
+    </CButton>
+    <CButton id="OdinBarrage2242">
+        <Icon value="assets\icons\launch-super-power-to-destroy-the-wave.dds"/>
+        <HotkeyAlias value="OdinBarrage2"/>
+        <Hotkey value="Button/Hotkey/IronCurtain"/>
+    </CButton>
+    <CButton id="OdinBarrage22422">
+        <Icon value="assets\icons\super-wave-destruction-device-construction-icon.dds"/>
+    </CButton>
+    <CButton id="IronCurtain">
+        <Icon value="assets\icons\activate-the-iron-curtain-device-force-field.dds"/>
+    </CButton>
+    <CButton id="OdinBarrage224222">
+        <Icon value="assets\icons\super-wave-destruction-device-construction-icon.dds"/>
+    </CButton>
+    <CButton id="OdinBarrage22423">
+        <Icon value="assets\icons\cash-prize.dds"/>
+        <HotkeyAlias value="OdinBarrage2"/>
+    </CButton>
+    <CButton id="PsionicShockwave">
+        <Icon value="assets\icons\yuriko-super-wave-blast.dds"/>
+    </CButton>
+    <CButton id="ReturnAirport">
+        <Icon value="assets\icons\return-to-the-airport.dds"/>
+    </CButton>
+    <CButton id="ReturnAirport2">
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+    </CButton>
+    <CButton id="SUTechUnlockT2">
+        <Icon value="Assets\icons\Soviet\soviet-technology-level-unlocked-2.dds"/>
+        <Hotkey value="Button/Hotkey/SUTechUnlockT1"/>
+    </CButton>
+    <CButton id="SUTechUnlockT3">
+        <Icon value="Assets\icons\Soviet\soviet-technology-level-unlocked-3.dds"/>
+        <Hotkey value="Button/Hotkey/SUTechUnlockT1"/>
+    </CButton>
+    <CButton id="SUTechUnlockT4">
+        <Icon value="Assets\icons\Soviet\soviet-technology-level-unlocked-4.dds"/>
+        <Hotkey value="Button/Hotkey/SUTechUnlockT1"/>
+    </CButton>
+    <CButton id="ChinaTechUnlockT1">
+        <Icon value="Assets\icons\china-technology-level-unlocked-1-ten-directions-universe.dds"/>
+    </CButton>
+    <CButton id="SpiderMine2">
+        <Icon value="Assets\Textures\btn-ability-terran-spidermine.dds"/>
+    </CButton>
+    <CButton id="Stim2">
+        <Icon value="Assets\icons\imperial-engineer-turns-on-running-mode-icon.dds"/>
+    </CButton>
+    <CButton id="Stim3">
+        <Icon value="Assets\icons\pojun-golden-armor-skill-icon.dds"/>
+        <Hotkey value="Button/Hotkey/CnpojunSpell"/>
+    </CButton>
+    <CButton id="Stim32">
+        <Icon value="assets\icons\activate-the-iron-curtain-device-force-field.dds"/>
+        <Hotkey value="Button/Hotkey/CnpojunSpell"/>
+    </CButton>
+    <CButton id="Stim322">
+        <Icon value="Assets\Textures\renee_war3_btnhumanMissileupthree.dds"/>
+        <Hotkey value="Button/Hotkey/CnpojunSpell"/>
+    </CButton>
+    <CButton id="Stim3222">
+        <Icon value="Assets\Textures\renee_war3_btninfernalflamecannon.dds"/>
+        <Hotkey value="Button/Hotkey/CnpojunSpell2"/>
+    </CButton>
+    <CButton id="SovietRocketLauncherT4">
+        <Icon value="Assets\icons\super-heavy-missile-launcher-construction-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderNovaUnlockGriffinTransport232">
+        <Icon value="Assets\Textures\btn-building-terran-sensortower-silver.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="CommanderStukovInfestedFactoryResearchPack"/>
+    <CButton id="CommanderVorazunImprovedShieldRegeneration"/>
+    <CButton id="DarkArchonConfusion">
+        <Icon value="Assets\Textures\btn-ability-protoss-disintegration.dds"/>
+    </CButton>
+    <CButton id="DarkTemplarNobleSacrifice"/>
+    <CButton id="Disband2">
+        <Icon value="Assets\Textures\btn-ability-terran-salvage.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="EspionageRevealCashReserves">
+        <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="EspionageInfiltrateCity">
+        <Icon value="Assets\Textures\btn-tips-cantina.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="EspionageCauseRiot">
+        <Icon value="Assets\Textures\btn-tips-cantina.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="EspionageRevealManpowerReserves">
+        <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="ExplosiveShrapnelShells"/>
+    <CButton id="ExplosiveShrapnelShells2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>
+        <HotkeyAlias value="ExplosiveShrapnelShells"/>
+    </CButton>
+    <CButton id="FenixExecute">
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="FenixExecute2">
+        <Icon value="Assets\Textures\btn-ability-terran-superconcussive.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="FenixExecute"/>
+    </CButton>
+    <CButton id="FenixExecute3">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
+        <HotkeyAlias value="FenixExecute"/>
+    </CButton>
+    <CButton id="FenixExecute4">
+        <Icon value="Assets\Textures\btn-ability-terran-snipe.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="FenixExecute"/>
+    </CButton>
+    <CButton id="FenixHardenedShield"/>
+    <CButton id="Hellion">
+        <Icon value="Assets\Textures\btn-unit-terran-hellbat-umojan.dds"/>
+    </CButton>
+    <CButton id="HotSMetabolicBoost"/>
+    <CButton id="KerriganEpilogueDamageAura2">
+        <Icon value="Assets\Textures\btn-ability-zerg-cosmicfury.dds"/>
+        <HotkeyAlias value="KerriganEpilogueDamageAura"/>
+    </CButton>
+    <CButton id="KerriganEpilogueDamageAura22">
+        <Icon value="Assets\Textures\ui-editoricon-scripteditor_showerrors.dds"/>
+        <HotkeyAlias value="KerriganEpilogueDamageAura"/>
+    </CButton>
+    <CButton id="KerriganEpilogueDamageAura222">
+        <Icon value="Assets\Textures\ui-editoricon-scripteditor_showerrors.dds"/>
+        <HotkeyAlias value="KerriganEpilogueDamageAura"/>
+    </CButton>
+    <CButton id="KerriganEpilogueDamageAura23">
+        <Icon value="Assets\Textures\btn-ability-zerg-cosmicfury.dds"/>
+        <HotkeyAlias value="KerriganEpilogueDamageAura"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge2">
+        <Icon value="Assets\Textures\RA3kuangniu.tga"/>
+        <HotkeyAlias value="KraithCrashingCharge"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge22">
+        <Icon value="Assets\Textures\RA3guiwang.tga"/>
+        <HotkeyAlias value="KraithCrashingCharge"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge222">
+        <Icon value="Assets\Textures\RA3kuangniu.tga"/>
+        <HotkeyAlias value="KraithCrashingCharge"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge2222">
+        <Icon value="Assets\icons\imperial-nanotechnology-breakthrough-icon.dds"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge223">
+        <Icon value="Assets\icons\nano-swarm-core-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/NanoSwarmcore"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge224">
+        <Icon value="assets\icons\ghost-king.dds"/>
+        <HotkeyAlias value="KraithCrashingCharge"/>
+    </CButton>
+    <CButton id="EmpireBuildKingOniX">
+        <Icon value="Assets\icons\tianxi-ghost-king-icon.dds"/>
+    </CButton>
+    <CButton id="KraithCrashingCharge23">
+        <Icon value="Assets\Textures\RA3kuangniu.tga"/>
+        <HotkeyAlias value="KraithCrashingCharge"/>
+    </CButton>
+    <CButton id="LiberatorAAMode2">
+        <Icon value="Assets\icons\super-fortress-aerial-mode.dds"/>
+        <HotkeySet value="LiberatorModes"/>
+    </CButton>
+    <CButton id="MassProduction2">
+        <Icon value="Assets\Textures\btn-tips-armory.dds"/>
+        <Hotkey value="Button/Hotkey/AirSuperiority"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="Move2">
+        <Icon value="Assets\Textures\btn-command-move.dds"/>
+        <TintRacially value="1"/>
+        <SimpleDisplayText value="SimpleDisplay/Move2"/>
+    </CButton>
+    <CButton id="Move3">
+        <Icon value="Assets\Textures\btn-command-stop.dds"/>
+        <TintRacially value="1"/>
+        <SimpleDisplayText value="SimpleDisplay/Move3"/>
+    </CButton>
+    <CButton id="MoveHoldPosition2">
+        <Icon value="Assets\Textures\btn-command-holdposition.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="MoveHoldPosition3">
+        <Icon value="Assets\Textures\btn-command-holdposition.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="NovaWeaponHellfireShotgunBlast"/>
+    <CButton id="NovaWeaponHellfireShotgunBlast2">
+        <Icon value="Assets\Textures\BTN-Upgrade-Nova-ShotGun.dds"/>
+        <Hotkey value="Button/Hotkey/NovaWeaponCanisterRifleSnipe"/>
+        <HotkeyAlias value="NovaWeaponCanisterRifleSnipe"/>
+    </CButton>
+    <CButton id="NukeCalldown"/>
+    <CButton id="OdinBarrage">
+        <Icon value="Assets\Textures\btn-command-attackground.dds"/>
+    </CButton>
+    <CButton id="OdinBarrage2">
+        <Icon value="Assets\Textures\RA3jingzhunhongzha.tga"/>
+    </CButton>
+    <CButton id="OdinBarrage22">
+        <Icon value="Assets\Textures\RA3fashezhizipao.tga"/>
+        <Hotkey value="Button/Hotkey/Proton"/>
+    </CButton>
+    <CButton id="OdinBarrage222">
+        <Icon value="Assets\Textures\RA3zhizizhuangjipao.tga"/>
+    </CButton>
+    <CButton id="OdinBarrage223">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-7-wraithvikingupgrades.dds"/>
+    </CButton>
+    <CButton id="OdinBarrage2232">
+        <Icon value="Assets\Textures\RA3natasha.tga"/>
+        <HotkeyAlias value="OdinBarrage223"/>
+    </CButton>
+    <CButton id="OdinBarrage224">
+        <Icon value="Assets\Textures\RA3fashezhenkong.tga"/>
+        <HotkeyAlias value="OdinBarrage2"/>
+        <Hotkey value="Button/Hotkey/IronCurtain"/>
+    </CButton>
+    <CButton id="OdinNukeCalldown2">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+    </CButton>
+    <CButton id="PolicyAverageEducationInvestment">
+        <Icon value="Assets\Textures\btn-tips-resourcecaches.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="PolicyMinimalEducationInvestment">
+        <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="Policies">
+        <Icon value="Assets\Textures\btn-tips-cantina.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="PolicyHugeEducationInvestment">
+        <Icon value="Assets\Textures\btn-tips-visitthelab.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="PsiDisruption"/>
+    <CButton id="PsiDisruption2">
+        <Icon value="Assets\Textures\war3_btnstun.dds"/>
+        <HotkeyAlias value="PsiDisruption"/>
+    </CButton>
+    <CButton id="PsiDisruption22">
+        <Icon value="Assets\Textures\war3_btnstun.dds"/>
+        <HotkeyAlias value="PsiDisruption"/>
+    </CButton>
+    <CButton id="PsionicRadar"/>
+    <CButton id="Rally2">
+        <Icon value="Assets\Textures\btn-ability-terran-setrallypoint.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="RaynorSnipe2">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds"/>
+    </CButton>
+    <CButton id="ReinforcedSuperstructure"/>
+    <CButton id="ReinforcedSuperstructure2">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-12-yamatocannons.dds"/>
+    </CButton>
+    <CButton id="RestoreShields2">
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
+    </CButton>
+    <CButton id="SJHyperionShipUpgrade2"/>
+    <CButton id="SOAEnergize"/>
+    <CButton id="SelectIndustries">
+        <Icon value="Assets\Textures\btn-building-terran-mineralstoragedepot.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="SpiderMine"/>
+    <CButton id="Stop2">
+        <Icon value="Assets\Textures\btn-command-stop.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="Stop3">
+        <Icon value="Assets\Textures\btn-command-stop.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="Sukantanche">
+        <Icon value="Assets\icons\sputnik-exploration-vehicle-build-icon.dds"/>
+    </CButton>
+    <CButton id="Suppression">
+        <Icon value="Assets\Textures\war3_btnbootsofspeed.dds"/>
+    </CButton>
+    <CButton id="Suppression2">
+        <Icon value="Assets\Textures\war3_btnbootsofspeed.dds"/>
+    </CButton>
+    <CButton id="SovietArchitecturalPage">
+        <Icon value="Assets\icons\building-page.dds"/>
+    </CButton>
+    <CButton id="SovietTowerPage">
+        <Icon value="Assets\icons\turret-page.dds"/>
+    </CButton>
+    <CButton id="SovietInfantryPage">
+        <Icon value="Assets\icons\infantry-page.dds"/>
+    </CButton>
+    <CButton id="SovietAircraftPage">
+        <Icon value="Assets\icons\air-force-page.dds"/>
+    </CButton>
+    <CButton id="TargetLock"/>
+    <CButton id="TechnologyAdvancedAntitankGuns2">
+        <Icon value="Assets\Textures\btn-upgrade-swann-aresclasstargetingsystem.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyCombatAircraft4">
+        <Icon value="Assets\Textures\btn-unit-terran-battlecruisermengsk.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechRockets4">
+        <Icon value="Assets\Textures\btn-ability-stetmann-corruptorMissilebarrage.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyImprovedAntitankGuns2">
+        <Icon value="assets\icons\tengu-unit-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechInfantry1">
+        <Icon value="Assets\Textures\btn-icon-dominion.dds"/>
+    </CButton>
+    <CButton id="TechInfantry2">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechInfantry3">
+        <Icon value="Assets\Textures\btn-ability-mengsk-trooper-willofthepeople.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologySpecializedInfantry222">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-weapons-level1.dds"/>
+    </CButton>
+    <CButton id="TechInfantry4">
+        <Icon value="Assets\Textures\btn-progression-mengsk-08-basicroyalguardupgradecache.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologySpecializedInfantry2222">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-a.dds"/>
+    </CButton>
+    <CButton id="TechnologySpecializedInfantry2223">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-b.dds"/>
+    </CButton>
+    <CButton id="TechnologySpecializedInfantry2224">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-c.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2">
+        <Icon value="Assets\Textures\BTN-Ability-Terran-TychusTossGrenade.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22">
+        <Icon value="Assets\Textures\war3_pasbtnliquidfire.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222">
+        <Icon value="Assets\Textures\war3_pasbtnliquidfire.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222">
+        <Icon value="Assets\Textures\war3_btnclusterrockets.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222">
+        <Icon value="assets\icons\thunder-assault-vehicle-weapon-icon.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222">
+        <Icon value="Assets\icons\imperial-mining-vehicle-switches-collection-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222222">
+        <Icon value="Assets\icons\pioneer-armed-combat-aircraft-switches-main-gun-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222223">
+        <Icon value="Assets\icons\suapospella.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222432">
+        <Icon value="Assets\icons\armor-piercing-iron-guard-turns-on-defense-mode-icon.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222226524">
+        <Icon value="Assets\icons\the-fluctuating-light-survey-cannon-switches-to-mobile-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222664">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-b.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222223222">
+        <Icon value="Assets\icons\dragon-flame-army-skill-icon.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222223223">
+        <Tooltip value="Button/Tooltip/shizhilvzhejianfenzhi"/>
+        <Icon value="Assets\icons\the-sword-of-the-herrscher-of-knowledge-has-branches-of-various-weapons-and-various-powers..dds"/>
+        <AlertTooltip value="Button/Tooltip/shizhilvzhejianfenzhi"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222532">
+        <Icon value="Assets\icons\armor-piercing-iron-guard-switches-to-maneuver-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222275324">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-reconstructionbeam.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222227534">
+        <Icon value="Assets\icons\fluctuating-light-survey-cannon-switches-to-attack-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222764">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-trooper-missileLauncher.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22223">
+        <Icon value="Assets\Textures\talent-tychus-level13-additionalupgrades.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry223">
+        <Icon value="Assets\icons\dragon-flame-army-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2232">
+        <Icon value="Assets\icons\arashi-shadow-thorn-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2233">
+        <Icon value="Assets\icons\broadsword-team-building-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2234">
+        <Icon value="Assets\icons\thunder-tiangang-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2235">
+        <Icon value="Assets\icons\herrscher-of-knowledge-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2236">
+        <Icon value="Assets\icons\armorbreaker-icon.dds"/>
+    </CButton>
+    <CButton id="RAunpakcToPlasmaTurret">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildPlasmaCore">
+        <Icon value="Assets\icons\shirata-particle-turret-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildMechaFactory">
+        <Icon value="Assets\icons\Soviet\soviet-mecha-factory-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RADyingInstinct">
+        <Icon value="Assets\Textures\war3_btnreincarnation.dds"/>
+    </CButton>
+    <CButton id="RABraveAndFearless">
+        <Icon value="Assets\Textures\btn-commander-artanis.dds"/>
+    </CButton>
+    <CButton id="bushitaiju">
+        <Icon value="Assets\Textures\btn-progression-stetmann-05-scrapdrop.dds"/>
+    </CButton>
+    <CButton id="buttonlocked2222232">
+        <Icon value="Assets\Textures\hud_btn_bg_ability_locked.dds"/>
+    </CButton>
+    <CButton id="buttonlocked22222322">
+        <Icon value="Assets\Textures\hud_btn_bg_ability_locked.dds"/>
+        <HotkeyAlias value="buttonlocked2222232"/>
+    </CButton>
+    <CButton id="scoutattackmode">
+        <Icon value="Assets\icons\j-10-fighter-jet-switches-to-attack-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222224">
+        <Icon value="Assets\icons\pacifier-suspension-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222242">
+        <Icon value="assets\icons\super-heavy-missile-launcher-icon.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="AlliedJavaModeSwitch">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-b.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222422">
+        <Icon value="Assets\icons\crusher-skill-icon.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222243">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-combatshield-color.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222244">
+        <Icon value="Assets\icons\build-defender-vx-core-icon.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222225">
+        <Icon value="Assets\icons\v4-precision-missile-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222252">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechahydraliskMissileDamage.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222522">
+        <Icon value="Assets\Textures\btn-ability-stetmann-hydraliskMissilepoweron.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222225222">
+        <Icon value="assets\icons\phantom-tank-attack-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222262">
+        <Icon value="assets\icons\conscript-switches-to-rifle-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222622">
+        <Icon value="assets\icons\peacekeeper-infantry-switches-to-shotgun-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222263">
+        <Icon value="assets\icons\guardian-tank-switches-main-gun.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222264">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-widowmine-attackrange.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222642">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-b.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222265">
+        <Icon value="assets\icons\magnetic-storm-infantry-weapon-icon.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222652">
+        <Icon value="assets\icons\chemical-troops-switch-to-death-spray-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222226522">
+        <Icon value="Assets\Textures\renee_war3_btntheblackarrowonoff.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222265222">
+        <Icon value="assets\icons\archery-girl-multiple-arrow-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222226523">
+        <Icon value="Assets\icons\engineer-tent-expand-button.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222266">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-b.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222662">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-colossuschampionslowbeam.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222663">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-mechbioweaponupgrades-b.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="CncinuGroundmode">
+        <Icon value="Assets\icons\magnetic-crossbow-air-defense-switch-to-ground.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222227">
+        <Icon value="Assets\icons\Soviet\soviet-mining-trucks-switch-back-to-mining-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222322">
+        <Icon value="assets\icons\imperial-warriors-launch-a-long-awaited-charge.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="JUNinjaSpell">
+        <Icon value="assets\icons\ninja-smoke-bomb.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222323">
+        <Icon value="Assets\Textures\btn-ability-protoss-blinkshieldrestore.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222324">
+        <Icon value="Assets\icons\crusher-skill-icon.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="scoutmode">
+        <Icon value="Assets\icons\j-10-fighter-jets-switch-to-support-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222252">
+        <Icon value="Assets\Textures\btn-ability-terran-haywireMissile.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222522">
+        <Icon value="Assets\icons\stalin-hammer-weapon-icon.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222253">
+        <Icon value="Assets\Textures\talent-raynor-level14-infantryattackspeed.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222254">
+        <Icon value="Assets\icons\defender-core-switch-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222272">
+        <Icon value="assets\icons\artillery-locomotive-petrol-bomb-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222722">
+        <Icon value="assets\icons\peacekeepers-switch-to-blast-shield-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222273">
+        <Icon value="assets\icons\guardian-tank-laser-calibrator.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222274">
+        <Icon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222742">
+        <Icon value="Assets\Textures\btn-ability-terran-ignorearmor.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222275">
+        <Icon value="assets\icons\explosive-infantry-skill-icon.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222752">
+        <Icon value="assets\icons\explosive-infantry-skill-icon.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222227522">
+        <Icon value="Assets\Textures\btn-ability-zeratul-chargedcrystal-psionicwinds.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222753">
+        <Icon value="assets\icons\chemical-troops-switch-to-sputter-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222227532">
+        <Icon value="assets\icons\rocket-angel-paralysis-whip.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222275322">
+        <Icon value="assets\icons\rocket-angel-photon-missile-array.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222275323">
+        <Icon value="Assets\icons\shrink-beam-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildingRepair">
+        <Icon value="Assets\icons\repair-building.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222227533">
+        <Icon value="Assets\icons\Allied\allied-engineers-fold-up-their-tents.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222276">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-trooper-missileLauncher.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222762">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-repairbeamcloak.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222763">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-trooper-missileLauncher.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="CncinuAirmode">
+        <Icon value="Assets\icons\magnetic-crossbow-anti-air-switch-to-anti-air.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222228">
+        <Icon value="Assets\icons\Soviet\soviet-minecart-deploys-onion-armor.dds"/>
+    </CButton>
+    <CButton id="CnqingfengSpell">
+        <Icon value="Assets\icons\qingfeng-missile-vehicle-skill-icon.dds"/>
+    </CButton>
+    <CButton id="TrainCombatEngineer2">
+        <Icon value="Assets\icons\Soviet\soviet-engineer-training-button.dds"/>
+    </CButton>
+    <CButton id="TrainCombatEngineer22">
+        <Icon value="Assets\icons\imperial-engineer-training-button.dds"/>
+        <Hotkey value="Button/Hotkey/TrainJuEngineer"/>
+    </CButton>
+    <CButton id="TrainCombatEngineer222">
+        <Icon value="Assets\icons\神州engineer-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TrainSovietConscript2">
+        <Icon value="assets\icons\training-imperial-warriors.dds"/>
+    </CButton>
+    <CButton id="TrainSovietConscript22">
+        <Icon value="assets\icons\peacekeeper-infantry-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2">
+        <Icon value="assets\icons\magnetic-explosive-infantry-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry22">
+        <Icon value="assets\icons\javelin-trooper-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry222">
+        <Icon value="Assets\icons\rocket-soldier-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2222">
+        <Icon value="assets\icons\frozen-legion-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry22222">
+        <Icon value="assets\icons\chemical-troop-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry22223">
+        <Icon value="assets\icons\tank-killer-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry222232">
+        <Icon value="assets\icons\ninja-building-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry222233">
+        <Icon value="assets\icons\bow-and-arrow-girl-building-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2222332">
+        <Icon value="assets\icons\rocket-angel-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry222234">
+        <Icon value="assets\icons\tank-killer-build-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry2222342">
+        <Icon value="Assets\icons\second-generation-light-prism-tank-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry22223422">
+        <Icon value="Assets\icons\third-generation-light-prism-tank-button.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry23">
+        <Icon value="assets\icons\magnetic-explosive-infantry-build-icon.dds"/>
+    </CButton>
+    <CButton id="RAThePowerOfCNTanksIncreased">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+    </CButton>
+    <CButton id="RACNTankPowerEnhancementT2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <HotkeyAlias value="RAThePowerOfCNTanksIncreased"/>
+    </CButton>
+    <CButton id="RACNTankPowerEnhancementT3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+        <HotkeyAlias value="RAThePowerOfCNTanksIncreased"/>
+    </CButton>
+    <CButton id="RACNTankPowerEnhancementT4">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+        <HotkeyAlias value="RAThePowerOfCNTanksIncreased"/>
+    </CButton>
+    <CButton id="RAUpgradeTankSDamageT2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeTankSDamageT3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeTankSDamageT4">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryArmorT2">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <HotkeyAlias value="RAUpgradeArtilleryArmorT1"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryArmorT3">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <HotkeyAlias value="RAUpgradeArtilleryArmorT1"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryArmorT4">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <HotkeyAlias value="RAUpgradeArtilleryArmorT1"/>
+    </CButton>
+    <CButton id="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT2">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel1.dds"/>
+        <HotkeyAlias value="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT1"/>
+    </CButton>
+    <CButton id="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT3">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel2.dds"/>
+        <HotkeyAlias value="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT1"/>
+    </CButton>
+    <CButton id="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT4">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel3.dds"/>
+        <HotkeyAlias value="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT1"/>
+    </CButton>
+    <CButton id="RAUpgradeArmorOfMechaT2">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-armor-level2.dds"/>
+        <HotkeyAlias value="RAUpgradeArmorOfMechaT1"/>
+    </CButton>
+    <CButton id="RAUpgradeArmorOfMechaT3">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-armor-level3.dds"/>
+        <HotkeyAlias value="RAUpgradeArmorOfMechaT1"/>
+    </CButton>
+    <CButton id="RAUpgradeArmorOfMechaT4">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-armor-level4.dds"/>
+        <HotkeyAlias value="RAUpgradeArmorOfMechaT1"/>
+    </CButton>
+    <CButton id="RAUpgradeTankDefenseT2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel1.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeTankDefenseT3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel2.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeTankDefenseT4">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel3.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeMechaAttackLevelT2">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel1.dds"/>
+        <HotkeyAlias value="RAUpgradeMechaAttackLevelT1"/>
+    </CButton>
+    <CButton id="RAUpgradeMechaAttackLevelT3">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel2.dds"/>
+        <HotkeyAlias value="RAUpgradeMechaAttackLevelT1"/>
+    </CButton>
+    <CButton id="RAUpgradeMechaAttackLevelT4">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <HotkeyAlias value="RAUpgradeMechaAttackLevelT1"/>
+    </CButton>
+    <CButton id="RAUpgradeCollectionCapacity">
+        <Icon value="Assets\icons\Soviet\soviet-mining-trucks-switch-back-to-mining-mode.dds"/>
+    </CButton>
+    <CButton id="RASingleMaximumCarryingCapacity">
+        <Icon value="Assets\icons\Soviet\soviet-mining-trucks-switch-back-to-mining-mode.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeAirForceAttackAndDefenseT2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel1.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeAirForceAttackAndDefenseT3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeAirForceAttackAndDefenseT4">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel3.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeRocketAndMissileDamageT2">
+        <Icon value="Assets\Textures\btn-ability-stetmann-hydraliskMissilepoweron.dds"/>
+        <HotkeyAlias value="RAUpgradeRocketAndMissileDamageT1"/>
+    </CButton>
+    <CButton id="RAUpgradeRocketAndMissileDamageT3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-magfieldaccelerator.dds"/>
+        <HotkeyAlias value="RAUpgradeRocketAndMissileDamageT1"/>
+    </CButton>
+    <CButton id="RAUpgradeRocketAndMissileDamageT4">
+        <Icon value="Assets\Textures\btn-ability-stetmann-corruptorMissilebarrage.dds"/>
+        <HotkeyAlias value="RAUpgradeRocketAndMissileDamageT1"/>
+    </CButton>
+    <CButton id="RAUpgradeTurretAttackAndDefenseLevelT2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipplatinglevel1.dds"/>
+        <HotkeyAlias value="RAUpgradeTurretAttackAndDefenseLevelT1"/>
+    </CButton>
+    <CButton id="RAUpgradeTurretAttackAndDefenseLevelT3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipplatinglevel2.dds"/>
+        <HotkeyAlias value="RAUpgradeTurretAttackAndDefenseLevelT1"/>
+    </CButton>
+    <CButton id="RAUpgradeTurretAttackAndDefenseLevelT4">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipplatinglevel3.dds"/>
+        <HotkeyAlias value="RAUpgradeTurretAttackAndDefenseLevelT1"/>
+    </CButton>
+    <CButton id="RAExpandIntoAnExperimentalLaserCannon">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+    </CButton>
+    <CButton id="RADefenseSubsidy">
+        <Icon value="Assets\Textures\war3_btnchestofgold.dds"/>
+        <HotkeyAlias value="RASpikeTrapDeceleration"/>
+    </CButton>
+    <CButton id="RAImproveTheSkillsOfTheHeroInfantry2">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-4-reaperwidowmineupgrades.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RAImproveTheSkillsOfTheHeroInfantry3">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-4-reaperwidowmineupgrades.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RATurnToBattleLab">
+        <Icon value="Assets\Textures\btn-building-terran-sciencefacility.dds"/>
+        <HotkeyAlias value="RABuildBattleLab"/>
+    </CButton>
+    <CButton id="RABuildAlliedSovietArtilleryFactory">
+        <Icon value="assets\icons\Allied\allied-tank-factory-build-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildAlliedWarFactory">
+        <Icon value="Assets\icons\二代allied-tank-factory-build-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildAlliedWarFactoryReady">
+        <Icon value="Assets\icons\二代allied-tank-factory-build-icon.dds"/>
+        <HotkeyAlias value="RABuildAlliedWarFactory"/>
+    </CButton>
+    <CButton id="RABuildAlliedSovietArtilleryFactoryReady">
+        <Icon value="assets\icons\Allied\allied-tank-factory-build-icon.dds"/>
+        <HotkeyAlias value="RABuildAlliedSovietArtilleryFactory"/>
+    </CButton>
+    <CButton id="SovietArtilleryFactory">
+        <Icon value="Assets\icons\二代soviet-tank-factory-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildHeavyArtilleryFactory">
+        <Icon value="Assets\icons\Soviet\soviet-heavy-artillery-arsenal-construction-icon.dds"/>
+        <HotkeyAlias value="SovietBuildWarFactory"/>
+    </CButton>
+    <CButton id="RABuildShortBarreledArtillery">
+        <Icon value="Assets\icons\Soviet\soviet-short-barrel-artillery-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildingTheBullfrogVehicle">
+        <Icon value="Assets\icons\bullfrog-vehicle-construction-icon.dds"/>
+        <HotkeyAlias value="RABuildShortBarreledArtillery"/>
+    </CButton>
+    <CButton id="RABuildingHurricaneAssaultArtillery">
+        <Icon value="Assets\icons\hurricane-assault-gun-build-icon.dds"/>
+        <HotkeyAlias value="RABuildShortBarreledArtillery"/>
+    </CButton>
+    <CButton id="SovietRhinoA">
+        <Icon value="Assets\icons\rhino-tank-a-build-icon.dds"/>
+        <HotkeyAlias value="RABuildShortBarreledArtillery"/>
+    </CButton>
+    <CButton id="SovietBuildReaperCannons">
+        <Icon value="Assets\icons\reaper-cannon-build-icon.dds"/>
+        <HotkeyAlias value="RABuildShortBarreledArtillery"/>
+    </CButton>
+    <CButton id="RABuildingHammerAssaultArtillery">
+        <Icon value="Assets\icons\hammer-assault-gun-build-icon.dds"/>
+        <HotkeyAlias value="RABuildShortBarreledArtillery"/>
+    </CButton>
+    <CButton id="SovietBuildSovietB4howitzer">
+        <Icon value="Assets\icons\stalin-hammer-b4-howitzer-construction-icon.dds"/>
+        <HotkeyAlias value="RABuildShortBarreledArtillery"/>
+    </CButton>
+    <CButton id="RABuildEmpireWarFactory">
+        <Icon value="Assets\icons\imperial-mecha-factory-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildingImperialMechFactoryCore">
+        <Icon value="Assets\icons\imperial-mecha-factory-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildV3RocketLauncher">
+        <Icon value="Assets\icons\v3-rocket-launcher-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RAMediumRangeArtilleryAssemblyPlant2">
+        <Icon value="Assets\icons\Allied\allied-artillery-factory-construction-icon.dds"/>
+        <HotkeyAlias value="RAMediumRangeArtilleryAssemblyPlant"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryDamageT2">
+        <Icon value="Assets\Textures\war3_btnhumanMissileupone.dds"/>
+        <HotkeyAlias value="RAUpgradeArtilleryDamageT1"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryDamageT3">
+        <Icon value="Assets\Textures\war3_btnhumanMissileuptwo.dds"/>
+        <HotkeyAlias value="RAUpgradeArtilleryDamageT1"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryDamageT4">
+        <Icon value="Assets\Textures\war3_btnhumanMissileupthree.dds"/>
+        <HotkeyAlias value="RAUpgradeArtilleryDamageT1"/>
+    </CButton>
+    <CButton id="RAAthenaCannon">
+        <Icon value="assets\icons\athena-cannon-build-icon.dds"/>
+    </CButton>
+    <CButton id="RAActivateThePowerShield">
+        <Icon value="assets\icons\athena-cannon-activates-shield.dds"/>
+    </CButton>
+    <CButton id="AlliedSpectralRefractionSuperposition">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-adept-recochetglaiveupgraded.dds"/>
+    </CButton>
+    <CButton id="AlliedSpectralTower">
+        <Icon value="assets\icons\spectrum-tower-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TechTurret4">
+        <Icon value="Assets\Textures\btn-doodad-korholcannon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="AlliedSpectralTowerReady">
+        <Icon value="assets\icons\spectrum-tower-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/AlliedSpectralTower"/>
+        <HotkeyAlias value="AlliedSpectralTower"/>
+    </CButton>
+    <CButton id="RALiftTheOccupation">
+        <Icon value="Assets\Textures\btn-tips-researchunlocked.dds"/>
+    </CButton>
+    <CButton id="UnpackToJubuildings2">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode222">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode2222">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode22222">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode222222">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode2222222">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode22222222">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode222222222">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="UnpackToJubuildings">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode222223">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode222224">
+        <Icon value="Assets\icons\imperial-regular-nanocore-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode222225">
+        <Icon value="Assets\icons\Soviet\soviet-forward-base-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+        <HotkeyAlias value="WreckingCrewAssaultMode22222"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode2222252">
+        <Icon value="Assets\icons\shenzhou-minecart-expand-icon.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+        <HotkeyAlias value="WreckingCrewAssaultMode22222"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode222226">
+        <Icon value="Assets\icons\expand-into-allied-command-center.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+        <HotkeyAlias value="WreckingCrewAssaultMode22222"/>
+    </CButton>
+    <CButton id="buttonlocked2223">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="buttonlocked22233">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="buttonlocked222332">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="buttonlocked22234">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="buttonlocked2224">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="buttonlocked223">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+        <HotkeyAlias value="buttonlocked22"/>
+    </CButton>
+    <CButton id="buttonlocked23">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222222523">
+        <Icon value="Assets\icons\kirov-spaceship-turns-off-the-transcendental-device.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222226">
+        <Icon value="assets\icons\artillery-locomotive-petrol-bomb-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222223">
+        <Icon value="Assets\icons\pioneer-armed-combat-aircraft-switches-to-machine-gun-mode.dds"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222232">
+        <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222224">
+        <Icon value="Assets\icons\suapospellb.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222225">
+        <Icon value="Assets\icons\pacifier-siege-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222226">
+        <Icon value="Assets\icons\v4-multiple-warhead-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus2222262">
+        <Icon value="Assets\Textures\war3_btnclusterrockets.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222622">
+        <Icon value="Assets\Textures\renee_war3_btngolemthunderclap.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222226222">
+        <Icon value="assets\icons\phantom-tank-rift-generator-mode.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus22222623">
+        <Icon value="Assets\icons\kirov-activates-the-transcendental-device.dds"/>
+        <HotkeyAlias value="TossGrenadeTychus2"/>
+    </CButton>
+    <CButton id="TossGrenadeTychus222227">
+        <Icon value="assets\icons\artillery-locomotive-mobile-artillery-mode.dds"/>
+    </CButton>
+    <CButton id="TrainAssaultInfantry2">
+        <Icon value="assets\icons\air-defense-force-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TrainFlamethrower">
+        <Icon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
+    </CButton>
+    <CButton id="TrainFieldMedic">
+        <Icon value="Assets\Textures\btn-unit-terran-medic.dds"/>
+    </CButton>
+    <CButton id="SelectShipyards">
+        <Icon value="Assets\Textures\btn-building-protoss-stargate.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildStatic105mmArtillery">
+        <Icon value="Assets\icons\type-92-infantry-gun-construction-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="TrainCombatEngineer">
+        <Icon value="assets\icons\engineer-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TrainMortar">
+        <Icon value="Assets\Textures\btn-unit-terran-maraudermercenary.dds"/>
+    </CButton>
+    <CButton id="TransferOwnership">
+        <Icon value="Assets\Textures\btn-tips-battlereport.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildDefences">
+        <Icon value="Assets\icons\btn-defences.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="TerranBuild"/>
+    </CButton>
+    <CButton id="BuildFighterJetEarly">
+        <Icon value="Assets\icons\btn-unit-terran-bvp170.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildMe262">
+        <Icon value="Assets\icons\btn-unit-terran-bvp170.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildTankDestroyerImproved">
+        <Icon value="Assets\icons\assault-artillery-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildTankDestroyerAdvanced">
+        <Icon value="Assets\icons\explorer-cannon-build-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildTankTrap">
+        <Icon value="Assets\Textures\renee_war3_btnimprovedspikedbarricades.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildStrategicBomber">
+        <Icon value="Assets\icons\h-20-strategic-stealth-bomber-construction-icon.dds"/>
+    </CButton>
+    <CButton id="AttackAircraftLaunchRocket">
+        <Icon value="Assets\Textures\btn-ability-terran-haywireMissile.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="Disband">
+        <Icon value="Assets\Textures\btn-ability-terran-salvage.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="Talvisota">
+        <Icon value="Assets\Textures\btn-ability-protoss-arguslink.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+        <Hotkey value="Button/Hotkey/AirSuperiority"/>
+    </CButton>
+    <CButton id="GloriousDefence">
+        <Icon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+        <Hotkey value="Button/Hotkey/AirSuperiority"/>
+    </CButton>
+    <CButton id="MassProduction">
+        <Icon value="Assets\Textures\war3_btnengineeringupgrade.dds"/>
+        <Hotkey value="Button/Hotkey/AirSuperiority"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="SovietBuild125mmArmouredrocketLaunche">
+        <Icon value="Assets\icons\125-rocket-launcher-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildAntitankBunker">
+        <Icon value="Assets\icons\imperial-anti-tank-bunker-construction-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildCoastalBattery">
+        <Icon value="Assets\icons\460-heavy-artillery-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildChurchillIII">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildCharB1">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankAdvanced">
+        <Icon value="Assets\Textures\RA3tianqi.tga"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildMainBattleTankEarly">
+        <Icon value="Assets\icons\grizzly-tank-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMediumTankAdvanced">
+        <Icon value="assets\icons\guardian-tank-build-icon.dds"/>
+    </CButton>
+    <CButton id="BuildSpitfireI">
+        <Icon value="Assets\Textures\btn-unit-terran-nighthawk.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildKV1">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildLightCarrier">
+        <Icon value="Assets\Textures\btn-unit-protoss-carrier.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildFrigate">
+        <Icon value="Assets\Textures\btn-ability-terran-liberator-agmode.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildSOMUAS35">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-siegetankrange.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildRadar">
+        <Icon value="Assets\Textures\btn-building-terran-sensordome.dds"/>
+        <HotkeyAlias value="Radar_Model"/>
+    </CButton>
+    <CButton id="TechnologyAdvancedAntitankGuns">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-widowmine-attackrange.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyCombatAircraft2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-reapernitropacks.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechRockets3">
+        <Icon value="Assets\Textures\btn-ability-stetmann-hydraliskMissilepoweron.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="Blitzkrieg">
+        <Icon value="Assets\Textures\coop_mutators_urbanwarfare.dds"/>
+        <Hotkey value="Button/Hotkey/AirSuperiority"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyLargeAirframes">
+        <Icon value="Assets\Textures\btn-unit-terran-nighthawk.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildBuildings">
+        <Icon value="Assets\Textures\btn-building-stukov-infestedbunkerform.dds"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="TerranBuild"/>
+    </CButton>
+    <CButton id="TransportTruckLoad2">
+        <Icon value="Assets\Textures\BTN-Ability-Terran-Load.dds"/>
+    </CButton>
+    <CButton id="TransportTruckUnloadAll2">
+        <Icon value="Assets\Textures\BTN-Ability-Terran-UnloadAll.dds"/>
+    </CButton>
+    <CButton id="RAConstructionArea"/>
+    <CButton id="RAexplosionProofDoorHorizontal">
+        <Icon value="Assets\Textures\war3_btndemongate.dds"/>
+    </CButton>
+    <CButton id="RAexplosionProofDoorVertical">
+        <Icon value="Assets\Textures\war3_btndemongate.dds"/>
+        <HotkeyAlias value="RAexplosionProofDoorHorizontal"/>
+    </CButton>
+    <CButton id="RAGateUpgradeIronWall">
+        <Icon value="Assets\Textures\wireframe-terran-valhallabasedoor.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="RAUpgradeAttackAndDefense">
+        <Icon value="Assets\Textures\btn-tips-visitthelab.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeTankSDamageT1">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeTankDefenseT1">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel0.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeArmorOfMechaT1">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-armor-level1.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryArmorT1">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel0.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeTheArmorOfRocketLauncherAndMissileLauncherT1">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeMechaAttackLevelT1">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel0.dds"/>
+    </CButton>
+    <CButton id="RAMinerUpgradeCollectionVolume">
+        <Icon value="Assets\Textures\btn-tips-richminerals.dds"/>
+    </CButton>
+    <CButton id="RAMinerUpgradeMiningSpeed1">
+        <Icon value="Assets\Textures\btn-upgrade-swann-scvdoublerepair.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedUpgradeTramcarPerformanceEnhancement">
+        <Icon value="Assets\Textures\talent-swann-level08-improvedscvs.dds"/>
+    </CButton>
+    <CButton id="RAMinerUpgradeMiningSpeed2">
+        <Icon value="Assets\Textures\btn-upgrade-swann-scvdoublerepair.dds"/>
+        <HotkeyAlias value="RAMinerUpgradeMiningSpeed1"/>
+    </CButton>
+    <CButton id="RAMinerUpgradeMiningSpeed3">
+        <Icon value="Assets\Textures\btn-upgrade-swann-scvdoublerepair.dds"/>
+        <HotkeyAlias value="RAMinerUpgradeMiningSpeed1"/>
+    </CButton>
+    <CButton id="RAUpgradeAirForceAttackAndDefenseT1">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+    </CButton>
+    <CButton id="RATalentLogisticsExpert">
+        <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeRocketAndMissileDamageT1">
+        <Icon value="Assets\Textures\btn-ability-stetmann-hydraliskMissilepoweroff.dds"/>
+    </CButton>
+    <CButton id="RABuildMedicalStation">
+        <Icon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+    </CButton>
+    <CButton id="RABuildUndergroundCommunities50Supply">
+        <Icon value="Assets\Textures\btn-unit-terran-shredderirradiate.dds"/>
+    </CButton>
+    <CButton id="RABuildTheIronFortress">
+        <Icon value="Assets\Textures\btn-upgrade-terran-durablematerials.dds"/>
+    </CButton>
+    <CButton id="SovietBuildTeslaCoil">
+        <Icon value="Assets\Textures\RA3cibaoxianquan.tga"/>
+    </CButton>
+    <CButton id="RAUpgradeTurretAttackAndDefenseLevelT1">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipplatinglevel0.dds"/>
+    </CButton>
+    <CButton id="SovietKirovAirship">
+        <Icon value="Assets\Textures\RA3jiluofu.tga"/>
+    </CButton>
+    <CButton id="RAHarbingerGunship1">
+        <Icon value="Assets\icons\vanguard-armed-battleship-construction-icon.dds"/>
+        <HotkeyAlias value="SovietKirovAirship"/>
+    </CButton>
+    <CButton id="RAHarbingerGunship2">
+        <Icon value="Assets\icons\star-vanguard-armed-battleship-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RAConstructionOfLargeTransportAircraft">
+        <Icon value="Assets\Textures\btn-unit-terran-hercules.dds"/>
+    </CButton>
+    <CButton id="SovietNuclearSilo">
+        <Icon value="Assets\icons\second-generation-nuclear-bomb-silo-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildExperimentalLaserGun">
+        <Icon value="Assets\Textures\ui_mission_laserdrill_icon.dds"/>
+    </CButton>
+    <CButton id="RAWarMobilization">
+        <Icon value="Assets\Textures\coop_mutators_urbanwarfare.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologyMechaWeaponEnhancement">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-impalerrounds.dds"/>
+    </CButton>
+    <CButton id="RABuildBarracks">
+        <Icon value="Assets\icons\shenji-camp-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologyAdvancedAeronautics">
+        <Icon value="assets\icons\advanced-aeronautics.dds"/>
+    </CButton>
+    <CButton id="RAFinalTechnologyAirForceFutureTechnologyLicense">
+        <Icon value="Assets\icons\AUGbtn.dds"/>
+        <HotkeyAlias value="RAAdvancedTechnologyAdvancedAeronautics"/>
+    </CButton>
+    <CButton id="RAFinalTechnologyUnlimitedArtillery">
+        <Icon value="Assets\Textures\btn-upgrade-raynor-shockwaveMissilebattery.dds"/>
+        <HotkeyAlias value="RAAdvancedTechnologyAdvancedAeronautics"/>
+    </CButton>
+    <CButton id="RAFinalTechnologyAlternativeNuclearWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-banelingmanashieldefficiency.dds"/>
+        <HotkeyAlias value="RAAdvancedTechnologyAdvancedAeronautics"/>
+    </CButton>
+    <CButton id="RAFinalTechnologyUnlimitedNuclearWeapons">
+        <Icon value="Assets\Textures\nova coop_lvl 09_ultimate nuke-holo decoy.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologyTankTrackImprovement">
+        <Icon value="Assets\Textures\btn-progression-mengsk-06-engineeringbayupgradecache.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologyFastTraining">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-1-precisionchaos.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologyAdvancedRocketAndMissileGuidanceSystem">
+        <Icon value="Assets\Textures\btn-upgrade-swann-multilockweaponsystem.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologyArtilleryModernizationAndUpgrading">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-improvedartilleryrange.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologySimpleArchitecture">
+        <Icon value="Assets\Textures\btn-research-terran-orbitaldepots.dds"/>
+    </CButton>
+    <CButton id="RASpikeTrapDeceleration">
+        <Icon value="Assets\Textures\renee_war3_btnslowpoison.dds"/>
+    </CButton>
+    <CButton id="RAGateDeceleration">
+        <Icon value="Assets\Textures\war3_btnreplay-speeddown.dds"/>
+        <HotkeyAlias value="RASpikeTrapDeceleration"/>
+    </CButton>
+    <CButton id="RAExplosionResistance">
+        <Icon value="Assets\Textures\btn-upgrade-terran-acidexplosionimmunity.dds"/>
+        <HotkeyAlias value="RASpikeTrapDeceleration"/>
+    </CButton>
+    <CButton id="RAEncryptionFrequency">
+        <Icon value="Assets\Textures\doubleedged_coop.dds"/>
+        <HotkeyAlias value="RASpikeTrapDeceleration"/>
+    </CButton>
+    <CButton id="RAZhukov">
+        <Icon value="Assets\Textures\btn-hero-infestedstukov.dds"/>
+    </CButton>
+    <CButton id="RAZhukovMarshalStatsAndSkillUpgrades">
+        <Icon value="Assets\Textures\war3_btnskillz.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeMarshalZhukovSDefenses">
+        <Icon value="Assets\Textures\command_defend_ac.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RAEscalateMarshalZhukovSAttack">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-weapons-level5.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RAImprovedTheRangeAndAttackSpeedOfMarshalZhukovSWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-terran-ui-internalizedtechmodule.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RAUpgradedAdmiralZhukovSTurretAndTeslaTankDefenses">
+        <Icon value="Assets\Textures\btn-ability-zeratul-xelnagastasisturret-shadeprojection.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RAUpgradedMarshalZhukovSTurretAndTeslaTankDamage">
+        <Icon value="Assets\Textures\btn-ability-zeratul-xelnagastasisturret-staggeringblast.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RAImproveTheSkillsOfTheHeroInfantry1">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-4-reaperwidowmineupgrades.dds"/>
+        <HotkeyAlias value="RAZhukovMarshalStatsAndSkillUpgrades"/>
+    </CButton>
+    <CButton id="RAupgradeOfHeroSkills">
+        <Icon value="Assets\Textures\war3_btnskillz.dds"/>
+    </CButton>
+    <CButton id="SovietBuildHeadquarters">
+        <Icon value="Assets\Textures\btn-building-nova-barracks.dds"/>
+    </CButton>
+    <CButton id="RASuperWarMobilization">
+        <Icon value="Assets\Textures\coop_mutators_urbanwarfare.dds"/>
+    </CButton>
+    <CButton id="SovietBuildWarFactory">
+        <Icon value="assets\icons\Soviet\soviet-tank-factory-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RABuildBattleLab">
+        <Icon value="Assets\Textures\btn-building-terran-sciencefacility.dds"/>
+    </CButton>
+    <CButton id="RAUpgradeToAdvancedBattleLab2">
+        <Icon value="Assets\Textures\btn-hero-fenix-dragoon.dds"/>
+        <HotkeyAlias value="RABuildBattleLab"/>
+    </CButton>
+    <CButton id="RATurnToTestSite2">
+        <Icon value="Assets\Textures\wireframe-terran-pyloncontainmentunit.dds"/>
+        <HotkeyAlias value="RABuildBattleLab"/>
+    </CButton>
+    <CButton id="RARapidConstruction">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-15-mysignificantother.dds"/>
+    </CButton>
+    <CButton id="RARemoteRepair">
+        <Icon value="Assets\Textures\btn-ability-protoss-replicate.dds"/>
+        <HotkeyAlias value="RARapidConstruction"/>
+    </CButton>
+    <CButton id="RAButanSynergy">
+        <Icon value="Assets\Textures\btn-ability-mengsk-trooper-advancedconstruction.dds"/>
+    </CButton>
+    <CButton id="RAAdvancedTechnologyEducationFeedback">
+        <Icon value="Assets\icons\money.dds"/>
+    </CButton>
+    <CButton id="RARiotBeam2">
+        <Icon value="Assets\icons\riot-beam-icon.dds"/>
+    </CButton>
+    <CButton id="RAPacifierFAV">
+        <Icon value="Assets\icons\pacifier-build-icon.dds"/>
+    </CButton>
+    <CButton id="RAEmperialWarFactory">
+        <Icon value="Assets\icons\imperial-mecha-factory-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RAV4RocketLauncher">
+        <Icon value="Assets\icons\v4-rocket-launcher-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RAMediumRangeArtilleryAssemblyPlant">
+        <Icon value="Assets\icons\Allied\allied-artillery-factory-construction-icon.dds"/>
+    </CButton>
+    <CButton id="SovietBuildVacuumImploder">
+        <Icon value="Assets\Textures\RA3zhenkong.tga"/>
+    </CButton>
+    <CButton id="RAUpgradeArtilleryDamageT1">
+        <Icon value="Assets\Textures\btn-upgrade-swann-vehiclerangeincrease.dds"/>
+    </CButton>
+    <CButton id="RABuildIndustrialZone">
+        <Icon value="assets\icons\industrial-park.dds"/>
+    </CButton>
+    <CButton id="ColonistBiodomeHalfBuilt2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
+        <HotkeyAlias value="RABuildIndustrialZone"/>
+    </CButton>
+    <CButton id="RATechnologyEarlyMediumRangeArtillery">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+    </CButton>
+    <CButton id="RATechnologyImprovingMediumRangeArtilleryN">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds"/>
+        <Hotkey value="Button/Hotkey/RATechnologyEarlyMediumRangeArtillery"/>
+    </CButton>
+    <CButton id="RATechnologyAdvancedMediumRangeArtillery">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds"/>
+        <Hotkey value="Button/Hotkey/RATechnologyEarlyMediumRangeArtillery"/>
+    </CButton>
+    <CButton id="RAUpgradeToSuperIndustrialZone2">
+        <Icon value="Assets\Textures\btn-building-terran-biodomecommand.dds"/>
+        <HotkeyAlias value="RABuildIndustrialZone"/>
+    </CButton>
+    <CButton id="RABuildIndustrialZoneSkill">
+        <Icon value="assets\icons\industrial-park.dds"/>
+        <HotkeyAlias value="RABuildIndustrialZone"/>
+    </CButton>
+    <CButton id="RATechnologyAdvancedUltraLongRangeArtillery">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
+        <Hotkey value="Button/Hotkey/RATechnologyEarlyMediumRangeArtillery"/>
+    </CButton>
+    <CButton id="RATrainingArtilleryLocomotive">
+        <Icon value="Assets\icons\artillery-locomotive-construction-icon.dds"/>
+    </CButton>
+    <CButton id="RAConstructionOfAdvancedDefensiveFacilities">
+        <Icon value="Assets\Textures\btn-unit-collection-siegetank-junker.dds"/>
+    </CButton>
+    <CButton id="RABuildFortifications">
+        <Icon value="Assets\Textures\btn-building-terran-bunkershriketurret.dds"/>
+    </CButton>
+    <CButton id="RABuildSupplyDepot">
+        <Icon value="Assets\Textures\btn-building-nova-supplydepot.dds"/>
+    </CButton>
+    <CButton id="TechTurret1">
+        <Icon value="Assets\Textures\btn-ability-tychus-warhound-deployturret.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechTurret2">
+        <Icon value="Assets\Textures\talent-swann-level03-improvedturrets.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="UpgradeSemiautomaticRifles">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-tenstenspikes.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyMainBattleTanks">
+        <Icon value="assets\icons\phantom-tank-build-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyAdvancedMediumTanks">
+        <Icon value="Assets\icons\btn-mbt.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyAdvancedHeavyTanks">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyRadar">
+        <Icon value="assets\icons\industrial-park.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyAssaultRifles">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-fullborecanisterammo.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TrainAssaultInfantry">
+        <Icon value="Assets\icons\btn-unit-terran-b_us_soldier_f_00.dds"/>
+    </CButton>
+    <CButton id="UpgradeShapedCharges">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-maelstromrounds.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechTurret3">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-photoncannon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechRockets1">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-maelstromrounds.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="UpgradetoAdvancedIndustry2">
+        <Icon value="Assets\Textures\btn-building-terran-terrazinerefinery.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="VehiclesPage">
+        <Icon value="Assets\icons\btn-vehicles.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="TechnologyEconomicMobilization">
+        <Icon value="Assets\Textures\btn-tips-armory.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyIndustrialDevelopment">
+        <Icon value="Assets\Textures\btn-tips-armory.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildAntitankGunImproved">
+        <Icon value="Assets\Textures\btn-unit-terran-sniperbot3000.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildT34">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildTankDestroyerEarly">
+        <Icon value="Assets\icons\assault-artillery-early-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildHeavyTankImproved">
+        <Icon value="assets\icons\hammer-tank-building-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildTacticalBomber">
+        <Icon value="Assets\icons\j-10-raptor-fighter-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildPanzerIV">
+        <Icon value="Assets\Textures\ui_techpurchase_siegetank_nocredit.dds"/>
+    </CButton>
+    <CButton id="SovietBuildRhinoB">
+        <Icon value="Assets\icons\rhinotank_button.dds"/>
+    </CButton>
+    <CButton id="BuildMachinegunBunker">
+        <Icon value="Assets\Textures\btn-building-terran-bunkerneosteel.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildLightBomber">
+        <Icon value="Assets\icons\h-6-tactical-bomber-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildGovernmentCentre">
+        <Icon value="Assets\Textures\btn-building-terran-commandcenter.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildHeavyTankEarly">
+        <Icon value="Assets\icons\heavy-tank-early-icon.dds"/>
+    </CButton>
+    <CButton id="BuildMediumTankImproved">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildPanzerIII">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildTechCentre">
+        <Icon value="Assets\Textures\btn-building-terran-armory.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="NonaggressionPact">
+        <Icon value="Assets\Textures\btn-tips-challengecounter.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="DeclareWar">
+        <Icon value="Assets\Textures\btn-tips-challengecounter.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="TechnologyCombatAircraft">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmengskfighter.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyImprovedAntitankGuns">
+        <Icon value="assets\icons\vx-striker-mode-unit-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyMediumAirframes">
+        <Icon value="Assets\Textures\btn-unit-terran-nighthawk.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyImprovedHeavyTanks">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildAntitankGunEarly">
+        <Icon value="Assets\Textures\btn-unit-terran-sniperbot3000.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="TechnologyImprovedMediumTanks">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechRockets2">
+        <Icon value="Assets\Textures\btn-ability-stetmann-hydraliskMissilepoweroff.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyMediumTanks">
+        <Icon value="assets\icons\regular-tank-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildFlakTurret">
+        <Icon value="Assets\icons\btn-building-terran-flakturret.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildAttackAircraft">
+        <Icon value="Assets\Textures\btn-unit-terran-p38lightning.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildFlakTank">
+        <Icon value="assets\icons\btn-unit-terran-adat-tunguska.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildDestroyer">
+        <Icon value="Assets\Textures\btn-unit-terran-cerberus.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildAttackSubmarine">
+        <Icon value="Assets\Textures\btn-unit-protoss-scout.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildFighter">
+        <Icon value="Assets\Textures\btn-unit-terran-nighthawk.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildBunker">
+        <Icon value="Assets\Textures\btn-building-terran-bunker.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildInterwarFighter">
+        <Icon value="Assets\icons\apollo-fighter-construction-icon.dds"/>
+    </CButton>
+    <CButton id="BuildBT7">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildBattleship">
+        <Icon value="Assets\Textures\btn-unit-terran-battlecruiser.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildMediumTankEarly">
+        <Icon value="assets\icons\regular-tank-icon.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildPanzerI">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildT26">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildSandbags">
+        <Icon value="Assets\Textures\wireframe-general-gascube.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="BuildLightTank">
+        <Icon value="Assets\Textures\wireframe-terran-siegetank-tankmode.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildTowed105mmArtillery">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetank.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildMatildaII">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildLandingVehicle">
+        <Icon value="Assets\Textures\wireframe-terran-colonisttransport.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildPanzerII">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildConstructionVehicle">
+        <Icon value="Assets\Textures\wireframe-terran-bulldozer00.dds"/>
+    </CButton>
+    <CButton id="Build105mmSPH">
+        <Icon value="Assets\Textures\btn-units-terran-artillarytank.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="BuildAirport">
+        <Icon value="Assets\icons\Allied\allied-airfield-construction-icon.dds"/>
+    </CButton>
+    <CButton id="Deploy">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetanksiegemode.dds"/>
+        <HotkeySet value="TankModes"/>
+    </CButton>
+    <CButton id="TechnologyCombatAircraft1">
+        <Icon value="Assets\Textures\btn-unit-terran-nighthawk.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyHeavyTanks">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TechnologyLightTanks">
+        <Icon value="Assets\icons\btn-unit-terran-armour-mbt-merkavamk5.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="TrainAntitankRifleman">
+        <Icon value="Assets\Textures\btn-unit-terran-spectre.dds"/>
+    </CButton>
+    <CButton id="TrainInfantry">
+        <Icon value="Assets\Textures\btn-unit-terran-spectre.dds"/>
+    </CButton>
+    <CButton id="TrainSniper">
+        <Icon value="Assets\icons\hands-up-construction-icon.dds"/>
+    </CButton>
+    <CButton id="TrainRocketInfantry">
+        <Icon value="Assets\Textures\btn-unit-terran-marauder.dds"/>
+    </CButton>
+    <CButton id="TrainWehrmachtInfantry">
+        <Icon value="Assets\Textures\btn-unit-terran-spectre.dds"/>
+    </CButton>
+    <CButton id="TrainSovietConscript">
+        <Icon value="assets\icons\training-levies.dds"/>
+    </CButton>
+    <CButton id="TrainConscript">
+        <Icon value="Assets\Textures\btn-unit-terran-spectre.dds"/>
+    </CButton>
+    <CButton id="TrainMachinegunner">
+        <Icon value="Assets\Textures\btn-unit-terran-marine.dds"/>
+    </CButton>
+    <CButton id="UndeployArtillery">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetank.dds"/>
+        <HotkeySet value="TankModes"/>
+    </CButton>
+    <CButton id="SovietBuildRocketLauncherFactory">
+        <Icon value="Assets\icons\Soviet\soviet-rocket-launcher-assembly-plant-construction-icon.dds"/>
+        <HotkeyAlias value="BuildConstructionVehicle"/>
+    </CButton>
+    <CButton id="SovietBuildBarracks">
+        <Icon value="Assets\icons\Soviet\soviet-barracks-construction-icon.dds"/>
+        <Hotkey value="Button/Hotkey/BuildSovietBarrack"/>
+    </CButton>
+    <CButton id="TrainBritishInfantry">
+        <Icon value="Assets\Textures\btn-ability-mengsk-topbar-forcedconscription.dds"/>
+    </CButton>
+    <CButton id="UpgradetoImprovedFlakCannon">
+        <Icon value="Assets\icons\btn-building-terran-flakturret.dds"/>
+        <HotkeyAlias value="Spectre"/>
+    </CButton>
+    <CButton id="SovietVehiclePage">
+        <Icon value="Assets\icons\tank-page.dds"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode2">
+        <Icon value="Assets\icons\super-fortress-sea-mode.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="WreckingCrewAssaultMode22">
+        <Icon value="assets\icons\expand-into-super-fortress.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorAAMode2"/>
+    </CButton>
+    <CButton id="buttonlocked2">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="buttonlocked222">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="buttonlocked22222">
+        <Icon value="Assets\Textures\sc2_ui_glues_icons_lockedwarning.dds"/>
+    </CButton>
+    <CButton id="EmpireGF222">
+        <Icon value="assets\icons\super-fortress-icons-and-buttons.dds"/>
+        <Hotkey value="Button/Hotkey/LiberatorMode2"/>
+    </CButton>
+    <CButton id="XelNagaConstructSmash"/>
+    <CButton id="XelNagaConstructSmash2">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+        <HotkeyAlias value="XelNagaConstructSmash"/>
+    </CButton>
+    <CButton id="XelNagaConstructSmash22">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+        <HotkeyAlias value="XelNagaConstructSmash"/>
+    </CButton>
+    <CButton id="XelNagaConstructSmash3">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+        <HotkeyAlias value="XelNagaConstructSmash"/>
+    </CButton>
+    <CButton id="XelNagaConstructSmash32">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+        <HotkeyAlias value="XelNagaConstructSmash"/>
+    </CButton>
+    <CButton id="XelNagaConstructSmash322">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+        <HotkeyAlias value="XelNagaConstructSmash"/>
+    </CButton>
+    <CButton id="XelNagaConstructSmash323">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+        <HotkeyAlias value="XelNagaConstructSmash"/>
+    </CButton>
+    <CButton id="ZagaraVoidCoopDeepTunnel">
+        <Icon value="Assets\Textures\command_retreat_ac.dds"/>
+    </CButton>
+    <CButton id="ZagaraVoidCoopDeepTunnel2">
+        <Icon value="Assets\Textures\command_retreat_ac.dds"/>
+        <HotkeyAlias value="ZagaraVoidCoopDeepTunnel"/>
+    </CButton>
+    <CButton id="ZeratulKnockback"/>
+    <CButton id="zhukefuxingfenji">
+        <Icon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji2">
+        <Icon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji22">
+        <Icon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji222">
+        <Icon value="Assets\Textures\btn-ability-terran-domination.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji2222">
+        <Icon value="Assets\Textures\renee_war3_btnslowoff.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji22222">
+        <Icon value="Assets\Textures\damagebounce_coop.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji22223">
+        <Icon value="Assets\icons\money.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji222232">
+        <Icon value="Assets\Textures\btn-tips-scrap.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji2223">
+        <Icon value="Assets\Textures\btn-ability-terran-domination.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji23">
+        <Icon value="Assets\Textures\longrange_coop.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+    <CButton id="zhukefuxingfenji24">
+        <Icon value="Assets\Textures\btn-progression-mengsk-01-lawandorder.dds"/>
+        <HotkeyAlias value="zhukefuxingfenji"/>
+    </CButton>
+</Catalog>

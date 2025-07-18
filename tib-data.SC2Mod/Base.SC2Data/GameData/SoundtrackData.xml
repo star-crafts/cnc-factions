@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSoundtrack id="Darktidemusic" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="DarkTideGameMusic"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC4Nod" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicCNC4NodAll"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC3Loading" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="CNC3GameMusicLoading"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC3VictoryGDI" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="CNC3GameMusicvictoryGDI"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC3Victory" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="CNC3GameMusicvictory"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC3Actoninstinctremix" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicActoninstinct"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_GDI01" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusic01CNC4"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC12" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusic12p6"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC3Lose" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="CNC3GameMusiclose"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_GDIEarly" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicGDIearly"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_CNC3" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="CNC3GameMusic"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_NodMissionStart" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicMissionStart"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_NodEarly" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicNodearly"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_GDiFight" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicGDIFight"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_GDI03" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusic03CNC4"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_NodFight" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicNodFight"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="Music_NodBrife" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicNodBrife"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_NodMissionMiddle" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicNodMissionMiddle"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+    <CSoundtrack id="Music_NodVictory" parent="Music">
+        <CueArray>
+            <MasterLayer Sound="GameMusicNodVictory"/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+</Catalog>

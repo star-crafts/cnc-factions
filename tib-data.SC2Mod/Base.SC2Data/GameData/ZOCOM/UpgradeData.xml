@@ -1,0 +1,20 @@
+<Catalog>
+    <CUpgrade default="1" id="ZOCOM">
+        <?token id="icon" value="ZOCOM-gold"?>
+        <EditorCategories value="Race:ZOCOM,UpgradeType:SpellResearch"/>
+        <Icon value="Assets\Icons\ZOCOM\##icon##.dds"/>
+        <Race value="ZOCOM"/>
+    </CUpgrade>
+    <CUpgrade id="ZOCOMJetPack" parent="ZOCOM" icon="FXGDI_AssaultJetpacks">
+        <EffectArray Operation="Set" Reference="Unit,ZOCOMZoneDefender,Mover" Value="CliffJumper"/>
+        <EffectArray Operation="Set" Reference="Unit,ZOCOMZoneTrooper,Mover" Value="CliffJumper"/>
+        <EffectArray Operation="Set" Reference="Unit,ZOCOMZoneEnforcer,Mover" Value="CliffJumper"/>
+        <EffectArray Operation="Set" Reference="Unit,ZOCOMZoneCommando,Mover" Value="CliffJumper"/>
+        <EffectArray Reference="Unit,ZOCOMZoneDefender,LifeStart" Value="10"/>
+        <EffectArray Reference="Unit,ZOCOMZoneEnforcer,LifeStart" Value="10"/>
+        <EffectArray Reference="Unit,ZOCOMZoneTrooper,LifeStart" Value="10"/>
+        <EffectArray Reference="Unit,ZOCOMZoneDefender,LifeMax" Value="10"/>
+        <EffectArray Reference="Unit,ZOCOMZoneEnforcer,LifeMax" Value="10"/>
+        <EffectArray Reference="Unit,ZOCOMZoneTrooper,LifeMax" Value="10"/>
+    </CUpgrade>
+</Catalog>

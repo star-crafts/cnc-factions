@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAttachMethodPattern id="AMPatternMastodon">
+        <Keyword value="Weapon"/>
+        <Driver value="ZOCOMMastodonDamageMissileLM"/>
+    </CAttachMethodPattern>
+    <CAttachMethodFilter id="ZOCOMHammerHeadFilter">
+        <Keys Keyword="Weapon" Index="4"/>
+        <Keys Keyword="Weapon" Index="5"/>
+        <Keys Keyword="Weapon" Index="1"/>
+        <Keys Keyword="Weapon" Index="2"/>
+        <Logic value="OR"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="ZOCOMHammerHeadRocket">
+        <Keyword value="Weapon"/>
+        <Driver value="ZOCOMHammerHeadRocketLaunchMissile"/>
+    </CAttachMethodPattern>
+    <CAttachMethodFilter id="MastodonFilter">
+        <Keys Keyword="Weapon" Index="3"/>
+        <Keys Keyword="Weapon" Index="1"/>
+        <Keys Keyword="Weapon" Index="2"/>
+        <Logic value="OR"/>
+    </CAttachMethodFilter>
+
+</Catalog>

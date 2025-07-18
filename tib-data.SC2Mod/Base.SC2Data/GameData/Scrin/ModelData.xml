@@ -1,0 +1,124 @@
+<Catalog>
+    <CModel default="1" id="ScrinUnit" parent="Unit">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Units\Scrin\##model##.m3"/>
+        <EditorCategories value="Race:Scrin"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+        <UnitGlossaryCamera value="Star2CameraMid03"/>
+    </CModel>
+    <CModel default="1" id="ScrinVehicle" parent="ScrinUnit">
+        <Tipability value="0.750000"/>
+        <TipabilityWidth value="0.800000"/>
+        <TipabilityLength value="0.800000"/>
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel default="1" id="ScrinBuilding" parent="Unit">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Buildings\Scrin\##model##.m3"/>
+        <SelectionLayer value="2"/>
+        <EditorCategories value="Race:Scrin"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.375000"/>
+        <SelectionRadius value="0.340800"/>
+        <ShadowRadius value="0.340800"/>
+        <UnitGlossaryCamera value="Star2CameraMid03"/>
+    </CModel>
+    <CModel default="1" id="ScrinBuildingDeath" parent="BuildingDeath">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Buildings\Scrin\##model##.m3"/>
+        <LowQualityModel value="TerranBuildingDeathLow"/>
+        <EditorCategories value="Race:Scrin"/>
+    </CModel>
+    <CModel default="1" id="ScrinUnitDeath" parent="UnitDeath">
+        <?token id="model" value="##id##"?>
+        <Model value="Assets\Units\Scrin\##model##.m3"/>
+        <EditorCategories value="Race:Scrin"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    
+    
+    <CModel id="ScrinDronePlatform" parent="ScrinBuilding"/>
+    <CModel id="ScrinReactor" parent="ScrinBuilding"/>
+    <CModel id="ScrinExtractor" parent="ScrinBuilding"/>
+    <CModel id="ScrinPortal" parent="ScrinBuilding"/>
+    <CModel id="ScrinWarpSphere" parent="ScrinBuilding"/>
+    <CModel id="ScrinNerveCenter" parent="ScrinBuilding"/>
+    <CModel id="ScrinGravityStabilizer" parent="ScrinBuilding"/>
+    <CModel id="ScrinStasisChamber" parent="ScrinBuilding"/>
+    <CModel id="ScrinTechnologyAssembler" parent="ScrinBuilding"/>
+    <CModel id="ScrinSignalTransmitter" parent="ScrinBuilding"/>
+    <CModel id="ScrinWarpChasm" parent="ScrinBuilding"/>
+    <CModel id="ScrinFoundry" parent="ScrinBuilding"/>
+    <CModel id="ScrinBuzzerHive" parent="ScrinBuilding"/>
+    <CModel id="ScrinPhotonCannon" parent="ScrinBuilding"/>
+    <CModel id="ScrinPlasmaMissileBattery" parent="ScrinBuilding"/>
+    <CModel id="ScrinStormColumn" parent="ScrinBuilding"/>
+    <CModel id="ScrinGrowthStimulator" parent="ScrinBuilding"/>
+    <CModel id="ScrinRiftGenerator" parent="ScrinBuilding"/>
+    <CModel id="ScrinLightningSpike" parent="ScrinBuilding"/>
+    <CModel id="ScrinTiberiumHive" parent="ScrinBuilding"/>
+    <CModel id="ScrinOutpost" parent="ScrinBuilding"/>
+
+    <CModel id="ScrinBuzzers" parent="ScrinUnit"/>
+    <CModel id="ScrinDisintegrator" parent="ScrinUnit"/>
+    <CModel id="ScrinAssimilator" parent="ScrinUnit"/>
+    <CModel id="ScrinShockTrooper" parent="ScrinUnit"/>
+    <CModel id="ScrinRavager" parent="ScrinUnit"/>
+    <CModel id="ScrinMastermind" parent="ScrinUnit"/>
+    <CModel id="ScrinCultist" parent="ScrinUnit"/>
+
+    <CModel id="ScrinGunWalker" parent="ScrinVehicle"/>
+    <CModel id="ScrinSeeker" parent="ScrinVehicle"/>
+    <CModel id="ScrinHarvester" parent="ScrinVehicle"/>
+    <CModel id="ScrinDevourer" parent="ScrinVehicle"/>
+    <CModel id="ScrinCorrupter" parent="ScrinVehicle"/>
+    <CModel id="ScrinMechapede" parent="ScrinVehicle"/>
+    <CModel id="ScrinMechapedeShardSegment" parent="ScrinVehicle"/>
+    <CModel id="ScrinMechapedeToxinSegment" parent="ScrinVehicle"/>
+    <CModel id="ScrinMechapedeDisintegratorSegment" parent="ScrinVehicle"/>
+    <CModel id="ScrinMechapedeDiscSegment" parent="ScrinVehicle"/>
+    <CModel id="ScrinEradicator" parent="ScrinVehicle"/>
+    <CModel id="ScrinExplorer" parent="ScrinVehicle"/>
+    <CModel id="ScrinAnnihilator" parent="ScrinVehicle"/>
+
+    <CModel id="ScrinDevastator" parent="ScrinVehicle"/>
+    <CModel id="ScrinInvader" parent="ScrinVehicle"/>
+    <CModel id="ScrinCarrier" parent="ScrinVehicle"/>
+    <CModel id="ScrinStormrider" parent="ScrinVehicle"/>
+    <CModel id="ScrinDroneShip" parent="ScrinVehicle"/>
+    <CModel id="ScrinMothership" parent="ScrinVehicle"/>
+
+
+
+    <CModel id="ScrinEradicatorDisintegrator" parent="ScrinBuilding"/>
+    <CModel id="ScrinEradicatorPlasmaDiscLauncher" parent="ScrinBuilding"/>
+    <CModel id="ScrinEradicatorTiberiumShardLauncher" parent="ScrinBuilding"/>
+
+
+
+    <!--    <CModel id="ScrinAnnihilator" parent="ColossusBase">-->
+<!--        <Model value="Assets\Units\Scrin\AUAnnihilatorTripod.m3"/>-->
+<!--        <ScaleMax value="0.07,0.07,0.07"/><ScaleMin value="0.07,0.07,0.07"/>-->
+<!--    </CModel>-->
+<!--    <CModel id="ScrinDevastator" parent="TempestBase">-->
+<!--        <Model value="Assets\Units\Scrin\AUDevastatorWarship.m3"/>-->
+<!--        <ScaleMax value="0.05,0.05,0.05"/><ScaleMin value="0.05,0.05,0.05"/>-->
+<!--    </CModel>-->
+<!--    <CModel id="ScrinInvader" parent="InterceptorBase">-->
+<!--        <Model value="Assets\Units\Scrin\AUInvaderFighter.m3"/>-->
+<!--        <ScaleMax value="0.95,0.95,0.95"/><ScaleMin value="0.95,0.95,0.95"/>-->
+<!--    </CModel>-->
+<!--    <CModel id="ScrinCarrier" parent="CarrierBase">-->
+<!--        <Model value="Assets\Units\Scrin\AUPlanetaryAssaultCarrier.m3"/>-->
+<!--        <ScaleMax value="0.95,0.95,0.95"/><ScaleMin value="0.95,0.95,0.95"/>-->
+<!--    </CModel>-->
+<!--    <CModel id="ScrinStormrider" parent="PhoenixBase">-->
+<!--        <Model value="Assets\Units\Scrin\AUStormRider.m3"/>-->
+<!--    </CModel>-->
+<!--    <CModel id="AlienStormRiderDeath" parent="PhoenixDeathBase">-->
+<!--        <Model value="Assets\Units\Scrin\AUStormRider.m3"/>-->
+<!--    </CModel>-->
+</Catalog>
