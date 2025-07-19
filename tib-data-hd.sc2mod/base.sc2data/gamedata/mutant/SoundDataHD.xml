@@ -1,0 +1,16 @@
+<Catalog>
+    <CSound id="CUMutan_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CUMutan_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CUMutan_Move_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CUMutan_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+</Catalog>

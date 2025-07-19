@@ -1,0 +1,928 @@
+<Catalog>
+    <CSound id="GDICrawler_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDICrawler_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDICrawler_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Enforcer_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Enforcer_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Enforcer_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Enforcer_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Enforcer_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIGrenadeLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIGrenadeLaunchFoley">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Shepherd_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Shepherd_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Shepherd_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Shepherd_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Defender_AttackImpact">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Defender_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Commando_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Commando_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Defender_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="Defender_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Defender_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Commando_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Defender_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Defender_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Defender_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Commando_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Titan_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Titan_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Titan_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="Titan_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Titan_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaiderWeapon_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_Help_2">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="ZOCOMHammerHead_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMHammerHead_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ZOCOMHammerHead_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMMastodonAttack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Mastodon_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Mastodon_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Mastodon_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="James_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        <AssetArray TemplateParam="s"/>
+        <AssetArray TemplateParam="t"/>
+        <AssetArray TemplateParam="u"/>
+        <AssetArray TemplateParam="v"/>
+        <AssetArray TemplateParam="w"/>
+    </CSound>
+    <CSound id="Commando_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Argus_AttackImpact">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMArgusMissileAttackImpact">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ARGUS_MissileAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Mastodon_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="ZOCOMHammerHead_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="MammothAttack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Mammoth_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Mammoth_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Mammoth_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ZonejumpImpact">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZoneJumpLaunch">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="SCV_Attack2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="SCV_Ready2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Dozer_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="SCV_Yes2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMBuild_Build">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMBuild_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMBuild_Repair">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="ZOCOMBuild_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMArcha_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMArcha_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ZOCOMArcha_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMArcha_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMArmad_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMArmad_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="ZOCOMArmad_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMArmad_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMBulld_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ZOCOMBulld_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMBulld_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMBulld_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMPalad_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMPalad_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMPalad_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMPalad_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMRefra_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMRefra_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMRefra_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMRefra_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMRhino_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMRhino_Deploy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMRhino_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMRhino_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMRhino_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMSands_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMSands_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMSands_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMSands_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="ZOCOMShepT_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMShepT_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMShepT_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMShepT_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMShock_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMShock_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMShock_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMShock_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMCondu_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMCondu_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="ZOCOMCondu_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMCondu_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMCrOff_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMCrOff_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMCrOff_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMCrOff_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ZOCOMHunte_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMHunte_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMHunte_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMHunte_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMHurri_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMHurri_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMHurri_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMHurri_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMHvyGn_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="ZOCOMHvyGn_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMImpZT_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMImpZT_Yes">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMImpZT_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMKodia_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMKodia_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMKodia_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMKodia_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMMasto_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMMasto_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMMasto_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMMasto_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMTalon_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMTalon_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMTalon_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMTalon_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="ZOCOMThund_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMThund_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMThund_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMThund_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMWolf_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMWolf_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ZOCOMWolf_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMWolf_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneC_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneC_DieShot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMZoneC_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMZoneC_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneC_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneD_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMZoneD_DieShock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneD_DieShot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneD_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="ZOCOMZoneD_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneD_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneE_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneE_DieShot">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneE_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMZoneE_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneE_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneL_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMZoneL_DieShock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneL_DieShot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ZOCOMZoneL_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMZoneL_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneL_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneS_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="ZOCOMZoneS_Yes">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMZoneS_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMZoneS_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMSpann_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMSpann_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMSpann_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMSpann_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMSpart_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="ZOCOMSpart_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMSpart_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMSpart_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMStrik_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ZOCOMStrik_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="ZOCOMStrik_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ZOCOMStrik_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+</Catalog>

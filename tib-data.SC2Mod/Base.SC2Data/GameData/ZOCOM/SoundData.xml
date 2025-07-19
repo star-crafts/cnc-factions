@@ -1,44 +1,68 @@
 <Catalog>
-    <CSound id="GDICrawler_Attack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiAttackf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiAttackg.ogg" FacialGroup=""/>
+    <CSound default="1" id="ZOCOM" parent="Voice">
+        <?token id="prefix" value=""?>
+        <AssetArrayTemplate>
+            <File value="Assets/Sounds/GDI/##prefix##^TemplateParam1^.ogg"/>
+        </AssetArrayTemplate>
     </CSound>
-    <CSound id="GDICrawler_Deploy" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiDeploya.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiDeployb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiDeployc.ogg" FacialGroup=""/>
+    <CSound default="1"  id="ZOCOMYes" parent="ZOCOM"/>
+    <CSound default="1"  id="ZOCOMAttack" parent="ZOCOM"/>
+    <CSound default="1"  id="ZOCOMHelp" parent="ZOCOM"/>
+    <CSound default="1"  id="ZOCOMReady" parent="ZOCOM"/>
+    <CSound default="1"  id="ZOCOMWhat" parent="ZOCOM"/>
+    <CSound default="1"  id="ZOCOMDeath" parent="ZOCOM">
+        <Flags index="Stream" value="1"/>
+        <ReverbBalance Room="-1500"/>
+        <SustainFade index="1" Time="250"/>
+        <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="GDIDropPodAscend" parent="Spell">
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_3ascenda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_3ascendb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_3ascendc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_3ascendd.ogg" FacialGroup=""/>
+    <CSound default="1"  id="ZOCOMCombat" parent="Combat">
+    </CSound>
+    <CSound default="1"  id="ZOCOMSpell" parent="Spell">
+    </CSound>
+    <CSound default="1"  id="ZOCOMMovement" parent="Movement">
+    </CSound>
+
+
+
+    <CSound id="GDICrawler_Attack" parent="ZOCOMReady" prefix="GUCrOff_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+    </CSound>
+    <CSound id="GDICrawler_Deploy" parent="ZOCOM" prefix="GUCrOff_voiDeploy">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+    </CSound>
+    <CSound id="GDIDropPodAscend" parent="Spell" prefix="GUCrawl_DropPod_3ascend">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
         <DupeDestroyCount value="4"/>
     </CSound>
-    <CSound id="GDIDropPodIncoming" parent="Spell">
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_1descenda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_1descendb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_1descendc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_1descendd.ogg" FacialGroup=""/>
-        <DupeDestroyCount value="4"/>
+    <CSound id="GDIDropPodIncoming" parent="ZOCOM" prefix="GUCrawl_DropPod_1descend">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <DupeDestroyCount value="4"/> 
     </CSound>
-    <CSound id="GDICrawler_Help" parent="Voice">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiHelpMea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiHelpMeb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiHelpMec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiHelpMed.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUnde.ogg" FacialGroup=""/>
+    <CSound id="GDICrawler_Help" parent="ZOCOMHelp" prefix="GUCrOff_voiHelpMe">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!-- <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUnda.ogg"/>
+        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUndb.ogg"/>
+        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUndc.ogg"/>
+        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUndd.ogg"/>
+        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelUnde.ogg"/> -->
         <Category value="Alert"/>
         <PanLevel value="1.000000"/>
         <ReverbBalance Room="-10000"/>
@@ -48,744 +72,665 @@
         <SpeakerMix index="SideRight" value="0.000000"/>
         <Volume value="0.170000,0.170000"/>
     </CSound>
-    <CSound id="GDICrawler_Ready" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\Geva_DeploySuccComm.ogg" FacialGroup=""/>
+    <CSound id="GDICrawler_Ready" parent="ZOCOM">
+        <AssetArray File="Assets\Sounds\Geva_DeploySuccComm.ogg"/>
         <Volume value="2.360000,2.360000"/>
     </CSound>
-    <CSound id="GDICrawler_What" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelectf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelectg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiSelecti.ogg" FacialGroup=""/>
+    <CSound id="GDICrawler_What" parent="ZOCOM" prefix="GUCrOff_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
-    <CSound id="GDICrawler_Yes" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMovei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrOff_voiMovej.ogg" FacialGroup=""/>
+    <CSound id="GDICrawler_Yes" parent="ZOCOM" prefix="GUCrOff_voiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
-    <CSound id="Enforcer_Help" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelUnde.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelUndf.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Enforcer_Help" parent="ZOCOMReady" prefix="GUZoneE_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="Enforcer_Ready" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiCreatec.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Enforcer_Ready" parent="ZOCOMReady" prefix="GUZoneE_voiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
     </CSound>
-    <CSound id="Enforcer_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiSelecte.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Enforcer_What" parent="ZOCOMReady" prefix="GUZoneE_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
-    <CSound id="Enforcer_Yes" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMovei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiMovej.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Enforcer_Yes" parent="ZOCOMReady" prefix="GUZoneE_voiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
-    <CSound id="Enforcer_Attack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiAttackf.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Enforcer_Attack" parent="ZOCOMReady" prefix="GUZoneE_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="Enforcer_Death" parent="Pissed">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieLasera.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieLaserb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieLaserc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieLaserd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieShota.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieShotb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieShotc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieShotd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieShote.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieThrowna.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_voiDieThrownb.ogg" FacialGroup=""/>
-        <Flags index="Download" value="1"/>
-        <Category value="Death"/>
-        <PanLevel value="1.000000"/>
-        <Select value="Shuffle"/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Enforcer_Death" parent="ZOCOMDeath" prefix="GUZoneE_voiDieShot">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
-    <CSound id="Enforcer_AttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_machGunWeaponFire1L3a.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_machGunWeaponFire1L3b.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_machGunWeaponFire1L3c.ogg" FacialGroup=""/>
+    <CSound id="Enforcer_Death_Laser" parent="ZOCOMDeath" prefix="GUZoneE_voiDieLaser">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+    </CSound>
+    <CSound id="Enforcer_Death_Thrown" parent="ZOCOMDeath" prefix="GUZoneE_voiDieThrown">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+    </CSound>
+    <CSound id="Enforcer_AttackLaunch" parent="ZOCOMCombat" prefix="GUZoneE_InfS_machGunWeaponFire1L3">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <DupeDestroyCount value="6"/>
         <DupeMaximumMethod value="Replace"/>
         <DupeMuteCount value="6"/>
         <VariationMinimum value="8"/>
         <Volume value="-13.000000,-1.000000"/>
     </CSound>
-    <CSound id="GDIGrenadeExplosion" parent="Spell">
-        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_01.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_02.wav" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_03.wav" FacialGroup=""/>
+    <CSound id="GDIGrenadeExplosion" parent="ZOCOM">
+        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_01.wav"/>
+        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_02.wav"/>
+        <AssetArray File="Assets\Sounds\Tychus_Grenade_Impact_03.wav"/>
         <DupeDestroyCount value="8"/>
         <DupeMuteCount value="6"/>
         <Pitch value="-2.000000,2.000000"/>
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="GDIGrenadeLaunch" parent="Spell">
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFire2a.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFire2b.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFire2c.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleya.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleyb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleyc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleyd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleye.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleyf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleyg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireFoleyh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFired.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFiree.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneE_InfS_grenadeLauncherWeaponFiref.ogg" FacialGroup=""/>
+    <CSound id="GDIGrenadeLaunch" parent="ZOCOM" prefix="GUZoneE_InfS_grenadeLauncherWeaponFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <DupeDestroyCount value="8"/>
         <DupeMuteCount value="6"/>
         <Volume value="0.170000,0.170000"/>
     </CSound>
-    <CSound id="GDIDropPodImpact" parent="Spell">
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_2impacta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_2impactb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_2impactc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUCrawl_DropPod_2impactd.ogg" FacialGroup=""/>
+    <CSound id="GDIGrenadeLaunch2" parent="ZOCOM" prefix="GUZoneE_InfS_grenadeLauncherWeaponFire2">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+    </CSound>
+    <CSound id="GDIGrenadeLaunchFoley" parent="ZOCOM" prefix="GUZoneE_InfS_grenadeLauncherWeaponFireFoley">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+    </CSound>
+    <CSound id="GDIDropPodImpact" parent="ZOCOM" prefix="GUCrawl_DropPod_2impact">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
         <DupeDestroyCount value="4"/>
         <Volume value="1.630000,1.630000"/>
     </CSound>
-    <CSound id="Shepherd_Movement" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_V_moveLoopa.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_V_moveLoopb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_V_moveLoopc.ogg" FacialGroup=""/>
+    <CSound id="Shepherd_Movement" parent="ZOCOMReady" prefix="GUVeh_V_moveLoop">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <Volume value="-6.390000,-6.390000"/>
     </CSound>
-    <CSound id="Shepherd_Yes" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMovei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiMovej.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Shepherd_Yes" parent="ZOCOMReady" prefix="GUShepT_voiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
-    <CSound id="Shepherd_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelecte.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Shepherd_What" parent="ZOCOMReady" prefix="GUShepT_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
-    <CSound id="Shepherd_Ready" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiCreatec.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Shepherd_Ready" parent="ZOCOMReady" prefix="GUShepT_voiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
     </CSound>
-    <CSound id="Shepherd_Help" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiSelUnde.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Shepherd_Help" parent="ZOCOMReady" prefix="GUShepT_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
-    <CSound id="Shepherd_Attack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUShepT_voiAttackf.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Shepherd_Attack" parent="ZOCOMReady" prefix="GUShepT_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="Defender_AttackImpact" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosiona.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosionb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosionc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosiond.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosione.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosionf.ogg" FacialGroup=""/>
+    <CSound id="Defender_AttackImpact" parent="ZOCOMCombat" prefix="GUZoneD_InfO_rocketWeaponImpactExplosion">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <DupeDestroyCount value="5"/>
         <Volume value="1.630000,1.630000"/>
     </CSound>
-    <CSound id="Defender_AttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFired.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFiree.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFiref.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFireg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFireh.ogg" FacialGroup=""/>
+    <CSound id="Defender_AttackLaunch" parent="ZOCOMCombat" prefix="GBCraSu_CraC_rocketWeaponFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
         <DupeDestroyCount value="8"/>
         <DupeMaximumMethod value="Replace"/>
         <OverlapTimeDelta value="100"/>
         <Pitch value="-1.820000,2.420000"/>
         <Volume value="-7.960000,-6.120000"/>
     </CSound>
-    <CSound id="Commando_Help" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_voiSelUnde.ogg" FacialGroup=""/>
+    <CSound id="Commando_Help" parent="ZOCOMReady" prefix="GUComma_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Commando_Ready" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiCreatec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiCreated.ogg" FacialGroup=""/>
+    <CSound id="Commando_Ready" parent="ZOCOMReady" prefix="GUComma_VoiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Commando_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiSelectf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiSelectg.ogg" FacialGroup=""/>
+    <CSound id="Commando_What" parent="ZOCOMReady" prefix="GUComma_VoiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Defender_Yes" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMovei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMovej.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiMovek.ogg" FacialGroup=""/>
+    <CSound id="Defender_Yes" parent="ZOCOMReady" prefix="GUZoneD_voiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Defender_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelectf.ogg" FacialGroup=""/>
+    <CSound id="Defender_What" parent="ZOCOMReady" prefix="GUZoneD_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Defender_Ready" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiCreatec.ogg" FacialGroup=""/>
+    <CSound id="Defender_Ready" parent="ZOCOMReady" prefix="GUZoneD_voiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Defender_Help" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiSelUnde.ogg" FacialGroup=""/>
+    <CSound id="Defender_Help" parent="ZOCOMReady" prefix="GUZoneD_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Commando_Yes" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_voiMovei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_voiMovej.ogg" FacialGroup=""/>
+    <CSound id="Commando_Yes" parent="ZOCOMReady" prefix="GUComma_VoiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Defender_Death" parent="Death">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShocka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShockb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShockc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShockd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShocke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShota.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShotb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShotc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShotd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShote.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiDieShotf.ogg" FacialGroup=""/>
+    <CSound id="Defender_Death" parent="ZOCOMDeath" prefix="GUZoneD_voiDieShot">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+    </CSound>
+    <CSound id="Defender_Death_Shock" parent="ZOCOMDeath" prefix="GUZoneD_voiDieShock">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+    </CSound>
+    <CSound id="Defender_Attack" parent="ZOCOMReady" prefix="GUZoneD_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Commando_Death" parent="ZOCOMDeath" prefix="GUComma_Voidie">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
         <Flags index="Stream" value="1"/>
         <ReverbBalance Room="-1500"/>
         <SustainFade index="1" Time="250"/>
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Defender_Attack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiAttackf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_voiAttackg.ogg" FacialGroup=""/>
-        <Volume value="-1.000000,-1.000000"/>
+    <CSound id="Titan_Attack" parent="ZOCOM" prefix="GUTitan_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
-    <CSound id="Commando_Death" parent="Death">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidiea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidieb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidiec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidied.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidiee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidief.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidieg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidieh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidiei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_Voidiej.ogg" FacialGroup=""/>
-        <Flags index="Stream" value="1"/>
-        <ReverbBalance Room="-1500"/>
-        <SustainFade index="1" Time="250"/>
-        <Volume value="-1.000000,-1.000000"/>
-    </CSound>
-    <CSound id="Titan_Attack" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiAttackf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiAttackg.ogg" FacialGroup=""/>
-    </CSound>
-    <CSound id="Titan_Help" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelUnde.ogg" FacialGroup=""/>
+    <CSound id="Titan_Help" parent="ZOCOM" prefix="GUTitan_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
         <Category value="Alert"/>
     </CSound>
-    <CSound id="Titan_Movement" parent="Movement">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepa.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepe.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footsteph.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepi.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepj.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepk.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_footstepl.ogg" FacialGroup=""/>
+    <CSound id="Titan_Movement" parent="ZOCOMMovement" prefix="GUTitan_footstep">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
         <LoopCount value="10"/>
     </CSound>
-    <CSound id="Titan_Ready" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiCreatec.ogg" FacialGroup=""/>
+    <CSound id="Titan_Ready" parent="ZOCOMReady" prefix="GUTitan_voiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
     </CSound>
-    <CSound id="Titan_What" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiSelectf.ogg" FacialGroup=""/>
+    <CSound id="Titan_What" parent="ZOCOM" prefix="GUTitan_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="Titan_Yes" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_VoiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_VoiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_VoiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_VoiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_VoiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_VoiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_VoiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiMovei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUTitan_voiMovej.ogg" FacialGroup=""/>
+    <CSound id="Titan_Yes" parent="ZOCOM" prefix="GUTitan_VoiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
-    <CSound id="ZOCOMZoneRaiderWeapon_AttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Protoss"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFired.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFiree.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFiref.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFireg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFireh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFirei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFirej.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_gunFirek.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMZoneRaiderWeapon_AttackLaunch" parent="ZOCOM">
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
         <Flags index="VariationFallback" value="0"/>
         <Volume value="3.090000,3.090000"/>
     </CSound>
-    <CSound id="ZOCOMZoneRaider_Attack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiAttackf.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMZoneRaider_Attack" parent="ZOCOMReady" prefix="GUZoneR_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="ZOCOMZoneRaider_Help" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiRetreaa.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiRetreab.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiRetreac.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelUnde.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMZoneRaider_Help" parent="ZOCOMReady" prefix="GUZoneR_voiRetrea">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_Help_2" parent="ZOCOMReady" prefix="GUZoneR_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="ZOCOMZoneRaider_Ready" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiCreatec.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMZoneRaider_Ready" parent="ZOCOMReady" prefix="GUZoneR_voiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="ZOCOMZoneRaider_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiSelectf.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMZoneRaider_What" parent="ZOCOMReady" prefix="GUZoneR_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="ZOCOMZoneRaider_Yes" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiMovei.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMZoneRaider_Yes" parent="ZOCOMReady" prefix="GUZoneR_voiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="ZOCOMZoneRaider_Death" parent="Death">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShocka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShockb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShockc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShockd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShocke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShockg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShockh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShota.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShotb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShotc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShotd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShote.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShotf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShotg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShoth.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShoti.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieShotj.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieThrowna.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieThrownb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieThrownc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieThrownd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDied.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDief.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiej.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiek.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiel.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDiem.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDien.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneR_voiDieo.ogg" FacialGroup=""/>
-        <Flags index="Stream" value="1"/>
-        <ReverbBalance Room="-1500"/>
-        <SustainFade index="1" Time="250"/>
-        <Volume value="-1.000000,-1.000000"/>
+    <CSound id="ZOCOMZoneRaider_Death" parent="ZOCOMDeath" prefix="GUZoneR_voiDieShot">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
-    <CSound id="ZOCOMHammerHead_Ready" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiCreatec.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMZoneRaider_Death_Thrown" parent="ZOCOMDeath" prefix="GUZoneR_voiDieThrown">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+    </CSound>
+    <CSound id="ZOCOMZoneRaider_Death_Shock" parent="ZOCOMDeath" prefix="GUZoneR_voiDieShock">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+    </CSound>
+    <CSound id="ZOCOMHammerHead_Ready" parent="ZOCOM" prefix="GUHamme_voiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <Flags index="Download" value="0"/>
         <DupeDestroyCount value="12"/>
         <DupeMuteCount value="12"/>
-        <Volume value="3.000000,3.000000"/>
     </CSound>
-    <CSound id="ZOCOMHammerHead_What" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelectf.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMHammerHead_What" parent="ZOCOM" prefix="GUHamme_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Flags index="Download" value="0"/>
         <DupeDestroyCount value="12"/>
         <DupeMuteCount value="12"/>
-        <Volume value="3.000000,3.000000"/>
     </CSound>
-    <CSound id="ZOCOMHammerHead_Yes" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiMovei.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMHammerHead_Yes" parent="ZOCOM" prefix="GUHamme_voiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
         <Flags index="Download" value="0"/>
         <DupeDestroyCount value="12"/>
         <DupeMuteCount value="12"/>
-        <Volume value="3.000000,3.000000"/>
     </CSound>
-    <CSound id="ZOCOMHammerHead_Help" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiSelUnde.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMHammerHead_Help" parent="ZOCOM" prefix="GUHamme_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
         <Flags index="Download" value="0"/>
         <DupeDestroyCount value="12"/>
         <DupeMuteCount value="12"/>
-        <Volume value="3.000000,3.000000"/>
     </CSound>
-    <CSound id="ZOCOMMastodonAttack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiAttackf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiAttackg.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="ZOCOMMastodonAttack" parent="ZOCOMReady" prefix="GUMasto_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
-    <CSound id="MastodonReady" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiCreatec.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="MastodonReady" parent="ZOCOMReady" prefix="GUMasto_voiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
     </CSound>
-    <CSound id="Mastodon_Help" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelUnde.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelUndf.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Mastodon_Help" parent="ZOCOMReady" prefix="GUMasto_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="Mastodon_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiSelectf.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Mastodon_What" parent="ZOCOMReady" prefix="GUMasto_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="Mastodon_Yes" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMovei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMasto_voiMovej.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Mastodon_Yes" parent="ZOCOMReady" prefix="GUMasto_voiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
-    <CSound id="James_AttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2a.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2b.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2c.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2d.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2e.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2f.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2g.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2h.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2i.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2j.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2k.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2l.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2m.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2n.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2o.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2p.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2q.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2r.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2s.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2t.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2u.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2v.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSnipe_gunFire2w.ogg" FacialGroup=""/>
+    <CSound id="James_AttackLaunch" parent="ZOCOMCombat" prefix="GUSnipe_gunFire2">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
+        <!--<AssetArray TemplateParam="q"/>-->
+        <!--<AssetArray TemplateParam="r"/>-->
+        <!--<AssetArray TemplateParam="s"/>-->
+        <!--<AssetArray TemplateParam="t"/>-->
+        <!--<AssetArray TemplateParam="u"/>-->
+        <!--<AssetArray TemplateParam="v"/>-->
+        <!--<AssetArray TemplateParam="w"/>-->
         <DupeMaximumMethod value="Replace"/>
     </CSound>
-    <CSound id="James_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUJames_voiSelecta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUJames_voiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUJames_voiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUJames_voiSelectd.ogg" FacialGroup=""/>
+    <CSound id="James_What" parent="ZOCOMReady" prefix="GUJames_voiSelect">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
     </CSound>
-    <CSound id="IonCannonPreSound" parent="Spell">
-        <AssetArray File="Assets\Sounds\GDI\GUZoneC_InfW_IonStrikeWeaponFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneC_InfW_IonStrikeWeaponFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneC_InfW_IonStrikeWeaponFirec.ogg" FacialGroup=""/>
+    <CSound id="IonCannonPreSound" parent="ZOCOM" prefix="GUZoneC_InfW_IonStrikeWeaponFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <DupeMaximumMethod value="Replace"/>
         <Pitch value="2.000000,2.000000"/>
     </CSound>
-    <CSound id="IonCannonImpactSound" parent="Spell">
-        <AssetArray File="Assets\Sounds\GDI\GUZoneC_InfW_IonStrikeWeaponExplosiona.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneC_InfW_IonStrikeWeaponExplosionb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneC_InfW_IonStrikeWeaponExplosionc.ogg" FacialGroup=""/>
+    <CSound id="IonCannonImpactSound" parent="ZOCOM" prefix="GUZoneC_InfW_IonStrikeWeaponExplosion">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <DupeMaximumMethod value="Replace"/>
         <Pitch value="6.000000,6.000000"/>
     </CSound>
-    <CSound id="Commando_Attack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_VoiAttackf.ogg" FacialGroup=""/>
+    <CSound id="Commando_Attack" parent="ZOCOMReady" prefix="GUComma_VoiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
-    <CSound id="Argus_AttackImpact" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFired.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFiree.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFiref.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFireg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFireh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFirei.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUWeapo_LaserMediumFirej.ogg" FacialGroup=""/>
+    <CSound id="Argus_AttackImpact" parent="ZOCOMCombat" prefix="GUWeapo_LaserMediumFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
         <Volume value="0.170000,0.170000"/>
     </CSound>
-    <CSound id="ZOCOMArgusMissileAttackImpact" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosiona.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosionb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosionc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosiond.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosione.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUZoneD_InfO_rocketWeaponImpactExplosionf.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMArgusMissileAttackImpact" parent="ZOCOMCombat" prefix="GUZoneD_InfO_rocketWeaponImpactExplosion">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <DupeDestroyCount value="5"/>
         <Volume value="1.630000,1.630000"/>
     </CSound>
-    <CSound id="ARGUS_MissileAttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFired.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFiree.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFiref.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFireg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GBCraSu_CraC_rocketWeaponFireh.ogg" FacialGroup=""/>
+    <CSound id="ARGUS_MissileAttackLaunch" parent="ZOCOMCombat" prefix="GBCraSu_CraC_rocketWeaponFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
         <DupeDestroyCount value="8"/>
         <DupeMaximumMethod value="Replace"/>
         <OverlapTimeDelta value="100"/>
         <Pitch value="-1.820000,2.420000"/>
         <Volume value="-7.960000,-6.120000"/>
     </CSound>
-    <CSound id="Mastodon_AttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1a.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1b.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1c.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1d.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1e.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1f.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1g.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1h.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1i.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1j.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1k.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUVeh_L_weapFire1l.ogg" FacialGroup=""/>
+    <CSound id="Mastodon_AttackLaunch" parent="ZOCOMCombat" prefix="GUVeh_L_weapFire1">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
         <DupeDestroyCount value="5"/>
         <DupeMaximumMethod value="Replace"/>
         <DupeMuteCount value="3"/>
@@ -795,21 +740,19 @@
         <OverlapTimeDelta value="100"/>
         <Volume value="3.000000,3.090000"/>
     </CSound>
-    <CSound id="SiegeTank_AttackLaunch22" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFired.ogg" FacialGroup=""/>
+    <CSound id="SiegeTank_AttackLaunch22" parent="ZOCOMCombat" prefix="GUSheph_cannWeapFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
         <DupeDestroyCount value="8"/>
         <DupeMaximumMethod value="Replace"/>
         <Volume value="2.360000,2.360000"/>
     </CSound>
-    <CSound id="ZOCOMHammerHead_AttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUHammer_AirQ_machineGunWeaponFireL2a.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHammer_AirQ_machineGunWeaponFireL2b.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHammer_AirQ_machineGunWeaponFireL2c.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMHammerHead_AttackLaunch" parent="ZOCOMCombat" prefix="GUHammer_AirQ_machineGunWeaponFireL2">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
         <DupeDestroyCount value="6"/>
         <DupeMaximumMethod value="Replace"/>
         <DupeMuteCount value="6"/>
@@ -817,140 +760,124 @@
         <VariationMinimum value="8"/>
         <Volume value="-2.100000,0.900000"/>
     </CSound>
-    <CSound id="ZOCOMHammerHead_Attack" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiAttackf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUHamme_voiAttackg.ogg" FacialGroup=""/>
+    <CSound id="ZOCOMHammerHead_Attack" parent="ZOCOM" prefix="GUHamme_voiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
         <Flags index="Download" value="0"/>
         <DupeDestroyCount value="12"/>
         <DupeMuteCount value="12"/>
-        <Volume value="3.000000,3.000000"/>
     </CSound>
-    <CSound id="MammothAttack" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiAttacka.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiAttackb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiAttackc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiAttackd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiAttacke.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiAttackf.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiAttackg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiAttackh.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="MammothAttack" parent="ZOCOMReady" prefix="GUMammo_VoiAttack">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
-    <CSound id="Mammoth_Help" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiSelUnda.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiSelUndb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiSelUndc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiSelUndd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiSelUnde.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiSelUndf.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Mammoth_Help" parent="ZOCOMReady" prefix="GUMammo_voiSelUnd">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="MammothReady" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiCreatea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiCreateb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiCreatec.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="MammothReady" parent="ZOCOMReady" prefix="GUMammo_VoiCreate">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
     </CSound>
-    <CSound id="Mammoth_What" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiSelectb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiSelectc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiSelectd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiSelecte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiSelectf.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Mammoth_What" parent="ZOCOM">
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
-    <CSound id="Mammoth_Yes" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiMovea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiMoveb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiMovec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiMoved.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiMovee.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiMovef.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_VoiMoveg.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiMoveh.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUMammo_voiMovei.ogg" FacialGroup=""/>
-        <Volume value="3.000000,3.000000"/>
+    <CSound id="Mammoth_Yes" parent="ZOCOMReady" prefix="GUMammo_VoiMove">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
-    <CSound id="ZonejumpImpact" parent="Spell">
-        <EditorCategories value="Race:Zerg"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetLandImpacta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetLandImpactb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetLandImpactc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetLandImpactd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetLandImpacte.ogg" FacialGroup=""/>
+    <CSound id="ZonejumpImpact" parent="ZOCOMSpell" prefix="GUComma_jumpJetLandImpact">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
         <Category value="Combat"/>
         <DupeDestroyCount value="5"/>
         <Pitch value="-1.000000,1.000000"/>
     </CSound>
-    <CSound id="ZoneJumpLaunch" parent="Spell">
-        <EditorCategories value="Race:Zerg"/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetFired.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUComma_jumpJetFiree.ogg" FacialGroup=""/>
+    <CSound id="ZoneJumpLaunch" parent="ZOCOMSpell" prefix="GUComma_jumpJetFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
         <Volume value="-0.370000,1.630000"/>
     </CSound>
-    <CSound id="SCV_Attack2" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartf.ogg" FacialGroup=""/>
+    <CSound id="SCV_Attack2" parent="ZOCOM" prefix="GUDozer_InfU_moveStart">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Flags index="Download" value="0"/>
         <Volume value="-3.000000,-3.000000"/>
     </CSound>
-    <CSound id="SCV_Ready2" parent="Ready">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartf.ogg" FacialGroup=""/>
+    <CSound id="SCV_Ready2" parent="ZOCOMReady" prefix="GUDozer_InfU_moveStart">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Volume value="-3.000000,-3.000000"/>
     </CSound>
-    <CSound id="Dozer_What" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartf.ogg" FacialGroup=""/>
+    <CSound id="Dozer_What" parent="ZOCOM" prefix="GUDozer_InfU_moveStart">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Volume value="-3.000000,-3.000000"/>
     </CSound>
-    <CSound id="SCV_Yes2" parent="TerranAck">
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarta.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartc.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartd.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStarte.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUDozer_InfU_moveStartf.ogg" FacialGroup=""/>
+    <CSound id="SCV_Yes2" parent="ZOCOM" prefix="GUDozer_InfU_moveStart">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
         <Volume value="-3.000000,-3.000000"/>
     </CSound>
-    <CSound id="GDIShepherdTankAttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFirea.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFireb.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFirec.ogg" FacialGroup=""/>
-        <AssetArray File="Assets\Sounds\GDI\GUSheph_cannWeapFired.ogg" FacialGroup=""/>
+    <CSound id="GDIShepherdTankAttackLaunch" parent="ZOCOMCombat" prefix="GUSheph_cannWeapFire">
+        <AssetArray TemplateParam="a"/>
+        <AssetArray TemplateParam="b"/>
+        <AssetArray TemplateParam="c"/>
+        <AssetArray TemplateParam="d"/>
         <DupeDestroyCount value="8"/>
         <DupeMaximumMethod value="Replace"/>
         <Volume value="2.360000,2.360000"/>
     </CSound>
-    <CSound id="ArgusChaingunAttackLaunch" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
+    <CSound id="ArgusChaingunAttackLaunch" parent="ZOCOM">
         <AssetArray File="Assets\Sounds\Terran\Viking\Viking_AssaultAttackLaunch0.wav"/>
         <AssetArray File="Assets\Sounds\Terran\Viking\Viking_AssaultAttackLaunch1.wav"/>
         <AssetArray File="Assets\Sounds\Terran\Viking\Viking_AssaultAttackLaunch2.wav"/>
@@ -963,8 +890,7 @@
         <Pitch value="-2.000000,0.000000"/>
         <Volume value="-10.610000,-9.610000"/>
     </CSound>
-    <CSound id="Argus_ChaingunAttackImpact" parent="Combat">
-        <EditorCategories value="Race:Terran"/>
+    <CSound id="Argus_ChaingunAttackImpact" parent="ZOCOM">
         <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_MultipleBulletAttackImpact0.wav"/>
         <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_MultipleBulletAttackImpact1.wav"/>
         <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_MultipleBulletAttackImpact2.wav"/>
@@ -975,8 +901,7 @@
     </CSound>
 
 
-    <CSound id="Ultralisk_AttackLaunch2" parent="Combat">
-        <EditorCategories value="Race:Zerg"/>
+    <CSound id="Ultralisk_AttackLaunch2" parent="ZOCOM">
         <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackLaunch0.wav"/>
         <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackLaunch1.wav"/>
         <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackLaunch2.wav"/>
@@ -991,35 +916,13 @@
 
 
 
-
-
-
-    <CSound default="1" id="ZOCOM" parent="Voice">
-        <?token id="prefix" value=""?>
-        <EditorCategories value="Race:ZOCOM"/>
-        <Volume value="3.000000,3.000000"/>
-        <AssetArrayTemplate>
-            <File value="Assets/Sounds/GDI/##prefix##^TemplateParam1^.ogg"/>
-        </AssetArrayTemplate>
-    </CSound>
-    <CSound default="1"  id="ZOCOMYes" parent="ZOCOM"/>
-    <CSound default="1"  id="ZOCOMAttack" parent="ZOCOM"/>
-    <CSound default="1"  id="ZOCOMHelp" parent="ZOCOM"/>
-    <CSound default="1"  id="ZOCOMReady" parent="ZOCOM"/>
-    <CSound default="1"  id="ZOCOMWhat" parent="ZOCOM"/>
-    <CSound default="1"  id="ZOCOMDeath" parent="ZOCOM">
-        <Flags index="Stream" value="1"/>
-        <ReverbBalance Room="-1500"/>
-        <SustainFade index="1" Time="250"/>
-    </CSound>
-
     <!--Building-->
     <CSound id="ZOCOMBuild_Build" parent="ZOCOMAttack" prefix="GUBuild_voiBuild">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMBuild_Ready" parent="ZOCOMReady" prefix="GUBuild_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1031,31 +934,31 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMBuild_Repair" parent="ZOCOMAttack" prefix="GUBuild_voiRepair">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="ZOCOMBuild_What" parent="ZOCOMWhat" prefix="GUBuild_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <!--Archa-->
     <CSound id="ZOCOMArcha_Attack" parent="ZOCOMAttack" prefix="GUArcha_VoiAttack">
@@ -1063,8 +966,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMArcha_AttSpec" parent="ZOCOMAttack" prefix="GUArcha_voiAttSpec">
         <AssetArray TemplateParam="a"/>
@@ -1081,25 +984,25 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="ZOCOMArcha_Help" parent="ZOCOMHelp" prefix="GUArcha_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMArcha_What" parent="ZOCOMWhat" prefix="GUArcha_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Armad-->
     <CSound id="ZOCOMArmad_Attack" parent="ZOCOMAttack" prefix="GUArmad_VoiAttack">
@@ -1107,9 +1010,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMArmad_AttMis" parent="ZOCOMAttack" prefix="GUArmad_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -1126,27 +1029,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="ZOCOMArmad_Help" parent="ZOCOMHelp" prefix="GUArmad_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMArmad_What" parent="ZOCOMWhat" prefix="GUArmad_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Bulldzer-->
     <CSound id="ZOCOMBulld_Attack" parent="ZOCOMAttack" prefix="GUBulld_VoiAttack">
@@ -1154,11 +1057,11 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="ZOCOMBulld_AttMis" parent="ZOCOMAttack" prefix="GUBulld_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -1175,28 +1078,28 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMBulld_Help" parent="ZOCOMHelp" prefix="GUBulld_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMBulld_What" parent="ZOCOMWhat" prefix="GUBulld_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--Paladin-->
     <CSound id="ZOCOMPalad_Attack" parent="ZOCOMAttack" prefix="GUPalad_VoiAttack">
@@ -1204,9 +1107,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMPalad_AttMis" parent="ZOCOMAttack" prefix="GUPalad_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -1223,27 +1126,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMPalad_Help" parent="ZOCOMHelp" prefix="GUPalad_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMPalad_What" parent="ZOCOMWhat" prefix="GUPalad_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Refractor-->
     <CSound id="ZOCOMRefra_Attack" parent="ZOCOMAttack" prefix="GURefra_VoiAttack">
@@ -1251,9 +1154,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMRefra_AttMis" parent="ZOCOMAttack" prefix="GURefra_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -1270,27 +1173,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMRefra_Help" parent="ZOCOMHelp" prefix="GURefra_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMRefra_What" parent="ZOCOMWhat" prefix="GURefra_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMRefra_UpgMirArm" parent="ZOCOMAttack" prefix="GURefra_voiUpgMirArm">
         <AssetArray TemplateParam="a"/>
@@ -1305,8 +1208,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMRhino_Ready" parent="ZOCOMReady" prefix="GURhino_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1318,35 +1221,35 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMRhino_Yes" parent="ZOCOMYes" prefix="GURhino_VoiMove">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMRhino_Help" parent="ZOCOMHelp" prefix="GURhino_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMRhino_What" parent="ZOCOMWhat" prefix="GURhino_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--Sandstorm-->
     <CSound id="ZOCOMSands_Attack" parent="ZOCOMAttack" prefix="GUSands_VoiAttack">
@@ -1354,9 +1257,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMSands_Ready" parent="ZOCOMReady" prefix="GUSands_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1368,30 +1271,30 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMSands_Help" parent="ZOCOMHelp" prefix="GUSands_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMSands_What" parent="ZOCOMWhat" prefix="GUSands_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="ZOCOMSands_UpgAE" parent="ZOCOMAttack" prefix="GUSands_voiUpgAE">
         <AssetArray TemplateParam="a"/>
@@ -1403,8 +1306,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMShepT_Ready" parent="ZOCOMReady" prefix="GUShepT_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1416,26 +1319,26 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMShepT_Help" parent="ZOCOMHelp" prefix="GUShepT_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMShepT_What" parent="ZOCOMWhat" prefix="GUShepT_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Shock-->
     <CSound id="ZOCOMShock_Attack" parent="ZOCOMAttack" prefix="GUShock_VoiAttack">
@@ -1443,8 +1346,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMShock_Ready" parent="ZOCOMReady" prefix="GUShock_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1456,27 +1359,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMShock_Help" parent="ZOCOMHelp" prefix="GUShock_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMShock_What" parent="ZOCOMWhat" prefix="GUShock_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Condu-->
     <CSound id="ZOCOMCondu_Attack" parent="ZOCOMAttack" prefix="GUCondu_VoiAttack">
@@ -1484,8 +1387,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMCondu_AttSpec" parent="ZOCOMAttack" prefix="GUCondu_voiAttSpec">
         <AssetArray TemplateParam="a"/>
@@ -1501,28 +1404,28 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="ZOCOMCondu_Help" parent="ZOCOMHelp" prefix="GUCondu_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMCondu_What" parent="ZOCOMWhat" prefix="GUCondu_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--CrOff-->
     <CSound id="ZOCOMCrOff_Attack" parent="ZOCOMAttack" prefix="GUCrOff_VoiAttack">
@@ -1530,9 +1433,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMCrOff_Deploy" parent="ZOCOMAttack" prefix="GUCrOff_voiDeploy">
         <AssetArray TemplateParam="a"/>
@@ -1550,30 +1453,30 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMCrOff_Help" parent="ZOCOMHelp" prefix="GUCrOff_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMCrOff_What" parent="ZOCOMWhat" prefix="GUCrOff_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="ZOCOMCrOff_UpgArm1" parent="ZOCOMAttack" prefix="GUCrOff_voiUpgArm1">
         <AssetArray TemplateParam="a"/>
@@ -1606,9 +1509,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMHunte_BeAtt" parent="ZOCOMAttack" prefix="GUHunte_voiBeAtt">
         <AssetArray TemplateParam="a"/>
@@ -1624,27 +1527,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMHunte_Help" parent="ZOCOMHelp" prefix="GUHunte_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMHunte_What" parent="ZOCOMWhat" prefix="GUHunte_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--Hurricane-->
     <CSound id="ZOCOMHurri_Attack" parent="ZOCOMAttack" prefix="GUHurri_VoiAttack">
@@ -1652,9 +1555,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMHurri_AttMis" parent="ZOCOMAttack" prefix="GUHurri_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -1670,27 +1573,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMHurri_Help" parent="ZOCOMHelp" prefix="GUHurri_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMHurri_What" parent="ZOCOMWhat" prefix="GUHurri_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--HvyGn-->
     <CSound id="ZOCOMHvyGn_Attack" parent="ZOCOMAttack" prefix="GUHvyGn_VoiAttack">
@@ -1715,10 +1618,10 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="ZOCOMHvyGn_Help" parent="ZOCOMHelp" prefix="GUHvyGn_VoiSelBat">
         <AssetArray TemplateParam="a"/>
@@ -1731,7 +1634,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--ImpZT-->
     <CSound id="ZOCOMImpZT_Attack" parent="ZOCOMAttack" prefix="GUImpZT_VoiAttack">
@@ -1739,7 +1642,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMImpZT_Ready" parent="ZOCOMReady" prefix="GUImpZT_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1751,7 +1654,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMImpZT_MovJum" parent="ZOCOMAttack" prefix="GUImpZT_VoiMovJum">
         <AssetArray TemplateParam="a"/>
@@ -1770,7 +1673,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMImpZT_Suppre" parent="ZOCOMAttack" prefix="GUImpZT_VoiSuppre">
         <AssetArray TemplateParam="a"/>
@@ -1790,8 +1693,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMKodia_Ready" parent="ZOCOMReady" prefix="GUKodia_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1803,27 +1706,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMKodia_Help" parent="ZOCOMHelp" prefix="GUKodia_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMKodia_What" parent="ZOCOMWhat" prefix="GUKodia_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--Mastodon-->
     <CSound id="ZOCOMMasto_Attack" parent="ZOCOMAttack" prefix="GUMasto_VoiAttack">
@@ -1831,9 +1734,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMMasto_Ready" parent="ZOCOMReady" prefix="GUMasto_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1845,12 +1748,12 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMMasto_Resto" parent="ZOCOMAttack" prefix="GUMasto_voiResto">
         <AssetArray TemplateParam="a"/>
@@ -1862,16 +1765,16 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMMasto_What" parent="ZOCOMWhat" prefix="GUMasto_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--Talon-->
     <CSound id="ZOCOMTalon_Attack" parent="ZOCOMAttack" prefix="GUTalon_VoiAttack">
@@ -1879,8 +1782,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMTalon_Ready" parent="ZOCOMReady" prefix="GUTalon_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -1892,31 +1795,31 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
         <AssetArray TemplateParam="1"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="i"/>-->
         <AssetArray TemplateParam="1"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMTalon_Help" parent="ZOCOMHelp" prefix="GUTalon_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMTalon_What" parent="ZOCOMWhat" prefix="GUTalon_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <!--Thund-->
     <CSound id="ZOCOMThund_Attack" parent="ZOCOMAttack" prefix="GUThund_VoiAttack">
@@ -1924,9 +1827,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMThund_AttMis" parent="ZOCOMAttack" prefix="GUThund_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -1944,27 +1847,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMThund_Help" parent="ZOCOMHelp" prefix="GUThund_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMThund_What" parent="ZOCOMWhat" prefix="GUThund_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Wolf-->
     <CSound id="ZOCOMWolf_Attack" parent="ZOCOMAttack" prefix="GUWolf_VoiAttack">
@@ -1972,8 +1875,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMWolf_AttMis" parent="ZOCOMAttack" prefix="GUWolf_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -1990,27 +1893,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="ZOCOMWolf_Help" parent="ZOCOMHelp" prefix="GUWolf_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMWolf_What" parent="ZOCOMWhat" prefix="GUWolf_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--ZoneC-->
     <CSound id="ZOCOMZoneC_Attack" parent="ZOCOMAttack" prefix="GUZoneC_VoiAttack">
@@ -2018,8 +1921,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMZoneC_Ready" parent="ZOCOMReady" prefix="GUZoneC_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -2035,12 +1938,12 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMZoneC_DieThrown" parent="ZOCOMAttack" prefix="GUZoneC_voiDieThrown">
         <AssetArray TemplateParam="a"/>
@@ -2053,27 +1956,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMZoneC_Help" parent="ZOCOMHelp" prefix="GUZoneC_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMZoneC_What" parent="ZOCOMWhat" prefix="GUZoneC_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--ZoneD-->
     <CSound id="ZOCOMZoneD_Attack" parent="ZOCOMAttack" prefix="GUZoneD_VoiAttack">
@@ -2081,9 +1984,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMZoneD_Ready" parent="ZOCOMReady" prefix="GUZoneD_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -2095,15 +1998,15 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMZoneD_DieShot" parent="ZOCOMAttack" prefix="GUZoneD_voiDieShot">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMZoneD_DieThrown" parent="ZOCOMAttack" prefix="GUZoneD_voiDieThrown">
         <AssetArray TemplateParam="a"/>
@@ -2115,29 +2018,29 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="ZOCOMZoneD_Help" parent="ZOCOMHelp" prefix="GUZoneD_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMZoneD_What" parent="ZOCOMWhat" prefix="GUZoneD_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--ZoneE-->
     <CSound id="ZOCOMZoneE_Attack" parent="ZOCOMAttack" prefix="GUZoneE_VoiAttack">
@@ -2145,8 +2048,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMZoneE_AttMis" parent="ZOCOMAttack" prefix="GUZoneE_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -2169,7 +2072,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMZoneE_DieThrown" parent="ZOCOMAttack" prefix="GUZoneE_voiDieThrown">
         <AssetArray TemplateParam="a"/>
@@ -2180,12 +2083,12 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMZoneE_MvSpr" parent="ZOCOMAttack" prefix="GUZoneE_voiMvSpr">
         <AssetArray TemplateParam="a"/>
@@ -2198,14 +2101,14 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMZoneE_What" parent="ZOCOMWhat" prefix="GUZoneE_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--ZoneL-->
     <CSound id="ZOCOMZoneL_Attack" parent="ZOCOMAttack" prefix="GUZoneL_VoiAttack">
@@ -2213,9 +2116,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMZoneL_Ready" parent="ZOCOMReady" prefix="GUZoneL_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -2227,16 +2130,16 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMZoneL_DieShot" parent="ZOCOMAttack" prefix="GUZoneL_voiDieShot">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ZOCOMZoneL_DieThrown" parent="ZOCOMAttack" prefix="GUZoneL_voiDieThrown">
         <AssetArray TemplateParam="a"/>
@@ -2248,28 +2151,28 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMZoneL_Help" parent="ZOCOMHelp" prefix="GUZoneL_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMZoneL_What" parent="ZOCOMWhat" prefix="GUZoneL_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--ZoneS-->
     <CSound id="ZOCOMZoneS_Attack" parent="ZOCOMAttack" prefix="GUZoneS_voicAtta">
@@ -2277,11 +2180,11 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="ZOCOMZoneS_Ready" parent="ZOCOMReady" prefix="GUZoneS_voicCrea">
         <AssetArray TemplateParam="a"/>
@@ -2291,15 +2194,15 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMZoneS_What" parent="ZOCOMWhat" prefix="GUZoneS_voicSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMZoneS_cSpec" parent="ZOCOMAttack" prefix="GUZoneS_voicSpec">
         <AssetArray TemplateParam="a"/>
@@ -2312,7 +2215,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Spann-->
     <CSound id="ZOCOMSpann_Attack" parent="ZOCOMAttack" prefix="GUSpann_VoiAttack">
@@ -2320,8 +2223,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMSpann_AttSpec1" parent="ZOCOMAttack" prefix="GUSpann_voiAttSpec1">
         <AssetArray TemplateParam="a"/>
@@ -2341,28 +2244,28 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMSpann_Help" parent="ZOCOMHelp" prefix="GUSpann_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMSpann_What" parent="ZOCOMWhat" prefix="GUSpann_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <!--Spartan-->
     <CSound id="ZOCOMSpart_Attack" parent="ZOCOMAttack" prefix="GUSpart_VoiAttack">
@@ -2370,10 +2273,10 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="ZOCOMSpart_Ready" parent="ZOCOMReady" prefix="GUSpart_VoiCreate">
         <AssetArray TemplateParam="a"/>
@@ -2385,27 +2288,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMSpart_Help" parent="ZOCOMHelp" prefix="GUSpart_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMSpart_What" parent="ZOCOMWhat" prefix="GUSpart_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <!--Striker-->
     <CSound id="ZOCOMStrik_Attack" parent="ZOCOMAttack" prefix="GUStrik_VoiAttack">
@@ -2413,8 +2316,8 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMStrik_AttMis" parent="ZOCOMAttack" prefix="GUStrik_voiAttMis">
         <AssetArray TemplateParam="a"/>
@@ -2432,27 +2335,27 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="ZOCOMStrik_Help" parent="ZOCOMHelp" prefix="GUStrik_VoiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ZOCOMStrik_What" parent="ZOCOMWhat" prefix="GUStrik_VoiSelect">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ZOCOMStrik_UpgSp" parent="ZOCOMAttack" prefix="GUStrik_voiUpgSp">
         <AssetArray TemplateParam="a"/>

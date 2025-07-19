@@ -1,0 +1,1102 @@
+<Catalog>
+    <CSound id="ScrinCultist_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="ScrinCultist_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ScrinCultist_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="ScrinCultist_Ready">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ScrinCultist_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="ABBuild_die">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="ABFortr_ambiLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+    </CSound>
+    <CSound id="ABTechn_select">
+        <AssetArray TemplateParam="t"/>
+    </CSound>
+    <CSound id="APTimeB_bombGlow">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="ASForce_hit">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ASForce_hitS">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="ASStasi_field2L3">
+        <AssetArray TemplateParam="r"/>
+    </CSound>
+    <CSound id="ASWormh_enter">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUAir_D_die">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUAir_D_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUAir_D_idleSwee">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        <AssetArray TemplateParam="s"/>
+        <AssetArray TemplateParam="t"/>
+        <AssetArray TemplateParam="u"/>
+        <AssetArray TemplateParam="v"/>
+        <AssetArray TemplateParam="w"/>
+        <AssetArray TemplateParam="x"/>
+        <AssetArray TemplateParam="y"/>
+        <AssetArray TemplateParam="z"/>
+    </CSound>
+    <CSound id="AUAir_D_idleSweez">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+    </CSound>
+    <CSound id="AUAir_D_moveAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUAir_D_moveLand">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUAir_D_moveLaun1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUAir_D_moveLaun2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUAir_D_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUAir_D_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="AUAir_D_shriek">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUAir_D_weapClos">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUAir_D_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUAir_D_weapOpen">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUAir_D_wiggle">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUAnnih_ambiLoo1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="AUAnnih_ambiLoo2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="AUAnnih_footstep">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+    </CSound>
+    <CSound id="AUAnnih_sounAtta">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUAnnih_sounDie">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUAnnih_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUAnnih_wea1Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUASSau_armorLP">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUASSau_armorOff">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUASSau_armorOn">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUAssim_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUAssim_sounDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AUAssim_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+    </CSound>
+    <CSound id="AUAssim_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="AUBuzz_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUBuzz_moveAtta">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUBuzz_moveStar">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUBuzz_sounDie">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUBuzz_sounSele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUBuzze_die2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUBuzze_moveL1">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUBuzze_moveL2">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUBuzze_moveL3">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUBuzze_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AUCentu_bombExplo">
+        <AssetArray TemplateParam="E"/>
+    </CSound>
+    <CSound id="AUCorru_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUCorru_sounDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUCorru_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUCorru_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUCryoL_jumLand">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUCryoL_jumStart">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUCryoL_weapFire2l1">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUCryoL_weapFire2l3">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUDevas_die">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUDevas_moveStar">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUDevas_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUDevas_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUDevas_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUDevou_die">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUDevou_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="AUDevou_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUDevou_sou2Sele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUDevou_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUDevou_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUDevou_sounSele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUDevou_wea1Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUDevou_wea2Fir">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUDisin_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUDisin_sounDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUDisin_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUDisin_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUDrone_moveStar">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUDrone_sounSele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUExplo_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUExplo_sounSele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUGunWa_moveLoop2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUGunWa_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUGunWa_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUGunWa_sounDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUGunWa_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUGunWa_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUHarve_die">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUHarve_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUHarve_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUHarve_sounRetr">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUHarve_sounSele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUInf_A_moveAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUInf_A_moveFoot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        <AssetArray TemplateParam="s"/>
+        <AssetArray TemplateParam="t"/>
+        <AssetArray TemplateParam="u"/>
+        <AssetArray TemplateParam="v"/>
+        <AssetArray TemplateParam="w"/>
+        <AssetArray TemplateParam="x"/>
+        <AssetArray TemplateParam="y"/>
+        <AssetArray TemplateParam="z"/>
+    </CSound>
+    <CSound id="AUInf_A_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUInf_A_sounDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="AUInf_A_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUInf_A_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        <AssetArray TemplateParam="s"/>
+        <AssetArray TemplateParam="t"/>
+    </CSound>
+    <CSound id="AUJavel_rocketFire">
+        <AssetArray TemplateParam="E"/>
+    </CSound>
+    <CSound id="AUMaste_sou2Die">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUMaste_sou2Sele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUMaste_sounAtta">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUMaste_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUMaste_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUPacif_idleLoop">
+        <AssetArray TemplateParam="E"/>
+    </CSound>
+    <CSound id="AUPacif_machineGunFireL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUPacif_machineGunFireL3">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUPlanet_dieMain">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUPlanet_dieSmall">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUPlanet_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUPlanet_invaAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUPlanet_invaDock">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUPlanet_invaLaun">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUPlanet_invaMove">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUPlanet_invaWeap">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="AUPlanet_moveLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUPlanet_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUPlanet_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUPlanet_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AURazor_moveLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="AURazor_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AURazor_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AURazor_wea1Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUSeeke_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="AUSeeke_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUSeeke_sou2Sele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUSeeke_sounAtta">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUSeeke_sounMove">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUSeeke_sounSele">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUShock_die2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUShock_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUShock_sounDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AUShock_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+    </CSound>
+    <CSound id="AUShock_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUShock_wea1Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+    </CSound>
+    <CSound id="AUShock_wea2Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+    </CSound>
+    <CSound id="AUStorm_moveLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="AUStorm_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUStorm_sounDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUStorm_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUVeh_D_die">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUVeh_D_moveAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUVeh_D_moveFoot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="AUVeh_D_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AUVeh_D_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AUVeh_D_weapFire1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="AUVeh_F_die">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="AUVeh_F_moveAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AUVeh_F_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="AUVeh_F_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="AUVeh_F_weapEnd">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="AUVeh_F_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="AUVeh_L_cleaClaw">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="AUVeh_L_creaking">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUVeh_L_die">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUVeh_L_growlBig">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+    </CSound>
+    <CSound id="AUVeh_L_growlSma">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="AUVeh_L_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUVeh_L_moveAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUVeh_L_moveFoot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="AUVeh_L_moveLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUVeh_L_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUVeh_L_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUVeh_L_weapEnd">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUVeh_L_weapFire">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUVeh_L_weapLoop">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUVicer_sounAtta">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUVicer_sounDie">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AUMothe_moveL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="AUMothe_moveLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="AUMothe_sounMove">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="AUMothe_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+</Catalog>

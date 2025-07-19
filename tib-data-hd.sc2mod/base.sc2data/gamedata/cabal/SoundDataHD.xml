@@ -1,0 +1,612 @@
+<Catalog>
+    <CSound id="CABALBike_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALBike_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALBike_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBike_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALAfterShock_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALAfterShock_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALAfterShock_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALAfterShock_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALSpider_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALSpider_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALSpider_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALSpider_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="CABALUnderminer_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALUnderminer_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALUnderminer_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALUnderminer_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALWidow_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALWidow_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALWidow_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALWidow_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALMarauder_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALMarauder_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALMarauder_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALMarauder_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="CABALCenturion_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALCenturion_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALCenturion_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALCenturion_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALHijacker_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALHijacker_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALHijacker_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALHijacker_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALHijacker_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALHijacker_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALDominator_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALDominator_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALDominator_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALDominator_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALDominator_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALDominator_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALReaper_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALReaper_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALReaper_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALReaper_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALReaper_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALReaper_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALAscended_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALAscended_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALAscended_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALAscended_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALAscended_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALAscended_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALMedusa_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALMedusa_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALMedusa_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALMedusa_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALMedusa_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALLeviathan_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALLeviathan_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALLeviathan_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALLeviathan_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALBasilisk_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALBasilisk_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALBasilisk_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBasilisk_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBasilisk_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALSalamander_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALSalamander_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALSalamander_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALSalamander_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALSalamander_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="CABALSlave_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALSlave_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALSlave_Ready">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALSlave_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALAvengerTank_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALAvengerTank_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALAvengerTank_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALAvengerTank_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALAvengerTank_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALVenom_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALVenom_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALVenom_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALVenom_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALVenom_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="CABALTyrant_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALTyrant_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALTyrant_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALTyrant_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="HighConfessor_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="HighConfessor_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="HighConfessor_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="HighConfessor_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="HighConfessor_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="HighConfessor_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Devout_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Devout_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Devout_Help_2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Devout_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Devout_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Devout_Death_Shock">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Devout_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Cobra_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Cobra_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Cobra_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="Cobra_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Cobra_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALSpider_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+    </CSound>
+    <CSound id="CABALWidowLaser_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALAvengerTankMovementStop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALBasilisk_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALSalamanderRocketAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALDefenseCrawlerAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALViperTurret_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALTyrant_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="HC_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Cobra_AttackLaunchLaser">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBasiliskStasisField_PsionicStormLaunch">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Widow_Repaired">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="AscendedAttackSounds">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Devout_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Cobra_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodAvatar_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodAvatar_AttackLaunch2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMissileTurret_HellstormAttackImpact">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMissileTurret_HellstormAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="DevoutAttackSounds">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+</Catalog>

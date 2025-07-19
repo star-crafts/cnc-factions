@@ -24,53 +24,53 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="ScrinCultist_Attack" parent="ScrinAttack" prefix="AUCulti_voicAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ScrinCultist_Help" parent="ScrinHelp" prefix="AUCulti_voiSelBat">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="ScrinCultist_Ready" parent="ScrinReady" prefix="AUCulti_voicCrea">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ScrinCultist_What" parent="ScrinWhat" prefix="AUCulti_voicSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
     </CSound>
     <CSound id="ScrinCultist_Death" parent="ScrinDeath">
     </CSound>
@@ -80,9 +80,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="ABBuild_place" parent="Scrin" prefix="ABBuild_place">
         <AssetArray TemplateParam="a"/>
@@ -112,17 +112,17 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
     </CSound>
     <CSound id="ABFound_select" parent="Scrin" prefix="ABFound_select">
         <AssetArray TemplateParam="a"/>
@@ -200,7 +200,7 @@
     </CSound>
     <CSound id="ABTechn_select" parent="Scrin" prefix="ABTechn_select">
         <AssetArray TemplateParam="a"/>
-        <AssetArray TemplateParam="t"/>
+        <!--<AssetArray TemplateParam="t"/>-->
     </CSound>
     <CSound id="ABWallH_select" parent="Scrin" prefix="ABWallH_select">
         <AssetArray TemplateParam="a"/>
@@ -220,7 +220,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="ASBuzze_swarm" parent="Scrin" prefix="ASBuzze_swarm">
         <AssetArray TemplateParam="a"/>
@@ -235,22 +235,22 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="ASForce_hitS" parent="Scrin" prefix="ASForce_hitS">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="ASForce_start" parent="Scrin" prefix="ASForce_start">
         <AssetArray TemplateParam="a"/>
@@ -309,7 +309,7 @@
     </CSound>
     <CSound id="ASStasi_field2L3" parent="Scrin" prefix="ASStasi_field2L3">
         <AssetArray TemplateParam="a"/>
-        <AssetArray TemplateParam="r"/>
+        <!--<AssetArray TemplateParam="r"/>-->
     </CSound>
     <CSound id="ASTimeB_Beep1" parent="Scrin" prefix="ASTimeB_Beep1">
         <AssetArray TemplateParam="a"/>
@@ -343,19 +343,19 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUAir_D_die" parent="Scrin" prefix="AUAir_D_die">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUAir_D_diveAtta" parent="Scrin" prefix="AUAir_D_diveAtta">
         <AssetArray TemplateParam="a"/>
@@ -365,214 +365,214 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUAir_D_idleSwee" parent="Scrin" prefix="AUAir_D_idleSwee">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
-        <AssetArray TemplateParam="p"/>
-        <AssetArray TemplateParam="q"/>
-        <AssetArray TemplateParam="r"/>
-        <AssetArray TemplateParam="s"/>
-        <AssetArray TemplateParam="t"/>
-        <AssetArray TemplateParam="u"/>
-        <AssetArray TemplateParam="v"/>
-        <AssetArray TemplateParam="w"/>
-        <AssetArray TemplateParam="x"/>
-        <AssetArray TemplateParam="y"/>
-        <AssetArray TemplateParam="z"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
+        <!--<AssetArray TemplateParam="q"/>-->
+        <!--<AssetArray TemplateParam="r"/>-->
+        <!--<AssetArray TemplateParam="s"/>-->
+        <!--<AssetArray TemplateParam="t"/>-->
+        <!--<AssetArray TemplateParam="u"/>-->
+        <!--<AssetArray TemplateParam="v"/>-->
+        <!--<AssetArray TemplateParam="w"/>-->
+        <!--<AssetArray TemplateParam="x"/>-->
+        <!--<AssetArray TemplateParam="y"/>-->
+        <!--<AssetArray TemplateParam="z"/>-->
     </CSound>
     <CSound id="AUAir_D_idleSweez" parent="Scrin" prefix="AUAir_D_idleSweez">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
-        <AssetArray TemplateParam="p"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
     </CSound>
     <CSound id="AUAir_D_moveAtta" parent="Scrin" prefix="AUAir_D_moveAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUAir_D_moveLand" parent="Scrin" prefix="AUAir_D_moveLand">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUAir_D_moveLaun1" parent="Scrin" prefix="AUAir_D_moveLaun1">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUAir_D_moveLaun2" parent="Scrin" prefix="AUAir_D_moveLaun2">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUAir_D_moveStar" parent="Scrin" prefix="AUAir_D_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUAir_D_select" parent="Scrin" prefix="AUAir_D_select">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
     </CSound>
     <CSound id="AUAir_D_shriek" parent="Scrin" prefix="AUAir_D_shriek">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUAir_D_weapClos" parent="Scrin" prefix="AUAir_D_weapClos">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUAir_D_weapFire" parent="Scrin" prefix="AUAir_D_weapFire">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUAir_D_weapOpen" parent="Scrin" prefix="AUAir_D_weapOpen">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUAir_D_wiggle" parent="Scrin" prefix="AUAir_D_wiggle">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUAnnih_ambiLoo1" parent="Scrin" prefix="AUAnnih_ambiLoo1">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
     </CSound>
     <CSound id="AUAnnih_ambiLoo2" parent="Scrin" prefix="AUAnnih_ambiLoo2">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
     </CSound>
     <CSound id="AUAnnih_footstep" parent="Scrin" prefix="AUAnnih_footstep">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
-        <AssetArray TemplateParam="p"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
     </CSound>
     <CSound id="AUAnnih_scream" parent="Scrin" prefix="AUAnnih_scream">
         <AssetArray TemplateParam="a"/>
@@ -585,22 +585,22 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUAnnih_sounDie" parent="Scrin" prefix="AUAnnih_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUAnnih_sounSele" parent="Scrin" prefix="AUAnnih_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUAnnih_wail" parent="Scrin" prefix="AUAnnih_wail">
         <AssetArray TemplateParam="a"/>
@@ -612,127 +612,127 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUASSau_armorLP" parent="Scrin" prefix="AUASSau_armorLP">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUASSau_armorOff" parent="Scrin" prefix="AUASSau_armorOff">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUASSau_armorOn" parent="Scrin" prefix="AUASSau_armorOn">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUAssim_sounAtta" parent="Scrin" prefix="AUAssim_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUAssim_sounDie" parent="Scrin" prefix="AUAssim_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUAssim_sounMove" parent="Scrin" prefix="AUAssim_sounMove">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
     </CSound>
     <CSound id="AUAssim_sounSele" parent="Scrin" prefix="AUAssim_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
     </CSound>
     <CSound id="AUBuzz_idleLoop" parent="Scrin" prefix="AUBuzz_idleLoop">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUBuzz_moveAtta" parent="Scrin" prefix="AUBuzz_moveAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUBuzz_moveStar" parent="Scrin" prefix="AUBuzz_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUBuzz_sounDie" parent="Scrin" prefix="AUBuzz_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUBuzz_sounSele" parent="Scrin" prefix="AUBuzz_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUBuzze_combine" parent="Scrin" prefix="AUBuzze_combine">
         <AssetArray TemplateParam="a"/>
@@ -744,9 +744,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUBuzze_mov2Star" parent="Scrin" prefix="AUBuzze_mov2Star">
         <AssetArray TemplateParam="a"/>
@@ -759,21 +759,21 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUBuzze_moveL2" parent="Scrin" prefix="AUBuzze_moveL2">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUBuzze_moveL3" parent="Scrin" prefix="AUBuzze_moveL3">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUBuzze_sou2Atta" parent="Scrin" prefix="AUBuzze_sou2Atta">
         <AssetArray TemplateParam="a"/>
@@ -815,32 +815,32 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUCentu_bombExplo" parent="Scrin" prefix="AUCentu_bombExplo">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="B"/>
         <AssetArray TemplateParam="C"/>
         <AssetArray TemplateParam="D"/>
-        <AssetArray TemplateParam="E"/>
+        <!--<AssetArray TemplateParam="E"/>-->
     </CSound>
     <CSound id="AUCorru_sounAtta" parent="Scrin" prefix="AUCorru_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUCorru_sounCrea" parent="Scrin" prefix="AUCorru_sounCrea">
         <AssetArray TemplateParam="a"/>
@@ -850,12 +850,12 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUCorru_sounFire" parent="Scrin" prefix="AUCorru_sounFire">
         <AssetArray TemplateParam="a"/>
@@ -866,23 +866,23 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUCorru_sounSele" parent="Scrin" prefix="AUCorru_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUCorru_sounSpec" parent="Scrin" prefix="AUCorru_sounSpec">
         <AssetArray TemplateParam="a"/>
@@ -905,21 +905,21 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUCryoL_jumStart" parent="Scrin" prefix="AUCryoL_jumStart">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUCryoL_weapFire2l1" parent="Scrin" prefix="AUCryoL_weapFire2l1">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUCryoL_weapFire2l2" parent="Scrin" prefix="AUCryoL_weapFire2l2">
         <AssetArray TemplateParam="a"/>
@@ -931,14 +931,14 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUDevas_die" parent="Scrin" prefix="AUDevas_die">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUDevas_moveLoop" parent="Scrin" prefix="AUDevas_moveLoop">
         <AssetArray TemplateParam="a"/>
@@ -950,7 +950,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUDevas_shotimpact" parent="Scrin" prefix="AUDevas_shotimpact">
         <AssetArray TemplateParam="a"/>
@@ -961,10 +961,10 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUDevas_sounCrea" parent="Scrin" prefix="AUDevas_sounCrea">
         <AssetArray TemplateParam="a"/>
@@ -980,22 +980,22 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUDevas_sounSele" parent="Scrin" prefix="AUDevas_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUDevas_sounSpec" parent="Scrin" prefix="AUDevas_sounSpec">
         <AssetArray TemplateParam="a"/>
@@ -1017,51 +1017,51 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUDevou_idleLoop" parent="Scrin" prefix="AUDevou_idleLoop">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
     </CSound>
     <CSound id="AUDevou_moveStar" parent="Scrin" prefix="AUDevou_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUDevou_sou2Sele" parent="Scrin" prefix="AUDevou_sou2Sele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUDevou_sounAtta" parent="Scrin" prefix="AUDevou_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUDevou_sounCrea" parent="Scrin" prefix="AUDevou_sounCrea">
         <AssetArray TemplateParam="a"/>
@@ -1071,17 +1071,17 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUDevou_sounSele" parent="Scrin" prefix="AUDevou_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUDevou_sounSpec" parent="Scrin" prefix="AUDevou_sounSpec">
         <AssetArray TemplateParam="a"/>
@@ -1091,11 +1091,11 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUDevou_wea1Loop" parent="Scrin" prefix="AUDevou_wea1Loop">
         <AssetArray TemplateParam="a"/>
@@ -1108,42 +1108,42 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUDisin_sounAtta" parent="Scrin" prefix="AUDisin_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUDisin_sounDie" parent="Scrin" prefix="AUDisin_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUDisin_sounMove" parent="Scrin" prefix="AUDisin_sounMove">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUDisin_sounSele" parent="Scrin" prefix="AUDisin_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUDrone_moveDeploy" parent="Scrin" prefix="AUDrone_moveDeploy">
         <AssetArray TemplateParam="a"/>
@@ -1160,7 +1160,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUDrone_sounCrea" parent="Scrin" prefix="AUDrone_sounCrea">
         <AssetArray TemplateParam="a"/>
@@ -1170,7 +1170,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUDrone_sounSpec" parent="Scrin" prefix="AUDrone_sounSpec">
         <AssetArray TemplateParam="a"/>
@@ -1206,15 +1206,15 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUExplo_sounSele" parent="Scrin" prefix="AUExplo_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUExplo_sounSpec" parent="Scrin" prefix="AUExplo_sounSpec">
         <AssetArray TemplateParam="a"/>
@@ -1237,56 +1237,56 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUGunWa_moveStar" parent="Scrin" prefix="AUGunWa_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUGunWa_sounAtta" parent="Scrin" prefix="AUGunWa_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUGunWa_sounDie" parent="Scrin" prefix="AUGunWa_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUGunWa_sounMove" parent="Scrin" prefix="AUGunWa_sounMove">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUGunWa_sounSele" parent="Scrin" prefix="AUGunWa_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUGunWa_weaFir" parent="Scrin" prefix="AUGunWa_weaFir">
         <AssetArray TemplateParam="a"/>
@@ -1303,16 +1303,16 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUHarve_moveStar" parent="Scrin" prefix="AUHarve_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUHarve_sounCrea" parent="Scrin" prefix="AUHarve_sounCrea">
         <AssetArray TemplateParam="a"/>
@@ -1328,64 +1328,64 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUHarve_sounRetr" parent="Scrin" prefix="AUHarve_sounRetr">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUHarve_sounSele" parent="Scrin" prefix="AUHarve_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUInf_A_moveAtta" parent="Scrin" prefix="AUInf_A_moveAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUInf_A_moveFoot" parent="Scrin" prefix="AUInf_A_moveFoot">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
-        <AssetArray TemplateParam="p"/>
-        <AssetArray TemplateParam="q"/>
-        <AssetArray TemplateParam="r"/>
-        <AssetArray TemplateParam="s"/>
-        <AssetArray TemplateParam="t"/>
-        <AssetArray TemplateParam="u"/>
-        <AssetArray TemplateParam="v"/>
-        <AssetArray TemplateParam="w"/>
-        <AssetArray TemplateParam="x"/>
-        <AssetArray TemplateParam="y"/>
-        <AssetArray TemplateParam="z"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
+        <!--<AssetArray TemplateParam="q"/>-->
+        <!--<AssetArray TemplateParam="r"/>-->
+        <!--<AssetArray TemplateParam="s"/>-->
+        <!--<AssetArray TemplateParam="t"/>-->
+        <!--<AssetArray TemplateParam="u"/>-->
+        <!--<AssetArray TemplateParam="v"/>-->
+        <!--<AssetArray TemplateParam="w"/>-->
+        <!--<AssetArray TemplateParam="x"/>-->
+        <!--<AssetArray TemplateParam="y"/>-->
+        <!--<AssetArray TemplateParam="z"/>-->
     </CSound>
     <CSound id="AUInf_A_moveFootz" parent="Scrin" prefix="AUInf_A_moveFootz">
         <AssetArray TemplateParam="a"/>
@@ -1396,68 +1396,68 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUInf_A_sounDie" parent="Scrin" prefix="AUInf_A_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
     </CSound>
     <CSound id="AUInf_A_sounMove" parent="Scrin" prefix="AUInf_A_sounMove">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUInf_A_weapFire" parent="Scrin" prefix="AUInf_A_weapFire">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
-        <AssetArray TemplateParam="p"/>
-        <AssetArray TemplateParam="q"/>
-        <AssetArray TemplateParam="r"/>
-        <AssetArray TemplateParam="s"/>
-        <AssetArray TemplateParam="t"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
+        <!--<AssetArray TemplateParam="q"/>-->
+        <!--<AssetArray TemplateParam="r"/>-->
+        <!--<AssetArray TemplateParam="s"/>-->
+        <!--<AssetArray TemplateParam="t"/>-->
     </CSound>
     <CSound id="AUJavel_rocketFire" parent="Scrin" prefix="AUJavel_rocketFire">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="B"/>
         <AssetArray TemplateParam="C"/>
         <AssetArray TemplateParam="D"/>
-        <AssetArray TemplateParam="E"/>
+        <!--<AssetArray TemplateParam="E"/>-->
     </CSound>
     <CSound id="AUMaste_manipulaL2" parent="Scrin" prefix="AUMaste_manipulaL2">
         <AssetArray TemplateParam="a"/>
@@ -1484,7 +1484,7 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUMaste_sou2Move" parent="Scrin" prefix="AUMaste_sou2Move">
         <AssetArray TemplateParam="a"/>
@@ -1496,14 +1496,14 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUMaste_sounAtta" parent="Scrin" prefix="AUMaste_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUMaste_sounCraz" parent="Scrin" prefix="AUMaste_sounCraz">
         <AssetArray TemplateParam="a"/>
@@ -1524,17 +1524,17 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUMaste_sounSele" parent="Scrin" prefix="AUMaste_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUMaste_sounSpec" parent="Scrin" prefix="AUMaste_sounSpec">
         <AssetArray TemplateParam="a"/>
@@ -1575,22 +1575,22 @@
         <AssetArray TemplateParam="B"/>
         <AssetArray TemplateParam="C"/>
         <AssetArray TemplateParam="D"/>
-        <AssetArray TemplateParam="E"/>
+        <!--<AssetArray TemplateParam="E"/>-->
     </CSound>
     <CSound id="AUPacif_machineGunFireL2" parent="Scrin" prefix="AUPacif_machineGunFireL2">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUPacif_machineGunFireL3" parent="Scrin" prefix="AUPacif_machineGunFireL3">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUPacif_undeploy" parent="Scrin" prefix="AUPacif_undeploy">
         <AssetArray TemplateParam="a"/>
@@ -1602,118 +1602,118 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUPlanet_dieSmall" parent="Scrin" prefix="AUPlanet_dieSmall">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUPlanet_idleLoop" parent="Scrin" prefix="AUPlanet_idleLoop">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUPlanet_invaAtta" parent="Scrin" prefix="AUPlanet_invaAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUPlanet_invaDock" parent="Scrin" prefix="AUPlanet_invaDock">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUPlanet_invaLaun" parent="Scrin" prefix="AUPlanet_invaLaun">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUPlanet_invaMove" parent="Scrin" prefix="AUPlanet_invaMove">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUPlanet_invaWeap" parent="Scrin" prefix="AUPlanet_invaWeap">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
     </CSound>
     <CSound id="AUPlanet_moveLoop" parent="Scrin" prefix="AUPlanet_moveLoop">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUPlanet_moveStar" parent="Scrin" prefix="AUPlanet_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUPlanet_sounAtta" parent="Scrin" prefix="AUPlanet_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUPlanet_sounSele" parent="Scrin" prefix="AUPlanet_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUPlanet_sounStorm1L" parent="Scrin" prefix="AUPlanet_sounStorm1L">
         <AssetArray TemplateParam="a"/>
@@ -1729,42 +1729,42 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
     </CSound>
     <CSound id="AURazor_moveStar" parent="Scrin" prefix="AURazor_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AURazor_sounSele" parent="Scrin" prefix="AURazor_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AURazor_wea1Fire" parent="Scrin" prefix="AURazor_wea1Fire">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUSeeke_Die" parent="Scrin" prefix="AUSeeke_Die">
         <AssetArray TemplateParam="a"/>
@@ -1777,25 +1777,25 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
     </CSound>
     <CSound id="AUSeeke_moveStar" parent="Scrin" prefix="AUSeeke_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUSeeke_shotimpact" parent="Scrin" prefix="AUSeeke_shotimpact">
         <AssetArray TemplateParam="a"/>
@@ -1808,14 +1808,14 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUSeeke_sounAtta" parent="Scrin" prefix="AUSeeke_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUSeeke_sounCrea" parent="Scrin" prefix="AUSeeke_sounCrea">
         <AssetArray TemplateParam="a"/>
@@ -1825,23 +1825,23 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUSeeke_sounSele" parent="Scrin" prefix="AUSeeke_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUShock_die2" parent="Scrin" prefix="AUShock_die2">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUShock_plasUpgr" parent="Scrin" prefix="AUShock_plasUpgr">
         <AssetArray TemplateParam="a"/>
@@ -1854,56 +1854,56 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUShock_sounDie" parent="Scrin" prefix="AUShock_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUShock_sounMove" parent="Scrin" prefix="AUShock_sounMove">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
-        <AssetArray TemplateParam="p"/>
-        <AssetArray TemplateParam="q"/>
-        <AssetArray TemplateParam="r"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
+        <!--<AssetArray TemplateParam="q"/>-->
+        <!--<AssetArray TemplateParam="r"/>-->
     </CSound>
     <CSound id="AUShock_sounSele" parent="Scrin" prefix="AUShock_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUShock_sounTele" parent="Scrin" prefix="AUShock_sounTele">
         <AssetArray TemplateParam="a"/>
@@ -1924,35 +1924,35 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
     </CSound>
     <CSound id="AUShock_wea2Fire" parent="Scrin" prefix="AUShock_wea2Fire">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
-        <AssetArray TemplateParam="p"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
+        <!--<AssetArray TemplateParam="p"/>-->
     </CSound>
     <CSound id="AUSiege_weaFire" parent="Scrin" prefix="AUSiege_weaFire">
         <AssetArray TemplateParam="a"/>
@@ -1972,43 +1972,43 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
     </CSound>
     <CSound id="AUStorm_moveStar" parent="Scrin" prefix="AUStorm_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUStorm_sounDie" parent="Scrin" prefix="AUStorm_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUStorm_sounSele" parent="Scrin" prefix="AUStorm_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUStorm_weaFri" parent="Scrin" prefix="AUStorm_weaFri">
         <AssetArray TemplateParam="a"/>
@@ -2021,75 +2021,75 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUVeh_D_moveAtta" parent="Scrin" prefix="AUVeh_D_moveAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUVeh_D_moveFoot" parent="Scrin" prefix="AUVeh_D_moveFoot">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
     </CSound>
     <CSound id="AUVeh_D_moveStar" parent="Scrin" prefix="AUVeh_D_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUVeh_D_select" parent="Scrin" prefix="AUVeh_D_select">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUVeh_D_weapFire1" parent="Scrin" prefix="AUVeh_D_weapFire1">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
     </CSound>
     <CSound id="AUVeh_F_animBATA" parent="Scrin" prefix="AUVeh_F_animBATA">
         <AssetArray TemplateParam="a"/>
@@ -2135,25 +2135,25 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
     </CSound>
     <CSound id="AUVeh_F_moveAtta" parent="Scrin" prefix="AUVeh_F_moveAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUVeh_F_moveLoop" parent="Scrin" prefix="AUVeh_F_moveLoop">
         <AssetArray TemplateParam="a"/>
@@ -2165,31 +2165,31 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
     </CSound>
     <CSound id="AUVeh_F_select" parent="Scrin" prefix="AUVeh_F_select">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
     </CSound>
     <CSound id="AUVeh_F_tranLoop" parent="Scrin" prefix="AUVeh_F_tranLoop">
         <AssetArray TemplateParam="a"/>
@@ -2202,59 +2202,59 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
     </CSound>
     <CSound id="AUVeh_F_weapFire" parent="Scrin" prefix="AUVeh_F_weapFire">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
     </CSound>
     <CSound id="AUVeh_L_cleaClaw" parent="Scrin" prefix="AUVeh_L_cleaClaw">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
     </CSound>
     <CSound id="AUVeh_L_creaking" parent="Scrin" prefix="AUVeh_L_creaking">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUVeh_L_die" parent="Scrin" prefix="AUVeh_L_die">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUVeh_L_exteBATA" parent="Scrin" prefix="AUVeh_L_exteBATA">
         <AssetArray TemplateParam="a"/>
@@ -2288,36 +2288,36 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
-        <AssetArray TemplateParam="m"/>
-        <AssetArray TemplateParam="n"/>
-        <AssetArray TemplateParam="o"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
+        <!--<AssetArray TemplateParam="m"/>-->
+        <!--<AssetArray TemplateParam="n"/>-->
+        <!--<AssetArray TemplateParam="o"/>-->
     </CSound>
     <CSound id="AUVeh_L_growlSma" parent="Scrin" prefix="AUVeh_L_growlSma">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
     </CSound>
     <CSound id="AUVeh_L_idleLoop" parent="Scrin" prefix="AUVeh_L_idleLoop">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUVeh_L_idleSwee" parent="Scrin" prefix="AUVeh_L_idleSwee">
         <AssetArray TemplateParam="a"/>
@@ -2328,89 +2328,89 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUVeh_L_moveFoot" parent="Scrin" prefix="AUVeh_L_moveFoot">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
-        <AssetArray TemplateParam="i"/>
-        <AssetArray TemplateParam="j"/>
-        <AssetArray TemplateParam="k"/>
-        <AssetArray TemplateParam="l"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
+        <!--<AssetArray TemplateParam="i"/>-->
+        <!--<AssetArray TemplateParam="j"/>-->
+        <!--<AssetArray TemplateParam="k"/>-->
+        <!--<AssetArray TemplateParam="l"/>-->
     </CSound>
     <CSound id="AUVeh_L_moveLoop" parent="Scrin" prefix="AUVeh_L_moveLoop">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUVeh_L_moveStar" parent="Scrin" prefix="AUVeh_L_moveStar">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUVeh_L_select" parent="Scrin" prefix="AUVeh_L_select">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUVeh_L_weapEnd" parent="Scrin" prefix="AUVeh_L_weapEnd">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUVeh_L_weapFire" parent="Scrin" prefix="AUVeh_L_weapFire">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUVeh_L_weapLoop" parent="Scrin" prefix="AUVeh_L_weapLoop">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUVicer_sounAtta" parent="Scrin" prefix="AUVicer_sounAtta">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUVicer_sounDie" parent="Scrin" prefix="AUVicer_sounDie">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
+        <!--<AssetArray TemplateParam="e"/>-->
     </CSound>
     <CSound id="AUVicer_sounSele" parent="Scrin" prefix="AUVicer_sounSele">
         <AssetArray TemplateParam="a"/>
@@ -2435,10 +2435,10 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
-        <AssetArray TemplateParam="h"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
+        <!--<AssetArray TemplateParam="h"/>-->
     </CSound>
     <CSound id="AUMothe_moveL3" parent="Scrin" prefix="AUMothe_moveL3">
         <AssetArray TemplateParam="a"/>
@@ -2451,9 +2451,9 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUMothe_sounAtta" parent="Scrin" prefix="AUMothe_sounAtta">
         <AssetArray TemplateParam="a"/>
@@ -2473,17 +2473,17 @@
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
     </CSound>
     <CSound id="AUMothe_sounSele" parent="Scrin" prefix="AUMothe_sounSele">
         <AssetArray TemplateParam="a"/>
         <AssetArray TemplateParam="b"/>
         <AssetArray TemplateParam="c"/>
         <AssetArray TemplateParam="d"/>
-        <AssetArray TemplateParam="e"/>
-        <AssetArray TemplateParam="f"/>
-        <AssetArray TemplateParam="g"/>
+        <!--<AssetArray TemplateParam="e"/>-->
+        <!--<AssetArray TemplateParam="f"/>-->
+        <!--<AssetArray TemplateParam="g"/>-->
     </CSound>
     <CSound id="AUMothe_weaFire" parent="Scrin" prefix="AUMothe_weaFire">
         <AssetArray TemplateParam="a"/>

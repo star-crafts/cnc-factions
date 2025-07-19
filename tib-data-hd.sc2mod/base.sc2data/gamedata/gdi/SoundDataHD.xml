@@ -1,0 +1,2889 @@
+<Catalog>
+    <CSound default="1"  id="GDIYes">
+    <CSound default="1"  id="GDIAttack">
+    <CSound default="1"  id="GDIHelp">
+    <CSound default="1"  id="GDIReady">
+    <CSound default="1"  id="GDIWhat">
+    <CSound id="GDISlingshot_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDISlingshot_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDISlingshot_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIAPC_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIAPC_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIAPC_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIAPCRepair_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIAPCRepair_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIBehemoth_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="GDIBehemoth_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIBehemoth_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIBehemoth_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDICommando_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="GDICommando_AttSpec">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDICommando_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDICommando_DieLazer">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDICommando_DieShot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDICommando_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDICommando_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="GDICommando_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDICommando_Speci1">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIEngineer_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIEngineer_Captur">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIEngineer_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIEngineer_DieShot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIEngineer_DieThrown">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIEngineer_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIEngineer_Repair">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIEngineer_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIEngineer_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIEngineer_SelRep">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIEngineer_Suppre">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDICombatEngineer_CapBui">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDICombatEngineer_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDICombatEngineer_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDICombatEngineer_cRepa">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDICombatEngineer_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDICombatEngineer_cSupp">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDICombatEngineer_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIFireHawk_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIFireHawk_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIFireHawk_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIFireHawk_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIGrenadier_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIGrenadier_Attbui">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIGrenadier_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIGrenadier_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIGrenadier_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIGrenadier_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHammerHead_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIHammerHead_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIHammerHead_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIHammerHead_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvester_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvester_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIHarvester_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="GDIHarvester_MovRef">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvester_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIHarvester_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIHarvester_Speci1">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIHarvesterHeavy_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvesterHeavy_cHarv">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIHarvesterHeavy_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="GDIHarvesterHeavy_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIHarvesterHeavy_MovRef">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvesterHeavy_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIJuggernaut_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIJuggernaut_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIJuggernaut_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIJuggernaut_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIJuggernaut_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIMammoth_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIMammoth_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIMammoth_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIMammoth_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIMARV_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIMARV_Ready">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIMARV_cHarv">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIMARV_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIMARV_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIMCV_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="GDIMCV_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIMissileTrooper_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIMissileTrooper_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIMissileTrooper_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIMissileTrooper_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIMissileTrooper_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIOrca_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIOrca_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIOrca_Fallin">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIOrca_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="GDIOrca_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIOrca_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIOx_Crash">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIOx_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIOx_Dropo">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIOx_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIOx_Pickup">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIOx_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIPitBull_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIPitBull_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIPitBull_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIPitBull_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIPredator_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIPredator_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIPredator_Yes">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIPredator_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIPredator_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIRifleman_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIRifleman_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIRifleman_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIRifleman_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="GDIRifleman_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIRig_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIRig_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvesterRocket_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvesterRocket_cHarv">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvesterRocket_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="GDIHarvesterRocket_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIHarvesterRocket_MovRef">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIHarvesterRocket_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDISniper_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDISniper_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDISniper_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDISniper_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDISpotter_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDISpotter_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDISpotter_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDISpotter_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDISurveyor_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDISurveyor_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDITitan_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDITitan_Ready">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDITitan_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDITitan_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDITitan_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIWolverine_Att">
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="GDIWolverine_Ready">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIWolverine_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIWolverine_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIWolverine_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIZoneRaider_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIZoneRaider_AttSpec">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIZoneRaider_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+    </CSound>
+    <CSound id="GDIZoneRaider_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="GDIZoneRaider_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIZoneRaider_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIZoneTrooper_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="GDIZoneTrooper_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="GDIZoneTrooper_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="GDIZoneTrooper_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIZoneTrooper_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIShatterer_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="GDIShatterer_Yes">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIShatterer_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDIShatterer_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GDI_Soldi_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="GBAABat_select">
+        </CSound>
+    <CSound id="GBAirfi_doorClos">
+        </CSound>
+    <CSound id="GBAirfi_doorOpen">
+        </CSound>
+    <CSound id="GBAirfi_select">
+        </CSound>
+    <CSound id="GBArmor_select">
+        </CSound>
+    <CSound id="GBBarra_select">
+        </CSound>
+    <CSound id="GBBatte_gunFire5">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GBBatte_gunMotL1">
+        </CSound>
+    <CSound id="GBBatte_gunMotL2">
+        </CSound>
+    <CSound id="GBBatte_gunMotL3">
+        </CSound>
+    <CSound id="GBBatte_turrMove">
+        </CSound>
+    <CSound id="GBBunke_StrB_machGunWeapFire1L">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GBBunke_StrB_machGunWeapFire2L">
+        </CSound>
+    <CSound id="GBBunke_StrB_machGunWeapFire3L">
+        </CSound>
+    <CSound id="GBBunke_StrB_select">
+        </CSound>
+    <CSound id="GBComma_APamUpgr">
+        </CSound>
+    <CSound id="GBComma_select">
+        </CSound>
+    <CSound id="GBComma_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GBComSu_select">
+        </CSound>
+    <CSound id="GBConst_select">
+        </CSound>
+    <CSound id="GBCra_B_select">
+        </CSound>
+    <CSound id="GBCraDe_CraA_cannonWeaponFireSweetener">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GBCrane_select">
+        </CSound>
+    <CSound id="GBCraOf_CraB_upgradeTier2">
+        </CSound>
+    <CSound id="GBCraOf_CraB_upgradeTier3">
+        </CSound>
+    <CSound id="GBCraSu_CraC_rocketWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GBCraSu_CraC_rocketWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GBCraSu_CraC_upgradeTier3">
+        </CSound>
+    <CSound id="GBCryst_select">
+        </CSound>
+    <CSound id="GBCryst_selectDamage">
+        </CSound>
+    <CSound id="GBCryst_StrI_stasisDomeL1">
+        </CSound>
+    <CSound id="GBCryst_StrI_stasisDomeL2">
+        </CSound>
+    <CSound id="GBCryst_StrI_stasisDomeL3">
+        </CSound>
+    <CSound id="GBDigin_select">
+        </CSound>
+    <CSound id="GBFalco_StrF_select">
+        </CSound>
+    <CSound id="GBFocus_StrG_select">
+        </CSound>
+    <CSound id="GBForwa_select">
+        </CSound>
+    <CSound id="GBGuard_StrC_CannonWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GBGuard_StrC_select">
+        </CSound>
+    <CSound id="GBIonCa_IonStrikeCenterBeam">
+        </CSound>
+    <CSound id="GBIonCa_IonStrikeSpark">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GBIonCa_select">
+        </CSound>
+    <CSound id="GBIonCa_StrJ_baseExtendAnimation">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GBIonCa_StrJ_flapAnimation">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GBIonCa_StrJ_globalArmedMono">
+        </CSound>
+    <CSound id="GBIonCa_StrJ_globalArmedStereo">
+        </CSound>
+    <CSound id="GBIonCa_StrJ_select">
+        </CSound>
+    <CSound id="GBIonCa_weapBeam">
+        </CSound>
+    <CSound id="GBIonCa_weapCres">
+        </CSound>
+    <CSound id="GBIonCa_weapLase">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GBIonCa_weapShoc">
+        </CSound>
+    <CSound id="GBIonCa_weapSphe">
+        </CSound>
+    <CSound id="GBMedic_select">
+        </CSound>
+    <CSound id="GBMissi_StrD_select">
+        </CSound>
+    <CSound id="GBMissi_StrD_targetingLaserWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GBMissi_StrD_targetingTelemetryLock">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GBOutpo_ready">
+        </CSound>
+    <CSound id="GBOutpo_select">
+        </CSound>
+    <CSound id="GBOutpo_StrA_finiConstruction">
+        </CSound>
+    <CSound id="GBOutpo_StrA_select">
+        </CSound>
+    <CSound id="GBOutpo_StrA_shieLoop1">
+        </CSound>
+    <CSound id="GBOutpo_StrA_shieLoop2">
+        </CSound>
+    <CSound id="GBOutpo_StrA_shieLoop3">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GBPillb_select">
+        </CSound>
+    <CSound id="GBPower_select">
+        </CSound>
+    <CSound id="GBPower_upgrade">
+        </CSound>
+    <CSound id="GBPulse_select">
+        </CSound>
+    <CSound id="GBRecHu_select">
+        </CSound>
+    <CSound id="GBRecla_doorClos">
+        </CSound>
+    <CSound id="GBRecla_doorOpen">
+        </CSound>
+    <CSound id="GBRecla_select">
+        </CSound>
+    <CSound id="GBRefin_select">
+        </CSound>
+    <CSound id="GBResou_ambiLoop">
+        </CSound>
+    <CSound id="GBResou_ambiSpar">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GBResou_builAmbi1">
+        </CSound>
+    <CSound id="GBResou_builAmbi2">
+        </CSound>
+    <CSound id="GBResou_builAmbi3">
+        </CSound>
+    <CSound id="GBResou_build1">
+        </CSound>
+    <CSound id="GBResou_build2">
+        </CSound>
+    <CSound id="GBResou_build3">
+        </CSound>
+    <CSound id="GBResou_build4">
+        </CSound>
+    <CSound id="GBResou_build5">
+        </CSound>
+    <CSound id="GBResou_build6">
+        </CSound>
+    <CSound id="GBResou_select">
+        </CSound>
+    <CSound id="GBSilo_select">
+        </CSound>
+    <CSound id="GBSonic_shockwa1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GBSonic_shockwa2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GBSonic_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        </CSound>
+    <CSound id="GBSpace_select">
+        </CSound>
+    <CSound id="GBSpart_select">
+        </CSound>
+    <CSound id="GBTechn_select">
+        </CSound>
+    <CSound id="GBTerra_select">
+        </CSound>
+    <CSound id="GBTunne_StrE_select">
+        </CSound>
+    <CSound id="GBWarFa_doorClos">
+        </CSound>
+    <CSound id="GBWarFa_doorOpen">
+        </CSound>
+    <CSound id="GBWarFa_select">
+        </CSound>
+    <CSound id="GBWatch_select">
+        </CSound>
+    <CSound id="GPMissi_incoming">
+        </CSound>
+    <CSound id="GPower_Earthquake_crack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GPower_Earthquake_swellsLFE">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GPower_EarthquakeL2">
+        </CSound>
+    <CSound id="GPower_EnhanceConstruction">
+        </CSound>
+    <CSound id="GPower_MirrorCoat">
+        </CSound>
+    <CSound id="GPower_Overkill">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GPower_PersonalShields">
+        </CSound>
+    <CSound id="GPower_ReconDrone">
+        </CSound>
+    <CSound id="GPower_Repair">
+        </CSound>
+    <CSound id="GPower_Resonance">
+        </CSound>
+    <CSound id="GPower_SonicArtilleryWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GScripted_FreeEngineer">
+        </CSound>
+    <CSound id="GScripted_ShipTakeOff1_bed">
+        </CSound>
+    <CSound id="GScripted_ShipTakeOff1">
+        </CSound>
+    <CSound id="GScripted_ShipTakeOff2">
+        </CSound>
+    <CSound id="GScripted_ShipTakeOff3">
+        </CSound>
+    <CSound id="GScripted_ShipTakeOff4">
+        </CSound>
+    <CSound id="GScripted_ShipTakeOff5">
+        </CSound>
+    <CSound id="GSDropP_descend">
+        </CSound>
+    <CSound id="GSDropP_open">
+        </CSound>
+    <CSound id="GSOrcaA_targBeep">
+        </CSound>
+    <CSound id="GSRaiAc_cast">
+        </CSound>
+    <CSound id="GSRaiAc_stripe">
+        </CSound>
+    <CSound id="GSRaiAc_stripes">
+        </CSound>
+    <CSound id="GSShock_ArtiFire1">
+        </CSound>
+    <CSound id="GSShock_ArtiFire2">
+        </CSound>
+    <CSound id="GSShock_ArtiFire3">
+        </CSound>
+    <CSound id="GSShock_ArtiImpa">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GSSonic_repuFiel">
+        </CSound>
+    <CSound id="GSSuper_explosio">
+        </CSound>
+    <CSound id="GSSuper_SonicBy1">
+        </CSound>
+    <CSound id="GSSuper_SonicBy2">
+        </CSound>
+    <CSound id="GSSuper_SonicBy3">
+        </CSound>
+    <CSound id="GSSuper_vox">
+        </CSound>
+    <CSound id="GSThors_beamL1">
+        </CSound>
+    <CSound id="GSThors_beamL2">
+        </CSound>
+    <CSound id="GSThors_beamL3">
+        </CSound>
+    <CSound id="GSThors_HammBys">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GSThors_HammImpa">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GSTorna_sweeL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        </CSound>
+    <CSound id="GUAir_F_abilFire">
+        </CSound>
+    <CSound id="GUAir_F_abilOpen">
+        </CSound>
+    <CSound id="GUAir_F_create">
+        </CSound>
+    <CSound id="GUAir_F_die">
+        </CSound>
+    <CSound id="GUAir_F_moveLoop">
+        </CSound>
+    <CSound id="GUAir_F_moveStar">
+        </CSound>
+    <CSound id="GUAir_F_moveStop">
+        </CSound>
+    <CSound id="GUAir_F_select">
+        </CSound>
+    <CSound id="GUAir_F_weapFire1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        </CSound>
+    <CSound id="GUAir_F_weapFire2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUAir_H_moveStar">
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUAntiAi_moveBy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUAntiAi_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUArcha_AirD_healBeamWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUArcha_AirD_MassRepairFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUArchi_moveStart">
+        </CSound>
+    <CSound id="GUArcus_AirS_BombWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUArcus_AirS_BombWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUArm1_servo">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUArm1_stop">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUArm3_servo">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUArm3_stop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUArm_STW">
+        </CSound>
+    <CSound id="GUArmad_VehM_machGunWeaponFireL1">
+        </CSound>
+    <CSound id="GUArmad_VehM_machGunWeaponFireL2">
+        </CSound>
+    <CSound id="GUArmad_VehM_machGunWeaponFireL3">
+        </CSound>
+    <CSound id="GUArmad_VehM_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUBatSh_alarm">
+        </CSound>
+    <CSound id="GUBatSh_missFire">
+        </CSound>
+    <CSound id="GUBatSh_select">
+        </CSound>
+    <CSound id="GUBuild_InfU_moveL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUBuild_InfU_moveReverseBeep">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUBuild_InfU_select2">
+        </CSound>
+    <CSound id="GUBulld_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUBulld_VehA_shotWeapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUBulld_VehAB_moveL2">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUColon_sniperWeaponFire">
+        </CSound>
+    <CSound id="GUComma_charBeep">
+        </CSound>
+    <CSound id="GUComma_charPlan">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUComma_gunFire9">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUComma_jumpJetFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUComma_jumpJetLandImpact">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUComma_jumpStar">
+        </CSound>
+    <CSound id="GUComma_laseWeaponFire">
+        </CSound>
+    <CSound id="GUComma_select1">
+        </CSound>
+    <CSound id="GUComma_select2">
+        </CSound>
+    <CSound id="GUComma_select3">
+        </CSound>
+    <CSound id="GUComma_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUCon_A_animDPLY1">
+        </CSound>
+    <CSound id="GUCon_A_animDPLY2">
+        </CSound>
+    <CSound id="GUCon_A_animDPLY3">
+        </CSound>
+    <CSound id="GUCon_A_animDPLY4">
+        </CSound>
+    <CSound id="GUCon_A_animDPLY5">
+        </CSound>
+    <CSound id="GUCon_A_animDPLY6">
+        </CSound>
+    <CSound id="GUCon_A_animDPLY7">
+        </CSound>
+    <CSound id="GUCon_A_animDPLY8">
+        </CSound>
+    <CSound id="GUCon_A_idleLoop">
+        </CSound>
+    <CSound id="GUCon_A_moveLoop">
+        </CSound>
+    <CSound id="GUCon_A_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUCon_A_select">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUCondu_VehAJ_electrolysisWeaponFire">
+        </CSound>
+    <CSound id="GUCondu_VehAJ_ElectrolysisWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUCondu_VehAJ_EMPexpl">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUCondu_VehAJ_moveLoop">
+        </CSound>
+    <CSound id="GUCondu_VehAJ_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUCondu_VehAJ_select">
+        </CSound>
+    <CSound id="GUCondu_VehAJ_staticFieldWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUCondu_VehAJ_StaticFieldWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUCraDe_CraA_shield1L">
+        </CSound>
+    <CSound id="GUCraDe_CraA_shield2L">
+        </CSound>
+    <CSound id="GUCraDe_CraA_shield3L">
+        </CSound>
+    <CSound id="GUCraOf_CraB_hatchClose">
+        </CSound>
+    <CSound id="GUCrawl_doorClose">
+        </CSound>
+    <CSound id="GUCrawl_doorOpen">
+        </CSound>
+    <CSound id="GUCrawl_DropPod_1descend">
+        </CSound>
+    <CSound id="GUCrawl_DropPod_2impact">
+        </CSound>
+    <CSound id="GUCrawl_DropPod_3ascend">
+        </CSound>
+    <CSound id="GUCrawS_CraC_ascendStart">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUCrawS_CraC_descendStart">
+        </CSound>
+    <CSound id="GUCrawS_CraC_idleLoop">
+        </CSound>
+    <CSound id="GUCrawS_CraC_moveLoop">
+        </CSound>
+    <CSound id="GUCrawS_CraC_moveStart">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUCrawS_CraC_select">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUDozer_InfU_EMPMineDeploy">
+        </CSound>
+    <CSound id="GUDozer_InfU_EMPMineExplo">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUDozer_InfU_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUEngin_foleSele">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUEngin_InfJ_clawAttack1">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUEngin_InfJ_clawAttack2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUEngin_InfJ_healBeamLaserWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUEngin_InfJ_healBeamWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUFireh_AirH_bombWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUFireh_AirH_bombWeaponIncoming">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUFireh_AirH_moveByLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUFireH_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUFireH_ammoLoad">
+        </CSound>
+    <CSound id="GUFireh_firebomb1">
+        </CSound>
+    <CSound id="GUFireH_flyBy">
+        </CSound>
+    <CSound id="GUFireH_moveStar">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUFireH_reloaded">
+        </CSound>
+    <CSound id="GUFireH_StratoFi">
+        </CSound>
+    <CSound id="GUFireH_wea1fire">
+        </CSound>
+    <CSound id="GUFocus_StrG_laserWeapLoop1">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUFocus_StrG_laserWeapLoop2">
+        </CSound>
+    <CSound id="GUFocus_StrG_laserWeapLoop3">
+        </CSound>
+    <CSound id="GUGreda_foleSele">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUGrena_grenThro">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUGrena_moveG1L2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        </CSound>
+    <CSound id="GUGST_AirRB_damaged1">
+        </CSound>
+    <CSound id="GUGST_AirRB_damaged2">
+        </CSound>
+    <CSound id="GUGST_AirRB_damagedSweeteners">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUGST_AirRB_fireDamagedL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUGST_AirRB_moveDamagedL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUGuard_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUGuard_gun8Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        </CSound>
+    <CSound id="GUGuard_minDepBe">
+        </CSound>
+    <CSound id="GUGuard_mineDepl">
+        </CSound>
+    <CSound id="GUGuard_mineExpl">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUGuard_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUGuard_wea1fire">
+        </CSound>
+    <CSound id="GUGuard_wea2fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        </CSound>
+    <CSound id="GUGuard_wea3FiL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        </CSound>
+    <CSound id="GUGuard_wea3FiL3">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUHamme_AirQ_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUHamme_armoUpgr">
+        </CSound>
+    <CSound id="GUHamme_gunFire1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUHamme_gunFire2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUHamme_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUHamme_moveBy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUHamme_moveLand">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUHamme_moveLift">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUHamme_moveLoop2">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUHamme_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUHamme_sounSele2">
+        </CSound>
+    <CSound id="GUHamme_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUHamme_wea1Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUHammer_AirQ_machineGunWeaponFireL2">
+        </CSound>
+    <CSound id="GUHammer_AirQ_machineGunWeaponFireL3">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUHarve_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUHarve_chuffL2">
+        </CSound>
+    <CSound id="GUHarve_idleL2">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUHarve_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUHarve_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        </CSound>
+    <CSound id="GUHunte_idleLoop2">
+        </CSound>
+    <CSound id="GUHunte_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUHurri_AirC_machineGunWeaponFire1L">
+        </CSound>
+    <CSound id="GUHurri_AirC_machineGunWeaponFire2L">
+        </CSound>
+    <CSound id="GUHurri_AirC_machineGunWeaponFire3L">
+        </CSound>
+    <CSound id="GUHurri_AirC_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUHurri_AirC_SensorPodImpact">
+        </CSound>
+    <CSound id="GUHurri_AirC_SensorPodWeaponFire">
+        </CSound>
+    <CSound id="Gui_AchievementReceivedWipeIn">
+        </CSound>
+    <CSound id="Gui_AchievementReceivedWipeOut">
+        </CSound>
+    <CSound id="GUI_countdownBlip">
+        </CSound>
+    <CSound id="GUI_Radar_off">
+        </CSound>
+    <CSound id="GUI_Radar_on">
+        </CSound>
+    <CSound id="GUI_ShellClick">
+        </CSound>
+    <CSound id="GUI_spyCamer">
+        </CSound>
+    <CSound id="GUI_textblip1">
+        </CSound>
+    <CSound id="GuiInGame_CrawlerDeploy_MarkerRing">
+        </CSound>
+    <CSound id="GuiInGame_gift">
+        </CSound>
+    <CSound id="GuiInGame_GlobalButtonClick">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        </CSound>
+    <CSound id="GuiInGame_GlobalExpandUI">
+        </CSound>
+    <CSound id="GuiInGame_GlobalRetractUI">
+        </CSound>
+    <CSound id="GuiInGame_WarningFlare">
+        </CSound>
+    <CSound id="GUInf_A_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUInf_B_aniABTA1">
+        </CSound>
+    <CSound id="GUInf_B_aniAIFA1">
+        </CSound>
+    <CSound id="GUInf_B_aniAIFA2">
+        </CSound>
+    <CSound id="GUInf_B_aniAIFA3">
+        </CSound>
+    <CSound id="GUInf_B_aniAIFA4">
+        </CSound>
+    <CSound id="GUInf_B_aniAIFA5">
+        </CSound>
+    <CSound id="GUInf_B_aniAIFC1">
+        </CSound>
+    <CSound id="GUInf_B_aniAIFC2">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEA1">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEA2">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEA3">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEB1">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEB2">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEB3">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEC1">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEC2">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEC3">
+        </CSound>
+    <CSound id="GUInf_B_aniDIEC4">
+        </CSound>
+    <CSound id="GUInf_B_aniDSEL1">
+        </CSound>
+    <CSound id="GUInf_B_growl">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUInf_B_metaFlap">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUInf_B_moveDama">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUInf_B_moveFoot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        </CSound>
+    <CSound id="GUInf_B_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUInf_B_turrLong">
+        </CSound>
+    <CSound id="GUInf_B_turrShor">
+        </CSound>
+    <CSound id="GUInf_B_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUInf_B_weapLoop">
+        </CSound>
+    <CSound id="GUInf_J_footstep">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUInf_J_moveLoop2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUInf_J_moveLoop3">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUInf_J_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUInf_J_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUInfan_sprintOn">
+        </CSound>
+    <CSound id="GUJugge_moveStar">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUJugge_moveSwee">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUJugge_sounSele">
+        </CSound>
+    <CSound id="GUJugge_VehG_ArtilleryWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUJugge_VehG_footstep">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUJugge_wea1fire">
+        </CSound>
+    <CSound id="GUJugge_wea2fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUJugge_wea3fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUKodia_AirF_ArmorUpOff">
+        </CSound>
+    <CSound id="GUKodia_AirF_ArmorUpOn">
+        </CSound>
+    <CSound id="GUMammo_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUMammo_idleL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        </CSound>
+    <CSound id="GUMammo_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUMammo_wea1ech">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUMammo_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUMammo_wea2fire">
+        </CSound>
+    <CSound id="GUMarv_cannFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUMarv_cannImpa">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUMarv_cannonHit">
+        </CSound>
+    <CSound id="GUMarv_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUMarv_moveBy">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUMarv_moveLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUMarv_moveStar1">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUMarv_moveStar2">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUMarv_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUMasta_VehL_rebootStart">
+        </CSound>
+    <CSound id="GUMCV_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUmcv_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUmcv_pak1">
+        </CSound>
+    <CSound id="GUmcv_pak2">
+        </CSound>
+    <CSound id="GUmcv_pak3">
+        </CSound>
+    <CSound id="GUmcv_pak4">
+        </CSound>
+    <CSound id="GUmcv_pak5">
+        </CSound>
+    <CSound id="GUmcv_pakBed">
+        </CSound>
+    <CSound id="GUmcv_upak1">
+        </CSound>
+    <CSound id="GUmcv_upak2">
+        </CSound>
+    <CSound id="GUmcv_upak3">
+        </CSound>
+    <CSound id="GUmcv_upak4">
+        </CSound>
+    <CSound id="GUmcv_upakBed">
+        </CSound>
+    <CSound id="GUMiniO_dive">
+        </CSound>
+    <CSound id="GUMiniO_moveLoop">
+        </CSound>
+    <CSound id="GUMiniO_weapExpl">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUMiniO_weapFire">
+        </CSound>
+    <CSound id="GUMissi_foleSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUMissi_moveG1L2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUMissi_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUNukeT_falsStar">
+        </CSound>
+    <CSound id="GUNukeT_response">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUOrca_AirA_moveL2">
+        </CSound>
+    <CSound id="GUOrca_AirA_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUOrca_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUOrca_ammoLoad">
+        </CSound>
+    <CSound id="GUOrca_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        </CSound>
+    <CSound id="GUOrca_pulsScan">
+        </CSound>
+    <CSound id="GUOrca_reloaded">
+        </CSound>
+    <CSound id="GUOrca_rockExpl">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        </CSound>
+    <CSound id="GUOrca_rockFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUOrca_SensFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUOrca_SensImpa">
+        </CSound>
+    <CSound id="GUOrca_wea1fiL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUOrca_wea1fiL3">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUOrca_wea1shel">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUOrca_wea1win1">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUOrca_wea1win3">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="GUPalad_AirP_antiRocketLaserWeaponFire2">
+        </CSound>
+    <CSound id="GUPalad_AirP_antiRocketLaserWeaponFire">
+        </CSound>
+    <CSound id="GUPalad_AirP_AntiRocketMode">
+        </CSound>
+    <CSound id="GUPalad_AirP_laserWeaponFire">
+        </CSound>
+    <CSound id="GUPalad_AirP_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUPalad_AirP_PrimaryWeaponMode">
+        </CSound>
+    <CSound id="Gupgra_enhaShield">
+        </CSound>
+    <CSound id="GUpgrad_infantry">
+        </CSound>
+    <CSound id="GUPitbu_idleL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUPitbu_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUPitbu_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUPitbu_wea2fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUPitbull_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUPreda_ambiSele">
+        </CSound>
+    <CSound id="GUPreda_idleL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUPreda_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUPreda_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUPreda_wea2fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GURefra_VehAF_laseWeapFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GURefra_VehAF_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GURepai_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GURepai_moveBy">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GURepai_sounSele">
+        </CSound>
+    <CSound id="GURepai_sparks">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GURhino_VehAG_ArtilleryWeaponFire">
+        </CSound>
+    <CSound id="GURhino_VehAG_deploy1">
+        </CSound>
+    <CSound id="GURhino_VehAG_deploy2">
+        </CSound>
+    <CSound id="GURhino_VehAG_deploy3">
+        </CSound>
+    <CSound id="GURhino_VehAG_dozerBladeRicochet">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GURhino_VehAG_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GURhino_VehAG_undeploy1">
+        </CSound>
+    <CSound id="GURhino_VehAG_undeploy2">
+        </CSound>
+    <CSound id="GURhino_VehAG_undeploy3">
+        </CSound>
+    <CSound id="GURhino_VehAG_undeploy4">
+        </CSound>
+    <CSound id="GURhino_VehAG_weapPound">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GURifle_digginL2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        </CSound>
+    <CSound id="GURifle_foleSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GURifle_gun5Fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GURifle_moveG1L2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GURig_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GURig_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GURig_wea1fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GURough_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUSands_VehH_select">
+        </CSound>
+    <CSound id="GUShatt_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUShatt_moveBy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUShatt_moveStar">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUShatt_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUSheph_cannWeapFire">
+        </CSound>
+    <CSound id="GUShock_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUSling_gunFire1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUSling_gunFire2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUSling_gunTail">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUSling_heavUpgr">
+        </CSound>
+    <CSound id="GUSling_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUSling_moveBy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUSling_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUSling_sounSele2">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUSling_sounSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUSnipe_gunFire2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        <AssetArray TemplateParam="s"/>
+        <AssetArray TemplateParam="t"/>
+        <AssetArray TemplateParam="u"/>
+        <AssetArray TemplateParam="v"/>
+        <AssetArray TemplateParam="w"/>
+        </CSound>
+    <CSound id="GUSnipe_moveG1L2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        <AssetArray TemplateParam="p"/>
+        <AssetArray TemplateParam="q"/>
+        <AssetArray TemplateParam="r"/>
+        <AssetArray TemplateParam="s"/>
+        <AssetArray TemplateParam="t"/>
+        <AssetArray TemplateParam="u"/>
+        <AssetArray TemplateParam="v"/>
+        <AssetArray TemplateParam="w"/>
+        </CSound>
+    <CSound id="GUSnipe_wea2fire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        </CSound>
+    <CSound id="GUSniper_foleSele">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUSpart_cannWeapFire">
+        </CSound>
+    <CSound id="GUSteel_overBeam">
+        </CSound>
+    <CSound id="GUStrik_VehAD_laserWeaponBuildUp">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUStrik_VehAD_laserWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUStrike_footstep">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUSurve_ambiSele">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUSurve_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUSurve_MoveStar">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUTalon_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUTalon_VehAC_select">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUThund_VehAK_gravityWeaponImpact">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUThund_VehAK_land">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUThund_VehAK_laserWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUThund_VehAK_lift">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUThund_VehAK_moveStart">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUTitan_cannonHit">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUTitan_footstep">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUTrebu_whoos1">
+        </CSound>
+    <CSound id="GUUpgra_railCano">
+        </CSound>
+    <CSound id="GUV35Ox_drop">
+        </CSound>
+    <CSound id="GUV35Ox_idlel2">
+        </CSound>
+    <CSound id="GUV35Ox_land">
+        </CSound>
+    <CSound id="GUV35Ox_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUV35Ox_movl1">
+        </CSound>
+    <CSound id="GUV35Ox_movl2">
+        </CSound>
+    <CSound id="GUV35Ox_movl3">
+        </CSound>
+    <CSound id="GUV35Ox_pickup">
+        </CSound>
+    <CSound id="GUV35Ox_takeOff">
+        </CSound>
+    <CSound id="GUVeh_AB_idleLoop2">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUVeh_F_moveFoot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUVeh_F_moveFootPre15">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUVeh_F_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUVeh_F_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUVeh_H_idleLoop">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUVeh_H_moveLoop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUVeh_H_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUVeh_H_moveStop">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUVeh_H_select">
+        </CSound>
+    <CSound id="GUVeh_H_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        </CSound>
+    <CSound id="GUVeh_L_animABTA1">
+        </CSound>
+    <CSound id="GUVeh_L_animABTA2">
+        </CSound>
+    <CSound id="GUVeh_L_animABTA3">
+        </CSound>
+    <CSound id="GUVeh_L_animABTA4">
+        </CSound>
+    <CSound id="GUVeh_L_animBATA1">
+        </CSound>
+    <CSound id="GUVeh_L_animBATA2">
+        </CSound>
+    <CSound id="GUVeh_L_animDIEA1">
+        </CSound>
+    <CSound id="GUVeh_L_animDIEA2">
+        </CSound>
+    <CSound id="GUVeh_L_animDSEL">
+        </CSound>
+    <CSound id="GUVeh_L_damaStep">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        </CSound>
+    <CSound id="GUVeh_L_dcharRel">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUVeh_L_endServ">
+        </CSound>
+    <CSound id="GUVeh_L_idleLoop">
+        </CSound>
+    <CSound id="GUVeh_L_loopDama">
+        </CSound>
+    <CSound id="GUVeh_L_loopServ">
+        </CSound>
+    <CSound id="GUVeh_L_moveFoot">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        </CSound>
+    <CSound id="GUVeh_L_moveLoop">
+        </CSound>
+    <CSound id="GUVeh_L_moveServ">
+        </CSound>
+    <CSound id="GUVeh_L_moveStar">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUVeh_L_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUVeh_L_weapFire1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        </CSound>
+    <CSound id="GUVeh_L_weapFire2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        </CSound>
+    <CSound id="GUVeh_L_weapFireFar1">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        </CSound>
+    <CSound id="GUVeh_V_idleLoop">
+        </CSound>
+    <CSound id="GUVeh_V_moveLoop">
+        </CSound>
+    <CSound id="GUVeh_V_moveStar">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUVeh_V_select">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUVeh_V_weapFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUVeh_V_weapShel">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUVehLGA_moveLoop">
+        </CSound>
+    <CSound id="GUWeapo_LaserMediumChargeUp">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUWeapo_LaserMediumFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUWeapo_LaserMediumImpactSizzle">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        </CSound>
+    <CSound id="GUWeapo_mediBlas">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUWolf_VehAB_moveStart">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUZephy_AirO_idleLoop">
+        </CSound>
+    <CSound id="GUZephy_AirO_moveByLoop">
+        </CSound>
+    <CSound id="GUZephy_AirO_moveStart">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUZephy_AirO_select">
+        </CSound>
+    <CSound id="GUZoneC_InfW_IonStrikeWeaponExplosion">
+        </CSound>
+    <CSound id="GUZoneC_InfW_IonStrikeWeaponFire">
+        </CSound>
+    <CSound id="GUZoneC_InfW_IonStrikeWeaponImpact">
+        </CSound>
+    <CSound id="GUZoneC_InfW_select2">
+        </CSound>
+    <CSound id="GUZoneC_InfW_select">
+        </CSound>
+    <CSound id="GUZoneC_InfW_selectBATA">
+        </CSound>
+    <CSound id="GUZoneD_InfO_rocketWeaponImpactExplosion">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUZoneD_InfO_select2">
+        </CSound>
+    <CSound id="GUZoneE_InfS_grenadeLauncherPump">
+        </CSound>
+    <CSound id="GUZoneE_InfS_grenadeLauncherWeaponFire2">
+        </CSound>
+    <CSound id="GUZoneE_InfS_grenadeLauncherWeaponFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUZoneE_InfS_grenadeLauncherWeaponFireFoley">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUZoneE_InfS_machGunWeaponFire1L2">
+        </CSound>
+    <CSound id="GUZoneE_InfS_machGunWeaponFire1L3">
+        </CSound>
+    <CSound id="GUZoneE_InfS_machGunWeaponFire2L2">
+        </CSound>
+    <CSound id="GUZoneE_InfS_machGunWeaponFire2L3">
+        </CSound>
+    <CSound id="GUZoneE_InfS_select2">
+        </CSound>
+    <CSound id="GUZoneL_InfT_deploy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUZoneL_InfT_select2">
+        </CSound>
+    <CSound id="GUZoneL_InfT_select">
+        </CSound>
+    <CSound id="GUZoneL_InfT_selectBATA">
+        </CSound>
+    <CSound id="GUZoneL_InfT_undeploy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUZoneR_gunFire">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        </CSound>
+    <CSound id="GUZoneR_InfV_select2">
+        </CSound>
+    <CSound id="GUZoneR_jumpLand">
+        </CSound>
+    <CSound id="GUZoneR_voiDie">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+        <AssetArray TemplateParam="o"/>
+        </CSound>
+    <CSound id="GUZoneT_ambiSele">
+        </CSound>
+    <CSound id="GUZoneT_foleSele">
+        </CSound>
+    <CSound id="GUZoneT_InfR_select2">
+        </CSound>
+    <CSound id="GUZoneT_InfR_select">
+        <AssetArray TemplateParam="e"/>
+        </CSound>
+    <CSound id="GUZoneT_jumpJet">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        </CSound>
+    <CSound id="GUZoneT_moveG1L2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        </CSound>
+    <CSound id="GUZoneT_wea1fire">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+    <CSound>
+</Catalog>

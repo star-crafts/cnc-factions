@@ -1,0 +1,846 @@
+<Catalog>
+    <CSound id="GDISlingshot_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodMilitant_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="NodMilitant_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodMilitant_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMilitant_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodMilitant_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodEmissary_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodEmissary_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodCarryall_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodCarryall_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodCarryall_Cancel">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodConfessor_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodConfessor_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="NodConfessor_Ready">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodConfessor_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="NodConfessor_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodFanatic_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodFanatic_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="NodFanatic_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodFanatic_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodSaboteur_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="NodSaboteur_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodSaboteur_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodSaboteur_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodCommando_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodCommando_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="NodCommando_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="NodCommando_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodCommando_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodTiberiumTrooper_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodTiberiumTrooper_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodTiberiumTrooper_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="NodTiberiumTrooper_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodShadow_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodShadow_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodShadow_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodShadow_Death">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodHarvester_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodHarvester_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodHarvester_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodBlackHand_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodBlackHand_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodBlackHand_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodBlackHand_Yes">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodBlackHand_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodMilitantRocket_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMilitantRocket_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMilitantRocket_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodMilitantRocket_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodBike_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodBike_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodBike_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodBike_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodAvatar_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodAvatar_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodAvatar_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodAvatar_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodAvatar_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodVenom_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodVenom_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodVenom_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodVenom_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Vertigo_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Vertigo_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Vertigo_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Vertigo_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodMCV_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMCV_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMantis_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodMantis_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="NodMantis_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodMantis_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+    </CSound>
+    <CSound id="NodPurifier_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodPurifier_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodPurifier_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodPurifier_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodBeam_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodBeam_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodBeam_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodBeam_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodScorpionTank_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodScorpionTank_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodScorpionTank_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodScorpionTank_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodScorpion_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodScorpion_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodScorpion_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodScorpion_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodSpecter_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodSpecter_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodSpecter_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodSpecter_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodStealthTank_Attack">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodStealthTank_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodStealthTank_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodStealthTank_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Enlightened_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Enlightened_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Enlightened_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Enlightened_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="Enlightened_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="BlackHand_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="BlackHand_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="BlackHand_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="BlackHand_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="BlackHand_Death">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodEngineer_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodEngineer_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodEngineer_Movement">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodEngineer_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodEngineer_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="Scalpel_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Scalpel_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Scalpel_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Scalpel_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="Scalpel_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodRedeemer_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodRedeemer_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodRedeemer_Movement">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodRedeemer_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodRedeemer_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodRaider_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="NodRaider_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="NodRaider_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodRaider_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodRaider_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodReckoner_Deploy">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodReckoner_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodReckoner_What">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodReckoner_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodReckoner_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodCrawler_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodCrawler_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodCrawler_Ready">
+        <AssetArray TemplateParam="m"/>
+    </CSound>
+    <CSound id="NodCrawler_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodCrawler_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="NodFlameTank_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodFlameTank_Help">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodFlameTank_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodFlameTank_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="StealthTank_Attack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="StealthTank_Help">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="StealthTank_Movement">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="StealthTank_What">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="StealthTank_Yes">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="NodMCVpack">
+        <AssetArray TemplateParam="k"/>
+    </CSound>
+    <CSound id="Avatar_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="nodCommando_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodSpecter_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+    </CSound>
+    <CSound id="NodObeliskWeaponNew_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodVertigoweaponAttackImpact">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodVertigoweaponAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="EnlghtenedAttackSounds">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMilitantAttackSounds">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="NodMilitantRocketAttackSounds">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="NodMilitant_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+    </CSound>
+    <CSound id="CABALBikeWeaponAttackImpact22">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBikeWeaponAttackLaunch22">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBikeWeaponAttackImpact2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBikeWeaponAttackLaunch2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="Scorpion_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="BlackHandAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+        <AssetArray TemplateParam="i"/>
+        <AssetArray TemplateParam="j"/>
+        <AssetArray TemplateParam="k"/>
+        <AssetArray TemplateParam="l"/>
+        <AssetArray TemplateParam="m"/>
+        <AssetArray TemplateParam="n"/>
+    </CSound>
+    <CSound id="CABALBikeWeaponAttackImpact">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="CABALStealthRocketAttackImpact">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="CABALStealthRocketAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="CABALBikeWeaponAttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Obelisk_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+    <CSound id="PerditionTurretAttackLaunch2">
+        <AssetArray TemplateParam="e"/>
+    </CSound>
+    <CSound id="NodMantisAttack">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+    </CSound>
+    <CSound id="Redeemer_AttackLaunch">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Redeemer_AttackLaunch_2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="Redeemer_AttackLaunch_2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+        <AssetArray TemplateParam="g"/>
+        <AssetArray TemplateParam="h"/>
+    </CSound>
+    <CSound id="nodCommando_AttackLaunch2">
+        <AssetArray TemplateParam="e"/>
+        <AssetArray TemplateParam="f"/>
+    </CSound>
+</Catalog>
